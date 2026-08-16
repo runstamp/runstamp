@@ -1,30 +1,16 @@
 // src/typography/harfbuzzLoader.ts — HarfBuzz WASM with class-based state management
 
-import { createRequire } from "node:module";
+import createHarfBuzz from "harfbuzzjs/hb.js";
+import hbjsWrap from "harfbuzzjs/hbjs.js";
 import type { HbApiInstance, HbBuffer, HbFont } from "../types/vendor.js";
 import { getLogger } from "../logger.js";
 
-const _require = createRequire(import.meta.url);
-
-// hb.js is the Emscripten-compiled loader that self-resolves hb.wasm from
-// its own package directory — returns the full Emscripten Module object.
-// hbjs.js wraps that Module object with a clean JS API.
-//
-// Lazy-loaded: require("harfbuzzjs") is deferred to first use so that lite
-// consumers (who never call initHarfBuzz) don't pay the WASM import cost.
+// hb.js is the Emscripten-compiled loader and hbjs.js wraps its Module object
+// with a clean JS API. The production bundle embeds both modules and the WASM
+// bytes so hosted execution never depends on a package-manager symlink.
 declare const __RUNSTAMP_HARFBUZZ_WASM_BASE64__: string;
 
 type HarfBuzzFactoryOptions = { wasmBinary?: Uint8Array };
-
-let _createHarfBuzz: ((options?: HarfBuzzFactoryOptions) => Promise<object>) | null = null;
-let _hbjsWrap: ((module: object) => HbApiInstance) | null = null;
-
-function ensureHarfBuzzModules(): void {
-  if (!_createHarfBuzz) {
-    _createHarfBuzz = _require("harfbuzzjs/hb.js");
-    _hbjsWrap = _require("harfbuzzjs/hbjs.js");
-  }
-}
 
 /** Maximum number of HarfBuzz fonts to keep cached (WASM heap allocations). */
 export const MAX_HB_FONT_CACHE_SIZE = 200;
@@ -51,14 +37,13 @@ export class HarfBuzzManager {
   async initHarfBuzz(): Promise<void> {
     if (this.hbInstance) return;
     try {
-      ensureHarfBuzzModules();
       const embeddedWasm = typeof __RUNSTAMP_HARFBUZZ_WASM_BASE64__ === "string"
         ? __RUNSTAMP_HARFBUZZ_WASM_BASE64__
         : "";
-      const module = await _createHarfBuzz!(embeddedWasm
+      const module = await (createHarfBuzz as (options?: HarfBuzzFactoryOptions) => Promise<object>)(embeddedWasm
         ? { wasmBinary: Uint8Array.from(Buffer.from(embeddedWasm, "base64")) }
         : undefined);
-      this.hbInstance = _hbjsWrap!(module);
+      this.hbInstance = (hbjsWrap as (module: object) => HbApiInstance)(module);
       this.sharedBuffer = this.hbInstance.createBuffer();
     } catch (err) {
       throw new Error(

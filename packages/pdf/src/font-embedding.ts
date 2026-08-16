@@ -1,6 +1,6 @@
 import * as fontkitModule from "fontkit";
-import { createRequire } from "node:module";
 import { deflate } from "pako";
+import subsetFont from "subset-font";
 import { buildFontSourceKey, loadFontSourceBuffer, sanitizePostScriptName, sha1Buffer } from "./font-source.js";
 import type { PdfAssetPolicy } from "./phase9-types.js";
 import { PDFArray, PDFDictionary, PDFName, PDFNumber, PDFRef, PDFStream, PDFString, type PDFValue } from "./pdf-objects.js";
@@ -52,26 +52,12 @@ interface PositionedHbGlyph extends HbGlyph {
 }
 
 const UNSUPPORTED_COLOR_FONT_TABLES = new Set(["CBDT", "CBLC", "sbix", "COLR", "CPAL", "SVG "]);
-const requireFrom = createRequire(import.meta.url);
 type SubsetFont = (
   source: Buffer,
   text: string,
   options: { targetFormat: "sfnt" },
 ) => Promise<Uint8Array>;
-let loadedSubsetFont: SubsetFont | undefined;
-
-function getSubsetFont(): SubsetFont {
-  if (!loadedSubsetFont) {
-    // Keep this Node-only dependency runtime-resolved. Turbopack otherwise
-    // follows the literal into subset-font and rewrites its require.resolve()
-    // for hb-subset.wasm to a numeric module id, which fs.readFile cannot use.
-    const module = Reflect.apply(requireFrom, undefined, ["subset-font"]) as
-      | SubsetFont
-      | { default: SubsetFont };
-    loadedSubsetFont = typeof module === "function" ? module : module.default;
-  }
-  return loadedSubsetFont;
-}
+const runSubsetFont = subsetFont as SubsetFont;
 const fontkit = fontkitModule as unknown as {
   create(buffer: Buffer, postscriptName?: string): FontkitFont | FontkitCollection;
 };
@@ -578,7 +564,7 @@ export async function prepareEmbeddedFonts(
     let subsetBuffer: Buffer;
     if (shouldSubset) {
       try {
-        subsetBuffer = Buffer.from(await getSubsetFont()(sourceBuffer, samples, { targetFormat: "sfnt" }));
+        subsetBuffer = Buffer.from(await runSubsetFont(sourceBuffer, samples, { targetFormat: "sfnt" }));
       } catch (error) {
         throw new Error(buildSubsetFailureMessage(entry.font.family, error));
       }

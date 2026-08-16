@@ -1,66 +1,72 @@
 import { createRequire as __runstampCreateRequire } from "node:module";
+import { dirname as __runstampDirname } from "node:path";
+import { fileURLToPath as __runstampFileURLToPath } from "node:url";
+const __filename = __runstampFileURLToPath(import.meta.url);
+const __dirname = __runstampDirname(__filename);
 const require = __runstampCreateRequire(import.meta.url);
 import {
   normalizeToParagraphsFromFields,
   resolveHyperlink
-} from "../chunk-VETY33ST.js";
+} from "../chunk-MP76HATA.js";
 import {
   flattenDocumentZIndex,
   validateDocument
-} from "../chunk-ADNRG6JQ.js";
+} from "../chunk-XVSKCRKS.js";
 import {
   escapeXml
-} from "../chunk-QZ7YLVPL.js";
+} from "../chunk-M2YFSO2D.js";
 import {
   autoLoadDocumentFonts
-} from "../chunk-FUBHCOLD.js";
-import "../chunk-6QXZRXYS.js";
-import "../chunk-66EJ4WIS.js";
-import "../chunk-SHJL7Z52.js";
+} from "../chunk-MVPJ57UB.js";
+import "../chunk-7V4ECWKA.js";
+import "../chunk-TM4NN2PA.js";
+import "../chunk-3VBGXE67.js";
 import {
   fetchWithRetry,
   resolveColorValue,
   resolveEffectiveViewGeometry
-} from "../chunk-BF4WWWMZ.js";
-import "../chunk-MA6IZLCE.js";
+} from "../chunk-XZ4AHITT.js";
+import "../chunk-VCCW5PWJ.js";
 import {
   FONT_FILE_MAP
-} from "../chunk-QSVRDIHM.js";
-import "../chunk-PUKAI6X5.js";
-import "../chunk-2W7D7VOC.js";
+} from "../chunk-ERFVAWW7.js";
+import "../chunk-RQNEGT4U.js";
+import {
+  faceForStyle,
+  resolveRegistryFont
+} from "../chunk-BVMCDLHW.js";
 import {
   validateFetchUrl
-} from "../chunk-YWT5KXVL.js";
+} from "../chunk-WVTVGR3K.js";
 import {
   runLayout
-} from "../chunk-4IGUCOJJ.js";
+} from "../chunk-5QLWVG23.js";
 import {
   shapeSegmentWidth
-} from "../chunk-DYXX63XE.js";
+} from "../chunk-DX2BYFTQ.js";
 import {
   getFontOrNull,
   resolveLineHeightPixels
-} from "../chunk-P5JGOT4P.js";
+} from "../chunk-IQGCGBYO.js";
 import {
   DEFAULT_SLIDE_HEIGHT_PX,
   DEFAULT_SLIDE_WIDTH_PX,
   FETCH_TIMEOUT_MS,
   validateDataUrlSize
-} from "../chunk-3O47XGMU.js";
+} from "../chunk-XU7YQ73E.js";
 import {
   getLogger
-} from "../chunk-HZBNNQK3.js";
-import "../chunk-S4LZHR2L.js";
+} from "../chunk-MV7M6AY2.js";
+import "../chunk-JXF5SD3S.js";
 import {
   PaperError
-} from "../chunk-JXY3OJQ6.js";
-import "../chunk-OWC7QHPZ.js";
+} from "../chunk-SFVKAOLH.js";
+import "../chunk-VIXD5LXH.js";
 
 // src/converter/pptx-to-pdf.ts
 import { existsSync } from "node:fs";
 import { readFile } from "node:fs/promises";
-import { createRequire } from "node:module";
-import { dirname, join } from "node:path";
+import { join } from "node:path";
 import { renderPdfPages, SRGB_ICC_PROFILE } from "@runstamp/pdf";
 var POINTS_PER_PIXEL = 72 / 96;
 var SCREEN_SCALE = 1;
@@ -68,9 +74,6 @@ var PRINT_SCALE = 300 / 96;
 var DEFAULT_OUTPUT_CONDITION_IDENTIFIER = "sRGB IEC61966-2.1";
 var DEFAULT_PRODUCER = "Runstamp PPTX";
 var DEFAULT_NOTE_TITLE = "Speaker Notes";
-var REQUIRE = createRequire(import.meta.url);
-var HB_DIR = dirname(REQUIRE.resolve("harfbuzzjs/hb.js"));
-var FALLBACK_NOTO_PATH = join(HB_DIR, "test", "fonts", "noto", "NotoSans-Regular.ttf");
 var SYSTEM_FONT_DIRS_MAC = [
   "/System/Library/Fonts/Supplemental",
   "/Library/Fonts",
@@ -556,7 +559,7 @@ async function convertImageGraphic(node, pageHeight, pageStructureId, state, tra
 }
 async function convertChartGraphic(node, pageHeight, pageStructureId, state, transform) {
   try {
-    const { renderChartToSvg } = await import("../rasterizer-I62JJO5L.js");
+    const { renderChartToSvg } = await import("../rasterizer-7JRYX5B4.js");
     const rendered = await renderChartToSvg(
       node.chartData,
       { width: Math.max(1, Math.round(node.layout.width)), height: Math.max(1, Math.round(node.layout.height)) },
@@ -889,9 +892,9 @@ function resolveFontSource(fontFamily, runStyle) {
       return { family: fallback, path };
     }
   }
-  if (existsSync(FALLBACK_NOTO_PATH)) {
-    return { family: "Noto Sans", path: FALLBACK_NOTO_PATH };
-  }
+  const face = faceForStyle(runStyle?.fontWeight === "bold", runStyle?.fontStyle === "italic");
+  const portable = resolveRegistryFont(fontFamily, face) ?? resolveRegistryFont("Arial", face) ?? resolveRegistryFont("Arial", "Regular");
+  if (portable) return { family: portable.family, path: portable.path };
   return void 0;
 }
 function resolveSystemFontPath(fontFamily, runStyle) {

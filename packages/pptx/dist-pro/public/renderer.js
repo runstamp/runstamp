@@ -1,24 +1,28 @@
 import { createRequire as __runstampCreateRequire } from "node:module";
+import { dirname as __runstampDirname } from "node:path";
+import { fileURLToPath as __runstampFileURLToPath } from "node:url";
+const __filename = __runstampFileURLToPath(import.meta.url);
+const __dirname = __runstampDirname(__filename);
 const require = __runstampCreateRequire(import.meta.url);
 import {
   renderAllSlidesToBuffers,
   renderSlideToBuffer
-} from "../chunk-ZLZIUC4K.js";
-import "../chunk-BF4WWWMZ.js";
-import "../chunk-MA6IZLCE.js";
-import "../chunk-SV4OEGHV.js";
-import "../chunk-QSVRDIHM.js";
-import "../chunk-PUKAI6X5.js";
-import "../chunk-625BFJJW.js";
-import "../chunk-2W7D7VOC.js";
-import "../chunk-YWT5KXVL.js";
-import "../chunk-DYXX63XE.js";
-import "../chunk-P5JGOT4P.js";
-import "../chunk-3O47XGMU.js";
-import "../chunk-HZBNNQK3.js";
-import "../chunk-S4LZHR2L.js";
-import "../chunk-JXY3OJQ6.js";
-import "../chunk-OWC7QHPZ.js";
+} from "../chunk-T7AK3EDB.js";
+import "../chunk-XZ4AHITT.js";
+import "../chunk-VCCW5PWJ.js";
+import "../chunk-IC35FUMW.js";
+import "../chunk-ERFVAWW7.js";
+import "../chunk-RQNEGT4U.js";
+import "../chunk-7BYJLCSM.js";
+import "../chunk-BVMCDLHW.js";
+import "../chunk-WVTVGR3K.js";
+import "../chunk-DX2BYFTQ.js";
+import "../chunk-IQGCGBYO.js";
+import "../chunk-XU7YQ73E.js";
+import "../chunk-MV7M6AY2.js";
+import "../chunk-JXF5SD3S.js";
+import "../chunk-SFVKAOLH.js";
+import "../chunk-VIXD5LXH.js";
 export {
   renderAllSlidesToBuffers,
   renderSlideToBuffer

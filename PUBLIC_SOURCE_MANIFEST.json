@@ -2311,8 +2311,8 @@
     },
     {
       "path": "packages/pdf/__tests__/phase9-streaming.test.ts",
-      "bytes": 1724,
-      "sha256": "6e93e2288741c12a7c93e9af3307c53d5505a538288cfd83221d07b6bddffb34"
+      "bytes": 1977,
+      "sha256": "f73ca75b1c7a3bbf5d2aa9e4c2ec86555132a9d5781d198b0b300d55b2678cfa"
     },
     {
       "path": "packages/pdf/__tests__/published-capabilities.test.ts",
@@ -2441,13 +2441,13 @@
     },
     {
       "path": "packages/pdf/dist/index.js",
-      "bytes": 4114215,
-      "sha256": "193e8a293a3151e05eb2fa217682a6b459893c7d8769fb6357c66b29776199d8"
+      "bytes": 6681560,
+      "sha256": "13fd494b51396a89e50b9aa03e16636159ef79dba4cfe5167a5b30292c0c8040"
     },
     {
       "path": "packages/pdf/dist/index.js.map",
-      "bytes": 5832014,
-      "sha256": "44761ac6b27ca1eef6625e7de2c8c7021c74510ff3c49747db6a66be29093dbc"
+      "bytes": 8354190,
+      "sha256": "d0e4670e210db90f07caa46876e6868965dd464ef17d1eb1a6ecb3a9574d02d3"
     },
     {
       "path": "packages/pdf/dist/ops/descriptor.d.ts",
@@ -2456,13 +2456,13 @@
     },
     {
       "path": "packages/pdf/dist/ops/descriptor.js",
-      "bytes": 565807,
-      "sha256": "72d541934be2dead964e2f2fcd4ce9322f55dd289839acd7c426e7515baeba70"
+      "bytes": 566044,
+      "sha256": "40278174617c253faf6a8092ec1ae6d4f48b77ec4fd72f3093b5773847f638ac"
     },
     {
       "path": "packages/pdf/dist/ops/descriptor.js.map",
-      "bytes": 1041755,
-      "sha256": "f965df43966e170b53a5b4524d93547a9d9376954e133929c0c0a6a765471289"
+      "bytes": 1041759,
+      "sha256": "09670657e3b1831a1b3b7efcc928a4881d1fc7dd12b746c4a8338ee59b5f5929"
     },
     {
       "path": "packages/pdf/dist/ops/index.d.ts",
@@ -2471,13 +2471,13 @@
     },
     {
       "path": "packages/pdf/dist/ops/index.js",
-      "bytes": 4189757,
-      "sha256": "cecf122c29e29a84a6ac9b6ea9c36e654363dda4a4b793231600d99d132c8fa1"
+      "bytes": 6757109,
+      "sha256": "98300844642303e958fdce7352252fe481ce2c0908ddd02bb970ead455b282e1"
     },
     {
       "path": "packages/pdf/dist/ops/index.js.map",
-      "bytes": 5973121,
-      "sha256": "b045213676fd1de01f7a1a8f0703af15904da1466613998368dc2ed74c584736"
+      "bytes": 8495419,
+      "sha256": "ec4401cf39a33505347a382fdb595449ac126012117a92aa025336f896c3d54e"
     },
     {
       "path": "packages/pdf/dist/ops/yoga.wasm",
@@ -2626,8 +2626,8 @@
     },
     {
       "path": "packages/pdf/package.json",
-      "bytes": 4321,
-      "sha256": "31067b291cb4b29f036a840183a892925c80e7787b44582179d97b5e8786549b"
+      "bytes": 4360,
+      "sha256": "8b3c5bdb609a69ec763e7acadfca5de7c4956edc5c465dc7b9e6cbcbc9d24fec"
     },
     {
       "path": "packages/pdf/README.md",
@@ -2701,8 +2701,8 @@
     },
     {
       "path": "packages/pdf/scripts/build-free.mjs",
-      "bytes": 2439,
-      "sha256": "44a119c036e600251d3ab4952483ef65a523f2ee63c23fa02dd274f142a85939"
+      "bytes": 3815,
+      "sha256": "0c5a64df8101218232a5bc8714f0be1a156125b3354906ea505749e45b3423a2"
     },
     {
       "path": "packages/pdf/scripts/composition-fixtures.ts",
@@ -2816,8 +2816,8 @@
     },
     {
       "path": "packages/pdf/src/external-modules.d.ts",
-      "bytes": 939,
-      "sha256": "c63e89c6ac1420610f110ef90b944aff2212889f8d8200e72bd03701fdbcebe5"
+      "bytes": 1283,
+      "sha256": "91f496736e4283337f7314e081b65f574c2335be3ecddc937eb31352a2f80494"
     },
     {
       "path": "packages/pdf/src/finding-matrix.json",
@@ -2826,8 +2826,8 @@
     },
     {
       "path": "packages/pdf/src/font-embedding.ts",
-      "bytes": 26232,
-      "sha256": "01adb5d2dcd30ae046f68b80bc48d7666981c1c12a684d438bd8da6033e5b639"
+      "bytes": 25630,
+      "sha256": "261d2b92c0697395e04ae229d0a977e75929c9382852c6948a7e193ee72b785e"
     },
     {
       "path": "packages/pdf/src/font-source.ts",
@@ -2836,8 +2836,8 @@
     },
     {
       "path": "packages/pdf/src/harfbuzz.ts",
-      "bytes": 3569,
-      "sha256": "1597f4b120655b452f0ab55ca5f8d3d9c27ad9815b6cba2e571b58731d64780b"
+      "bytes": 3208,
+      "sha256": "01ab65da4d8b090d497ad037b47661427c1b3de055c8fade0a537c56f3d995d5"
     },
     {
       "path": "packages/pdf/src/helvetica-widths.ts",
@@ -3016,8 +3016,8 @@
     },
     {
       "path": "packages/pdf/src/phase9-stream.ts",
-      "bytes": 2239,
-      "sha256": "5123c42686c0ded8804ca058a91aae710691b90f18511abd202d8836dc1292b4"
+      "bytes": 3964,
+      "sha256": "7234eba149c91f21d1c1578426cd065ca57a9dee3308d91059c4ac4157cdae6f"
     },
     {
       "path": "packages/pdf/src/phase9-types.ts",
@@ -3290,22 +3290,22 @@
       "sha256": "c00a807b31e87d2c7e07578062c6fdffa2b19ac5c1fafffd8abb799928c68086"
     },
     {
-      "path": "packages/pptx/dist-pro/accessibilityRemediation-APWTKLT5.js",
-      "bytes": 2956,
-      "sha256": "466ab7e178049eb1b40fcdec897d49cf070c4368ab852498124a68eec0e70e32"
+      "path": "packages/pptx/dist-pro/accessibilityRemediation-CUNM3WQE.js",
+      "bytes": 3193,
+      "sha256": "f706f0501826caac949713306e651ea40977b1cd5695e8da69ea7bfc1eba8ac4"
     },
     {
-      "path": "packages/pptx/dist-pro/accessibilityRemediation-APWTKLT5.js.map",
-      "bytes": 5319,
-      "sha256": "75b7a6ee00922d7825b8c281dcefe66ee9d3eb2146835cf3e199b36365dc4fa5"
+      "path": "packages/pptx/dist-pro/accessibilityRemediation-CUNM3WQE.js.map",
+      "bytes": 5323,
+      "sha256": "e66da29dd4dd7694013daddb68652f1e87c7b5441674111e877b1971b6e58032"
     },
     {
-      "path": "packages/pptx/dist-pro/accessibilityValidator-UJ6Y7V4G.js",
-      "bytes": 319,
-      "sha256": "2a11c5815f51a608358ab38cf572c76b6e94ee9a8214025d75d47e5161dfc5df"
+      "path": "packages/pptx/dist-pro/accessibilityValidator-3JEASF6O.js",
+      "bytes": 556,
+      "sha256": "31466a1dfa79079f82617c57fee4100f8c66cd4da64bf170e2ed7c8ceede0513"
     },
     {
-      "path": "packages/pptx/dist-pro/accessibilityValidator-UJ6Y7V4G.js.map",
+      "path": "packages/pptx/dist-pro/accessibilityValidator-3JEASF6O.js.map",
       "bytes": 93,
       "sha256": "ed562b0bba7ee7214e56ac7f728054b3496bec4597c94a4eb7b4179e6f5cb1c9"
     },
@@ -3445,444 +3445,444 @@
       "sha256": "4644c81b86ec9caaa76b634889968ed3c4f4f52f054855933acc7c2b21e53b0f"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-2W7D7VOC.js",
-      "bytes": 6888,
-      "sha256": "50b5445c1c3b3363111b8ea222ab6fc3e3267d0d9bb3639b88577f5521c7cd76"
+      "path": "packages/pptx/dist-pro/chunk-2SWG4VB5.js",
+      "bytes": 23957,
+      "sha256": "098a93a11f295310128f73b14397202383c9703911cc75ebfccb75080bfa8449"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-2W7D7VOC.js.map",
-      "bytes": 13606,
-      "sha256": "f74bf8e2fd394a36356c518ef4a83679118bb13957279c0a954ab89cd9ede07f"
+      "path": "packages/pptx/dist-pro/chunk-2SWG4VB5.js.map",
+      "bytes": 48376,
+      "sha256": "ff3454be199f63fbaff894eaffee8b7135e29cac3391eb54c1d4e3d4e8466fc6"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-3MAFQYVW.js",
-      "bytes": 18608,
-      "sha256": "d1ac2c8353a591aa531c22eb0de13e19becef262ce4017ff94a6d916f6025698"
+      "path": "packages/pptx/dist-pro/chunk-3VBGXE67.js",
+      "bytes": 519070,
+      "sha256": "abad5f3c7b459d4b5852f0ae714c19ed6f0e89be3c06f75c8563b656fa941cb4"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-3MAFQYVW.js.map",
-      "bytes": 35720,
-      "sha256": "3fbaecd12e1e8367f0cce2036500846eae94cd0c938478272699a0e90881eb48"
+      "path": "packages/pptx/dist-pro/chunk-3VBGXE67.js.map",
+      "bytes": 919507,
+      "sha256": "15709ca95908b14af7ec5ccf72ebf156315c2fd1d6fdb6077a9550025fe0d5d0"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-3O47XGMU.js",
-      "bytes": 1410,
-      "sha256": "a7934305d10830a7e582f6d8ede284473ff67d6ea9cccd88d4e71a0e15d13bf0"
+      "path": "packages/pptx/dist-pro/chunk-47T2WMZG.js",
+      "bytes": 10314,
+      "sha256": "b1ddc53e87ee867c89f9d833d2a50e054b5db888f2bb9a72ddb62bc1e3e2f697"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-3O47XGMU.js.map",
-      "bytes": 2814,
-      "sha256": "0a94c1edc32ab4efb427735814ad0600089dbce2d8ec7adf9eec602cf455a061"
+      "path": "packages/pptx/dist-pro/chunk-47T2WMZG.js.map",
+      "bytes": 23553,
+      "sha256": "e8d5a8f7d85789c2c08bf9f006771775c8a9a7ff2d4041ce3aacb42de643ae7d"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-4IGUCOJJ.js",
-      "bytes": 300343,
-      "sha256": "4c2f4a8294b223d71fd85fe0c2fc2789e722f074ac6ad62a86fbcdd3d4ac91fb"
+      "path": "packages/pptx/dist-pro/chunk-5GZJ6PGT.js",
+      "bytes": 322094,
+      "sha256": "ed6ebda01832f14433c9babaa18c6c7726bc57d4a1264da4b0285cf9aacba1be"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-4IGUCOJJ.js.map",
-      "bytes": 124065,
-      "sha256": "64affee7fe166ce9c23404715934f4dd2eb19d612b7190a7e1dcdb448bf780de"
+      "path": "packages/pptx/dist-pro/chunk-5GZJ6PGT.js.map",
+      "bytes": 669925,
+      "sha256": "1362acec211800552e8641f69d1e2552f18cd0b74a8ca9faba2df6624ac88b77"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-52PUIYV5.js",
-      "bytes": 11973,
-      "sha256": "dfc058a85495335d391b4b8aa170eb33922cb9c35b862e59d8003a1dd8f3916f"
+      "path": "packages/pptx/dist-pro/chunk-5QLWVG23.js",
+      "bytes": 300580,
+      "sha256": "fd1f71420125d2a180706eccab47c6effb3f9d9bc08083181087e908bd548471"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-52PUIYV5.js.map",
-      "bytes": 24704,
-      "sha256": "1b9e0b49f569c6ea15c552557721e35456c385175320b32a44bb1acf1ceaf0d3"
+      "path": "packages/pptx/dist-pro/chunk-5QLWVG23.js.map",
+      "bytes": 124069,
+      "sha256": "c1eb4e7460045b3829addf9321a7ede44efd194d48551e6e0f055287f72acb08"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-56BKZXEH.js",
-      "bytes": 23720,
-      "sha256": "2b8ed858ed77eb52c552de4c9a091d35ee1e197059d66c30265549cfa9de6123"
+      "path": "packages/pptx/dist-pro/chunk-7BYJLCSM.js",
+      "bytes": 2974,
+      "sha256": "75bf80cc56560e5ccf1970a4e1427afc0aeaf7f769959f25b344b30ac5ad49a6"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-56BKZXEH.js.map",
-      "bytes": 48372,
-      "sha256": "89b8fba5b3dfe34ca9e3e69c82aeff0361d669e50415ff6499fb9e6bd03deca3"
+      "path": "packages/pptx/dist-pro/chunk-7BYJLCSM.js.map",
+      "bytes": 5493,
+      "sha256": "ab594633d072b73bbb87cf9403d49ecbb7b934dbefd307bc3522c3cce464ab39"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-5CDPNZPI.js",
-      "bytes": 147968,
-      "sha256": "fffc193b6a4ec92cb0925b7ba663460b9f1b0c6bcb20c2c9972167472f50ef76"
+      "path": "packages/pptx/dist-pro/chunk-7V4ECWKA.js",
+      "bytes": 57038,
+      "sha256": "013a56e0302a74ebddffcca9b0cfc127cfc234731670a8bf0f18ede9443d0075"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-5CDPNZPI.js.map",
-      "bytes": 268742,
-      "sha256": "f955d44b9b8fd3895bda310942fda49a86c357871e536a2a745875fc4af3f439"
+      "path": "packages/pptx/dist-pro/chunk-7V4ECWKA.js.map",
+      "bytes": 88613,
+      "sha256": "7bf1696ecf8c50bd0887fe585e01419627ad046b69350f57498a717a558dffde"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-5JIO2X5F.js",
-      "bytes": 69755,
-      "sha256": "46bdadc1f08de84d3b635b5de602e8a915ccec60806bf88eed1e876434ed3c5d"
+      "path": "packages/pptx/dist-pro/chunk-AIRKBIKH.js",
+      "bytes": 148205,
+      "sha256": "158f71e75f92ce1351f94b17a578a8fe3cb46f4fc650d37f8022a4025a33c073"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-5JIO2X5F.js.map",
-      "bytes": 128575,
-      "sha256": "43a1e2e30c569feaada8e8fef048111317eb557481de5aa76909c6b6e52f90f4"
+      "path": "packages/pptx/dist-pro/chunk-AIRKBIKH.js.map",
+      "bytes": 268746,
+      "sha256": "d9f1395909a53dbc371b98d92ae45c903bdf7663ab01e825b1a8dec9978a325d"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-625BFJJW.js",
-      "bytes": 2737,
-      "sha256": "c82e4b5c00f76f370114c408b6aab40a49d4a1d19126da8aa32e0d67eefe57af"
+      "path": "packages/pptx/dist-pro/chunk-BBZLJBOA.js",
+      "bytes": 473650,
+      "sha256": "f8e347f4600192c72467f2c5431ebc7ae81f22ba730ca6e8890bc46151c73cc9"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-625BFJJW.js.map",
-      "bytes": 5489,
-      "sha256": "85a942da17a71141dcc7a1c173705aee0e40a03c4138e4f7e032a6f222ae9f66"
+      "path": "packages/pptx/dist-pro/chunk-BBZLJBOA.js.map",
+      "bytes": 1134854,
+      "sha256": "8bb31de20c76c31a39f03f101eb9c81c097780284f16c407ceac1009d2d50cd6"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-66EJ4WIS.js",
-      "bytes": 5422,
-      "sha256": "7f9135f97c95dd64e268806680381a4359e5c0ee28b152b4b29e211dda83a3b0"
+      "path": "packages/pptx/dist-pro/chunk-BM2OZOTI.js",
+      "bytes": 68015,
+      "sha256": "7c4508bee7bd14758045370489f658e6aa68d5a52969878dc84ed5925015a455"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-66EJ4WIS.js.map",
-      "bytes": 9185,
-      "sha256": "c6e33804b4f4f405469b058ae6846a84c7d0e4bd369221285a26d5667f10b72f"
+      "path": "packages/pptx/dist-pro/chunk-BM2OZOTI.js.map",
+      "bytes": 137228,
+      "sha256": "9ffab9de5281ee459dcc82dd1b2f7707493db1c55ce68ef0c8eea5941bbe5c25"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-6AZ326SJ.js",
-      "bytes": 61069,
-      "sha256": "bc768ee7ace1129a18bb7b4ea975b5800922fb7ce4dfef6dca4cfda49a6f921d"
+      "path": "packages/pptx/dist-pro/chunk-BVMCDLHW.js",
+      "bytes": 7125,
+      "sha256": "777bae8aee8a99576f6dade24481c08412a1e2ca19450dcb816bd469ec45c613"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-6AZ326SJ.js.map",
-      "bytes": 112501,
-      "sha256": "0eee18fb11d5639e9efa8db24c112203b83644b5595ee63e2a6a46b2315bf721"
+      "path": "packages/pptx/dist-pro/chunk-BVMCDLHW.js.map",
+      "bytes": 13610,
+      "sha256": "adc50866711b1bac31461a77537341b4988540a6de7cb304088d85f2f7656ed0"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-6QXZRXYS.js",
-      "bytes": 56801,
-      "sha256": "9aa59a721cbf7ae3f633a1bd2d55c2219529a0641cb74f212221da3c08ffdd3e"
+      "path": "packages/pptx/dist-pro/chunk-D2UD22HS.js",
+      "bytes": 12210,
+      "sha256": "6a260fb7148f16058183c5f732955544013f5e1cfd73a80a382aada7f53b799c"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-6QXZRXYS.js.map",
-      "bytes": 88609,
-      "sha256": "24b6ba09f006a81b756945d09d57a4953541705a618f0a222c3d76420ca438c1"
+      "path": "packages/pptx/dist-pro/chunk-D2UD22HS.js.map",
+      "bytes": 24708,
+      "sha256": "08d5f6c952bec82531cefa83df1179851901be0a1b11069e835d89ec4309d24d"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-7XPPO7MM.js",
-      "bytes": 31144,
-      "sha256": "8b3300e60598c9de3def0d804826f14d2cabcf8332fbdeb6234449d8aed82756"
+      "path": "packages/pptx/dist-pro/chunk-DX2BYFTQ.js",
+      "bytes": 89034,
+      "sha256": "e1e729ae1d74bb819ce0bcb2dbc509a44ba826fbabcfaf0028c5aa2e0c4ee53c"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-7XPPO7MM.js.map",
-      "bytes": 61972,
-      "sha256": "1fbd3eecdf41972c7ed10bf1eecb04659b4e794970bb2d272d38bbe44c03894e"
+      "path": "packages/pptx/dist-pro/chunk-DX2BYFTQ.js.map",
+      "bytes": 84289,
+      "sha256": "01bff746384c7ca57d95eaac641453d84d34ce4ea275cc9218c2e0dd2082da54"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-ADNRG6JQ.js",
-      "bytes": 6727,
-      "sha256": "01b78d7d753fbe86c7a7a7f5a262db81b30b0b9c5abf95936351fe7378187731"
+      "path": "packages/pptx/dist-pro/chunk-E7KL3QDK.js",
+      "bytes": 106440,
+      "sha256": "c81436c4e6a12778e318482add78f0278e151d71498eb797d1bf51d07f0704b8"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-ADNRG6JQ.js.map",
-      "bytes": 14149,
-      "sha256": "acd22599508c8a86ee9d235e4fa6a552e0ff959fdafe329afe76101824a36f65"
+      "path": "packages/pptx/dist-pro/chunk-E7KL3QDK.js.map",
+      "bytes": 212791,
+      "sha256": "ea803eb3054a8b0b4c3aebe3e2febffca51a08ece33c2d7c9045b535cfb2576a"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-BF4WWWMZ.js",
-      "bytes": 8693,
-      "sha256": "0b3cf3183f7546a88106a2ebbdc14952348368a5bb73826127e3b145d95c58dc"
+      "path": "packages/pptx/dist-pro/chunk-ERFVAWW7.js",
+      "bytes": 2100,
+      "sha256": "80a14777a0db1576f59b85713c2057fb773067f374b267a6aeb8e0a705bb6cb4"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-BF4WWWMZ.js.map",
-      "bytes": 19322,
-      "sha256": "6bee9765f872166b6e503ccbca0a59604efd942e5534987f10f352e7895212b0"
+      "path": "packages/pptx/dist-pro/chunk-ERFVAWW7.js.map",
+      "bytes": 4188,
+      "sha256": "fc2ba7551cbf2d11734c9e96ef6a89e82c8dbea35eae725a22a972639ed645a6"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-BKM7I4JR.js",
-      "bytes": 106203,
-      "sha256": "b8abc2816b9b8650cccb1e390b016e45b350580a2786cbd36512589fe21d029b"
+      "path": "packages/pptx/dist-pro/chunk-GWTKZPGY.js",
+      "bytes": 31381,
+      "sha256": "d6f56b141b79c1664dff5603f0f59974b01bc649f0c78509ab326687e4087d41"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-BKM7I4JR.js.map",
-      "bytes": 212787,
-      "sha256": "633c1c5891fdc6eab860ea026a3337882b288f1750570b1f0075c271b2837317"
+      "path": "packages/pptx/dist-pro/chunk-GWTKZPGY.js.map",
+      "bytes": 61976,
+      "sha256": "2700494757de65a4c4fab9c6c70fb7a5d474d7e28379a9b33721b04a6d909650"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-DRWOFXA4.js",
-      "bytes": 61092,
-      "sha256": "548bcdef63eaedb4ed50b77e1f897c7377998a4e1ba6eb954ca23917ea66103f"
+      "path": "packages/pptx/dist-pro/chunk-H3JJGCUR.js",
+      "bytes": 303812,
+      "sha256": "ab482ee663a1e3285b9328559d80d4279961ab967e3662e46db8f1ba3f308099"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-DRWOFXA4.js.map",
-      "bytes": 182683,
-      "sha256": "89c94beb64137ad88354d8df14ef7ecf9cba2b81f93e2179834905057af0ae46"
+      "path": "packages/pptx/dist-pro/chunk-H3JJGCUR.js.map",
+      "bytes": 550960,
+      "sha256": "ead7127692fa6d729023c93a027ab208bd86916eabec340521d556064e4b80fc"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-DYXX63XE.js",
-      "bytes": 88797,
-      "sha256": "bb551c6f4f1ca1c7c9f3fda3bca00f67d038dc8b803a96c9665be1247c8c845c"
+      "path": "packages/pptx/dist-pro/chunk-HW526CCL.js",
+      "bytes": 9226,
+      "sha256": "ede445d2092fda0947fcd173a0b7e391a414427967f63143c7f9e5957081b75c"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-DYXX63XE.js.map",
-      "bytes": 84285,
-      "sha256": "d85db96edd71d203190a5fef6fe5643a8fb96c306a198c2a689123546210b58c"
+      "path": "packages/pptx/dist-pro/chunk-HW526CCL.js.map",
+      "bytes": 16722,
+      "sha256": "68f69a0b67fcb6c90aff90e4def15d26919292c6cfd882078e1ab00583abce43"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-EE5SX3QK.js",
-      "bytes": 28576,
-      "sha256": "62368a1286113f65cc000c2595d3704a13407d18286094e5ace22e902c8344cd"
+      "path": "packages/pptx/dist-pro/chunk-IC35FUMW.js",
+      "bytes": 16725,
+      "sha256": "7e686bbfcb50be2bde6df3b317397b9e25e5eaa48140f49ed47e15824d9c9397"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-EE5SX3QK.js.map",
-      "bytes": 59666,
-      "sha256": "9cc25c0059e4303c27cbe6f0f417c3d75edef23fa3112dec81a64485c05f87da"
+      "path": "packages/pptx/dist-pro/chunk-IC35FUMW.js.map",
+      "bytes": 33612,
+      "sha256": "6bd4de80d880fdb758fdad43b93c810efe2007f6b54d9fe802c3dbc7f4a0dd2c"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-EEQDAC67.js",
-      "bytes": 10077,
-      "sha256": "c0cfe216d4bffb75a6dc9cb7ac1337891156f8d7609cfbc9a5ecaa6cd812e2d2"
+      "path": "packages/pptx/dist-pro/chunk-IQGCGBYO.js",
+      "bytes": 2555166,
+      "sha256": "40ba8a8d8d77673ceff747332018342a685615120fcdd54319efe893e1398eb9"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-EEQDAC67.js.map",
-      "bytes": 23549,
-      "sha256": "cb07a7f3e51fa9ad9336b3602bf8ef3176ce83dfb72ac29dc13108d7c9e90e63"
+      "path": "packages/pptx/dist-pro/chunk-IQGCGBYO.js.map",
+      "bytes": 3147838,
+      "sha256": "701cb12cfca1cd02aa460b569f885b084501c2cbebff5cd7da5d97b6a16dcaaa"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-FL4YUJCS.js",
-      "bytes": 321857,
-      "sha256": "744d7b0f3e43dd7479187d97f00ff42eb5477cc2bd60fdf8546acbb5f563b139"
+      "path": "packages/pptx/dist-pro/chunk-JRK4KXDV.js",
+      "bytes": 11577,
+      "sha256": "34c4bbdfe0301c95eb59bf34295dc55a9770bd2e6baba59fc7464530349d4dd0"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-FL4YUJCS.js.map",
-      "bytes": 669921,
-      "sha256": "478620ac56f5fed21531d273c2a6eefe19bc567952d102c4839a955f0db993b5"
+      "path": "packages/pptx/dist-pro/chunk-JRK4KXDV.js.map",
+      "bytes": 21999,
+      "sha256": "5e951859a6adb74a79768bdf9222c79388b21a88ba215c560a1824a73051ec02"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-FUBHCOLD.js",
-      "bytes": 35519,
-      "sha256": "9ed02795bc8b1c6bd78074cb135242cc40a5bb0d2f01836c03b5f9286c7bbf1c"
+      "path": "packages/pptx/dist-pro/chunk-JXF5SD3S.js",
+      "bytes": 45580,
+      "sha256": "8e687825717db7ae4bb2726745da30a1c5ad6cc9d88d3a7f19218390fe4644c8"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-FUBHCOLD.js.map",
-      "bytes": 66956,
-      "sha256": "beb6ea2911a706353003d6b9f3a6430dfd9bdf149ca56ba2f59fa122b8d4956e"
+      "path": "packages/pptx/dist-pro/chunk-JXF5SD3S.js.map",
+      "bytes": 127908,
+      "sha256": "c1f9f6d941679654c6de1ba4ea55801398d8294af05438d6fcaf3214dfefac6a"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-GRNMJIZR.js",
-      "bytes": 11340,
-      "sha256": "17c01362bb7fe655766def6025c2b56f93dc83357b863ffb85e8039de3b8ee94"
+      "path": "packages/pptx/dist-pro/chunk-M2YFSO2D.js",
+      "bytes": 11884,
+      "sha256": "2b37b2d38cd6af7608c0bf249f3e508b8f521e0a29288446e7b617f54faeb129"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-GRNMJIZR.js.map",
-      "bytes": 21995,
-      "sha256": "69b71e9f4c89931b51af99c3807af65b884367a9391701691654ab9f972fccb5"
+      "path": "packages/pptx/dist-pro/chunk-M2YFSO2D.js.map",
+      "bytes": 23211,
+      "sha256": "0ca39b89401b30e9987a4db0c03b317d5dc568e9cf8abc84d83a996011f3be71"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-HZBNNQK3.js",
-      "bytes": 1374,
-      "sha256": "dd0736a498eec32b478abf3201069eaf8707266eb2e1cb8246d9e3b5362ee083"
+      "path": "packages/pptx/dist-pro/chunk-M3B54ZA7.js",
+      "bytes": 61329,
+      "sha256": "44423b1c1337d69812056ea1f3e13b95051c68344a5e31dce8f7406ed0287fed"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-HZBNNQK3.js.map",
-      "bytes": 5104,
-      "sha256": "5ffb4017539845f224dfb1119f7cd496045089f88e086c5267447afb154ceb54"
+      "path": "packages/pptx/dist-pro/chunk-M3B54ZA7.js.map",
+      "bytes": 182687,
+      "sha256": "5330621b186fa0679d7038bb94614fac13941bbc33db3537a240aaf6343d3394"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-JHKUGPWV.js",
-      "bytes": 15650,
-      "sha256": "310d147552baf2d4f3a9a958d80a6a7ecfb59f39081fb710ad48c67fcb2581e9"
+      "path": "packages/pptx/dist-pro/chunk-MP76HATA.js",
+      "bytes": 14756,
+      "sha256": "96d400c8cb7870ec931ce76c11906b7a270109038dda681122d817bbc7c0dd28"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-JHKUGPWV.js.map",
-      "bytes": 35963,
-      "sha256": "00b910122f503f573e29da0a98578cb86b5c6d0bff45aca2228f1b4d8d464792"
+      "path": "packages/pptx/dist-pro/chunk-MP76HATA.js.map",
+      "bytes": 30654,
+      "sha256": "54d9049d137215e9773ed645d111d07146486575ece72dbabb94f12512abe10e"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-JXY3OJQ6.js",
-      "bytes": 1519,
-      "sha256": "210d4e3c7d4b71551671196eca83374d83a05320cf5317e20fd1b6158db91d82"
+      "path": "packages/pptx/dist-pro/chunk-MV7M6AY2.js",
+      "bytes": 1611,
+      "sha256": "bf5a1b29524635a56b37e8d05040fd7551cabe9476c3aacde872ea2110e8ff1c"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-JXY3OJQ6.js.map",
-      "bytes": 6287,
-      "sha256": "5ddaef0c290cd0c12269423c34ff5434b77e5ca60737c3e30ecb15d15535d144"
+      "path": "packages/pptx/dist-pro/chunk-MV7M6AY2.js.map",
+      "bytes": 5108,
+      "sha256": "4a264f2f0fa4ab703105d88f91bf7ee265369e29ce2e3d128c9f62741032b348"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-LNYSZAHA.js",
-      "bytes": 8989,
-      "sha256": "c8806123b817312bcfcbbd83813613bf2040cd416fe1390bac203653022900bd"
+      "path": "packages/pptx/dist-pro/chunk-MVPJ57UB.js",
+      "bytes": 35681,
+      "sha256": "7b15b7afa9f54f2dbd4ab51fa800d6827fd138c433d0663bd4f790be320bf8c2"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-LNYSZAHA.js.map",
-      "bytes": 16718,
-      "sha256": "661b0ab5852bf41a3e42e5187229f49b1cd286f430cffa3d959e1a09b0c8f753"
+      "path": "packages/pptx/dist-pro/chunk-MVPJ57UB.js.map",
+      "bytes": 66668,
+      "sha256": "7606f4448aa6f173e60b43a9f4b02eaf5b6a155a0594689fdc4b395f1abaf723"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-MA6IZLCE.js",
-      "bytes": 1334,
-      "sha256": "5efafb5024899531fbcb2e3d369e4fd75bbbfbfcf3b5aab75e69eab01aeffce3"
+      "path": "packages/pptx/dist-pro/chunk-NK2A5B54.js",
+      "bytes": 69992,
+      "sha256": "be32926da2dc6eb5ebbf7f0feeef96e0ee0a895b9dfcd227cf9d184f210c3e44"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-MA6IZLCE.js.map",
-      "bytes": 2976,
-      "sha256": "017b1fce7c7a1b5b3b74017bd7f813ffa92b151e7201fc096837f8ea89c1a719"
+      "path": "packages/pptx/dist-pro/chunk-NK2A5B54.js.map",
+      "bytes": 128579,
+      "sha256": "cea3f938dc560f40ea0e8766e874203514ed4f8874e4bd402954e29d32a1186c"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-MOLI65TP.js",
-      "bytes": 473413,
-      "sha256": "23a0b9d3a3aed5ccbd4282acb870e764785c95e65be4eced5aaf18dd96acccad"
+      "path": "packages/pptx/dist-pro/chunk-NV4VJEND.js",
+      "bytes": 61306,
+      "sha256": "f000fe43d19ad22d627a938e77b3ee21ae040046535caef88fa129b93f491f72"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-MOLI65TP.js.map",
-      "bytes": 1134852,
-      "sha256": "9f5fa9b5575904412cfb85da7f968bde17a521b776cad90b460f445a5599567b"
+      "path": "packages/pptx/dist-pro/chunk-NV4VJEND.js.map",
+      "bytes": 112505,
+      "sha256": "4647b2294743d63ca67a3b17e5eac51d337089592f3c20683d2612d90ec78c72"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-OV2ZPS4E.js",
-      "bytes": 303575,
-      "sha256": "b03ddbdc71a9303cb78afff7558d1340daa7b2339f7ebef90856c1ff323d9a8c"
+      "path": "packages/pptx/dist-pro/chunk-R2RGXBYY.js",
+      "bytes": 18845,
+      "sha256": "a6f3724a92a9e3a18fdc0972dcb4810db6750a56e311d651af95f4b575186262"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-OV2ZPS4E.js.map",
-      "bytes": 550956,
-      "sha256": "71b3254e521fdd504cc09bf9659beaeb970b9a2974968bf5a095f7818a354cb4"
+      "path": "packages/pptx/dist-pro/chunk-R2RGXBYY.js.map",
+      "bytes": 35724,
+      "sha256": "b6925361110f4ebbc68275e4b537243a089028ce46a6eddcaaab8df6568a87cd"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-OWC7QHPZ.js",
-      "bytes": 2049,
-      "sha256": "5e758d6383a75157d5b029eb079ff05283362e9a83dc897cc03d9969a51cd626"
+      "path": "packages/pptx/dist-pro/chunk-RQNEGT4U.js",
+      "bytes": 1835,
+      "sha256": "1352191b87dc48b6bc752b0cc937e15d0167705ff9c0eaa75df15c866738e83c"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-OWC7QHPZ.js.map",
+      "path": "packages/pptx/dist-pro/chunk-RQNEGT4U.js.map",
+      "bytes": 4238,
+      "sha256": "95b16acec213abc1ee3c34281cfbc9cbaa68081ee6f74c77f424ba2b7912079b"
+    },
+    {
+      "path": "packages/pptx/dist-pro/chunk-SFVKAOLH.js",
+      "bytes": 1756,
+      "sha256": "95f487b19e6b83790e45baaf91bb6c3a6e54df2c92e60581afcbd1d35247e068"
+    },
+    {
+      "path": "packages/pptx/dist-pro/chunk-SFVKAOLH.js.map",
+      "bytes": 6291,
+      "sha256": "18c3f9e73e3f56c50317f1b46ef561493498654a0834e98ed71d42ac7c2b870f"
+    },
+    {
+      "path": "packages/pptx/dist-pro/chunk-T7AK3EDB.js",
+      "bytes": 115111,
+      "sha256": "c002edfc660ef2498e4b91e07c7b8f37c37d9d44ccd8d6b91a7da85e86403533"
+    },
+    {
+      "path": "packages/pptx/dist-pro/chunk-T7AK3EDB.js.map",
+      "bytes": 209880,
+      "sha256": "baa2803951fb4be9b23072feedf180519b41a8e6301dc501405f04bc2f57793d"
+    },
+    {
+      "path": "packages/pptx/dist-pro/chunk-TM4NN2PA.js",
+      "bytes": 5659,
+      "sha256": "7c660da95fec4fb3b510ac143d5bd1de892f78468f497921856906d631e11429"
+    },
+    {
+      "path": "packages/pptx/dist-pro/chunk-TM4NN2PA.js.map",
+      "bytes": 9189,
+      "sha256": "9fdd49643125d3404d860c85b60adfef913113ff8806daf3a1b7d63293829493"
+    },
+    {
+      "path": "packages/pptx/dist-pro/chunk-VCCW5PWJ.js",
+      "bytes": 1571,
+      "sha256": "681fc3ede302ba9c2cc8ac29b1e569ea700f5c235edba4c69103880c8169a4df"
+    },
+    {
+      "path": "packages/pptx/dist-pro/chunk-VCCW5PWJ.js.map",
+      "bytes": 2980,
+      "sha256": "f7eed64ab5116c382260c7e4edae56c8a2bcb52b3eca0d71a226171fde4db412"
+    },
+    {
+      "path": "packages/pptx/dist-pro/chunk-VIXD5LXH.js",
+      "bytes": 2286,
+      "sha256": "29c6340197059728bbfc578aee5d68583fbf888c984cbca5b6263869a645778e"
+    },
+    {
+      "path": "packages/pptx/dist-pro/chunk-VIXD5LXH.js.map",
       "bytes": 93,
       "sha256": "ed562b0bba7ee7214e56ac7f728054b3496bec4597c94a4eb7b4179e6f5cb1c9"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-P5JGOT4P.js",
-      "bytes": 1958812,
-      "sha256": "10e16406751e047bae0fe6c2c013bf1da95cdde710214e5670f055c23266aceb"
+      "path": "packages/pptx/dist-pro/chunk-WVTVGR3K.js",
+      "bytes": 5801,
+      "sha256": "5d24a2aa8278acc6db34f3eece926a773f748e1fe6e6cb606c0dce85bee91eb5"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-P5JGOT4P.js.map",
-      "bytes": 3029269,
-      "sha256": "5687576acbcb376dd73bee485d484c77c74774cd2aef305ccaa131f6f38b825c"
+      "path": "packages/pptx/dist-pro/chunk-WVTVGR3K.js.map",
+      "bytes": 13755,
+      "sha256": "eadf1a3939dbd755c1f595d8f669d3d0445ae3d03d9d772dc809f2eaf58d6510"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-PQOYJWL5.js",
-      "bytes": 67778,
-      "sha256": "d90dcdf46dc8797a50b6cbd31836ca7ef26e373233b56eef5f06dc3ee0ed9555"
+      "path": "packages/pptx/dist-pro/chunk-X4XRBAXF.js",
+      "bytes": 15887,
+      "sha256": "0ffe97268fc0f4424a06fc801a9a8ff895be932b78391a357f62af74cd720a16"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-PQOYJWL5.js.map",
-      "bytes": 137224,
-      "sha256": "e465192387560ec29babf7e150f29fcd1dbd1e46fb6dcc1f1f82cb10cebceee8"
+      "path": "packages/pptx/dist-pro/chunk-X4XRBAXF.js.map",
+      "bytes": 35967,
+      "sha256": "8646454a5d739ff0c03b1c4a9b15bf5e905c9a97d0376c1a9dd66dab2a580be4"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-PUKAI6X5.js",
-      "bytes": 1598,
-      "sha256": "babe88c887fea7fc222984b3dd92638ac03aec7de1f35bf38c7bb4eddb202329"
+      "path": "packages/pptx/dist-pro/chunk-XU7YQ73E.js",
+      "bytes": 1647,
+      "sha256": "b5c42d66a1a2698d39cc7c7c9a72928c153803c46b190a5e182da6595e8819eb"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-PUKAI6X5.js.map",
-      "bytes": 4234,
-      "sha256": "76d8d8c336a3e798efc12e77112b48ec0d6707268f3fdd7202f68b6049749cd1"
+      "path": "packages/pptx/dist-pro/chunk-XU7YQ73E.js.map",
+      "bytes": 2818,
+      "sha256": "3607a63a76b50e8746fd26bc8be608f9b7f3136abf9405e815bc29a6a5214f14"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-QSVRDIHM.js",
-      "bytes": 1863,
-      "sha256": "b0e4e7321d4caccb2c3c8e313d2b3db75615c2fac0073c4f63e427c2c3d656a9"
+      "path": "packages/pptx/dist-pro/chunk-XVSKCRKS.js",
+      "bytes": 6964,
+      "sha256": "0560eb1f51467ff249520da8ecb033bce292caed0dce0ca9a3a4510161753394"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-QSVRDIHM.js.map",
-      "bytes": 4184,
-      "sha256": "d28933372edded4e9fd93144370d71aef4243908b4947da44ba31c370cb798bf"
+      "path": "packages/pptx/dist-pro/chunk-XVSKCRKS.js.map",
+      "bytes": 14153,
+      "sha256": "0435e50636e0763a437a5e387a6af2b49d314ec43384e8066ee1cd26fe21a1d2"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-QZ7YLVPL.js",
-      "bytes": 11647,
-      "sha256": "614af48e4942045639ca53dc36c52e89eea1742c5386b5dd49a0c606bebd20b4"
+      "path": "packages/pptx/dist-pro/chunk-XZ4AHITT.js",
+      "bytes": 8930,
+      "sha256": "7b377323c8a96feaf5db72081bad99357cbb181df40ecc46bf7596e1f4996403"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-QZ7YLVPL.js.map",
-      "bytes": 23207,
-      "sha256": "2e3d89ac4434c44066ffb07407846de3e01ab25a8d99b25b9b44ba4727e0d63c"
+      "path": "packages/pptx/dist-pro/chunk-XZ4AHITT.js.map",
+      "bytes": 19326,
+      "sha256": "cc52994523fc795413c08e507bd2d74e94e36c01976c0ff8e55b607cd75753cb"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-S4LZHR2L.js",
-      "bytes": 45343,
-      "sha256": "263711572fb623506b7b789cfd51d7fd48316a8a2e626aa9ad549bc661598487"
+      "path": "packages/pptx/dist-pro/chunk-Z2EIZERW.js",
+      "bytes": 28813,
+      "sha256": "70d9a4a18b443e6be67188291ebfd0c34afbc2b7e2dfdb81b498e1391bd161d5"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-S4LZHR2L.js.map",
-      "bytes": 127904,
-      "sha256": "fbc40d18b64c6b6ecc929a8ecfb41c8a374774f6ba7818e28285ac34fab3c632"
+      "path": "packages/pptx/dist-pro/chunk-Z2EIZERW.js.map",
+      "bytes": 59670,
+      "sha256": "e5aff9f59fad164cc9c5e5465e75f27008930a22e4456c62be41c619980cf79f"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-SHJL7Z52.js",
-      "bytes": 518833,
-      "sha256": "1f6411c17721f23da863c972ac125087a19b992377e41f37929009e76ace021f"
+      "path": "packages/pptx/dist-pro/constants-275BAFIR.js",
+      "bytes": 1151,
+      "sha256": "6a13767ac69bb7f8eda818652b75e106b0453c838cdb36aa0fa249f82250e7c9"
     },
     {
-      "path": "packages/pptx/dist-pro/chunk-SHJL7Z52.js.map",
-      "bytes": 919503,
-      "sha256": "fe8f1631958cc690cd3e57ad5e01871092131237833341a8f5a819ce7ae31e05"
-    },
-    {
-      "path": "packages/pptx/dist-pro/chunk-SV4OEGHV.js",
-      "bytes": 16488,
-      "sha256": "c5f4a1012cd7eb09329be7404bbc214ab95ca3ce1fe4e8ad65076fb6474909ec"
-    },
-    {
-      "path": "packages/pptx/dist-pro/chunk-SV4OEGHV.js.map",
-      "bytes": 33608,
-      "sha256": "b80223c033dc81a097d5bbb03a45a8fb7051fe175ebc93c6117bd79f6da32afe"
-    },
-    {
-      "path": "packages/pptx/dist-pro/chunk-VETY33ST.js",
-      "bytes": 14519,
-      "sha256": "f911b35fd54e6058155ebd63f1a6d8933d0b055026232f421699f03be84d61d4"
-    },
-    {
-      "path": "packages/pptx/dist-pro/chunk-VETY33ST.js.map",
-      "bytes": 30650,
-      "sha256": "8a5bf19ac17c6de7405bfd137b687e50744bce9b5936318b93ea5c6d9f58b77e"
-    },
-    {
-      "path": "packages/pptx/dist-pro/chunk-YWT5KXVL.js",
-      "bytes": 5564,
-      "sha256": "bd52defa5037fa5a714842cb22f0ef6c49c697a78a69bda6383fc95bd8434402"
-    },
-    {
-      "path": "packages/pptx/dist-pro/chunk-YWT5KXVL.js.map",
-      "bytes": 13751,
-      "sha256": "2d96452f0fee24dca37ffb305128c6d5bcabfe2812de877dbc09bb27f0cb0d01"
-    },
-    {
-      "path": "packages/pptx/dist-pro/chunk-ZLZIUC4K.js",
-      "bytes": 114874,
-      "sha256": "6feb9e4c2d6836942a32ed0882d87552dba8bc0cc11884cb546bd24f48394ccb"
-    },
-    {
-      "path": "packages/pptx/dist-pro/chunk-ZLZIUC4K.js.map",
-      "bytes": 209876,
-      "sha256": "c06f1cfcd8f0f7ecc3d8aa22987837502de1813e3fea6fc17246e5c3b819901f"
-    },
-    {
-      "path": "packages/pptx/dist-pro/constants-JPEAVV3N.js",
-      "bytes": 914,
-      "sha256": "95ef9b6ff98d44bfb5f4bc06c3ea97bd7c644063b8066905105f7070dbeadc98"
-    },
-    {
-      "path": "packages/pptx/dist-pro/constants-JPEAVV3N.js.map",
+      "path": "packages/pptx/dist-pro/constants-275BAFIR.js.map",
       "bytes": 93,
       "sha256": "ed562b0bba7ee7214e56ac7f728054b3496bec4597c94a4eb7b4179e6f5cb1c9"
     },
     {
       "path": "packages/pptx/dist-pro/converter/pptx-to-pdf.js",
-      "bytes": 55373,
-      "sha256": "fb89702d327fe978200ad8ebc9ca2639ba238edb9723a2a75d4547a46c11742d"
+      "bytes": 55612,
+      "sha256": "e86d9b29205326367c5b2da989a0f46df57d8442de850058f87f0ae0cc1f39fb"
     },
     {
       "path": "packages/pptx/dist-pro/converter/pptx-to-pdf.js.map",
-      "bytes": 105696,
-      "sha256": "1269cdc17121bc2898c322cbe69c5985955f890a3c4bd5e388f53b621e5f944d"
+      "bytes": 105701,
+      "sha256": "31c37611afefc0b8217ed3f78f51a2bf27baee2eb7f83cc560e1240869201c31"
     },
     {
       "path": "packages/pptx/dist-pro/converter/yoga.wasm",
@@ -3890,19 +3890,19 @@
       "sha256": "47fb4f81d274932184cd19c75ed34f902d13f0519301590789a37f7077977e27"
     },
     {
-      "path": "packages/pptx/dist-pro/echarts-ZBTN5N3H.js",
-      "bytes": 2619810,
-      "sha256": "66825f2d6d0c91ebde87e7988f2e09fe8e4afd3984515d88b169069009f28179"
+      "path": "packages/pptx/dist-pro/echarts-FB6QNPXC.js",
+      "bytes": 2620047,
+      "sha256": "dc3b6162b03869e39ab236756ab653d3942f52bb649d853e1527396647eb33e8"
     },
     {
-      "path": "packages/pptx/dist-pro/echarts-ZBTN5N3H.js.map",
-      "bytes": 5858503,
-      "sha256": "f2c19a3ce71c6b8cd0e645da779279be70d2ddcc593a82be977f75e6a97645fb"
+      "path": "packages/pptx/dist-pro/echarts-FB6QNPXC.js.map",
+      "bytes": 5858507,
+      "sha256": "2ddbd9c811eb2669372f15495b6e01b0cb037e74d511c3d8b334377cd3067c42"
     },
     {
       "path": "packages/pptx/dist-pro/engine/archiveAssembler.js",
-      "bytes": 1391,
-      "sha256": "046ef71d474ad74853575d4db2e15328b9b51d051861a6065325be9d9c5132f2"
+      "bytes": 1628,
+      "sha256": "070bc1f1b2b36356b33815c55b83499a313d4f62ddb1691e1c689e27eb761953"
     },
     {
       "path": "packages/pptx/dist-pro/engine/archiveAssembler.js.map",
@@ -3911,28 +3911,28 @@
     },
     {
       "path": "packages/pptx/dist-pro/engine/previewGenerator.js",
-      "bytes": 723,
-      "sha256": "364363e65747a620c20ebe0d0a8927bd36eacc2f63339ef6bd1d0e852b699c21"
+      "bytes": 960,
+      "sha256": "dfd204ee4e98c0897c98eaab3bddb0543cad643520b5324ce4f166953e1e21d4"
     },
     {
       "path": "packages/pptx/dist-pro/engine/previewGenerator.js.map",
-      "bytes": 1253,
-      "sha256": "b339ef17c1d35c00b12d8edaa2913f8e438af9fd98b1f5176f248f7b6e9c0b27"
+      "bytes": 1257,
+      "sha256": "254308b9e6c98f5790a6ff8646757d366734fea53f882b5650371773acb187f4"
     },
     {
       "path": "packages/pptx/dist-pro/engine/templateMutator.js",
-      "bytes": 15304,
-      "sha256": "c1d68530bbcaa1ab4357de808036d6cee8dfc8aaaefa9a87ff274c766afc6166"
+      "bytes": 15541,
+      "sha256": "586f097ebe50c171e09aae93400a19fbc9a4bd1171ff169ffe0ed4bde0185e0c"
     },
     {
       "path": "packages/pptx/dist-pro/engine/templateMutator.js.map",
-      "bytes": 28475,
-      "sha256": "2b9247fa3ad5429158ec6a4e13b27c27d015963a6deb0b5a52aa24d340d7cb95"
+      "bytes": 28479,
+      "sha256": "a351277ab81ed42cc03cb232855de95ac5fd4b483fcc4860482cf28fc824d27c"
     },
     {
       "path": "packages/pptx/dist-pro/index-lite.js",
-      "bytes": 8348,
-      "sha256": "b079660a793b9ee5edc0b080b738374ff1f7575f888777bf7f391517787ce666"
+      "bytes": 8585,
+      "sha256": "0c22cc866105ad8c8241e82fb6c08716020861705a777b540fe357ae8ff738a8"
     },
     {
       "path": "packages/pptx/dist-pro/index-lite.js.map",
@@ -3941,8 +3941,8 @@
     },
     {
       "path": "packages/pptx/dist-pro/index.js",
-      "bytes": 8343,
-      "sha256": "50504bcc8c2c2e315a0752fa0cd45d8864436c6f494e76994c0a9111ad76f5a8"
+      "bytes": 8580,
+      "sha256": "44a0d4c2bee3ffffeb02344141ae4b2f7bdb7ee0e8ad862245ca8af73213b1f2"
     },
     {
       "path": "packages/pptx/dist-pro/index.js.map",
@@ -3951,8 +3951,8 @@
     },
     {
       "path": "packages/pptx/dist-pro/layout/index.js",
-      "bytes": 703,
-      "sha256": "035959e488a066f0f1f06d4c234edc740a47338ad77e59c4d2b32f4a301f653e"
+      "bytes": 940,
+      "sha256": "fe4106f0ef78c10bbdea0abc7a48887552882021d2ea0ab654e99ea9251f16b7"
     },
     {
       "path": "packages/pptx/dist-pro/layout/index.js.map",
@@ -3961,28 +3961,28 @@
     },
     {
       "path": "packages/pptx/dist-pro/ops/descriptor.js",
-      "bytes": 4306,
-      "sha256": "a0a12e8753fa0fe5a3f27159d4e488dea8743e616a381889eead20cdad9095ef"
+      "bytes": 4543,
+      "sha256": "74cf9554946a72990011bcfd863b2311f6dfb8d7af19518689ec82fa9ec4cecc"
     },
     {
       "path": "packages/pptx/dist-pro/ops/descriptor.js.map",
-      "bytes": 7483,
-      "sha256": "bce16065574e195a583d5352431fc596e3b8feee1bbbbd1b61d4f10a95ccf42d"
+      "bytes": 7487,
+      "sha256": "838b6c67eb07f9df4609e377c265c0aa75c87ec85f4a6c5e7bc494915b215e25"
     },
     {
       "path": "packages/pptx/dist-pro/ops/index.js",
-      "bytes": 5797,
-      "sha256": "830cb3671d01ca070f1a814c2f17ae1b2845fe6b658a941edd934744d87a8099"
+      "bytes": 6034,
+      "sha256": "35da28868b8e00f300b80eb683849600dceab3c8efce80dad0532e2a70092eec"
     },
     {
       "path": "packages/pptx/dist-pro/ops/index.js.map",
-      "bytes": 11796,
-      "sha256": "c0f97cfe093283107edc27594fb152ce402ee05dd736a055ba151c36bf8c5328"
+      "bytes": 11800,
+      "sha256": "fad7a76a07144125ace1db0894bfa21e6d62d76d3828ca055c4aa800f1f1ac7e"
     },
     {
       "path": "packages/pptx/dist-pro/public/engine.js",
-      "bytes": 1559,
-      "sha256": "5ec8afe21861799da662f91aa6452b91f40a8e3514fc23b74b11d4119e5a9710"
+      "bytes": 1796,
+      "sha256": "3a1a462b41e99b6d9b1ac9da96590adde08de33b2c3a73528368639666e806de"
     },
     {
       "path": "packages/pptx/dist-pro/public/engine.js.map",
@@ -3991,8 +3991,8 @@
     },
     {
       "path": "packages/pptx/dist-pro/public/interpreter.js",
-      "bytes": 1400,
-      "sha256": "890a1c8d20e595f29fb728c72610b25de244f5b5ece2acc2d1e63adbde741c58"
+      "bytes": 1637,
+      "sha256": "4e278ca2a1cc5832b5e92748643449fea82920b9b0ccdc9d53d6130ea1009a68"
     },
     {
       "path": "packages/pptx/dist-pro/public/interpreter.js.map",
@@ -4001,8 +4001,8 @@
     },
     {
       "path": "packages/pptx/dist-pro/public/quality.js",
-      "bytes": 1352,
-      "sha256": "e17f2aeec42d976bcce65720d6e81202cd8389346ad769185db95a18d5a5bcc1"
+      "bytes": 1589,
+      "sha256": "404250c3e94b264504510502aadc0bf929ef07d78f74349b4a0221c7a716fdd0"
     },
     {
       "path": "packages/pptx/dist-pro/public/quality.js.map",
@@ -4011,8 +4011,8 @@
     },
     {
       "path": "packages/pptx/dist-pro/public/renderer.js",
-      "bytes": 784,
-      "sha256": "a94918e43828bf139410885f19e2210c9a7c21988694ef93325badd973998272"
+      "bytes": 1021,
+      "sha256": "e78a5828dc0f78516038ba63f5805654f83262723d07bb6f503ae64f457d9ff3"
     },
     {
       "path": "packages/pptx/dist-pro/public/renderer.js.map",
@@ -4021,8 +4021,8 @@
     },
     {
       "path": "packages/pptx/dist-pro/public/validator.js",
-      "bytes": 435,
-      "sha256": "f6a127047c0924a09bc157487563e63aa8445f54c1383ab086f3ad8d04146bca"
+      "bytes": 672,
+      "sha256": "2b3bedcfa0e011b93ed8e511a765cc12576a396ac14cd78519aaf9e7d5dd24c4"
     },
     {
       "path": "packages/pptx/dist-pro/public/validator.js.map",
@@ -4030,19 +4030,19 @@
       "sha256": "ed562b0bba7ee7214e56ac7f728054b3496bec4597c94a4eb7b4179e6f5cb1c9"
     },
     {
-      "path": "packages/pptx/dist-pro/rasterizer-I62JJO5L.js",
-      "bytes": 545,
-      "sha256": "d126fa54ac242ec0627490041a467cdc55331e882637d3c0de6c5236e2786ca1"
+      "path": "packages/pptx/dist-pro/rasterizer-7JRYX5B4.js",
+      "bytes": 782,
+      "sha256": "a2ab3a0635145f92a2c936ebdd537d4e0b4c2ee839f4b4864db0e1f1ee6cb255"
     },
     {
-      "path": "packages/pptx/dist-pro/rasterizer-I62JJO5L.js.map",
+      "path": "packages/pptx/dist-pro/rasterizer-7JRYX5B4.js.map",
       "bytes": 93,
       "sha256": "ed562b0bba7ee7214e56ac7f728054b3496bec4597c94a4eb7b4179e6f5cb1c9"
     },
     {
       "path": "packages/pptx/dist-pro/renderer/index.js",
-      "bytes": 935,
-      "sha256": "1edc68751035e6d440a50f23bc1ad4174d12e2976064afbd7092fd79189d99a9"
+      "bytes": 1172,
+      "sha256": "3e7a3a637379be39c7205af66eba42ef2a8681cb73d477b8cb736a9c87e6da1c"
     },
     {
       "path": "packages/pptx/dist-pro/renderer/index.js.map",
@@ -4050,24 +4050,24 @@
       "sha256": "ed562b0bba7ee7214e56ac7f728054b3496bec4597c94a4eb7b4179e6f5cb1c9"
     },
     {
-      "path": "packages/pptx/dist-pro/src-HD4QLQXR.js",
-      "bytes": 127446,
-      "sha256": "9a5e4e8859509f3db80260e64557facf152bd902a9468dc28d6619146441f44b"
+      "path": "packages/pptx/dist-pro/src-YSNZAX5B.js",
+      "bytes": 127683,
+      "sha256": "72bf15058698986ccafedc19908398b119eee350d7da665ce6b36d9420250954"
     },
     {
-      "path": "packages/pptx/dist-pro/src-HD4QLQXR.js.map",
-      "bytes": 276083,
-      "sha256": "8ffed696da14138d3d9aec3934967fec4b1bc1aea67dc00fe5a584783fb48a42"
+      "path": "packages/pptx/dist-pro/src-YSNZAX5B.js.map",
+      "bytes": 276087,
+      "sha256": "d9c40eb096fb53375b4d296cf7f39055a97a0e8091ce9f824afe754b7d6c10ce"
     },
     {
       "path": "packages/pptx/dist-pro/svg/exporter.js",
-      "bytes": 43849,
-      "sha256": "5fc7aa7803b4dbb0d653cdf7c5f13ba523b6bbe91b7cd104b6f60462663fabd6"
+      "bytes": 44086,
+      "sha256": "35bbf64115109a1d18b2c76e2c44e946097804117687785daeb132bc805e3baa"
     },
     {
       "path": "packages/pptx/dist-pro/svg/exporter.js.map",
-      "bytes": 84056,
-      "sha256": "63c44db3db410697124f2755c5d46137ea8c97e852197c642f7482730b008703"
+      "bytes": 84060,
+      "sha256": "6821ea45d5a295beac5ebd58306b17aaa46c5ae5771c1c7a9f79312642325312"
     },
     {
       "path": "packages/pptx/dist-pro/types/engine.d.ts",
@@ -4291,13 +4291,13 @@
     },
     {
       "path": "packages/pptx/scripts/build-free.mjs",
-      "bytes": 4692,
-      "sha256": "b49351d5bb4497cd615c69e38280fa8b2239afffbc140c9e51b967cdba30f992"
+      "bytes": 5132,
+      "sha256": "47a17d7f5f6756fd009e17391181d52c38aaa2ca946f8b0f6251c121cd8cad96"
     },
     {
       "path": "packages/pptx/scripts/build-pro.mjs",
-      "bytes": 3927,
-      "sha256": "4304bb3e360c7c66fe7f0f6ed3f0193a370a9dbe5da9feb1495908466a25fd9a"
+      "bytes": 5240,
+      "sha256": "4b136011b2381b6cdbef0addf409e75d5205c4bf45baf752b755dc3b3e6dee12"
     },
     {
       "path": "packages/pptx/scripts/desktopValidation/buildCorpus.ts",
@@ -4386,8 +4386,8 @@
     },
     {
       "path": "packages/pptx/src/converter/pptx-to-pdf.ts",
-      "bytes": 65213,
-      "sha256": "1143068344a1c91fde919307603bc72913150b2e02e7caced951061546d7b5d4"
+      "bytes": 65252,
+      "sha256": "b917345215682789d57c26339781edb20c5cc41752414a7e60310978c1094d29"
     },
     {
       "path": "packages/pptx/src/deterministicMode.ts",
@@ -4501,8 +4501,8 @@
     },
     {
       "path": "packages/pptx/src/external-modules.d.ts",
-      "bytes": 30,
-      "sha256": "a5f6c323378f88960f48fa4b1d607c9493be9b31c93cd940c8bf88851c0f3f78"
+      "bytes": 343,
+      "sha256": "61e06ead335cbab9265b2aa99bdb86b0b25d1549b18d7e6b8c69687d77e77921"
     },
     {
       "path": "packages/pptx/src/feature-gate.ts",
@@ -4666,8 +4666,8 @@
     },
     {
       "path": "packages/pptx/src/offline-license.ts",
-      "bytes": 6318,
-      "sha256": "8ade2f91970e8eecf0007504efc08cd5508a4bf5d4cd80b96201562cd12adcc6"
+      "bytes": 6322,
+      "sha256": "365585e0ef2b4ab77b31f0f45c008b6491b876cbb2e81766b99c2ff7c76af99a"
     },
     {
       "path": "packages/pptx/src/ooxml/animationBehaviors.ts",
@@ -5221,8 +5221,8 @@
     },
     {
       "path": "packages/pptx/src/typography/autoFont.ts",
-      "bytes": 36024,
-      "sha256": "4cf74d1c8deba76fcee576384a2cb384777559167f69e4fa2b6b498bd2f4bc75"
+      "bytes": 35821,
+      "sha256": "8b74307f5087e85d817629017e673ee0e035a1caedef5b3359fb199cb5f79f1a"
     },
     {
       "path": "packages/pptx/src/typography/bidi.ts",
@@ -5256,8 +5256,8 @@
     },
     {
       "path": "packages/pptx/src/typography/harfbuzzLoader.ts",
-      "bytes": 5714,
-      "sha256": "b495a283c1f9f8e8ed17565e9543b25176077e149832581ebe4b798903a037cd"
+      "bytes": 5308,
+      "sha256": "c8d17714d09fc765303873b43a2ea92eeef1dee669620459c18b6b9d974254e9"
     },
     {
       "path": "packages/pptx/src/typography/knuthPlass.ts",
@@ -10196,8 +10196,8 @@
     },
     {
       "path": "packages/xlsx/__tests__/warm-path.test.ts",
-      "bytes": 16653,
-      "sha256": "3da757c66a0d8e5479f4af5c5e6d96e55b45477c146af4f5d088dee14c3876e6"
+      "bytes": 16661,
+      "sha256": "4c8e667813c8604106fc15b809c7c202e1b67db0ed4a9cf8a1200b3fda28b096"
     },
     {
       "path": "packages/xlsx/__tests__/workbook-quality.test.ts",
@@ -10305,16 +10305,6 @@
       "sha256": "7219654b783f0a7cf55db7d0a024a2cc2d263efaf17a980c43fb9b2a4b56628a"
     },
     {
-      "path": "packages/xlsx/dist/chunk-45QSLEYD.js",
-      "bytes": 33864,
-      "sha256": "8c8a7a75e79417f64033898adb0561de298a8606f3ec8a549e500bcb6981fcaa"
-    },
-    {
-      "path": "packages/xlsx/dist/chunk-45QSLEYD.js.map",
-      "bytes": 75858,
-      "sha256": "bbc29dbbf959078c0809b4833382112a521566b2fb73169a5fbf737fafadf1ca"
-    },
-    {
       "path": "packages/xlsx/dist/chunk-A2LBVRNR.js",
       "bytes": 5615,
       "sha256": "5578e68338a90d01bdcf10b0270e1019ac54235b08f100f59210912b3c8d8801"
@@ -10353,6 +10343,16 @@
       "path": "packages/xlsx/dist/chunk-RLKZJTTE.js.map",
       "bytes": 74788,
       "sha256": "b1a807e2479d7cd98a744bf8f177c153bd57ecdedbe924823fccf806153d964a"
+    },
+    {
+      "path": "packages/xlsx/dist/chunk-XZXZHIBP.js",
+      "bytes": 33606,
+      "sha256": "51c61e7f6bb87014f103106b69d90afba69ca1d7f821768c3175982acc24e461"
+    },
+    {
+      "path": "packages/xlsx/dist/chunk-XZXZHIBP.js.map",
+      "bytes": 75922,
+      "sha256": "b3e132ab91cacfdb8995d6787b66e21d7ef82c79efc6862cd464097d403274dd"
     },
     {
       "path": "packages/xlsx/dist/chunk-YFQX3O2E.js",
@@ -10397,7 +10397,7 @@
     {
       "path": "packages/xlsx/dist/ops/descriptor.js",
       "bytes": 3922,
-      "sha256": "a65dbb59be64235fd0d55b91b854b336f51eeaaf631f4e83b6ab2e2ac621caca"
+      "sha256": "5c1c95c7532c01943038c8f3d4c5b2151ee7e5bd746c257f58835320bef78fcb"
     },
     {
       "path": "packages/xlsx/dist/ops/descriptor.js.map",
@@ -10412,7 +10412,7 @@
     {
       "path": "packages/xlsx/dist/ops/index.js",
       "bytes": 4853,
-      "sha256": "0a1dc934041f9e7877b7b44b6f547613f23a7c9985f8e908d5c0e3c9c9870472"
+      "sha256": "74463ab811d636ae1d473a2957366519a622be25f57232c6449791af0684e423"
     },
     {
       "path": "packages/xlsx/dist/ops/index.js.map",

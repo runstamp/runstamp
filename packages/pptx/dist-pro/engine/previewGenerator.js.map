@@ -2,6 +2,6 @@
   "version": 3,
   "sources": ["../../src/engine/previewGenerator.ts"],
   "sourcesContent": ["import type { ThemeColorScheme } from \"../types/ast.js\";\nimport type { LayoutNode } from \"../layout/extract.js\";\n\nexport interface PreviewRenderOptions {\n  width?: number;\n  height?: number;\n  scale?: number;\n  format?: \"png\" | \"jpeg\";\n  quality?: number;\n}\n\nexport async function renderLayoutPreviews(\n  layoutTrees: LayoutNode[],\n  previewOptions?: PreviewRenderOptions,\n  themeColors?: ThemeColorScheme,\n): Promise<Buffer[]> {\n  const { renderAllSlidesToBuffers } = await import(\"../renderer/index.js\");\n  const buffers = await renderAllSlidesToBuffers(layoutTrees, {\n    width: previewOptions?.width,\n    height: previewOptions?.height,\n    scale: previewOptions?.scale,\n    format: previewOptions?.format,\n    quality: previewOptions?.quality,\n    themeColors,\n  });\n  return buffers ?? [];\n}\n"],
-  "mappings": ";;;;;AAWA,eAAsB,qBACpB,aACA,gBACA,aACmB;AACnB,QAAM,EAAE,yBAAyB,IAAI,MAAM,OAAO,sBAAsB;AACxE,QAAM,UAAU,MAAM,yBAAyB,aAAa;AAAA,IAC1D,OAAO,gBAAgB;AAAA,IACvB,QAAQ,gBAAgB;AAAA,IACxB,OAAO,gBAAgB;AAAA,IACvB,QAAQ,gBAAgB;AAAA,IACxB,SAAS,gBAAgB;AAAA,IACzB;AAAA,EACF,CAAC;AACD,SAAO,WAAW,CAAC;AACrB;",
+  "mappings": ";;;;;;;;;AAWA,eAAsB,qBACpB,aACA,gBACA,aACmB;AACnB,QAAM,EAAE,yBAAyB,IAAI,MAAM,OAAO,sBAAsB;AACxE,QAAM,UAAU,MAAM,yBAAyB,aAAa;AAAA,IAC1D,OAAO,gBAAgB;AAAA,IACvB,QAAQ,gBAAgB;AAAA,IACxB,OAAO,gBAAgB;AAAA,IACvB,QAAQ,gBAAgB;AAAA,IACxB,SAAS,gBAAgB;AAAA,IACzB;AAAA,EACF,CAAC;AACD,SAAO,WAAW,CAAC;AACrB;",
   "names": []
 }

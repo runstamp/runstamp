@@ -1,36 +1,40 @@
 import { createRequire as __runstampCreateRequire } from "node:module";
+import { dirname as __runstampDirname } from "node:path";
+import { fileURLToPath as __runstampFileURLToPath } from "node:url";
+const __filename = __runstampFileURLToPath(import.meta.url);
+const __dirname = __runstampDirname(__filename);
 const require = __runstampCreateRequire(import.meta.url);
 import {
   renderChartToSvg
-} from "../chunk-56BKZXEH.js";
+} from "../chunk-2SWG4VB5.js";
 import {
   normalizeToParagraphsFromFields
-} from "../chunk-VETY33ST.js";
-import "../chunk-GRNMJIZR.js";
-import "../chunk-QZ7YLVPL.js";
-import "../chunk-66EJ4WIS.js";
+} from "../chunk-MP76HATA.js";
+import "../chunk-JRK4KXDV.js";
+import "../chunk-M2YFSO2D.js";
+import "../chunk-TM4NN2PA.js";
 import {
   fetchWithRetry,
   resolveColorValue,
   resolveEffectiveViewGeometry
-} from "../chunk-BF4WWWMZ.js";
-import "../chunk-MA6IZLCE.js";
-import "../chunk-PUKAI6X5.js";
+} from "../chunk-XZ4AHITT.js";
+import "../chunk-VCCW5PWJ.js";
+import "../chunk-RQNEGT4U.js";
 import {
   validateFetchUrl
-} from "../chunk-YWT5KXVL.js";
+} from "../chunk-WVTVGR3K.js";
 import {
   resolveLineHeightPixels
-} from "../chunk-P5JGOT4P.js";
+} from "../chunk-IQGCGBYO.js";
 import {
   FETCH_TIMEOUT_MS,
   validateDataUrlSize
-} from "../chunk-3O47XGMU.js";
+} from "../chunk-XU7YQ73E.js";
 import {
   getLogger
-} from "../chunk-HZBNNQK3.js";
-import "../chunk-JXY3OJQ6.js";
-import "../chunk-OWC7QHPZ.js";
+} from "../chunk-MV7M6AY2.js";
+import "../chunk-SFVKAOLH.js";
+import "../chunk-VIXD5LXH.js";
 
 // src/svg/shapePaths.ts
 function n(value) {

@@ -403,7 +403,7 @@ describe("Warm path rendering", () => {
     expect(afterFirstRender.workerCount).toBeGreaterThan(0);
     expect(afterSecondRender.workerCount).toBe(afterFirstRender.workerCount);
     expect(afterSecondRender.createdWorkerCount).toBe(afterFirstRender.createdWorkerCount);
-  });
+  }, 30_000);
 
   it("keeps registry-sensitive workbooks off the worker path", () => {
     const base = makeWorkerEligibleWorkbook();

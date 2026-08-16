@@ -19,6 +19,18 @@ declare module "subset-font" {
   ): Promise<Uint8Array>;
 }
 
+declare module "harfbuzzjs/hb.js" {
+  const createHarfBuzz: (options?: { wasmBinary?: Uint8Array }) => Promise<object>;
+  export default createHarfBuzz;
+}
+
+declare module "harfbuzzjs/hbjs.js" {
+  import type { HbApiInstance } from "./vendor-types.js";
+
+  const wrapHarfBuzz: (module: object) => HbApiInstance;
+  export default wrapHarfBuzz;
+}
+
 declare module "fontkit" {
   interface Font {
     isMonospace?: boolean;

@@ -1,49 +1,53 @@
 import { createRequire as __runstampCreateRequire } from "node:module";
+import { dirname as __runstampDirname } from "node:path";
+import { fileURLToPath as __runstampFileURLToPath } from "node:url";
+const __filename = __runstampFileURLToPath(import.meta.url);
+const __dirname = __runstampDirname(__filename);
 const require = __runstampCreateRequire(import.meta.url);
 import {
   classifyWarning
-} from "../chunk-LNYSZAHA.js";
-import "../chunk-MOLI65TP.js";
-import "../chunk-3MAFQYVW.js";
-import "../chunk-OV2ZPS4E.js";
-import "../chunk-56BKZXEH.js";
-import "../chunk-VETY33ST.js";
+} from "../chunk-HW526CCL.js";
+import "../chunk-BBZLJBOA.js";
+import "../chunk-R2RGXBYY.js";
+import "../chunk-H3JJGCUR.js";
+import "../chunk-2SWG4VB5.js";
+import "../chunk-MP76HATA.js";
 import {
   PaperEngine
-} from "../chunk-DRWOFXA4.js";
-import "../chunk-JHKUGPWV.js";
-import "../chunk-EE5SX3QK.js";
-import "../chunk-GRNMJIZR.js";
-import "../chunk-ADNRG6JQ.js";
-import "../chunk-QZ7YLVPL.js";
-import "../chunk-EEQDAC67.js";
-import "../chunk-7XPPO7MM.js";
-import "../chunk-5CDPNZPI.js";
-import "../chunk-FUBHCOLD.js";
-import "../chunk-PQOYJWL5.js";
+} from "../chunk-M3B54ZA7.js";
+import "../chunk-X4XRBAXF.js";
+import "../chunk-Z2EIZERW.js";
+import "../chunk-JRK4KXDV.js";
+import "../chunk-XVSKCRKS.js";
+import "../chunk-M2YFSO2D.js";
+import "../chunk-47T2WMZG.js";
+import "../chunk-GWTKZPGY.js";
+import "../chunk-AIRKBIKH.js";
+import "../chunk-MVPJ57UB.js";
+import "../chunk-BM2OZOTI.js";
 import {
   repairPptxStructure,
   validatePptxStructure
-} from "../chunk-5JIO2X5F.js";
-import "../chunk-BKM7I4JR.js";
-import "../chunk-FL4YUJCS.js";
-import "../chunk-6QXZRXYS.js";
-import "../chunk-66EJ4WIS.js";
-import "../chunk-SHJL7Z52.js";
-import "../chunk-ZLZIUC4K.js";
-import "../chunk-BF4WWWMZ.js";
-import "../chunk-MA6IZLCE.js";
-import "../chunk-SV4OEGHV.js";
-import "../chunk-QSVRDIHM.js";
-import "../chunk-PUKAI6X5.js";
-import "../chunk-625BFJJW.js";
-import "../chunk-2W7D7VOC.js";
-import "../chunk-YWT5KXVL.js";
-import "../chunk-4IGUCOJJ.js";
-import "../chunk-DYXX63XE.js";
-import "../chunk-P5JGOT4P.js";
-import "../chunk-3O47XGMU.js";
-import "../chunk-HZBNNQK3.js";
+} from "../chunk-NK2A5B54.js";
+import "../chunk-E7KL3QDK.js";
+import "../chunk-5GZJ6PGT.js";
+import "../chunk-7V4ECWKA.js";
+import "../chunk-TM4NN2PA.js";
+import "../chunk-3VBGXE67.js";
+import "../chunk-T7AK3EDB.js";
+import "../chunk-XZ4AHITT.js";
+import "../chunk-VCCW5PWJ.js";
+import "../chunk-IC35FUMW.js";
+import "../chunk-ERFVAWW7.js";
+import "../chunk-RQNEGT4U.js";
+import "../chunk-7BYJLCSM.js";
+import "../chunk-BVMCDLHW.js";
+import "../chunk-WVTVGR3K.js";
+import "../chunk-5QLWVG23.js";
+import "../chunk-DX2BYFTQ.js";
+import "../chunk-IQGCGBYO.js";
+import "../chunk-XU7YQ73E.js";
+import "../chunk-MV7M6AY2.js";
 import {
   MEDIA_TYPES,
   createArtifactBytes,
@@ -51,9 +55,9 @@ import {
   hashValue,
   requireBytes,
   runOperation
-} from "../chunk-S4LZHR2L.js";
-import "../chunk-JXY3OJQ6.js";
-import "../chunk-OWC7QHPZ.js";
+} from "../chunk-JXF5SD3S.js";
+import "../chunk-SFVKAOLH.js";
+import "../chunk-VIXD5LXH.js";
 
 // src/ops/index.ts
 var DOMAIN = "pptx";
