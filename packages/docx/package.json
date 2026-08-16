@@ -79,7 +79,7 @@
     "@runstamp/pdf": "workspace:*",
     "fast-xml-parser": "^5.5.7",
     "jszip": "^3.10.1",
-    "node-html-parser": "^7.1.0",
+    "node-html-parser": "^9.0.1",
     "zod": "^4.3.6"
   },
   "devDependencies": {
@@ -88,7 +88,7 @@
     "@runstamp/pvce": "workspace:*",
     "@types/node": "^22.0.0",
     "@xarsh/ooxml-validator": "0.1.10",
-    "esbuild": "^0.25.11",
+    "esbuild": "^0.28.2",
     "mammoth": "^1.12.0",
     "opentype.js": "^1.3.4",
     "pdf-lib": "^1.17.1",
