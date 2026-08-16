@@ -1,0 +1,18 @@
+{
+  "fixtureId": "chart-heavy",
+  "title": "Chart-heavy legend and labels",
+  "expectedSlideCount": 2,
+  "actualSlideCount": 2,
+  "validationModes": [
+    "structural",
+    "desktop_open",
+    "pdf_render",
+    "roundtrip_diff"
+  ],
+  "acceptance": {
+    "expectStructuralPass": true,
+    "expectDesktopOpenPass": true
+  },
+  "renderOptions": null,
+  "pptxPath": "generated.pptx"
+}

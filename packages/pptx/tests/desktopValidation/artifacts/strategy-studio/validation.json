@@ -1,0 +1,622 @@
+{
+  "name": "strategy-studio",
+  "passed": true,
+  "slideCount": 25,
+  "expectedSlideCount": 25,
+  "structural": {
+    "checks": [
+      {
+        "name": "duplicateContentTypes",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "contentTypesCoverage",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "relationshipTargetExistence",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "duplicateRelationshipIds",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "duplicateShapeIds",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "reachableRelationshipParts",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "chartManualLayoutBounds",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "presentationElementOrder",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "requiredAttributes",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "themeSchema",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "slideLayoutMasterChain",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "namespaceConsistency",
+        "passed": true,
+        "errors": []
+      }
+    ],
+    "passed": true,
+    "critical": []
+  },
+  "charts": {
+    "charts": [
+      {
+        "name": "seriesIndexOrder",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart1.xml"
+      },
+      {
+        "name": "chartTypePresence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart1.xml"
+      },
+      {
+        "name": "embeddedExcelExistence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart1.xml"
+      },
+      {
+        "name": "chartPositioning",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart1.xml"
+      },
+      {
+        "name": "legendAndAxis",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart1.xml"
+      },
+      {
+        "name": "dataCacheConsistency",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart1.xml"
+      },
+      {
+        "name": "seriesIndexOrder",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart2.xml"
+      },
+      {
+        "name": "chartTypePresence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart2.xml"
+      },
+      {
+        "name": "embeddedExcelExistence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart2.xml"
+      },
+      {
+        "name": "chartPositioning",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart2.xml"
+      },
+      {
+        "name": "legendAndAxis",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart2.xml"
+      },
+      {
+        "name": "dataCacheConsistency",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart2.xml"
+      },
+      {
+        "name": "seriesIndexOrder",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart3.xml"
+      },
+      {
+        "name": "chartTypePresence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart3.xml"
+      },
+      {
+        "name": "embeddedExcelExistence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart3.xml"
+      },
+      {
+        "name": "chartPositioning",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart3.xml"
+      },
+      {
+        "name": "legendAndAxis",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart3.xml"
+      },
+      {
+        "name": "dataCacheConsistency",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart3.xml"
+      },
+      {
+        "name": "seriesIndexOrder",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart4.xml"
+      },
+      {
+        "name": "chartTypePresence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart4.xml"
+      },
+      {
+        "name": "embeddedExcelExistence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart4.xml"
+      },
+      {
+        "name": "chartPositioning",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart4.xml"
+      },
+      {
+        "name": "legendAndAxis",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart4.xml"
+      },
+      {
+        "name": "dataCacheConsistency",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart4.xml"
+      },
+      {
+        "name": "seriesIndexOrder",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart5.xml"
+      },
+      {
+        "name": "chartTypePresence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart5.xml"
+      },
+      {
+        "name": "embeddedExcelExistence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart5.xml"
+      },
+      {
+        "name": "chartPositioning",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart5.xml"
+      },
+      {
+        "name": "legendAndAxis",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart5.xml"
+      },
+      {
+        "name": "dataCacheConsistency",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart5.xml"
+      },
+      {
+        "name": "seriesIndexOrder",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart6.xml"
+      },
+      {
+        "name": "chartTypePresence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart6.xml"
+      },
+      {
+        "name": "embeddedExcelExistence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart6.xml"
+      },
+      {
+        "name": "chartPositioning",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart6.xml"
+      },
+      {
+        "name": "legendAndAxis",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart6.xml"
+      },
+      {
+        "name": "dataCacheConsistency",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart6.xml"
+      }
+    ],
+    "passed": true
+  },
+  "diagnosis": {
+    "critical": [],
+    "high": [],
+    "medium": [],
+    "info": [],
+    "verdict": "LAUNCH_READY"
+  },
+  "issueCodes": [
+    "chart:fallback",
+    "compatibility:slide-10:native_anchored",
+    "compatibility:slide-11:visual_fallback",
+    "compatibility:slide-12:visual_fallback",
+    "compatibility:slide-13:native_anchored",
+    "compatibility:slide-16:native_anchored",
+    "compatibility:slide-17:native_anchored",
+    "compatibility:slide-18:native_anchored",
+    "compatibility:slide-19:native_anchored",
+    "compatibility:slide-21:visual_fallback",
+    "compatibility:slide-22:visual_fallback",
+    "compatibility:slide-4:native_anchored",
+    "compatibility:visual_fallback",
+    "text:single-frame-card"
+  ],
+  "compatibility": {
+    "compatibilityVerdict": "visual_fallback",
+    "slides": [
+      {
+        "slideIndex": 0,
+        "compatibilityVerdict": "native_safe",
+        "issues": [],
+        "fontSubstitutions": {},
+        "fonts": [
+          "Arial"
+        ]
+      },
+      {
+        "slideIndex": 1,
+        "compatibilityVerdict": "native_safe",
+        "issues": [],
+        "fontSubstitutions": {},
+        "fonts": [
+          "Arial"
+        ]
+      },
+      {
+        "slideIndex": 2,
+        "compatibilityVerdict": "native_safe",
+        "issues": [],
+        "fontSubstitutions": {},
+        "fonts": [
+          "Arial"
+        ]
+      },
+      {
+        "slideIndex": 3,
+        "compatibilityVerdict": "native_anchored",
+        "issues": [
+          {
+            "code": "text:single-frame-card",
+            "message": "Collapsed a card-style text stack into a single text frame for PowerPoint stability.",
+            "severity": "info"
+          }
+        ],
+        "fontSubstitutions": {},
+        "fonts": [
+          "Arial"
+        ]
+      },
+      {
+        "slideIndex": 4,
+        "compatibilityVerdict": "native_safe",
+        "issues": [],
+        "fontSubstitutions": {},
+        "fonts": [
+          "Arial"
+        ]
+      },
+      {
+        "slideIndex": 5,
+        "compatibilityVerdict": "native_safe",
+        "issues": [],
+        "fontSubstitutions": {},
+        "fonts": [
+          "Arial"
+        ]
+      },
+      {
+        "slideIndex": 6,
+        "compatibilityVerdict": "native_safe",
+        "issues": [],
+        "fontSubstitutions": {},
+        "fonts": [
+          "Arial"
+        ]
+      },
+      {
+        "slideIndex": 7,
+        "compatibilityVerdict": "native_safe",
+        "issues": [],
+        "fontSubstitutions": {},
+        "fonts": [
+          "Arial"
+        ]
+      },
+      {
+        "slideIndex": 8,
+        "compatibilityVerdict": "native_safe",
+        "issues": [],
+        "fontSubstitutions": {},
+        "fonts": [
+          "Arial"
+        ]
+      },
+      {
+        "slideIndex": 9,
+        "compatibilityVerdict": "native_anchored",
+        "issues": [
+          {
+            "code": "text:single-frame-card",
+            "message": "Collapsed a card-style text stack into a single text frame for PowerPoint stability.",
+            "severity": "info"
+          }
+        ],
+        "fontSubstitutions": {},
+        "fonts": [
+          "Arial"
+        ]
+      },
+      {
+        "slideIndex": 10,
+        "compatibilityVerdict": "visual_fallback",
+        "issues": [
+          {
+            "code": "text:single-frame-card",
+            "message": "Collapsed a card-style text stack into a single text frame for PowerPoint stability.",
+            "severity": "info"
+          },
+          {
+            "code": "chart:fallback",
+            "message": "Right legend would over-constrain plot area on Office for Mac.",
+            "severity": "warning"
+          }
+        ],
+        "fontSubstitutions": {},
+        "fonts": [
+          "Arial"
+        ]
+      },
+      {
+        "slideIndex": 11,
+        "compatibilityVerdict": "visual_fallback",
+        "issues": [
+          {
+            "code": "chart:fallback",
+            "message": "Chart frame is too short for reliable native layout.",
+            "severity": "warning"
+          }
+        ],
+        "fontSubstitutions": {},
+        "fonts": [
+          "Arial"
+        ]
+      },
+      {
+        "slideIndex": 12,
+        "compatibilityVerdict": "native_anchored",
+        "issues": [
+          {
+            "code": "text:single-frame-card",
+            "message": "Collapsed a card-style text stack into a single text frame for PowerPoint stability.",
+            "severity": "info"
+          }
+        ],
+        "fontSubstitutions": {},
+        "fonts": [
+          "Arial"
+        ]
+      },
+      {
+        "slideIndex": 13,
+        "compatibilityVerdict": "native_safe",
+        "issues": [],
+        "fontSubstitutions": {},
+        "fonts": [
+          "Arial"
+        ]
+      },
+      {
+        "slideIndex": 14,
+        "compatibilityVerdict": "native_safe",
+        "issues": [],
+        "fontSubstitutions": {},
+        "fonts": [
+          "Arial"
+        ]
+      },
+      {
+        "slideIndex": 15,
+        "compatibilityVerdict": "native_anchored",
+        "issues": [
+          {
+            "code": "text:single-frame-card",
+            "message": "Collapsed a card-style text stack into a single text frame for PowerPoint stability.",
+            "severity": "info"
+          }
+        ],
+        "fontSubstitutions": {},
+        "fonts": [
+          "Arial"
+        ]
+      },
+      {
+        "slideIndex": 16,
+        "compatibilityVerdict": "native_anchored",
+        "issues": [
+          {
+            "code": "text:single-frame-card",
+            "message": "Collapsed a card-style text stack into a single text frame for PowerPoint stability.",
+            "severity": "info"
+          }
+        ],
+        "fontSubstitutions": {},
+        "fonts": [
+          "Arial"
+        ]
+      },
+      {
+        "slideIndex": 17,
+        "compatibilityVerdict": "native_anchored",
+        "issues": [
+          {
+            "code": "text:single-frame-card",
+            "message": "Collapsed a card-style text stack into a single text frame for PowerPoint stability.",
+            "severity": "info"
+          }
+        ],
+        "fontSubstitutions": {},
+        "fonts": [
+          "Arial"
+        ]
+      },
+      {
+        "slideIndex": 18,
+        "compatibilityVerdict": "native_anchored",
+        "issues": [
+          {
+            "code": "text:single-frame-card",
+            "message": "Collapsed a card-style text stack into a single text frame for PowerPoint stability.",
+            "severity": "info"
+          }
+        ],
+        "fontSubstitutions": {},
+        "fonts": [
+          "Arial"
+        ]
+      },
+      {
+        "slideIndex": 19,
+        "compatibilityVerdict": "native_safe",
+        "issues": [],
+        "fontSubstitutions": {},
+        "fonts": [
+          "Arial"
+        ]
+      },
+      {
+        "slideIndex": 20,
+        "compatibilityVerdict": "visual_fallback",
+        "issues": [
+          {
+            "code": "chart:fallback",
+            "message": "Right legend would over-constrain plot area on Office for Mac.",
+            "severity": "warning"
+          }
+        ],
+        "fontSubstitutions": {},
+        "fonts": [
+          "Arial"
+        ]
+      },
+      {
+        "slideIndex": 21,
+        "compatibilityVerdict": "visual_fallback",
+        "issues": [
+          {
+            "code": "chart:fallback",
+            "message": "Chart frame is too short for reliable native layout.",
+            "severity": "warning"
+          }
+        ],
+        "fontSubstitutions": {},
+        "fonts": [
+          "Arial"
+        ]
+      },
+      {
+        "slideIndex": 22,
+        "compatibilityVerdict": "native_safe",
+        "issues": [],
+        "fontSubstitutions": {},
+        "fonts": [
+          "Arial"
+        ]
+      },
+      {
+        "slideIndex": 23,
+        "compatibilityVerdict": "native_safe",
+        "issues": [],
+        "fontSubstitutions": {},
+        "fonts": [
+          "Arial"
+        ]
+      },
+      {
+        "slideIndex": 24,
+        "compatibilityVerdict": "native_safe",
+        "issues": [],
+        "fontSubstitutions": {},
+        "fonts": [
+          "Arial"
+        ]
+      }
+    ],
+    "fontSubstitutions": {}
+  },
+  "artifacts": {
+    "pptxPath": "/Users/jake/prod25/theplainworks/runstamp.com/tests/desktopValidation/artifacts/strategy-studio/strategy-studio.pptx",
+    "jsonPath": "/Users/jake/prod25/theplainworks/runstamp.com/tests/desktopValidation/artifacts/strategy-studio/validation.json"
+  }
+}

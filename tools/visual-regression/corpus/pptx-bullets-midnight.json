@@ -1,0 +1,32 @@
+{
+  "id": "pptx-bullets-midnight",
+  "format": "pptx",
+  "surface": "agent",
+  "description": "Agent bullets pattern — midnight preset variant.",
+  "document": {
+    "type": "presentation",
+    "version": "1.0",
+    "presentationTitle": "H2 Commercial Priorities",
+    "companyName": "Northstar Systems",
+    "theme": "midnight",
+    "slides": [
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "Five priorities will determine the H2 outcome",
+          "subtitle": "Actions agreed at the Q2 operating review",
+          "bulletPoints": [
+            "Enterprise coverage: add dedicated account leadership across the ten largest North American opportunities",
+            "Product adoption: move role-based dashboards and saved views into every renewal success plan",
+            "Implementation speed: reduce median onboarding time from twelve weeks to eight",
+            "Customer assurance: close the remaining high-priority reliability actions before September renewals",
+            "Partner channel: publish the enablement package and certify the first six regional partners"
+          ],
+          "prose": [
+            "Each priority has an executive owner and will be reviewed against leading indicators every two weeks."
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "fixtureId": "forced-invalid-rel-target",
+  "title": "Forced invalid relationship target",
+  "expectedSlideCount": 1,
+  "actualSlideCount": 1,
+  "validationModes": [
+    "structural",
+    "desktop_open"
+  ],
+  "acceptance": {
+    "expectStructuralPass": false,
+    "expectDesktopOpenPass": false
+  },
+  "renderOptions": null,
+  "pptxPath": "generated.pptx"
+}

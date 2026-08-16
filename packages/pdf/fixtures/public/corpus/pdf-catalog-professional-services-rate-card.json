@@ -1,0 +1,257 @@
+{
+  "id": "pdf-catalog-professional-services-rate-card",
+  "format": "pdf",
+  "description": "Professional-services rate card with 24 consulting labor categories, remote and client-site hourly rates, minimum experience, and engagement terms.",
+  "provenance": "Modeled on enterprise technology-consulting and public-sector master-services rate cards. Exercises two intentionally paginated six-column labor tables, section divider rows, repeating table headers, compact currency columns, a rate-adjustment matrix, and running document-control footers.",
+  "expectedProperties": {
+    "pageCountMin": 2,
+    "hasTable": true,
+    "laborCategories": 24,
+    "serviceLines": 6,
+    "rateColumns": 2,
+    "currency": "USD",
+    "effectiveDate": "2026-09-01"
+  },
+  "document": {
+    "meta": {
+      "title": "Alder Bridge Advisory - FY2027 Professional Services Rate Card",
+      "author": "Alder Bridge Advisory LLC",
+      "subject": "Professional services labor categories and rates"
+    },
+    "page": {
+      "size": "Letter",
+      "margin": { "top": 44, "right": 42, "bottom": 54, "left": 42 }
+    },
+    "pageNumber": {
+      "format": "ABA-FY27-01 | page {page}",
+      "fontSize": 7
+    },
+    "children": [
+      {
+        "type": "table",
+        "columns": [{ "width": "64%" }, { "width": "36%" }],
+        "body": [{
+          "cells": [
+            {
+              "children": [
+                { "type": "heading", "level": 1, "font": "Helvetica-Bold", "value": "Alder Bridge Advisory" },
+                { "type": "paragraph", "fontSize": 10, "textAlign": "left", "value": "FY2027 Professional Services Rate Card" },
+                { "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "Schedule ABA-FY27-01 | Effective September 1, 2026" }
+              ],
+              "style": { "backgroundColor": "#eaf1f7", "padding": 8, "borderLeft": { "color": "#173b5e", "width": 3 } }
+            },
+            {
+              "style": { "verticalAlign": "bottom" },
+              "children": [
+                { "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "Commercial and Public Sector" },
+                { "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "Arlington, Virginia 22202" },
+                { "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "contracts@alderbridge.example" },
+                { "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "Rates stated in USD per hour" }
+              ]
+            }
+          ]
+        }]
+      },
+      { "type": "divider", "style": { "marginTop": 6, "marginBottom": 7 } },
+      { "type": "paragraph", "fontSize": 8.5, "textAlign": "left", "style": { "marginBottom": 8 }, "value": "These ceiling rates apply to time-and-materials work performed under an executed statement of work." },
+      {
+        "type": "table",
+        "style": { "marginBottom": 10 },
+        "columns": [{ "width": "32%" }, { "width": "2%" }, { "width": "32%" }, { "width": "2%" }, { "width": "32%" }],
+        "body": [
+          {
+            "cells": [
+              {
+                "children": [
+                  { "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "value": "Remote delivery" },
+                  { "type": "paragraph", "fontSize": 8.5, "style": { "marginTop": 3 }, "value": "Alder Bridge office or approved home office." }
+                ],
+                "style": { "backgroundColor": "#eef4f8", "padding": 8, "borderTop": { "color": "#365f7f", "width": 2 } }
+              },
+              { "children": [], "style": { "padding": 0 } },
+              {
+                "children": [
+                  { "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "value": "Client site" },
+                  { "type": "paragraph", "fontSize": 8.5, "style": { "marginTop": 3 }, "value": "Ordinary local commuting expense included." }
+                ],
+                "style": { "backgroundColor": "#eef4f8", "padding": 8, "borderTop": { "color": "#365f7f", "width": 2 } }
+              },
+              { "children": [], "style": { "padding": 0 } },
+              {
+                "children": [
+                  { "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "value": "Travel" },
+                  { "type": "paragraph", "fontSize": 8.5, "style": { "marginTop": 3 }, "value": "Approved travel outside the assigned metro is excluded." }
+                ],
+                "style": { "backgroundColor": "#fff4e5", "padding": 8, "borderTop": { "color": "#a66a16", "width": 2 } }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "style": { "borderTop": { "color": "#25344a", "width": 1 }, "borderBottom": { "color": "#c7ced8", "width": 0.5 } },
+        "columns": [{ "width": "13%" }, { "width": "34%" }, { "width": "11%" }, { "width": "14%" }, { "width": "14%" }, { "width": "14%" }],
+        "header": [{
+          "cells": [
+            { "role": "th", "style": { "backgroundColor": "#cbdbea", "padding": 5, "borderBottom": { "color": "#173b5e", "width": 1 } }, "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "textAlign": "left", "value": "Code" }] },
+            { "role": "th", "style": { "backgroundColor": "#cbdbea", "padding": 5, "borderBottom": { "color": "#173b5e", "width": 1 } }, "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "textAlign": "left", "value": "Labor category" }] },
+            { "role": "th", "style": { "backgroundColor": "#cbdbea", "padding": 5, "borderBottom": { "color": "#173b5e", "width": 1 } }, "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "textAlign": "center", "value": "Min. yrs" }] },
+            { "role": "th", "style": { "backgroundColor": "#cbdbea", "padding": 5, "borderBottom": { "color": "#173b5e", "width": 1 } }, "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "textAlign": "right", "value": "Remote" }] },
+            { "role": "th", "style": { "backgroundColor": "#cbdbea", "padding": 5, "borderBottom": { "color": "#173b5e", "width": 1 } }, "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "textAlign": "right", "value": "Client site" }] },
+            { "role": "th", "style": { "backgroundColor": "#cbdbea", "padding": 5, "borderBottom": { "color": "#173b5e", "width": 1 } }, "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "textAlign": "center", "value": "Unit" }] }
+          ]
+        }],
+        "body": [
+          { "cells": [{ "colSpan": 6, "style": { "backgroundColor": "#d8e6f1", "padding": 6, "borderLeft": { "color": "#173b5e", "width": 3 }, "borderTop": { "color": "#365f7f", "width": 0.75 }, "borderBottom": { "color": "#365f7f", "width": 0.75 } }, "children": [{ "type": "heading", "font": "Helvetica-Bold", "level": 5, "fontSize": 10, "value": "Strategy and transformation" }] }] },
+          { "cells": [{ "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "ST-101" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "Business Analyst" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "3" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$165" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$182" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "hour" }] }] },
+          { "cells": [{ "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "ST-201" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "Senior Business Analyst" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "6" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$198" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$218" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "hour" }] }] },
+          { "cells": [{ "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "ST-301" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "Transformation Lead" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "10" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$262" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$289" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "hour" }] }] },
+          { "cells": [{ "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "ST-401" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "Engagement Principal" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "15" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$348" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$384" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "hour" }] }] },
+
+          { "cells": [{ "colSpan": 6, "style": { "backgroundColor": "#d8e6f1", "padding": 6, "borderLeft": { "color": "#173b5e", "width": 3 }, "borderTop": { "color": "#365f7f", "width": 0.75 }, "borderBottom": { "color": "#365f7f", "width": 0.75 } }, "children": [{ "type": "heading", "font": "Helvetica-Bold", "level": 5, "fontSize": 10, "value": "Cloud architecture and platform engineering" }] }] },
+          { "cells": [{ "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "CL-110" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "Cloud Engineer" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "3" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$178" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$196" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "hour" }] }] },
+          { "cells": [{ "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "CL-210" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "Senior Cloud Engineer" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "6" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$224" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$247" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "hour" }] }] },
+          { "cells": [{ "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "CL-310" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "Cloud Solutions Architect" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "9" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$276" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$304" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "hour" }] }] },
+          { "cells": [{ "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "CL-320" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "Platform Engineering Lead" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "10" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$288" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$317" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "hour" }] }] },
+
+          { "cells": [{ "colSpan": 6, "style": { "backgroundColor": "#d8e6f1", "padding": 6, "borderLeft": { "color": "#173b5e", "width": 3 }, "borderTop": { "color": "#365f7f", "width": 0.75 }, "borderBottom": { "color": "#365f7f", "width": 0.75 } }, "children": [{ "type": "heading", "font": "Helvetica-Bold", "level": 5, "fontSize": 10, "value": "Data engineering and analytics" }] }] },
+          { "cells": [{ "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "DA-120" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "Data Engineer" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "3" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$184" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$203" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "hour" }] }] },
+          { "cells": [{ "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "DA-220" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "Senior Data Engineer" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "6" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$232" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$256" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "hour" }] }] },
+          { "cells": [{ "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "DA-230" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "Analytics Engineer" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "5" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$215" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$237" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "hour" }] }] },
+          { "cells": [{ "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "DA-330" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "Data Platform Architect" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "10" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$294" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$324" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "hour" }] }] }
+        ]
+      },
+      {
+        "type": "table",
+        "style": { "marginTop": 12 },
+        "columns": [{ "width": "32%" }, { "width": "2%" }, { "width": "32%" }, { "width": "2%" }, { "width": "32%" }],
+        "body": [
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "value": "Page 1 scope" }, { "type": "paragraph", "fontSize": 8.5, "style": { "marginTop": 3 }, "value": "Strategy, cloud, and data engineering" }], "style": { "backgroundColor": "#eef4f8", "padding": 12 } },
+              { "children": [], "style": { "padding": 0 } },
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "value": "Remote range" }, { "type": "paragraph", "fontSize": 10, "style": { "marginTop": 3 }, "value": "$165-$348 / hour" }], "style": { "backgroundColor": "#eef4f8", "padding": 12 } },
+              { "children": [], "style": { "padding": 0 } },
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "value": "Client-site range" }, { "type": "paragraph", "fontSize": 10, "style": { "marginTop": 3 }, "value": "$182-$384 / hour" }], "style": { "backgroundColor": "#eef4f8", "padding": 12 } }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "style": { "marginTop": 14, "borderTop": { "color": "#173b5e", "width": 1 }, "borderBottom": { "color": "#173b5e", "width": 1 } },
+        "columns": [{ "width": "26%" }, { "width": "74%" }],
+        "body": [
+          { "cells": [
+            { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "value": "Rate application" }], "style": { "backgroundColor": "#d8e6f1", "padding": 15 } },
+            { "children": [{ "type": "paragraph", "fontSize": 8.5, "lineHeight": 1.3, "value": "Published figures are ceiling rates; named personnel, category mix, and hours are established in the executed statement of work." }], "style": { "padding": 15 } }
+          ] },
+          { "cells": [
+            { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "value": "Delivery basis" }], "style": { "backgroundColor": "#d8e6f1", "padding": 15 } },
+            { "children": [{ "type": "paragraph", "fontSize": 8.5, "lineHeight": 1.3, "value": "Client-site rates include ordinary local commuting; travel outside the assigned metro requires pre-approval and is billed separately." }], "style": { "padding": 15 } }
+          ] }
+        ]
+      },
+      { "type": "page-break" },
+      {
+        "type": "table",
+        "style": { "marginBottom": 6 },
+        "columns": [{ "width": "100%" }],
+        "body": [{ "cells": [
+          {
+            "children": [
+              { "type": "heading", "level": 2, "font": "Helvetica-Bold", "value": "Professional Services Rate Card - continued" }
+            ],
+            "style": { "backgroundColor": "#eaf1f7", "padding": 5, "borderLeft": { "color": "#173b5e", "width": 3 } }
+          }
+        ] }]
+      },
+      {
+        "type": "table",
+        "style": { "marginBottom": 10, "columnGap": 4 },
+        "columns": [{ "width": "32%" }, { "width": "2%" }, { "width": "32%" }, { "width": "2%" }, { "width": "32%" }],
+        "body": [
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "value": "Blended teams" }, { "type": "paragraph", "fontSize": 8, "style": { "marginTop": 3 }, "value": "Categories may be blended within a workstream." }], "style": { "backgroundColor": "#eef4f8", "padding": 10 } },
+              { "children": [], "style": { "padding": 0 } },
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "value": "SOW control" }, { "type": "paragraph", "fontSize": 8, "style": { "marginTop": 3 }, "value": "Named personnel and hours are established in each SOW." }], "style": { "backgroundColor": "#eef4f8", "padding": 10 } },
+              { "children": [], "style": { "padding": 0 } },
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "value": "Client approval" }, { "type": "paragraph", "fontSize": 8, "style": { "marginTop": 3 }, "value": "Minimum experience does not replace résumé approval." }], "style": { "backgroundColor": "#eef4f8", "padding": 10, "borderTop": { "color": "#173b5e", "width": 2 } } }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "style": { "borderTop": { "color": "#25344a", "width": 1 }, "borderBottom": { "color": "#c7ced8", "width": 0.5 } },
+        "columns": [{ "width": "13%" }, { "width": "34%" }, { "width": "11%" }, { "width": "14%" }, { "width": "14%" }, { "width": "14%" }],
+        "header": [{
+          "cells": [
+            { "role": "th", "style": { "backgroundColor": "#cbdbea", "padding": 5, "borderBottom": { "color": "#173b5e", "width": 1 } }, "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "textAlign": "left", "value": "Code" }] },
+            { "role": "th", "style": { "backgroundColor": "#cbdbea", "padding": 5, "borderBottom": { "color": "#173b5e", "width": 1 } }, "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "textAlign": "left", "value": "Labor category" }] },
+            { "role": "th", "style": { "backgroundColor": "#cbdbea", "padding": 5, "borderBottom": { "color": "#173b5e", "width": 1 } }, "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "textAlign": "center", "value": "Min. yrs" }] },
+            { "role": "th", "style": { "backgroundColor": "#cbdbea", "padding": 5, "borderBottom": { "color": "#173b5e", "width": 1 } }, "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "textAlign": "right", "value": "Remote" }] },
+            { "role": "th", "style": { "backgroundColor": "#cbdbea", "padding": 5, "borderBottom": { "color": "#173b5e", "width": 1 } }, "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "textAlign": "right", "value": "Client site" }] },
+            { "role": "th", "style": { "backgroundColor": "#cbdbea", "padding": 5, "borderBottom": { "color": "#173b5e", "width": 1 } }, "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "textAlign": "center", "value": "Unit" }] }
+          ]
+        }],
+        "body": [
+          { "cells": [{ "colSpan": 6, "style": { "backgroundColor": "#d8e6f1", "padding": 6, "borderLeft": { "color": "#173b5e", "width": 3 }, "borderTop": { "color": "#365f7f", "width": 0.75 }, "borderBottom": { "color": "#365f7f", "width": 0.75 } }, "children": [{ "type": "heading", "font": "Helvetica-Bold", "level": 5, "fontSize": 10, "value": "Cybersecurity and resilience" }] }] },
+          { "cells": [{ "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "CY-140" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "Security Analyst" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "3" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$176" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$194" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "hour" }] }] },
+          { "cells": [{ "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "CY-240" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "Senior Security Engineer" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "6" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$238" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$262" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "hour" }] }] },
+          { "cells": [{ "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "CY-340" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "Security Architect" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "10" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$302" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$333" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "hour" }] }] },
+          { "cells": [{ "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "CY-350" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "Incident Response Lead" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "10" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$318" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$351" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "hour" }] }] },
+
+          { "cells": [{ "colSpan": 6, "style": { "backgroundColor": "#d8e6f1", "padding": 6, "borderLeft": { "color": "#173b5e", "width": 3 }, "borderTop": { "color": "#365f7f", "width": 0.75 }, "borderBottom": { "color": "#365f7f", "width": 0.75 } }, "children": [{ "type": "heading", "font": "Helvetica-Bold", "level": 5, "fontSize": 10, "value": "Product delivery and experience design" }] }] },
+          { "cells": [{ "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "PD-150" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "Product Manager" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "5" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$214" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$236" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "hour" }] }] },
+          { "cells": [{ "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "PD-250" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "Senior Product Manager" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "8" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$258" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$284" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "hour" }] }] },
+          { "cells": [{ "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "PD-160" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "UX Designer" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "4" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$192" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$212" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "hour" }] }] },
+          { "cells": [{ "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "PD-260" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "Service Design Lead" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "8" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$248" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$273" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "hour" }] }] },
+
+          { "cells": [{ "colSpan": 6, "style": { "backgroundColor": "#d8e6f1", "padding": 6, "borderLeft": { "color": "#173b5e", "width": 3 }, "borderTop": { "color": "#365f7f", "width": 0.75 }, "borderBottom": { "color": "#365f7f", "width": 0.75 } }, "children": [{ "type": "heading", "font": "Helvetica-Bold", "level": 5, "fontSize": 10, "value": "Program delivery and quality assurance" }] }] },
+          { "cells": [{ "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "PM-170" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "Project Manager" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "5" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$202" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$223" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "hour" }] }] },
+          { "cells": [{ "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "PM-270" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "Senior Program Manager" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "9" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$268" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$295" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "hour" }] }] },
+          { "cells": [{ "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "QA-180" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "Quality Engineer" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "3" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$168" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$185" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "hour" }] }] },
+          { "cells": [{ "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "QA-280" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "Test Automation Lead" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "7" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$226" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "$249" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "center", "value": "hour" }] }] }
+        ]
+      },
+      {
+        "type": "table",
+        "style": { "marginTop": 12 },
+        "columns": [{ "width": "100%" }],
+        "body": [{ "cells": [
+          { "children": [{ "type": "heading", "level": 3, "font": "Helvetica-Bold", "fontSize": 11, "value": "Rate adjustments" }], "style": { "backgroundColor": "#d8e6f1", "padding": 6, "borderLeft": { "color": "#173b5e", "width": 3 } } }
+        ] }]
+      },
+      {
+        "type": "table",
+        "style": { "borderTop": { "color": "#25344a", "width": 1 }, "borderBottom": { "color": "#c7ced8", "width": 0.5 }, "marginBottom": 8 },
+        "columns": [{ "width": "34%" }, { "width": "18%" }, { "width": "48%" }],
+        "header": [{ "cells": [
+          { "role": "th", "style": { "backgroundColor": "#cbdbea", "padding": 5 }, "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "textAlign": "left", "value": "Condition" }] },
+          { "role": "th", "style": { "backgroundColor": "#cbdbea", "padding": 5, "paddingRight": 10 }, "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "textAlign": "right", "value": "Adjustment" }] },
+          { "role": "th", "style": { "backgroundColor": "#cbdbea", "padding": 5, "paddingLeft": 10 }, "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "textAlign": "left", "value": "Application" }] }
+        ] }],
+        "body": [
+          { "cells": [{ "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "Pre-approved overtime" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "1.5x" }], "style": { "paddingRight": 10 } }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "Hours above 40 in one consultant workweek" }], "style": { "paddingLeft": 10 } }] },
+          { "cells": [{ "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "Weekend or client holiday" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "1.5x" }], "style": { "paddingRight": 10 } }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "Scheduled delivery outside Monday-Friday" }], "style": { "paddingLeft": 10 } }] },
+          { "cells": [{ "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "Emergency response" }] }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "1.75x" }], "style": { "paddingRight": 10 } }, { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "left", "value": "Start requested within four hours; two-hour minimum" }], "style": { "paddingLeft": 10 } }] }
+        ]
+      },
+      { "type": "paragraph", "fontSize": 8.5, "lineHeight": 1.3, "textAlign": "left", "style": { "marginRight": 72 }, "value": "Airfare, lodging, ground transport, and per diem require written pre-approval and are passed through at cost without markup. Rates remain firm through August 31, 2027." },
+      {
+        "type": "table",
+        "style": { "marginTop": 14 },
+        "columns": [{ "width": "25%" }, { "width": "25%" }, { "width": "25%" }, { "width": "25%" }],
+        "body": [{ "cells": [
+          { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "value": "Billing cycle" }, { "type": "paragraph", "fontSize": 8, "style": { "marginTop": 4 }, "value": "Monthly in arrears" }], "style": { "backgroundColor": "#eaf1f7", "padding": 13, "borderTop": { "color": "#173b5e", "width": 2 } } },
+          { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "value": "Time increment" }, { "type": "paragraph", "fontSize": 8, "style": { "marginTop": 4 }, "value": "0.25 hour" }], "style": { "backgroundColor": "#eaf1f7", "padding": 13, "borderTop": { "color": "#173b5e", "width": 2 } } },
+          { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "value": "Travel time" }, { "type": "paragraph", "fontSize": 8, "style": { "marginTop": 4 }, "value": "50% of client-site rate" }], "style": { "backgroundColor": "#eaf1f7", "padding": 13, "borderTop": { "color": "#173b5e", "width": 2 } } },
+          { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "value": "Renewal cap" }, { "type": "paragraph", "fontSize": 8, "style": { "marginTop": 4 }, "value": "Lower of 4% or CPI-U" }], "style": { "backgroundColor": "#eaf1f7", "padding": 13, "borderTop": { "color": "#173b5e", "width": 2 } } }
+        ] }]
+      }
+    ]
+  }
+}

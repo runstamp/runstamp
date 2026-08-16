@@ -1,0 +1,62 @@
+{
+  "name": "@runstamp/pptx-primitives",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Content-adaptive PPTX composition primitives + open token schema. No named themes; callers supply their own token bundle.",
+  "type": "module",
+  "packageManager": "pnpm@10.12.4",
+  "license": "Apache-2.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./tokens": {
+      "import": "./dist/tokens/index.js",
+      "types": "./dist/tokens/index.d.ts",
+      "default": "./dist/tokens/index.js"
+    },
+    "./primitives": {
+      "import": "./dist/primitives/index.js",
+      "types": "./dist/primitives/index.d.ts",
+      "default": "./dist/primitives/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "pnpm clean && tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run --config vitest.config.ts"
+  },
+  "dependencies": {
+    "fontkit": "^2.0.4",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/fontkit": "^2.0.8",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0",
+    "vitest": "^4.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/runstamp/runstamp",
+    "directory": "packages/pptx-primitives"
+  },
+  "bugs": "https://github.com/runstamp/runstamp/issues",
+  "homepage": "https://runstamp.com",
+  "runstamp": {
+    "publicSourceMode": "independently-buildable"
+  }
+}

@@ -1,0 +1,28 @@
+name: Public source CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    strategy:
+      matrix:
+        node: [20, 22]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.12.4
+      - name: Install PDF verification tools
+        run: sudo apt-get update && sudo apt-get install --yes poppler-utils qpdf
+      - run: pnpm install --no-frozen-lockfile
+      - run: pnpm check

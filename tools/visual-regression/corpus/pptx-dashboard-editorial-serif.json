@@ -1,0 +1,48 @@
+{
+  "id": "pptx-dashboard-editorial-serif",
+  "format": "pptx",
+  "surface": "agent",
+  "description": "Agent dashboard pattern — editorial-serif preset variant.",
+  "document": {
+    "type": "presentation",
+    "version": "1.0",
+    "presentationTitle": "Q2 Operating Review",
+    "companyName": "Northstar Systems",
+    "theme": "editorial-serif",
+    "slides": [
+      {
+        "pattern": "dashboard",
+        "content": {
+          "title": "Q2 operating metrics",
+          "subtitle": "Management view as of 30 June 2026",
+          "kpis": [
+            {
+              "label": "Revenue",
+              "value": "$48.2M",
+              "trend": "up",
+              "sublabel": "+18% YoY"
+            },
+            {
+              "label": "Gross margin",
+              "value": "72.4%",
+              "trend": "up",
+              "sublabel": "+3.1pp"
+            },
+            {
+              "label": "Customers",
+              "value": "1,247",
+              "trend": "up",
+              "sublabel": "+205 net new"
+            },
+            {
+              "label": "NPS",
+              "value": "67",
+              "trend": "flat",
+              "sublabel": "Industry avg: 42"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

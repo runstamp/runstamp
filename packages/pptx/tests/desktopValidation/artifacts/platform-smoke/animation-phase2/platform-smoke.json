@@ -1,0 +1,9 @@
+{
+  "fixtureId": "animation-phase2",
+  "previewSlideCount": 1,
+  "expectedSlideCount": 1,
+  "previewCount": 1,
+  "compileWithPreviewReturnedPreview": true,
+  "compileWithPreviewReturnedPptx": true,
+  "structuralPassed": true
+}

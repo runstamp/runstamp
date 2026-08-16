@@ -1,0 +1,203 @@
+{
+  "engine": "pdf",
+  "entries": [
+    {
+      "code": "PDF_XREF_OFFSET_INCORRECT",
+      "status": "active",
+      "emitter": "packages/json-to-pdf/src/phase10-validate.ts",
+      "severity": "error",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": true, "strategy": "XREF_OFFSET_MISMATCH" },
+      "evidence": { "kind": "test", "path": "packages/json-to-pdf/__tests__/render-with-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "PDF_XREF_ENTRY_ZERO_OFFSET",
+      "status": "active",
+      "emitter": "packages/json-to-pdf/src/phase10-validate.ts",
+      "severity": "error",
+      "expectedVerdict": "visual_fallback",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/json-to-pdf/__tests__/render-with-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "PDF_XREF_TABLE_MISSING",
+      "status": "active",
+      "emitter": "packages/json-to-pdf/src/phase10-validate.ts",
+      "severity": "error",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": true, "strategy": "REBUILD_XREF" },
+      "evidence": { "kind": "test", "path": "packages/json-to-pdf/__tests__/render-with-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "PDF_STREAM_LENGTH_INCORRECT",
+      "status": "active",
+      "emitter": "packages/json-to-pdf/src/phase10-validate.ts",
+      "severity": "error",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": true, "strategy": "STREAM_LENGTH_MISMATCH" },
+      "evidence": { "kind": "test", "path": "packages/json-to-pdf/__tests__/render-with-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "PDF_EOF_MARKER_MISSING",
+      "status": "active",
+      "emitter": "packages/json-to-pdf/src/phase10-validate.ts",
+      "severity": "error",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": true, "strategy": "REBUILD_XREF_TRAILER" },
+      "evidence": { "kind": "test", "path": "packages/json-to-pdf/__tests__/render-with-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "PDF_ROOT_OBJECT_INVALID",
+      "status": "active",
+      "emitter": "packages/json-to-pdf/src/phase10-validate.ts",
+      "severity": "error",
+      "expectedVerdict": "rejected",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/json-to-pdf/__tests__/render-with-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "PDF_FONT_OBJECT_MISSING",
+      "status": "active",
+      "emitter": "packages/json-to-pdf/src/phase10-validate.ts",
+      "severity": "error",
+      "expectedVerdict": "visual_fallback",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/json-to-pdf/__tests__/render-with-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "PDF_FONT_SUBSET_INCOMPLETE",
+      "status": "active",
+      "emitter": "packages/json-to-pdf/src/phase10-validate.ts",
+      "severity": "warning",
+      "expectedVerdict": "visual_fallback",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/json-to-pdf/__tests__/render-with-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "PDF_SIGNATURE_INVALID",
+      "status": "active",
+      "emitter": "packages/json-to-pdf/src/phase10-validate.ts",
+      "severity": "error",
+      "expectedVerdict": "rejected",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/json-to-pdf/__tests__/render-with-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "PDF_SIGNATURE_MISSING",
+      "status": "active",
+      "emitter": "packages/json-to-pdf/src/phase10-validate.ts",
+      "severity": "warning",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/json-to-pdf/__tests__/render-with-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "PDF_SIGNATURE_BYTERANGE_INVALID",
+      "status": "active",
+      "emitter": "packages/json-to-pdf/src/phase10-validate.ts",
+      "severity": "error",
+      "expectedVerdict": "rejected",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/json-to-pdf/__tests__/render-with-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "PDF_TIMESTAMP_MISSING",
+      "status": "active",
+      "emitter": "packages/json-to-pdf/src/phase10-validate.ts",
+      "severity": "warning",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/json-to-pdf/__tests__/render-with-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "PDF_TIMESTAMP_INVALID",
+      "status": "active",
+      "emitter": "packages/json-to-pdf/src/phase10-validate.ts",
+      "severity": "error",
+      "expectedVerdict": "rejected",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/json-to-pdf/__tests__/render-with-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "PDF_PAGE_TREE_COUNT_MISMATCH",
+      "status": "active",
+      "emitter": "packages/json-to-pdf/src/phase10-validate.ts",
+      "severity": "error",
+      "expectedVerdict": "rejected",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/json-to-pdf/__tests__/render-with-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "PDF_TAG_MCID_GAP",
+      "status": "active",
+      "emitter": "packages/json-to-pdf/src/phase10-validate.ts",
+      "severity": "warning",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/json-to-pdf/__tests__/render-with-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "PDF_SELF_REFERENCE",
+      "status": "active",
+      "emitter": "packages/json-to-pdf/src/phase10-validate.ts",
+      "severity": "error",
+      "expectedVerdict": "rejected",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/json-to-pdf/__tests__/render-with-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "PDF_METADATA_INFO_XMP_MISMATCH",
+      "status": "active",
+      "emitter": "packages/json-to-pdf/src/phase10-validate.ts",
+      "severity": "warning",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/json-to-pdf/__tests__/render-with-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "PDF_OBJECT_NUMBER_REUSE",
+      "status": "active",
+      "emitter": "packages/json-to-pdf/src/phase10-validate.ts",
+      "severity": "error",
+      "expectedVerdict": "rejected",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/json-to-pdf/__tests__/render-with-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "catalogVersion": "1.0.0",
+  "recordedAt": "2026-08-14T21:30:34.000+09:00",
+  "fixtureGenerator": "scripts/prepare-ga-application-fixtures.mjs",
+  "artifacts": [
+    {
+      "operation": "pptx.render",
+      "filename": "nominal.pptx",
+      "sha256": "a4534586e489a1e361255b4aa18b1e354807c832e4ad3885651b1c56d8b37589",
+      "primaryApplication": { "name": "Microsoft PowerPoint", "version": "16.112", "openedWithoutRepair": true },
+      "secondaryApplication": { "name": "LibreOffice Impress", "version": "26.2.2.2", "openedAndExported": true }
+    },
+    {
+      "operation": "docx.render",
+      "filename": "nominal.docx",
+      "sha256": "65bf4fe2e4ddc45a1b8a1918f460bc00be47cbac533e8ea37372092ecb13b2e9",
+      "primaryApplication": { "name": "Microsoft Word", "version": "16.112", "openedWithoutRepair": true },
+      "secondaryApplication": { "name": "LibreOffice Writer", "version": "26.2.2.2", "openedAndExported": true }
+    },
+    {
+      "operation": "xlsx.render",
+      "filename": "nominal.xlsx",
+      "sha256": "de23bc454010625f361438261ba957a12ac9f168d872fb1cefa59c9ce167afc1",
+      "primaryApplication": { "name": "Microsoft Excel", "version": "16.112", "openedWithoutRepair": true },
+      "secondaryApplication": { "name": "LibreOffice Calc", "version": "26.2.2.2", "openedAndExported": true }
+    },
+    {
+      "operation": "pdf.render",
+      "filename": "nominal.pdf",
+      "sha256": "226328c3016ed1510d4b3d75746d02836ab47e822227f16fcf89c0432cb44fde",
+      "primaryApplication": { "name": "macOS Preview", "version": "11.0", "openedWithoutRepair": true },
+      "secondaryApplication": { "name": "LibreOffice Draw", "version": "26.2.2.2", "openedAndExported": true },
+      "pdfChecks": {
+        "qpdf": { "version": "12.3.2", "passed": true },
+        "pdfinfo": { "version": "25.06.0", "pages": 1, "passed": true },
+        "pdftoppm": { "version": "25.06.0", "width": 1275, "height": 1650, "passed": true }
+      }
+    }
+  ],
+  "powerPointCorpusOracle": {
+    "artifact": "ga/powerpoint-macos-ga-evidence.json",
+    "sha256": "edb182c8cef1a740d4041240bac3706aa55900eea153cecfe2263f0257cf98c1",
+    "status": "pass",
+    "requiredCleanPositiveFixtures": 10,
+    "requiredDetectedNegativeControls": 1
+  }
+}

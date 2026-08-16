@@ -1,0 +1,83 @@
+{
+  "name": "template-mutation",
+  "passed": true,
+  "slideCount": 2,
+  "expectedSlideCount": 2,
+  "structural": {
+    "checks": [
+      {
+        "name": "duplicateContentTypes",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "contentTypesCoverage",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "relationshipTargetExistence",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "duplicateRelationshipIds",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "duplicateShapeIds",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "reachableRelationshipParts",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "presentationElementOrder",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "requiredAttributes",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "themeSchema",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "slideLayoutMasterChain",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "namespaceConsistency",
+        "passed": true,
+        "errors": []
+      }
+    ],
+    "passed": true,
+    "critical": []
+  },
+  "charts": {
+    "charts": [],
+    "passed": true
+  },
+  "diagnosis": {
+    "critical": [],
+    "high": [],
+    "medium": [],
+    "info": [],
+    "verdict": "LAUNCH_READY"
+  },
+  "issueCodes": [],
+  "artifacts": {
+    "pptxPath": "/Users/jake/prod25/theplainworks/runstamp.com/tests/desktopValidation/artifacts/template-mutation/template-mutation.pptx",
+    "jsonPath": "/Users/jake/prod25/theplainworks/runstamp.com/tests/desktopValidation/artifacts/template-mutation/validation.json"
+  }
+}

@@ -1,0 +1,396 @@
+{
+  "id": "pdf-summary-project-status-erp",
+  "format": "pdf",
+  "description": "Monthly steering-committee status report for an ERP replacement programme with RAG status band, milestone tracker, risk register, budget burn table, and decisions-required section.",
+  "provenance": "Modeled on the monthly programme status reports PMOs issue to steering committees for large ERP (SAP S/4HANA-style) implementations. Exercises colored RAG status cells, a milestone table mixing dates and status text, a five-column risk register with wrapped mitigation prose, a budget variance table with a footer totals row, and a decisions section that must not orphan across the page break.",
+  "expectedProperties": {
+    "pageCountMin": 2,
+    "hasTable": true,
+    "milestones": 6,
+    "risks": 4,
+    "overallStatus": "AMBER"
+  },
+  "document": {
+    "meta": {
+      "title": "Project Horizon — Monthly Status Report — June 2026",
+      "author": "Enterprise PMO, Caldera Building Products plc",
+      "subject": "ERP replacement programme status"
+    },
+    "page": {
+      "size": "A4",
+      "margin": { "top": 46, "right": 48, "bottom": 40, "left": 48 }
+    },
+    "pageNumber": {
+      "fontSize": 7,
+      "format": "Project Horizon | June 2026 | page {page} of {total}"
+    },
+    "children": [
+      { "type": "heading", "level": 1, "font": "Helvetica-Bold", "fontSize": 17, "value": "Project Horizon — Monthly Status Report" },
+      { "type": "paragraph", "fontSize": 9, "value": "ERP replacement programme (SAP S/4HANA)  |  Reporting period: June 1–30, 2026  |  Issued: July 3, 2026" },
+      { "type": "paragraph", "fontSize": 9, "value": "Programme director: Elena Marchetti  |  Sponsor: CFO (D. Whitmore)  |  Audience: Steering Committee" },
+      { "type": "divider", "style": { "marginTop": 6, "marginBottom": 10 } },
+      {
+        "type": "table",
+        "style": { "marginBottom": 12, "borderTop": { "color": "#1a1a1a", "width": 1 }, "borderBottom": { "color": "#1a1a1a", "width": 1 } },
+        "columns": [{ "width": "20%" }, { "width": "20%" }, { "width": "20%" }, { "width": "20%" }, { "width": "20%" }],
+        "header": [
+          {
+            "cells": [
+              { "role": "th", "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "textAlign": "center", "value": "Overall" }], "style": { "backgroundColor": "#e4e7eb", "padding": 4 } },
+              { "role": "th", "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "textAlign": "center", "value": "Scope" }], "style": { "backgroundColor": "#e4e7eb", "padding": 4 } },
+              { "role": "th", "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "textAlign": "center", "value": "Schedule" }], "style": { "backgroundColor": "#e4e7eb", "padding": 4 } },
+              { "role": "th", "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "textAlign": "center", "value": "Budget" }], "style": { "backgroundColor": "#e4e7eb", "padding": 4 } },
+              { "role": "th", "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "textAlign": "center", "value": "Resources" }], "style": { "backgroundColor": "#e4e7eb", "padding": 4 } }
+            ]
+          }
+        ],
+        "body": [
+          {
+            "cells": [
+              { "children": [{ "type": "heading", "level": 4, "font": "Helvetica-Bold", "textAlign": "center", "value": "AMBER" }], "style": { "backgroundColor": "#f7e2b8", "padding": 6 } },
+              { "children": [{ "type": "heading", "level": 4, "font": "Helvetica-Bold", "textAlign": "center", "value": "GREEN" }], "style": { "backgroundColor": "#cfe8d1", "padding": 6 } },
+              { "children": [{ "type": "heading", "level": 4, "font": "Helvetica-Bold", "textAlign": "center", "value": "AMBER" }], "style": { "backgroundColor": "#f7e2b8", "padding": 6 } },
+              { "children": [{ "type": "heading", "level": 4, "font": "Helvetica-Bold", "textAlign": "center", "value": "GREEN" }], "style": { "backgroundColor": "#cfe8d1", "padding": 6 } },
+              { "children": [{ "type": "heading", "level": 4, "font": "Helvetica-Bold", "textAlign": "center", "value": "RED" }], "style": { "backgroundColor": "#f4c7c3", "padding": 6 } }
+            ]
+          }
+        ]
+      },
+      { "type": "heading", "level": 3, "font": "Helvetica-Bold", "fontSize": 12, "value": "1. Executive commentary" },
+      { "type": "paragraph", "fontSize": 9.5, "lineHeight": 1.3, "style": { "marginRight": 144 }, "value": "The programme remains AMBER overall. Build for release 1 (finance and procurement) completed on June 26 with 94% of user stories accepted; system integration testing began on schedule on June 29. Schedule remains AMBER because the data migration mock-load slipped eight working days after the legacy AS/400 extract for open purchase orders failed reconciliation twice — root cause is duplicate vendor master records dating from the 2019 Farnworth acquisition, and a cleansing sprint is running through July 17." },
+      { "type": "paragraph", "fontSize": 9.5, "lineHeight": 1.3, "style": { "marginTop": 4, "marginRight": 144 }, "value": "Resources moved to RED this period: two of the five contracted SAP FICO consultants gave notice within a week of each other, and the systems integrator has not yet named replacements. The SI's practice lead attends the July 9 steering committee; escalation under clause 11.3 of the services agreement has been drafted but not issued. Budget remains GREEN with 2.1% favourable variance, though the cleansing sprint will consume most of the remaining data-workstream contingency." },
+      { "type": "heading", "level": 3, "font": "Helvetica-Bold", "fontSize": 12, "style": { "marginTop": 10 }, "value": "2. Milestone tracker" },
+      {
+        "type": "table",
+        "style": { "marginTop": 4, "borderTop": { "color": "#1a1a1a", "width": 1 }, "borderBottom": { "color": "#1a1a1a", "width": 1 } },
+        "columns": [{ "width": "34%" }, { "width": "15%" }, { "width": "15%" }, { "width": "12%" }, { "width": "24%" }],
+        "header": [
+          {
+            "cells": [
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "value": "Milestone" }], "style": { "backgroundColor": "#e4e7eb", "padding": 4 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "value": "Baseline" }], "style": { "backgroundColor": "#e4e7eb", "padding": 4 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "value": "Forecast" }], "style": { "backgroundColor": "#e4e7eb", "padding": 4 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "value": "Status" }], "style": { "backgroundColor": "#e4e7eb", "padding": 4 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "value": "Comment" }], "style": { "backgroundColor": "#e4e7eb", "padding": 4 } }
+            ]
+          }
+        ],
+        "body": [
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Release 1 build complete (finance, procurement)" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "26 Jun 2026" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "26 Jun 2026" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Complete" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "94% story acceptance; residual defects triaged into SIT backlog" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "SIT cycle 1 start" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "29 Jun 2026" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "29 Jun 2026" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Complete" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "228 of 610 scripts executed at month end; pass rate 87%" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Data migration mock load 2" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "10 Jul 2026" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "22 Jul 2026" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "At risk" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 }, "backgroundColor": "#fbe3b8" } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Slipped 8 days; vendor master cleansing sprint runs to 17 Jul" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "UAT entry gate (release 1)" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "24 Aug 2026" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "31 Aug 2026" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "At risk" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 }, "backgroundColor": "#fbe3b8" } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "One-week buffer consumed by mock-load slip; recoverable if cleansing completes on time" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Cutover rehearsal 1" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "05 Oct 2026" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "05 Oct 2026" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "On track" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Runbook v0.4 drafted; batch window mapping complete" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Go-live release 1 (UK entities)" }], "style": { "padding": 4 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "16 Nov 2026" }], "style": { "padding": 4 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "16 Nov 2026" }], "style": { "padding": 4 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "On track" }], "style": { "padding": 4 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Held; contingency review at September steering committee" }], "style": { "padding": 4 } }
+            ]
+          }
+        ]
+      },
+      { "type": "heading", "level": 3, "font": "Helvetica-Bold", "fontSize": 12, "style": { "marginTop": 12 }, "value": "3. Top risks and issues" },
+      {
+        "type": "table",
+        "style": { "marginTop": 4, "borderTop": { "color": "#1a1a1a", "width": 1 }, "borderBottom": { "color": "#1a1a1a", "width": 1 } },
+        "columns": [{ "width": "8%" }, { "width": "30%" }, { "width": "10%" }, { "width": "12%" }, { "width": "40%" }],
+        "header": [
+          {
+            "cells": [
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "value": "Ref" }], "style": { "backgroundColor": "#e4e7eb", "padding": 5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "value": "Description" }], "style": { "backgroundColor": "#e4e7eb", "padding": 5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "value": "Rating" }], "style": { "backgroundColor": "#e4e7eb", "padding": 5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "value": "Owner" }], "style": { "backgroundColor": "#e4e7eb", "padding": 5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "value": "Mitigation / next step" }], "style": { "backgroundColor": "#e4e7eb", "padding": 5 } }
+            ]
+          }
+        ],
+        "body": [
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "I-014" }], "style": { "padding": 6, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Loss of two SI FICO consultants; no named replacements" }], "style": { "padding": 6, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "High" }], "style": { "padding": 6, "borderBottom": { "color": "#d5d5d5", "width": 0.5 }, "backgroundColor": "#f3c1b8" } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "E. Marchetti" }], "style": { "padding": 6, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "SI practice lead attends 9 Jul SteerCo with staffing plan; clause 11.3 escalation letter drafted; internal finance SME backfill agreed with Group Financial Controller" }], "style": { "padding": 6, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "R-031" }], "style": { "padding": 6, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Vendor master duplicates jeopardise migration reconciliation" }], "style": { "padding": 6, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "High" }], "style": { "padding": 6, "borderBottom": { "color": "#d5d5d5", "width": 0.5 }, "backgroundColor": "#f3c1b8" } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "S. Adeyemi" }], "style": { "padding": 6, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Cleansing sprint (3 FTE + procurement analyst) to 17 Jul; 4,180 of 6,940 duplicate candidates dispositioned at month end; daily burn-down to PMO" }], "style": { "padding": 6, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "R-027" }], "style": { "padding": 6, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Warehouse scanning hardware lead time may miss cutover rehearsal 2" }], "style": { "padding": 6, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Medium" }], "style": { "padding": 6, "borderBottom": { "color": "#d5d5d5", "width": 0.5 }, "backgroundColor": "#fbe3b8" } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "J. Kowalczyk" }], "style": { "padding": 6, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "PO issued 12 Jun for 240 units; supplier confirms 9-week lead time; 30 loaner units secured for rehearsal if delivery slips" }], "style": { "padding": 6, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "R-035" }], "style": { "padding": 6 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Finance team capacity during September quarter close conflicts with UAT" }], "style": { "padding": 6 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Medium" }], "style": { "padding": 6, "backgroundColor": "#fbe3b8" } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "D. Whitmore" }], "style": { "padding": 6 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "UAT scripts for finance scheduled outside close week; two temporary management accountants approved to backfill BAU from 1 Sep" }], "style": { "padding": 6 } }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "style": { "marginTop": 12, "marginBottom": 10 },
+        "columns": [{ "width": "32%" }, { "width": "2%" }, { "width": "32%" }, { "width": "2%" }, { "width": "32%" }],
+        "body": [
+          {
+            "cells": [
+              {
+                "children": [
+                  { "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "value": "DECIDE | GBP 200K" },
+                  { "type": "paragraph", "fontSize": 8.5, "style": { "marginTop": 3 }, "value": "Release sponsor contingency for data cleansing and mock load 2." }
+                ],
+                "style": { "backgroundColor": "#fff2cc", "padding": 8, "borderTop": { "color": "#b98a00", "width": 2 } }
+              },
+              { "children": [], "style": { "padding": 0 } },
+              {
+                "children": [
+                  { "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "value": "ESCALATE | 11 JUL" },
+                  { "type": "paragraph", "fontSize": 8.5, "style": { "marginTop": 3 }, "value": "Issue the SI letter if named FICO replacements remain unconfirmed." }
+                ],
+                "style": { "backgroundColor": "#fbe9e7", "padding": 8, "borderTop": { "color": "#a55349", "width": 2 } }
+              },
+              { "children": [], "style": { "padding": 0 } },
+              {
+                "children": [
+                  { "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "value": "PROTECT | 14 CRs" },
+                  { "type": "paragraph", "fontSize": 8.5, "style": { "marginTop": 3 }, "value": "Hold non-critical changes until the UAT entry gate." }
+                ],
+                "style": { "backgroundColor": "#eaf1f7", "padding": 8, "borderTop": { "color": "#214d70", "width": 2 } }
+              }
+            ]
+          }
+        ]
+      },
+      { "type": "heading", "level": 3, "font": "Helvetica-Bold", "fontSize": 12, "style": { "marginTop": 12 }, "value": "4. Budget position" },
+      {
+        "type": "table",
+        "style": { "marginTop": 4, "borderTop": { "color": "#1a1a1a", "width": 1 }, "borderBottom": { "color": "#1a1a1a", "width": 1 } },
+        "columns": [{ "width": "32%" }, { "width": "17%" }, { "width": "17%" }, { "width": "17%" }, { "width": "17%" }],
+        "header": [
+          {
+            "cells": [
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "value": "Workstream (GBP thousands)" }], "style": { "backgroundColor": "#e4e7eb", "padding": 4 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "Approved" }], "style": { "backgroundColor": "#e4e7eb", "padding": 4 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "Spent to date" }], "style": { "backgroundColor": "#e4e7eb", "padding": 4 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "Forecast at completion" }], "style": { "backgroundColor": "#e4e7eb", "padding": 4 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "Variance" }], "style": { "backgroundColor": "#e4e7eb", "padding": 4 } }
+            ]
+          }
+        ],
+        "body": [
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Systems integrator services" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "6,850" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "3,912" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "6,790" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "+60" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Software licences and subscriptions" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "2,140" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "1,605" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "2,140" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "0" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Data migration and cleansing" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "980" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "612" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "1,065" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "(85)" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Internal backfill and change management" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "1,460" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "731" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "1,395" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "+65" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Contingency (held by sponsor)" }], "style": { "padding": 4 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "820" }], "style": { "padding": 4 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "0" }], "style": { "padding": 4 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "620" }], "style": { "padding": 4 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "+200" }], "style": { "padding": 4 } }
+            ]
+          }
+        ],
+        "footer": [
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "value": "Total programme" }], "style": { "backgroundColor": "#d8e6f1", "padding": 5, "borderTop": { "color": "#214d70", "width": 1 } } },
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "textAlign": "right", "value": "12,250" }], "style": { "backgroundColor": "#d8e6f1", "padding": 5, "borderTop": { "color": "#214d70", "width": 1 } } },
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "textAlign": "right", "value": "6,860" }], "style": { "backgroundColor": "#d8e6f1", "padding": 5, "borderTop": { "color": "#214d70", "width": 1 } } },
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "textAlign": "right", "value": "12,010" }], "style": { "backgroundColor": "#d8e6f1", "padding": 5, "borderTop": { "color": "#214d70", "width": 1 } } },
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "textAlign": "right", "value": "+240" }], "style": { "backgroundColor": "#d8e6f1", "padding": 5, "borderTop": { "color": "#214d70", "width": 1 } } }
+            ]
+          }
+        ]
+      },
+      { "type": "paragraph", "fontSize": 8.5, "lineHeight": 1.2, "style": { "marginTop": 4 }, "value": "Variance shown as approved budget less forecast at completion; figures exclude capitalised internal labour, which is reported separately in the quarterly capex return." },
+      { "type": "heading", "level": 3, "font": "Helvetica-Bold", "fontSize": 12, "style": { "marginTop": 12 }, "value": "5. Decisions required from the steering committee" },
+      {
+        "type": "list",
+        "ordered": true,
+        "items": [
+          { "text": "Approve release of GBP 200K sponsor contingency to fund the extended data-cleansing sprint and a second mock load (paper SC-2026-19)." },
+          { "text": "Endorse issuing the clause 11.3 escalation letter to the systems integrator if named FICO replacements are not confirmed by July 11." },
+          { "text": "Confirm the freeze on non-critical change requests until the UAT entry gate; 14 CRs (est. GBP 310K) would move to a post-go-live release." }
+        ]
+      },
+      { "type": "heading", "level": 3, "font": "Helvetica-Bold", "fontSize": 12, "style": { "marginTop": 12 }, "value": "6. Look ahead — July" },
+      {
+        "type": "list",
+        "items": [
+          { "text": "Complete vendor master cleansing sprint (target July 17) and execute mock load 2 (July 22-24)." },
+          { "text": "SIT cycle 1 completion, target 92% pass rate; defect triage board meets daily from July 6." },
+          { "text": "Train-the-trainer sessions for 22 finance super-users, Leeds and Rotherham sites, weeks of July 13 and 20." },
+          { "text": "Cutover runbook v1.0 to PMO quality review by July 31." }
+        ]
+      },
+      {
+        "type": "table",
+        "style": { "marginTop": 8, "borderTop": { "color": "#214d70", "width": 1 }, "borderBottom": { "color": "#214d70", "width": 1 } },
+        "columns": [{ "width": "18%" }, { "width": "35%" }, { "width": "47%" }],
+        "header": [
+          {
+            "cells": [
+              { "role": "th", "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "value": "Control date" }], "style": { "backgroundColor": "#e4e7eb", "padding": 5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "value": "Gate" }], "style": { "backgroundColor": "#e4e7eb", "padding": 5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "value": "Steering control" }], "style": { "backgroundColor": "#e4e7eb", "padding": 5 } }
+            ]
+          }
+        ],
+        "body": [
+          { "cells": [
+            { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "11 Jul" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+            { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "FICO replacements" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+            { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Issue clause 11.3 escalation if names remain unconfirmed." }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+          ] },
+          { "cells": [
+            { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "17 Jul" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+            { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Cleansing sprint" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+            { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Confirm duplicate-vendor backlog is ready for mock load 2." }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+          ] },
+          { "cells": [
+            { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "22-24 Jul" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+            { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Mock load 2" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+            { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Track reconciliation and protect the UAT entry buffer." }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+          ] },
+          { "cells": [
+            { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "31 Jul" }], "style": { "padding": 5 } },
+            { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Runbook v1.0" }], "style": { "padding": 5 } },
+            { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Complete PMO quality review." }], "style": { "padding": 5 } }
+          ] }
+        ]
+      },
+      { "type": "heading", "level": 3, "font": "Helvetica-Bold", "fontSize": 12, "style": { "marginTop": 14 }, "value": "7. July readiness measures" },
+      {
+        "type": "table",
+        "style": { "marginTop": 5 },
+        "columns": [{ "width": "32%" }, { "width": "2%" }, { "width": "32%" }, { "width": "2%" }, { "width": "32%" }],
+        "body": [
+          {
+            "cells": [
+              {
+                "children": [
+                  { "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "value": "SIT EXIT TARGET" },
+                  { "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 13, "style": { "marginTop": 4 }, "value": "92% pass" },
+                  { "type": "paragraph", "fontSize": 8, "style": { "marginTop": 2 }, "value": "Cycle 1 completion gate" }
+                ],
+                "style": { "backgroundColor": "#eaf1f7", "padding": 16, "borderTop": { "color": "#214d70", "width": 2 } }
+              },
+              { "children": [], "style": { "padding": 0 } },
+              {
+                "children": [
+                  { "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "value": "SUPER-USERS" },
+                  { "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 13, "style": { "marginTop": 4 }, "value": "22" },
+                  { "type": "paragraph", "fontSize": 8, "style": { "marginTop": 2 }, "value": "Training in Leeds and Rotherham" }
+                ],
+                "style": { "backgroundColor": "#eaf1f7", "padding": 16, "borderTop": { "color": "#214d70", "width": 2 } }
+              },
+              { "children": [], "style": { "padding": 0 } },
+              {
+                "children": [
+                  { "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "value": "CHANGE FREEZE" },
+                  { "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 13, "style": { "marginTop": 4 }, "value": "14 CRs" },
+                  { "type": "paragraph", "fontSize": 8, "style": { "marginTop": 2 }, "value": "Held until the UAT entry gate" }
+                ],
+                "style": { "backgroundColor": "#fff4e5", "padding": 16, "borderTop": { "color": "#a66a16", "width": 2 } }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

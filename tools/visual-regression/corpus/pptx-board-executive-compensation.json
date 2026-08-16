@@ -1,0 +1,144 @@
+{
+  "id": "pptx-board-executive-compensation",
+  "format": "pptx",
+  "surface": "agent",
+  "description": "Compensation committee deck proposing FY2027 executive pay design for a public cybersecurity company.",
+  "provenance": "Modeled on public-company compensation committee materials: peer positioning, pay-for-performance alignment, annual and long-term incentive scorecards, retention risk, dilution, and resolutions. Deliberately exercises an eight-slide deck with a two-series pay-for-performance line chart, percentage-heavy comparisons, and governance-specific approval language.",
+  "expectedProperties": {
+    "slideCount": 8,
+    "hasChart": true,
+    "chartSlides": 1,
+    "chartTypes": ["line"],
+    "kpiCount": 4
+  },
+  "document": {
+    "type": "presentation",
+    "version": "1.0",
+    "presentationTitle": "FY2027 Executive Compensation Design",
+    "companyName": "Sentinel Ridge Security, Inc.",
+    "theme": "midnight",
+    "designTokens": {
+      "scale": "md",
+      "shape": "sharp"
+    },
+    "slides": [
+      {
+        "pattern": "title",
+        "content": {
+          "title": "FY2027 Executive Compensation Design",
+          "subtitle": "Compensation Committee | November 17, 2026 | Privileged and confidential"
+        }
+      },
+      {
+        "pattern": "statement",
+        "content": {
+          "title": "The FY2027 design raises performance leverage and targets retention risk.",
+          "subtitle": "Committee advisor recommendation",
+          "prose": [
+            "Target CEO compensation remains near the peer median; 87% is variable.",
+            "Performance stock units deliver 67% of target pay.",
+            "Retention awards address vesting gaps for the product and revenue chiefs."
+          ]
+        }
+      },
+      {
+        "pattern": "dashboard",
+        "content": {
+          "title": "Proposed CEO pay mix",
+          "subtitle": "FY2027 target direct compensation of $10.8M",
+          "kpis": [
+            { "label": "Base pay", "value": "$850K", "trend": "flat", "sublabel": "8% of target pay" },
+            { "label": "Target bonus", "value": "$1.70M", "trend": "up", "sublabel": "200% of salary" },
+            { "label": "Perf. equity", "value": "$7.24M", "trend": "up", "sublabel": "67% of target pay" },
+            { "label": "Time equity", "value": "$1.01M", "trend": "down", "sublabel": "Reduced to 9% of pay" }
+          ]
+        }
+      },
+      {
+        "pattern": "chart-focus",
+        "content": {
+          "title": "Realized CEO pay tracks relative shareholder outcomes",
+          "subtitle": "Sentinel Ridge percentile rank within the cybersecurity peer group",
+          "chart": {
+            "type": "line",
+            "title": "Performance and realized-pay percentile",
+            "series": [
+              {
+                "name": "Three-year TSR percentile",
+                "dataPoints": [
+                  { "category": "2023", "value": 42 },
+                  { "category": "2024", "value": 51 },
+                  { "category": "2025", "value": 63 },
+                  { "category": "2026", "value": 68 }
+                ]
+              },
+              {
+                "name": "Realized pay percentile",
+                "dataPoints": [
+                  { "category": "2023", "value": 47 },
+                  { "category": "2024", "value": 49 },
+                  { "category": "2025", "value": 58 },
+                  { "category": "2026", "value": 61 }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pattern": "comparison",
+        "content": {
+          "title": "FY2026 design versus proposed FY2027 design",
+          "subtitle": "Changes strengthen performance orientation and simplify measures",
+          "kpis": [
+            { "label": "Bonus mix", "value": "50%", "sublabel": "ARR; 30/20 FCF/goal" },
+            { "label": "Bonus max", "value": "225%", "sublabel": "ARR gate over target" },
+            { "label": "CEO LTI mix", "value": "75/25", "sublabel": "PSUs / RSUs" },
+            { "label": "PSU measures", "value": "3", "sublabel": "ARR, FCF, rel. TSR" }
+          ]
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "FY2027 incentive scorecards",
+          "subtitle": "Threshold, target, and maximum performance levels",
+          "bulletPoints": [
+            "Annual ARR growth: 16% threshold, 20% target, 25% maximum; 50% weighting",
+            "Annual free cash flow margin: 17% threshold, 20% target, 23% maximum; 30% weighting",
+            "Strategic: cloud workload protection attach, federal authorization, and leadership succession; 20% weighting",
+            "Three-year ARR CAGR: 17% threshold, 20% target, 24% maximum; one-third of PSUs",
+            "Three-year cumulative free cash flow: $910M threshold, $1.08B target, $1.27B maximum; one-third of PSUs",
+            "Relative TSR: 25th percentile threshold, 50th target, 75th maximum; one-third of PSUs with negative-TSR cap at target"
+          ]
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "Retention, dilution, and shareholder considerations",
+          "subtitle": "Targeted actions within the existing equity plan",
+          "bulletPoints": [
+            "Chief Product Officer retention award: $3.2M, 60% performance-based, vesting over three years; replacement risk rated high",
+            "Chief Revenue Officer retention award: $2.4M, 50% performance-based; conditioned on FY2027 federal go-to-market milestones",
+            "No special award proposed for the CEO, CFO, or Chief Legal Officer",
+            "FY2027 burn rate of 2.6% versus 2.8% peer median; overhang declines to 9.4% after the annual grant",
+            "Compensation advisor expects the design to score favorably on pay-for-performance alignment and problematic-pay-practice screens",
+            "Clawback, double-trigger change-in-control, and no-hedging policies remain unchanged"
+          ]
+        }
+      },
+      {
+        "pattern": "statement",
+        "content": {
+          "title": "Approve the FY2027 program and two retention awards.",
+          "subtitle": "Separate votes under compensation committee agenda items 2, 3, and 4",
+          "prose": [
+            "Awards use the 20-day average share price ending February 12, 2027.",
+            "Any increase above 5% requires further committee approval."
+          ]
+        }
+      }
+    ]
+  }
+}

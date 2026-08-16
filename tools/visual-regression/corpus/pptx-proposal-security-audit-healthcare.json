@@ -1,0 +1,148 @@
+{
+  "id": "pptx-proposal-security-audit-healthcare",
+  "format": "pptx",
+  "surface": "agent",
+  "description": "Independent cybersecurity audit and resilience testing proposal for a multi-state healthcare provider.",
+  "provenance": "Modeled on professional-services engagement proposals for healthcare security assurance: threat context, audit scope, control framework, maturity target, workplan, deliverables, team, fees, and independence terms. Deliberately exercises an eight-slide deck with a two-series maturity bar chart, HIPAA-specific language, and fixed-fee milestone detail.",
+  "expectedProperties": {
+    "slideCount": 8,
+    "hasChart": true,
+    "chartSlides": 1,
+    "chartTypes": ["bar"],
+    "kpiCount": 4
+  },
+  "document": {
+    "type": "presentation",
+    "version": "1.0",
+    "presentationTitle": "Cybersecurity Audit and Resilience Engagement — North Valley Care",
+    "companyName": "Keystone Risk Partners",
+    "theme": "monochrome",
+    "designTokens": {
+      "scale": "md",
+      "shape": "sharp"
+    },
+    "slides": [
+      {
+        "pattern": "title",
+        "content": {
+          "title": "Cybersecurity Audit & Resilience Engagement",
+          "subtitle": "Prepared for North Valley Care | October 6, 2026 | Engagement proposal KRP-4472"
+        }
+      },
+      {
+        "pattern": "statement",
+        "content": {
+          "title": "Independent testing will prove North Valley's ransomware resilience.",
+          "subtitle": "Engagement objective",
+          "prose": [
+            "Scope covers 12 hospitals, the EHR, 94 ambulatory sites, and two laboratories.",
+            "Critical patient-care vendors are included in the evidence review.",
+            "Keystone tests controls and recovery without disrupting production."
+          ]
+        }
+      },
+      {
+        "pattern": "dashboard",
+        "content": {
+          "title": "Engagement coverage",
+          "subtitle": "Evidence-based testing across governance, technology, and clinical operations",
+          "kpis": [
+            { "label": "Domains", "value": "14", "trend": "flat", "sublabel": "NIST CSF 2.0 + HIPAA" },
+            { "label": "Tech tests", "value": "22", "trend": "flat", "sublabel": "ID, net, cloud, EHR" },
+            { "label": "Key vendors", "value": "18", "trend": "flat", "sublabel": "Evidence + recovery" },
+            { "label": "Timeline", "value": "12 wks", "trend": "flat", "sublabel": "Report Jan 29, 2027" }
+          ]
+        }
+      },
+      {
+        "pattern": "chart-focus",
+        "content": {
+          "title": "Audit will validate the path to the board's FY2027 maturity target",
+          "subtitle": "Preliminary self-assessment versus target maturity on a five-point scale",
+          "chart": {
+            "type": "bar",
+            "title": "Cybersecurity capability maturity",
+            "series": [
+              {
+                "name": "Current self-assessment",
+                "dataPoints": [
+                  { "category": "Govern", "value": 2.8 },
+                  { "category": "Identify", "value": 2.6 },
+                  { "category": "Protect", "value": 3.1 },
+                  { "category": "Detect", "value": 2.7 },
+                  { "category": "Respond", "value": 2.4 },
+                  { "category": "Recover", "value": 2.1 }
+                ]
+              },
+              {
+                "name": "FY2027 target",
+                "dataPoints": [
+                  { "category": "Govern", "value": 3.6 },
+                  { "category": "Identify", "value": 3.5 },
+                  { "category": "Protect", "value": 3.8 },
+                  { "category": "Detect", "value": 3.6 },
+                  { "category": "Respond", "value": 3.5 },
+                  { "category": "Recover", "value": 3.5 }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pattern": "comparison",
+        "content": {
+          "title": "Audit scope — assurance plus technical proof",
+          "subtitle": "Each domain combines document review, interviews, sampling, and direct validation",
+          "kpis": [
+            { "label": "Governance", "value": "Board", "sublabel": "HIPAA exceptions" },
+            { "label": "Identity", "value": "6", "sublabel": "MFA, privilege, Epic" },
+            { "label": "Technology", "value": "6", "sublabel": "Net, endpoint, cloud" },
+            { "label": "Clinical", "value": "2", "sublabel": "Downtime + devices" }
+          ]
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "Twelve-week workplan and deliverables",
+          "subtitle": "Work begins November 2, 2026; final board report January 29, 2027",
+          "bulletPoints": [
+            "Weeks 1-2 — kickoff, evidence request, asset and vendor scope validation, and audit sampling plan",
+            "Weeks 3-6 — control walkthroughs, evidence testing, identity analytics, configuration review, and safe technical validation",
+            "Weeks 7-8 — hospital visits at North Valley Central and Riverside; clinical downtime and biomedical-device review",
+            "Weeks 9-10 — ransomware recovery exercise, executive tabletop, and preliminary finding validation",
+            "Week 11 — management fact-check, severity calibration, root-cause analysis, and remediation workshops",
+            "Week 12 — audit opinion, board report, prioritized roadmap, evidence archive, and executive readout"
+          ]
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "Team, independence, and investment",
+          "subtitle": "Fixed-fee engagement under North Valley's professional-services terms",
+          "bulletPoints": [
+            "Engagement partner: former health-system CISO; accountable for opinion quality and board presentation",
+            "Core team: audit director, cloud security lead, identity specialist, clinical resilience lead, and three senior assessors",
+            "Fixed professional fee — $685,000 including travel, technical testing, exercise facilitation, and final board presentation",
+            "Optional external penetration test — $118,000; executed only after written authorization and agreed rules of engagement",
+            "Keystone has performed no implementation work for North Valley and holds no reseller or referral relationships with its vendors",
+            "Business associate agreement, cyber insurance certificate, and evidence-handling protocol included with the draft engagement letter"
+          ]
+        }
+      },
+      {
+        "pattern": "statement",
+        "content": {
+          "title": "Execute by October 23 for a January board report.",
+          "subtitle": "Next steps",
+          "prose": [
+            "Keystone issues the evidence request within two business days.",
+            "Scope sessions cover Security, IT, Clinical Engineering, Compliance, Audit, and Risk."
+          ]
+        }
+      }
+    ]
+  }
+}

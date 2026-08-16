@@ -1,0 +1,166 @@
+{
+  "id": "docx-policy-incident-response",
+  "format": "docx",
+  "description": "Security incident-response runbook for a B2B SaaS platform with severity matrix, escalation tables, and phase-by-phase procedures.",
+  "provenance": "Modeled on NIST SP 800-61r2-aligned incident-response runbooks maintained by SaaS security teams (severity/priority matrices, PagerDuty escalation tiers, containment command snippets, regulatory notification clocks). Deliberately exercises h1-h4 hierarchy, numbered step procedures with nested sub-steps, a code block, several dense tables including a wide severity matrix, and a revision-history table.",
+  "expectedProperties": {
+    "pageCountMin": 4,
+    "hasTable": true,
+    "hasCodeBlock": true,
+    "headingLevelsUsed": [1, 2, 3, 4]
+  },
+  "document": {
+    "type": "DocxDocument",
+    "pageSize": "letter",
+    "metadata": {
+      "title": "Security Incident Response Runbook",
+      "author": "Lattice Cloud Inc. — Security Operations",
+      "subject": "SEC-RB-002 Incident Response Runbook",
+      "language": "en-US"
+    },
+    "theme": { "preset": "minimal" },
+    "header": {
+      "text": "Lattice Cloud Inc. — SEC-RB-002 — Confidential"
+    },
+    "footer": {
+      "text": "Runbook version 3.4 — On-call: page sev-ir via PagerDuty",
+      "includePageNumber": true
+    },
+    "pages": [
+      {
+        "elements": [
+          { "type": "heading", "level": 1, "text": "Security Incident Response Runbook" },
+          { "type": "paragraph", "text": "This runbook is the operational companion to the Incident Response Policy (SEC-POL-007). It tells the on-call responder what to do, in what order, and who to call, for security incidents affecting the Lattice Cloud platform, corporate IT, or customer data. If you are reading this during an incident, start at Section 2." },
+          { "type": "heading", "level": 2, "text": "1. Severity classification" },
+          { "type": "paragraph", "text": "Classify within 15 minutes of triage start. When in doubt between two levels, choose the higher one; severity can be downgraded later with Incident Commander approval." },
+          {
+            "type": "table",
+            "caption": "Severity matrix",
+            "tableStyle": "bordered",
+            "rows": [
+              { "isHeader": true, "cells": [ { "text": "Severity" }, { "text": "Definition" }, { "text": "Examples" }, { "text": "Response time" }, { "text": "Update cadence" }, { "text": "Who is paged" } ] },
+              { "cells": [ { "text": "SEV-1" }, { "text": "Confirmed compromise of customer data or production control plane" }, { "text": "Active attacker in prod; ransomware on core systems; confirmed exfiltration" }, { "text": "15 min, 24/7" }, { "text": "Hourly" }, { "text": "IC, CISO, CTO, Legal, Comms" } ] },
+              { "cells": [ { "text": "SEV-2" }, { "text": "Likely compromise or material degradation of security controls" }, { "text": "Credential stuffing with successful logins; malware on an engineer laptop with prod access" }, { "text": "30 min, 24/7" }, { "text": "Every 4 hours" }, { "text": "IC, security on-call, affected service owner" } ] },
+              { "cells": [ { "text": "SEV-3" }, { "text": "Suspicious activity requiring investigation, no confirmed impact" }, { "text": "Anomalous OAuth grant; single phished user, no session reuse observed" }, { "text": "4 business hours" }, { "text": "Daily" }, { "text": "Security on-call" } ] },
+              { "cells": [ { "text": "SEV-4" }, { "text": "Policy violation or hygiene finding" }, { "text": "Unapproved SaaS tool; expired certificate on internal service" }, { "text": "2 business days" }, { "text": "At close" }, { "text": "Ticket queue only" } ] }
+            ]
+          },
+          { "type": "heading", "level": 2, "text": "2. First 30 minutes checklist" },
+          {
+            "type": "list",
+            "listType": "number",
+            "items": [
+              { "text": "Acknowledge the page in PagerDuty within 5 minutes." },
+              { "text": "Open an incident channel: #inc-YYYYMMDD-shortname in Slack, and start the incident doc from the template pinned to #security-ir." },
+              { "text": "Classify severity per Section 1. For SEV-1 or SEV-2, page the Incident Commander rotation immediately." },
+              { "text": "Preserve evidence before changing anything.", "nestedList": { "type": "list", "listType": "bullet", "items": [ { "text": "Snapshot affected EC2 instances and EBS volumes; do not stop or terminate them." }, { "text": "Export relevant CloudTrail, VPC flow, and application logs to the forensics bucket." }, { "text": "Record all actions with timestamps in the incident doc — the timeline is legal evidence." } ] } },
+              { "text": "Begin containment per Section 3 only after evidence preservation, unless harm is actively spreading." }
+            ]
+          },
+          { "type": "heading", "level": 2, "text": "3. Containment procedures" },
+          { "type": "heading", "level": 3, "text": "3.1 Compromised user account" },
+          {
+            "type": "list",
+            "listType": "number",
+            "items": [
+              { "text": "Suspend the account in Okta; this kills active sessions within 60 seconds." },
+              { "text": "Revoke all OAuth refresh tokens and app passwords issued to the account." },
+              { "text": "Rotate any API keys owned by the user in Vault." },
+              { "text": "Review the account's activity for the preceding 30 days before deciding on reinstatement." }
+            ]
+          },
+          { "type": "heading", "level": 3, "text": "3.2 Compromised production workload" },
+          { "type": "paragraph", "text": "Isolate rather than destroy. Apply the quarantine security group, which permits only forensics-VPC ingress, then detach the instance from its load balancer and auto-scaling group:" },
+          { "type": "code-block", "language": "bash", "code": "aws ec2 modify-instance-attribute --instance-id \"$INSTANCE_ID\" \\\n  --groups sg-0f3quarantine\naws elbv2 deregister-targets --target-group-arn \"$TG_ARN\" \\\n  --targets Id=\"$INSTANCE_ID\"\naws autoscaling detach-instances --instance-ids \"$INSTANCE_ID\" \\\n  --auto-scaling-group-name \"$ASG_NAME\" --no-should-decrement-desired-capacity" },
+          { "type": "heading", "level": 3, "text": "3.3 Leaked credential or secret" },
+          {
+            "type": "list",
+            "listType": "number",
+            "items": [
+              { "text": "Rotate the secret at the source (Vault, AWS Secrets Manager, or the third-party console)." },
+              { "text": "Search CloudTrail and application logs for use of the leaked credential since the earliest possible exposure time." },
+              { "text": "If the secret was committed to a repository, purge it from history and treat every fork and clone as exposed — rotation, not deletion, is the control." }
+            ]
+          },
+          { "type": "heading", "level": 4, "text": "3.3.1 Customer-supplied secrets" },
+          { "type": "paragraph", "text": "If the leaked material belongs to a customer (for example, a customer's webhook signing key stored in our platform), Support must notify the customer within 4 hours with rotation instructions, regardless of incident severity." },
+          { "type": "heading", "level": 2, "text": "4. Escalation and roles" },
+          {
+            "type": "table",
+            "caption": "Escalation tiers",
+            "tableStyle": "corporate",
+            "rows": [
+              { "isHeader": true, "cells": [ { "text": "Role" }, { "text": "Rotation / person" }, { "text": "Page via" }, { "text": "Escalate after" } ] },
+              { "cells": [ { "text": "Security on-call (responder)" }, { "text": "sec-oncall weekly rotation" }, { "text": "PagerDuty: sev-ir" }, { "text": "5 min unacknowledged" } ] },
+              { "cells": [ { "text": "Incident Commander" }, { "text": "IC rotation (6 trained ICs)" }, { "text": "PagerDuty: ic-rotation" }, { "text": "10 min unacknowledged" } ] },
+              { "cells": [ { "text": "CISO" }, { "text": "A. Beaumont" }, { "text": "PagerDuty override, then mobile" }, { "text": "15 min unacknowledged" } ] },
+              { "cells": [ { "text": "Legal counsel" }, { "text": "Privacy counsel on-call" }, { "text": "legal-urgent@ + phone bridge" }, { "text": "Business-hours fallback: General Counsel" } ] },
+              { "cells": [ { "text": "Communications" }, { "text": "VP Communications" }, { "text": "Slack #comms-urgent, then mobile" }, { "text": "—" } ] }
+            ]
+          },
+          { "type": "heading", "level": 3, "text": "4.1 Incident Commander authority" },
+          {
+            "type": "list",
+            "listType": "bullet",
+            "items": [
+              { "text": "The IC directs the response and may pull in any engineer at any hour for SEV-1 and SEV-2 incidents." },
+              { "text": "Only the IC approves customer-visible actions: maintenance pages, forced logouts, or feature disablement." },
+              { "text": "Only Legal, through the IC, approves external statements. Responders must not discuss incidents outside the incident channel." }
+            ]
+          },
+          { "type": "heading", "level": 2, "text": "5. Notification obligations" },
+          { "type": "paragraph", "text": "Legal owns the notification decision; the clocks below start at confirmation of a qualifying event, so the timeline in the incident doc must make the confirmation moment explicit." },
+          {
+            "type": "table",
+            "caption": "Regulatory and contractual notification clocks",
+            "tableStyle": "striped",
+            "rows": [
+              { "isHeader": true, "cells": [ { "text": "Obligation" }, { "text": "Trigger" }, { "text": "Deadline" }, { "text": "Owner" } ] },
+              { "cells": [ { "text": "GDPR Art. 33 (supervisory authority)" }, { "text": "Personal data breach, EU data subjects" }, { "text": "72 hours" }, { "text": "Privacy counsel" } ] },
+              { "cells": [ { "text": "US state breach statutes" }, { "text": "Unencrypted PII of state residents" }, { "text": "Varies; earliest is 30 days (CO)" }, { "text": "Privacy counsel" } ] },
+              { "cells": [ { "text": "Customer DPAs" }, { "text": "Any personal-data incident affecting the customer" }, { "text": "48 hours (most-restrictive contract)" }, { "text": "Legal + CSM" } ] },
+              { "cells": [ { "text": "SEC Form 8-K Item 1.05" }, { "text": "Materiality determination" }, { "text": "4 business days from determination" }, { "text": "General Counsel + CFO" } ] },
+              { "cells": [ { "text": "Cyber-insurance carrier" }, { "text": "Any SEV-1 or SEV-2" }, { "text": "As soon as practicable, before engaging outside forensics" }, { "text": "CISO" } ] }
+            ]
+          },
+          { "type": "heading", "level": 2, "text": "6. Recovery and closure" },
+          { "type": "heading", "level": 3, "text": "6.1 Exit criteria" },
+          {
+            "type": "list",
+            "listType": "bullet",
+            "items": [
+              { "text": "Attacker access provably removed: all persistence mechanisms enumerated and eliminated, credentials rotated." },
+              { "text": "Detection coverage added or verified for the initial access vector." },
+              { "text": "Affected services restored from known-good sources and monitored through one full business cycle." }
+            ]
+          },
+          { "type": "heading", "level": 3, "text": "6.2 Post-incident review" },
+          { "type": "paragraph", "text": "A blameless post-incident review is mandatory within 5 business days of closure for SEV-1 and SEV-2, and within 15 business days for SEV-3. The review produces a timeline, contributing factors, and tracked corrective actions with owners and due dates. Corrective actions older than 90 days are reported to the CISO monthly until closed." },
+          { "type": "heading", "level": 2, "text": "7. Runbook maintenance" },
+          { "type": "paragraph", "text": "Security Operations owns this runbook. It is exercised at least twice per year through tabletop scenarios, and every procedural change is validated in the staging environment before merge. Contact channels are verified monthly by the on-call responder as part of the handover checklist." },
+          {
+            "type": "container",
+            "keepTogether": true,
+            "children": [
+              { "type": "heading", "level": 2, "text": "Revision history" },
+              {
+                "type": "table",
+                "caption": "Revision history",
+                "tableStyle": "striped",
+                "columns": [ { "width": 45 }, { "width": 80 }, { "width": 115 }, { "width": 228 } ],
+                "rows": [
+                  { "isHeader": true, "cells": [ { "text": "Ver" }, { "text": "Date" }, { "text": "Author" }, { "text": "Summary of change" } ] },
+                  { "cells": [ { "text": "3.0" }, { "text": "2024-09-30" }, { "text": "L. Ferreira" }, { "text": "Rewrote containment section around quarantine security groups; added SEC 8-K clock." } ] },
+                  { "cells": [ { "text": "3.1" }, { "text": "2025-01-22" }, { "text": "L. Ferreira" }, { "text": "Added customer-supplied-secret sub-procedure after Q4 tabletop finding." } ] },
+                  { "cells": [ { "text": "3.2" }, { "text": "2025-06-10" }, { "text": "N. Osei" }, { "text": "Updated escalation tiers for new IC rotation; monthly contact verification added." } ] },
+                  { "cells": [ { "text": "3.3" }, { "text": "2025-11-04" }, { "text": "N. Osei" }, { "text": "Aligned severity matrix update cadence with customer DPA commitments." } ] },
+                  { "cells": [ { "text": "3.4" }, { "text": "2026-04-16" }, { "text": "N. Osei" }, { "text": "Semi-annual review; clarified evidence-preservation-before-containment rule; refreshed AWS CLI snippets." } ] }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

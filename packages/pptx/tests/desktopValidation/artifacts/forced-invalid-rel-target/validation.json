@@ -1,0 +1,103 @@
+{
+  "name": "forced-invalid-rel-target",
+  "passed": false,
+  "slideCount": 1,
+  "expectedSlideCount": 1,
+  "structural": {
+    "checks": [
+      {
+        "name": "duplicateContentTypes",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "contentTypesCoverage",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "relationshipTargetExistence",
+        "passed": false,
+        "errors": [
+          "[ppt/_rels/presentation.xml.rels] Relationship rId3 target \"slides/missing-slide1.xml\" (resolved: \"ppt/slides/missing-slide1.xml\") not found in ZIP"
+        ]
+      },
+      {
+        "name": "duplicateRelationshipIds",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "duplicateShapeIds",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "reachableRelationshipParts",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "presentationElementOrder",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "requiredAttributes",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "themeSchema",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "slideLayoutMasterChain",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "namespaceConsistency",
+        "passed": true,
+        "errors": []
+      }
+    ],
+    "passed": false,
+    "critical": [
+      {
+        "name": "relationshipTargetExistence",
+        "passed": false,
+        "errors": [
+          "[ppt/_rels/presentation.xml.rels] Relationship rId3 target \"slides/missing-slide1.xml\" (resolved: \"ppt/slides/missing-slide1.xml\") not found in ZIP"
+        ]
+      }
+    ]
+  },
+  "charts": {
+    "charts": [],
+    "passed": true
+  },
+  "diagnosis": {
+    "critical": [
+      {
+        "issue": "[ppt/_rels/presentation.xml.rels] Relationship rId3 target \"slides/missing-slide1.xml\" (resolved: \"ppt/slides/missing-slide1.xml\") not found in ZIP",
+        "file": "relationshipTargetExistence",
+        "fix": "Remove orphaned relationship or add missing target file to archive",
+        "autoFixable": true,
+        "category": "structural"
+      }
+    ],
+    "high": [],
+    "medium": [],
+    "info": [],
+    "verdict": "BLOCKED"
+  },
+  "issueCodes": [
+    "structural:relationshipTargetExistence"
+  ],
+  "artifacts": {
+    "pptxPath": "/Users/jake/prod25/theplainworks/runstamp.com/tests/desktopValidation/artifacts/forced-invalid-rel-target/forced-invalid-rel-target.pptx",
+    "jsonPath": "/Users/jake/prod25/theplainworks/runstamp.com/tests/desktopValidation/artifacts/forced-invalid-rel-target/validation.json"
+  }
+}

@@ -1,0 +1,375 @@
+{
+  "id": "docx-analysis-competitive-landscape-cgm",
+  "format": "docx",
+  "description": "Competitive landscape report on the continuous glucose monitoring device market with competitor profiles, a wide 8-column capability matrix, and market-share analysis.",
+  "provenance": "Modeled on the competitive-intelligence landscape reports that medtech strategy teams and equity-research desks produce: market-share table, per-competitor profile sections with strengths/vulnerabilities lists, and a wide capability comparison matrix. Deliberately exercises an 8-column wide table on a landscape section, pie chart, per-competitor repeated section structure, and mixed bullet lists inside long prose.",
+  "expectedProperties": {
+    "pageCountMin": 4,
+    "hasTable": true,
+    "hasChart": true,
+    "competitorProfiles": 4,
+    "wideTableColumns": 8
+  },
+  "document": {
+    "type": "DocxDocument",
+    "pageSize": "letter",
+    "metadata": {
+      "title": "Competitive Landscape: Continuous Glucose Monitoring, Mid-2026",
+      "author": "Competitive Intelligence Group",
+      "subject": "CGM device market landscape and share analysis",
+      "language": "en-US"
+    },
+    "theme": {
+      "preset": "classic"
+    },
+    "footer": {
+      "text": "Competitive Intelligence Group — internal use only. Sourced from public filings, regulatory databases, and field interviews.",
+      "includePageNumber": true
+    },
+    "pages": [
+      {
+        "elements": [
+          {
+            "type": "heading",
+            "level": 1,
+            "text": "Competitive Landscape: Continuous Glucose Monitoring"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "Half-year update — June 2026. Coverage: US, EU5, Japan. Prepared for the Diabetes Care business unit leadership team.", "style": { "fontStyle": "italic" } }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "Summary of movement since the December 2025 edition"
+          },
+          {
+            "type": "paragraph",
+            "text": "The CGM category grew to an estimated $15.8B in trailing-twelve-month global revenue, up 17% year-over-year, with over-the-counter (OTC) wellness wearers now contributing roughly 9% of category units. Three developments alter the competitive picture this half. First, Dexterra Health received FDA clearance for its 21-day G8 sensor in March, leapfrogging the category's wear-time benchmark of 15 days. Second, Verranova's OTC sensor Lumia crossed one million cumulative activations within nine months of launch, validating the cash-pay wellness segment it created. Third, Kizuna Medical's exit from its US distribution agreement with MedSource returns approximately 4% of US pharmacy share to contest during H2 2026."
+          },
+          {
+            "type": "paragraph",
+            "text": "Pricing pressure is concentrated in the type 2 basal segment, where payers increasingly benchmark against Verranova's $89/month cash price. Average US net revenue per patient-month declined an estimated 6% over the trailing year across the big three, while sensor cost curves improved faster (Dexterra disclosed a 14% unit-cost reduction at its March analyst day), keeping gross margins broadly stable."
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "Global revenue share, trailing twelve months to Q2 2026"
+          },
+          {
+            "type": "chart",
+            "chartType": "pie",
+            "title": "CGM global revenue share, TTM Q2 2026",
+            "categories": ["Dexterra Health", "Abelard Diabetes Care", "Meridian Biosensors", "Verranova", "Kizuna Medical", "Others"],
+            "series": [
+              { "name": "Revenue share", "values": [38.2, 33.5, 12.1, 7.4, 4.6, 4.2] }
+            ],
+            "legend": { "position": "right" }
+          },
+          {
+            "type": "table",
+            "tableStyle": "striped",
+            "tableCaption": "Share and growth by competitor, TTM Q2 2026",
+            "rows": [
+              {
+                "isHeader": true,
+                "cells": [
+                  { "text": "Company" },
+                  { "text": "TTM revenue" },
+                  { "text": "Global share" },
+                  { "text": "YoY growth" },
+                  { "text": "Share vs Dec-25" }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Dexterra Health" },
+                  { "text": "$6.04B", "style": { "textAlign": "right" } },
+                  { "text": "38.2%", "style": { "textAlign": "right" } },
+                  { "text": "+21%", "style": { "textAlign": "right" } },
+                  { "text": "+1.3 pts", "style": { "textAlign": "right" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Abelard Diabetes Care" },
+                  { "text": "$5.29B", "style": { "textAlign": "right" } },
+                  { "text": "33.5%", "style": { "textAlign": "right" } },
+                  { "text": "+13%", "style": { "textAlign": "right" } },
+                  { "text": "-0.9 pts", "style": { "textAlign": "right" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Meridian Biosensors" },
+                  { "text": "$1.91B", "style": { "textAlign": "right" } },
+                  { "text": "12.1%", "style": { "textAlign": "right" } },
+                  { "text": "+9%", "style": { "textAlign": "right" } },
+                  { "text": "-0.7 pts", "style": { "textAlign": "right" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Verranova" },
+                  { "text": "$1.17B", "style": { "textAlign": "right" } },
+                  { "text": "7.4%", "style": { "textAlign": "right" } },
+                  { "text": "+64%", "style": { "textAlign": "right" } },
+                  { "text": "+1.8 pts", "style": { "textAlign": "right" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Kizuna Medical" },
+                  { "text": "$0.73B", "style": { "textAlign": "right" } },
+                  { "text": "4.6%", "style": { "textAlign": "right" } },
+                  { "text": "-3%", "style": { "textAlign": "right" } },
+                  { "text": "-1.1 pts", "style": { "textAlign": "right" } }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "sectionBreak": "continuous",
+        "elements": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "Competitor profiles"
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "Dexterra Health — category leader, widening its clinical moat"
+          },
+          {
+            "type": "paragraph",
+            "text": "Dexterra converted its March clearance of the 21-day G8 sensor into immediate formulary leverage: it has already renegotiated two of the three largest US PBM contracts to a per-patient-month structure that neutralizes per-sensor price comparisons. Manufacturing scale-up in Penang is tracking to a 40% capacity increase by Q1 2027. The G8 launch cadence (US March, Germany and UK June, Japan filing submitted May) is the fastest multi-region rollout in the company's history."
+          },
+          {
+            "type": "list",
+            "listType": "bullet",
+            "items": [
+              { "text": "Strengths: longest wear time on market (21 days); deepest AID-pump integration ecosystem (four pump partners); direct-to-watch transmission cleared in US and EU." },
+              { "text": "Vulnerabilities: no OTC offering and management has signaled none before 2027, ceding the wellness segment; G8 adhesive complaints trending 2.1x G7 baseline on MAUDE, a potential quality narrative." },
+              { "text": "Watch items: pediatric label expansion decision expected Q4 2026; rumored acquisition interest in a closed-loop algorithm startup." }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "Abelard Diabetes Care — volume leader defending the value segment"
+          },
+          {
+            "type": "paragraph",
+            "text": "Abelard remains the unit-volume leader (an estimated 6.4 million active wearers) on the strength of its low-cost Libra 4 platform and unmatched pharmacy distribution. Its response to Dexterra's wear-time lead is a dual-analyte glucose-ketone sensor, submitted to FDA in April 2026 — a differentiation play rather than a wear-time race. The company's basal type 2 coverage wins in France and Japan added an estimated 380,000 covered lives this half."
+          },
+          {
+            "type": "list",
+            "listType": "bullet",
+            "items": [
+              { "text": "Strengths: lowest manufactured cost per sensor in the category; 78 country registrations; strongest type 2 and OTC-adjacent brand equity." },
+              { "text": "Vulnerabilities: accuracy (MARD 8.9%) now trails Dexterra and Meridian; app ratings declined after the February firmware recall (1.2M sensors, no injuries reported)." },
+              { "text": "Watch items: dual-analyte FDA decision expected H1 2027; German reimbursement renegotiation opens September 2026." }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "Meridian Biosensors — implantable niche seeking scale"
+          },
+          {
+            "type": "paragraph",
+            "text": "Meridian's 180-day implantable Everon system continues to own the long-duration niche, and its May 2026 CE mark for fully non-adjunctive dosing removes its last labeling disadvantage in Europe. Growth is constrained by the insertion-procedure model: field interviews indicate average wait times of five weeks for insertion appointments in US metro areas. The company signed a co-promotion agreement with two large endocrinology networks to expand insertion capacity."
+          },
+          {
+            "type": "list",
+            "listType": "bullet",
+            "items": [
+              { "text": "Strengths: only 180-day sensor; strongest reported patient retention (86% at 12 months); premium net pricing." },
+              { "text": "Vulnerabilities: procedure bottleneck caps addressable volume; no pediatric indication; single-source chemistry supplier." },
+              { "text": "Watch items: 365-day sensor pivotal trial fully enrolled, data expected Q2 2027." }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "Verranova — the OTC disruptor moving upmarket"
+          },
+          {
+            "type": "paragraph",
+            "text": "Verranova's Lumia remains the fastest-growing product in the category from its cash-pay wellness base, and the company is now moving deliberately toward medical positioning: it initiated a type 2 non-insulin outcomes study (n=2,400) in May and hired a veteran market-access team from the pump industry. Its subscription model (89% of buyers on auto-renew) produces retention economics the reimbursed players cannot see in their own channel data."
+          },
+          {
+            "type": "list",
+            "listType": "bullet",
+            "items": [
+              { "text": "Strengths: category-defining consumer brand and app engagement (41% DAU/MAU); direct subscription economics; influencer-driven acquisition cost under $70 per activated wearer." },
+              { "text": "Vulnerabilities: no reimbursed revenue; accuracy positioned for wellness (MARD 10.4%); churn concentrated at month 4 when novelty fades." },
+              { "text": "Watch items: outcomes study readout 2027; potential FDA enforcement attention on glucose-adjacent wellness claims industry-wide." }
+            ]
+          }
+        ]
+      },
+      {
+        "sectionBreak": "continuous",
+        "dimensions": { "orientation": "landscape" },
+        "elements": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "Capability comparison matrix"
+          },
+          {
+            "type": "paragraph",
+            "text": "Specifications as publicly labeled or disclosed at 30 June 2026. MARD figures are from each manufacturer's pivotal study and are not head-to-head comparable."
+          },
+          {
+            "type": "table",
+            "tableStyle": "corporate",
+            "repeatHeaders": true,
+            "tableCaption": "CGM platform capability comparison, mid-2026",
+            "rows": [
+              {
+                "isHeader": true,
+                "cells": [
+                  { "text": "Platform" },
+                  { "text": "Wear time" },
+                  { "text": "MARD" },
+                  { "text": "Warm-up" },
+                  { "text": "Calibration" },
+                  { "text": "AID pump partners" },
+                  { "text": "OTC available" },
+                  { "text": "US list price / month" }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Dexterra G8" },
+                  { "text": "21 days" },
+                  { "text": "7.9%" },
+                  { "text": "25 min" },
+                  { "text": "None" },
+                  { "text": "4" },
+                  { "text": "No" },
+                  { "text": "$185", "style": { "textAlign": "right" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Dexterra G7" },
+                  { "text": "10 days" },
+                  { "text": "8.2%" },
+                  { "text": "30 min" },
+                  { "text": "None" },
+                  { "text": "4" },
+                  { "text": "No" },
+                  { "text": "$152", "style": { "textAlign": "right" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Abelard Libra 4" },
+                  { "text": "15 days" },
+                  { "text": "8.9%" },
+                  { "text": "60 min" },
+                  { "text": "None" },
+                  { "text": "3" },
+                  { "text": "No" },
+                  { "text": "$118", "style": { "textAlign": "right" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Abelard Libra Go (OTC)" },
+                  { "text": "15 days" },
+                  { "text": "9.7%" },
+                  { "text": "60 min" },
+                  { "text": "None" },
+                  { "text": "0" },
+                  { "text": "Yes" },
+                  { "text": "$99", "style": { "textAlign": "right" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Meridian Everon 180" },
+                  { "text": "180 days (implant)" },
+                  { "text": "8.5%" },
+                  { "text": "24 h" },
+                  { "text": "1/day (first 21 days)" },
+                  { "text": "1" },
+                  { "text": "No" },
+                  { "text": "$205", "style": { "textAlign": "right" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Verranova Lumia" },
+                  { "text": "14 days" },
+                  { "text": "10.4%" },
+                  { "text": "45 min" },
+                  { "text": "None" },
+                  { "text": "0" },
+                  { "text": "Yes" },
+                  { "text": "$89", "style": { "textAlign": "right" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Kizuna K-Sense 2" },
+                  { "text": "10 days" },
+                  { "text": "9.2%" },
+                  { "text": "55 min" },
+                  { "text": "1/day optional" },
+                  { "text": "1" },
+                  { "text": "No" },
+                  { "text": "$124", "style": { "textAlign": "right" } }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Reading the matrix: wear time and price are the visible battlegrounds, but the AID pump-partner column is the stickiness story — a wearer on a closed-loop system faces a device-ecosystem switch, not a sensor switch. Dexterra's four-partner position is the strongest structural lock-in in the category."
+          }
+        ]
+      },
+      {
+        "sectionBreak": "continuous",
+        "dimensions": { "orientation": "portrait" },
+        "elements": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "Implications and recommended responses"
+          },
+          {
+            "type": "paragraph",
+            "text": "For our Diabetes Care unit, the half's developments sharpen three strategic questions: whether to accelerate our own extended-wear program, how to respond to cash-pay price anchoring in basal type 2, and whether the Kizuna US distribution vacancy is worth contesting."
+          },
+          {
+            "type": "list",
+            "listType": "number",
+            "items": [
+              { "text": "Extended wear: reprioritize the 18-day sensor variant for a Q3 2027 filing; the 21-day benchmark will be table stakes in payer negotiations by 2028. Estimated incremental program cost $22M." },
+              { "text": "Cash-pay defense: pilot a $95/month direct subscription in two US regions in Q4 2026, fenced to non-insulin users, to blunt Verranova's anchor without disturbing reimbursed net pricing." },
+              { "text": "Kizuna vacancy: pursue the MedSource pharmacy slots opportunistically but cap trade investment at $8M; the share is low-margin and loyal to rebate depth rather than platform." },
+              { "text": "Quality narrative: commission an independent adhesive-tolerability study now; if Dexterra's G8 complaint trend persists, we want peer-reviewed comparative data in market by mid-2027." }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "Methodology note. ", "style": { "fontWeight": "bold" } },
+              { "text": "Revenue and share estimates triangulate company filings, IQVIA pharmacy panel data, import records, and 34 field interviews conducted April-June 2026 with endocrinologists, DME distributors, and payer pharmacy directors in the US, Germany, and Japan. Figures for private companies (Verranova) are estimates with a ±15% confidence band. This document contains no material non-public information; sourcing register available on request." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

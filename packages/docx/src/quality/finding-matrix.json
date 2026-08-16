@@ -1,0 +1,137 @@
+{
+  "engine": "docx",
+  "entries": [
+    {
+      "code": "DOCX_RELATIONSHIP_TARGET_MISSING",
+      "status": "active",
+      "emitter": "packages/docx/src/quality/structural.ts",
+      "severity": "error",
+      "expectedVerdict": "visual_fallback",
+      "repair": { "supported": true, "strategy": "remove_orphan_relationships" },
+      "evidence": { "kind": "test", "path": "packages/docx/__tests__/quality-report.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "SHARED_RID_NOT_UNIQUE",
+      "status": "active",
+      "emitter": "packages/docx/src/quality/structural.ts",
+      "severity": "error",
+      "expectedVerdict": "visual_fallback",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/docx/__tests__/quality-report.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "DOCX_NUMBERING_DEF_MISSING",
+      "status": "active",
+      "emitter": "packages/docx/src/quality/structural.ts",
+      "severity": "error",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": true, "strategy": "append_numbering_definition" },
+      "evidence": { "kind": "fixture", "path": "packages/chaos-lab/fixtures/edge-cases/docx/docx-missing-numbering.json" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "DOCX_STYLE_REF_MISSING",
+      "status": "active",
+      "emitter": "packages/docx/src/quality/structural.ts",
+      "severity": "error",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": true, "strategy": "repair_style_references" },
+      "evidence": { "kind": "fixture", "path": "packages/chaos-lab/fixtures/edge-cases/docx/docx-missing-style.json" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "DOCX_SECT_PR_MISSING",
+      "status": "active",
+      "emitter": "packages/docx/src/quality/structural.ts",
+      "severity": "error",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": true, "strategy": "append_minimal_sectpr" },
+      "evidence": { "kind": "test", "path": "packages/docx/__tests__/quality-report.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "DOCX_TABLE_WIDTH_MISMATCH",
+      "status": "active",
+      "emitter": "packages/docx/src/quality/structural.ts",
+      "severity": "warning",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "fixture", "path": "packages/chaos-lab/fixtures/edge-cases/docx/docx-wide-table.json" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "DOCX_TRACKED_CHANGE_MALFORMED",
+      "status": "active",
+      "emitter": "packages/docx/src/quality/structural.ts",
+      "severity": "error",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": true, "strategy": "repair_tracked_change_metadata" },
+      "evidence": { "kind": "test", "path": "packages/docx/__tests__/quality-report.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "DOCX_CONTENT_CONTROL_REF_BROKEN",
+      "status": "active",
+      "emitter": "packages/docx/src/quality/structural.ts",
+      "severity": "error",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": true, "strategy": "repair_content_controls" },
+      "evidence": { "kind": "test", "path": "packages/docx/__tests__/quality-report.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "DOCX_HEADING_HIERARCHY_BROKEN",
+      "status": "active",
+      "emitter": "packages/docx/src/quality/content.ts",
+      "severity": "warning",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "fixture", "path": "packages/chaos-lab/fixtures/edge-cases/docx/docx-heading-skip.json" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "DOCX_RUN_SPLIT_FORMATTING_LOSS",
+      "status": "active",
+      "emitter": "packages/docx/src/quality/content.ts",
+      "severity": "warning",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/docx/__tests__/quality-report.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "DOCX_IMAGE_REF_MISSING",
+      "status": "active",
+      "emitter": "packages/docx/src/quality/content.ts",
+      "severity": "error",
+      "expectedVerdict": "visual_fallback",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/docx/__tests__/quality-report.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "DOCX_PARAGRAPH_OVERFLOW",
+      "status": "active",
+      "emitter": "packages/docx/src/quality/content.ts",
+      "severity": "warning",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "fixture", "path": "packages/chaos-lab/fixtures/edge-cases/docx/docx-deep-nesting.json" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "id": "pptx-board-enterprise-risk-review",
+  "format": "pptx",
+  "surface": "agent",
+  "description": "Quarterly enterprise risk review for the board risk committee of a regional commercial bank.",
+  "provenance": "Modeled on regulated bank board risk packs: risk-appetite indicators, criticized-loan trends, liquidity and capital, operational incidents, scenario analysis, and committee decisions. Deliberately exercises an eight-slide deck with a four-series bar chart, red/amber/green narrative encoded as status prose, and dense control-remediation detail.",
+  "expectedProperties": {
+    "slideCount": 8,
+    "hasChart": true,
+    "chartSlides": 1,
+    "chartTypes": ["bar"],
+    "kpiCount": 4
+  },
+  "document": {
+    "type": "presentation",
+    "version": "1.0",
+    "presentationTitle": "Q3 2026 Enterprise Risk Review",
+    "companyName": "Cascadia Commercial Bancorp",
+    "theme": "monochrome",
+    "designTokens": {
+      "scale": "md",
+      "shape": "sharp"
+    },
+    "slides": [
+      {
+        "pattern": "title",
+        "content": {
+          "title": "Q3 2026 Enterprise Risk Review",
+          "subtitle": "Board Risk Committee | October 21, 2026 | Confidential supervisory information"
+        }
+      },
+      {
+        "pattern": "statement",
+        "content": {
+          "title": "Risk is within appetite; office CRE and vendor resilience need action.",
+          "subtitle": "Chief Risk Officer assessment",
+          "prose": [
+            "Credit migration slowed and liquidity buffers strengthened in Q3.",
+            "Office CRE is the only metric outside appetite; three credits totaling $184M moved to criticized.",
+            "No material cyber loss occurred in Q3.",
+            "The July processor outage exposed a recovery gap; parallel routing is requested."
+          ]
+        }
+      },
+      {
+        "pattern": "dashboard",
+        "content": {
+          "title": "Risk appetite dashboard",
+          "subtitle": "Quarter-end measures versus board-approved thresholds",
+          "kpis": [
+            { "label": "CET1 ratio", "value": "12.4%", "trend": "up", "sublabel": "Min 10.5%; Q2 12.1%" },
+            { "label": "Liquidity", "value": "136%", "trend": "up", "sublabel": "Floor 115%; Q2 129%" },
+            { "label": "Criticized", "value": "3.7%", "trend": "down", "sublabel": "Limit 4.5%; Q2 3.9%" },
+            { "label": "Office CRE", "value": "168%", "trend": "up", "sublabel": "Capital; limit 150%" }
+          ]
+        }
+      },
+      {
+        "pattern": "chart-focus",
+        "content": {
+          "title": "Criticized balances are stabilizing outside downtown office",
+          "subtitle": "Special mention, substandard, and nonaccrual loans by portfolio, $M",
+          "chart": {
+            "type": "bar",
+            "title": "Criticized and classified loans ($M)",
+            "series": [
+              {
+                "name": "Office CRE",
+                "dataPoints": [
+                  { "category": "Q4 2025", "value": 312 },
+                  { "category": "Q1 2026", "value": 354 },
+                  { "category": "Q2 2026", "value": 407 },
+                  { "category": "Q3 2026", "value": 431 }
+                ]
+              },
+              {
+                "name": "Multifamily",
+                "dataPoints": [
+                  { "category": "Q4 2025", "value": 146 },
+                  { "category": "Q1 2026", "value": 159 },
+                  { "category": "Q2 2026", "value": 171 },
+                  { "category": "Q3 2026", "value": 164 }
+                ]
+              },
+              {
+                "name": "C&I",
+                "dataPoints": [
+                  { "category": "Q4 2025", "value": 228 },
+                  { "category": "Q1 2026", "value": 241 },
+                  { "category": "Q2 2026", "value": 236 },
+                  { "category": "Q3 2026", "value": 219 }
+                ]
+              },
+              {
+                "name": "Consumer",
+                "dataPoints": [
+                  { "category": "Q4 2025", "value": 74 },
+                  { "category": "Q1 2026", "value": 81 },
+                  { "category": "Q2 2026", "value": 86 },
+                  { "category": "Q3 2026", "value": 83 }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pattern": "comparison",
+        "content": {
+          "title": "Downside scenario — resilience versus vulnerability",
+          "subtitle": "Nine-quarter supervisory-style stress using a 5.8% unemployment peak and 24% office-value decline",
+          "kpis": [
+            { "label": "CET1 trough", "value": "9.8%", "sublabel": "130 bps over floor" },
+            { "label": "Credit loss", "value": "$612M", "sublabel": "46% from office CRE" },
+            { "label": "Dep. runoff", "value": "18%", "sublabel": "Absorbed for 45 days" },
+            { "label": "PPNR", "value": "Profit", "sublabel": "All nine quarters" }
+          ]
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "Operational, cyber, and third-party risk",
+          "subtitle": "Material incidents and control health through September 30, 2026",
+          "bulletPoints": [
+            "Payment processor outage on July 18 disrupted debit authorization for 96 minutes; customer losses were $0.4M and fully reimbursed",
+            "Processor recovery-time objective missed by 51 minutes; remediation due November 15 with weekly evidence review by Technology Risk",
+            "One ransomware event at a payroll vendor exposed employee names and bank-routing details for 312 current and former employees",
+            "Phishing click rate improved to 2.1% from 3.4%; privileged-access recertification closed with 17 stale accounts removed",
+            "Model inventory includes 84 tier-one and tier-two models; two CECL overlays remain beyond validation due dates",
+            "Internal audit rated branch cash controls satisfactory and vendor concentration governance needs improvement"
+          ]
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "Open remediation and accountable owners",
+          "subtitle": "Items rated high or overdue",
+          "bulletPoints": [
+            "Parallel debit-routing design — CIO — decision today; implementation by March 2027; estimated spend $3.2M",
+            "Office CRE concentration plan — Chief Credit Officer — reduce exposure-to-capital below 155% by June 2027",
+            "CECL overlay validation — Head of Model Risk — first overlay by November 30; second by January 31",
+            "Third-party fourth-party inventory — Chief Procurement Officer — complete critical-vendor mapping by December 15",
+            "Identity governance recertification automation — CISO — pilot complete; production rollout February 2027",
+            "Resolution planning data lineage — CFO — 7 of 9 critical reports remediated; final two due December 31"
+          ]
+        }
+      },
+      {
+        "pattern": "statement",
+        "content": {
+          "title": "Approve parallel debit routing and extend the office CRE exception.",
+          "subtitle": "Agenda items 3 and 4",
+          "prose": [
+            "Quarterly reporting resumes once exposure-to-capital falls below 155%.",
+            "Criticized office balances must also decline for two consecutive quarters."
+          ]
+        }
+      }
+    ]
+  }
+}

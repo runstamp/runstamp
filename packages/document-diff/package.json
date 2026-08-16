@@ -1,0 +1,59 @@
+{
+  "name": "@runstamp/document-diff",
+  "version": "0.0.8",
+  "description": "Internal: the shared semantic diff engine behind the per-format `diff` verb (OC-1 §4.1). Not published; consumers get `diff` from json-to-docx, json-to-xlsx or json-to-pptx.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "packageManager": "pnpm@10.12.4",
+  "homepage": "https://runstamp.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/runstamp/runstamp",
+    "directory": "packages/document-diff"
+  },
+  "bugs": "https://github.com/runstamp/runstamp/issues",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "pnpm clean && tsup",
+    "dev": "tsup --watch",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit",
+    "pretest": "pnpm --filter @runstamp/protocol build",
+    "test": "vitest run",
+    "test:property": "vitest run __tests__/semantic-property.test.ts",
+    "test:benchmark": "vitest run __tests__/semantic-benchmark.test.ts",
+    "known-bad": "vitest run __tests__/semantic-known-bad.test.ts",
+    "determinism": "pnpm build >/dev/null && node scripts/determinism.mjs",
+    "lint": "pnpm exec eslint src __tests__ scripts",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "jsondiffpatch": "^0.7.3"
+  },
+  "devDependencies": {
+    "@runstamp/protocol": "workspace:*",
+    "@types/node": "^22.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.7.0",
+    "vite": "^7.3.2",
+    "vitest": "^4.1.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "private": true,
+  "runstamp": {
+    "publicSourceMode": "independently-buildable"
+  }
+}

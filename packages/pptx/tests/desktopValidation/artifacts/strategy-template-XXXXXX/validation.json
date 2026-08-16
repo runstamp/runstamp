@@ -1,0 +1,520 @@
+{
+  "name": "strategy-template-XXXXXX",
+  "passed": true,
+  "slideCount": 25,
+  "structural": {
+    "checks": [
+      {
+        "name": "duplicateContentTypes",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "contentTypesCoverage",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "relationshipTargetExistence",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "duplicateRelationshipIds",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "duplicateShapeIds",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "reachableRelationshipParts",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "presentationElementOrder",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "requiredAttributes",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "themeSchema",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "slideLayoutMasterChain",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "namespaceConsistency",
+        "passed": true,
+        "errors": []
+      }
+    ],
+    "passed": true,
+    "critical": []
+  },
+  "charts": {
+    "charts": [
+      {
+        "name": "seriesIndexOrder",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart1.xml"
+      },
+      {
+        "name": "chartTypePresence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart1.xml"
+      },
+      {
+        "name": "embeddedExcelExistence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart1.xml"
+      },
+      {
+        "name": "chartPositioning",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart1.xml"
+      },
+      {
+        "name": "legendAndAxis",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart1.xml"
+      },
+      {
+        "name": "dataCacheConsistency",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart1.xml"
+      },
+      {
+        "name": "seriesIndexOrder",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart2.xml"
+      },
+      {
+        "name": "chartTypePresence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart2.xml"
+      },
+      {
+        "name": "embeddedExcelExistence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart2.xml"
+      },
+      {
+        "name": "chartPositioning",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart2.xml"
+      },
+      {
+        "name": "legendAndAxis",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart2.xml"
+      },
+      {
+        "name": "dataCacheConsistency",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart2.xml"
+      },
+      {
+        "name": "seriesIndexOrder",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart3.xml"
+      },
+      {
+        "name": "chartTypePresence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart3.xml"
+      },
+      {
+        "name": "embeddedExcelExistence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart3.xml"
+      },
+      {
+        "name": "chartPositioning",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart3.xml"
+      },
+      {
+        "name": "legendAndAxis",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart3.xml"
+      },
+      {
+        "name": "dataCacheConsistency",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart3.xml"
+      },
+      {
+        "name": "seriesIndexOrder",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart4.xml"
+      },
+      {
+        "name": "chartTypePresence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart4.xml"
+      },
+      {
+        "name": "embeddedExcelExistence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart4.xml"
+      },
+      {
+        "name": "chartPositioning",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart4.xml"
+      },
+      {
+        "name": "legendAndAxis",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart4.xml"
+      },
+      {
+        "name": "dataCacheConsistency",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart4.xml"
+      },
+      {
+        "name": "seriesIndexOrder",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart5.xml"
+      },
+      {
+        "name": "chartTypePresence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart5.xml"
+      },
+      {
+        "name": "embeddedExcelExistence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart5.xml"
+      },
+      {
+        "name": "chartPositioning",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart5.xml"
+      },
+      {
+        "name": "legendAndAxis",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart5.xml"
+      },
+      {
+        "name": "dataCacheConsistency",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart5.xml"
+      },
+      {
+        "name": "seriesIndexOrder",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart6.xml"
+      },
+      {
+        "name": "chartTypePresence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart6.xml"
+      },
+      {
+        "name": "embeddedExcelExistence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart6.xml"
+      },
+      {
+        "name": "chartPositioning",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart6.xml"
+      },
+      {
+        "name": "legendAndAxis",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart6.xml"
+      },
+      {
+        "name": "dataCacheConsistency",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart6.xml"
+      },
+      {
+        "name": "seriesIndexOrder",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart7.xml"
+      },
+      {
+        "name": "chartTypePresence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart7.xml"
+      },
+      {
+        "name": "embeddedExcelExistence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart7.xml"
+      },
+      {
+        "name": "chartPositioning",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart7.xml"
+      },
+      {
+        "name": "legendAndAxis",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart7.xml"
+      },
+      {
+        "name": "dataCacheConsistency",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart7.xml"
+      },
+      {
+        "name": "seriesIndexOrder",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart8.xml"
+      },
+      {
+        "name": "chartTypePresence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart8.xml"
+      },
+      {
+        "name": "embeddedExcelExistence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart8.xml"
+      },
+      {
+        "name": "chartPositioning",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart8.xml"
+      },
+      {
+        "name": "legendAndAxis",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart8.xml"
+      },
+      {
+        "name": "dataCacheConsistency",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart8.xml"
+      },
+      {
+        "name": "seriesIndexOrder",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart9.xml"
+      },
+      {
+        "name": "chartTypePresence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart9.xml"
+      },
+      {
+        "name": "embeddedExcelExistence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart9.xml"
+      },
+      {
+        "name": "chartPositioning",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart9.xml"
+      },
+      {
+        "name": "legendAndAxis",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart9.xml"
+      },
+      {
+        "name": "dataCacheConsistency",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart9.xml"
+      },
+      {
+        "name": "seriesIndexOrder",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart10.xml"
+      },
+      {
+        "name": "chartTypePresence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart10.xml"
+      },
+      {
+        "name": "embeddedExcelExistence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart10.xml"
+      },
+      {
+        "name": "chartPositioning",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart10.xml"
+      },
+      {
+        "name": "legendAndAxis",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart10.xml"
+      },
+      {
+        "name": "dataCacheConsistency",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart10.xml"
+      },
+      {
+        "name": "seriesIndexOrder",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart11.xml"
+      },
+      {
+        "name": "chartTypePresence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart11.xml"
+      },
+      {
+        "name": "embeddedExcelExistence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart11.xml"
+      },
+      {
+        "name": "chartPositioning",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart11.xml"
+      },
+      {
+        "name": "legendAndAxis",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart11.xml"
+      },
+      {
+        "name": "dataCacheConsistency",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart11.xml"
+      },
+      {
+        "name": "seriesIndexOrder",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart12.xml"
+      },
+      {
+        "name": "chartTypePresence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart12.xml"
+      },
+      {
+        "name": "embeddedExcelExistence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart12.xml"
+      },
+      {
+        "name": "chartPositioning",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart12.xml"
+      },
+      {
+        "name": "legendAndAxis",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart12.xml"
+      },
+      {
+        "name": "dataCacheConsistency",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chart12.xml"
+      }
+    ],
+    "passed": true
+  },
+  "diagnosis": {
+    "critical": [],
+    "high": [],
+    "medium": [],
+    "info": [],
+    "verdict": "LAUNCH_READY"
+  },
+  "issueCodes": [],
+  "openXml": {
+    "available": false,
+    "passed": false,
+    "issues": []
+  },
+  "artifacts": {
+    "pptxPath": "/Users/jake/prod25/theplainworks/runstamp.com/tests/desktopValidation/artifacts/strategy-template-XXXXXX/strategy-template-XXXXXX.pptx",
+    "jsonPath": "/Users/jake/prod25/theplainworks/runstamp.com/tests/desktopValidation/artifacts/strategy-template-XXXXXX/validation.json"
+  }
+}

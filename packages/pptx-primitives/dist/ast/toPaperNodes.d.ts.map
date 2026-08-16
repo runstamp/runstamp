@@ -1,0 +1,1 @@
+{"version":3,"file":"toPaperNodes.d.ts","sourceRoot":"","sources":["../../src/ast/toPaperNodes.ts"],"names":[],"mappings":"AAAA;;;;;;;;;;;;GAYG;AAEH,OAAO,KAAK,EAEV,aAAa,EAId,MAAM,oBAAoB,CAAC;AAG5B,KAAK,eAAe,GAAG,GAAG,CAAC;AAE3B,wBAAgB,YAAY,CAAC,KAAK,EAAE,aAAa,EAAE,GAAG,eAAe,EAAE,CAEtE;AAED,wBAAgB,WAAW,CAAC,IAAI,EAAE,aAAa,GAAG,eAAe,CAehE"}

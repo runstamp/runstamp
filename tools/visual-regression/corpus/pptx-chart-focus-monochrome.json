@@ -1,0 +1,70 @@
+{
+  "id": "pptx-chart-focus-monochrome",
+  "format": "pptx",
+  "surface": "agent",
+  "description": "Agent chart-focus pattern — monochrome preset variant.",
+  "document": {
+    "type": "presentation",
+    "version": "1.0",
+    "presentationTitle": "FY26 Revenue Review",
+    "companyName": "Northstar Systems",
+    "theme": "monochrome",
+    "slides": [
+      {
+        "pattern": "chart-focus",
+        "content": {
+          "title": "Revenue mix by quarter",
+          "subtitle": "Quarterly revenue by source, $M",
+          "chart": {
+            "type": "bar",
+            "title": "Quarterly revenue ($M)",
+            "series": [
+              {
+                "name": "Product",
+                "dataPoints": [
+                  {
+                    "category": "Q1",
+                    "value": 8.2
+                  },
+                  {
+                    "category": "Q2",
+                    "value": 9.4
+                  },
+                  {
+                    "category": "Q3",
+                    "value": 10.8
+                  },
+                  {
+                    "category": "Q4",
+                    "value": 12.1
+                  }
+                ]
+              },
+              {
+                "name": "Services",
+                "dataPoints": [
+                  {
+                    "category": "Q1",
+                    "value": 1.5
+                  },
+                  {
+                    "category": "Q2",
+                    "value": 1.8
+                  },
+                  {
+                    "category": "Q3",
+                    "value": 2.1
+                  },
+                  {
+                    "category": "Q4",
+                    "value": 2.3
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "id": "pptx-proposal-enterprise-software",
+  "format": "pptx",
+  "surface": "agent",
+  "description": "Enterprise software sales proposal deck pitching a clinical supply-chain platform to a hospital network, with problem/solution slides, ROI dashboard, TCO chart, tiered pricing, and implementation timeline.",
+  "provenance": "Modeled on the vendor proposal decks enterprise software sellers present to hospital-system economic buyers after a completed discovery phase: executive summary, quantified current-state pain, side-by-side solution mapping, ROI dashboard, a multi-year TCO comparison chart, tiered pricing expressed as structured line items, and a dated onboarding timeline. Deliberately exercises a 10-slide mixed-pattern deck with a long statement-slide sentence, a 2-series 5-category bar chart, pricing bullets carrying currency figures and em dashes, and 7-item dense bullet slides.",
+  "expectedProperties": {
+    "slideCount": 10,
+    "hasChart": true,
+    "chartSlides": 1,
+    "kpiCount": 4,
+    "patterns": ["title", "statement", "bullets", "comparison", "dashboard", "chart-focus", "bullets", "bullets", "bullets", "statement"]
+  },
+  "document": {
+    "type": "presentation",
+    "version": "1.0",
+    "presentationTitle": "Clinical Supply Chain Platform Proposal — Lakeshore Health Network",
+    "companyName": "Corvane Systems, Inc.",
+    "theme": "default-navy",
+    "slides": [
+      {
+        "pattern": "title",
+        "content": {
+          "title": "Clinical Supply Chain Platform Proposal",
+          "subtitle": "Prepared for Lakeshore Health Network — 14 July 2026 — Proposal #CV-2026-0389 — Valid 60 days"
+        }
+      },
+      {
+        "pattern": "statement",
+        "content": {
+          "title": "Lakeshore loses an estimated $11.3M a year to expired inventory, emergency procurement, and manual reconciliation — Corvane eliminates 70% of that within 18 months.",
+          "subtitle": "Executive summary",
+          "prose": [
+            "This proposal covers the Corvane Clinical Supply Platform deployed across all 9 Lakeshore hospitals and 34 ambulatory sites, replacing the current combination of Lawson Mobile Supply Chain, spreadsheet-based par management, and manual OR preference-card reconciliation.",
+            "The figures in this deck come from the joint discovery completed in June 2026 with Lakeshore's supply chain, perioperative, and IT teams, including a 90-day extract of purchasing, consumption, and waste data from the three largest facilities."
+          ]
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "What discovery found — the cost of the current state",
+          "subtitle": "Based on FY2025 actuals and the 90-day data extract from Mercy Central, St. Anne's, and Lakeshore East",
+          "bulletPoints": [
+            "$4.1M in expired or obsolete inventory written off in FY2025, concentrated in cath lab and OR high-value implants",
+            "$3.7M premium paid on emergency and off-contract purchases — 22% of orders bypass the contracted distributor",
+            "$2.2M in labor spent on manual cycle counts and OR preference-card reconciliation (roughly 31 FTE-equivalents)",
+            "$1.3M in case-cart pick errors and returns; 6.4% of surgical cases delayed more than 10 minutes awaiting supplies",
+            "Par levels last reviewed system-wide in 2022; 61% of stocking locations have no consumption-based reorder logic",
+            "Three disconnected item masters across the legacy ERP, the OR system, and the pharmacy wholesaler portal",
+            "No real-time recall traceability: the March 2026 balloon-catheter recall took 11 days to fully reconcile"
+          ]
+        }
+      },
+      {
+        "pattern": "comparison",
+        "content": {
+          "title": "Current state vs. the Corvane platform",
+          "subtitle": "Left: how Lakeshore operates today. Right: the proposed operating model at steady state.",
+          "bulletPoints": [
+            "Manual par counts on paper and spreadsheets, keyed into Lawson nightly — versus RFID and weighted-bin telemetry driving perpetual inventory with 99.2% accuracy",
+            "Emergency orders placed by phone to 14 different distributors — versus exception-based procurement routed automatically to contracted sources with approval workflow",
+            "OR preference cards updated annually by a central team — versus cards recalibrated monthly from actual case consumption, surgeon by surgeon",
+            "Recalls reconciled by emailing spreadsheets to site coordinators — versus lot-level traceability with a system-wide recall report in under 15 minutes",
+            "Three item masters maintained by hand — versus one governed catalog synchronized to Lawson, Epic OpTime, and the wholesaler via published APIs",
+            "Waste discovered at annual physical inventory — versus expiry dashboards flagging at-risk stock 90, 60, and 30 days out with automated redistribution"
+          ]
+        }
+      },
+      {
+        "pattern": "dashboard",
+        "content": {
+          "title": "Projected annual impact at steady state",
+          "subtitle": "Conservative case, validated against Corvane's 12 comparable IDN deployments; ramp assumptions on slide 8",
+          "kpis": [
+            { "label": "Expiry write-off reduction", "value": "$2.9M/yr", "trend": "up", "sublabel": "71% of FY2025 baseline" },
+            { "label": "Procurement savings", "value": "$2.6M/yr", "trend": "up", "sublabel": "Off-contract spend to under 5%" },
+            { "label": "Labor redeployed", "value": "19 FTEs", "trend": "up", "sublabel": "Cycle counts and reconciliation" },
+            { "label": "Case delay rate", "value": "1.1%", "trend": "down", "sublabel": "From 6.4% of surgical cases" }
+          ]
+        }
+      },
+      {
+        "pattern": "chart-focus",
+        "content": {
+          "title": "Five-year total cost of ownership — Corvane vs. status quo",
+          "subtitle": "Status quo includes Lawson maintenance, planned RFID pilot spend, and current waste run-rate; $M per fiscal year",
+          "chart": {
+            "type": "bar",
+            "title": "Total cost of ownership ($M)",
+            "series": [
+              {
+                "name": "Status quo",
+                "dataPoints": [
+                  { "category": "FY27", "value": 13.1 },
+                  { "category": "FY28", "value": 13.6 },
+                  { "category": "FY29", "value": 14.2 },
+                  { "category": "FY30", "value": 14.9 },
+                  { "category": "FY31", "value": 15.5 }
+                ]
+              },
+              {
+                "name": "With Corvane",
+                "dataPoints": [
+                  { "category": "FY27", "value": 14.8 },
+                  { "category": "FY28", "value": 10.9 },
+                  { "category": "FY29", "value": 9.4 },
+                  { "category": "FY30", "value": 9.1 },
+                  { "category": "FY31", "value": 8.9 }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "Investment summary — proposed commercial terms",
+          "subtitle": "Three-year subscription, invoiced annually in advance; all figures USD, exclusive of applicable taxes",
+          "bulletPoints": [
+            "Platform subscription (Enterprise tier, 9 hospitals + 34 ambulatory sites) — $1,840,000 per year",
+            "Perioperative module (OpTime-integrated case cart and preference-card engine) — $420,000 per year",
+            "RFID hardware: 2,340 smart bins, 41 cabinet readers, 18 dock portals — $1,265,000 one-time, Year 1",
+            "Implementation and integration services (fixed fee, scope per SOW-1 attached) — $980,000 one-time",
+            "Premium support: 24x7 with 1-hour P1 response and a named technical account manager — $190,000 per year",
+            "Year 1 total: $4,695,000 — Years 2 and 3: $2,450,000 per year — 3-year TCO: $9,595,000",
+            "Multi-year commitment discount already applied: 12% versus annual list; pricing firm through 12 September 2026"
+          ]
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "Implementation timeline — 18 months to full deployment",
+          "subtitle": "Mirrors the phasing used at Providence Mountain West (11 hospitals, go-live on schedule in 2025)",
+          "bulletPoints": [
+            "Months 1-2 — Foundation: item-master consolidation, Lawson and Epic OpTime interface build, governance committee stood up",
+            "Months 3-5 — Wave 1: Mercy Central goes live (perpetual inventory + procurement); baseline KPIs frozen for the savings guarantee",
+            "Months 6-9 — Wave 2: St. Anne's and Lakeshore East live, including full perioperative module and RFID cabinets in cath lab",
+            "Months 10-14 — Wave 3: remaining 6 hospitals in paired cohorts; ambulatory sites onboarded via lightweight kanban model",
+            "Months 15-18 — Optimization: par recalibration cycle 2, waste-redistribution engine enabled, savings audit with your finance team",
+            "Lakeshore commitments: 1 project sponsor, 2 supply chain SMEs at 50%, IT integration resources per the RACI in SOW-1"
+          ]
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "Why Corvane — proof, guarantee, and references",
+          "subtitle": "Everything on this slide is contractual or independently verifiable",
+          "bulletPoints": [
+            "Savings guarantee: if audited Year-2 savings fall below $3.0M, Corvane credits 25% of the Year-3 subscription",
+            "12 integrated delivery networks live today, including three on Epic OpTime + Lawson — the same stack as Lakeshore",
+            "Median deployment: 17 months for 8+ hospital systems; zero go-live postponements in the last 3 years",
+            "HITRUST r2 certified, SOC 2 Type II, and HIPAA business associate agreement included in the master agreement",
+            "Reference calls arranged with Providence Mountain West and Carilion Group supply chain VPs at your convenience",
+            "Named delivery team attached in Appendix B — the same engagement lead who ran the Providence deployment"
+          ]
+        }
+      },
+      {
+        "pattern": "statement",
+        "content": {
+          "title": "Decision requested by 12 September 2026 to hold Wave 1 delivery capacity and FY27 pricing.",
+          "subtitle": "Proposed next steps",
+          "prose": [
+            "Week of 21 July: technical deep-dive with Lakeshore IT on the Epic and Lawson integration architecture. Week of 4 August: commercial and legal review of the master agreement and SOW-1. Week of 18 August: executive readout and reference calls.",
+            "Your Corvane team: Dana Okafor, VP Healthcare (dana.okafor@corvane.com, 312-555-0174) and Miguel Serrano, Solutions Engineering Director."
+          ]
+        }
+      }
+    ]
+  }
+}

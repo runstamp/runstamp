@@ -1,0 +1,23 @@
+{
+  "fixtureId": "forced-invalid-rel-target",
+  "passed": false,
+  "failures": [
+    "repair_dialog_detected",
+    "pdf_export_failed",
+    "structural_invalid"
+  ],
+  "oracle": {
+    "available": true,
+    "fixtureId": "forced-invalid-rel-target",
+    "passed": false,
+    "failures": [
+      "repair_dialog_detected",
+      "pdf_export_failed"
+    ],
+    "screenshotPath": "/Users/jake/plain/plainworks/paperjsx.com/packages/core/tests/desktopValidation/artifacts/forced-invalid-rel-target/forced-invalid-rel-target.png",
+    "details": [
+      "PowerPoint did not produce a saved copy for round-trip diff."
+    ]
+  },
+  "structuralPassed": false
+}

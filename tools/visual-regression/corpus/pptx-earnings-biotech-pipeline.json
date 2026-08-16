@@ -1,0 +1,135 @@
+{
+  "id": "pptx-earnings-biotech-pipeline",
+  "format": "pptx",
+  "surface": "agent",
+  "description": "FY2026 earnings and clinical pipeline update for a commercial-stage oncology biotechnology company.",
+  "provenance": "Modeled on quarterly investor presentations from commercial-stage biotechnology companies: revenue and cash KPIs, quarterly net-product-sales trend, trial-readout detail, launch execution, and cash-runway guidance. Deliberately exercises a seven-slide deck with clinical percentages, an area chart using areaGrouping, dense milestone bullets, and a management statement.",
+  "expectedProperties": {
+    "slideCount": 7,
+    "hasChart": true,
+    "chartSlides": 1,
+    "chartTypes": ["area"],
+    "kpiCount": 4
+  },
+  "document": {
+    "type": "presentation",
+    "version": "1.0",
+    "presentationTitle": "Asterion Therapeutics Q1 FY2026 Results and Pipeline Update",
+    "companyName": "Asterion Therapeutics, Inc. (NASDAQ: ASTR)",
+    "theme": "editorial-serif",
+    "designTokens": {
+      "scale": "md",
+      "shape": "sharp"
+    },
+    "slides": [
+      {
+        "pattern": "title",
+        "content": {
+          "title": "Q1 FY2026 Results & Pipeline Update",
+          "subtitle": "Quarter ended March 31, 2026 | Reported May 7, 2026 | Unaudited"
+        }
+      },
+      {
+        "pattern": "dashboard",
+        "content": {
+          "title": "Quarterly operating snapshot",
+          "subtitle": "Commercial performance and liquidity as of March 31, 2026",
+          "kpis": [
+            { "label": "Virelza", "value": "$84.6M", "trend": "up", "sublabel": "+46% YoY; +9% QoQ" },
+            { "label": "Gross-to-net", "value": "16.8%", "trend": "down", "sublabel": "Improved 120 bps YoY" },
+            { "label": "R&D expense", "value": "$71.2M", "trend": "up", "sublabel": "3 Phase 2/3 trials" },
+            { "label": "Cash & inv.", "value": "$612M", "trend": "down", "sublabel": "Runway into Q4 2027" }
+          ]
+        }
+      },
+      {
+        "pattern": "chart-focus",
+        "content": {
+          "title": "Virelza launch continues to broaden beyond academic centers",
+          "subtitle": "U.S. net product sales by account setting, $M",
+          "chart": {
+            "type": "area",
+            "title": "Quarterly Virelza net product sales ($M)",
+            "areaGrouping": "stacked",
+            "series": [
+              {
+                "name": "Academic centers",
+                "dataPoints": [
+                  { "category": "Q1 FY25", "value": 41.8 },
+                  { "category": "Q2 FY25", "value": 45.6 },
+                  { "category": "Q3 FY25", "value": 49.7 },
+                  { "category": "Q4 FY25", "value": 53.1 },
+                  { "category": "Q1 FY26", "value": 56.4 }
+                ]
+              },
+              {
+                "name": "Community oncology",
+                "dataPoints": [
+                  { "category": "Q1 FY25", "value": 16.1 },
+                  { "category": "Q2 FY25", "value": 19.4 },
+                  { "category": "Q3 FY25", "value": 22.8 },
+                  { "category": "Q4 FY25", "value": 24.7 },
+                  { "category": "Q1 FY26", "value": 28.2 }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "Commercial execution — Virelza",
+          "subtitle": "First-line maintenance therapy for biomarker-selected ovarian cancer",
+          "bulletPoints": [
+            "1,420 patients on therapy at quarter-end, up 39% YoY; median treatment duration increased to 8.7 months from 7.9 months",
+            "Community accounts generated one-third of sales for the first time after 74 priority practices completed pathway review",
+            "New patient starts rose 18% sequentially despite two fewer selling days and normalized year-end inventory",
+            "Payer coverage reached 93% of U.S. commercial lives; average prior-authorization turnaround improved from 3.8 to 2.6 days",
+            "Field force remains at 112 representatives; territories in Florida, Texas, and the Mid-Atlantic carry the largest unpenetrated pools",
+            "European partner Novera submitted the EMA variation in April 2026; a CHMP opinion is expected in Q1 2027"
+          ]
+        }
+      },
+      {
+        "pattern": "comparison",
+        "content": {
+          "title": "Lead pipeline programs — evidence and next inflection point",
+          "subtitle": "Data cutoffs reflect the latest disclosed analyses",
+          "kpis": [
+            { "label": "AT-201", "value": "38%", "sublabel": "ORR; n=71; Q4 26" },
+            { "label": "AT-318", "value": ">11.2", "sublabel": "mo PFS; FDA Sep 26" },
+            { "label": "AT-507", "value": "6/22", "sublabel": "PRs; 3 pancreatic" },
+            { "label": "Virelza+", "value": "72%", "sublabel": "2y PFS; control 61%" }
+          ]
+        }
+      },
+      {
+        "pattern": "statement",
+        "content": {
+          "title": "Virelza funds a disciplined, biomarker-led pipeline.",
+          "subtitle": "Elena Park, M.D., Chief Executive Officer",
+          "prose": [
+            "Virelza growth funds the highest-confidence clinical milestones.",
+            "Capital remains focused on biomarker-defined programs with clear regulatory paths."
+          ]
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "FY2026 outlook and catalysts",
+          "subtitle": "Guidance as of May 7, 2026; excludes potential business-development transactions",
+          "bulletPoints": [
+            "Virelza net product sales maintained at $360M-$380M, implying 34%-41% growth over FY2025",
+            "GAAP operating expense maintained at $420M-$445M, including approximately $48M of non-cash stock compensation",
+            "Year-end cash and investments expected at $430M-$455M; current resources support operations into Q4 2027",
+            "September 2026 — FDA Type C meeting for AT-318 Phase 3 design and companion-diagnostic plan",
+            "Q4 2026 — AT-201 pivotal cohort topline response and duration-of-response data",
+            "Q1 2027 — expected CHMP opinion for Virelza label expansion and manufacturing comparability submission"
+          ]
+        }
+      }
+    ]
+  }
+}

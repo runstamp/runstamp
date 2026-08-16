@@ -1,0 +1,1052 @@
+{
+  "schemaVersion": 1,
+  "catalogVersion": "1.0.0",
+  "initialGaRule": true,
+  "operationCount": 79,
+  "catalogSha256": "8faac319ed271c5e4e4df3438bb3f5ac25a76a087b489c036c40df07318e50e5",
+  "operations": [
+    {
+      "name": "common.convert",
+      "stability": "stable",
+      "descriptorSha256": "1149207307d568cd2a06669198a4ed2e7975515ba424efa36e59f496611855fb",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "7bea56102a543c6b8dbb8b5a48b744fc533bb31d5535b3bc1c189a8f12767932",
+      "lossSha256": "0b2c014272b7a7bb8f7a33cd738bfc5c330f63dc68bbf103ad65fe06eb33d316",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.convert.delimited",
+      "stability": "stable",
+      "descriptorSha256": "92fc9fa29ee117d37f556db2287b4842bf850d0411053fb07b95f6ac1b5ac8a6",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "64d4c9b67c447c8c1f03bff92b9d6514ba2950b59aea64da2455cc45e32c0072",
+      "lossSha256": "4a5d4d22a1b9efe1df40637df240fd3194d7a9a27ffabf21e1460a5e3ab05158",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.convert.jats-submission",
+      "stability": "stable",
+      "descriptorSha256": "9a77bf2fd508bc348520383fd35067c6b188a2e1e7a7731b0bc38ef3cb136eb8",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "2a820f5e27608c14768e510c180d3b5ccd4e8003c5508b8401835836fdce58f0",
+      "lossSha256": "418280ca69e6249751d8b665e2eb8c6ba6f2ceadd298ecf6df9c1d0392bfc78e",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.convert.mail",
+      "stability": "stable",
+      "descriptorSha256": "4689af8d0326f400f6f266a6dc8129fcf6ff1fdd679552317b0cfaa97126b1ef",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "fec1431d4adca6949e92260455f01e105450e0787289b30644f9165ad76b49dc",
+      "lossSha256": "7f4d10e9469d4dd79b31a72ae45168a179e9848935db39b0da02f310036cc8a9",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.convert.review-sidecar",
+      "stability": "stable",
+      "descriptorSha256": "649b5414b27fba6cb5f4fde7b6d7b88d45096629376a1e257941cc2f818989bf",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "fba101f4e93ec591f88cd5cbb18f3b707cd96765533640edb15999952b9643a7",
+      "lossSha256": "25b43b908a7eca4e79d77d6053fbe7f43aea19d678473793fbdb2d6691bf0c3b",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.extract.mail-evidence",
+      "stability": "stable",
+      "descriptorSha256": "cf417a00eea2c9c6279e7c695a003e80e35e75193ba7905478cd4db0ed7b510c",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "fec1431d4adca6949e92260455f01e105450e0787289b30644f9165ad76b49dc",
+      "lossSha256": "7f4d10e9469d4dd79b31a72ae45168a179e9848935db39b0da02f310036cc8a9",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.extract.table-cell-merges",
+      "stability": "stable",
+      "descriptorSha256": "24dfa89a5cf62d2477a9cd513752ebed44a99f00efabaeeae3a9404e177d3210",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "7bea56102a543c6b8dbb8b5a48b744fc533bb31d5535b3bc1c189a8f12767932",
+      "lossSha256": "0b2c014272b7a7bb8f7a33cd738bfc5c330f63dc68bbf103ad65fe06eb33d316",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.extract.table-cell-types",
+      "stability": "stable",
+      "descriptorSha256": "4850c82434026819154bad66c17193628b698bce92747cb40f47b78a94a019b9",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "7bea56102a543c6b8dbb8b5a48b744fc533bb31d5535b3bc1c189a8f12767932",
+      "lossSha256": "0b2c014272b7a7bb8f7a33cd738bfc5c330f63dc68bbf103ad65fe06eb33d316",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.extract.table-detect",
+      "stability": "stable",
+      "descriptorSha256": "194a033b77029b32c71b79fb596e847d60cf67b3d001533f657aab1982644c01",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "7bea56102a543c6b8dbb8b5a48b744fc533bb31d5535b3bc1c189a8f12767932",
+      "lossSha256": "0b2c014272b7a7bb8f7a33cd738bfc5c330f63dc68bbf103ad65fe06eb33d316",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.extract.table-footnotes",
+      "stability": "stable",
+      "descriptorSha256": "8e9d3645df52d10c56d236676f211026396b35c2c809ef253bb1095a68b90e35",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "7bea56102a543c6b8dbb8b5a48b744fc533bb31d5535b3bc1c189a8f12767932",
+      "lossSha256": "0b2c014272b7a7bb8f7a33cd738bfc5c330f63dc68bbf103ad65fe06eb33d316",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.extract.table-grid",
+      "stability": "stable",
+      "descriptorSha256": "e615bfab9207c2997159a6df0659374e76078b6cb6e76f670f68992dac41795e",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "7bea56102a543c6b8dbb8b5a48b744fc533bb31d5535b3bc1c189a8f12767932",
+      "lossSha256": "0b2c014272b7a7bb8f7a33cd738bfc5c330f63dc68bbf103ad65fe06eb33d316",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.extract.table-headers",
+      "stability": "stable",
+      "descriptorSha256": "1c2d6a19b0ea2a43a9470616c43aef02e77ce7e2d29f1e46505c98d63f4c862e",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "7bea56102a543c6b8dbb8b5a48b744fc533bb31d5535b3bc1c189a8f12767932",
+      "lossSha256": "0b2c014272b7a7bb8f7a33cd738bfc5c330f63dc68bbf103ad65fe06eb33d316",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.inspect.delimited",
+      "stability": "stable",
+      "descriptorSha256": "fa970d4082db70f9662a4bfbd919c264d3482a19e1ecaadd1c58cc3aa5e03be6",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "64d4c9b67c447c8c1f03bff92b9d6514ba2950b59aea64da2455cc45e32c0072",
+      "lossSha256": "4a5d4d22a1b9efe1df40637df240fd3194d7a9a27ffabf21e1460a5e3ab05158",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.inspect.delimited-schema",
+      "stability": "stable",
+      "descriptorSha256": "ae332fb2667f1b41d019d2edf2de1d3f15c2c5bfaf88b4be1bc7583dfd442440",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "64d4c9b67c447c8c1f03bff92b9d6514ba2950b59aea64da2455cc45e32c0072",
+      "lossSha256": "4a5d4d22a1b9efe1df40637df240fd3194d7a9a27ffabf21e1460a5e3ab05158",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.inspect.dita",
+      "stability": "stable",
+      "descriptorSha256": "c1c4fce0431a7878fe1cce4aae74e0354165be87c38c25a75e24362cd639f2dc",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "1e369c081b7ca60fa25e58545d29505ce089c418f2c59bd9984c0484b2ae1e5b",
+      "lossSha256": "38e5a8345578cbc7c1fc63004482cac1ecae3d8904eba9d687a169cc4f608610",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.inspect.jats",
+      "stability": "stable",
+      "descriptorSha256": "dee2d75c78dc3567dc0c5e8b9558e39e663c08b2369af488f902dd53cf167e28",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "2a820f5e27608c14768e510c180d3b5ccd4e8003c5508b8401835836fdce58f0",
+      "lossSha256": "418280ca69e6249751d8b665e2eb8c6ba6f2ceadd298ecf6df9c1d0392bfc78e",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.inspect.mail",
+      "stability": "stable",
+      "descriptorSha256": "ca31583ff6daeefd1f77e64788826a6d6338d3c3a8e74abf63e185150047874d",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "fec1431d4adca6949e92260455f01e105450e0787289b30644f9165ad76b49dc",
+      "lossSha256": "7f4d10e9469d4dd79b31a72ae45168a179e9848935db39b0da02f310036cc8a9",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.parse.delimited",
+      "stability": "stable",
+      "descriptorSha256": "9ac4a549823b6ad94850861c55a63fb6558dc713c5806c7b14169488e42eade5",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "64d4c9b67c447c8c1f03bff92b9d6514ba2950b59aea64da2455cc45e32c0072",
+      "lossSha256": "4a5d4d22a1b9efe1df40637df240fd3194d7a9a27ffabf21e1460a5e3ab05158",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.parse.delimited-bytes",
+      "stability": "stable",
+      "descriptorSha256": "12f5f06d039e8535d3b224ce6adeb220f6ed5684607c1a80fd36fe35c40690ac",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "64d4c9b67c447c8c1f03bff92b9d6514ba2950b59aea64da2455cc45e32c0072",
+      "lossSha256": "4a5d4d22a1b9efe1df40637df240fd3194d7a9a27ffabf21e1460a5e3ab05158",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.parse.jats",
+      "stability": "stable",
+      "descriptorSha256": "5ebf89dba729824192e622dfbf6f041893ef8e750f52c14baeab6a1c08a632e7",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "2a820f5e27608c14768e510c180d3b5ccd4e8003c5508b8401835836fdce58f0",
+      "lossSha256": "418280ca69e6249751d8b665e2eb8c6ba6f2ceadd298ecf6df9c1d0392bfc78e",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.parse.review",
+      "stability": "stable",
+      "descriptorSha256": "065df6c5ef75af94728af088bd6230c75abe7587479a0cebc857719e27060bcd",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "fba101f4e93ec591f88cd5cbb18f3b707cd96765533640edb15999952b9643a7",
+      "lossSha256": "25b43b908a7eca4e79d77d6053fbe7f43aea19d678473793fbdb2d6691bf0c3b",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.render.delimited",
+      "stability": "stable",
+      "descriptorSha256": "a9fe2f9fd6653c5c78397220ea32bf96067b3582a7ff4f914461506a614748cf",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "64d4c9b67c447c8c1f03bff92b9d6514ba2950b59aea64da2455cc45e32c0072",
+      "lossSha256": "4a5d4d22a1b9efe1df40637df240fd3194d7a9a27ffabf21e1460a5e3ab05158",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.render.dita",
+      "stability": "stable",
+      "descriptorSha256": "131ac0e8843ba70f9d88bb888558474ae73e7983cf1831cb07af18bb3ab28b20",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "1e369c081b7ca60fa25e58545d29505ce089c418f2c59bd9984c0484b2ae1e5b",
+      "lossSha256": "38e5a8345578cbc7c1fc63004482cac1ecae3d8904eba9d687a169cc4f608610",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.render.mail",
+      "stability": "stable",
+      "descriptorSha256": "e7e9380a72f635643d6adbe2d0e1d895d8ca6efc679fc909f122d039074fd896",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "fec1431d4adca6949e92260455f01e105450e0787289b30644f9165ad76b49dc",
+      "lossSha256": "7f4d10e9469d4dd79b31a72ae45168a179e9848935db39b0da02f310036cc8a9",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.render.provenance-record",
+      "stability": "stable",
+      "descriptorSha256": "8c07d8ac8f98345d9f6471dcc61d70ced3fd7c28d95ec95c2da1df3ab93c7fd5",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "2aeba94e8bc6374c133c1ce99daf53b4b8a7e38fcf2ab6b88cdc688a108ef439",
+      "lossSha256": "3091bcb9e8c911aa8aaa4bead3a6270fba12bf2433f2e2926ae7e495e6fe19ec",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.render.provenance-report",
+      "stability": "stable",
+      "descriptorSha256": "39d2b4cb720f9ff8b1434067a76c9503d44e9c8e0421d079c98ac80bbe5db973",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "2aeba94e8bc6374c133c1ce99daf53b4b8a7e38fcf2ab6b88cdc688a108ef439",
+      "lossSha256": "3091bcb9e8c911aa8aaa4bead3a6270fba12bf2433f2e2926ae7e495e6fe19ec",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.transform",
+      "stability": "stable",
+      "descriptorSha256": "32bf22bb25cef4e80998e927dc6cb6899fe33b21f27af219d008ecfa8b629c94",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "7bea56102a543c6b8dbb8b5a48b744fc533bb31d5535b3bc1c189a8f12767932",
+      "lossSha256": "0b2c014272b7a7bb8f7a33cd738bfc5c330f63dc68bbf103ad65fe06eb33d316",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.transform.delimited",
+      "stability": "stable",
+      "descriptorSha256": "efc81ca95d057634e923ed6750f8bd8d0457347e3f0a1855bc573a1458c88878",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "64d4c9b67c447c8c1f03bff92b9d6514ba2950b59aea64da2455cc45e32c0072",
+      "lossSha256": "4a5d4d22a1b9efe1df40637df240fd3194d7a9a27ffabf21e1460a5e3ab05158",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.transform.dita-edit",
+      "stability": "stable",
+      "descriptorSha256": "7f8e28148ab6ef04f83835ec932480027bc45fa79c515a704766c43e61724f4a",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "1e369c081b7ca60fa25e58545d29505ce089c418f2c59bd9984c0484b2ae1e5b",
+      "lossSha256": "38e5a8345578cbc7c1fc63004482cac1ecae3d8904eba9d687a169cc4f608610",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.transform.dita-resolve",
+      "stability": "stable",
+      "descriptorSha256": "515c73d00e36e5ebe9c68fe3846618da88fe13b0264983455aee85adfe6085b5",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "1e369c081b7ca60fa25e58545d29505ce089c418f2c59bd9984c0484b2ae1e5b",
+      "lossSha256": "38e5a8345578cbc7c1fc63004482cac1ecae3d8904eba9d687a169cc4f608610",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.transform.jats-normalize",
+      "stability": "stable",
+      "descriptorSha256": "b823c05e7fdba7b16c74aed0e620ccff76d9122de1bd1987532e47f07be15c4d",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "2a820f5e27608c14768e510c180d3b5ccd4e8003c5508b8401835836fdce58f0",
+      "lossSha256": "418280ca69e6249751d8b665e2eb8c6ba6f2ceadd298ecf6df9c1d0392bfc78e",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.transform.provenance-append",
+      "stability": "stable",
+      "descriptorSha256": "36299e1726ecafdca3014d5ad293e65360a2fc0729be91f16e4f328a3db1873c",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "2aeba94e8bc6374c133c1ce99daf53b4b8a7e38fcf2ab6b88cdc688a108ef439",
+      "lossSha256": "3091bcb9e8c911aa8aaa4bead3a6270fba12bf2433f2e2926ae7e495e6fe19ec",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.validate",
+      "stability": "stable",
+      "descriptorSha256": "0ec9fafec078bebd83166a02310bd4b01b1b8b54b913328298fef8cd21932032",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "7bea56102a543c6b8dbb8b5a48b744fc533bb31d5535b3bc1c189a8f12767932",
+      "lossSha256": "0b2c014272b7a7bb8f7a33cd738bfc5c330f63dc68bbf103ad65fe06eb33d316",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.validate.delimited",
+      "stability": "stable",
+      "descriptorSha256": "f9e028871740edbbd5424520040ed0b4d2f28ce7a0348b55f3ff9200da97d028",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "64d4c9b67c447c8c1f03bff92b9d6514ba2950b59aea64da2455cc45e32c0072",
+      "lossSha256": "4a5d4d22a1b9efe1df40637df240fd3194d7a9a27ffabf21e1460a5e3ab05158",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.validate.delimited-roundtrip",
+      "stability": "stable",
+      "descriptorSha256": "c738625d04a37e2c16662b66a5fc8f3bfc5c56278a229e8bab91e003aca5967b",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "64d4c9b67c447c8c1f03bff92b9d6514ba2950b59aea64da2455cc45e32c0072",
+      "lossSha256": "4a5d4d22a1b9efe1df40637df240fd3194d7a9a27ffabf21e1460a5e3ab05158",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.validate.dita",
+      "stability": "stable",
+      "descriptorSha256": "ac09c1e524af69a048b7faba1a81f221229f41d1094706ba949e9f8f04890735",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "1e369c081b7ca60fa25e58545d29505ce089c418f2c59bd9984c0484b2ae1e5b",
+      "lossSha256": "38e5a8345578cbc7c1fc63004482cac1ecae3d8904eba9d687a169cc4f608610",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.validate.dita-publication",
+      "stability": "stable",
+      "descriptorSha256": "0c063a212aa05615b1a17802ca04c63f38dfc25f7e0feb67630fc0f913a5c346",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "1e369c081b7ca60fa25e58545d29505ce089c418f2c59bd9984c0484b2ae1e5b",
+      "lossSha256": "38e5a8345578cbc7c1fc63004482cac1ecae3d8904eba9d687a169cc4f608610",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.validate.jats",
+      "stability": "stable",
+      "descriptorSha256": "e880fa009ce1d73940eddf14f180e58231766fc037d396cdbda56bc46df07b48",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "2a820f5e27608c14768e510c180d3b5ccd4e8003c5508b8401835836fdce58f0",
+      "lossSha256": "418280ca69e6249751d8b665e2eb8c6ba6f2ceadd298ecf6df9c1d0392bfc78e",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.validate.mail",
+      "stability": "stable",
+      "descriptorSha256": "b59782ac9d985ca1c696fe714cdc63a982272a145b3d84ecac0e69e384ea8e16",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "fec1431d4adca6949e92260455f01e105450e0787289b30644f9165ad76b49dc",
+      "lossSha256": "7f4d10e9469d4dd79b31a72ae45168a179e9848935db39b0da02f310036cc8a9",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.validate.provenance",
+      "stability": "stable",
+      "descriptorSha256": "144ab405f6c20333f22706218d44244df814f80706c8fb84a4669084f57ba1db",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "2aeba94e8bc6374c133c1ce99daf53b4b8a7e38fcf2ab6b88cdc688a108ef439",
+      "lossSha256": "3091bcb9e8c911aa8aaa4bead3a6270fba12bf2433f2e2926ae7e495e6fe19ec",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "common.validate.review-sidecar",
+      "stability": "stable",
+      "descriptorSha256": "addb079d80865889cad8de6cb4d4a37f38b265cc02931a4082cbcc6c3a619033",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "fba101f4e93ec591f88cd5cbb18f3b707cd96765533640edb15999952b9643a7",
+      "lossSha256": "25b43b908a7eca4e79d77d6053fbe7f43aea19d678473793fbdb2d6691bf0c3b",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "docx.convert.pdf",
+      "stability": "stable",
+      "descriptorSha256": "c29c2de06a646a021ce1541f3a50961bc66723c80be8995cea0f1514b36cca1a",
+      "schemaSha256": "c78a54b3039d0163b2ef982ac5b41b4ca2d430b944008134e953a15c19db0673",
+      "codeSha256": "738f4b6cb7ecd930c7e3ddf0964a13a29f7c0c0fafc3216e001252cd7d33ff61",
+      "lossSha256": "1d1ee621cd42050ffe4967c52915c80b0189474f511bc1efeb3cb0de2eff424d",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "docx.diff",
+      "stability": "stable",
+      "descriptorSha256": "a80e4041b972ee297f5e455bd2fbf2a3a0a522d5bd8ec4332886efb12420f40a",
+      "schemaSha256": "d3543ac0f59156eda338d15753842a9ffe53481164d84856d69615a453289765",
+      "codeSha256": "738f4b6cb7ecd930c7e3ddf0964a13a29f7c0c0fafc3216e001252cd7d33ff61",
+      "lossSha256": "5b5ca405fefddf446678cc04fc2d0216d7986b4be9141cd6364759030b66b776",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "docx.inspect.controlled",
+      "stability": "stable",
+      "descriptorSha256": "7cd9c880e24147fc1732b2d2f849dfb64e2fd60c480156c268a050e9477b9fc3",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "738f4b6cb7ecd930c7e3ddf0964a13a29f7c0c0fafc3216e001252cd7d33ff61",
+      "lossSha256": "d7f24c69e575a0c614deaf719f84a67d68b6e7cda34e2150095ce267e3ecd8d5",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "docx.inspect.find",
+      "stability": "stable",
+      "descriptorSha256": "52d9c64100e93fb2d97450f767030b31b871ac9fc597528e166abd0ab06769d8",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "738f4b6cb7ecd930c7e3ddf0964a13a29f7c0c0fafc3216e001252cd7d33ff61",
+      "lossSha256": "d7f24c69e575a0c614deaf719f84a67d68b6e7cda34e2150095ce267e3ecd8d5",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "docx.inspect.redaction-preview",
+      "stability": "stable",
+      "descriptorSha256": "6366246c84636077406d6cb0a412eff468c40c2d4b6a1020490b32b06b475df3",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "738f4b6cb7ecd930c7e3ddf0964a13a29f7c0c0fafc3216e001252cd7d33ff61",
+      "lossSha256": "d7f24c69e575a0c614deaf719f84a67d68b6e7cda34e2150095ce267e3ecd8d5",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "docx.parse",
+      "stability": "stable",
+      "descriptorSha256": "45fafd9db309fb88bd0b520d6491e2a4d5fc593b9e1a59d7226b1cb5f90a8b9c",
+      "schemaSha256": "13b85adca3f2fd0a645d1256c81734ac863379fc7db21bb47d5addad430f3461",
+      "codeSha256": "738f4b6cb7ecd930c7e3ddf0964a13a29f7c0c0fafc3216e001252cd7d33ff61",
+      "lossSha256": "f9e896d94bb923e2be71ad1ad1144136773e32da0a1d0c96c34f6ebfd5803ced",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "docx.redact",
+      "stability": "stable",
+      "descriptorSha256": "b50a7c6d9d5d6c03edcd020f6ba79ba425452e1d8f6100727d1c52de1a73339d",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "738f4b6cb7ecd930c7e3ddf0964a13a29f7c0c0fafc3216e001252cd7d33ff61",
+      "lossSha256": "d7f24c69e575a0c614deaf719f84a67d68b6e7cda34e2150095ce267e3ecd8d5",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "docx.render",
+      "stability": "stable",
+      "descriptorSha256": "473a3463dcc30c2862a92f9e1f5b5a27eee581cfaa484b73156a56813a97dcb8",
+      "schemaSha256": "665dddeefbdfdfac9a991ad939b5167895338b97db4bb9a5a4fc2acc1370bbd0",
+      "codeSha256": "738f4b6cb7ecd930c7e3ddf0964a13a29f7c0c0fafc3216e001252cd7d33ff61",
+      "lossSha256": "5b5ca405fefddf446678cc04fc2d0216d7986b4be9141cd6364759030b66b776",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "docx.transform.html",
+      "stability": "stable",
+      "descriptorSha256": "8813773d781aeebd1d2f51b6689bb873d3cfd8b812a3ec7148cb877ba1e89978",
+      "schemaSha256": "a340acf5d153a4bde36098acc030c656f127ae8772fd9018f1b70dfd0f074708",
+      "codeSha256": "738f4b6cb7ecd930c7e3ddf0964a13a29f7c0c0fafc3216e001252cd7d33ff61",
+      "lossSha256": "5b5ca405fefddf446678cc04fc2d0216d7986b4be9141cd6364759030b66b776",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "docx.validate",
+      "stability": "stable",
+      "descriptorSha256": "664ec6dc1730bbc5865873b23f55a582f5cc508d196c17bd94c8f0653b1641b9",
+      "schemaSha256": "ff6ffc302449690e8e7292685a96de386bbd08799431a46d4b963df3c7adcc71",
+      "codeSha256": "738f4b6cb7ecd930c7e3ddf0964a13a29f7c0c0fafc3216e001252cd7d33ff61",
+      "lossSha256": "f9e896d94bb923e2be71ad1ad1144136773e32da0a1d0c96c34f6ebfd5803ced",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "pdf.convert",
+      "stability": "stable",
+      "descriptorSha256": "7c638347c78ed3be2678f106d2585c134670d63947f867b6ead907a44a33db12",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "1ef38dfe2474675c621dc29c8623af3bb0395c73bfd81d5d3feb4eead11617a6",
+      "lossSha256": "214230309a9146f27e75442754a71ebc5814a3aef272b0bd6da6cf15fdcb4ea0",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "pdf.extract.form-fields",
+      "stability": "stable",
+      "descriptorSha256": "5798ba9f0662feca6807b5358884bb20b4f906573f70dbe200d349fc22efff62",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "c0dc2be0b72a2c8dba1c652380a82068b215eaf670e90800d3a591fa8cdb92f9",
+      "lossSha256": "ecce1b5be509bad72e0f5b2d4dd95421caafafebb77307e632171efd1a68f46a",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "pdf.extract.signatures",
+      "stability": "stable",
+      "descriptorSha256": "cf3f5ffd1d20a2905d52f9dc3ee2e25b86a527540aa214330e9297661f9d1fdf",
+      "schemaSha256": "1e61d87cf6e4ad3a12117f1ef580de6bbf84b1368134d86033afe6b1b4860b33",
+      "codeSha256": "1ef38dfe2474675c621dc29c8623af3bb0395c73bfd81d5d3feb4eead11617a6",
+      "lossSha256": "06b60ccddbfa0b105993f2c6fb9293e862e1c2acda23f780e219fec491ad28e3",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "pdf.inspect.evidence",
+      "stability": "stable",
+      "descriptorSha256": "a8e2c61641c2cbb5e8a3e99cb13f0fee0d58b9c6daa4a3cb3b2a92dab2105d3c",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "1ef38dfe2474675c621dc29c8623af3bb0395c73bfd81d5d3feb4eead11617a6",
+      "lossSha256": "214230309a9146f27e75442754a71ebc5814a3aef272b0bd6da6cf15fdcb4ea0",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "pdf.inspect.find",
+      "stability": "stable",
+      "descriptorSha256": "dcbdfc95942dad1ae31f0346fd881ce7c4718aaff4159ec25bdc88b45534d9d7",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "1ef38dfe2474675c621dc29c8623af3bb0395c73bfd81d5d3feb4eead11617a6",
+      "lossSha256": "214230309a9146f27e75442754a71ebc5814a3aef272b0bd6da6cf15fdcb4ea0",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "pdf.inspect.form",
+      "stability": "stable",
+      "descriptorSha256": "e9e356a79ec8b4ca3aa91fabfbc39501b1c3c21ead131591c2d4a4084190cb8b",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "c0dc2be0b72a2c8dba1c652380a82068b215eaf670e90800d3a591fa8cdb92f9",
+      "lossSha256": "ecce1b5be509bad72e0f5b2d4dd95421caafafebb77307e632171efd1a68f46a",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "pdf.inspect.form-map",
+      "stability": "stable",
+      "descriptorSha256": "d0a9ec39ee47f2c19ce9bc7b747345db05079b9227836d45a23d66548669dfcd",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "c0dc2be0b72a2c8dba1c652380a82068b215eaf670e90800d3a591fa8cdb92f9",
+      "lossSha256": "ecce1b5be509bad72e0f5b2d4dd95421caafafebb77307e632171efd1a68f46a",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "pdf.inspect.redaction-preview",
+      "stability": "stable",
+      "descriptorSha256": "d12c1577bfb64eb134414893a84fef1dbae9bf0e82b17e06ccfa791d6194aede",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "1ef38dfe2474675c621dc29c8623af3bb0395c73bfd81d5d3feb4eead11617a6",
+      "lossSha256": "214230309a9146f27e75442754a71ebc5814a3aef272b0bd6da6cf15fdcb4ea0",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "pdf.redact",
+      "stability": "stable",
+      "descriptorSha256": "4ca8ed44b71df2b77a82d9531e51e9a260f0339278d9ca55ead97b25071d1128",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "1ef38dfe2474675c621dc29c8623af3bb0395c73bfd81d5d3feb4eead11617a6",
+      "lossSha256": "214230309a9146f27e75442754a71ebc5814a3aef272b0bd6da6cf15fdcb4ea0",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "pdf.render",
+      "stability": "stable",
+      "descriptorSha256": "3b489bc1251068357aefd5f3616d896fc063e35e4be50d78c181d449230f495d",
+      "schemaSha256": "3e6cc643d8615f40e543d5bea81f210012bba5bb9ec6a42083b395666d1cf96c",
+      "codeSha256": "1ef38dfe2474675c621dc29c8623af3bb0395c73bfd81d5d3feb4eead11617a6",
+      "lossSha256": "f6214f99944522f955d9f9e48a9ba74938a1bc9c665966e73d2b90b6777bff29",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "pdf.repair",
+      "stability": "stable",
+      "descriptorSha256": "a883bce2350e50daf7ddbc1b2f056c8f4d7db4b5c4628b484395a66a91416e80",
+      "schemaSha256": "f92e1acd765d7ad5423c71188eec97fe3ef3a4c653ba3ebbf1c79614ba1e9bb5",
+      "codeSha256": "1ef38dfe2474675c621dc29c8623af3bb0395c73bfd81d5d3feb4eead11617a6",
+      "lossSha256": "0e61e1f2731caaf7ae0364b75cbd469f453f7f08f221efe0aa4168d89966b765",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "pdf.transform",
+      "stability": "stable",
+      "descriptorSha256": "460b8cdb4480c9ebcb8b5042f663223228d857b16a62fdc5b630d529d5ceed77",
+      "schemaSha256": "628c401c446bc47ec0b7821fd1e6120046eb9925c94a4e713ddcb97ccab49acc",
+      "codeSha256": "1ef38dfe2474675c621dc29c8623af3bb0395c73bfd81d5d3feb4eead11617a6",
+      "lossSha256": "06b60ccddbfa0b105993f2c6fb9293e862e1c2acda23f780e219fec491ad28e3",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "pdf.transform.form-fill",
+      "stability": "stable",
+      "descriptorSha256": "5ce3e2fd345dd5ca840d9295dc4ff32e826a053d5bec7a6d8a3d9a60c80cd99a",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "c0dc2be0b72a2c8dba1c652380a82068b215eaf670e90800d3a591fa8cdb92f9",
+      "lossSha256": "ecce1b5be509bad72e0f5b2d4dd95421caafafebb77307e632171efd1a68f46a",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "pdf.transform.form-flatten",
+      "stability": "stable",
+      "descriptorSha256": "713e757dc57128bf58a8b76cbca0dc44d12cd4d6cbb269e1f935d0ce1c3283ea",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "c0dc2be0b72a2c8dba1c652380a82068b215eaf670e90800d3a591fa8cdb92f9",
+      "lossSha256": "ecce1b5be509bad72e0f5b2d4dd95421caafafebb77307e632171efd1a68f46a",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "pdf.validate",
+      "stability": "stable",
+      "descriptorSha256": "e3c75423fb0e06666d69246aaf8d2ce5a3fd3f0f95cfa8e628a6cac4b0758cc4",
+      "schemaSha256": "aab81fa9a2df3117603cfd0de08b01108d1218c7a15356c2050ce078e00259b3",
+      "codeSha256": "1ef38dfe2474675c621dc29c8623af3bb0395c73bfd81d5d3feb4eead11617a6",
+      "lossSha256": "91a3b181acd14633879ab99922ef8d4b2e482a2b87d5cd33c917fbf74b42b76f",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "pdf.validate.form",
+      "stability": "stable",
+      "descriptorSha256": "0004732993ea66d5fc13176d58d516a7eae8a3246e2de80b267bb77b89226d2e",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "c0dc2be0b72a2c8dba1c652380a82068b215eaf670e90800d3a591fa8cdb92f9",
+      "lossSha256": "ecce1b5be509bad72e0f5b2d4dd95421caafafebb77307e632171efd1a68f46a",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "pdf.validate.form-integrity",
+      "stability": "stable",
+      "descriptorSha256": "9ea97a378a49aef08f9e14e294d01472d11d4c20872855bf750776286f1b3879",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "c0dc2be0b72a2c8dba1c652380a82068b215eaf670e90800d3a591fa8cdb92f9",
+      "lossSha256": "ecce1b5be509bad72e0f5b2d4dd95421caafafebb77307e632171efd1a68f46a",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "pptx.convert.pdf",
+      "stability": "stable",
+      "descriptorSha256": "9d2767eaea717de8636dcf1b72354ce4db84b808fb3a2b74a870eb52a82995c9",
+      "schemaSha256": "d8b854e986b69853cbf77556c6285e5d8fa806063b9ea97715c3726aa5d4c490",
+      "codeSha256": "9342db83e2f486d6ada77e9a9a6e6513da91bed44fda63c037cadd41bdc0a82a",
+      "lossSha256": "61865d6c3bb3b1b071b535912f65318eba88e5ae269d53caa7388fb4b3853a33",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "pptx.render",
+      "stability": "stable",
+      "descriptorSha256": "97806a49e42064a99458dc9b2ea3b23ce18cd6fc9676084197d2eab7de7d3cdb",
+      "schemaSha256": "54d908d738261ec54e8564fc9afd5407edbe5a61ef2a17bbc4ace2ea5e45225f",
+      "codeSha256": "9342db83e2f486d6ada77e9a9a6e6513da91bed44fda63c037cadd41bdc0a82a",
+      "lossSha256": "74b0b2df2ea69ced5f29804092c1a1f7c1734482ac34d48a0669058f9ddb3d03",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "pptx.repair",
+      "stability": "stable",
+      "descriptorSha256": "6efc6f7b090eb064aeed2003ed04985f5690f4b90094bfaf83dc8eabfcd0c46d",
+      "schemaSha256": "fc5adb2c5b5e436d362cdc03975ec91322a120751a9b98f694272dfe44d0c83c",
+      "codeSha256": "9342db83e2f486d6ada77e9a9a6e6513da91bed44fda63c037cadd41bdc0a82a",
+      "lossSha256": "74b0b2df2ea69ced5f29804092c1a1f7c1734482ac34d48a0669058f9ddb3d03",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "pptx.validate",
+      "stability": "stable",
+      "descriptorSha256": "096ecaa14f9fce6379b9fd52cf6a50e1d8bbc63a307b68e478141567e974916d",
+      "schemaSha256": "3565f46e5f2650e588351a4b66cf73aabf4fc5fe51aba8e17b1f4897db35431c",
+      "codeSha256": "9342db83e2f486d6ada77e9a9a6e6513da91bed44fda63c037cadd41bdc0a82a",
+      "lossSha256": "f7be567c54d22e6dda387086655b27fbebebf3fd68009615c92703ee2302f2bd",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "xlsx.convert",
+      "stability": "stable",
+      "descriptorSha256": "6a8f11991740e0f80da33490edc53355b5501ad1d24ea559a0876e6164658d52",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "fca62946a751ed26c9ce054f095463b0a2b8c24c6b6bd2feaa256340a0c89ff0",
+      "lossSha256": "b408fbab273aebb337def23f9cf48301dfe75f203feac3050a1e1500b20515ef",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "xlsx.inspect",
+      "stability": "stable",
+      "descriptorSha256": "76afeec0e691a378bb493dc5412c8f9c1674514982e0cf23e7cc15d8bfe98acd",
+      "schemaSha256": "b386fad185054d67ca08b8b7dcf397942d19e0f8bcb9dbcebfd22a8a74a232c1",
+      "codeSha256": "fca62946a751ed26c9ce054f095463b0a2b8c24c6b6bd2feaa256340a0c89ff0",
+      "lossSha256": "fc0958288b49ba4193bdfcad9790783d2738e3366f0c3d48b6ad173770a4a908",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "xlsx.parse",
+      "stability": "stable",
+      "descriptorSha256": "65001392c1ad1edc4b87a33dd36c7f3877d41405324d484de463563d7a4eaafc",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "fca62946a751ed26c9ce054f095463b0a2b8c24c6b6bd2feaa256340a0c89ff0",
+      "lossSha256": "b408fbab273aebb337def23f9cf48301dfe75f203feac3050a1e1500b20515ef",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "xlsx.render",
+      "stability": "stable",
+      "descriptorSha256": "4b14a111559d8cdf39b3c1bd489c107e3003d8b8d8695b4775c767066ddef62c",
+      "schemaSha256": "c587ccdfb28bfb075ab0736c7814b03eca23853d1d9db29bc7998f1976baaa22",
+      "codeSha256": "fca62946a751ed26c9ce054f095463b0a2b8c24c6b6bd2feaa256340a0c89ff0",
+      "lossSha256": "db88eaa3a2b5275fba71d3b199fde089a1464fc6215e59985a7a3f82427349ea",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "xlsx.repair",
+      "stability": "stable",
+      "descriptorSha256": "287540b5eda15ea750faede362411ec2648d4974a79ed8c3c7671ff62aa4e9c1",
+      "schemaSha256": "6ceb59d657a0a7dcdcedbc164885d29d57702a68c1d07a689954a6b50bbd5eb7",
+      "codeSha256": "fca62946a751ed26c9ce054f095463b0a2b8c24c6b6bd2feaa256340a0c89ff0",
+      "lossSha256": "db88eaa3a2b5275fba71d3b199fde089a1464fc6215e59985a7a3f82427349ea",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "xlsx.transform",
+      "stability": "stable",
+      "descriptorSha256": "118dfd0e91c60e4aa390b6e5124c381354ece8edbbe196e91cce1d8d184d5e06",
+      "schemaSha256": "fdde8040cefe907f5f06b5580af13893f6933a30d1aea7e93a9217d72f1a7982",
+      "codeSha256": "fca62946a751ed26c9ce054f095463b0a2b8c24c6b6bd2feaa256340a0c89ff0",
+      "lossSha256": "b408fbab273aebb337def23f9cf48301dfe75f203feac3050a1e1500b20515ef",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    },
+    {
+      "name": "xlsx.validate",
+      "stability": "stable",
+      "descriptorSha256": "1719399384cc5606d03629ebb14139c9932ec28d052615bcee30d40425419727",
+      "schemaSha256": "033b8d3796df93171362b37c58e27094d08b12b7b0f2161b037daee5c2ffd758",
+      "codeSha256": "fca62946a751ed26c9ce054f095463b0a2b8c24c6b6bd2feaa256340a0c89ff0",
+      "lossSha256": "fc0958288b49ba4193bdfcad9790783d2738e3366f0c3d48b6ad173770a4a908",
+      "fixtureKinds": [
+        "nominal",
+        "hostile",
+        "boundary"
+      ]
+    }
+  ],
+  "conformance": {
+    "artifact": "ga/conformance.json",
+    "sha256": "b10637931268ffb3d94abf20afb8ef9d9aadd96de18910ac7b8f4aef912662a6"
+  },
+  "application": {
+    "artifact": "ga/application-evidence.json",
+    "sha256": "3e82ae9343616f2d97f4a833f129df1b13bf8f349c9b79d5631f6486d790025e"
+  },
+  "quality": {
+    "artifact": "ga/quality-ga-evidence.json",
+    "sha256": "afe52d59944aebcdb80386cbe568aec9d81a83e439749964f0bc0d2f5ab5ef8d"
+  },
+  "humanVerification": {
+    "artifact": "ga/human-verification.json",
+    "sha256": "d0bfc3550d66f0a8bf4fc1a36e057066ba3c3444c163bd1fa741a706231a0968"
+  }
+}

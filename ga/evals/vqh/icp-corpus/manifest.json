@@ -1,0 +1,968 @@
+{
+  "corpusId": "runstamp-icp-v3-2026-08-10",
+  "name": "Runstamp ICP document quality benchmark",
+  "version": 3,
+  "description": "120 production-shaped fixtures balanced across PPTX, DOCX, PDF, and XLSX.",
+  "documents": [
+    {
+      "caseId": "pptx-board-strategy-update",
+      "deliverable": "Board Strategy Update",
+      "format": "pptx",
+      "source": "tools/visual-regression/corpus/pptx-board-strategy-update.json",
+      "sourceSha256": "32524ea159f29ca463b83b6011865e9d5aabd19486a32c4fe64bbeb487c1e477",
+      "sourceByteLength": 10041
+    },
+    {
+      "caseId": "pptx-earnings-q3-saas-highlights",
+      "deliverable": "Earnings Q3 Saas Highlights",
+      "format": "pptx",
+      "source": "tools/visual-regression/corpus/pptx-earnings-q3-saas-highlights.json",
+      "sourceSha256": "90baa16cdf46c0245d2053e9bc9737ac550d288eb4cf80e3d3e6264a227f5d1f",
+      "sourceByteLength": 5768
+    },
+    {
+      "caseId": "pptx-proposal-enterprise-software",
+      "deliverable": "Proposal Enterprise Software",
+      "format": "pptx",
+      "source": "tools/visual-regression/corpus/pptx-proposal-enterprise-software.json",
+      "sourceSha256": "084e0195d22720aea41e4ba3be74d4fdd639baba05f807a7303e4f24963b6059",
+      "sourceByteLength": 11140
+    },
+    {
+      "caseId": "pptx-board-fy2027-budget-approval",
+      "deliverable": "Board FY2027 Budget Approval",
+      "format": "pptx",
+      "source": "tools/visual-regression/corpus/pptx-board-fy2027-budget-approval.json",
+      "sourceSha256": "5d6c3f3e41fe58d4ff080cd5cd6fbfbcab166703bb3877e137358922c387e6c2",
+      "sourceByteLength": 6660
+    },
+    {
+      "caseId": "pptx-board-enterprise-risk-review",
+      "deliverable": "Board Enterprise Risk Review",
+      "format": "pptx",
+      "source": "tools/visual-regression/corpus/pptx-board-enterprise-risk-review.json",
+      "sourceSha256": "25feab0fe43784de3218ab3f2795ee8957fb1da77c27568edf15f82083a77ddb",
+      "sourceByteLength": 7495
+    },
+    {
+      "caseId": "pptx-board-executive-compensation",
+      "deliverable": "Board Executive Compensation",
+      "format": "pptx",
+      "source": "tools/visual-regression/corpus/pptx-board-executive-compensation.json",
+      "sourceSha256": "91596f47079b3f0f2288c1b3e5911fad64ae4e554a6e690a72c019f701e2e6eb",
+      "sourceByteLength": 6492
+    },
+    {
+      "caseId": "pptx-board-ma-update-renewables",
+      "deliverable": "Board Ma Update Renewables",
+      "format": "pptx",
+      "source": "tools/visual-regression/corpus/pptx-board-ma-update-renewables.json",
+      "sourceSha256": "ce9c6416e5b1245494298b0f1c5794e8ccef75488950ce63270d83220898502e",
+      "sourceByteLength": 6676
+    },
+    {
+      "caseId": "pptx-bullets-dark-punch",
+      "deliverable": "Bullets Dark Punch",
+      "format": "pptx",
+      "source": "tools/visual-regression/corpus/pptx-bullets-dark-punch.json",
+      "sourceSha256": "bdddbb4ef3d2d02dec1af8460589cb7988aa1ea868d17f7cd109e665d42887c4",
+      "sourceByteLength": 1312
+    },
+    {
+      "caseId": "pptx-bullets-editorial-serif",
+      "deliverable": "Bullets Editorial Serif",
+      "format": "pptx",
+      "source": "tools/visual-regression/corpus/pptx-bullets-editorial-serif.json",
+      "sourceSha256": "fbaec9eea31ae2c2186f89084c31bdfef0ef31feb8a4ee5520f58393634ecd65",
+      "sourceByteLength": 1327
+    },
+    {
+      "caseId": "pptx-bullets-editorial-wide",
+      "deliverable": "Bullets Editorial Wide",
+      "format": "pptx",
+      "source": "tools/visual-regression/corpus/pptx-bullets-editorial-wide.json",
+      "sourceSha256": "087a261331aba523874456983053843c1531b1e0046113df8a4f51c7c4e83f59",
+      "sourceByteLength": 1324
+    },
+    {
+      "caseId": "pptx-bullets-midnight",
+      "deliverable": "Bullets Midnight",
+      "format": "pptx",
+      "source": "tools/visual-regression/corpus/pptx-bullets-midnight.json",
+      "sourceSha256": "54aae3c61046fee55425194553373201b548b70d4504e1ac87f87e270806986e",
+      "sourceByteLength": 1306
+    },
+    {
+      "caseId": "pptx-bullets-monochrome",
+      "deliverable": "Bullets Monochrome",
+      "format": "pptx",
+      "source": "tools/visual-regression/corpus/pptx-bullets-monochrome.json",
+      "sourceSha256": "832f630d5b219e0805341467723d3b4885363f1873a452eaff5c0d20ac28bf23",
+      "sourceByteLength": 1312
+    },
+    {
+      "caseId": "pptx-bullets-terminal",
+      "deliverable": "Bullets Terminal",
+      "format": "pptx",
+      "source": "tools/visual-regression/corpus/pptx-bullets-terminal.json",
+      "sourceSha256": "1e449e4beedcad62fa234e61447aad14ac54045f299d8ff6d452c9b40c3ce9a7",
+      "sourceByteLength": 1306
+    },
+    {
+      "caseId": "pptx-bullets",
+      "deliverable": "Bullets",
+      "format": "pptx",
+      "source": "tools/visual-regression/corpus/pptx-bullets.json",
+      "sourceSha256": "d86e40f4811cfc04a8e020bd5cc1bdc022f492d53aab3b9a2a518ed3bc9917b9",
+      "sourceByteLength": 1282
+    },
+    {
+      "caseId": "pptx-chart-focus-dark-punch",
+      "deliverable": "Chart Focus Dark Punch",
+      "format": "pptx",
+      "source": "tools/visual-regression/corpus/pptx-chart-focus-dark-punch.json",
+      "sourceSha256": "9b6cbb17e627226b5be649c3a2121a6d7bb33c137cbe666efbeed307224353e3",
+      "sourceByteLength": 1829
+    },
+    {
+      "caseId": "pptx-chart-focus-editorial-serif",
+      "deliverable": "Chart Focus Editorial Serif",
+      "format": "pptx",
+      "source": "tools/visual-regression/corpus/pptx-chart-focus-editorial-serif.json",
+      "sourceSha256": "b42f5a58a20dd4a9d393da28ce4aa5cc6ad4c52ed7bc353105882543d050aa86",
+      "sourceByteLength": 1844
+    },
+    {
+      "caseId": "pptx-chart-focus-editorial-wide",
+      "deliverable": "Chart Focus Editorial Wide",
+      "format": "pptx",
+      "source": "tools/visual-regression/corpus/pptx-chart-focus-editorial-wide.json",
+      "sourceSha256": "301c5b84ea8f78ecdc6c63ac1e738269bbe56c332f3e642f79a9f5674f508260",
+      "sourceByteLength": 1841
+    },
+    {
+      "caseId": "pptx-chart-focus-midnight",
+      "deliverable": "Chart Focus Midnight",
+      "format": "pptx",
+      "source": "tools/visual-regression/corpus/pptx-chart-focus-midnight.json",
+      "sourceSha256": "62f2215b8125613c84897a386eb8212c7c37754b2d6c600208d769edef35a89d",
+      "sourceByteLength": 1823
+    },
+    {
+      "caseId": "pptx-chart-focus-monochrome",
+      "deliverable": "Chart Focus Monochrome",
+      "format": "pptx",
+      "source": "tools/visual-regression/corpus/pptx-chart-focus-monochrome.json",
+      "sourceSha256": "daa2ddebcd6fbadb2ea8cc5ea99801c2bc408d7ecefcf7945d4393d43f7e79ff",
+      "sourceByteLength": 1829
+    },
+    {
+      "caseId": "pptx-chart-focus-terminal",
+      "deliverable": "Chart Focus Terminal",
+      "format": "pptx",
+      "source": "tools/visual-regression/corpus/pptx-chart-focus-terminal.json",
+      "sourceSha256": "4f0a43e2164197101e5c444770e3750629f2b2bf92e0220e5a07720dafc694b6",
+      "sourceByteLength": 1823
+    },
+    {
+      "caseId": "pptx-chart-focus",
+      "deliverable": "Chart Focus",
+      "format": "pptx",
+      "source": "tools/visual-regression/corpus/pptx-chart-focus.json",
+      "sourceSha256": "e56e8c567726b65b874441d673c9af1d1473006465ec2826ee0cb05fdf1be4cd",
+      "sourceByteLength": 1335
+    },
+    {
+      "caseId": "pptx-comparison-dark-punch",
+      "deliverable": "Comparison Dark Punch",
+      "format": "pptx",
+      "source": "tools/visual-regression/corpus/pptx-comparison-dark-punch.json",
+      "sourceSha256": "a75b92716a4ddf71d1e3015c98111dbf28d39b931ffa88368c396fb62b880fc6",
+      "sourceByteLength": 1947
+    },
+    {
+      "caseId": "pptx-comparison-editorial-serif",
+      "deliverable": "Comparison Editorial Serif",
+      "format": "pptx",
+      "source": "tools/visual-regression/corpus/pptx-comparison-editorial-serif.json",
+      "sourceSha256": "a756b77bd5927e5ec316a0faa01ec3f8c36f5b7f92942ee99f372aef32a5b831",
+      "sourceByteLength": 1962
+    },
+    {
+      "caseId": "pptx-comparison-editorial-wide",
+      "deliverable": "Comparison Editorial Wide",
+      "format": "pptx",
+      "source": "tools/visual-regression/corpus/pptx-comparison-editorial-wide.json",
+      "sourceSha256": "1eff7ba0b01650a2c90d447a2e5a9842e80dcc84bf26993ac93e0307816ff9f2",
+      "sourceByteLength": 1959
+    },
+    {
+      "caseId": "pptx-comparison-midnight",
+      "deliverable": "Comparison Midnight",
+      "format": "pptx",
+      "source": "tools/visual-regression/corpus/pptx-comparison-midnight.json",
+      "sourceSha256": "d5b583a40ad70eb190dabca77dcb614a13fb44513fa9d3b86d03bda6c9716fa8",
+      "sourceByteLength": 1941
+    },
+    {
+      "caseId": "pptx-comparison-monochrome",
+      "deliverable": "Comparison Monochrome",
+      "format": "pptx",
+      "source": "tools/visual-regression/corpus/pptx-comparison-monochrome.json",
+      "sourceSha256": "a81826caa9c5e8af260e5f7384735da3e8ffec6731edeec731930dd1e5726cdf",
+      "sourceByteLength": 1947
+    },
+    {
+      "caseId": "pptx-comparison-terminal",
+      "deliverable": "Comparison Terminal",
+      "format": "pptx",
+      "source": "tools/visual-regression/corpus/pptx-comparison-terminal.json",
+      "sourceSha256": "276cb6469f72f1bcba91a46f35f75d9b53dc30a938cf8011549290cf0cbe976b",
+      "sourceByteLength": 1941
+    },
+    {
+      "caseId": "pptx-comparison",
+      "deliverable": "Comparison",
+      "format": "pptx",
+      "source": "tools/visual-regression/corpus/pptx-comparison.json",
+      "sourceSha256": "d0ff0a2a429659cfc3f66b00f30284e1a811c933c0b9f268f965bb891d744d57",
+      "sourceByteLength": 1641
+    },
+    {
+      "caseId": "pptx-dashboard-dark-punch",
+      "deliverable": "Dashboard Dark Punch",
+      "format": "pptx",
+      "source": "tools/visual-regression/corpus/pptx-dashboard-dark-punch.json",
+      "sourceSha256": "a86e0bae95fd193300adffc241a1ba8a3ca0736b60d7a0f5b734cbb9adb71550",
+      "sourceByteLength": 1235
+    },
+    {
+      "caseId": "pptx-dashboard-editorial-serif",
+      "deliverable": "Dashboard Editorial Serif",
+      "format": "pptx",
+      "source": "tools/visual-regression/corpus/pptx-dashboard-editorial-serif.json",
+      "sourceSha256": "a7401d3910697cb42f5997981a3b3ffba0a5c8924117ad155caf5c7980d02da1",
+      "sourceByteLength": 1250
+    },
+    {
+      "caseId": "docx-analysis-qbr-saas-q2-fy26",
+      "deliverable": "Analysis Qbr Saas Q2 FY26",
+      "format": "docx",
+      "source": "tools/visual-regression/corpus/docx-analysis-qbr-saas-q2-fy26.json",
+      "sourceSha256": "f537e49fc55a852e0506bfce69bfc3f908e582567f129a2ab8f15059435b2b16",
+      "sourceByteLength": 18750
+    },
+    {
+      "caseId": "docx-analysis-dd-summary-precision-components",
+      "deliverable": "Analysis Dd Summary Precision Components",
+      "format": "docx",
+      "source": "tools/visual-regression/corpus/docx-analysis-dd-summary-precision-components.json",
+      "sourceSha256": "517b517d51dfbd298aea8d5c69f0bb96683cb9944ac47e700d54d4edc33cd5e7",
+      "sourceByteLength": 21709
+    },
+    {
+      "caseId": "docx-analysis-market-entry-sea-payments",
+      "deliverable": "Analysis Market Entry Sea Payments",
+      "format": "docx",
+      "source": "tools/visual-regression/corpus/docx-analysis-market-entry-sea-payments.json",
+      "sourceSha256": "dcbe45ab0fac3d560a3ea3b1011964b3ae076e32990152cc0e71e257566c2f4e",
+      "sourceByteLength": 28574
+    },
+    {
+      "caseId": "docx-report-pentest-summary",
+      "deliverable": "Report Pentest Summary",
+      "format": "docx",
+      "source": "tools/visual-regression/corpus/docx-report-pentest-summary.json",
+      "sourceSha256": "9c0f44fcd45d13c29299f2ba17b89c5dfa2fbb385264c283b73a359a40313e9b",
+      "sourceByteLength": 16725
+    },
+    {
+      "caseId": "docx-contract-consulting-sow",
+      "deliverable": "Contract Consulting Sow",
+      "format": "docx",
+      "source": "tools/visual-regression/corpus/docx-contract-consulting-sow.json",
+      "sourceSha256": "b2b0ab62e0765bc0e69f435b74841e8a53bd154924e0e150f5ce9a436ca849be",
+      "sourceByteLength": 18271
+    },
+    {
+      "caseId": "docx-agreement-gdpr-dpa",
+      "deliverable": "Agreement Gdpr Dpa",
+      "format": "docx",
+      "source": "tools/visual-regression/corpus/docx-agreement-gdpr-dpa.json",
+      "sourceSha256": "637eefeba74e4831902e7c361dd06b803c1a75c17b514053bc95c3dc7aec231e",
+      "sourceByteLength": 25292
+    },
+    {
+      "caseId": "docx-agreement-loan-terms",
+      "deliverable": "Agreement Loan Terms",
+      "format": "docx",
+      "source": "tools/visual-regression/corpus/docx-agreement-loan-terms.json",
+      "sourceSha256": "770af15c8d6ed8b1809fc7c6f56ee1af5254dd436474e785f0e7c467bc677485",
+      "sourceByteLength": 21113
+    },
+    {
+      "caseId": "docx-agreement-settlement-summary",
+      "deliverable": "Agreement Settlement Summary",
+      "format": "docx",
+      "source": "tools/visual-regression/corpus/docx-agreement-settlement-summary.json",
+      "sourceSha256": "0569c0e47d32bcad9e6a5acdb0a873c8b988065af1425e5134cb9cd60e92d275",
+      "sourceByteLength": 21418
+    },
+    {
+      "caseId": "docx-agreement-software-license",
+      "deliverable": "Agreement Software License",
+      "format": "docx",
+      "source": "tools/visual-regression/corpus/docx-agreement-software-license.json",
+      "sourceSha256": "1ba368bb5f0bd07ddfda1058b68e5e7d16c0e9c13a8df2fdfcb1403eea9a540b",
+      "sourceByteLength": 27802
+    },
+    {
+      "caseId": "docx-agreement-supplier-sla",
+      "deliverable": "Agreement Supplier Sla",
+      "format": "docx",
+      "source": "tools/visual-regression/corpus/docx-agreement-supplier-sla.json",
+      "sourceSha256": "c507d1d97c911263b7e5b0b622f9196eb2eba1b5b5729bb60e203fbea3f71969",
+      "sourceByteLength": 22760
+    },
+    {
+      "caseId": "docx-analysis-competitive-landscape-cgm",
+      "deliverable": "Analysis Competitive Landscape Cgm",
+      "format": "docx",
+      "source": "tools/visual-regression/corpus/docx-analysis-competitive-landscape-cgm.json",
+      "sourceSha256": "05fc42851df42cf53e0b8fd51c0e85f0b65a120178ef5fb6d0385f04aa34766a",
+      "sourceByteLength": 19026
+    },
+    {
+      "caseId": "docx-analysis-sustainability-climate-chapter",
+      "deliverable": "Analysis Sustainability Climate Chapter",
+      "format": "docx",
+      "source": "tools/visual-regression/corpus/docx-analysis-sustainability-climate-chapter.json",
+      "sourceSha256": "d2ea0898dfb2f8aee12525c242ac82f6913efd4945bfcd7a739ff37e653800d8",
+      "sourceByteLength": 22837
+    },
+    {
+      "caseId": "docx-contract-employment-agreement",
+      "deliverable": "Contract Employment Agreement",
+      "format": "docx",
+      "source": "tools/visual-regression/corpus/docx-contract-employment-agreement.json",
+      "sourceSha256": "028633601b6df3e10acc83d70fb3e2e7d2a9d7274a283883088e240f37c5d098",
+      "sourceByteLength": 20017
+    },
+    {
+      "caseId": "docx-contract-lease-summary",
+      "deliverable": "Contract Lease Summary",
+      "format": "docx",
+      "source": "tools/visual-regression/corpus/docx-contract-lease-summary.json",
+      "sourceSha256": "79047a20cad5c73d304346fdac3021f6d69877b424e848f3d346813ff286957e",
+      "sourceByteLength": 17321
+    },
+    {
+      "caseId": "docx-contract-mutual-nda",
+      "deliverable": "Contract Mutual Nda",
+      "format": "docx",
+      "source": "tools/visual-regression/corpus/docx-contract-mutual-nda.json",
+      "sourceSha256": "b266291deca468f082c39a33a3c9916241711dc6408a25cb13898c57629005a4",
+      "sourceByteLength": 12653
+    },
+    {
+      "caseId": "docx-contract-saas-msa",
+      "deliverable": "Contract Saas Msa",
+      "format": "docx",
+      "source": "tools/visual-regression/corpus/docx-contract-saas-msa.json",
+      "sourceSha256": "d3dc6f7896c21bc5707b54c62dec158f75784db4947baaf45a07aa8807815df0",
+      "sourceByteLength": 25618
+    },
+    {
+      "caseId": "docx-letter-audit-engagement",
+      "deliverable": "Letter Audit Engagement",
+      "format": "docx",
+      "source": "tools/visual-regression/corpus/docx-letter-audit-engagement.json",
+      "sourceSha256": "5c2a63b9906c3ba1fa8ceaa1f81f78fa8d254be646eb60f55637f1b4982f093a",
+      "sourceByteLength": 21139
+    },
+    {
+      "caseId": "docx-letter-escalation-response",
+      "deliverable": "Letter Escalation Response",
+      "format": "docx",
+      "source": "tools/visual-regression/corpus/docx-letter-escalation-response.json",
+      "sourceSha256": "e0a2ea23d79f1167a8775140a3446b3431aba302451fc419dd88cd4e6f3d2bf7",
+      "sourceByteLength": 14556
+    },
+    {
+      "caseId": "docx-letter-grant-award",
+      "deliverable": "Letter Grant Award",
+      "format": "docx",
+      "source": "tools/visual-regression/corpus/docx-letter-grant-award.json",
+      "sourceSha256": "fc6d0821706da3935890acf68acf6202490f538695c0c7c9d7e92d3f1e6fe9c1",
+      "sourceByteLength": 14784
+    },
+    {
+      "caseId": "docx-letter-offer-swe",
+      "deliverable": "Letter Offer Swe",
+      "format": "docx",
+      "source": "tools/visual-regression/corpus/docx-letter-offer-swe.json",
+      "sourceSha256": "c125e5a4605b3b3b74f85d72bfd0a0cc491960a6260aac69f9ca6d6831d29ea5",
+      "sourceByteLength": 12018
+    },
+    {
+      "caseId": "docx-letter-termination-notice",
+      "deliverable": "Letter Termination Notice",
+      "format": "docx",
+      "source": "tools/visual-regression/corpus/docx-letter-termination-notice.json",
+      "sourceSha256": "f9a69d062e003cbabe054531cf174a67702d8f89ab13c66c94508bfe73f6c275",
+      "sourceByteLength": 15538
+    },
+    {
+      "caseId": "docx-minutes-audit-committee",
+      "deliverable": "Minutes Audit Committee",
+      "format": "docx",
+      "source": "tools/visual-regression/corpus/docx-minutes-audit-committee.json",
+      "sourceSha256": "6dc45107975b7c4dd8e60e78f88453140310a74460075cf6194b0ddcffa3029d",
+      "sourceByteLength": 16285
+    },
+    {
+      "caseId": "docx-minutes-board-quarterly",
+      "deliverable": "Minutes Board Quarterly",
+      "format": "docx",
+      "source": "tools/visual-regression/corpus/docx-minutes-board-quarterly.json",
+      "sourceSha256": "ca06bebbef16b2b62e32056aeced1922688ea1d42cbb406b103985ca2ef14a19",
+      "sourceByteLength": 16989
+    },
+    {
+      "caseId": "docx-minutes-project-steering",
+      "deliverable": "Minutes Project Steering",
+      "format": "docx",
+      "source": "tools/visual-regression/corpus/docx-minutes-project-steering.json",
+      "sourceSha256": "a3b034756aecd5ba0b773205607ab0e0311f6b82676cc1c2b7e90f101331d7cb",
+      "sourceByteLength": 18589
+    },
+    {
+      "caseId": "docx-minutes-standup-digest",
+      "deliverable": "Minutes Standup Digest",
+      "format": "docx",
+      "source": "tools/visual-regression/corpus/docx-minutes-standup-digest.json",
+      "sourceSha256": "4713cc24e945d8c52e1ff4236b2e406c57824e60ffe1adf8d679f4ad009027d1",
+      "sourceByteLength": 15369
+    },
+    {
+      "caseId": "docx-minutes-town-hall",
+      "deliverable": "Minutes Town Hall",
+      "format": "docx",
+      "source": "tools/visual-regression/corpus/docx-minutes-town-hall.json",
+      "sourceSha256": "211745c50da620effa7b1eb5361b1a5932dd060eb76216034053478f06287f43",
+      "sourceByteLength": 11791
+    },
+    {
+      "caseId": "docx-policy-code-of-conduct",
+      "deliverable": "Policy Code Of Conduct",
+      "format": "docx",
+      "source": "tools/visual-regression/corpus/docx-policy-code-of-conduct.json",
+      "sourceSha256": "1282dd4b8d15599f0dfd1150425b0c74166f9907cdeabc0a54421a1fcff035de",
+      "sourceByteLength": 14012
+    },
+    {
+      "caseId": "docx-policy-hr-handbook",
+      "deliverable": "Policy Hr Handbook",
+      "format": "docx",
+      "source": "tools/visual-regression/corpus/docx-policy-hr-handbook.json",
+      "sourceSha256": "7e26f44ba909cd7c83c476e1a1836384e23df20f528023f4a84ecd1b5b38f81e",
+      "sourceByteLength": 14808
+    },
+    {
+      "caseId": "docx-policy-incident-response",
+      "deliverable": "Policy Incident Response",
+      "format": "docx",
+      "source": "tools/visual-regression/corpus/docx-policy-incident-response.json",
+      "sourceSha256": "fe52014c6cb9c67ca8e30b1db54e03c7b73389c7b688e8f612775b07994be01a",
+      "sourceByteLength": 14117
+    },
+    {
+      "caseId": "docx-policy-infosec",
+      "deliverable": "Policy Infosec",
+      "format": "docx",
+      "source": "tools/visual-regression/corpus/docx-policy-infosec.json",
+      "sourceSha256": "961eba4fc0748d9c4467ec03ba9c4bf86cafa4a16b2faca2bfe004527945fa51",
+      "sourceByteLength": 14647
+    },
+    {
+      "caseId": "pdf-summary-exec-onepager-logistics",
+      "deliverable": "Summary Exec Onepager Logistics",
+      "format": "pdf",
+      "source": "tools/visual-regression/corpus/pdf-summary-exec-onepager-logistics.json",
+      "sourceSha256": "1e0c5d83af1cbac532934b58fc3753ec89532e09c3a0709dc355ef96ce3de93c",
+      "sourceByteLength": 18518
+    },
+    {
+      "caseId": "pdf-summary-audit-findings-itgc",
+      "deliverable": "Summary Audit Findings Itgc",
+      "format": "pdf",
+      "source": "tools/visual-regression/corpus/pdf-summary-audit-findings-itgc.json",
+      "sourceSha256": "ce19a3821ab7844d51c1a7d21121c488aa9b6722829419095c41fd32e175e3f7",
+      "sourceByteLength": 26543
+    },
+    {
+      "caseId": "pdf-summary-project-status-erp",
+      "deliverable": "Summary Project Status Erp",
+      "format": "pdf",
+      "source": "tools/visual-regression/corpus/pdf-summary-project-status-erp.json",
+      "sourceSha256": "8cc607065e628ce71bfeb06ccef68d41e0dd75094d398033a0b52d24f4b4d1ce",
+      "sourceByteLength": 35499
+    },
+    {
+      "caseId": "pdf-summary-sales-pipeline-snapshot",
+      "deliverable": "Summary Sales Pipeline Snapshot",
+      "format": "pdf",
+      "source": "tools/visual-regression/corpus/pdf-summary-sales-pipeline-snapshot.json",
+      "sourceSha256": "a997ac59ca5ff8cb1ea9d5699ed1199f87b10ab7af3fbb43aba0cd6d4d23c4d9",
+      "sourceByteLength": 40757
+    },
+    {
+      "caseId": "pdf-catalog-professional-services-rate-card",
+      "deliverable": "Catalog Professional Services Rate Card",
+      "format": "pdf",
+      "source": "tools/visual-regression/corpus/pdf-catalog-professional-services-rate-card.json",
+      "sourceSha256": "c7c56efd026c78ea484c413ed102e907edd210361a477ffb66d2f5e7e8ef319c",
+      "sourceByteLength": 34884
+    },
+    {
+      "caseId": "pdf-catalog-hardware-network-price-list",
+      "deliverable": "Catalog Hardware Network Price List",
+      "format": "pdf",
+      "source": "tools/visual-regression/corpus/pdf-catalog-hardware-network-price-list.json",
+      "sourceSha256": "761aaa477c27ab16fed7b043f0018a85d99dd9e1539a34691ad70b45e7ba2fe6",
+      "sourceByteLength": 205020
+    },
+    {
+      "caseId": "pdf-catalog-industrial-air-systems",
+      "deliverable": "Catalog Industrial Air Systems",
+      "format": "pdf",
+      "source": "tools/visual-regression/corpus/pdf-catalog-industrial-air-systems.json",
+      "sourceSha256": "8acec43cb7cef3b8ee7319568060ff291f9f589943944ff2ffebf56163bd7056",
+      "sourceByteLength": 28143
+    },
+    {
+      "caseId": "pdf-catalog-saas-pricing-tiers",
+      "deliverable": "Catalog Saas Pricing Tiers",
+      "format": "pdf",
+      "source": "tools/visual-regression/corpus/pdf-catalog-saas-pricing-tiers.json",
+      "sourceSha256": "38c0b61e2826397771f0cc6944af88bafdd572718e5ea73fc5a0b7584dd8f71f",
+      "sourceByteLength": 102777
+    },
+    {
+      "caseId": "pdf-catalog-training-course-schedule",
+      "deliverable": "Catalog Training Course Schedule",
+      "format": "pdf",
+      "source": "tools/visual-regression/corpus/pdf-catalog-training-course-schedule.json",
+      "sourceSha256": "6c0c158c44c0c18bce6a11a9acdc6fe42bc8bee120aefea09d52772ce792e65e",
+      "sourceByteLength": 27311
+    },
+    {
+      "caseId": "pdf-form-employment-application",
+      "deliverable": "Form Employment Application",
+      "format": "pdf",
+      "source": "tools/visual-regression/corpus/pdf-form-employment-application.json",
+      "sourceSha256": "fbd113480f540bb939e3fc2bf841ad336e321882ed7ad50d2ff7464e75ab7924",
+      "sourceByteLength": 25475
+    },
+    {
+      "caseId": "pdf-form-expense-reimbursement",
+      "deliverable": "Form Expense Reimbursement",
+      "format": "pdf",
+      "source": "tools/visual-regression/corpus/pdf-form-expense-reimbursement.json",
+      "sourceSha256": "f9ab763b9dfe480da4eab8bc8fae222690ef550e287dd17d6a887dfdb4626fa6",
+      "sourceByteLength": 36474
+    },
+    {
+      "caseId": "pdf-form-insurance-claim-auto",
+      "deliverable": "Form Insurance Claim Auto",
+      "format": "pdf",
+      "source": "tools/visual-regression/corpus/pdf-form-insurance-claim-auto.json",
+      "sourceSha256": "79d494748ac7a99add6da3966ed22bf734a48c5da362d2418e0921744342f657",
+      "sourceByteLength": 39651
+    },
+    {
+      "caseId": "pdf-form-tax-summary",
+      "deliverable": "Form Tax Summary",
+      "format": "pdf",
+      "source": "tools/visual-regression/corpus/pdf-form-tax-summary.json",
+      "sourceSha256": "5ebb263d188dca6592c8dc826d487bd7d8300525e19e680b91af47fcbd32f550",
+      "sourceByteLength": 28281
+    },
+    {
+      "caseId": "pdf-form-visa-application",
+      "deliverable": "Form Visa Application",
+      "format": "pdf",
+      "source": "tools/visual-regression/corpus/pdf-form-visa-application.json",
+      "sourceSha256": "0a50329614ee920ab72d18598e7b71345cca560fef40b4a7fdb3a90a837960c7",
+      "sourceByteLength": 28942
+    },
+    {
+      "caseId": "pdf-invoice-credit-note",
+      "deliverable": "Invoice Credit Note",
+      "format": "pdf",
+      "source": "tools/visual-regression/corpus/pdf-invoice-credit-note.json",
+      "sourceSha256": "2e98a927432d378bbda96ad86218e4493e7ae647f74f0f924dd80046a63960ff",
+      "sourceByteLength": 14597
+    },
+    {
+      "caseId": "pdf-invoice-hardware-tax-breakdown",
+      "deliverable": "Invoice Hardware Tax Breakdown",
+      "format": "pdf",
+      "source": "tools/visual-regression/corpus/pdf-invoice-hardware-tax-breakdown.json",
+      "sourceSha256": "5924afad3a5433ab539c2c6df41b180187f8d37d8619d907c1a2136acbca12b3",
+      "sourceByteLength": 25042
+    },
+    {
+      "caseId": "pdf-invoice-professional-services",
+      "deliverable": "Invoice Professional Services",
+      "format": "pdf",
+      "source": "tools/visual-regression/corpus/pdf-invoice-professional-services.json",
+      "sourceSha256": "85bc59c10ed8c14ab0322c9924f02f31f293199b41d7a4d794642acb667d58f3",
+      "sourceByteLength": 29049
+    },
+    {
+      "caseId": "pdf-invoice-saas-subscription",
+      "deliverable": "Invoice Saas Subscription",
+      "format": "pdf",
+      "source": "tools/visual-regression/corpus/pdf-invoice-saas-subscription.json",
+      "sourceSha256": "b64b0f4b51bd7cce1c094f00a606ca7ac4ffd8b7adfca82cda0986852f06a2b2",
+      "sourceByteLength": 16360
+    },
+    {
+      "caseId": "pdf-invoice-utility-bill",
+      "deliverable": "Invoice Utility Bill",
+      "format": "pdf",
+      "source": "tools/visual-regression/corpus/pdf-invoice-utility-bill.json",
+      "sourceSha256": "ed3936aa6e0cac29d33117f68990c7f5fe7bb78efffb6b27640a72e6379f03dc",
+      "sourceByteLength": 23524
+    },
+    {
+      "caseId": "pdf-labreport-calibration-certificate",
+      "deliverable": "Labreport Calibration Certificate",
+      "format": "pdf",
+      "source": "tools/visual-regression/corpus/pdf-labreport-calibration-certificate.json",
+      "sourceSha256": "2017b95dc4853de5eef73b93a3f20fe6bf18487ba4d5278f29e19f9b71a7536b",
+      "sourceByteLength": 17373
+    },
+    {
+      "caseId": "pdf-labreport-clinical-cbc-panel",
+      "deliverable": "Labreport Clinical Cbc Panel",
+      "format": "pdf",
+      "source": "tools/visual-regression/corpus/pdf-labreport-clinical-cbc-panel.json",
+      "sourceSha256": "eb57ae0f73d554b0fa6a4a76b057688d0d7720810b985e00d83850b219e55851",
+      "sourceByteLength": 22780
+    },
+    {
+      "caseId": "pdf-labreport-drinking-water-compliance",
+      "deliverable": "Labreport Drinking Water Compliance",
+      "format": "pdf",
+      "source": "tools/visual-regression/corpus/pdf-labreport-drinking-water-compliance.json",
+      "sourceSha256": "6d285abb112dd597ded9b6876a2d5221fb059069ee5c9dedb181d31dc3f11ade",
+      "sourceByteLength": 22196
+    },
+    {
+      "caseId": "pdf-labreport-food-safety-inspection",
+      "deliverable": "Labreport Food Safety Inspection",
+      "format": "pdf",
+      "source": "tools/visual-regression/corpus/pdf-labreport-food-safety-inspection.json",
+      "sourceSha256": "90e7d67672753646af1b2c15a33ea8a403b12909f5e995bbba5ab933d6624057",
+      "sourceByteLength": 14085
+    },
+    {
+      "caseId": "pdf-labreport-tensile-test-cert",
+      "deliverable": "Labreport Tensile Test Cert",
+      "format": "pdf",
+      "source": "tools/visual-regression/corpus/pdf-labreport-tensile-test-cert.json",
+      "sourceSha256": "cb1d8dc2040b13a9d64c6e78a79edf187747178da14e5c993eabe4299892d930",
+      "sourceByteLength": 17584
+    },
+    {
+      "caseId": "pdf-notice-privacy-policy-update",
+      "deliverable": "Notice Privacy Policy Update",
+      "format": "pdf",
+      "source": "tools/visual-regression/corpus/pdf-notice-privacy-policy-update.json",
+      "sourceSha256": "9605875d01bb2986f15e0b4cff94311235956d227bfc254cdc9d5fa6440ec812",
+      "sourceByteLength": 14208
+    },
+    {
+      "caseId": "pdf-notice-product-recall",
+      "deliverable": "Notice Product Recall",
+      "format": "pdf",
+      "source": "tools/visual-regression/corpus/pdf-notice-product-recall.json",
+      "sourceSha256": "d2151b0b06c29c94f7d5a869e98f3a0d3562e50e89d26f1bf77508da2ea873b1",
+      "sourceByteLength": 18238
+    },
+    {
+      "caseId": "pdf-notice-regulatory-filing-cover",
+      "deliverable": "Notice Regulatory Filing Cover",
+      "format": "pdf",
+      "source": "tools/visual-regression/corpus/pdf-notice-regulatory-filing-cover.json",
+      "sourceSha256": "40d9aa50c697da1573b69023630246e0353cfb1cd57e72bcdcd3b2159d82fcdf",
+      "sourceByteLength": 11662
+    },
+    {
+      "caseId": "pdf-notice-service-termination",
+      "deliverable": "Notice Service Termination",
+      "format": "pdf",
+      "source": "tools/visual-regression/corpus/pdf-notice-service-termination.json",
+      "sourceSha256": "7f16881d35b4c72191539d99a451b7b8fbd858ec70891b8569f4846e5aaa45de",
+      "sourceByteLength": 18030
+    },
+    {
+      "caseId": "pdf-notice-shareholder-meeting",
+      "deliverable": "Notice Shareholder Meeting",
+      "format": "pdf",
+      "source": "tools/visual-regression/corpus/pdf-notice-shareholder-meeting.json",
+      "sourceSha256": "4bab739321af3f9bb90b68f17441c34790907851f4b1b7839ed85f6605029718",
+      "sourceByteLength": 18357
+    },
+    {
+      "caseId": "pdf-preformatted-whitespace",
+      "deliverable": "Preformatted Whitespace",
+      "format": "pdf",
+      "source": "tools/visual-regression/corpus/pdf-preformatted-whitespace.json",
+      "sourceSha256": "1f2b20838d29ad7bbe69c1ae73f5c46c80f06610a8abc0003926e0c2198b6370",
+      "sourceByteLength": 716
+    },
+    {
+      "caseId": "xlsx-forecast-saas-arr-model",
+      "deliverable": "Forecast Saas Arr Model",
+      "format": "xlsx",
+      "source": "tools/visual-regression/corpus/xlsx-forecast-saas-arr-model.json",
+      "sourceSha256": "b5687127bd4ccc1f69540250447b13f00afc50313006c52d397285bcef1f2bd9",
+      "sourceByteLength": 89387
+    },
+    {
+      "caseId": "xlsx-finmodel-cap-table-series-b",
+      "deliverable": "Finmodel Cap Table Series B",
+      "format": "xlsx",
+      "source": "tools/visual-regression/corpus/xlsx-finmodel-cap-table-series-b.json",
+      "sourceSha256": "107b5e73eb06fcc6dfcc9fe364a8b4f07d479c30fa95b6bbfc437233fe74d690",
+      "sourceByteLength": 67355
+    },
+    {
+      "caseId": "xlsx-budget-marketing-fy26",
+      "deliverable": "Budget Marketing FY26",
+      "format": "xlsx",
+      "source": "tools/visual-regression/corpus/xlsx-budget-marketing-fy26.json",
+      "sourceSha256": "fd456e6b10cf19003fd42224aee4f2e048fd61aecaad746d5e92a454a0a7ec2a",
+      "sourceByteLength": 88683
+    },
+    {
+      "caseId": "xlsx-tracker-compliance-remediation",
+      "deliverable": "Tracker Compliance Remediation",
+      "format": "xlsx",
+      "source": "tools/visual-regression/corpus/xlsx-tracker-compliance-remediation.json",
+      "sourceSha256": "7a1f8655cbf7b887e23b2ccd48193f25495592ed9c306cae2ba4b41735ef6581",
+      "sourceByteLength": 41936
+    },
+    {
+      "caseId": "xlsx-tracker-project-plan-erp",
+      "deliverable": "Tracker Project Plan Erp",
+      "format": "xlsx",
+      "source": "tools/visual-regression/corpus/xlsx-tracker-project-plan-erp.json",
+      "sourceSha256": "97b02d0d6de7144f6ed761899c9ea4f1f9b5da8f23969366cdb9d44e9665d9a4",
+      "sourceByteLength": 561410
+    },
+    {
+      "caseId": "xlsx-budget-dept-engineering-annual",
+      "deliverable": "Budget Dept Engineering Annual",
+      "format": "xlsx",
+      "source": "tools/visual-regression/corpus/xlsx-budget-dept-engineering-annual.json",
+      "sourceSha256": "3ce2e169ee10487332325e75ff763838d6579e154d9839f79dc585584a4bc3a2",
+      "sourceByteLength": 170636
+    },
+    {
+      "caseId": "xlsx-budget-event-conference",
+      "deliverable": "Budget Event Conference",
+      "format": "xlsx",
+      "source": "tools/visual-regression/corpus/xlsx-budget-event-conference.json",
+      "sourceSha256": "d58352d7524b8072c69c17af1a2972c9453deb90a506f73d54db040f3f828dad",
+      "sourceByteLength": 156950
+    },
+    {
+      "caseId": "xlsx-budget-it-cost-center",
+      "deliverable": "Budget It Cost Center",
+      "format": "xlsx",
+      "source": "tools/visual-regression/corpus/xlsx-budget-it-cost-center.json",
+      "sourceSha256": "8b522b03b9ff99b6dca6dfba57c768d42398c4a3e64331439f04b222e113613f",
+      "sourceByteLength": 115212
+    },
+    {
+      "caseId": "xlsx-budget-project-erp-vs-actuals",
+      "deliverable": "Budget Project Erp Vs Actuals",
+      "format": "xlsx",
+      "source": "tools/visual-regression/corpus/xlsx-budget-project-erp-vs-actuals.json",
+      "sourceSha256": "8f1cedf122b3270d9acbea4d109342a0448a9064dda3f314d8f0b807134b6eac",
+      "sourceByteLength": 149748
+    },
+    {
+      "caseId": "xlsx-dashboard-finance-close",
+      "deliverable": "Dashboard Finance Close",
+      "format": "xlsx",
+      "source": "tools/visual-regression/corpus/xlsx-dashboard-finance-close.json",
+      "sourceSha256": "284feb42dc6590f1f9c49803baa275b00de8eb7fdd9486bc20c8b13416fbbb26",
+      "sourceByteLength": 28147
+    },
+    {
+      "caseId": "xlsx-dashboard-okr-tracker",
+      "deliverable": "Dashboard Okr Tracker",
+      "format": "xlsx",
+      "source": "tools/visual-regression/corpus/xlsx-dashboard-okr-tracker.json",
+      "sourceSha256": "ddd50d3e343a3c2aa1bbd7a83578f0a2e5c2141dbe2f3d54b560e87ebd3d34bd",
+      "sourceByteLength": 22703
+    },
+    {
+      "caseId": "xlsx-dashboard-sales-kpi",
+      "deliverable": "Dashboard Sales Kpi",
+      "format": "xlsx",
+      "source": "tools/visual-regression/corpus/xlsx-dashboard-sales-kpi.json",
+      "sourceSha256": "60c45ab3f160a788dbb37fc10cfd693a0b4a58d362aee2ab9345b11986c4cf3b",
+      "sourceByteLength": 23449
+    },
+    {
+      "caseId": "xlsx-dashboard-support-tickets",
+      "deliverable": "Dashboard Support Tickets",
+      "format": "xlsx",
+      "source": "tools/visual-regression/corpus/xlsx-dashboard-support-tickets.json",
+      "sourceSha256": "acb281661e20a40fed4672458453e01eae3a5aa48de099225abca847148aa9aa",
+      "sourceByteLength": 48106
+    },
+    {
+      "caseId": "xlsx-dashboard-web-analytics",
+      "deliverable": "Dashboard Web Analytics",
+      "format": "xlsx",
+      "source": "tools/visual-regression/corpus/xlsx-dashboard-web-analytics.json",
+      "sourceSha256": "9d09b22d3ac21abd2d388d622b1bdba36039e595f50d1bc258d7341a3a4d8b49",
+      "sourceByteLength": 29975
+    },
+    {
+      "caseId": "xlsx-datasheet-customer-master",
+      "deliverable": "Datasheet Customer Master",
+      "format": "xlsx",
+      "source": "tools/visual-regression/corpus/xlsx-datasheet-customer-master.json",
+      "sourceSha256": "be8b4c8bc040ce09b330c73ef7ef1cafbf7677d3d8287158b76532739a82e376",
+      "sourceByteLength": 58710
+    },
+    {
+      "caseId": "xlsx-datasheet-inventory-ledger",
+      "deliverable": "Datasheet Inventory Ledger",
+      "format": "xlsx",
+      "source": "tools/visual-regression/corpus/xlsx-datasheet-inventory-ledger.json",
+      "sourceSha256": "1310fc7eff8be38997d3865f353fed2dad8d3bc5fe429e73801e456e6c9d1851",
+      "sourceByteLength": 81864
+    },
+    {
+      "caseId": "xlsx-datasheet-payroll-register",
+      "deliverable": "Datasheet Payroll Register",
+      "format": "xlsx",
+      "source": "tools/visual-regression/corpus/xlsx-datasheet-payroll-register.json",
+      "sourceSha256": "1f2f295bd7240d05260b5b4ee7054a23bf5289460f58dfc4ed99f40fb70702be",
+      "sourceByteLength": 62901
+    },
+    {
+      "caseId": "xlsx-datasheet-sales-transactions-q4",
+      "deliverable": "Datasheet Sales Transactions Q4",
+      "format": "xlsx",
+      "source": "tools/visual-regression/corpus/xlsx-datasheet-sales-transactions-q4.json",
+      "sourceSha256": "62c369060e6c4f931d73f6622bad838fccce3799abe814d270d90e4b3fca07a3",
+      "sourceByteLength": 224918
+    },
+    {
+      "caseId": "xlsx-datasheet-shipment-manifest",
+      "deliverable": "Datasheet Shipment Manifest",
+      "format": "xlsx",
+      "source": "tools/visual-regression/corpus/xlsx-datasheet-shipment-manifest.json",
+      "sourceSha256": "6af5531dd2d4c65ed59a728114b056eae2f0902b2c22864945b57b25af756096",
+      "sourceByteLength": 73879
+    },
+    {
+      "caseId": "xlsx-finmodel-balance-sheet-toolmaker",
+      "deliverable": "Finmodel Balance Sheet Toolmaker",
+      "format": "xlsx",
+      "source": "tools/visual-regression/corpus/xlsx-finmodel-balance-sheet-toolmaker.json",
+      "sourceSha256": "41391562cb392e28f3ee9691de414a7c1c8921405530155da3f5c0dd066333e3",
+      "sourceByteLength": 65163
+    },
+    {
+      "caseId": "xlsx-finmodel-expense-report-consulting",
+      "deliverable": "Finmodel Expense Report Consulting",
+      "format": "xlsx",
+      "source": "tools/visual-regression/corpus/xlsx-finmodel-expense-report-consulting.json",
+      "sourceSha256": "7b2b01ee8d1482d584bf2f1928d480c23074dbb4d447296710b45bd48ae4cd12",
+      "sourceByteLength": 55128
+    },
+    {
+      "caseId": "xlsx-finmodel-loan-amort-fleet",
+      "deliverable": "Finmodel Loan Amort Fleet",
+      "format": "xlsx",
+      "source": "tools/visual-regression/corpus/xlsx-finmodel-loan-amort-fleet.json",
+      "sourceSha256": "68af38671223dbe42e7cf314ca5de9b2d4f7eae8edeaf3008c85409ba28e62d5",
+      "sourceByteLength": 151221
+    },
+    {
+      "caseId": "xlsx-finmodel-pl-monthly-roastery",
+      "deliverable": "Finmodel Pl Monthly Roastery",
+      "format": "xlsx",
+      "source": "tools/visual-regression/corpus/xlsx-finmodel-pl-monthly-roastery.json",
+      "sourceSha256": "0bd3d488051d70f774b5b4287494f6bf5566ca7671eebb568bba87c2df64e7cf",
+      "sourceByteLength": 149739
+    },
+    {
+      "caseId": "xlsx-forecast-3yr-revenue",
+      "deliverable": "Forecast 3yr Revenue",
+      "format": "xlsx",
+      "source": "tools/visual-regression/corpus/xlsx-forecast-3yr-revenue.json",
+      "sourceSha256": "3e79d88b3a2f53b829e8d0b3f61193b861508ad8ba739f4b384c5e38bbad33f2",
+      "sourceByteLength": 82450
+    },
+    {
+      "caseId": "xlsx-forecast-cashflow-13wk",
+      "deliverable": "Forecast Cashflow 13wk",
+      "format": "xlsx",
+      "source": "tools/visual-regression/corpus/xlsx-forecast-cashflow-13wk.json",
+      "sourceSha256": "5109f226e8c46893b4306a08431e4ccde3848969d4a08f1cb2e644671a0e2a3c",
+      "sourceByteLength": 106378
+    },
+    {
+      "caseId": "xlsx-forecast-headcount-plan",
+      "deliverable": "Forecast Headcount Plan",
+      "format": "xlsx",
+      "source": "tools/visual-regression/corpus/xlsx-forecast-headcount-plan.json",
+      "sourceSha256": "38300cdbc70c031e493abda4daa544047fefc17eaccbd82ee914d81b9e8f35ed",
+      "sourceByteLength": 130259
+    },
+    {
+      "caseId": "xlsx-forecast-unit-economics",
+      "deliverable": "Forecast Unit Economics",
+      "format": "xlsx",
+      "source": "tools/visual-regression/corpus/xlsx-forecast-unit-economics.json",
+      "sourceSha256": "e89a8b24f5d6783a9a06654192231d1e98b65902f1afd02cab164240df8fda1e",
+      "sourceByteLength": 52401
+    },
+    {
+      "caseId": "xlsx-tracker-capex-approvals",
+      "deliverable": "Tracker Capex Approvals",
+      "format": "xlsx",
+      "source": "tools/visual-regression/corpus/xlsx-tracker-capex-approvals.json",
+      "sourceSha256": "61cb0d2d701d5d7281ed6e3f1000aed0de60859d93efd0064c8483f3c02d648d",
+      "sourceByteLength": 39278
+    },
+    {
+      "caseId": "xlsx-tracker-recruiting-pipeline",
+      "deliverable": "Tracker Recruiting Pipeline",
+      "format": "xlsx",
+      "source": "tools/visual-regression/corpus/xlsx-tracker-recruiting-pipeline.json",
+      "sourceSha256": "5bda265f5d0675cf69868376afbcb7240fffb5c16f95362390191d6816c15d3c",
+      "sourceByteLength": 37409
+    },
+    {
+      "caseId": "xlsx-tracker-risk-register",
+      "deliverable": "Tracker Risk Register",
+      "format": "xlsx",
+      "source": "tools/visual-regression/corpus/xlsx-tracker-risk-register.json",
+      "sourceSha256": "19a22ddb31d7e1bab2469a361768eedc2c0c8631abfb0fe18a593c5618713126",
+      "sourceByteLength": 435938
+    }
+  ]
+}

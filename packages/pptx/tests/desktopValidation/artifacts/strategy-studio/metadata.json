@@ -1,0 +1,20 @@
+{
+  "fixtureId": "strategy-studio",
+  "title": "Strategy Studio repro",
+  "expectedSlideCount": 25,
+  "actualSlideCount": 25,
+  "validationModes": [
+    "structural",
+    "desktop_open",
+    "pdf_render",
+    "roundtrip_diff"
+  ],
+  "acceptance": {
+    "expectStructuralPass": true,
+    "expectDesktopOpenPass": true
+  },
+  "renderOptions": {
+    "outputMode": "visual_safe"
+  },
+  "pptxPath": "generated.pptx"
+}

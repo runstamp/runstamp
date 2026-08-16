@@ -1,0 +1,1 @@
+{"version":3,"file":"harveyBall.d.ts","sourceRoot":"","sources":["../../src/primitives/harveyBall.ts"],"names":[],"mappings":"AAAA;;;;;;;;;;;GAWG;AAEH,OAAO,KAAK,EAAE,SAAS,EAAE,MAAM,gBAAgB,CAAC;AAGhD,MAAM,WAAW,eAAe;IAC9B,8BAA8B;IAC9B,MAAM,EAAE,CAAC,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,CAAC;CAC3B;AAED,eAAO,MAAM,UAAU,EAAE,SAAS,CAAC,eAAe,CA4DjD,CAAC"}

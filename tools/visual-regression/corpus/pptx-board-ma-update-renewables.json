@@ -1,0 +1,144 @@
+{
+  "id": "pptx-board-ma-update-renewables",
+  "format": "pptx",
+  "surface": "agent",
+  "description": "Board M&A update covering the proposed acquisition of a distributed solar and storage platform.",
+  "provenance": "Modeled on transaction committee materials for infrastructure and renewable-energy developers: strategic rationale, valuation bridge, diligence findings, funding, synergy plan, approval gates, and board resolution. Deliberately exercises an eight-slide mixed-pattern deck with a two-series valuation bar chart and transaction-specific financial detail.",
+  "expectedProperties": {
+    "slideCount": 8,
+    "hasChart": true,
+    "chartSlides": 1,
+    "chartTypes": ["bar"],
+    "kpiCount": 4
+  },
+  "document": {
+    "type": "presentation",
+    "version": "1.0",
+    "presentationTitle": "Project Harbor — M&A Update",
+    "companyName": "Solstice Infrastructure Partners",
+    "theme": "default-navy",
+    "designTokens": {
+      "scale": "md",
+      "shape": "sharp"
+    },
+    "slides": [
+      {
+        "pattern": "title",
+        "content": {
+          "title": "Project Harbor — M&A Update",
+          "subtitle": "Proposed acquisition of BrightSpan Energy | Board of Directors | September 8, 2026 | Strictly confidential"
+        }
+      },
+      {
+        "pattern": "statement",
+        "content": {
+          "title": "BrightSpan advances our distributed-energy strategy by three years.",
+          "subtitle": "Transaction thesis",
+          "prose": [
+            "The target owns or manages 684 MW of solar and 212 MWh of battery storage across 19 states.",
+            "Contracts cover 87% of FY2027 gross margin under PPAs or long-term service agreements.",
+            "Management recommends a $742M enterprise value and a $28M permitting escrow."
+          ]
+        }
+      },
+      {
+        "pattern": "dashboard",
+        "content": {
+          "title": "Proposed transaction at a glance",
+          "subtitle": "Base case as of September 4, 2026",
+          "kpis": [
+            { "label": "Ent. value", "value": "$742M", "trend": "flat", "sublabel": "9.1x FY2027 EBITDA" },
+            { "label": "Equity fund", "value": "$318M", "trend": "flat", "sublabel": "Balance + co-invest" },
+            { "label": "Synergies", "value": "$34M", "trend": "up", "sublabel": "By year three" },
+            { "label": "Base IRR", "value": "15.8%", "trend": "up", "sublabel": "11.9% downside case" }
+          ]
+        }
+      },
+      {
+        "pattern": "chart-focus",
+        "content": {
+          "title": "Offer value remains below comparable transactions",
+          "subtitle": "Enterprise value to forward EBITDA; announced distributed-energy acquisitions",
+          "chart": {
+            "type": "bar",
+            "title": "EV / forward EBITDA (x)",
+            "series": [
+              {
+                "name": "Transaction multiple",
+                "dataPoints": [
+                  { "category": "SunGrid / Arbor", "value": 11.8 },
+                  { "category": "Vertex / Luma", "value": 10.6 },
+                  { "category": "Kinetic / Alto", "value": 9.9 },
+                  { "category": "Solstice / BrightSpan", "value": 9.1 }
+                ]
+              },
+              {
+                "name": "After synergies",
+                "dataPoints": [
+                  { "category": "SunGrid / Arbor", "value": 10.7 },
+                  { "category": "Vertex / Luma", "value": 9.8 },
+                  { "category": "Kinetic / Alto", "value": 9.2 },
+                  { "category": "Solstice / BrightSpan", "value": 6.4 }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pattern": "comparison",
+        "content": {
+          "title": "Confirmatory diligence — strengths and residual issues",
+          "subtitle": "Workstreams completed through September 4, 2026",
+          "kpis": [
+            { "label": "PPA term", "value": "13.4y", "sublabel": "94% retention" },
+            { "label": "Availability", "value": "98.1%", "sublabel": "$6M reserve increase" },
+            { "label": "Tax equity", "value": "11 JVs", "sublabel": "Two consents pending" },
+            { "label": "Permitting", "value": "2", "sublabel": "Sites in escrow" }
+          ]
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "Funding and balance-sheet impact",
+          "subtitle": "Sources, uses, and covenant headroom at expected December 2026 close",
+          "bulletPoints": [
+            "Uses: $588M equity purchase, $126M debt assumed or refinanced, $18M fees, and $10M initial integration reserve",
+            "Sources: $238M Solstice cash, $210M new term loan, $170M infrastructure co-invest, and $124M seller rollover",
+            "Pro forma net leverage of 4.2x at close versus 5.0x covenant; expected below 3.5x by Q4 2027",
+            "No public equity issuance required; planned FY2027 development capital remains fully funded",
+            "Interest-rate hedge locks 70% of new term-loan exposure at an all-in 5.6% through 2029",
+            "Dividend policy unchanged; share repurchases paused until net leverage returns below 3.75x"
+          ]
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "Integration plan and value capture",
+          "subtitle": "Day 1 through the end of FY2027",
+          "bulletPoints": [
+            "Day 1 — retain BrightSpan brand and operating leadership; finance, treasury, and risk move to Solstice controls",
+            "First 100 days — consolidate procurement for modules, inverters, insurance, and O&M; target $12M annualized savings",
+            "Q2 2027 — migrate fleet monitoring to Solstice Atlas while preserving customer portals and dispatch protocols",
+            "Q3 2027 — combine development origination teams by region and introduce BrightSpan storage to 41 Solstice C&I customers",
+            "Q4 2027 — refinance four asset-level facilities; expected annual interest savings of $9M",
+            "Year three — $34M run-rate synergies: $21M cost, $8M financing, and $5M cross-sell contribution"
+          ]
+        }
+      },
+      {
+        "pattern": "statement",
+        "content": {
+          "title": "Authorize signing at $742M with the full $28M escrow.",
+          "subtitle": "Approval subject to final tax-equity consents and execution of committed financing",
+          "prose": [
+            "Management returns if either New York upgrade estimate exceeds $35M.",
+            "A price adjustment may proceed if downside IRR remains above 11%."
+          ]
+        }
+      }
+    ]
+  }
+}

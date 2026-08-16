@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 2,
+  "qualityTarget": 3.6,
+  "humanVerificationRequired": true,
+  "corpusId": "runstamp-icp-v3-2026-08-10",
+  "documentCount": 120,
+  "structuralPassCount": 120,
+  "judgeContractVersion": 4,
+  "judgeConfigHash": "358eb08981927aad94f8acf0b2a502ac8bea8b1f05847e43b926772e92597a7d",
+  "judgeRuns": [
+    {
+      "runNumber": 1,
+      "complete": true,
+      "documentCount": 120,
+      "mean": 4.081666666666666,
+      "artifact": "ga/evals/vqh/icp-results/runs/run-001.json"
+    },
+    {
+      "runNumber": 2,
+      "complete": true,
+      "documentCount": 120,
+      "mean": 4.057222222222223,
+      "artifact": "ga/evals/vqh/icp-results/runs/run-002.json"
+    },
+    {
+      "runNumber": 3,
+      "complete": true,
+      "documentCount": 120,
+      "mean": 4.0633333333333335,
+      "artifact": "ga/evals/vqh/icp-results/runs/run-003.json"
+    }
+  ],
+  "formatAggregateMeans": {
+    "pptx": 4.19037037037037,
+    "docx": 4.208148148148148,
+    "pdf": 4.126666666666667,
+    "xlsx": 3.7444444444444427
+  },
+  "voidBand": {
+    "pass": true,
+    "auc": 1,
+    "margin": 0.26506024096385544,
+    "falsePositives": 0,
+    "artifact": "ga/evals/vqh/icp-results/void-band-calibration.json",
+    "artifactSet": ".launch-artifacts/icp-ga-frozen"
+  },
+  "sources": {
+    "manifest": {
+      "artifact": "ga/evals/vqh/icp-corpus/manifest.json",
+      "sha256": "5571a7709cdf84b7333c5c2e0eac512c68e42ec8281c24d5c9b1f21986e1da89"
+    },
+    "results": {
+      "artifact": "ga/evals/vqh/icp-results/results.json",
+      "sha256": "b056888c3ec6474e76b0c89edff534b46fe80e614c9c019b0fa48d81ed38b6aa"
+    },
+    "baseline": {
+      "artifact": "ga/evals/vqh/icp-results/judge-v4-baseline.json",
+      "sha256": "f791050eecf339f733f78d5da31f881b0b770def9e186f90761e3d4b298ce31e"
+    },
+    "voidBand": {
+      "artifact": "ga/evals/vqh/icp-results/void-band-calibration.json",
+      "sha256": "ace6edea1dc7a41e0c54dcddbb9bd97b4d34031aaf6be7cda4603724f25db5fb"
+    },
+    "defectBacklog": {
+      "artifact": "ga/evals/vqh/icp-results/defect-backlog.json",
+      "sha256": "8002bcaae6abdfc89aaf0358d7b65f317618217162017c9847f3c7b883b7807e"
+    },
+    "runs": [
+      {
+        "artifact": "ga/evals/vqh/icp-results/runs/run-001.json",
+        "sha256": "5ddb02383282b2804068dbd037b989a13423e955774b3dab366a9a9a2f8fff83"
+      },
+      {
+        "artifact": "ga/evals/vqh/icp-results/runs/run-002.json",
+        "sha256": "1fb23a8c3730984f5604f903ec1cdc9976b8aae706841f229e29d1a56553a746"
+      },
+      {
+        "artifact": "ga/evals/vqh/icp-results/runs/run-003.json",
+        "sha256": "aed4687384eaee14d4ebb31f9d0b3db85864b8110d9887516312be38cb081451"
+      }
+    ]
+  }
+}

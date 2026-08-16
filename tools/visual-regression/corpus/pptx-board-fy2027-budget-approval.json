@@ -1,0 +1,151 @@
+{
+  "id": "pptx-board-fy2027-budget-approval",
+  "format": "pptx",
+  "surface": "agent",
+  "description": "FY2027 annual operating plan and budget approval deck for a branded food manufacturer.",
+  "provenance": "Modeled on annual board budget materials for consumer packaged goods companies: planning assumptions, P&L targets, investment envelope, category growth, sensitivity cases, cash allocation, and formal approval. Deliberately exercises an eight-slide deck with a stacked area chart using areaGrouping, four financial KPIs, and plan-versus-prior comparisons.",
+  "expectedProperties": {
+    "slideCount": 8,
+    "hasChart": true,
+    "chartSlides": 1,
+    "chartTypes": ["area"],
+    "kpiCount": 4
+  },
+  "document": {
+    "type": "presentation",
+    "version": "1.0",
+    "presentationTitle": "FY2027 Operating Plan and Budget",
+    "companyName": "Redwood Pantry Foods, Inc.",
+    "theme": "editorial-serif",
+    "designTokens": {
+      "scale": "md",
+      "shape": "sharp"
+    },
+    "slides": [
+      {
+        "pattern": "title",
+        "content": {
+          "title": "FY2027 Operating Plan & Budget",
+          "subtitle": "Board of Directors | December 3, 2026 | Confidential"
+        }
+      },
+      {
+        "pattern": "statement",
+        "content": {
+          "title": "The FY2027 plan funds growth while expanding margin.",
+          "subtitle": "Management recommendation",
+          "prose": [
+            "Organic sales growth of 4.6% combines 2.1% volume/mix and 2.5% pricing.",
+            "Procurement and network utilization expand adjusted EBITDA margin by 60 bps.",
+            "Marketing and capital gates can protect $38M of cash in the downside case."
+          ]
+        }
+      },
+      {
+        "pattern": "dashboard",
+        "content": {
+          "title": "FY2027 financial commitments",
+          "subtitle": "Compared with FY2026 forecast as of October close",
+          "kpis": [
+            { "label": "Net sales", "value": "$2.74B", "trend": "up", "sublabel": "+4.6% organic" },
+            { "label": "Adj. EBITDA", "value": "$438M", "trend": "up", "sublabel": "+9.1%; 16.0% margin" },
+            { "label": "Free cash", "value": "$286M", "trend": "up", "sublabel": "65% conversion" },
+            { "label": "Capital plan", "value": "$172M", "trend": "up", "sublabel": "6.3% of sales" }
+          ]
+        }
+      },
+      {
+        "pattern": "chart-focus",
+        "content": {
+          "title": "Portfolio mix shifts toward faster-growing refrigerated brands",
+          "subtitle": "Net sales by business unit, $M",
+          "chart": {
+            "type": "area",
+            "title": "Net sales mix ($M)",
+            "areaGrouping": "stacked",
+            "series": [
+              {
+                "name": "Meals & sauces",
+                "dataPoints": [
+                  { "category": "FY2025A", "value": 1038 },
+                  { "category": "FY2026F", "value": 1076 },
+                  { "category": "FY2027B", "value": 1112 }
+                ]
+              },
+              {
+                "name": "Snacks",
+                "dataPoints": [
+                  { "category": "FY2025A", "value": 786 },
+                  { "category": "FY2026F", "value": 811 },
+                  { "category": "FY2027B", "value": 839 }
+                ]
+              },
+              {
+                "name": "Refrigerated",
+                "dataPoints": [
+                  { "category": "FY2025A", "value": 612 },
+                  { "category": "FY2026F", "value": 731 },
+                  { "category": "FY2027B", "value": 789 }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pattern": "comparison",
+        "content": {
+          "title": "FY2027 plan versus FY2026 forecast",
+          "subtitle": "Primary drivers of growth and margin",
+          "kpis": [
+            { "label": "Volume / mix", "value": "+2.1%", "sublabel": "FY26: +0.4%" },
+            { "label": "Pricing", "value": "+2.5%", "sublabel": "FY26: +3.7%" },
+            { "label": "Gross margin", "value": "35.4%", "sublabel": "Up 60 bps" },
+            { "label": "Adjusted EPS", "value": "$5.42", "sublabel": "FY26: $4.91" }
+          ]
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "Investment envelope and stage gates",
+          "subtitle": "$172M capital plan and $31M incremental operating investment",
+          "bulletPoints": [
+            "$68M — Cedar Rapids refrigerated line; board-approved gate in March after customer commitments reach 70% of capacity",
+            "$34M — packaging automation across four meals-and-sauces plants; payback 2.8 years from labor and material yield",
+            "$27M — enterprise demand-planning and trade-promotion platform; phased by business unit through Q2 FY2028",
+            "$21M — food safety, maintenance, and regulatory capital with no deferrable portion",
+            "$22M — warehouse and network projects, including exit from two overflow facilities by September 2027",
+            "$31M operating investment — brand media, e-commerce content, category management, and innovation resources"
+          ]
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "Sensitivity and management triggers",
+          "subtitle": "Protecting cash and covenant headroom under adverse scenarios",
+          "bulletPoints": [
+            "Base case: 4.6% organic growth and 16.0% EBITDA margin produce year-end net leverage of 2.1x",
+            "Commodity downside: 6.0% input inflation reduces EBITDA by $47M before pricing and productivity actions",
+            "Volume downside: 2% retailer destocking reduces EBITDA by $31M and increases year-end inventory by $18M",
+            "Combined downside: pause $17M of media and $21M of uncommitted capital to keep net leverage below 2.6x",
+            "Upside: refrigerated velocity 5% above plan adds $24M EBITDA but advances second-shift hiring by one quarter",
+            "Monthly trigger: management action required if trailing-eight-week shipments fall 3% below plan or cash conversion falls below 55%"
+          ]
+        }
+      },
+      {
+        "pattern": "statement",
+        "content": {
+          "title": "Approve the FY2027 plan, capital envelope, and incentives.",
+          "subtitle": "Board vote under agenda item 6",
+          "prose": [
+            "Cedar Rapids requires separate approval above $72M of expected spend.",
+            "Management also returns if contracted capacity remains below the 70% gate."
+          ]
+        }
+      }
+    ]
+  }
+}

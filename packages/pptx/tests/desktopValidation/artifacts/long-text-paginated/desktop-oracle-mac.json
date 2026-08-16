@@ -1,0 +1,19 @@
+{
+  "fixtureId": "long-text-paginated",
+  "passed": true,
+  "failures": [],
+  "oracle": {
+    "available": true,
+    "fixtureId": "long-text-paginated",
+    "passed": true,
+    "failures": [],
+    "pdfPath": "/Users/jake/plain/plainworks/paperjsx.com/packages/core/tests/desktopValidation/artifacts/long-text-paginated/long-text-paginated.pdf",
+    "savedCopyPath": "/Users/jake/plain/plainworks/paperjsx.com/packages/core/tests/desktopValidation/artifacts/long-text-paginated/long-text-paginated.roundtrip.pptx",
+    "screenshotPath": "/Users/jake/plain/plainworks/paperjsx.com/packages/core/tests/desktopValidation/artifacts/long-text-paginated/long-text-paginated.png",
+    "details": [
+      "Opened presentation: long-text-paginated.input.pptx, slides=12",
+      "PowerPoint canonicalized 24 normalized package part(s) during round-trip save."
+    ]
+  },
+  "structuralPassed": true
+}

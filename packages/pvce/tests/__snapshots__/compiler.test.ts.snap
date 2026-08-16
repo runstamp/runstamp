@@ -1,0 +1,608 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`golden SVG output > renders a byte-stable area golden 1`] = `
+"<svg xmlns="http://www.w3.org/2000/svg"
+  width="800" height="600"
+  viewBox="0 0 10000 10000"
+  preserveAspectRatio="xMidYMid meet"
+  role="Chart"
+  aria-label="Area chart titled &quot;area fixture&quot;. Shows 2 series across 3 categories. Minimum value of 1.5 at Secondary – Category 1; maximum of 7 at Primary – Category 2; average of 3.5."
+  >
+  <style type="text/css">
+  <![CDATA[text { 
+        font-family: Arial, Helvetica, sans-serif;
+        /* Prevent text selection in interactive contexts */
+        user-select: none;
+        -webkit-user-select: none;
+      }]]>
+  </style>
+  <g id="chart-root" role="graphics-document">
+    <path id="area-fill-0" opacity="0.35" role="graphics-symbol" aria-label="Primary area series" d="M818,5471.43L5159,500L9500,4228.57 L9500,9200 L818,9200 Z" fill="#1B4D8F" />
+    <path id="area-fill-1" opacity="0.35" role="graphics-symbol" aria-label="Secondary area series" d="M818,7335.71L5159,4850L9500,6714.29 L9500,9200 L818,9200 Z" fill="#006D5B" />
+    <path id="area-line-0" d="M818,5471.43L5159,500L9500,4228.57" fill="none" stroke="#1B4D8F" stroke-width="2" vector-effect="non-scaling-stroke" />
+    <path id="area-line-1" d="M818,7335.71L5159,4850L9500,6714.29" fill="none" stroke="#006D5B" stroke-width="2" vector-effect="non-scaling-stroke" />
+    <text id="x-label-0" x="818" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">Category 1</text>
+    <text id="x-label-1" x="5159" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">Category 2</text>
+    <text id="x-label-2" x="9500" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">Category 3</text>
+    <text id="y-label-0" x="768" y="9200" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">0.0</text>
+    <text id="y-label-1" x="768" y="7460" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">1.4</text>
+    <text id="y-label-2" x="768" y="5720" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">2.8</text>
+    <text id="y-label-3" x="768" y="3980" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">4.2</text>
+    <text id="y-label-4" x="768" y="2240" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">5.6</text>
+    <text id="y-label-5" x="768" y="500" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">7.0</text>
+    <g id="grid-lines">
+      <line id="grid-h-0" x1="818" y1="500" x2="9500" y2="500" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-1" x1="818" y1="2240" x2="9500" y2="2240" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-2" x1="818" y1="3980" x2="9500" y2="3980" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-3" x1="818" y1="5720" x2="9500" y2="5720" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-4" x1="818" y1="7460" x2="9500" y2="7460" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-5" x1="818" y1="9200" x2="9500" y2="9200" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+    </g>
+  </g>
+</svg>"
+`;
+
+exports[`golden SVG output > renders a byte-stable bar golden 1`] = `
+"<svg xmlns="http://www.w3.org/2000/svg"
+  width="800" height="600"
+  viewBox="0 0 10000 10000"
+  preserveAspectRatio="xMidYMid meet"
+  role="Chart"
+  aria-label="Bar chart titled &quot;bar fixture&quot;. Shows 3 categories. Shows an fluctuating trend with 33.33% overall increase from 3 to 4. Minimum value of 3 at Category 1; maximum of 7 at Category 2; average of 4.67."
+  >
+  <style type="text/css">
+  <![CDATA[text { 
+        font-family: Arial, Helvetica, sans-serif;
+        /* Prevent text selection in interactive contexts */
+        user-select: none;
+        -webkit-user-select: none;
+      }]]>
+  </style>
+  <g id="chart-root" role="graphics-document">
+    <rect id="bar-0" role="graphics-symbol" aria-label="Category 1: 3" x="918" y="5471.5" width="2866.6666666666665" height="3728.5714285714284" fill="#1B4D8F" stroke="#1B4D8F" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <rect id="bar-1" role="graphics-symbol" aria-label="Category 2: 7" x="3884.5" y="500" width="2866.6666666666665" height="8700" fill="#1B4D8F" stroke="#1B4D8F" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <rect id="bar-2" role="graphics-symbol" aria-label="Category 3: 4" x="6851.5" y="4228.5" width="2866.6666666666665" height="4971.428571428572" fill="#1B4D8F" stroke="#1B4D8F" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <text id="x-label-0" x="818" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">Category 1</text>
+    <text id="x-label-1" x="5159" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">Category 2</text>
+    <text id="x-label-2" x="9500" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">Category 3</text>
+    <text id="y-label-0" x="768" y="9200" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">0.0</text>
+    <text id="y-label-1" x="768" y="7460" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">1.4</text>
+    <text id="y-label-2" x="768" y="5720" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">2.8</text>
+    <text id="y-label-3" x="768" y="3980" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">4.2</text>
+    <text id="y-label-4" x="768" y="2240" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">5.6</text>
+    <text id="y-label-5" x="768" y="500" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">7.0</text>
+    <g id="grid-lines">
+      <line id="grid-h-0" x1="818" y1="500" x2="9500" y2="500" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-1" x1="818" y1="2240" x2="9500" y2="2240" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-2" x1="818" y1="3980" x2="9500" y2="3980" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-3" x1="818" y1="5720" x2="9500" y2="5720" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-4" x1="818" y1="7460" x2="9500" y2="7460" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-5" x1="818" y1="9200" x2="9500" y2="9200" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+    </g>
+  </g>
+</svg>"
+`;
+
+exports[`golden SVG output > renders a byte-stable combo golden 1`] = `
+"<svg xmlns="http://www.w3.org/2000/svg"
+  width="800" height="600"
+  viewBox="0 0 10000 10000"
+  preserveAspectRatio="xMidYMid meet"
+  role="Chart"
+  aria-label="Combo chart titled &quot;combo fixture&quot;. Shows 2 series across 3 categories, combining bars and a line on a separate right-hand axis for the line. Minimum value of 3 at Primary – Category 1; maximum of 700 at Secondary – Category 2; average of 235.67."
+  >
+  <style type="text/css">
+  <![CDATA[text { 
+        font-family: Arial, Helvetica, sans-serif;
+        /* Prevent text selection in interactive contexts */
+        user-select: none;
+        -webkit-user-select: none;
+      }]]>
+  </style>
+  <g id="chart-root" role="graphics-document">
+    <rect id="combo-bar-0" role="graphics-symbol" aria-label="Primary, Category 1: 3" x="1443" y="5471.5" width="1527.24" height="3728.5714285714284" fill="#1B4D8F" stroke="#1B4D8F" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <rect id="combo-bar-1" role="graphics-symbol" aria-label="Primary, Category 2: 7" x="4219.5" y="500" width="1527.24" height="8700" fill="#1B4D8F" stroke="#1B4D8F" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <rect id="combo-bar-2" role="graphics-symbol" aria-label="Primary, Category 3: 4" x="6996.5" y="4228.5" width="1527.24" height="4971.428571428572" fill="#1B4D8F" stroke="#1B4D8F" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <path id="combo-line" role="graphics-symbol" aria-label="Secondary line series on right axis" d="M818,5471.43L4983.2,500L9148.4,4228.57" fill="none" stroke="#006D5B" stroke-width="2" vector-effect="non-scaling-stroke" />
+    <circle id="combo-dot-0" cx="818" cy="5471.5" r="4" fill="#006D5B" stroke="#ffffff" stroke-width="1.5" vector-effect="non-scaling-stroke" />
+    <circle id="combo-dot-1" cx="4983" cy="500" r="4" fill="#006D5B" stroke="#ffffff" stroke-width="1.5" vector-effect="non-scaling-stroke" />
+    <circle id="combo-dot-2" cx="9148.5" cy="4228.5" r="4" fill="#006D5B" stroke="#ffffff" stroke-width="1.5" vector-effect="non-scaling-stroke" />
+    <text id="x-label-0" x="818" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">Category 1</text>
+    <text id="x-label-1" x="4983" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">Category 2</text>
+    <text id="x-label-2" x="9148.5" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">Category 3</text>
+    <text id="y-label-0" x="768" y="9200" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">0.0</text>
+    <text id="y-label-1" x="768" y="7460" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">1.4</text>
+    <text id="y-label-2" x="768" y="5720" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">2.8</text>
+    <text id="y-label-3" x="768" y="3980" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">4.2</text>
+    <text id="y-label-4" x="768" y="2240" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">5.6</text>
+    <text id="y-label-5" x="768" y="500" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">7.0</text>
+    <text id="right-y-label-0" x="9198.5" y="9200" font-size="120" font-family="Arial" text-anchor="start" dominant-baseline="middle" fill="#666666">0.0</text>
+    <text id="right-y-label-1" x="9198.5" y="7460" font-size="120" font-family="Arial" text-anchor="start" dominant-baseline="middle" fill="#666666">140</text>
+    <text id="right-y-label-2" x="9198.5" y="5720" font-size="120" font-family="Arial" text-anchor="start" dominant-baseline="middle" fill="#666666">280</text>
+    <text id="right-y-label-3" x="9198.5" y="3980" font-size="120" font-family="Arial" text-anchor="start" dominant-baseline="middle" fill="#666666">420</text>
+    <text id="right-y-label-4" x="9198.5" y="2240" font-size="120" font-family="Arial" text-anchor="start" dominant-baseline="middle" fill="#666666">560</text>
+    <text id="right-y-label-5" x="9198.5" y="500" font-size="120" font-family="Arial" text-anchor="start" dominant-baseline="middle" fill="#666666">700</text>
+    <g id="grid-lines">
+      <line id="grid-h-0" x1="818" y1="500" x2="9148.5" y2="500" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-1" x1="818" y1="2240" x2="9148.5" y2="2240" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-2" x1="818" y1="3980" x2="9148.5" y2="3980" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-3" x1="818" y1="5720" x2="9148.5" y2="5720" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-4" x1="818" y1="7460" x2="9148.5" y2="7460" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-5" x1="818" y1="9200" x2="9148.5" y2="9200" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+    </g>
+  </g>
+</svg>"
+`;
+
+exports[`golden SVG output > renders a byte-stable donut golden 1`] = `
+"<svg xmlns="http://www.w3.org/2000/svg"
+  width="800" height="600"
+  viewBox="0 0 10000 10000"
+  preserveAspectRatio="xMidYMid meet"
+  role="Chart"
+  aria-label="Donut chart titled &quot;donut fixture&quot;. Shows 3 categories as proportional segments. Shows an fluctuating trend with 33.33% overall increase from 3 to 4. Minimum value of 3 at Category 1; maximum of 7 at Category 2; average of 4.67."
+  >
+  <style type="text/css">
+  <![CDATA[text { 
+        font-family: Arial, Helvetica, sans-serif;
+        /* Prevent text selection in interactive contexts */
+        user-select: none;
+        -webkit-user-select: none;
+      }]]>
+  </style>
+  <g id="chart-root">
+    <path id="slice-0" role="graphics-symbol" aria-label="Category 1: 3 (21.4%)" d="M5000,1000 A4000,4000 0 0 1 8899.711648727294,4109.9162641747425 L6949.855824363647,4554.958132087371 A2000,2000 0 0 0 5000,3000 Z" fill="#1B4D8F" stroke="#ffffff" stroke-width="2" vector-effect="non-scaling-stroke" />
+    <path id="slice-1" role="graphics-symbol" aria-label="Category 2: 7 (50.0%)" d="M8899.711648727294,4109.9162641747425 A4000,4000 0 0 1 1100.2883512727053,5890.083735825258 L3050.144175636353,5445.041867912629 A2000,2000 0 0 0 6949.855824363647,4554.958132087371 Z" fill="#006D5B" stroke="#ffffff" stroke-width="2" vector-effect="non-scaling-stroke" />
+    <path id="slice-2" role="graphics-symbol" aria-label="Category 3: 4 (28.6%)" d="M1100.2883512727053,5890.083735825258 A4000,4000 0 0 1 4999.999999999999,1000 L5000,3000 A2000,2000 0 0 0 3050.144175636353,5445.041867912629 Z" fill="#C62828" stroke="#ffffff" stroke-width="2" vector-effect="non-scaling-stroke" />
+    <text id="pie-label-0" x="6576" y="2585.5" font-size="120" font-family="Arial" text-anchor="start" fill="#333333">Category 1</text>
+    <text id="pie-label-1" x="5373" y="7856" font-size="120" font-family="Arial" text-anchor="start" fill="#333333">Category 2</text>
+    <text id="pie-label-2" x="2360" y="3060.5" font-size="120" font-family="Arial" text-anchor="start" fill="#333333">Category 3</text>
+  </g>
+</svg>"
+`;
+
+exports[`golden SVG output > renders a byte-stable grouped-bar golden 1`] = `
+"<svg xmlns="http://www.w3.org/2000/svg"
+  width="800" height="600"
+  viewBox="0 0 10000 10000"
+  preserveAspectRatio="xMidYMid meet"
+  role="Chart"
+  aria-label="Grouped bar chart titled &quot;grouped-bar fixture&quot;. Shows 2 series across 3 categories. Minimum value of 1.5 at Secondary – Category 1; maximum of 7 at Primary – Category 2; average of 3.5."
+  >
+  <style type="text/css">
+  <![CDATA[text { 
+        font-family: Arial, Helvetica, sans-serif;
+        /* Prevent text selection in interactive contexts */
+        user-select: none;
+        -webkit-user-select: none;
+      }]]>
+  </style>
+  <g id="chart-root" role="graphics-document">
+    <rect id="grouped-bar-0-0" role="graphics-symbol" aria-label="Primary, Category 1: 3" x="1107.5" y="5471.5" width="1102.4761904761906" height="3728.5714285714284" fill="#1B4D8F" stroke="#1B4D8F" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <rect id="grouped-bar-0-1" role="graphics-symbol" aria-label="Primary, Category 2: 7" x="4001.5" y="500" width="1102.4761904761906" height="8700" fill="#1B4D8F" stroke="#1B4D8F" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <rect id="grouped-bar-0-2" role="graphics-symbol" aria-label="Primary, Category 3: 4" x="6895.5" y="4228.5" width="1102.4761904761906" height="4971.428571428572" fill="#1B4D8F" stroke="#1B4D8F" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <rect id="grouped-bar-1-0" role="graphics-symbol" aria-label="Secondary, Category 1: 1.5" x="2320" y="7335.5" width="1102.4761904761906" height="1864.2857142857138" fill="#006D5B" stroke="#006D5B" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <rect id="grouped-bar-1-1" role="graphics-symbol" aria-label="Secondary, Category 2: 3.5" x="5214" y="4850" width="1102.4761904761906" height="4350" fill="#006D5B" stroke="#006D5B" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <rect id="grouped-bar-1-2" role="graphics-symbol" aria-label="Secondary, Category 3: 2" x="8108" y="6714.5" width="1102.4761904761906" height="2485.7142857142862" fill="#006D5B" stroke="#006D5B" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <text id="x-label-0" x="818" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">Category 1</text>
+    <text id="x-label-1" x="5159" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">Category 2</text>
+    <text id="x-label-2" x="9500" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">Category 3</text>
+    <text id="y-label-0" x="768" y="9200" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">0.0</text>
+    <text id="y-label-1" x="768" y="7460" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">1.4</text>
+    <text id="y-label-2" x="768" y="5720" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">2.8</text>
+    <text id="y-label-3" x="768" y="3980" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">4.2</text>
+    <text id="y-label-4" x="768" y="2240" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">5.6</text>
+    <text id="y-label-5" x="768" y="500" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">7.0</text>
+    <g id="grid-lines">
+      <line id="grid-h-0" x1="818" y1="500" x2="9500" y2="500" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-1" x1="818" y1="2240" x2="9500" y2="2240" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-2" x1="818" y1="3980" x2="9500" y2="3980" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-3" x1="818" y1="5720" x2="9500" y2="5720" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-4" x1="818" y1="7460" x2="9500" y2="7460" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-5" x1="818" y1="9200" x2="9500" y2="9200" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+    </g>
+  </g>
+</svg>"
+`;
+
+exports[`golden SVG output > renders a byte-stable line golden 1`] = `
+"<svg xmlns="http://www.w3.org/2000/svg"
+  width="800" height="600"
+  viewBox="0 0 10000 10000"
+  preserveAspectRatio="xMidYMid meet"
+  role="Chart"
+  aria-label="Line chart titled &quot;line fixture&quot;. Shows 3 data points connected over categories. Shows an fluctuating trend with 33.33% overall increase from 3 to 4. Minimum value of 3 at Category 1; maximum of 7 at Category 2; average of 4.67."
+  >
+  <style type="text/css">
+  <![CDATA[text { 
+        font-family: Arial, Helvetica, sans-serif;
+        /* Prevent text selection in interactive contexts */
+        user-select: none;
+        -webkit-user-select: none;
+      }]]>
+  </style>
+  <g id="chart-root">
+    <path id="line-0" d="M818,9200L5159,500L9500,7025" fill="none" stroke="#1B4D8F" stroke-width="2" vector-effect="non-scaling-stroke" />
+    <circle id="dot-0-0" cx="818" cy="9200" r="4" fill="#1B4D8F" stroke="#ffffff" stroke-width="1.5" vector-effect="non-scaling-stroke" />
+    <circle id="dot-0-1" cx="5159" cy="500" r="4" fill="#1B4D8F" stroke="#ffffff" stroke-width="1.5" vector-effect="non-scaling-stroke" />
+    <circle id="dot-0-2" cx="9500" cy="7025" r="4" fill="#1B4D8F" stroke="#ffffff" stroke-width="1.5" vector-effect="non-scaling-stroke" />
+    <text id="x-label-0" x="818" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">Category 1</text>
+    <text id="x-label-1" x="5159" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">Category 2</text>
+    <text id="x-label-2" x="9500" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">Category 3</text>
+    <text id="y-label-0" x="768" y="9200" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">3.0</text>
+    <text id="y-label-1" x="768" y="7460" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">3.8</text>
+    <text id="y-label-2" x="768" y="5720" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">4.6</text>
+    <text id="y-label-3" x="768" y="3980" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">5.4</text>
+    <text id="y-label-4" x="768" y="2240" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">6.2</text>
+    <text id="y-label-5" x="768" y="500" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">7.0</text>
+    <g id="grid-lines">
+      <line id="grid-h-0" x1="818" y1="500" x2="9500" y2="500" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-1" x1="818" y1="2240" x2="9500" y2="2240" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-2" x1="818" y1="3980" x2="9500" y2="3980" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-3" x1="818" y1="5720" x2="9500" y2="5720" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-4" x1="818" y1="7460" x2="9500" y2="7460" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-5" x1="818" y1="9200" x2="9500" y2="9200" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+    </g>
+  </g>
+</svg>"
+`;
+
+exports[`golden SVG output > renders a byte-stable marimekko golden 1`] = `
+"<svg xmlns="http://www.w3.org/2000/svg"
+  width="800" height="600"
+  viewBox="0 0 10000 10000"
+  preserveAspectRatio="xMidYMid meet"
+  role="Chart"
+  aria-label="Marimekko chart titled &quot;marimekko fixture&quot;. Shows 3 categories. Shows an fluctuating trend with 33.33% overall increase from 3 to 4. Minimum value of 3 at Category 1; maximum of 7 at Category 2; average of 4.67."
+  >
+  <style type="text/css">
+  <![CDATA[text { 
+        font-family: Arial, Helvetica, sans-serif;
+        /* Prevent text selection in interactive contexts */
+        user-select: none;
+        -webkit-user-select: none;
+      }]]>
+  </style>
+  <g id="chart-root" role="graphics-document">
+    <rect id="bar-0" role="graphics-symbol" aria-label="Category 1: 3" x="918" y="5471.5" width="2866.6666666666665" height="3728.5714285714284" fill="#1B4D8F" stroke="#1B4D8F" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <rect id="bar-1" role="graphics-symbol" aria-label="Category 2: 7" x="3884.5" y="500" width="2866.6666666666665" height="8700" fill="#1B4D8F" stroke="#1B4D8F" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <rect id="bar-2" role="graphics-symbol" aria-label="Category 3: 4" x="6851.5" y="4228.5" width="2866.6666666666665" height="4971.428571428572" fill="#1B4D8F" stroke="#1B4D8F" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <text id="x-label-0" x="818" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">Category 1</text>
+    <text id="x-label-1" x="5159" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">Category 2</text>
+    <text id="x-label-2" x="9500" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">Category 3</text>
+    <text id="y-label-0" x="768" y="9200" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">0.0</text>
+    <text id="y-label-1" x="768" y="7460" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">1.4</text>
+    <text id="y-label-2" x="768" y="5720" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">2.8</text>
+    <text id="y-label-3" x="768" y="3980" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">4.2</text>
+    <text id="y-label-4" x="768" y="2240" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">5.6</text>
+    <text id="y-label-5" x="768" y="500" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">7.0</text>
+    <g id="grid-lines">
+      <line id="grid-h-0" x1="818" y1="500" x2="9500" y2="500" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-1" x1="818" y1="2240" x2="9500" y2="2240" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-2" x1="818" y1="3980" x2="9500" y2="3980" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-3" x1="818" y1="5720" x2="9500" y2="5720" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-4" x1="818" y1="7460" x2="9500" y2="7460" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-5" x1="818" y1="9200" x2="9500" y2="9200" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+    </g>
+  </g>
+</svg>"
+`;
+
+exports[`golden SVG output > renders a byte-stable pie golden 1`] = `
+"<svg xmlns="http://www.w3.org/2000/svg"
+  width="800" height="600"
+  viewBox="0 0 10000 10000"
+  preserveAspectRatio="xMidYMid meet"
+  role="Chart"
+  aria-label="Pie chart titled &quot;pie fixture&quot;. Shows 3 categories as proportional segments. Shows an fluctuating trend with 33.33% overall increase from 3 to 4. Minimum value of 3 at Category 1; maximum of 7 at Category 2; average of 4.67."
+  >
+  <style type="text/css">
+  <![CDATA[text { 
+        font-family: Arial, Helvetica, sans-serif;
+        /* Prevent text selection in interactive contexts */
+        user-select: none;
+        -webkit-user-select: none;
+      }]]>
+  </style>
+  <g id="chart-root">
+    <path id="slice-0" role="graphics-symbol" aria-label="Category 1: 3 (21.4%)" d="M5000,5000 L5000,1000 A4000,4000 0 0 1 8899.711648727294,4109.9162641747425 Z" fill="#1B4D8F" stroke="#ffffff" stroke-width="2" vector-effect="non-scaling-stroke" />
+    <path id="slice-1" role="graphics-symbol" aria-label="Category 2: 7 (50.0%)" d="M5000,5000 L8899.711648727294,4109.9162641747425 A4000,4000 0 0 1 1100.2883512727053,5890.083735825258 Z" fill="#006D5B" stroke="#ffffff" stroke-width="2" vector-effect="non-scaling-stroke" />
+    <path id="slice-2" role="graphics-symbol" aria-label="Category 3: 4 (28.6%)" d="M5000,5000 L1100.2883512727053,5890.083735825258 A4000,4000 0 0 1 4999.999999999999,1000 Z" fill="#C62828" stroke="#ffffff" stroke-width="2" vector-effect="non-scaling-stroke" />
+    <text id="pie-label-0" x="5952.5" y="3367.5" font-size="120" font-family="Arial" text-anchor="start" fill="#333333">Category 1</text>
+    <text id="pie-label-1" x="5150.5" y="6881" font-size="120" font-family="Arial" text-anchor="start" fill="#333333">Category 2</text>
+    <text id="pie-label-2" x="3141.5" y="3684" font-size="120" font-family="Arial" text-anchor="start" fill="#333333">Category 3</text>
+  </g>
+</svg>"
+`;
+
+exports[`golden SVG output > renders a byte-stable scatter golden 1`] = `
+"<svg xmlns="http://www.w3.org/2000/svg"
+  width="800" height="600"
+  viewBox="0 0 10000 10000"
+  preserveAspectRatio="xMidYMid meet"
+  role="Chart"
+  aria-label="Scatter plot titled &quot;scatter fixture&quot;. Contains 3 data points plotted on X-Y axes. Shows an fluctuating trend with 33.33% overall increase from 3 to 4. Minimum value of 3 at Point 1; maximum of 7 at Point 2; average of 4.67."
+  >
+  <style type="text/css">
+  <![CDATA[text { 
+        font-family: Arial, Helvetica, sans-serif;
+        /* Prevent text selection in interactive contexts */
+        user-select: none;
+        -webkit-user-select: none;
+      }]]>
+  </style>
+  <g id="chart-root">
+    <circle id="dot-0" role="graphics-symbol" aria-label="Point 1: (1, 3)" cx="818" cy="9200" r="6" fill="#1B4D8F" stroke="#ffffff" stroke-width="1.5" vector-effect="non-scaling-stroke" />
+    <circle id="dot-1" role="graphics-symbol" aria-label="Point 2: (2, 7)" cx="5159" cy="500" r="6" fill="#006D5B" stroke="#ffffff" stroke-width="1.5" vector-effect="non-scaling-stroke" />
+    <circle id="dot-2" role="graphics-symbol" aria-label="Point 3: (3, 4)" cx="9500" cy="7025" r="6" fill="#C62828" stroke="#ffffff" stroke-width="1.5" vector-effect="non-scaling-stroke" />
+    <text id="label-0" x="630" y="9052" font-size="120" font-family="Arial" text-anchor="start" fill="#333333">Point 1</text>
+    <line id="leader-0" x1="818" y1="9190" x2="818" y2="9200" stroke="#999999" stroke-width="0.5" vector-effect="non-scaling-stroke" />
+    <text id="label-1" x="4971" y="352" font-size="120" font-family="Arial" text-anchor="start" fill="#333333">Point 2</text>
+    <line id="leader-1" x1="5159" y1="490" x2="5159" y2="500" stroke="#999999" stroke-width="0.5" vector-effect="non-scaling-stroke" />
+    <text id="label-2" x="9312" y="6877" font-size="120" font-family="Arial" text-anchor="start" fill="#333333">Point 3</text>
+    <line id="leader-2" x1="9500" y1="7015" x2="9500" y2="7025" stroke="#999999" stroke-width="0.5" vector-effect="non-scaling-stroke" />
+    <g id="grid-lines">
+      <line id="grid-h-0" x1="818" y1="500" x2="9500" y2="500" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-1" x1="818" y1="2240" x2="9500" y2="2240" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-2" x1="818" y1="3980" x2="9500" y2="3980" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-3" x1="818" y1="5720" x2="9500" y2="5720" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-4" x1="818" y1="7460" x2="9500" y2="7460" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-5" x1="818" y1="9200" x2="9500" y2="9200" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+    </g>
+  </g>
+</svg>"
+`;
+
+exports[`golden SVG output > renders a byte-stable stacked-bar golden 1`] = `
+"<svg xmlns="http://www.w3.org/2000/svg"
+  width="800" height="600"
+  viewBox="0 0 10000 10000"
+  preserveAspectRatio="xMidYMid meet"
+  role="Chart"
+  aria-label="Stacked bar chart titled &quot;stacked-bar fixture&quot;. Shows 2 series across 3 categories. Minimum value of 1.5 at Secondary – Category 1; maximum of 7 at Primary – Category 2; average of 3.5."
+  >
+  <style type="text/css">
+  <![CDATA[text { 
+        font-family: Arial, Helvetica, sans-serif;
+        /* Prevent text selection in interactive contexts */
+        user-select: none;
+        -webkit-user-select: none;
+      }]]>
+  </style>
+  <g id="chart-root" role="graphics-document">
+    <rect id="stacked-bar-0-0" role="graphics-symbol" aria-label="Primary, Category 1: 3" x="1107.5" y="6714.5" width="2315.2000000000003" height="2485.7142857142862" fill="#1B4D8F" stroke="#ffffff" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <rect id="stacked-bar-0-1" role="graphics-symbol" aria-label="Primary, Category 2: 7" x="4001.5" y="3400" width="2315.2000000000003" height="5800" fill="#1B4D8F" stroke="#ffffff" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <rect id="stacked-bar-0-2" role="graphics-symbol" aria-label="Primary, Category 3: 4" x="6895.5" y="5885.5" width="2315.2000000000003" height="3314.2857142857138" fill="#1B4D8F" stroke="#ffffff" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <rect id="stacked-bar-1-0" role="graphics-symbol" aria-label="Secondary, Category 1: 1.5" x="1107.5" y="5471.5" width="2315.2000000000003" height="1242.8571428571422" fill="#006D5B" stroke="#ffffff" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <rect id="stacked-bar-1-1" role="graphics-symbol" aria-label="Secondary, Category 2: 3.5" x="4001.5" y="500" width="2315.2000000000003" height="2900" fill="#006D5B" stroke="#ffffff" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <rect id="stacked-bar-1-2" role="graphics-symbol" aria-label="Secondary, Category 3: 2" x="6895.5" y="4228.5" width="2315.2000000000003" height="1657.1428571428578" fill="#006D5B" stroke="#ffffff" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <text id="x-label-0" x="818" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">Category 1</text>
+    <text id="x-label-1" x="5159" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">Category 2</text>
+    <text id="x-label-2" x="9500" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">Category 3</text>
+    <text id="y-label-0" x="768" y="9200" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">0.0</text>
+    <text id="y-label-1" x="768" y="7460" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">2.1</text>
+    <text id="y-label-2" x="768" y="5720" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">4.2</text>
+    <text id="y-label-3" x="768" y="3980" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">6.3</text>
+    <text id="y-label-4" x="768" y="2240" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">8.4</text>
+    <text id="y-label-5" x="768" y="500" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">11</text>
+    <g id="grid-lines">
+      <line id="grid-h-0" x1="818" y1="500" x2="9500" y2="500" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-1" x1="818" y1="2240" x2="9500" y2="2240" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-2" x1="818" y1="3980" x2="9500" y2="3980" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-3" x1="818" y1="5720" x2="9500" y2="5720" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-4" x1="818" y1="7460" x2="9500" y2="7460" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-5" x1="818" y1="9200" x2="9500" y2="9200" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+    </g>
+  </g>
+</svg>"
+`;
+
+exports[`golden SVG output > renders a byte-stable waterfall golden 1`] = `
+"<svg xmlns="http://www.w3.org/2000/svg"
+  width="800" height="600"
+  viewBox="0 0 10000 10000"
+  preserveAspectRatio="xMidYMid meet"
+  role="Chart"
+  aria-label="Waterfall chart titled &quot;waterfall fixture&quot;. Shows 3 categories. Shows an fluctuating trend with 33.33% overall increase from 3 to 4. Minimum value of 3 at Category 1; maximum of 7 at Category 2; average of 4.67."
+  >
+  <style type="text/css">
+  <![CDATA[text { 
+        font-family: Arial, Helvetica, sans-serif;
+        /* Prevent text selection in interactive contexts */
+        user-select: none;
+        -webkit-user-select: none;
+      }]]>
+  </style>
+  <g id="chart-root">
+    <rect id="bar-0" x="868" y="6590" width="2827.3333333333335" height="2610" fill="#006D5B" stroke="#ffffff" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <line id="connector-0" x1="3695.5" y1="6590" x2="3745.5" y2="6590" stroke="#999999" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <rect id="bar-1" x="3745.5" y="500" width="2827.3333333333335" height="6090" fill="#006D5B" stroke="#ffffff" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <rect id="bar-2" x="6622.5" y="5720" width="2827.3333333333335" height="3480" fill="#1B4D8F" stroke="#ffffff" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <line id="zero-line" x1="818" y1="9200" x2="9500" y2="9200" stroke="#333333" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <text id="x-label-0" x="818" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">Category 1</text>
+    <text id="x-label-1" x="5159" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">Category 2</text>
+    <text id="x-label-2" x="9500" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">Category 3</text>
+    <text id="y-label-0" x="768" y="9200" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">0.0</text>
+    <text id="y-label-1" x="768" y="7460" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">2.0</text>
+    <text id="y-label-2" x="768" y="5720" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">4.0</text>
+    <text id="y-label-3" x="768" y="3980" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">6.0</text>
+    <text id="y-label-4" x="768" y="2240" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">8.0</text>
+    <text id="y-label-5" x="768" y="500" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">10</text>
+  </g>
+</svg>"
+`;
+
+exports[`real multi-series renderers > closes each area fill to the zero baseline and overlays distinct translucent series 1`] = `
+"<svg xmlns="http://www.w3.org/2000/svg"
+  width="800" height="600"
+  viewBox="0 0 10000 10000"
+  preserveAspectRatio="xMidYMid meet"
+  role="Chart"
+  aria-label="Area chart titled &quot;Chart&quot;. Shows 2 series across 3 categories. Minimum value of 1 at South – A; maximum of 5 at North – B; average of 3."
+  >
+  <style type="text/css">
+  <![CDATA[text { 
+        font-family: Arial, Helvetica, sans-serif;
+        /* Prevent text selection in interactive contexts */
+        user-select: none;
+        -webkit-user-select: none;
+      }]]>
+  </style>
+  <g id="chart-root" role="graphics-document">
+    <path id="area-fill-0" opacity="0.35" role="graphics-symbol" aria-label="North area series" d="M818,5720L5159,500L9500,3980 L9500,9200 L818,9200 Z" fill="#1B4D8F" />
+    <path id="area-fill-1" opacity="0.35" role="graphics-symbol" aria-label="South area series" d="M818,7460L5159,3980L9500,2240 L9500,9200 L818,9200 Z" fill="#006D5B" />
+    <path id="area-line-0" d="M818,5720L5159,500L9500,3980" fill="none" stroke="#1B4D8F" stroke-width="2" vector-effect="non-scaling-stroke" />
+    <path id="area-line-1" d="M818,7460L5159,3980L9500,2240" fill="none" stroke="#006D5B" stroke-width="2" vector-effect="non-scaling-stroke" />
+    <text id="x-label-0" x="818" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">A</text>
+    <text id="x-label-1" x="5159" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">B</text>
+    <text id="x-label-2" x="9500" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">C</text>
+    <text id="y-label-0" x="768" y="9200" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">0.0</text>
+    <text id="y-label-1" x="768" y="7460" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">1.0</text>
+    <text id="y-label-2" x="768" y="5720" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">2.0</text>
+    <text id="y-label-3" x="768" y="3980" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">3.0</text>
+    <text id="y-label-4" x="768" y="2240" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">4.0</text>
+    <text id="y-label-5" x="768" y="500" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">5.0</text>
+    <g id="grid-lines">
+      <line id="grid-h-0" x1="818" y1="500" x2="9500" y2="500" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-1" x1="818" y1="2240" x2="9500" y2="2240" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-2" x1="818" y1="3980" x2="9500" y2="3980" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-3" x1="818" y1="5720" x2="9500" y2="5720" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-4" x1="818" y1="7460" x2="9500" y2="7460" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-5" x1="818" y1="9200" x2="9500" y2="9200" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+    </g>
+  </g>
+</svg>"
+`;
+
+exports[`real multi-series renderers > places grouped bars side-by-side with a 10% bar gap and non-overlapping category groups 1`] = `
+"<svg xmlns="http://www.w3.org/2000/svg"
+  width="800" height="600"
+  viewBox="0 0 10000 10000"
+  preserveAspectRatio="xMidYMid meet"
+  role="Chart"
+  aria-label="Grouped bar chart titled &quot;Chart&quot;. Shows 2 series across 2 categories. Minimum value of 1 at Second – B; maximum of 4 at First – B; average of 2.5."
+  >
+  <style type="text/css">
+  <![CDATA[text { 
+        font-family: Arial, Helvetica, sans-serif;
+        /* Prevent text selection in interactive contexts */
+        user-select: none;
+        -webkit-user-select: none;
+      }]]>
+  </style>
+  <g id="chart-root" role="graphics-document">
+    <rect id="grouped-bar-0-0" role="graphics-symbol" aria-label="First, A: 3" x="1252" y="2675" width="1653.7142857142858" height="6525" fill="#1B4D8F" stroke="#1B4D8F" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <rect id="grouped-bar-0-1" role="graphics-symbol" aria-label="First, B: 4" x="5593" y="500" width="1653.7142857142858" height="8700" fill="#1B4D8F" stroke="#1B4D8F" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <rect id="grouped-bar-1-0" role="graphics-symbol" aria-label="Second, A: 2" x="3071" y="4850" width="1653.7142857142858" height="4350" fill="#006D5B" stroke="#006D5B" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <rect id="grouped-bar-1-1" role="graphics-symbol" aria-label="Second, B: 1" x="7412" y="7025" width="1653.7142857142858" height="2175" fill="#006D5B" stroke="#006D5B" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <text id="x-label-0" x="818" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">A</text>
+    <text id="x-label-1" x="9500" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">B</text>
+    <text id="y-label-0" x="768" y="9200" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">0.0</text>
+    <text id="y-label-1" x="768" y="7460" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">0.8</text>
+    <text id="y-label-2" x="768" y="5720" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">1.6</text>
+    <text id="y-label-3" x="768" y="3980" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">2.4</text>
+    <text id="y-label-4" x="768" y="2240" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">3.2</text>
+    <text id="y-label-5" x="768" y="500" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">4.0</text>
+    <g id="grid-lines">
+      <line id="grid-h-0" x1="818" y1="500" x2="9500" y2="500" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-1" x1="818" y1="2240" x2="9500" y2="2240" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-2" x1="818" y1="3980" x2="9500" y2="3980" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-3" x1="818" y1="5720" x2="9500" y2="5720" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-4" x1="818" y1="7460" x2="9500" y2="7460" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-5" x1="818" y1="9200" x2="9500" y2="9200" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+    </g>
+  </g>
+</svg>"
+`;
+
+exports[`real multi-series renderers > renders combo bars and a line with a right axis when magnitudes differ by more than 10x 1`] = `
+"<svg xmlns="http://www.w3.org/2000/svg"
+  width="800" height="600"
+  viewBox="0 0 10000 10000"
+  preserveAspectRatio="xMidYMid meet"
+  role="Chart"
+  aria-label="Combo chart titled &quot;Chart&quot;. Shows 2 series across 3 categories, combining bars and a line on a separate right-hand axis for the line. Minimum value of 2 at Units – A; maximum of 5,000 at Revenue – B; average of 1,668.33."
+  >
+  <style type="text/css">
+  <![CDATA[text { 
+        font-family: Arial, Helvetica, sans-serif;
+        /* Prevent text selection in interactive contexts */
+        user-select: none;
+        -webkit-user-select: none;
+      }]]>
+  </style>
+  <g id="chart-root" role="graphics-document">
+    <rect id="combo-bar-0" role="graphics-symbol" aria-label="Units, A: 2" x="1439.5" y="5720" width="1518.6600000000003" height="3480" fill="#1B4D8F" stroke="#1B4D8F" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <rect id="combo-bar-1" role="graphics-symbol" aria-label="Units, B: 5" x="4200.5" y="500" width="1518.6600000000003" height="8700" fill="#1B4D8F" stroke="#1B4D8F" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <rect id="combo-bar-2" role="graphics-symbol" aria-label="Units, C: 3" x="6961.5" y="3980" width="1518.6600000000003" height="5220" fill="#1B4D8F" stroke="#1B4D8F" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <path id="combo-line" role="graphics-symbol" aria-label="Revenue line series on right axis" d="M818,5720L4959.8,500L9101.6,3980" fill="none" stroke="#006D5B" stroke-width="2" vector-effect="non-scaling-stroke" />
+    <circle id="combo-dot-0" cx="818" cy="5720" r="4" fill="#006D5B" stroke="#ffffff" stroke-width="1.5" vector-effect="non-scaling-stroke" />
+    <circle id="combo-dot-1" cx="4960" cy="500" r="4" fill="#006D5B" stroke="#ffffff" stroke-width="1.5" vector-effect="non-scaling-stroke" />
+    <circle id="combo-dot-2" cx="9101.5" cy="3980" r="4" fill="#006D5B" stroke="#ffffff" stroke-width="1.5" vector-effect="non-scaling-stroke" />
+    <text id="x-label-0" x="818" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">A</text>
+    <text id="x-label-1" x="4960" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">B</text>
+    <text id="x-label-2" x="9101.5" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">C</text>
+    <text id="y-label-0" x="768" y="9200" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">0.0</text>
+    <text id="y-label-1" x="768" y="7460" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">1.0</text>
+    <text id="y-label-2" x="768" y="5720" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">2.0</text>
+    <text id="y-label-3" x="768" y="3980" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">3.0</text>
+    <text id="y-label-4" x="768" y="2240" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">4.0</text>
+    <text id="y-label-5" x="768" y="500" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">5.0</text>
+    <text id="right-y-label-0" x="9151.5" y="9200" font-size="120" font-family="Arial" text-anchor="start" dominant-baseline="middle" fill="#666666">0.0</text>
+    <text id="right-y-label-1" x="9151.5" y="7460" font-size="120" font-family="Arial" text-anchor="start" dominant-baseline="middle" fill="#666666">1.0K</text>
+    <text id="right-y-label-2" x="9151.5" y="5720" font-size="120" font-family="Arial" text-anchor="start" dominant-baseline="middle" fill="#666666">2.0K</text>
+    <text id="right-y-label-3" x="9151.5" y="3980" font-size="120" font-family="Arial" text-anchor="start" dominant-baseline="middle" fill="#666666">3.0K</text>
+    <text id="right-y-label-4" x="9151.5" y="2240" font-size="120" font-family="Arial" text-anchor="start" dominant-baseline="middle" fill="#666666">4.0K</text>
+    <text id="right-y-label-5" x="9151.5" y="500" font-size="120" font-family="Arial" text-anchor="start" dominant-baseline="middle" fill="#666666">5.0K</text>
+    <g id="grid-lines">
+      <line id="grid-h-0" x1="818" y1="500" x2="9101.5" y2="500" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-1" x1="818" y1="2240" x2="9101.5" y2="2240" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-2" x1="818" y1="3980" x2="9101.5" y2="3980" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-3" x1="818" y1="5720" x2="9101.5" y2="5720" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-4" x1="818" y1="7460" x2="9101.5" y2="7460" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-5" x1="818" y1="9200" x2="9101.5" y2="9200" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+    </g>
+  </g>
+</svg>"
+`;
+
+exports[`real multi-series renderers > stacks positive bar segments so the upper segment starts at the lower segment end 1`] = `
+"<svg xmlns="http://www.w3.org/2000/svg"
+  width="800" height="600"
+  viewBox="0 0 10000 10000"
+  preserveAspectRatio="xMidYMid meet"
+  role="Chart"
+  aria-label="Stacked bar chart titled &quot;Chart&quot;. Shows 2 series across 2 categories. Minimum value of 1 at Top – B; maximum of 4 at Base – B; average of 2.5."
+  >
+  <style type="text/css">
+  <![CDATA[text { 
+        font-family: Arial, Helvetica, sans-serif;
+        /* Prevent text selection in interactive contexts */
+        user-select: none;
+        -webkit-user-select: none;
+      }]]>
+  </style>
+  <g id="chart-root" role="graphics-document">
+    <rect id="stacked-bar-0-0" role="graphics-symbol" aria-label="Base, A: 2" x="1252" y="5720" width="3472.8" height="3480" fill="#1B4D8F" stroke="#ffffff" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <rect id="stacked-bar-0-1" role="graphics-symbol" aria-label="Base, B: 4" x="5593" y="2240" width="3472.8" height="6960" fill="#1B4D8F" stroke="#ffffff" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <rect id="stacked-bar-1-0" role="graphics-symbol" aria-label="Top, A: 3" x="1252" y="500" width="3472.8" height="5220" fill="#006D5B" stroke="#ffffff" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <rect id="stacked-bar-1-1" role="graphics-symbol" aria-label="Top, B: 1" x="5593" y="500" width="3472.8" height="1740" fill="#006D5B" stroke="#ffffff" stroke-width="1" vector-effect="non-scaling-stroke" />
+    <text id="x-label-0" x="818" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">A</text>
+    <text id="x-label-1" x="9500" y="9250" font-size="120" font-family="Arial" text-anchor="middle" fill="#666666">B</text>
+    <text id="y-label-0" x="768" y="9200" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">0.0</text>
+    <text id="y-label-1" x="768" y="7460" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">1.0</text>
+    <text id="y-label-2" x="768" y="5720" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">2.0</text>
+    <text id="y-label-3" x="768" y="3980" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">3.0</text>
+    <text id="y-label-4" x="768" y="2240" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">4.0</text>
+    <text id="y-label-5" x="768" y="500" font-size="120" font-family="Arial" text-anchor="end" dominant-baseline="middle" fill="#666666">5.0</text>
+    <g id="grid-lines">
+      <line id="grid-h-0" x1="818" y1="500" x2="9500" y2="500" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-1" x1="818" y1="2240" x2="9500" y2="2240" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-2" x1="818" y1="3980" x2="9500" y2="3980" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-3" x1="818" y1="5720" x2="9500" y2="5720" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-4" x1="818" y1="7460" x2="9500" y2="7460" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <line id="grid-h-5" x1="818" y1="9200" x2="9500" y2="9200" stroke="#eeeeee" stroke-width="1" vector-effect="non-scaling-stroke" />
+    </g>
+  </g>
+</svg>"
+`;

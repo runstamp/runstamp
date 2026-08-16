@@ -1,0 +1,5031 @@
+{
+  "id": "pdf-statement-bank-checking",
+  "format": "pdf",
+  "description": "Retail bank checking account statement with sectioned transaction ledgers, per-section totals, and a daily ending balance grid.",
+  "provenance": "Modeled on a large US retail bank (Chase/Wells Fargo style) monthly consumer checking statement. Exercises many dense numeric transaction rows split across five categorized sections with computed per-section totals that reconcile to an account summary, zebra striping, repeated table headers across a page break, a multi-pair daily balance grid, and fine-print regulatory text with a dynamic footer and page numbers.",
+  "expectedProperties": {
+    "pageCountMin": 2,
+    "hasTable": true,
+    "transactionSections": 5,
+    "transactionRows": 45,
+    "endingBalance": 16721.28
+  },
+  "document": {
+    "meta": {
+      "title": "First Meridian Bank — Everyday Checking Statement, June 2026",
+      "author": "First Meridian Bank, N.A.",
+      "subject": "Account statement for period 06/01/2026 - 06/30/2026"
+    },
+    "page": {
+      "size": "Letter",
+      "margin": {
+        "top": 46,
+        "right": 46,
+        "bottom": 58,
+        "left": 46
+      }
+    },
+    "pageNumber": {
+      "fontSize": 8,
+      "format": "Page {page} of {total}"
+    },
+    "children": [
+      {
+        "type": "container",
+        "style": {
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "marginBottom": 6
+        },
+        "children": [
+          {
+            "type": "container",
+            "style": {
+              "width": "55%"
+            },
+            "children": [
+              {
+                "type": "heading",
+                "level": 1,
+                "value": "FIRST MERIDIAN BANK",
+                "fontSize": 17
+              },
+              {
+                "type": "paragraph",
+                "value": "P.O. Box 182410, Columbus, OH 43218-2410",
+                "fontSize": 8
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "style": {
+              "width": "40%"
+            },
+            "children": [
+              {
+                "type": "paragraph",
+                "value": "Statement Period: June 1, 2026 through June 30, 2026",
+                "fontSize": 8,
+                "textAlign": "right"
+              },
+              {
+                "type": "paragraph",
+                "value": "Account Number: XXXXXX8241",
+                "fontSize": 8,
+                "textAlign": "right"
+              },
+              {
+                "type": "paragraph",
+                "value": "Everyday Checking",
+                "fontSize": 8,
+                "textAlign": "right"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "container",
+        "style": {
+          "marginTop": 8,
+          "marginBottom": 14
+        },
+        "children": [
+          {
+            "type": "paragraph",
+            "value": "JORDAN A. WHITFIELD",
+            "fontSize": 9
+          },
+          {
+            "type": "paragraph",
+            "value": "2219 BOYLSTON AVE E APT 304",
+            "fontSize": 9
+          },
+          {
+            "type": "paragraph",
+            "value": "SEATTLE WA 98102-4415",
+            "fontSize": 9
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "value": "Account Summary",
+        "fontSize": 12
+      },
+      {
+        "type": "table",
+        "columns": [
+          {
+            "width": "70%"
+          },
+          {
+            "width": "30%"
+          }
+        ],
+        "style": {
+          "borderTop": {
+            "color": "#000000",
+            "width": 0.9
+          },
+          "marginBottom": 16
+        },
+        "body": [
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Beginning Balance on June 1, 2026",
+                    "textAlign": "left",
+                    "fontSize": 9
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "$12,846.29",
+                    "textAlign": "right",
+                    "fontSize": 9
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Deposits and Additions (8)",
+                    "textAlign": "left",
+                    "fontSize": 9
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "14,847.17",
+                    "textAlign": "right",
+                    "fontSize": 9
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Checks Paid (7)",
+                    "textAlign": "left",
+                    "fontSize": 9
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "- 3,572.07",
+                    "textAlign": "right",
+                    "fontSize": 9
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "ATM & Debit Card Withdrawals (20)",
+                    "textAlign": "left",
+                    "fontSize": 9
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "- 2,217.25",
+                    "textAlign": "right",
+                    "fontSize": 9
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Electronic Withdrawals (8)",
+                    "textAlign": "left",
+                    "fontSize": 9
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "- 5,154.86",
+                    "textAlign": "right",
+                    "fontSize": 9
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Fees (2)",
+                    "textAlign": "left",
+                    "fontSize": 9
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "- 28.00",
+                    "textAlign": "right",
+                    "fontSize": 9
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Ending Balance on June 30, 2026",
+                    "textAlign": "left",
+                    "fontSize": 9
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "backgroundColor": "#E4E4E4",
+                  "borderTop": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "$16,721.28",
+                    "textAlign": "right",
+                    "fontSize": 9
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "backgroundColor": "#E4E4E4",
+                  "borderTop": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "value": "Deposits and Additions",
+        "fontSize": 12,
+        "keepWithNext": true
+      },
+      {
+        "type": "table",
+        "columns": [
+          {
+            "width": "11%"
+          },
+          {
+            "width": "67%"
+          },
+          {
+            "width": "22%"
+          }
+        ],
+        "style": {
+          "borderTop": {
+            "color": "#000000",
+            "width": 0.9
+          },
+          "marginBottom": 14
+        },
+        "header": [
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "DATE",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 5,
+                  "backgroundColor": "#E4E4E4",
+                  "borderBottom": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                },
+                "role": "th"
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "DESCRIPTION",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 5,
+                  "backgroundColor": "#E4E4E4",
+                  "borderBottom": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                },
+                "role": "th"
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "AMOUNT ($)",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 5,
+                  "backgroundColor": "#E4E4E4",
+                  "borderBottom": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                },
+                "role": "th"
+              }
+            ]
+          }
+        ],
+        "body": [
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/01",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "ACH Credit — Northwind Trading Co Payroll PPD ID: 4477016301",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "4,386.90",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/04",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Mobile Check Deposit #7215",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "825.00",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ],
+            "style": {
+              "backgroundColor": "#F5F5F5"
+            }
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/09",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Zelle Payment From Melissa Carter — Conf# FMB5501742",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "260.00",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/15",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "ACH Credit — Northwind Trading Co Payroll PPD ID: 4477016301",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "4,386.90",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ],
+            "style": {
+              "backgroundColor": "#F5F5F5"
+            }
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/17",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Merchant Refund — Alaska Airlines 027 Seattle WA",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "187.60",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/23",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "ACH Credit — WA State Dept of Revenue Tax Refund",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "412.00",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ],
+            "style": {
+              "backgroundColor": "#F5F5F5"
+            }
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/29",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "ACH Credit — Northwind Trading Co Payroll PPD ID: 4477016301",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "4,386.90",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/30",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Interest Payment",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "1.87",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ],
+            "style": {
+              "backgroundColor": "#F5F5F5"
+            }
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Total Deposits and Additions",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "backgroundColor": "#E4E4E4",
+                  "borderTop": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                },
+                "colSpan": 2
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "14,847.17",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "backgroundColor": "#E4E4E4",
+                  "borderTop": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "value": "Checks Paid",
+        "fontSize": 12,
+        "keepWithNext": true
+      },
+      {
+        "type": "table",
+        "columns": [
+          {
+            "width": "20%"
+          },
+          {
+            "width": "20%"
+          },
+          {
+            "width": "25%"
+          },
+          {
+            "width": "35%"
+          }
+        ],
+        "style": {
+          "borderTop": {
+            "color": "#000000",
+            "width": 0.9
+          },
+          "marginBottom": 4
+        },
+        "header": [
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "CHECK NO.",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 5,
+                  "backgroundColor": "#E4E4E4",
+                  "borderBottom": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                },
+                "role": "th"
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "DATE PAID",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 5,
+                  "backgroundColor": "#E4E4E4",
+                  "borderBottom": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                },
+                "role": "th"
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "AMOUNT ($)",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 5,
+                  "backgroundColor": "#E4E4E4",
+                  "borderBottom": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                },
+                "role": "th"
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 5,
+                  "backgroundColor": "#E4E4E4",
+                  "borderBottom": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                },
+                "role": "th"
+              }
+            ]
+          }
+        ],
+        "body": [
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "1841",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/02",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "350.00",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": " ",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "1842",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/05",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "1,200.00",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": " ",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ],
+            "style": {
+              "backgroundColor": "#F5F5F5"
+            }
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "1843",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/05",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "84.13",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": " ",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "1845 *",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/11",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "460.00",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": " ",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ],
+            "style": {
+              "backgroundColor": "#F5F5F5"
+            }
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "1846",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/16",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "92.50",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": " ",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "1847",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/24",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "1,175.00",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": " ",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ],
+            "style": {
+              "backgroundColor": "#F5F5F5"
+            }
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "1848",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/30",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "210.44",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": " ",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Total Checks Paid",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "backgroundColor": "#E4E4E4",
+                  "borderTop": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                },
+                "colSpan": 2
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "3,572.07",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "backgroundColor": "#E4E4E4",
+                  "borderTop": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": " ",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "backgroundColor": "#E4E4E4",
+                  "borderTop": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "value": "* Indicates a gap in sequential check numbers.",
+        "fontSize": 7,
+        "style": {
+          "marginBottom": 14
+        }
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "value": "ATM & Debit Card Withdrawals",
+        "fontSize": 12,
+        "keepWithNext": true
+      },
+      {
+        "type": "table",
+        "columns": [
+          {
+            "width": "11%"
+          },
+          {
+            "width": "67%"
+          },
+          {
+            "width": "22%"
+          }
+        ],
+        "style": {
+          "borderTop": {
+            "color": "#000000",
+            "width": 0.9
+          },
+          "marginBottom": 14
+        },
+        "header": [
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "DATE",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 5,
+                  "backgroundColor": "#E4E4E4",
+                  "borderBottom": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                },
+                "role": "th"
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "DESCRIPTION",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 5,
+                  "backgroundColor": "#E4E4E4",
+                  "borderBottom": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                },
+                "role": "th"
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "AMOUNT ($)",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 5,
+                  "backgroundColor": "#E4E4E4",
+                  "borderBottom": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                },
+                "role": "th"
+              }
+            ]
+          }
+        ],
+        "body": [
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/01",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Card Purchase — Whole Foods Market #10233 Seattle WA Card 6291",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "84.27",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/02",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Card Purchase — Shell Oil 57442991 Bellevue WA Card 6291",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "52.10",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ],
+            "style": {
+              "backgroundColor": "#F5F5F5"
+            }
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/03",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "ATM Withdrawal — 1500 4th Ave Seattle WA",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "200.00",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/04",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Card Purchase — Amazon Mktp US*RT4TZ81L3 Amzn.com/bill WA Card 6291",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "37.94",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ],
+            "style": {
+              "backgroundColor": "#F5F5F5"
+            }
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/06",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Card Purchase — Trader Joe's #130 Seattle WA Card 6291",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "96.55",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/07",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Card Purchase — Netflix.com 866-579-7172 CA Card 6291",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "15.49",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ],
+            "style": {
+              "backgroundColor": "#F5F5F5"
+            }
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/08",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Card Purchase — Chevron 0300855 Seattle WA Card 6291",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "48.63",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/10",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Card Purchase — Costco Whse #0110 Seattle WA Card 6291",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "243.87",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ],
+            "style": {
+              "backgroundColor": "#F5F5F5"
+            }
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/11",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Card Purchase — Starbucks Store 03217 Seattle WA Card 6291",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "11.85",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/12",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Card Purchase — Uber Trip Help.uber.com CA Card 6291",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "26.40",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ],
+            "style": {
+              "backgroundColor": "#F5F5F5"
+            }
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/13",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "ATM Withdrawal — 900 Madison St Seattle WA",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "100.00",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/14",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Card Purchase — The Home Depot #4712 Seattle WA Card 6291",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "138.22",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ],
+            "style": {
+              "backgroundColor": "#F5F5F5"
+            }
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/16",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Card Purchase — Safeway #1507 Seattle WA Card 6291",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "112.30",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/18",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Card Purchase — PCC Community Markets Seattle WA Card 6291",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "78.16",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ],
+            "style": {
+              "backgroundColor": "#F5F5F5"
+            }
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/20",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Card Purchase — REI #11 Seattle WA Card 6291",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "194.50",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/22",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Card Purchase — Delta Air 0062341887729 Atlanta GA Card 6291",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "428.60",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ],
+            "style": {
+              "backgroundColor": "#F5F5F5"
+            }
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/24",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Card Purchase — Walgreens #9067 Seattle WA Card 6291",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "24.18",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/26",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Card Purchase — Whole Foods Market #10233 Seattle WA Card 6291",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "91.44",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ],
+            "style": {
+              "backgroundColor": "#F5F5F5"
+            }
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/27",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "ATM Withdrawal — 1500 4th Ave Seattle WA",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "200.00",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/29",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Card Purchase — Bartell Drugs #24 Seattle WA Card 6291",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "32.75",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ],
+            "style": {
+              "backgroundColor": "#F5F5F5"
+            }
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Total ATM & Debit Card Withdrawals",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "backgroundColor": "#E4E4E4",
+                  "borderTop": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                },
+                "colSpan": 2
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "2,217.25",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "backgroundColor": "#E4E4E4",
+                  "borderTop": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "value": "Electronic Withdrawals",
+        "fontSize": 12,
+        "keepWithNext": true
+      },
+      {
+        "type": "table",
+        "columns": [
+          {
+            "width": "11%"
+          },
+          {
+            "width": "67%"
+          },
+          {
+            "width": "22%"
+          }
+        ],
+        "style": {
+          "borderTop": {
+            "color": "#000000",
+            "width": 0.9
+          },
+          "marginBottom": 14
+        },
+        "header": [
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "DATE",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 5,
+                  "backgroundColor": "#E4E4E4",
+                  "borderBottom": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                },
+                "role": "th"
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "DESCRIPTION",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 5,
+                  "backgroundColor": "#E4E4E4",
+                  "borderBottom": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                },
+                "role": "th"
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "AMOUNT ($)",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 5,
+                  "backgroundColor": "#E4E4E4",
+                  "borderBottom": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                },
+                "role": "th"
+              }
+            ]
+          }
+        ],
+        "body": [
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/01",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "ACH Debit — Cascade Property Mgmt Rent Web ID: 9000032117",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "2,350.00",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/05",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "ACH Debit — Seattle City Light Bill Pay PPD",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "148.73",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ],
+            "style": {
+              "backgroundColor": "#F5F5F5"
+            }
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/08",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "ACH Debit — Comcast Cable Comm 8778936 Web ID: 0000213249",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "110.45",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/12",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "ACH Debit — State Farm Insurance Prem SFPP PPD",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "187.20",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ],
+            "style": {
+              "backgroundColor": "#F5F5F5"
+            }
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/15",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Online Transfer To Savings Account ...7734 Conf# 2214088213",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "1,000.00",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/19",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "ACH Debit — T-Mobile PCS Svc Web ID: 4451120992",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "95.60",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ],
+            "style": {
+              "backgroundColor": "#F5F5F5"
+            }
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/25",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "ACH Debit — Puget Sound Federal CU Auto Loan Pmt PPD",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "412.88",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/28",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Online Payment To Visa Card ...4406 Conf# 2290417551",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "850.00",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ],
+            "style": {
+              "backgroundColor": "#F5F5F5"
+            }
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Total Electronic Withdrawals",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "backgroundColor": "#E4E4E4",
+                  "borderTop": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                },
+                "colSpan": 2
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "5,154.86",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "backgroundColor": "#E4E4E4",
+                  "borderTop": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "value": "Fees",
+        "fontSize": 12,
+        "keepWithNext": true
+      },
+      {
+        "type": "table",
+        "columns": [
+          {
+            "width": "11%"
+          },
+          {
+            "width": "67%"
+          },
+          {
+            "width": "22%"
+          }
+        ],
+        "style": {
+          "borderTop": {
+            "color": "#000000",
+            "width": 0.9
+          },
+          "marginBottom": 14
+        },
+        "header": [
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "DATE",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 5,
+                  "backgroundColor": "#E4E4E4",
+                  "borderBottom": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                },
+                "role": "th"
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "DESCRIPTION",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 5,
+                  "backgroundColor": "#E4E4E4",
+                  "borderBottom": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                },
+                "role": "th"
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "AMOUNT ($)",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 5,
+                  "backgroundColor": "#E4E4E4",
+                  "borderBottom": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                },
+                "role": "th"
+              }
+            ]
+          }
+        ],
+        "body": [
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/17",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Domestic Wire Transfer Fee — Outgoing",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "25.00",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/27",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Non-Meridian ATM Fee — Operator Surcharge Rebate Not Applicable",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "3.00",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ],
+            "style": {
+              "backgroundColor": "#F5F5F5"
+            }
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "Total Fees",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "backgroundColor": "#E4E4E4",
+                  "borderTop": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                },
+                "colSpan": 2
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "28.00",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "backgroundColor": "#E4E4E4",
+                  "borderTop": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "value": "Daily Ending Balance",
+        "fontSize": 12,
+        "keepWithNext": true
+      },
+      {
+        "type": "table",
+        "columns": [
+          {
+            "width": "11%"
+          },
+          {
+            "width": "22%"
+          },
+          {
+            "width": "11%"
+          },
+          {
+            "width": "22%"
+          },
+          {
+            "width": "11%"
+          },
+          {
+            "width": "23%"
+          }
+        ],
+        "style": {
+          "borderTop": {
+            "color": "#000000",
+            "width": 0.9
+          },
+          "marginBottom": 16
+        },
+        "header": [
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "DATE",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 5,
+                  "backgroundColor": "#E4E4E4",
+                  "borderBottom": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                },
+                "role": "th"
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "BALANCE ($)",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 5,
+                  "backgroundColor": "#E4E4E4",
+                  "borderBottom": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                },
+                "role": "th"
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "DATE",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 5,
+                  "backgroundColor": "#E4E4E4",
+                  "borderBottom": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                },
+                "role": "th"
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "BALANCE ($)",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 5,
+                  "backgroundColor": "#E4E4E4",
+                  "borderBottom": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                },
+                "role": "th"
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "DATE",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 5,
+                  "backgroundColor": "#E4E4E4",
+                  "borderBottom": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                },
+                "role": "th"
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "BALANCE ($)",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 5,
+                  "backgroundColor": "#E4E4E4",
+                  "borderBottom": {
+                    "color": "#000000",
+                    "width": 0.9
+                  }
+                },
+                "role": "th"
+              }
+            ]
+          }
+        ],
+        "body": [
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/01",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "14,798.92",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/02",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "14,396.82",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/03",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "14,196.82",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/04",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "14,983.88",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/05",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "13,551.02",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/06",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "13,454.47",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/07",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "13,438.98",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/08",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "13,279.90",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/09",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "13,539.90",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/10",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "13,296.03",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/11",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "12,824.18",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/12",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "12,610.58",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/13",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "12,510.58",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/14",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "12,372.36",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/15",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "15,759.26",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/16",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "15,554.46",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/17",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "15,717.06",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/18",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "15,638.90",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/19",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "15,543.30",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/20",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "15,348.80",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/22",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "14,920.20",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/23",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "15,332.20",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/24",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "14,133.02",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/25",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "13,720.14",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/26",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "13,628.70",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/27",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "13,425.70",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/28",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "12,575.70",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/29",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "16,929.85",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "06/30",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": "16,721.28",
+                    "textAlign": "right",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": " ",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              },
+              {
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "value": " ",
+                    "textAlign": "left",
+                    "fontSize": 8
+                  }
+                ],
+                "style": {
+                  "padding": 4,
+                  "borderBottom": {
+                    "color": "#BFBFBF",
+                    "width": 0.5
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "value": "In Case of Errors or Questions About Your Electronic Funds Transfers",
+        "fontSize": 9
+      },
+      {
+        "type": "paragraph",
+        "value": "Call us at 1-800-555-0173 or write us at First Meridian Bank Customer Claims, P.O. Box 182410, Columbus, OH 43218-2410 as soon as you can if you think your statement or receipt is wrong or if you need more information about a transfer listed on the statement or receipt. We must hear from you no later than 60 days after we sent you the FIRST statement on which the problem or error appeared. Be prepared to give us the following information: your name and account number; the dollar amount of the suspected error; a description of the error or transfer you are unsure of, and explain as clearly as you can why you believe it is an error or why you need more information. We will investigate your complaint and will correct any error promptly. If we take more than 10 business days (20 business days for new accounts) to do this, we will credit your account for the amount you think is in error so that you will have use of the money during the time it takes us to complete our investigation.",
+        "fontSize": 7,
+        "lineHeight": 1.35
+      },
+      {
+        "type": "paragraph",
+        "value": "First Meridian Bank, N.A.  |  Member FDIC  |  Equal Housing Lender  |  Questions? Call 1-800-555-0173, 24 hours a day, 7 days a week.",
+        "fontSize": 7,
+        "style": {
+          "marginTop": 8
+        }
+      }
+    ]
+  }
+}

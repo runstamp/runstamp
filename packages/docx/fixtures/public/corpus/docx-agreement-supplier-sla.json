@@ -1,0 +1,480 @@
+{
+  "id": "docx-agreement-supplier-sla",
+  "format": "docx",
+  "description": "Master supplier agreement for managed logistics IT services with severity-tiered SLA tables, service credit schedule, and an escalation matrix.",
+  "provenance": "Modeled on the schedule-heavy master supplier agreements used in logistics and facilities outsourcing, where the commercial clauses are short but Schedule 2 carries dense service-level tables. Deliberately exercises a table of contents over multi-level headings, four SLA tables with fixed column widths and header-row shading, a service-credit percentage matrix, nested letter/roman lists inside clause text, and cross-references between clauses and schedules.",
+  "expectedProperties": {
+    "pageCountMin": 5,
+    "hasTable": true,
+    "slaTables": 4,
+    "hasTableOfContents": true
+  },
+  "document": {
+    "type": "DocxDocument",
+    "pageSize": "letter",
+    "metadata": {
+      "title": "Master Supplier Agreement — Schedule of Services and Service Levels",
+      "author": "Crestway Logistics plc",
+      "subject": "Managed IT services supplier agreement",
+      "language": "en-GB"
+    },
+    "theme": {
+      "preset": "corporate"
+    },
+    "tableOfContents": {
+      "title": "Contents",
+      "maxLevel": 2,
+      "showPageNumbers": true,
+      "leader": "dot"
+    },
+    "footer": {
+      "text": "Crestway Logistics plc / Ternhaven Systems Ltd — MSA No. CWL-2026-114 — Commercial in Confidence",
+      "includePageNumber": true
+    },
+    "pages": [
+      {
+        "elements": [
+          {
+            "type": "heading",
+            "level": 1,
+            "text": "MASTER SUPPLIER AGREEMENT"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "This Master Supplier Agreement (the ", "style": {} },
+              { "text": "“Agreement”", "style": { "fontWeight": "bold" } },
+              { "text": ") is made on 6 May 2026 between " },
+              { "text": "Crestway Logistics plc", "style": { "fontWeight": "bold" } },
+              { "text": " (company no. 03288417) of Meridian House, 4 Trafford Wharf Road, Manchester M17 1AB (“Customer”) and " },
+              { "text": "Ternhaven Systems Ltd", "style": { "fontWeight": "bold" } },
+              { "text": " (company no. 09174226) of 2 Brindley Place, Birmingham B1 2JB (“Supplier”)." }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "1. Term and Scope"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "1.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "This Agreement commences on 1 June 2026 (the “Commencement Date”) and continues for an initial term of thirty-six (36) months, renewing automatically for successive twelve (12) month periods unless either party gives not less than ninety (90) days’ written notice of non-renewal." }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "1.2  ", "style": { "fontWeight": "bold" } },
+              { "text": "Supplier shall provide the managed warehouse-management-system (WMS) hosting, integration and support services described in Schedule 1 (Services), in accordance with the service levels in Schedule 2 (Service Levels and Service Credits)." }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "2. Charges and Invoicing"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "2.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "The Charges are set out in Schedule 3 (Charges). Supplier shall invoice monthly in arrears; undisputed invoices are payable within forty-five (45) days of receipt. Charges are exclusive of VAT and shall be indexed annually on each anniversary of the Commencement Date by CPI plus one percent (1%), capped at four percent (4%) per annum." }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "2.2  ", "style": { "fontWeight": "bold" } },
+              { "text": "Service credits accrued under paragraph 4 of Schedule 2 shall be shown as a separate line item on the next invoice following the month in which they accrue, and are Customer’s sole and exclusive financial remedy for the corresponding service level failure, save where Clause 2.3 applies." }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "2.3  ", "style": { "fontWeight": "bold" } },
+              { "text": "Where a Severity 1 Incident recurs three (3) or more times in any rolling three (3) month period, or Monthly Availability falls below 98.0% in any month, Customer may treat the failure as a material breach and exercise its rights under Clause 5.2 notwithstanding any service credits paid." }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "3. Supplier Obligations"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "3.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "Supplier shall:" }
+            ]
+          },
+          {
+            "type": "list",
+            "listType": "letter",
+            "items": [
+              { "text": "perform the Services with reasonable skill and care and in accordance with Good Industry Practice;" },
+              { "text": "maintain the certifications listed in paragraph 6 of Schedule 1, including ISO/IEC 27001 and Cyber Essentials Plus, throughout the term;" },
+              {
+                "text": "provide the reports described in paragraph 5 of Schedule 2, comprising:",
+                "nestedList": {
+                  "type": "list",
+                  "listType": "roman",
+                  "items": [
+                    { "text": "a monthly service report within five (5) Business Days of month end, covering availability, incident volumes and service credit calculations;" },
+                    { "text": "a quarterly service review pack, presented at the Service Review Board described in paragraph 6 of Schedule 2; and" },
+                    { "text": "an annual continuous improvement plan identifying not fewer than three (3) efficiency or resilience initiatives." }
+                  ]
+                }
+              },
+              { "text": "not make any change to the hosting environment that degrades the Disaster Recovery configuration described in paragraph 7 of Schedule 2 without Customer’s prior written consent." }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "4. Liability"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "4.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "Subject to Clause 4.2, each party’s aggregate liability arising out of or in connection with this Agreement in any Contract Year shall not exceed one hundred and twenty-five percent (125%) of the Charges paid or payable in that Contract Year." }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "4.2  ", "style": { "fontWeight": "bold" } },
+              { "text": "Nothing in this Agreement limits liability for death or personal injury caused by negligence, fraud or fraudulent misrepresentation, or any liability that cannot lawfully be limited." }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "5. Termination"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "5.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "Either party may terminate this Agreement immediately by written notice if the other party commits a material breach which is irremediable or, if remediable, is not remedied within thirty (30) days of written notice requiring remedy." }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "5.2  ", "style": { "fontWeight": "bold" } },
+              { "text": "Customer may terminate for persistent service level failure as described in Clause 2.3 on sixty (60) days’ written notice, in which case Supplier shall provide the exit assistance described in Schedule 4 (Exit Plan) at the day rates in Schedule 3, discounted by twenty percent (20%)." }
+            ]
+          }
+        ]
+      },
+      {
+        "sectionBreak": "continuous",
+        "elements": [
+          {
+            "type": "heading",
+            "level": 1,
+            "text": "SCHEDULE 2 — Service Levels and Service Credits"
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "1. Service Availability"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "1.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "“Monthly Availability” means the percentage of minutes in a calendar month, excluding Permitted Maintenance Windows, during which the production WMS environment is available to process transactions, measured by Supplier’s monitoring platform at one-minute intervals." }
+            ]
+          },
+          {
+            "type": "table",
+            "tableStyle": "corporate",
+            "repeatHeaders": true,
+            "caption": "Table 2-1: Availability targets by service tier",
+            "tableCaption": "Availability targets by service tier",
+            "columns": [
+              { "width": 120 },
+              { "width": 105 },
+              { "width": 105 },
+              { "width": 138 }
+            ],
+            "rows": [
+              {
+                "isHeader": true,
+                "cells": [
+                  { "text": "Service element", "style": { "fontWeight": "bold" } },
+                  { "text": "Service tier", "style": { "fontWeight": "bold" } },
+                  { "text": "Monthly Availability target", "style": { "fontWeight": "bold" } },
+                  { "text": "Measurement exclusions", "style": { "fontWeight": "bold" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Production WMS (all sites)" },
+                  { "text": "Tier 1 — Critical" },
+                  { "text": "99.90%", "style": { "textAlign": "center" } },
+                  { "text": "Permitted Maintenance Windows; Force Majeure Events" }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Carrier integration gateway" },
+                  { "text": "Tier 1 — Critical" },
+                  { "text": "99.90%", "style": { "textAlign": "center" } },
+                  { "text": "Third-party carrier API outages evidenced by carrier status page" }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Reporting and analytics portal" },
+                  { "text": "Tier 2 — Important" },
+                  { "text": "99.50%", "style": { "textAlign": "center" } },
+                  { "text": "Permitted Maintenance Windows" }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Test and training environments" },
+                  { "text": "Tier 3 — Standard" },
+                  { "text": "97.00%", "style": { "textAlign": "center" } },
+                  { "text": "Business Hours measurement only (07:00–19:00 UK, Mon–Sat)" }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "2. Incident Severity Definitions and Response Targets"
+          },
+          {
+            "type": "table",
+            "tableStyle": "corporate",
+            "repeatHeaders": true,
+            "caption": "Table 2-2: Incident severity classification and response/resolution targets",
+            "tableCaption": "Incident severity classification and targets",
+            "columns": [
+              { "width": 58 },
+              { "width": 168 },
+              { "width": 80 },
+              { "width": 80 },
+              { "width": 82 }
+            ],
+            "rows": [
+              {
+                "isHeader": true,
+                "cells": [
+                  { "text": "Severity", "style": { "fontWeight": "bold" } },
+                  { "text": "Definition", "style": { "fontWeight": "bold" } },
+                  { "text": "Response target", "style": { "fontWeight": "bold" } },
+                  { "text": "Update frequency", "style": { "fontWeight": "bold" } },
+                  { "text": "Resolution target", "style": { "fontWeight": "bold" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "S1", "style": { "fontWeight": "bold", "textAlign": "center" } },
+                  { "text": "Production WMS unavailable at one or more sites, or order despatch halted; no workaround available" },
+                  { "text": "15 minutes (24×7)", "style": { "textAlign": "center" } },
+                  { "text": "Every 30 minutes", "style": { "textAlign": "center" } },
+                  { "text": "4 hours", "style": { "textAlign": "center" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "S2", "style": { "fontWeight": "bold", "textAlign": "center" } },
+                  { "text": "Material degradation of a Tier 1 service element; workaround available but with significant manual effort" },
+                  { "text": "30 minutes (24×7)", "style": { "textAlign": "center" } },
+                  { "text": "Every 2 hours", "style": { "textAlign": "center" } },
+                  { "text": "8 hours", "style": { "textAlign": "center" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "S3", "style": { "fontWeight": "bold", "textAlign": "center" } },
+                  { "text": "Fault affecting a Tier 2 service element or a single user group; acceptable workaround in place" },
+                  { "text": "4 Business Hours", "style": { "textAlign": "center" } },
+                  { "text": "Daily", "style": { "textAlign": "center" } },
+                  { "text": "3 Business Days", "style": { "textAlign": "center" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "S4", "style": { "fontWeight": "bold", "textAlign": "center" } },
+                  { "text": "Minor fault, cosmetic defect or request for information; no operational impact" },
+                  { "text": "1 Business Day", "style": { "textAlign": "center" } },
+                  { "text": "Weekly", "style": { "textAlign": "center" } },
+                  { "text": "10 Business Days", "style": { "textAlign": "center" } }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "2.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "Severity classification is made initially by Supplier’s service desk and may be escalated by Customer’s nominated representatives listed in Table 2-4. Disputes over classification are resolved at the Service Review Board without prejudice to the running of the targets in Table 2-2." }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "3. Service Credits",
+            "pageBreakBefore": true
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "3.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "Where Monthly Availability for a Tier 1 service element falls below the target in Table 2-1, or Supplier fails an S1/S2 resolution target in Table 2-2, service credits accrue as a percentage of the Monthly Service Charge for the affected service element, as set out in Table 2-3." }
+            ]
+          },
+          {
+            "type": "table",
+            "tableStyle": "striped",
+            "repeatHeaders": true,
+            "caption": "Table 2-3: Service credit schedule",
+            "tableCaption": "Service credit schedule",
+            "columns": [
+              { "width": 140 },
+              { "width": 110 },
+              { "width": 110 },
+              { "width": 108 }
+            ],
+            "rows": [
+              {
+                "isHeader": true,
+                "cells": [
+                  { "text": "Failure band", "style": { "fontWeight": "bold" } },
+                  { "text": "Tier 1 credit", "style": { "fontWeight": "bold" } },
+                  { "text": "Tier 2 credit", "style": { "fontWeight": "bold" } },
+                  { "text": "Monthly cap", "style": { "fontWeight": "bold" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Availability 99.50% to below target" },
+                  { "text": "3% of Monthly Service Charge", "style": { "textAlign": "center" } },
+                  { "text": "2%", "style": { "textAlign": "center" } },
+                  { "text": "—", "style": { "textAlign": "center" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Availability 99.00% to 99.49%" },
+                  { "text": "6%", "style": { "textAlign": "center" } },
+                  { "text": "4%", "style": { "textAlign": "center" } },
+                  { "text": "—", "style": { "textAlign": "center" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Availability 98.00% to 98.99%" },
+                  { "text": "10%", "style": { "textAlign": "center" } },
+                  { "text": "6%", "style": { "textAlign": "center" } },
+                  { "text": "—", "style": { "textAlign": "center" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Availability below 98.00%" },
+                  { "text": "15%", "style": { "textAlign": "center" } },
+                  { "text": "8%", "style": { "textAlign": "center" } },
+                  { "text": "See Clause 2.3 of the Agreement", "style": { "textAlign": "center" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Missed S1 resolution target (per incident)" },
+                  { "text": "5%", "style": { "textAlign": "center" } },
+                  { "text": "n/a", "style": { "textAlign": "center" } },
+                  { "text": "Aggregate credits capped at 20% of the total Monthly Service Charge", "style": { "textAlign": "center" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Missed S2 resolution target (per incident)" },
+                  { "text": "2%", "style": { "textAlign": "center" } },
+                  { "text": "1%", "style": { "textAlign": "center" } },
+                  { "text": "Included in 20% aggregate cap", "style": { "textAlign": "center" } }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "4. Escalation Matrix",
+            "pageBreakBefore": true
+          },
+          {
+            "type": "table",
+            "tableStyle": "bordered",
+            "repeatHeaders": true,
+            "caption": "Table 2-4: Escalation contacts and trigger points",
+            "tableCaption": "Escalation contacts and trigger points",
+            "columns": [
+              { "width": 62 },
+              { "width": 138 },
+              { "width": 138 },
+              { "width": 130 }
+            ],
+            "rows": [
+              {
+                "isHeader": true,
+                "cells": [
+                  { "text": "Level", "style": { "fontWeight": "bold", "backgroundColor": "DDE5F0" } },
+                  { "text": "Supplier contact", "style": { "fontWeight": "bold", "backgroundColor": "DDE5F0" } },
+                  { "text": "Customer contact", "style": { "fontWeight": "bold", "backgroundColor": "DDE5F0" } },
+                  { "text": "Trigger", "style": { "fontWeight": "bold", "backgroundColor": "DDE5F0" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "L1", "style": { "textAlign": "center" } },
+                  { "text": "Service Desk Team Lead — Priya Raghunathan" },
+                  { "text": "IT Operations Manager — Dan Whitfield" },
+                  { "text": "Any S1 at logging; S2 open beyond 4 hours" }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "L2", "style": { "textAlign": "center" } },
+                  { "text": "Service Delivery Manager — Tomas Keane" },
+                  { "text": "Head of Supply Chain Systems — Rachel Obeng" },
+                  { "text": "S1 open beyond 2 hours; missed update frequency in Table 2-2" }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "L3", "style": { "textAlign": "center" } },
+                  { "text": "Operations Director — Sarah Lindqvist" },
+                  { "text": "Chief Information Officer — Marcus Bell" },
+                  { "text": "S1 open beyond resolution target; invocation of DR plan" }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "L4", "style": { "textAlign": "center" } },
+                  { "text": "Chief Executive — David Ternent" },
+                  { "text": "Chief Operating Officer — Fiona Crest" },
+                  { "text": "Persistent failure under Clause 2.3; exit invocation under Clause 5.2" }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "4.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "Escalation contacts shall be kept current by each party notifying the other in writing within five (5) Business Days of any change. Escalation does not suspend the targets in Table 2-2." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

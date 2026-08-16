@@ -1,0 +1,19 @@
+{
+  "fixtureId": "notes-comments-media",
+  "passed": true,
+  "failures": [],
+  "oracle": {
+    "available": true,
+    "fixtureId": "notes-comments-media",
+    "passed": true,
+    "failures": [],
+    "pdfPath": "/Users/jake/plain/plainworks/paperjsx.com/packages/core/tests/desktopValidation/artifacts/notes-comments-media/notes-comments-media.pdf",
+    "savedCopyPath": "/Users/jake/plain/plainworks/paperjsx.com/packages/core/tests/desktopValidation/artifacts/notes-comments-media/notes-comments-media.roundtrip.pptx",
+    "screenshotPath": "/Users/jake/plain/plainworks/paperjsx.com/packages/core/tests/desktopValidation/artifacts/notes-comments-media/notes-comments-media.png",
+    "details": [
+      "Opened presentation: notes-comments-media.input.pptx, slides=2",
+      "PowerPoint canonicalized 22 normalized package part(s) during round-trip save."
+    ]
+  },
+  "structuralPassed": true
+}

@@ -1,0 +1,22 @@
+{
+  "id": "pptx-title",
+  "format": "pptx",
+  "surface": "agent",
+  "description": "Agent title pattern baseline.",
+  "document": {
+    "type": "presentation",
+    "version": "1.0",
+    "presentationTitle": "FY27 Operating Plan",
+    "companyName": "Northstar Systems",
+    "theme": "default-navy",
+    "slides": [
+      {
+        "pattern": "title",
+        "content": {
+          "title": "FY27 Operating Plan",
+          "subtitle": "Executive leadership review — 18 August 2026"
+        }
+      }
+    ]
+  }
+}

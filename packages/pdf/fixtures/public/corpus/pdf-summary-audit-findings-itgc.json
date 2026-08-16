@@ -1,0 +1,276 @@
+{
+  "id": "pdf-summary-audit-findings-itgc",
+  "format": "pdf",
+  "description": "Internal audit findings summary for an IT general controls review: opinion block, ratings legend, findings register with severity colors, and per-finding observation/risk/response sections.",
+  "provenance": "Modeled on the executive summary section of internal audit reports issued to audit committees after ITGC reviews (access management, change management, backup and recovery). Exercises a ratings legend table, a five-column findings register with severity-coloured cells, and four repeating structured finding blocks (observation, risk, recommendation, management response with owner and due date) that stress heading rhythm and page-break behaviour.",
+  "expectedProperties": {
+    "pageCountMin": 2,
+    "hasTable": true,
+    "findings": 4,
+    "highRatedFindings": 1,
+    "overallOpinion": "Partially effective"
+  },
+  "document": {
+    "meta": {
+      "title": "Internal Audit Report IA-2026-07 — IT General Controls Review",
+      "author": "Group Internal Audit, Beaumont Retail Group",
+      "subject": "Audit findings summary"
+    },
+    "page": {
+      "size": "A4",
+      "margin": { "top": 42, "right": 52, "bottom": 50, "left": 52 }
+    },
+    "pageNumber": {
+      "fontSize": 7,
+      "format": "IA-2026-07 - page {page} of {total}"
+    },
+    "children": [
+      { "type": "heading", "level": 1, "font": "Helvetica-Bold", "fontSize": 17, "value": "Internal Audit Report IA-2026-07" },
+      { "type": "heading", "level": 2, "font": "Helvetica-Bold", "fontSize": 12, "value": "IT General Controls Review — Merchandising and Finance Platforms" },
+      { "type": "paragraph", "fontSize": 8.5, "value": "Beaumont Retail Group plc  •  Fieldwork: April 13-May 29, 2026  •  Draft issued: June 8, 2026  •  Final issued: June 22, 2026" },
+      { "type": "paragraph", "fontSize": 8.5, "value": "Chief Audit Executive: R. Ntuli  •  Engagement lead: F. Delacroix  •  Executive sponsor: Group CIO" },
+      { "type": "divider", "style": { "marginTop": 6, "marginBottom": 10 } },
+      { "type": "heading", "level": 3, "font": "Helvetica-Bold", "value": "Overall opinion" },
+      {
+        "type": "table",
+        "style": { "marginTop": 4, "marginBottom": 8 },
+        "columns": [{ "width": "24%" }, { "width": "76%" }],
+        "body": [
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 10, "textAlign": "center", "value": "PARTIALLY EFFECTIVE" }, { "type": "paragraph", "fontSize": 8, "textAlign": "center", "style": { "marginTop": 6 }, "value": "1 high • 2 medium • 1 low" }], "style": { "backgroundColor": "#d8e6f1", "padding": 8, "verticalAlign": "middle", "borderLeft": { "color": "#214d70", "width": 3 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 9.5, "lineHeight": 1.3, "value": "The control environment over the in-scope platforms (Oracle Retail merchandising, Workday Financials, and the nightly integration layer) is partially effective. Controls over change management are well designed and operated consistently. However, one high-rated finding on privileged access to the integration middleware and two medium-rated findings on joiner-mover-leaver processing and backup restoration testing require remediation before reliance can be placed on the environment for the FY2026 external audit." }], "style": { "padding": 8 } }
+            ]
+          }
+        ]
+      },
+      { "type": "paragraph", "fontSize": 9.5, "lineHeight": 1.3, "style": { "marginRight": 96 }, "value": "We raised four findings: one high, two medium, and one low. Management accepted all four and the remediation dates; none were disputed. Two advisory observations—logging retention and password-vault onboarding—were reported separately to the CISO and are omitted here. Follow-up testing starts the week of October 12, 2026." },
+      { "type": "heading", "level": 3, "font": "Helvetica-Bold", "style": { "marginTop": 10 }, "value": "Ratings legend" },
+      {
+        "type": "table",
+        "style": { "marginTop": 4, "borderTop": { "color": "#1a1a1a", "width": 1 }, "borderBottom": { "color": "#1a1a1a", "width": 1 } },
+        "columns": [{ "width": "14%" }, { "width": "86%" }],
+        "body": [
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "textAlign": "center", "value": "High" }], "style": { "backgroundColor": "#edb2ad", "padding": 4 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Fundamental control weakness with realistic potential for material financial, regulatory, or operational impact. Remediation expected within 90 days; reported to the Audit Committee individually." }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "textAlign": "center", "value": "Medium" }], "style": { "backgroundColor": "#f2d39b", "padding": 4 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Control weakness that undermines an individual control objective but is partially compensated elsewhere. Remediation expected within 180 days." }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "textAlign": "center", "value": "Low" }], "style": { "backgroundColor": "#b9ddbd", "padding": 4 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Isolated exception or improvement opportunity with limited impact. Tracked by management; verified at the next cyclical review." }], "style": { "padding": 4 } }
+            ]
+          }
+        ]
+      },
+      { "type": "heading", "level": 3, "font": "Helvetica-Bold", "style": { "marginTop": 12 }, "value": "Findings register" },
+      {
+        "type": "table",
+        "style": { "marginTop": 4, "borderTop": { "color": "#1a1a1a", "width": 1 }, "borderBottom": { "color": "#1a1a1a", "width": 1 } },
+        "columns": [{ "width": "9%" }, { "width": "39%" }, { "width": "11%" }, { "width": "23%" }, { "width": "18%" }],
+        "header": [
+          {
+            "cells": [
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "value": "Ref" }], "style": { "backgroundColor": "#e4e7eb", "padding": 4 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "value": "Finding" }], "style": { "backgroundColor": "#e4e7eb", "padding": 4 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "value": "Rating" }], "style": { "backgroundColor": "#e4e7eb", "padding": 4 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "value": "Owner" }], "style": { "backgroundColor": "#e4e7eb", "padding": 4 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "value": "Agreed date" }], "style": { "backgroundColor": "#e4e7eb", "padding": 4 } }
+            ]
+          }
+        ],
+        "body": [
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "F-01" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Shared privileged account on integration middleware with no session attribution" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "textAlign": "center", "value": "High" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 }, "backgroundColor": "#edb2ad" } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Head of Integration Services" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "30 Sep 2026" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "F-02" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Leaver access not revoked within SLA for 9 of 45 sampled leavers" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "textAlign": "center", "value": "Medium" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 }, "backgroundColor": "#f2d39b" } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "IT Service Delivery Manager" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "31 Oct 2026" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "F-03" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Backup restoration tests not performed for two of six tier-1 databases in the last 12 months" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "textAlign": "center", "value": "Medium" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 }, "backgroundColor": "#f2d39b" } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Head of Infrastructure" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "30 Nov 2026" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "F-04" }], "style": { "padding": 4 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Emergency change records missing retrospective approval in 3 of 28 sampled changes" }], "style": { "padding": 4 } },
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "textAlign": "center", "value": "Low" }], "style": { "padding": 4, "backgroundColor": "#b9ddbd" } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Change Manager" }], "style": { "padding": 4 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "31 Aug 2026" }], "style": { "padding": 4 } }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "style": { "marginTop": 10 },
+        "columns": [{ "width": "32%" }, { "width": "2%" }, { "width": "32%" }, { "width": "2%" }, { "width": "32%" }],
+        "body": [
+          {
+            "cells": [
+              {
+                "children": [
+                  { "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "value": "IMMEDIATE CONTROL" },
+                  { "type": "paragraph", "fontSize": 8.25, "lineHeight": 1.15, "style": { "marginTop": 2 }, "value": "F-01 privileged access: named accounts, PAM brokering, and session recording due September 30." }
+                ],
+                "style": { "backgroundColor": "#eaf1f7", "padding": 6, "borderTop": { "color": "#214d70", "width": 3 } }
+              },
+              {
+                "children": [{ "type": "paragraph", "fontSize": 1, "value": " " }],
+                "style": { "padding": 0 }
+              },
+              {
+                "children": [
+                  { "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "value": "CONTROL HYGIENE" },
+                  { "type": "paragraph", "fontSize": 8.25, "lineHeight": 1.15, "style": { "marginTop": 2 }, "value": "Leaver-access and restoration-test remediation remains owned by IT Service Delivery and Infrastructure." }
+                ],
+                "style": { "backgroundColor": "#eaf1f7", "padding": 6, "borderTop": { "color": "#214d70", "width": 3 } }
+              },
+              {
+                "children": [{ "type": "paragraph", "fontSize": 1, "value": " " }],
+                "style": { "padding": 0 }
+              },
+              {
+                "children": [
+                  { "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "value": "FOLLOW-UP" },
+                  { "type": "paragraph", "fontSize": 8.25, "lineHeight": 1.15, "style": { "marginTop": 2 }, "value": "All findings are accepted. Internal Audit follow-up testing begins the week of October 12, 2026." }
+                ],
+                "style": { "backgroundColor": "#eaf1f7", "padding": 6, "borderTop": { "color": "#214d70", "width": 3 } }
+              }
+            ]
+          }
+        ]
+      },
+      { "type": "heading", "level": 3, "font": "Helvetica-Bold", "style": { "marginTop": 10 }, "value": "Assurance focus" },
+      {
+        "type": "table",
+        "style": { "marginTop": 5, "borderTop": { "color": "#214d70", "width": 1 }, "borderBottom": { "color": "#214d70", "width": 1 } },
+        "columns": [{ "width": "22%" }, { "width": "78%" }],
+        "body": [
+          { "cells": [
+            { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "value": "Scope" }], "style": { "backgroundColor": "#eaf1f7", "padding": 6 } },
+            { "children": [{ "type": "paragraph", "fontSize": 8.5, "lineHeight": 1.15, "value": "Oracle Retail merchandising, Workday Financials, and the nightly integration layer; fieldwork ran April 13-May 29, 2026." }], "style": { "padding": 6 } }
+          ] },
+          { "cells": [
+            { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "value": "Reliance" }], "style": { "backgroundColor": "#eaf1f7", "padding": 6 } },
+            { "children": [{ "type": "paragraph", "fontSize": 8.5, "lineHeight": 1.15, "value": "Remediation of the privileged-access and medium-rated findings is required before FY2026 external-audit reliance." }], "style": { "padding": 6 } }
+          ] },
+          { "cells": [
+            { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "value": "Follow-up" }], "style": { "backgroundColor": "#eaf1f7", "padding": 6 } },
+            { "children": [{ "type": "paragraph", "fontSize": 8.5, "lineHeight": 1.15, "value": "All four findings were accepted; Internal Audit testing is scheduled for the week of October 12, 2026." }], "style": { "padding": 6 } }
+          ] }
+        ]
+      },
+      { "type": "page-break" },
+      {
+        "type": "table",
+        "style": { "marginBottom": 10 },
+        "columns": [{ "width": "42%" }, { "width": "36%" }, { "width": "22%" }],
+        "body": [
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "value": "IA-2026-07 - IT General Controls Review" }], "style": { "backgroundColor": "#eaf1f7", "padding": 6, "borderLeft": { "color": "#214d70", "width": 3 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "Findings detail - continued" }], "style": { "backgroundColor": "#eaf1f7", "padding": 6 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "CONFIDENTIAL" }], "style": { "backgroundColor": "#eaf1f7", "padding": 6 } }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "style": { "marginTop": 4 },
+        "columns": [{ "width": "10%" }, { "width": "90%" }],
+        "body": [{ "cells": [
+          { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 9, "textAlign": "center", "value": "HIGH" }], "style": { "backgroundColor": "#edb2ad", "padding": 3 } },
+          { "children": [{ "type": "heading", "level": 3, "font": "Helvetica-Bold", "fontSize": 10.5, "value": "Finding F-01 — Shared privileged account on integration middleware" }], "style": { "backgroundColor": "#f5f7f9", "padding": 3, "borderLeft": { "color": "#9b3f35", "width": 2 } } }
+        ] }]
+      },
+      { "type": "heading", "level": 5, "font": "Helvetica-Bold", "fontSize": 9, "style": { "marginTop": 1 }, "value": "Observation" },
+      { "type": "paragraph", "fontSize": 9, "lineHeight": 1.2, "style": { "marginRight": 60 }, "value": "The nightly integration layer between Oracle Retail and Workday uses one shared administrator account (SVC_INTADM). At least seven engineers know the password; it is stored in a team OneNote page and was last rotated in November 2024. Logs record only the account name, so individual actions cannot be attributed. During fieldwork, the account was used interactively to modify a production mapping table without a change ticket." },
+      { "type": "heading", "level": 5, "font": "Helvetica-Bold", "fontSize": 9, "style": { "marginTop": 1 }, "value": "Risk" },
+      { "type": "paragraph", "fontSize": 9, "lineHeight": 1.2, "style": { "marginRight": 60 }, "value": "Unattributable privileged activity defeats segregation-of-duties monitoring over the financial data pipeline. An erroneous or malicious mapping change could misstate revenue or inventory in Workday with no forensic trail, while the shared credential widens the impact of a compromised workstation." },
+      { "type": "heading", "level": 5, "font": "Helvetica-Bold", "fontSize": 9, "style": { "marginTop": 1 }, "value": "Recommendation" },
+      { "type": "paragraph", "fontSize": 9, "lineHeight": 1.2, "style": { "marginRight": 60 }, "value": "Replace interactive use of SVC_INTADM with named accounts brokered through privileged access management (PAM); make the service account non-interactive with a vault-managed, auto-rotated credential; and record all middleware administration sessions." },
+      { "type": "heading", "level": 5, "font": "Helvetica-Bold", "fontSize": 9, "style": { "marginTop": 1 }, "value": "Management response" },
+      { "type": "paragraph", "fontSize": 9, "lineHeight": 1.2, "style": { "marginRight": 60 }, "value": "Agreed. Project Sentinel will accelerate PAM onboarding. Interactive SVC_INTADM logons will be disabled by August 14, named-account brokering live by September 18, and session recording enabled by September 30. Owner: Head of Integration Services. Due: September 30, 2026." },
+      {
+        "type": "table",
+        "style": { "marginTop": 6 },
+        "columns": [{ "width": "10%" }, { "width": "90%" }],
+        "body": [{ "cells": [
+          { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "textAlign": "center", "value": "MEDIUM" }], "style": { "backgroundColor": "#f2d39b", "padding": 3 } },
+          { "children": [{ "type": "heading", "level": 3, "font": "Helvetica-Bold", "fontSize": 10.5, "value": "Finding F-02 — Leaver access revocation outside SLA" }], "style": { "backgroundColor": "#f5f7f9", "padding": 3, "borderLeft": { "color": "#a66a16", "width": 2 } } }
+        ] }]
+      },
+      { "type": "heading", "level": 5, "font": "Helvetica-Bold", "fontSize": 9, "style": { "marginTop": 1 }, "value": "Observation" },
+      { "type": "paragraph", "fontSize": 9, "lineHeight": 1.2, "style": { "marginRight": 60 }, "value": "Group policy requires logical access to be revoked within one business day of an employee's leaving date. For 9 of 45 leavers sampled between January and April 2026, at least one in-scope account remained active beyond the SLA; the longest exception was 26 calendar days for a store-operations analyst with Oracle Retail read access. None of the nine accounts showed post-termination logon activity." },
+      { "type": "heading", "level": 5, "font": "Helvetica-Bold", "fontSize": 9, "style": { "marginTop": 1 }, "value": "Risk" },
+      { "type": "paragraph", "fontSize": 9, "lineHeight": 1.2, "style": { "marginRight": 60 }, "value": "Dormant former-employee accounts are a common initial-access vector and may breach the group's ISO 27001 commitments (control A.5.18). Single sign-on deactivation partially mitigated impact by blocking interactive access for 7 of the 9 exceptions." },
+      { "type": "heading", "level": 5, "font": "Helvetica-Bold", "fontSize": 9, "style": { "marginTop": 1 }, "value": "Recommendation" },
+      { "type": "paragraph", "fontSize": 9, "lineHeight": 1.2, "style": { "marginRight": 60 }, "value": "Extend the HR-to-IAM feed to both directly provisioned legacy systems, automate revocation, and add a daily service-desk reconciliation report." },
+      { "type": "heading", "level": 5, "font": "Helvetica-Bold", "fontSize": 9, "style": { "marginTop": 1 }, "value": "Management response" },
+      { "type": "paragraph", "fontSize": 9, "lineHeight": 1.2, "style": { "marginRight": 60 }, "value": "Agreed. Owner: IT Service Delivery Manager. Due: October 31, 2026." },
+      {
+        "type": "table",
+        "style": { "marginTop": 6 },
+        "columns": [{ "width": "10%" }, { "width": "90%" }],
+        "body": [{ "cells": [
+          { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "textAlign": "center", "value": "MEDIUM" }], "style": { "backgroundColor": "#f2d39b", "padding": 3 } },
+          { "children": [{ "type": "heading", "level": 3, "font": "Helvetica-Bold", "fontSize": 10.5, "value": "Finding F-03 — Backup restoration testing gaps" }], "style": { "backgroundColor": "#f5f7f9", "padding": 3, "borderLeft": { "color": "#a66a16", "width": 2 } } }
+        ] }]
+      },
+      { "type": "heading", "level": 5, "font": "Helvetica-Bold", "fontSize": 9, "style": { "marginTop": 1 }, "value": "Observation" },
+      { "type": "paragraph", "fontSize": 9, "lineHeight": 1.2, "style": { "marginRight": 60 }, "value": "Restoration tests were not performed within the required 12-month cycle for two of six tier-1 databases: the Oracle Retail price-management schema and the integration staging database." },
+      { "type": "heading", "level": 5, "font": "Helvetica-Bold", "fontSize": 9, "style": { "marginTop": 1 }, "value": "Risk" },
+      { "type": "paragraph", "fontSize": 9, "lineHeight": 1.2, "style": { "marginRight": 60 }, "value": "Backup jobs completed with a 99.4% success rate, but untested backups provide limited recovery assurance." },
+      { "type": "heading", "level": 5, "font": "Helvetica-Bold", "fontSize": 9, "style": { "marginTop": 1 }, "value": "Recommendation" },
+      { "type": "paragraph", "fontSize": 9, "lineHeight": 1.2, "style": { "marginRight": 60 }, "value": "Complete both restoration tests and add the evidence to the monthly infrastructure KPI pack." },
+      { "type": "heading", "level": 5, "font": "Helvetica-Bold", "fontSize": 9, "style": { "marginTop": 1 }, "value": "Management response" },
+      { "type": "paragraph", "fontSize": 9, "lineHeight": 1.2, "style": { "marginRight": 60 }, "value": "Agreed. Tests are scheduled by August 28 and KPI evidence begins in September. Owner: Head of Infrastructure. Due: November 30, 2026 (full cycle re-baseline)." },
+      {
+        "type": "table",
+        "style": { "marginTop": 6 },
+        "columns": [{ "width": "10%" }, { "width": "90%" }],
+        "body": [{ "cells": [
+          { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 9, "textAlign": "center", "value": "LOW" }], "style": { "backgroundColor": "#b9ddbd", "padding": 3 } },
+          { "children": [{ "type": "heading", "level": 3, "font": "Helvetica-Bold", "fontSize": 10.5, "value": "Finding F-04 — Emergency change retrospective approvals" }], "style": { "backgroundColor": "#f5f7f9", "padding": 3, "borderLeft": { "color": "#3f7647", "width": 2 } } }
+        ] }]
+      },
+      { "type": "heading", "level": 5, "font": "Helvetica-Bold", "fontSize": 9, "style": { "marginTop": 1 }, "value": "Observation" },
+      { "type": "paragraph", "fontSize": 9, "lineHeight": 1.2, "style": { "marginRight": 60 }, "value": "Three of 28 sampled emergency changes lacked the retrospective CAB approval required within five business days; all three had valid incident references and peer-reviewed implementation notes." },
+      { "type": "heading", "level": 5, "font": "Helvetica-Bold", "fontSize": 9, "style": { "marginTop": 1 }, "value": "Risk" },
+      { "type": "paragraph", "fontSize": 9, "lineHeight": 1.2, "style": { "marginRight": 60 }, "value": "The required approval evidence was incomplete even though incident and peer-review records were present." },
+      { "type": "heading", "level": 5, "font": "Helvetica-Bold", "fontSize": 9, "style": { "marginTop": 1 }, "value": "Recommendation" },
+      { "type": "paragraph", "fontSize": 9, "lineHeight": 1.2, "style": { "marginRight": 60 }, "value": "Configure the change-management tool to auto-escalate unapproved emergency records after three days." },
+      { "type": "heading", "level": 5, "font": "Helvetica-Bold", "fontSize": 9, "style": { "marginTop": 1 }, "value": "Management response" },
+      { "type": "paragraph", "fontSize": 9, "lineHeight": 1.2, "style": { "marginRight": 60 }, "value": "Agreed. Owner: Change Manager. Due: August 31, 2026." },
+      { "type": "divider", "style": { "marginTop": 1, "marginBottom": 1 } },
+      { "type": "paragraph", "fontSize": 8.25, "lineHeight": 1.1, "value": "This report is prepared for the Audit Committee and management of Beaumont Retail Group plc under the Internal Audit Charter approved March 2025. Our work was performed in conformance with the IIA Global Internal Audit Standards and does not constitute an audit under ISA (UK). Sample sizes and methodology are described in Appendix A of the full report." }
+    ]
+  }
+}

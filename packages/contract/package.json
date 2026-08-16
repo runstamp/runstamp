@@ -1,0 +1,58 @@
+{
+  "name": "@runstamp/contract",
+  "version": "1.0.1",
+  "description": "The Runstamp Operation Contract (OC-1): one result envelope, one error model, one loss ledger, one locator, one receipt — shared by every Runstamp document operation",
+  "license": "Apache-2.0",
+  "type": "module",
+  "packageManager": "pnpm@10.12.4",
+  "homepage": "https://runstamp.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/runstamp/runstamp",
+    "directory": "packages/contract"
+  },
+  "bugs": "https://github.com/runstamp/runstamp/issues",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./verify": {
+      "types": "./dist/verify/index.d.ts",
+      "import": "./dist/verify/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "pnpm clean && tsup",
+    "dev": "tsup --watch",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.7.0",
+    "vite": "^7.3.2",
+    "vitest": "^4.1.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "runstamp": {
+    "publicSourceMode": "independently-buildable"
+  }
+}

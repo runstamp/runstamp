@@ -1,0 +1,22 @@
+{
+  "id": "pptx-title-dark-punch",
+  "format": "pptx",
+  "surface": "agent",
+  "description": "Agent title pattern — dark-punch preset variant.",
+  "document": {
+    "type": "presentation",
+    "version": "1.0",
+    "presentationTitle": "FY27 Operating Plan",
+    "companyName": "Northstar Systems",
+    "theme": "dark-punch",
+    "slides": [
+      {
+        "pattern": "title",
+        "content": {
+          "title": "FY27 Operating Plan",
+          "subtitle": "Executive leadership review — 18 August 2026"
+        }
+      }
+    ]
+  }
+}

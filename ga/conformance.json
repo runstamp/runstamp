@@ -1,0 +1,1398 @@
+{
+  "contractVersion": "1.0.0",
+  "packages": [
+    {
+      "package": "@runstamp/pptx",
+      "domain": "pptx",
+      "contractVersion": "1.0.0",
+      "gates": [
+        {
+          "gate": "C1",
+          "title": "Signature",
+          "status": "pass",
+          "summary": "4 operation(s) accept (input, options?)."
+        },
+        {
+          "gate": "C2",
+          "title": "Envelope",
+          "status": "pass",
+          "summary": "14 fixture(s) returned a well-formed envelope."
+        },
+        {
+          "gate": "C3",
+          "title": "Serialization",
+          "status": "pass",
+          "summary": "Envelopes survive JSON.parse(JSON.stringify(...))."
+        },
+        {
+          "gate": "C4",
+          "title": "Errors",
+          "status": "pass",
+          "summary": "8 failure(s) carried a namespaced code and a remediation."
+        },
+        {
+          "gate": "C5",
+          "title": "Code registry",
+          "status": "pass",
+          "summary": "25 engine code(s) classified; every emitted code is declared by its descriptor."
+        },
+        {
+          "gate": "C6",
+          "title": "No-throw",
+          "status": "pass",
+          "summary": "23 hostile input(s) x 4 verb(s) produced results, not throws."
+        },
+        {
+          "gate": "C7",
+          "title": "Determinism",
+          "status": "pass",
+          "summary": "6 fixture(s) byte-identical across two processes."
+        },
+        {
+          "gate": "C8",
+          "title": "Receipt honesty",
+          "status": "pass",
+          "summary": "Receipts claim determinism only where C7 proves it."
+        },
+        {
+          "gate": "C9",
+          "title": "Locator round-trip",
+          "status": "pass",
+          "summary": "1 emitted locator(s) round-trip exactly."
+        },
+        {
+          "gate": "C10",
+          "title": "Locator stability",
+          "status": "pass",
+          "summary": "Locator strings are stable across processes."
+        },
+        {
+          "gate": "C11",
+          "title": "No silent loss",
+          "status": "pass",
+          "summary": "1 expected loss(es) present; 5 clean-ledger fixture(s)."
+        },
+        {
+          "gate": "C12",
+          "title": "Loss ordering",
+          "status": "pass",
+          "summary": "1 lossy fixture(s) ordered identically across runs."
+        },
+        {
+          "gate": "C13",
+          "title": "Export hygiene",
+          "status": "pass",
+          "summary": "No deny-listed exports."
+        },
+        {
+          "gate": "C14",
+          "title": "Verb vocabulary",
+          "status": "pass",
+          "summary": "Every ./ops export is a canonical verb."
+        },
+        {
+          "gate": "C15",
+          "title": "Cancellation",
+          "status": "pass",
+          "summary": "signal and timeoutMs yield typed results, never thrown AbortErrors."
+        },
+        {
+          "gate": "C16",
+          "title": "API report",
+          "status": "pass",
+          "summary": "Built surface matches the committed API report."
+        },
+        {
+          "gate": "C17",
+          "title": "Operation identity",
+          "status": "pass",
+          "summary": "10 receipt(s) name a registered operation."
+        },
+        {
+          "gate": "C18",
+          "title": "Operation coverage",
+          "status": "pass",
+          "summary": "All 4 registered operation(s) have exact identity and required fixture-kind coverage."
+        }
+      ],
+      "ok": true
+    },
+    {
+      "package": "@runstamp/delimited-data",
+      "domain": "common",
+      "contractVersion": "1.0.0",
+      "gates": [
+        {
+          "gate": "C1",
+          "title": "Signature",
+          "status": "pass",
+          "summary": "6 operation(s) accept (input, options?)."
+        },
+        {
+          "gate": "C2",
+          "title": "Envelope",
+          "status": "pass",
+          "summary": "27 fixture(s) returned a well-formed envelope."
+        },
+        {
+          "gate": "C3",
+          "title": "Serialization",
+          "status": "pass",
+          "summary": "Envelopes survive JSON.parse(JSON.stringify(...))."
+        },
+        {
+          "gate": "C4",
+          "title": "Errors",
+          "status": "pass",
+          "summary": "14 failure(s) carried a namespaced code and a remediation."
+        },
+        {
+          "gate": "C5",
+          "title": "Code registry",
+          "status": "pass",
+          "summary": "Every emitted code is declared by its operation descriptor."
+        },
+        {
+          "gate": "C6",
+          "title": "No-throw",
+          "status": "pass",
+          "summary": "23 hostile input(s) x 6 verb(s) produced results, not throws."
+        },
+        {
+          "gate": "C7",
+          "title": "Determinism",
+          "status": "pass",
+          "summary": "13 fixture(s) byte-identical across two processes."
+        },
+        {
+          "gate": "C8",
+          "title": "Receipt honesty",
+          "status": "pass",
+          "summary": "Receipts claim determinism only where C7 proves it."
+        },
+        {
+          "gate": "C9",
+          "title": "Locator round-trip",
+          "status": "pass",
+          "summary": "0 emitted locator(s) round-trip exactly."
+        },
+        {
+          "gate": "C10",
+          "title": "Locator stability",
+          "status": "pass",
+          "summary": "Locator strings are stable across processes."
+        },
+        {
+          "gate": "C11",
+          "title": "No silent loss",
+          "status": "pass",
+          "summary": "2 expected loss(es) present; 11 clean-ledger fixture(s)."
+        },
+        {
+          "gate": "C12",
+          "title": "Loss ordering",
+          "status": "pass",
+          "summary": "2 lossy fixture(s) ordered identically across runs."
+        },
+        {
+          "gate": "C13",
+          "title": "Export hygiene",
+          "status": "pass",
+          "summary": "No deny-listed exports."
+        },
+        {
+          "gate": "C14",
+          "title": "Verb vocabulary",
+          "status": "pass",
+          "summary": "Every ./ops export is a canonical verb."
+        },
+        {
+          "gate": "C15",
+          "title": "Cancellation",
+          "status": "pass",
+          "summary": "signal and timeoutMs yield typed results, never thrown AbortErrors."
+        },
+        {
+          "gate": "C16",
+          "title": "API report",
+          "status": "pass",
+          "summary": "Built surface matches the committed API report."
+        },
+        {
+          "gate": "C17",
+          "title": "Operation identity",
+          "status": "pass",
+          "summary": "27 receipt(s) name a registered operation."
+        },
+        {
+          "gate": "C18",
+          "title": "Operation coverage",
+          "status": "pass",
+          "summary": "All 9 registered operation(s) have exact identity and required fixture-kind coverage."
+        }
+      ],
+      "ok": true
+    },
+    {
+      "package": "@runstamp/docx",
+      "domain": "docx",
+      "contractVersion": "1.0.0",
+      "gates": [
+        {
+          "gate": "C1",
+          "title": "Signature",
+          "status": "pass",
+          "summary": "8 operation(s) accept (input, options?)."
+        },
+        {
+          "gate": "C2",
+          "title": "Envelope",
+          "status": "pass",
+          "summary": "31 fixture(s) returned a well-formed envelope."
+        },
+        {
+          "gate": "C3",
+          "title": "Serialization",
+          "status": "pass",
+          "summary": "Envelopes survive JSON.parse(JSON.stringify(...))."
+        },
+        {
+          "gate": "C4",
+          "title": "Errors",
+          "status": "pass",
+          "summary": "16 failure(s) carried a namespaced code and a remediation."
+        },
+        {
+          "gate": "C5",
+          "title": "Code registry",
+          "status": "pass",
+          "summary": "18 engine code(s) classified; every emitted code is declared by its descriptor."
+        },
+        {
+          "gate": "C6",
+          "title": "No-throw",
+          "status": "pass",
+          "summary": "23 hostile input(s) x 8 verb(s) produced results, not throws."
+        },
+        {
+          "gate": "C7",
+          "title": "Determinism",
+          "status": "pass",
+          "summary": "15 fixture(s) byte-identical across two processes."
+        },
+        {
+          "gate": "C8",
+          "title": "Receipt honesty",
+          "status": "pass",
+          "summary": "Receipts claim determinism only where C7 proves it."
+        },
+        {
+          "gate": "C9",
+          "title": "Locator round-trip",
+          "status": "pass",
+          "summary": "0 emitted locator(s) round-trip exactly."
+        },
+        {
+          "gate": "C10",
+          "title": "Locator stability",
+          "status": "pass",
+          "summary": "Locator strings are stable across processes."
+        },
+        {
+          "gate": "C11",
+          "title": "No silent loss",
+          "status": "pass",
+          "summary": "2 expected loss(es) present; 12 clean-ledger fixture(s)."
+        },
+        {
+          "gate": "C12",
+          "title": "Loss ordering",
+          "status": "pass",
+          "summary": "2 lossy fixture(s) ordered identically across runs."
+        },
+        {
+          "gate": "C13",
+          "title": "Export hygiene",
+          "status": "pass",
+          "summary": "No deny-listed exports."
+        },
+        {
+          "gate": "C14",
+          "title": "Verb vocabulary",
+          "status": "pass",
+          "summary": "Every ./ops export is a canonical verb."
+        },
+        {
+          "gate": "C15",
+          "title": "Cancellation",
+          "status": "pass",
+          "summary": "signal and timeoutMs yield typed results, never thrown AbortErrors."
+        },
+        {
+          "gate": "C16",
+          "title": "API report",
+          "status": "pass",
+          "summary": "Built surface matches the committed API report."
+        },
+        {
+          "gate": "C17",
+          "title": "Operation identity",
+          "status": "pass",
+          "summary": "29 receipt(s) name a registered operation."
+        },
+        {
+          "gate": "C18",
+          "title": "Operation coverage",
+          "status": "pass",
+          "summary": "All 10 registered operation(s) have exact identity and required fixture-kind coverage."
+        }
+      ],
+      "ok": true
+    },
+    {
+      "package": "@runstamp/forms",
+      "domain": "pdf",
+      "contractVersion": "1.0.0",
+      "gates": [
+        {
+          "gate": "C1",
+          "title": "Signature",
+          "status": "pass",
+          "summary": "4 operation(s) accept (input, options?)."
+        },
+        {
+          "gate": "C2",
+          "title": "Envelope",
+          "status": "pass",
+          "summary": "21 fixture(s) returned a well-formed envelope."
+        },
+        {
+          "gate": "C3",
+          "title": "Serialization",
+          "status": "pass",
+          "summary": "Envelopes survive JSON.parse(JSON.stringify(...))."
+        },
+        {
+          "gate": "C4",
+          "title": "Errors",
+          "status": "pass",
+          "summary": "14 failure(s) carried a namespaced code and a remediation."
+        },
+        {
+          "gate": "C5",
+          "title": "Code registry",
+          "status": "pass",
+          "summary": "Every emitted code is declared by its operation descriptor."
+        },
+        {
+          "gate": "C6",
+          "title": "No-throw",
+          "status": "pass",
+          "summary": "23 hostile input(s) x 4 verb(s) produced results, not throws."
+        },
+        {
+          "gate": "C7",
+          "title": "Determinism",
+          "status": "pass",
+          "summary": "7 fixture(s) byte-identical across two processes."
+        },
+        {
+          "gate": "C8",
+          "title": "Receipt honesty",
+          "status": "pass",
+          "summary": "Receipts claim determinism only where C7 proves it."
+        },
+        {
+          "gate": "C9",
+          "title": "Locator round-trip",
+          "status": "pass",
+          "summary": "0 emitted locator(s) round-trip exactly."
+        },
+        {
+          "gate": "C10",
+          "title": "Locator stability",
+          "status": "pass",
+          "summary": "Locator strings are stable across processes."
+        },
+        {
+          "gate": "C11",
+          "title": "No silent loss",
+          "status": "pass",
+          "summary": "1 expected loss(es) present; 5 clean-ledger fixture(s)."
+        },
+        {
+          "gate": "C12",
+          "title": "Loss ordering",
+          "status": "pass",
+          "summary": "1 lossy fixture(s) ordered identically across runs."
+        },
+        {
+          "gate": "C13",
+          "title": "Export hygiene",
+          "status": "pass",
+          "summary": "No deny-listed exports."
+        },
+        {
+          "gate": "C14",
+          "title": "Verb vocabulary",
+          "status": "pass",
+          "summary": "Every ./ops export is a canonical verb."
+        },
+        {
+          "gate": "C15",
+          "title": "Cancellation",
+          "status": "pass",
+          "summary": "signal and timeoutMs yield typed results, never thrown AbortErrors."
+        },
+        {
+          "gate": "C16",
+          "title": "API report",
+          "status": "pass",
+          "summary": "Built surface matches the committed API report."
+        },
+        {
+          "gate": "C17",
+          "title": "Operation identity",
+          "status": "pass",
+          "summary": "21 receipt(s) name a registered operation."
+        },
+        {
+          "gate": "C18",
+          "title": "Operation coverage",
+          "status": "pass",
+          "summary": "All 7 registered operation(s) have exact identity and required fixture-kind coverage."
+        }
+      ],
+      "ok": true
+    },
+    {
+      "package": "@runstamp/pdf",
+      "domain": "pdf",
+      "contractVersion": "1.0.0",
+      "gates": [
+        {
+          "gate": "C1",
+          "title": "Signature",
+          "status": "pass",
+          "summary": "8 operation(s) accept (input, options?)."
+        },
+        {
+          "gate": "C2",
+          "title": "Envelope",
+          "status": "pass",
+          "summary": "36 fixture(s) returned a well-formed envelope."
+        },
+        {
+          "gate": "C3",
+          "title": "Serialization",
+          "status": "pass",
+          "summary": "Envelopes survive JSON.parse(JSON.stringify(...))."
+        },
+        {
+          "gate": "C4",
+          "title": "Errors",
+          "status": "pass",
+          "summary": "19 failure(s) carried a namespaced code and a remediation."
+        },
+        {
+          "gate": "C5",
+          "title": "Code registry",
+          "status": "pass",
+          "summary": "9 engine code(s) classified; every emitted code is declared by its descriptor."
+        },
+        {
+          "gate": "C6",
+          "title": "No-throw",
+          "status": "pass",
+          "summary": "23 hostile input(s) x 8 verb(s) produced results, not throws."
+        },
+        {
+          "gate": "C7",
+          "title": "Determinism",
+          "status": "pass",
+          "summary": "17 fixture(s) byte-identical across two processes."
+        },
+        {
+          "gate": "C8",
+          "title": "Receipt honesty",
+          "status": "pass",
+          "summary": "Receipts claim determinism only where C7 proves it."
+        },
+        {
+          "gate": "C9",
+          "title": "Locator round-trip",
+          "status": "pass",
+          "summary": "6 emitted locator(s) round-trip exactly."
+        },
+        {
+          "gate": "C10",
+          "title": "Locator stability",
+          "status": "pass",
+          "summary": "Locator strings are stable across processes."
+        },
+        {
+          "gate": "C11",
+          "title": "No silent loss",
+          "status": "pass",
+          "summary": "10 expected loss(es) present; 9 clean-ledger fixture(s)."
+        },
+        {
+          "gate": "C12",
+          "title": "Loss ordering",
+          "status": "pass",
+          "summary": "8 lossy fixture(s) ordered identically across runs."
+        },
+        {
+          "gate": "C13",
+          "title": "Export hygiene",
+          "status": "pass",
+          "summary": "No deny-listed exports."
+        },
+        {
+          "gate": "C14",
+          "title": "Verb vocabulary",
+          "status": "pass",
+          "summary": "Every ./ops export is a canonical verb."
+        },
+        {
+          "gate": "C15",
+          "title": "Cancellation",
+          "status": "pass",
+          "summary": "signal and timeoutMs yield typed results, never thrown AbortErrors."
+        },
+        {
+          "gate": "C16",
+          "title": "API report",
+          "status": "pass",
+          "summary": "Built surface matches the committed API report."
+        },
+        {
+          "gate": "C17",
+          "title": "Operation identity",
+          "status": "pass",
+          "summary": "28 receipt(s) name a registered operation."
+        },
+        {
+          "gate": "C18",
+          "title": "Operation coverage",
+          "status": "pass",
+          "summary": "All 10 registered operation(s) have exact identity and required fixture-kind coverage."
+        }
+      ],
+      "ok": true
+    },
+    {
+      "package": "@runstamp/mail-artifacts",
+      "domain": "common",
+      "contractVersion": "1.0.0",
+      "gates": [
+        {
+          "gate": "C1",
+          "title": "Signature",
+          "status": "pass",
+          "summary": "5 operation(s) accept (input, options?)."
+        },
+        {
+          "gate": "C2",
+          "title": "Envelope",
+          "status": "pass",
+          "summary": "15 fixture(s) returned a well-formed envelope."
+        },
+        {
+          "gate": "C3",
+          "title": "Serialization",
+          "status": "pass",
+          "summary": "Envelopes survive JSON.parse(JSON.stringify(...))."
+        },
+        {
+          "gate": "C4",
+          "title": "Errors",
+          "status": "pass",
+          "summary": "10 failure(s) carried a namespaced code and a remediation."
+        },
+        {
+          "gate": "C5",
+          "title": "Code registry",
+          "status": "pass",
+          "summary": "Every emitted code is declared by its operation descriptor."
+        },
+        {
+          "gate": "C6",
+          "title": "No-throw",
+          "status": "pass",
+          "summary": "23 hostile input(s) x 5 verb(s) produced results, not throws."
+        },
+        {
+          "gate": "C7",
+          "title": "Determinism",
+          "status": "pass",
+          "summary": "5 fixture(s) byte-identical across two processes."
+        },
+        {
+          "gate": "C8",
+          "title": "Receipt honesty",
+          "status": "pass",
+          "summary": "Receipts claim determinism only where C7 proves it."
+        },
+        {
+          "gate": "C9",
+          "title": "Locator round-trip",
+          "status": "pass",
+          "summary": "0 emitted locator(s) round-trip exactly."
+        },
+        {
+          "gate": "C10",
+          "title": "Locator stability",
+          "status": "pass",
+          "summary": "Locator strings are stable across processes."
+        },
+        {
+          "gate": "C11",
+          "title": "No silent loss",
+          "status": "pass",
+          "summary": "4 expected loss(es) present; 3 clean-ledger fixture(s)."
+        },
+        {
+          "gate": "C12",
+          "title": "Loss ordering",
+          "status": "pass",
+          "summary": "2 lossy fixture(s) ordered identically across runs."
+        },
+        {
+          "gate": "C13",
+          "title": "Export hygiene",
+          "status": "pass",
+          "summary": "No deny-listed exports."
+        },
+        {
+          "gate": "C14",
+          "title": "Verb vocabulary",
+          "status": "pass",
+          "summary": "Every ./ops export is a canonical verb."
+        },
+        {
+          "gate": "C15",
+          "title": "Cancellation",
+          "status": "pass",
+          "summary": "signal and timeoutMs yield typed results, never thrown AbortErrors."
+        },
+        {
+          "gate": "C16",
+          "title": "API report",
+          "status": "pass",
+          "summary": "Built surface matches the committed API report."
+        },
+        {
+          "gate": "C17",
+          "title": "Operation identity",
+          "status": "pass",
+          "summary": "15 receipt(s) name a registered operation."
+        },
+        {
+          "gate": "C18",
+          "title": "Operation coverage",
+          "status": "pass",
+          "summary": "All 5 registered operation(s) have exact identity and required fixture-kind coverage."
+        }
+      ],
+      "ok": true
+    },
+    {
+      "package": "@runstamp/provenance",
+      "domain": "common",
+      "contractVersion": "1.0.0",
+      "gates": [
+        {
+          "gate": "C1",
+          "title": "Signature",
+          "status": "pass",
+          "summary": "3 operation(s) accept (input, options?)."
+        },
+        {
+          "gate": "C2",
+          "title": "Envelope",
+          "status": "pass",
+          "summary": "12 fixture(s) returned a well-formed envelope."
+        },
+        {
+          "gate": "C3",
+          "title": "Serialization",
+          "status": "pass",
+          "summary": "Envelopes survive JSON.parse(JSON.stringify(...))."
+        },
+        {
+          "gate": "C4",
+          "title": "Errors",
+          "status": "pass",
+          "summary": "8 failure(s) carried a namespaced code and a remediation."
+        },
+        {
+          "gate": "C5",
+          "title": "Code registry",
+          "status": "pass",
+          "summary": "Every emitted code is declared by its operation descriptor."
+        },
+        {
+          "gate": "C6",
+          "title": "No-throw",
+          "status": "pass",
+          "summary": "23 hostile input(s) x 3 verb(s) produced results, not throws."
+        },
+        {
+          "gate": "C7",
+          "title": "Determinism",
+          "status": "pass",
+          "summary": "4 fixture(s) byte-identical across two processes."
+        },
+        {
+          "gate": "C8",
+          "title": "Receipt honesty",
+          "status": "pass",
+          "summary": "Receipts claim determinism only where C7 proves it."
+        },
+        {
+          "gate": "C9",
+          "title": "Locator round-trip",
+          "status": "pass",
+          "summary": "0 emitted locator(s) round-trip exactly."
+        },
+        {
+          "gate": "C10",
+          "title": "Locator stability",
+          "status": "pass",
+          "summary": "Locator strings are stable across processes."
+        },
+        {
+          "gate": "C11",
+          "title": "No silent loss",
+          "status": "pass",
+          "summary": "3 expected loss(es) present; 1 clean-ledger fixture(s)."
+        },
+        {
+          "gate": "C12",
+          "title": "Loss ordering",
+          "status": "pass",
+          "summary": "3 lossy fixture(s) ordered identically across runs."
+        },
+        {
+          "gate": "C13",
+          "title": "Export hygiene",
+          "status": "pass",
+          "summary": "No deny-listed exports."
+        },
+        {
+          "gate": "C14",
+          "title": "Verb vocabulary",
+          "status": "pass",
+          "summary": "Every ./ops export is a canonical verb."
+        },
+        {
+          "gate": "C15",
+          "title": "Cancellation",
+          "status": "pass",
+          "summary": "signal and timeoutMs yield typed results, never thrown AbortErrors."
+        },
+        {
+          "gate": "C16",
+          "title": "API report",
+          "status": "pass",
+          "summary": "Built surface matches the committed API report."
+        },
+        {
+          "gate": "C17",
+          "title": "Operation identity",
+          "status": "pass",
+          "summary": "12 receipt(s) name a registered operation."
+        },
+        {
+          "gate": "C18",
+          "title": "Operation coverage",
+          "status": "pass",
+          "summary": "All 4 registered operation(s) have exact identity and required fixture-kind coverage."
+        }
+      ],
+      "ok": true
+    },
+    {
+      "package": "@runstamp/review-operations",
+      "domain": "common",
+      "contractVersion": "1.0.0",
+      "gates": [
+        {
+          "gate": "C1",
+          "title": "Signature",
+          "status": "pass",
+          "summary": "3 operation(s) accept (input, options?)."
+        },
+        {
+          "gate": "C2",
+          "title": "Envelope",
+          "status": "pass",
+          "summary": "9 fixture(s) returned a well-formed envelope."
+        },
+        {
+          "gate": "C3",
+          "title": "Serialization",
+          "status": "pass",
+          "summary": "Envelopes survive JSON.parse(JSON.stringify(...))."
+        },
+        {
+          "gate": "C4",
+          "title": "Errors",
+          "status": "pass",
+          "summary": "5 failure(s) carried a namespaced code and a remediation."
+        },
+        {
+          "gate": "C5",
+          "title": "Code registry",
+          "status": "pass",
+          "summary": "Every emitted code is declared by its operation descriptor."
+        },
+        {
+          "gate": "C6",
+          "title": "No-throw",
+          "status": "pass",
+          "summary": "23 hostile input(s) x 3 verb(s) produced results, not throws."
+        },
+        {
+          "gate": "C7",
+          "title": "Determinism",
+          "status": "pass",
+          "summary": "4 fixture(s) byte-identical across two processes."
+        },
+        {
+          "gate": "C8",
+          "title": "Receipt honesty",
+          "status": "pass",
+          "summary": "Receipts claim determinism only where C7 proves it."
+        },
+        {
+          "gate": "C9",
+          "title": "Locator round-trip",
+          "status": "pass",
+          "summary": "0 emitted locator(s) round-trip exactly."
+        },
+        {
+          "gate": "C10",
+          "title": "Locator stability",
+          "status": "pass",
+          "summary": "Locator strings are stable across processes."
+        },
+        {
+          "gate": "C11",
+          "title": "No silent loss",
+          "status": "pass",
+          "summary": "2 expected loss(es) present; 1 clean-ledger fixture(s)."
+        },
+        {
+          "gate": "C12",
+          "title": "Loss ordering",
+          "status": "pass",
+          "summary": "2 lossy fixture(s) ordered identically across runs."
+        },
+        {
+          "gate": "C13",
+          "title": "Export hygiene",
+          "status": "pass",
+          "summary": "No deny-listed exports."
+        },
+        {
+          "gate": "C14",
+          "title": "Verb vocabulary",
+          "status": "pass",
+          "summary": "Every ./ops export is a canonical verb."
+        },
+        {
+          "gate": "C15",
+          "title": "Cancellation",
+          "status": "pass",
+          "summary": "signal and timeoutMs yield typed results, never thrown AbortErrors."
+        },
+        {
+          "gate": "C16",
+          "title": "API report",
+          "status": "pass",
+          "summary": "Built surface matches the committed API report."
+        },
+        {
+          "gate": "C17",
+          "title": "Operation identity",
+          "status": "pass",
+          "summary": "9 receipt(s) name a registered operation."
+        },
+        {
+          "gate": "C18",
+          "title": "Operation coverage",
+          "status": "pass",
+          "summary": "All 3 registered operation(s) have exact identity and required fixture-kind coverage."
+        }
+      ],
+      "ok": true
+    },
+    {
+      "package": "@runstamp/scientific-publishing",
+      "domain": "common",
+      "contractVersion": "1.0.0",
+      "gates": [
+        {
+          "gate": "C1",
+          "title": "Signature",
+          "status": "pass",
+          "summary": "5 operation(s) accept (input, options?)."
+        },
+        {
+          "gate": "C2",
+          "title": "Envelope",
+          "status": "pass",
+          "summary": "15 fixture(s) returned a well-formed envelope."
+        },
+        {
+          "gate": "C3",
+          "title": "Serialization",
+          "status": "pass",
+          "summary": "Envelopes survive JSON.parse(JSON.stringify(...))."
+        },
+        {
+          "gate": "C4",
+          "title": "Errors",
+          "status": "pass",
+          "summary": "9 failure(s) carried a namespaced code and a remediation."
+        },
+        {
+          "gate": "C5",
+          "title": "Code registry",
+          "status": "pass",
+          "summary": "Every emitted code is declared by its operation descriptor."
+        },
+        {
+          "gate": "C6",
+          "title": "No-throw",
+          "status": "pass",
+          "summary": "23 hostile input(s) x 5 verb(s) produced results, not throws."
+        },
+        {
+          "gate": "C7",
+          "title": "Determinism",
+          "status": "pass",
+          "summary": "6 fixture(s) byte-identical across two processes."
+        },
+        {
+          "gate": "C8",
+          "title": "Receipt honesty",
+          "status": "pass",
+          "summary": "Receipts claim determinism only where C7 proves it."
+        },
+        {
+          "gate": "C9",
+          "title": "Locator round-trip",
+          "status": "pass",
+          "summary": "0 emitted locator(s) round-trip exactly."
+        },
+        {
+          "gate": "C10",
+          "title": "Locator stability",
+          "status": "pass",
+          "summary": "Locator strings are stable across processes."
+        },
+        {
+          "gate": "C11",
+          "title": "No silent loss",
+          "status": "pass",
+          "summary": "3 expected loss(es) present; 3 clean-ledger fixture(s)."
+        },
+        {
+          "gate": "C12",
+          "title": "Loss ordering",
+          "status": "pass",
+          "summary": "2 lossy fixture(s) ordered identically across runs."
+        },
+        {
+          "gate": "C13",
+          "title": "Export hygiene",
+          "status": "pass",
+          "summary": "No deny-listed exports."
+        },
+        {
+          "gate": "C14",
+          "title": "Verb vocabulary",
+          "status": "pass",
+          "summary": "Every ./ops export is a canonical verb."
+        },
+        {
+          "gate": "C15",
+          "title": "Cancellation",
+          "status": "pass",
+          "summary": "signal and timeoutMs yield typed results, never thrown AbortErrors."
+        },
+        {
+          "gate": "C16",
+          "title": "API report",
+          "status": "pass",
+          "summary": "Built surface matches the committed API report."
+        },
+        {
+          "gate": "C17",
+          "title": "Operation identity",
+          "status": "pass",
+          "summary": "15 receipt(s) name a registered operation."
+        },
+        {
+          "gate": "C18",
+          "title": "Operation coverage",
+          "status": "pass",
+          "summary": "All 5 registered operation(s) have exact identity and required fixture-kind coverage."
+        }
+      ],
+      "ok": true
+    },
+    {
+      "package": "@runstamp/table-extraction",
+      "domain": "common",
+      "contractVersion": "1.0.0",
+      "gates": [
+        {
+          "gate": "C1",
+          "title": "Signature",
+          "status": "pass",
+          "summary": "4 operation(s) accept (input, options?)."
+        },
+        {
+          "gate": "C2",
+          "title": "Envelope",
+          "status": "pass",
+          "summary": "27 fixture(s) returned a well-formed envelope."
+        },
+        {
+          "gate": "C3",
+          "title": "Serialization",
+          "status": "pass",
+          "summary": "Envelopes survive JSON.parse(JSON.stringify(...))."
+        },
+        {
+          "gate": "C4",
+          "title": "Errors",
+          "status": "pass",
+          "summary": "18 failure(s) carried a namespaced code and a remediation."
+        },
+        {
+          "gate": "C5",
+          "title": "Code registry",
+          "status": "pass",
+          "summary": "Every emitted code is declared by its operation descriptor."
+        },
+        {
+          "gate": "C6",
+          "title": "No-throw",
+          "status": "pass",
+          "summary": "23 hostile input(s) x 4 verb(s) produced results, not throws."
+        },
+        {
+          "gate": "C7",
+          "title": "Determinism",
+          "status": "pass",
+          "summary": "9 fixture(s) byte-identical across two processes."
+        },
+        {
+          "gate": "C8",
+          "title": "Receipt honesty",
+          "status": "pass",
+          "summary": "Receipts claim determinism only where C7 proves it."
+        },
+        {
+          "gate": "C9",
+          "title": "Locator round-trip",
+          "status": "pass",
+          "summary": "0 emitted locator(s) round-trip exactly."
+        },
+        {
+          "gate": "C10",
+          "title": "Locator stability",
+          "status": "pass",
+          "summary": "Locator strings are stable across processes."
+        },
+        {
+          "gate": "C11",
+          "title": "No silent loss",
+          "status": "pass",
+          "summary": "1 expected loss(es) present; 8 clean-ledger fixture(s)."
+        },
+        {
+          "gate": "C12",
+          "title": "Loss ordering",
+          "status": "pass",
+          "summary": "1 lossy fixture(s) ordered identically across runs."
+        },
+        {
+          "gate": "C13",
+          "title": "Export hygiene",
+          "status": "pass",
+          "summary": "No deny-listed exports."
+        },
+        {
+          "gate": "C14",
+          "title": "Verb vocabulary",
+          "status": "pass",
+          "summary": "Every ./ops export is a canonical verb."
+        },
+        {
+          "gate": "C15",
+          "title": "Cancellation",
+          "status": "pass",
+          "summary": "signal and timeoutMs yield typed results, never thrown AbortErrors."
+        },
+        {
+          "gate": "C16",
+          "title": "API report",
+          "status": "pass",
+          "summary": "Built surface matches the committed API report."
+        },
+        {
+          "gate": "C17",
+          "title": "Operation identity",
+          "status": "pass",
+          "summary": "27 receipt(s) name a registered operation."
+        },
+        {
+          "gate": "C18",
+          "title": "Operation coverage",
+          "status": "pass",
+          "summary": "All 9 registered operation(s) have exact identity and required fixture-kind coverage."
+        }
+      ],
+      "ok": true
+    },
+    {
+      "package": "@runstamp/technical-publishing",
+      "domain": "common",
+      "contractVersion": "1.0.0",
+      "gates": [
+        {
+          "gate": "C1",
+          "title": "Signature",
+          "status": "pass",
+          "summary": "4 operation(s) accept (input, options?)."
+        },
+        {
+          "gate": "C2",
+          "title": "Envelope",
+          "status": "pass",
+          "summary": "18 fixture(s) returned a well-formed envelope."
+        },
+        {
+          "gate": "C3",
+          "title": "Serialization",
+          "status": "pass",
+          "summary": "Envelopes survive JSON.parse(JSON.stringify(...))."
+        },
+        {
+          "gate": "C4",
+          "title": "Errors",
+          "status": "pass",
+          "summary": "10 failure(s) carried a namespaced code and a remediation."
+        },
+        {
+          "gate": "C5",
+          "title": "Code registry",
+          "status": "pass",
+          "summary": "Every emitted code is declared by its operation descriptor."
+        },
+        {
+          "gate": "C6",
+          "title": "No-throw",
+          "status": "pass",
+          "summary": "23 hostile input(s) x 4 verb(s) produced results, not throws."
+        },
+        {
+          "gate": "C7",
+          "title": "Determinism",
+          "status": "pass",
+          "summary": "8 fixture(s) byte-identical across two processes."
+        },
+        {
+          "gate": "C8",
+          "title": "Receipt honesty",
+          "status": "pass",
+          "summary": "Receipts claim determinism only where C7 proves it."
+        },
+        {
+          "gate": "C9",
+          "title": "Locator round-trip",
+          "status": "pass",
+          "summary": "0 emitted locator(s) round-trip exactly."
+        },
+        {
+          "gate": "C10",
+          "title": "Locator stability",
+          "status": "pass",
+          "summary": "Locator strings are stable across processes."
+        },
+        {
+          "gate": "C11",
+          "title": "No silent loss",
+          "status": "pass",
+          "summary": "6 expected loss(es) present; 5 clean-ledger fixture(s)."
+        },
+        {
+          "gate": "C12",
+          "title": "Loss ordering",
+          "status": "pass",
+          "summary": "2 lossy fixture(s) ordered identically across runs."
+        },
+        {
+          "gate": "C13",
+          "title": "Export hygiene",
+          "status": "pass",
+          "summary": "No deny-listed exports."
+        },
+        {
+          "gate": "C14",
+          "title": "Verb vocabulary",
+          "status": "pass",
+          "summary": "Every ./ops export is a canonical verb."
+        },
+        {
+          "gate": "C15",
+          "title": "Cancellation",
+          "status": "pass",
+          "summary": "signal and timeoutMs yield typed results, never thrown AbortErrors."
+        },
+        {
+          "gate": "C16",
+          "title": "API report",
+          "status": "pass",
+          "summary": "Built surface matches the committed API report."
+        },
+        {
+          "gate": "C17",
+          "title": "Operation identity",
+          "status": "pass",
+          "summary": "18 receipt(s) name a registered operation."
+        },
+        {
+          "gate": "C18",
+          "title": "Operation coverage",
+          "status": "pass",
+          "summary": "All 6 registered operation(s) have exact identity and required fixture-kind coverage."
+        }
+      ],
+      "ok": true
+    },
+    {
+      "package": "@runstamp/xlsx",
+      "domain": "xlsx",
+      "contractVersion": "1.0.0",
+      "gates": [
+        {
+          "gate": "C1",
+          "title": "Signature",
+          "status": "pass",
+          "summary": "7 operation(s) accept (input, options?)."
+        },
+        {
+          "gate": "C2",
+          "title": "Envelope",
+          "status": "pass",
+          "summary": "23 fixture(s) returned a well-formed envelope."
+        },
+        {
+          "gate": "C3",
+          "title": "Serialization",
+          "status": "pass",
+          "summary": "Envelopes survive JSON.parse(JSON.stringify(...))."
+        },
+        {
+          "gate": "C4",
+          "title": "Errors",
+          "status": "pass",
+          "summary": "12 failure(s) carried a namespaced code and a remediation."
+        },
+        {
+          "gate": "C5",
+          "title": "Code registry",
+          "status": "pass",
+          "summary": "40 engine code(s) classified; every emitted code is declared by its descriptor."
+        },
+        {
+          "gate": "C6",
+          "title": "No-throw",
+          "status": "pass",
+          "summary": "23 hostile input(s) x 7 verb(s) produced results, not throws."
+        },
+        {
+          "gate": "C7",
+          "title": "Determinism",
+          "status": "pass",
+          "summary": "11 fixture(s) byte-identical across two processes."
+        },
+        {
+          "gate": "C8",
+          "title": "Receipt honesty",
+          "status": "pass",
+          "summary": "Receipts claim determinism only where C7 proves it."
+        },
+        {
+          "gate": "C9",
+          "title": "Locator round-trip",
+          "status": "pass",
+          "summary": "0 emitted locator(s) round-trip exactly."
+        },
+        {
+          "gate": "C10",
+          "title": "Locator stability",
+          "status": "pass",
+          "summary": "Locator strings are stable across processes."
+        },
+        {
+          "gate": "C11",
+          "title": "No silent loss",
+          "status": "pass",
+          "summary": "2 expected loss(es) present; 10 clean-ledger fixture(s)."
+        },
+        {
+          "gate": "C12",
+          "title": "Loss ordering",
+          "status": "pass",
+          "summary": "1 lossy fixture(s) ordered identically across runs."
+        },
+        {
+          "gate": "C13",
+          "title": "Export hygiene",
+          "status": "pass",
+          "summary": "No deny-listed exports."
+        },
+        {
+          "gate": "C14",
+          "title": "Verb vocabulary",
+          "status": "pass",
+          "summary": "Every ./ops export is a canonical verb."
+        },
+        {
+          "gate": "C15",
+          "title": "Cancellation",
+          "status": "pass",
+          "summary": "signal and timeoutMs yield typed results, never thrown AbortErrors."
+        },
+        {
+          "gate": "C16",
+          "title": "API report",
+          "status": "pass",
+          "summary": "Built surface matches the committed API report."
+        },
+        {
+          "gate": "C17",
+          "title": "Operation identity",
+          "status": "pass",
+          "summary": "21 receipt(s) name a registered operation."
+        },
+        {
+          "gate": "C18",
+          "title": "Operation coverage",
+          "status": "pass",
+          "summary": "All 7 registered operation(s) have exact identity and required fixture-kind coverage."
+        }
+      ],
+      "ok": true
+    }
+  ],
+  "ok": true
+}

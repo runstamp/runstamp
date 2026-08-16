@@ -1,0 +1,1134 @@
+{
+  "schemaVersion": 1,
+  "description": "Pinned font assets admitted for deterministic measurement, rendering, and PPTX embedding.",
+  "assets": [
+    {
+      "id": "carlito-regular",
+      "path": "Carlito-Regular.ttf",
+      "face": "Regular",
+      "roles": {
+        "requestedFamilies": [
+          "Aptos",
+          "Aptos Display",
+          "Calibri",
+          "Calibri Light"
+        ]
+      },
+      "source": {
+        "repositoryUrl": "https://github.com/googlefonts/carlito",
+        "revision": "3a810cab78ebd6e2e4eed42af9e8453c4f9b850a",
+        "revisionType": "commit",
+        "commit": "3a810cab78ebd6e2e4eed42af9e8453c4f9b850a",
+        "url": "https://raw.githubusercontent.com/googlefonts/carlito/3a810cab78ebd6e2e4eed42af9e8453c4f9b850a/fonts/ttf/Carlito-Regular.ttf",
+        "path": "fonts/ttf/Carlito-Regular.ttf"
+      },
+      "byteLength": 628032,
+      "sha256": "f6418f708baede9789daef5d458c0f53d2a888af9820e8062934e504fedc6595",
+      "format": "ttf",
+      "variable": false,
+      "names": {
+        "family": "Carlito",
+        "subfamily": "Regular",
+        "postScript": "Carlito-Regular",
+        "full": "Carlito Regular",
+        "version": "Version 1.104"
+      },
+      "embedding": {
+        "fsType": 0,
+        "restrictedEmbedding": false,
+        "previewAndPrintOnly": false,
+        "editableEmbedding": false,
+        "noSubsetting": false,
+        "bitmapOnly": false
+      },
+      "coverage": {
+        "cmapCodepoints": 2118,
+        "minCodepoint": "U+0000",
+        "maxCodepoint": "U+FFFF",
+        "scripts": {
+          "Latin": 1014,
+          "Greek": 358,
+          "Cyrillic": 274
+        },
+        "otherCodepoints": 472
+      },
+      "license": {
+        "copyright": "Copyright 2013 The Carlito Project Authors (https://github.com/googlefonts/carlito)",
+        "embeddedNotice": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+        "embeddedUrl": "https://scripts.sil.org/OFL",
+        "spdx": "OFL-1.1",
+        "noticePath": "LICENSES/Carlito-OFL.txt"
+      }
+    },
+    {
+      "id": "carlito-bold",
+      "path": "Carlito-Bold.ttf",
+      "face": "Bold",
+      "roles": {
+        "requestedFamilies": [
+          "Aptos",
+          "Aptos Display",
+          "Calibri",
+          "Calibri Light"
+        ]
+      },
+      "source": {
+        "repositoryUrl": "https://github.com/googlefonts/carlito",
+        "revision": "3a810cab78ebd6e2e4eed42af9e8453c4f9b850a",
+        "revisionType": "commit",
+        "commit": "3a810cab78ebd6e2e4eed42af9e8453c4f9b850a",
+        "url": "https://raw.githubusercontent.com/googlefonts/carlito/3a810cab78ebd6e2e4eed42af9e8453c4f9b850a/fonts/ttf/Carlito-Bold.ttf",
+        "path": "fonts/ttf/Carlito-Bold.ttf"
+      },
+      "byteLength": 682468,
+      "sha256": "bb5d20f79b82599ec72983597437373a80f2d2085fa91fc144fd74e876a594db",
+      "format": "ttf",
+      "variable": false,
+      "names": {
+        "family": "Carlito",
+        "subfamily": "Bold",
+        "postScript": "Carlito-Bold",
+        "full": "Carlito Bold",
+        "version": "Version 1.104"
+      },
+      "embedding": {
+        "fsType": 0,
+        "restrictedEmbedding": false,
+        "previewAndPrintOnly": false,
+        "editableEmbedding": false,
+        "noSubsetting": false,
+        "bitmapOnly": false
+      },
+      "coverage": {
+        "cmapCodepoints": 2118,
+        "minCodepoint": "U+0000",
+        "maxCodepoint": "U+FFFF",
+        "scripts": {
+          "Latin": 1014,
+          "Greek": 358,
+          "Cyrillic": 274
+        },
+        "otherCodepoints": 472
+      },
+      "license": {
+        "copyright": "Copyright 2013 The Carlito Project Authors (https://github.com/googlefonts/carlito)",
+        "embeddedNotice": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+        "embeddedUrl": "https://scripts.sil.org/OFL",
+        "spdx": "OFL-1.1",
+        "noticePath": "LICENSES/Carlito-OFL.txt"
+      }
+    },
+    {
+      "id": "carlito-italic",
+      "path": "Carlito-Italic.ttf",
+      "face": "Italic",
+      "roles": {
+        "requestedFamilies": [
+          "Aptos",
+          "Aptos Display",
+          "Calibri",
+          "Calibri Light"
+        ]
+      },
+      "source": {
+        "repositoryUrl": "https://github.com/googlefonts/carlito",
+        "revision": "3a810cab78ebd6e2e4eed42af9e8453c4f9b850a",
+        "revisionType": "commit",
+        "commit": "3a810cab78ebd6e2e4eed42af9e8453c4f9b850a",
+        "url": "https://raw.githubusercontent.com/googlefonts/carlito/3a810cab78ebd6e2e4eed42af9e8453c4f9b850a/fonts/ttf/Carlito-Italic.ttf",
+        "path": "fonts/ttf/Carlito-Italic.ttf"
+      },
+      "byteLength": 615236,
+      "sha256": "0b019225e58d702bfedcbd35c21696769f8ee115cb6343f84c2f240312450d1c",
+      "format": "ttf",
+      "variable": false,
+      "names": {
+        "family": "Carlito",
+        "subfamily": "Italic",
+        "postScript": "Carlito-Italic",
+        "full": "Carlito Italic",
+        "version": "Version 1.104"
+      },
+      "embedding": {
+        "fsType": 0,
+        "restrictedEmbedding": false,
+        "previewAndPrintOnly": false,
+        "editableEmbedding": false,
+        "noSubsetting": false,
+        "bitmapOnly": false
+      },
+      "coverage": {
+        "cmapCodepoints": 2118,
+        "minCodepoint": "U+0000",
+        "maxCodepoint": "U+FFFF",
+        "scripts": {
+          "Latin": 1014,
+          "Greek": 358,
+          "Cyrillic": 274
+        },
+        "otherCodepoints": 472
+      },
+      "license": {
+        "copyright": "Copyright 2013 The Carlito Project Authors (https://github.com/googlefonts/carlito)",
+        "embeddedNotice": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+        "embeddedUrl": "https://scripts.sil.org/OFL",
+        "spdx": "OFL-1.1",
+        "noticePath": "LICENSES/Carlito-OFL.txt"
+      }
+    },
+    {
+      "id": "carlito-bold-italic",
+      "path": "Carlito-BoldItalic.ttf",
+      "face": "BoldItalic",
+      "roles": {
+        "requestedFamilies": [
+          "Aptos",
+          "Aptos Display",
+          "Calibri",
+          "Calibri Light"
+        ]
+      },
+      "source": {
+        "repositoryUrl": "https://github.com/googlefonts/carlito",
+        "revision": "3a810cab78ebd6e2e4eed42af9e8453c4f9b850a",
+        "revisionType": "commit",
+        "commit": "3a810cab78ebd6e2e4eed42af9e8453c4f9b850a",
+        "url": "https://raw.githubusercontent.com/googlefonts/carlito/3a810cab78ebd6e2e4eed42af9e8453c4f9b850a/fonts/ttf/Carlito-BoldItalic.ttf",
+        "path": "fonts/ttf/Carlito-BoldItalic.ttf"
+      },
+      "byteLength": 808508,
+      "sha256": "b32928186c119599e03ca6a1ffc680fdcb7fac95772f4b95d989cf6cd3861517",
+      "format": "ttf",
+      "variable": false,
+      "names": {
+        "family": "Carlito",
+        "subfamily": "Bold Italic",
+        "postScript": "Carlito-BoldItalic",
+        "full": "Carlito Bold Italic",
+        "version": "Version 1.104"
+      },
+      "embedding": {
+        "fsType": 0,
+        "restrictedEmbedding": false,
+        "previewAndPrintOnly": false,
+        "editableEmbedding": false,
+        "noSubsetting": false,
+        "bitmapOnly": false
+      },
+      "coverage": {
+        "cmapCodepoints": 2118,
+        "minCodepoint": "U+0000",
+        "maxCodepoint": "U+FFFF",
+        "scripts": {
+          "Latin": 1014,
+          "Greek": 358,
+          "Cyrillic": 274
+        },
+        "otherCodepoints": 472
+      },
+      "license": {
+        "copyright": "Copyright 2013 The Carlito Project Authors (https://github.com/googlefonts/carlito)",
+        "embeddedNotice": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+        "embeddedUrl": "https://scripts.sil.org/OFL",
+        "spdx": "OFL-1.1",
+        "noticePath": "LICENSES/Carlito-OFL.txt"
+      }
+    },
+    {
+      "id": "liberation-sans-regular",
+      "path": "LiberationSans-Regular.ttf",
+      "face": "Regular",
+      "roles": {
+        "requestedFamilies": [
+          "Arial"
+        ]
+      },
+      "source": {
+        "repositoryUrl": "https://github.com/liberationfonts/liberation-fonts",
+        "revision": "2.1.5",
+        "revisionType": "tag",
+        "commit": "4b0192046158094654e865245832c66d2104219e",
+        "archiveSha256": "7191c669bf38899f73a2094ed00f7b800553364f90e2637010a69c0e268f25d0",
+        "url": "https://github.com/liberationfonts/liberation-fonts/files/7261482/liberation-fonts-ttf-2.1.5.tar.gz",
+        "archiveMember": "liberation-fonts-ttf-2.1.5/LiberationSans-Regular.ttf"
+      },
+      "byteLength": 410712,
+      "sha256": "76d04c18ea243f426b7de1f3ad208e927008f961dc5945e5aad352d0dfde8ee8",
+      "format": "ttf",
+      "variable": false,
+      "names": {
+        "family": "Liberation Sans",
+        "subfamily": "Regular",
+        "postScript": "LiberationSans",
+        "full": "Liberation Sans",
+        "version": "Version 2.1.5"
+      },
+      "embedding": {
+        "fsType": 0,
+        "restrictedEmbedding": false,
+        "previewAndPrintOnly": false,
+        "editableEmbedding": false,
+        "noSubsetting": false,
+        "bitmapOnly": false
+      },
+      "coverage": {
+        "cmapCodepoints": 2328,
+        "minCodepoint": "U+0020",
+        "maxCodepoint": "U+FFFF",
+        "scripts": {
+          "Latin": 1016,
+          "Greek": 359,
+          "Cyrillic": 280,
+          "Hebrew": 133
+        },
+        "otherCodepoints": 540
+      },
+      "license": {
+        "copyright": "Digitized data copyright (c) 2010 Google Corporation. \nCopyright (c) 2012 Red Hat, Inc.",
+        "embeddedNotice": "Licensed under the SIL Open Font License, Version 1.1",
+        "embeddedUrl": "http://scripts.sil.org/OFL",
+        "spdx": "OFL-1.1",
+        "noticePath": "LICENSES/LiberationSans-OFL.txt"
+      }
+    },
+    {
+      "id": "liberation-sans-bold",
+      "path": "LiberationSans-Bold.ttf",
+      "face": "Bold",
+      "roles": {
+        "requestedFamilies": [
+          "Arial"
+        ]
+      },
+      "source": {
+        "repositoryUrl": "https://github.com/liberationfonts/liberation-fonts",
+        "revision": "2.1.5",
+        "revisionType": "tag",
+        "commit": "4b0192046158094654e865245832c66d2104219e",
+        "archiveSha256": "7191c669bf38899f73a2094ed00f7b800553364f90e2637010a69c0e268f25d0",
+        "url": "https://github.com/liberationfonts/liberation-fonts/files/7261482/liberation-fonts-ttf-2.1.5.tar.gz",
+        "archiveMember": "liberation-fonts-ttf-2.1.5/LiberationSans-Bold.ttf"
+      },
+      "byteLength": 414456,
+      "sha256": "788abee4c806d660e8aee46689dd8540cd4bb98da03dcc9d171ce3efd99a9173",
+      "format": "ttf",
+      "variable": false,
+      "names": {
+        "family": "Liberation Sans",
+        "subfamily": "Bold",
+        "postScript": "LiberationSans-Bold",
+        "full": "Liberation Sans Bold",
+        "version": "Version 2.1.5"
+      },
+      "embedding": {
+        "fsType": 0,
+        "restrictedEmbedding": false,
+        "previewAndPrintOnly": false,
+        "editableEmbedding": false,
+        "noSubsetting": false,
+        "bitmapOnly": false
+      },
+      "coverage": {
+        "cmapCodepoints": 2328,
+        "minCodepoint": "U+0020",
+        "maxCodepoint": "U+FFFF",
+        "scripts": {
+          "Latin": 1016,
+          "Greek": 359,
+          "Cyrillic": 280,
+          "Hebrew": 133
+        },
+        "otherCodepoints": 540
+      },
+      "license": {
+        "copyright": "Digitized data copyright (c) 2010 Google Corporation.\nCopyright (c) 2012 Red Hat, Inc.",
+        "embeddedNotice": "Licensed under the SIL Open Font License, Version 1.1",
+        "embeddedUrl": "http://scripts.sil.org/OFL",
+        "spdx": "OFL-1.1",
+        "noticePath": "LICENSES/LiberationSans-OFL.txt"
+      }
+    },
+    {
+      "id": "liberation-sans-italic",
+      "path": "LiberationSans-Italic.ttf",
+      "face": "Italic",
+      "roles": {
+        "requestedFamilies": [
+          "Arial"
+        ]
+      },
+      "source": {
+        "repositoryUrl": "https://github.com/liberationfonts/liberation-fonts",
+        "revision": "2.1.5",
+        "revisionType": "tag",
+        "commit": "4b0192046158094654e865245832c66d2104219e",
+        "archiveSha256": "7191c669bf38899f73a2094ed00f7b800553364f90e2637010a69c0e268f25d0",
+        "url": "https://github.com/liberationfonts/liberation-fonts/files/7261482/liberation-fonts-ttf-2.1.5.tar.gz",
+        "archiveMember": "liberation-fonts-ttf-2.1.5/LiberationSans-Italic.ttf"
+      },
+      "byteLength": 415816,
+      "sha256": "e5bae5c4cde31f22142753855f4f8fb86da6ff39955ed3c0a11248b0d16948b0",
+      "format": "ttf",
+      "variable": false,
+      "names": {
+        "family": "Liberation Sans",
+        "subfamily": "Italic",
+        "postScript": "LiberationSans-Italic",
+        "full": "Liberation Sans Italic",
+        "version": "Version 2.1.5"
+      },
+      "embedding": {
+        "fsType": 0,
+        "restrictedEmbedding": false,
+        "previewAndPrintOnly": false,
+        "editableEmbedding": false,
+        "noSubsetting": false,
+        "bitmapOnly": false
+      },
+      "coverage": {
+        "cmapCodepoints": 2328,
+        "minCodepoint": "U+0020",
+        "maxCodepoint": "U+FFFF",
+        "scripts": {
+          "Latin": 1016,
+          "Greek": 359,
+          "Cyrillic": 280,
+          "Hebrew": 133
+        },
+        "otherCodepoints": 540
+      },
+      "license": {
+        "copyright": "Digitized data copyright (c) 2010 Google Corporation.\nCopyright (c) 2012 Red Hat, Inc.",
+        "embeddedNotice": "Licensed under the SIL Open Font License, Version 1.1",
+        "embeddedUrl": "http://scripts.sil.org/OFL",
+        "spdx": "OFL-1.1",
+        "noticePath": "LICENSES/LiberationSans-OFL.txt"
+      }
+    },
+    {
+      "id": "liberation-sans-bold-italic",
+      "path": "LiberationSans-BoldItalic.ttf",
+      "face": "BoldItalic",
+      "roles": {
+        "requestedFamilies": [
+          "Arial"
+        ]
+      },
+      "source": {
+        "repositoryUrl": "https://github.com/liberationfonts/liberation-fonts",
+        "revision": "2.1.5",
+        "revisionType": "tag",
+        "commit": "4b0192046158094654e865245832c66d2104219e",
+        "archiveSha256": "7191c669bf38899f73a2094ed00f7b800553364f90e2637010a69c0e268f25d0",
+        "url": "https://github.com/liberationfonts/liberation-fonts/files/7261482/liberation-fonts-ttf-2.1.5.tar.gz",
+        "archiveMember": "liberation-fonts-ttf-2.1.5/LiberationSans-BoldItalic.ttf"
+      },
+      "byteLength": 408996,
+      "sha256": "698da70fc191cc5f33ad4d6d3fe830fe4624b898ea2e3169955928b7c491f1ee",
+      "format": "ttf",
+      "variable": false,
+      "names": {
+        "family": "Liberation Sans",
+        "subfamily": "Bold Italic",
+        "postScript": "LiberationSans-BoldItalic",
+        "full": "Liberation Sans Bold Italic",
+        "version": "Version 2.1.5"
+      },
+      "embedding": {
+        "fsType": 0,
+        "restrictedEmbedding": false,
+        "previewAndPrintOnly": false,
+        "editableEmbedding": false,
+        "noSubsetting": false,
+        "bitmapOnly": false
+      },
+      "coverage": {
+        "cmapCodepoints": 2328,
+        "minCodepoint": "U+0020",
+        "maxCodepoint": "U+FFFF",
+        "scripts": {
+          "Latin": 1016,
+          "Greek": 359,
+          "Cyrillic": 280,
+          "Hebrew": 133
+        },
+        "otherCodepoints": 540
+      },
+      "license": {
+        "copyright": "Digitized data copyright (c) 2010 Google Corporation.\nCopyright (c) 2012 Red Hat, Inc.",
+        "embeddedNotice": "Licensed under the SIL Open Font License, Version 1.1",
+        "embeddedUrl": "http://scripts.sil.org/OFL",
+        "spdx": "OFL-1.1",
+        "noticePath": "LICENSES/LiberationSans-OFL.txt"
+      }
+    },
+    {
+      "id": "liberation-mono-regular",
+      "path": "LiberationMono-Regular.ttf",
+      "face": "Regular",
+      "roles": {
+        "requestedFamilies": [
+          "Courier New"
+        ]
+      },
+      "source": {
+        "repositoryUrl": "https://github.com/liberationfonts/liberation-fonts",
+        "revision": "2.1.5",
+        "revisionType": "tag",
+        "commit": "4b0192046158094654e865245832c66d2104219e",
+        "archiveSha256": "7191c669bf38899f73a2094ed00f7b800553364f90e2637010a69c0e268f25d0",
+        "url": "https://github.com/liberationfonts/liberation-fonts/files/7261482/liberation-fonts-ttf-2.1.5.tar.gz",
+        "archiveMember": "liberation-fonts-ttf-2.1.5/LiberationMono-Regular.ttf"
+      },
+      "byteLength": 319508,
+      "sha256": "f2b83c763e8afd21709333370bed4774337fae82267937e2b5aea7e2fbd922c1",
+      "format": "ttf",
+      "variable": false,
+      "names": {
+        "family": "Liberation Mono",
+        "subfamily": "Regular",
+        "postScript": "LiberationMono",
+        "full": "Liberation Mono",
+        "version": "Version 2.1.5"
+      },
+      "embedding": {
+        "fsType": 0,
+        "restrictedEmbedding": false,
+        "previewAndPrintOnly": false,
+        "editableEmbedding": false,
+        "noSubsetting": false,
+        "bitmapOnly": false
+      },
+      "coverage": {
+        "cmapCodepoints": 2306,
+        "minCodepoint": "U+0020",
+        "maxCodepoint": "U+FFFF",
+        "scripts": {
+          "Latin": 1015,
+          "Greek": 359,
+          "Cyrillic": 280,
+          "Hebrew": 133
+        },
+        "otherCodepoints": 519
+      },
+      "license": {
+        "copyright": "Digitized data copyright (c) 2010 Google Corporation.\nCopyright (c) 2012 Red Hat, Inc.",
+        "embeddedNotice": "Licensed under the SIL Open Font License, Version 1.1",
+        "embeddedUrl": "http://scripts.sil.org/OFL",
+        "spdx": "OFL-1.1",
+        "noticePath": "LICENSES/LiberationMono-OFL.txt"
+      }
+    },
+    {
+      "id": "liberation-mono-bold",
+      "path": "LiberationMono-Bold.ttf",
+      "face": "Bold",
+      "roles": {
+        "requestedFamilies": [
+          "Courier New"
+        ]
+      },
+      "source": {
+        "repositoryUrl": "https://github.com/liberationfonts/liberation-fonts",
+        "revision": "2.1.5",
+        "revisionType": "tag",
+        "commit": "4b0192046158094654e865245832c66d2104219e",
+        "archiveSha256": "7191c669bf38899f73a2094ed00f7b800553364f90e2637010a69c0e268f25d0",
+        "url": "https://github.com/liberationfonts/liberation-fonts/files/7261482/liberation-fonts-ttf-2.1.5.tar.gz",
+        "archiveMember": "liberation-fonts-ttf-2.1.5/LiberationMono-Bold.ttf"
+      },
+      "byteLength": 307996,
+      "sha256": "bd62a0672d0b9b6710b01df434c80ad54fa5f0835207eb7b17b7a761463067bb",
+      "format": "ttf",
+      "variable": false,
+      "names": {
+        "family": "Liberation Mono",
+        "subfamily": "Bold",
+        "postScript": "LiberationMono-Bold",
+        "full": "Liberation Mono Bold",
+        "version": "Version 2.1.5"
+      },
+      "embedding": {
+        "fsType": 0,
+        "restrictedEmbedding": false,
+        "previewAndPrintOnly": false,
+        "editableEmbedding": false,
+        "noSubsetting": false,
+        "bitmapOnly": false
+      },
+      "coverage": {
+        "cmapCodepoints": 2306,
+        "minCodepoint": "U+0020",
+        "maxCodepoint": "U+FFFF",
+        "scripts": {
+          "Latin": 1015,
+          "Greek": 359,
+          "Cyrillic": 280,
+          "Hebrew": 133
+        },
+        "otherCodepoints": 519
+      },
+      "license": {
+        "copyright": "Digitized data copyright (c) 2010 Google Corporation.\nCopyright (c) 2012 Red Hat, Inc.",
+        "embeddedNotice": "Licensed under the SIL Open Font License, Version 1.1",
+        "embeddedUrl": "http://scripts.sil.org/OFL",
+        "spdx": "OFL-1.1",
+        "noticePath": "LICENSES/LiberationMono-OFL.txt"
+      }
+    },
+    {
+      "id": "liberation-mono-italic",
+      "path": "LiberationMono-Italic.ttf",
+      "face": "Italic",
+      "roles": {
+        "requestedFamilies": [
+          "Courier New"
+        ]
+      },
+      "source": {
+        "repositoryUrl": "https://github.com/liberationfonts/liberation-fonts",
+        "revision": "2.1.5",
+        "revisionType": "tag",
+        "commit": "4b0192046158094654e865245832c66d2104219e",
+        "archiveSha256": "7191c669bf38899f73a2094ed00f7b800553364f90e2637010a69c0e268f25d0",
+        "url": "https://github.com/liberationfonts/liberation-fonts/files/7261482/liberation-fonts-ttf-2.1.5.tar.gz",
+        "archiveMember": "liberation-fonts-ttf-2.1.5/LiberationMono-Italic.ttf"
+      },
+      "byteLength": 281536,
+      "sha256": "605c01c711b44480a7508d349dfbf3264e81fa43d69e61cfa7d10b86e764c4d1",
+      "format": "ttf",
+      "variable": false,
+      "names": {
+        "family": "Liberation Mono",
+        "subfamily": "Italic",
+        "postScript": "LiberationMono-Italic",
+        "full": "Liberation Mono Italic",
+        "version": "Version 2.1.5"
+      },
+      "embedding": {
+        "fsType": 0,
+        "restrictedEmbedding": false,
+        "previewAndPrintOnly": false,
+        "editableEmbedding": false,
+        "noSubsetting": false,
+        "bitmapOnly": false
+      },
+      "coverage": {
+        "cmapCodepoints": 2306,
+        "minCodepoint": "U+0020",
+        "maxCodepoint": "U+FFFF",
+        "scripts": {
+          "Latin": 1015,
+          "Greek": 359,
+          "Cyrillic": 280,
+          "Hebrew": 133
+        },
+        "otherCodepoints": 519
+      },
+      "license": {
+        "copyright": "Digitized data copyright (c) 2010 Google Corporation.\nCopyright (c) 2012 Red Hat, Inc.",
+        "embeddedNotice": "Licensed under the SIL Open Font License, Version 1.1",
+        "embeddedUrl": "http://scripts.sil.org/OFL",
+        "spdx": "OFL-1.1",
+        "noticePath": "LICENSES/LiberationMono-OFL.txt"
+      }
+    },
+    {
+      "id": "liberation-mono-bold-italic",
+      "path": "LiberationMono-BoldItalic.ttf",
+      "face": "BoldItalic",
+      "roles": {
+        "requestedFamilies": [
+          "Courier New"
+        ]
+      },
+      "source": {
+        "repositoryUrl": "https://github.com/liberationfonts/liberation-fonts",
+        "revision": "2.1.5",
+        "revisionType": "tag",
+        "commit": "4b0192046158094654e865245832c66d2104219e",
+        "archiveSha256": "7191c669bf38899f73a2094ed00f7b800553364f90e2637010a69c0e268f25d0",
+        "url": "https://github.com/liberationfonts/liberation-fonts/files/7261482/liberation-fonts-ttf-2.1.5.tar.gz",
+        "archiveMember": "liberation-fonts-ttf-2.1.5/LiberationMono-BoldItalic.ttf"
+      },
+      "byteLength": 284068,
+      "sha256": "79451f3c09fe25116098853b7a2ca6e2436220ccc11af022979adbcf195be130",
+      "format": "ttf",
+      "variable": false,
+      "names": {
+        "family": "Liberation Mono",
+        "subfamily": "Bold Italic",
+        "postScript": "LiberationMono-BoldItalic",
+        "full": "Liberation Mono Bold Italic",
+        "version": "Version 2.1.5"
+      },
+      "embedding": {
+        "fsType": 0,
+        "restrictedEmbedding": false,
+        "previewAndPrintOnly": false,
+        "editableEmbedding": false,
+        "noSubsetting": false,
+        "bitmapOnly": false
+      },
+      "coverage": {
+        "cmapCodepoints": 2306,
+        "minCodepoint": "U+0020",
+        "maxCodepoint": "U+FFFF",
+        "scripts": {
+          "Latin": 1015,
+          "Greek": 359,
+          "Cyrillic": 280,
+          "Hebrew": 133
+        },
+        "otherCodepoints": 519
+      },
+      "license": {
+        "copyright": "Digitized data copyright (c) 2010 Google Corporation.\nCopyright (c) 2012 Red Hat, Inc.",
+        "embeddedNotice": "Licensed under the SIL Open Font License, Version 1.1",
+        "embeddedUrl": "http://scripts.sil.org/OFL",
+        "spdx": "OFL-1.1",
+        "noticePath": "LICENSES/LiberationMono-OFL.txt"
+      }
+    },
+    {
+      "id": "gelasio-regular",
+      "path": "Gelasio-Regular.ttf",
+      "face": "Regular",
+      "roles": {
+        "requestedFamilies": [
+          "Georgia"
+        ]
+      },
+      "source": {
+        "repositoryUrl": "https://github.com/SorkinType/Gelasio",
+        "revision": "7ab20e7e5c42791e603b9ee3201a0b49849cfdb2",
+        "revisionType": "commit",
+        "commit": "7ab20e7e5c42791e603b9ee3201a0b49849cfdb2",
+        "url": "https://raw.githubusercontent.com/SorkinType/Gelasio/7ab20e7e5c42791e603b9ee3201a0b49849cfdb2/fonts/ttf/Gelasio-Regular.ttf",
+        "path": "fonts/ttf/Gelasio-Regular.ttf"
+      },
+      "byteLength": 147572,
+      "sha256": "48c797fbe0e07c48a18cb962e7bdfa23f19618327dddf54093265328dc9eb39d",
+      "format": "ttf",
+      "variable": false,
+      "names": {
+        "family": "Gelasio",
+        "subfamily": "Regular",
+        "postScript": "Gelasio-Regular",
+        "full": "Gelasio Regular",
+        "version": "Version 1.008; ttfautohint (v1.8.4.7-5d5b)"
+      },
+      "embedding": {
+        "fsType": 0,
+        "restrictedEmbedding": false,
+        "previewAndPrintOnly": false,
+        "editableEmbedding": false,
+        "noSubsetting": false,
+        "bitmapOnly": false
+      },
+      "coverage": {
+        "cmapCodepoints": 919,
+        "minCodepoint": "U+000D",
+        "maxCodepoint": "U+FFFF",
+        "scripts": {
+          "Latin": 649,
+          "Greek": 20
+        },
+        "otherCodepoints": 250
+      },
+      "license": {
+        "copyright": "Copyright 2022 The Gelasio Project Authors (https://github.com/SorkinType/Gelasio)",
+        "embeddedNotice": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org",
+        "embeddedUrl": "https://openfontlicense.org",
+        "spdx": "OFL-1.1",
+        "noticePath": "LICENSES/Gelasio-OFL.txt"
+      }
+    },
+    {
+      "id": "gelasio-bold",
+      "path": "Gelasio-Bold.ttf",
+      "face": "Bold",
+      "roles": {
+        "requestedFamilies": [
+          "Georgia"
+        ]
+      },
+      "source": {
+        "repositoryUrl": "https://github.com/SorkinType/Gelasio",
+        "revision": "7ab20e7e5c42791e603b9ee3201a0b49849cfdb2",
+        "revisionType": "commit",
+        "commit": "7ab20e7e5c42791e603b9ee3201a0b49849cfdb2",
+        "url": "https://raw.githubusercontent.com/SorkinType/Gelasio/7ab20e7e5c42791e603b9ee3201a0b49849cfdb2/fonts/ttf/Gelasio-Bold.ttf",
+        "path": "fonts/ttf/Gelasio-Bold.ttf"
+      },
+      "byteLength": 148380,
+      "sha256": "e0ef3addf1acf35f5c6aef2be00d0a2c01363bf70a5950e16650976051a0c462",
+      "format": "ttf",
+      "variable": false,
+      "names": {
+        "family": "Gelasio",
+        "subfamily": "Bold",
+        "postScript": "Gelasio-Bold",
+        "full": "Gelasio Bold",
+        "version": "Version 1.008; ttfautohint (v1.8.4.7-5d5b)"
+      },
+      "embedding": {
+        "fsType": 0,
+        "restrictedEmbedding": false,
+        "previewAndPrintOnly": false,
+        "editableEmbedding": false,
+        "noSubsetting": false,
+        "bitmapOnly": false
+      },
+      "coverage": {
+        "cmapCodepoints": 919,
+        "minCodepoint": "U+000D",
+        "maxCodepoint": "U+FFFF",
+        "scripts": {
+          "Latin": 649,
+          "Greek": 20
+        },
+        "otherCodepoints": 250
+      },
+      "license": {
+        "copyright": "Copyright 2022 The Gelasio Project Authors (https://github.com/SorkinType/Gelasio)",
+        "embeddedNotice": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org",
+        "embeddedUrl": "https://openfontlicense.org",
+        "spdx": "OFL-1.1",
+        "noticePath": "LICENSES/Gelasio-OFL.txt"
+      }
+    },
+    {
+      "id": "gelasio-italic",
+      "path": "Gelasio-Italic.ttf",
+      "face": "Italic",
+      "roles": {
+        "requestedFamilies": [
+          "Georgia"
+        ]
+      },
+      "source": {
+        "repositoryUrl": "https://github.com/SorkinType/Gelasio",
+        "revision": "7ab20e7e5c42791e603b9ee3201a0b49849cfdb2",
+        "revisionType": "commit",
+        "commit": "7ab20e7e5c42791e603b9ee3201a0b49849cfdb2",
+        "url": "https://raw.githubusercontent.com/SorkinType/Gelasio/7ab20e7e5c42791e603b9ee3201a0b49849cfdb2/fonts/ttf/Gelasio-Italic.ttf",
+        "path": "fonts/ttf/Gelasio-Italic.ttf"
+      },
+      "byteLength": 160268,
+      "sha256": "1d8bda4ff258bb8251eae4f7d7500c8d97d084136192bb264bc2305168765d1b",
+      "format": "ttf",
+      "variable": false,
+      "names": {
+        "family": "Gelasio",
+        "subfamily": "Italic",
+        "postScript": "Gelasio-Italic",
+        "full": "Gelasio Italic",
+        "version": "Version 1.008; ttfautohint (v1.8.4.7-5d5b)"
+      },
+      "embedding": {
+        "fsType": 0,
+        "restrictedEmbedding": false,
+        "previewAndPrintOnly": false,
+        "editableEmbedding": false,
+        "noSubsetting": false,
+        "bitmapOnly": false
+      },
+      "coverage": {
+        "cmapCodepoints": 919,
+        "minCodepoint": "U+000D",
+        "maxCodepoint": "U+FFFF",
+        "scripts": {
+          "Latin": 649,
+          "Greek": 20
+        },
+        "otherCodepoints": 250
+      },
+      "license": {
+        "copyright": "Copyright 2022 The Gelasio Project Authors (https://github.com/SorkinType/Gelasio)",
+        "embeddedNotice": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org",
+        "embeddedUrl": "https://openfontlicense.org",
+        "spdx": "OFL-1.1",
+        "noticePath": "LICENSES/Gelasio-OFL.txt"
+      }
+    },
+    {
+      "id": "gelasio-bold-italic",
+      "path": "Gelasio-BoldItalic.ttf",
+      "face": "BoldItalic",
+      "roles": {
+        "requestedFamilies": [
+          "Georgia"
+        ]
+      },
+      "source": {
+        "repositoryUrl": "https://github.com/SorkinType/Gelasio",
+        "revision": "7ab20e7e5c42791e603b9ee3201a0b49849cfdb2",
+        "revisionType": "commit",
+        "commit": "7ab20e7e5c42791e603b9ee3201a0b49849cfdb2",
+        "url": "https://raw.githubusercontent.com/SorkinType/Gelasio/7ab20e7e5c42791e603b9ee3201a0b49849cfdb2/fonts/ttf/Gelasio-BoldItalic.ttf",
+        "path": "fonts/ttf/Gelasio-BoldItalic.ttf"
+      },
+      "byteLength": 160812,
+      "sha256": "aa87e21b46aef3dcb50a68dc6e1946f0c0a9819d067e4be6a98a6daa8f5b3c16",
+      "format": "ttf",
+      "variable": false,
+      "names": {
+        "family": "Gelasio",
+        "subfamily": "Bold Italic",
+        "postScript": "Gelasio-BoldItalic",
+        "full": "Gelasio Bold Italic",
+        "version": "Version 1.008; ttfautohint (v1.8.4.7-5d5b)"
+      },
+      "embedding": {
+        "fsType": 0,
+        "restrictedEmbedding": false,
+        "previewAndPrintOnly": false,
+        "editableEmbedding": false,
+        "noSubsetting": false,
+        "bitmapOnly": false
+      },
+      "coverage": {
+        "cmapCodepoints": 919,
+        "minCodepoint": "U+000D",
+        "maxCodepoint": "U+FFFF",
+        "scripts": {
+          "Latin": 649,
+          "Greek": 20
+        },
+        "otherCodepoints": 250
+      },
+      "license": {
+        "copyright": "Copyright 2022 The Gelasio Project Authors (https://github.com/SorkinType/Gelasio)",
+        "embeddedNotice": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org",
+        "embeddedUrl": "https://openfontlicense.org",
+        "spdx": "OFL-1.1",
+        "noticePath": "LICENSES/Gelasio-OFL.txt"
+      }
+    },
+    {
+      "id": "source-sans3-regular",
+      "path": "SourceSans3-Regular.ttf",
+      "face": "Regular",
+      "roles": {
+        "requestedFamilies": [
+          "Trebuchet MS"
+        ]
+      },
+      "source": {
+        "repositoryUrl": "https://github.com/adobe-fonts/source-sans",
+        "revision": "3.052R",
+        "revisionType": "tag",
+        "commit": "ed1808970eb3c7301c9a523bee26473ba0bb62fa",
+        "archiveSha256": "1b0dd1ec44b39f1dd98bbd153a1a3815f083639874ddee02c842bd601bad3d21",
+        "url": "https://github.com/adobe-fonts/source-sans/releases/download/3.052R/TTF-source-sans-3.052R.zip",
+        "archiveMember": "TTF/SourceSans3-Regular.ttf"
+      },
+      "byteLength": 431196,
+      "sha256": "4644c81b86ec9caaa76b634889968ed3c4f4f52f054855933acc7c2b21e53b0f",
+      "format": "ttf",
+      "variable": false,
+      "names": {
+        "family": "Source Sans 3",
+        "subfamily": "Regular",
+        "postScript": "SourceSans3-Regular",
+        "full": "Source Sans 3",
+        "version": "Version 3.052;hotconv 1.1.0;makeotfexe 2.6.0"
+      },
+      "embedding": {
+        "fsType": 0,
+        "restrictedEmbedding": false,
+        "previewAndPrintOnly": false,
+        "editableEmbedding": false,
+        "noSubsetting": false,
+        "bitmapOnly": false
+      },
+      "coverage": {
+        "cmapCodepoints": 1614,
+        "minCodepoint": "U+0020",
+        "maxCodepoint": "U+1F916",
+        "scripts": {
+          "Latin": 718,
+          "Greek": 319,
+          "Cyrillic": 156
+        },
+        "otherCodepoints": 421
+      },
+      "license": {
+        "copyright": "© 2023 Adobe (http://www.adobe.com/), with Reserved Font Name ‘Source’",
+        "embeddedNotice": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL. This Font Software is distributed on an ‘AS IS’ BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software.",
+        "embeddedUrl": "http://scripts.sil.org/OFL",
+        "spdx": "OFL-1.1",
+        "noticePath": "LICENSES/SourceSans3-OFL.txt"
+      }
+    },
+    {
+      "id": "source-sans3-bold",
+      "path": "SourceSans3-Bold.ttf",
+      "face": "Bold",
+      "roles": {
+        "requestedFamilies": [
+          "Trebuchet MS"
+        ]
+      },
+      "source": {
+        "repositoryUrl": "https://github.com/adobe-fonts/source-sans",
+        "revision": "3.052R",
+        "revisionType": "tag",
+        "commit": "ed1808970eb3c7301c9a523bee26473ba0bb62fa",
+        "archiveSha256": "1b0dd1ec44b39f1dd98bbd153a1a3815f083639874ddee02c842bd601bad3d21",
+        "url": "https://github.com/adobe-fonts/source-sans/releases/download/3.052R/TTF-source-sans-3.052R.zip",
+        "archiveMember": "TTF/SourceSans3-Bold.ttf"
+      },
+      "byteLength": 428176,
+      "sha256": "9214b9d95e4231c609802815c2646c98174e2102d0d37f88978a7f8e71006e6a",
+      "format": "ttf",
+      "variable": false,
+      "names": {
+        "family": "Source Sans 3",
+        "subfamily": "Bold",
+        "postScript": "SourceSans3-Bold",
+        "full": "Source Sans 3 Bold",
+        "version": "Version 3.052;hotconv 1.1.0;makeotfexe 2.6.0"
+      },
+      "embedding": {
+        "fsType": 0,
+        "restrictedEmbedding": false,
+        "previewAndPrintOnly": false,
+        "editableEmbedding": false,
+        "noSubsetting": false,
+        "bitmapOnly": false
+      },
+      "coverage": {
+        "cmapCodepoints": 1614,
+        "minCodepoint": "U+0020",
+        "maxCodepoint": "U+1F916",
+        "scripts": {
+          "Latin": 718,
+          "Greek": 319,
+          "Cyrillic": 156
+        },
+        "otherCodepoints": 421
+      },
+      "license": {
+        "copyright": "© 2023 Adobe (http://www.adobe.com/), with Reserved Font Name ‘Source’",
+        "embeddedNotice": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL. This Font Software is distributed on an ‘AS IS’ BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software.",
+        "embeddedUrl": "http://scripts.sil.org/OFL",
+        "spdx": "OFL-1.1",
+        "noticePath": "LICENSES/SourceSans3-OFL.txt"
+      }
+    },
+    {
+      "id": "source-sans3-italic",
+      "path": "SourceSans3-Italic.ttf",
+      "face": "Italic",
+      "roles": {
+        "requestedFamilies": [
+          "Trebuchet MS"
+        ]
+      },
+      "source": {
+        "repositoryUrl": "https://github.com/adobe-fonts/source-sans",
+        "revision": "3.052R",
+        "revisionType": "tag",
+        "commit": "ed1808970eb3c7301c9a523bee26473ba0bb62fa",
+        "archiveSha256": "1b0dd1ec44b39f1dd98bbd153a1a3815f083639874ddee02c842bd601bad3d21",
+        "url": "https://github.com/adobe-fonts/source-sans/releases/download/3.052R/TTF-source-sans-3.052R.zip",
+        "archiveMember": "TTF/SourceSans3-It.ttf"
+      },
+      "byteLength": 315812,
+      "sha256": "192afd78f0f54a3c69eaf02d43f4d9a821e9d6110e41d3d25d61a7385cd580e4",
+      "format": "ttf",
+      "variable": false,
+      "names": {
+        "family": "Source Sans 3",
+        "subfamily": "Italic",
+        "postScript": "SourceSans3-It",
+        "full": "Source Sans 3 Italic",
+        "version": "Version 3.052;hotconv 1.1.0;makeotfexe 2.6.0"
+      },
+      "embedding": {
+        "fsType": 0,
+        "restrictedEmbedding": false,
+        "previewAndPrintOnly": false,
+        "editableEmbedding": false,
+        "noSubsetting": false,
+        "bitmapOnly": false
+      },
+      "coverage": {
+        "cmapCodepoints": 1614,
+        "minCodepoint": "U+0020",
+        "maxCodepoint": "U+1F916",
+        "scripts": {
+          "Latin": 718,
+          "Greek": 319,
+          "Cyrillic": 156
+        },
+        "otherCodepoints": 421
+      },
+      "license": {
+        "copyright": "© 2023 Adobe (http://www.adobe.com/), with Reserved Font Name ‘Source’",
+        "embeddedNotice": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL. This Font Software is distributed on an ‘AS IS’ BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software.",
+        "embeddedUrl": "http://scripts.sil.org/OFL",
+        "spdx": "OFL-1.1",
+        "noticePath": "LICENSES/SourceSans3-OFL.txt"
+      }
+    },
+    {
+      "id": "source-sans3-bold-italic",
+      "path": "SourceSans3-BoldItalic.ttf",
+      "face": "BoldItalic",
+      "roles": {
+        "requestedFamilies": [
+          "Trebuchet MS"
+        ]
+      },
+      "source": {
+        "repositoryUrl": "https://github.com/adobe-fonts/source-sans",
+        "revision": "3.052R",
+        "revisionType": "tag",
+        "commit": "ed1808970eb3c7301c9a523bee26473ba0bb62fa",
+        "archiveSha256": "1b0dd1ec44b39f1dd98bbd153a1a3815f083639874ddee02c842bd601bad3d21",
+        "url": "https://github.com/adobe-fonts/source-sans/releases/download/3.052R/TTF-source-sans-3.052R.zip",
+        "archiveMember": "TTF/SourceSans3-BoldIt.ttf"
+      },
+      "byteLength": 318700,
+      "sha256": "7978291fc1bf314db887e0366853b33c5cf2e964c7b95cfb9ce403a6ec46a842",
+      "format": "ttf",
+      "variable": false,
+      "names": {
+        "family": "Source Sans 3",
+        "subfamily": "Bold Italic",
+        "postScript": "SourceSans3-BoldIt",
+        "full": "Source Sans 3 Bold Italic",
+        "version": "Version 3.052;hotconv 1.1.0;makeotfexe 2.6.0"
+      },
+      "embedding": {
+        "fsType": 0,
+        "restrictedEmbedding": false,
+        "previewAndPrintOnly": false,
+        "editableEmbedding": false,
+        "noSubsetting": false,
+        "bitmapOnly": false
+      },
+      "coverage": {
+        "cmapCodepoints": 1614,
+        "minCodepoint": "U+0020",
+        "maxCodepoint": "U+1F916",
+        "scripts": {
+          "Latin": 718,
+          "Greek": 319,
+          "Cyrillic": 156
+        },
+        "otherCodepoints": 421
+      },
+      "license": {
+        "copyright": "© 2023 Adobe (http://www.adobe.com/), with Reserved Font Name ‘Source’",
+        "embeddedNotice": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL. This Font Software is distributed on an ‘AS IS’ BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software.",
+        "embeddedUrl": "http://scripts.sil.org/OFL",
+        "spdx": "OFL-1.1",
+        "noticePath": "LICENSES/SourceSans3-OFL.txt"
+      }
+    }
+  ]
+}

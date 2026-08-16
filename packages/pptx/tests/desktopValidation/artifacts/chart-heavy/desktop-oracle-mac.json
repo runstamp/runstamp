@@ -1,0 +1,19 @@
+{
+  "fixtureId": "chart-heavy",
+  "passed": true,
+  "failures": [],
+  "oracle": {
+    "available": true,
+    "fixtureId": "chart-heavy",
+    "passed": true,
+    "failures": [],
+    "pdfPath": "/Users/jake/plain/plainworks/paperjsx.com/packages/core/tests/desktopValidation/artifacts/chart-heavy/chart-heavy.pdf",
+    "savedCopyPath": "/Users/jake/plain/plainworks/paperjsx.com/packages/core/tests/desktopValidation/artifacts/chart-heavy/chart-heavy.roundtrip.pptx",
+    "screenshotPath": "/Users/jake/plain/plainworks/paperjsx.com/packages/core/tests/desktopValidation/artifacts/chart-heavy/chart-heavy.png",
+    "details": [
+      "Opened presentation: chart-heavy.input.pptx, slides=2",
+      "PowerPoint canonicalized 27 normalized package part(s) during round-trip save."
+    ]
+  },
+  "structuralPassed": true
+}

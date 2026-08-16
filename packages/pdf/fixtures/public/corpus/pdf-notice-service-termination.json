@@ -1,0 +1,193 @@
+{
+  "id": "pdf-notice-service-termination",
+  "format": "pdf",
+  "description": "Formal end-of-life and service-termination notice for a hosted middleware platform, with a milestone-date table, affected-SKU table, migration guidance, and contractual references.",
+  "provenance": "Modeled on enterprise software end-of-life letters (IBM/Oracle/Broadcom style product discontinuance bulletins) sent to licensees when a hosted service is sunset. Deliberately exercises two mid-document tables (a five-row milestone schedule and a five-row affected-SKU list with part numbers), keepWithNext headings around tables, an ordered migration-steps list, and a dynamic footer with bulletin number across two pages.",
+  "expectedProperties": {
+    "pageCountMin": 2,
+    "hasTable": true,
+    "milestoneRows": 5,
+    "affectedSkuRows": 5,
+    "bulletinNumber": "EOL-2026-114",
+    "endOfServiceDate": "June 30, 2027"
+  },
+  "document": {
+    "meta": {
+      "title": "End of Service Notice — Corvid Integration Hub (Hosted)",
+      "author": "Ashline Systems Corporation",
+      "subject": "Product discontinuance bulletin EOL-2026-114"
+    },
+    "page": {
+      "size": "A4",
+      "margin": { "top": 56, "right": 58, "bottom": 66, "left": 58 }
+    },
+    "pageNumber": { "fontSize": 8, "format": "Bulletin EOL-2026-114 — Page {page} of {total}" },
+    "children": [
+      { "type": "heading", "level": 3, "value": "ASHLINE SYSTEMS CORPORATION" },
+      { "type": "paragraph", "fontSize": 9, "value": "Product Lifecycle Office  |  1 Ashline Plaza, Raleigh, NC 27601  |  lifecycle@ashlinesystems.com" },
+      { "type": "divider", "style": { "marginTop": 8, "marginBottom": 12 } },
+      {
+        "type": "table",
+        "columns": [{ "width": "50%" }, { "width": "50%" }],
+        "body": [
+          {
+            "cells": [
+              {
+                "children": [
+                  { "type": "paragraph", "fontSize": 9, "value": "Bulletin number: EOL-2026-114" },
+                  { "type": "paragraph", "fontSize": 9, "value": "Classification: Product Discontinuance — Hosted Service" },
+                  { "type": "paragraph", "fontSize": 9, "value": "Distribution: All licensees of record" }
+                ]
+              },
+              {
+                "children": [
+                  { "type": "paragraph", "fontSize": 9, "textAlign": "right", "value": "Date of notice: July 14, 2026" },
+                  { "type": "paragraph", "fontSize": 9, "textAlign": "right", "value": "End of service: June 30, 2027" },
+                  { "type": "paragraph", "fontSize": 9, "textAlign": "right", "value": "Contract reference: MSA §4.7 (Service Retirement)" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      { "type": "heading", "level": 1, "style": { "marginTop": 14 }, "value": "Notice of End of Service: Corvid Integration Hub (Hosted Editions)" },
+      { "type": "paragraph", "fontSize": 10, "lineHeight": 1.45, "style": { "marginTop": 8 }, "value": "This bulletin constitutes formal written notice, pursuant to Section 4.7 of the Ashline Master Services Agreement, that Ashline Systems Corporation will retire the hosted editions of Corvid Integration Hub. The service will be withdrawn from sale effective October 1, 2026, and all hosted environments will be permanently decommissioned at 23:59 UTC on June 30, 2027 (the \"End of Service Date\"). This notice provides no less than the 350 days of advance notice required under your agreement." },
+      { "type": "paragraph", "fontSize": 10, "lineHeight": 1.45, "style": { "marginTop": 6 }, "value": "The self-managed (on-premises) edition of Corvid Integration Hub is not affected by this bulletin and remains under standard lifecycle policy, with support committed through at least December 31, 2029. Customers holding hybrid entitlements should read Section 4 of this notice carefully, as hosted connector nodes attached to self-managed clusters are within the scope of this retirement." },
+      { "type": "heading", "level": 2, "style": { "marginTop": 16 }, "keepWithNext": true, "value": "1. Retirement Schedule" },
+      { "type": "paragraph", "fontSize": 10, "lineHeight": 1.45, "style": { "marginTop": 4 }, "value": "The retirement will proceed in the following stages. Dates apply uniformly across all hosting regions (us-east, eu-central, ap-southeast)." },
+      {
+        "type": "table",
+        "style": { "marginTop": 6, "borderTop": { "color": "#1a1a1a", "width": 1 }, "borderBottom": { "color": "#1a1a1a", "width": 1 } },
+        "columns": [{ "width": "18%" }, { "width": "30%" }, { "width": "52%" }],
+        "header": [
+          {
+            "cells": [
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Date" }], "style": { "backgroundColor": "#e4e7eb", "padding": 5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Milestone" }], "style": { "backgroundColor": "#e4e7eb", "padding": 5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Effect on your service" }], "style": { "backgroundColor": "#e4e7eb", "padding": 5 } }
+            ]
+          }
+        ],
+        "body": [
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Oct 1, 2026" }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "End of sale" }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "No new subscriptions, capacity expansions, or additional connector packs may be purchased. Renewals of existing subscriptions remain available for terms ending on or before the End of Service Date." }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Jan 15, 2027" }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "End of feature development" }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Final feature release (v11.4) ships. Thereafter only severity-1 defect fixes and security patches will be issued." }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Mar 31, 2027" }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "New-flow freeze" }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Creation of new integration flows and new connector instances is disabled. Existing flows continue to execute normally." }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Jun 30, 2027" }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "End of Service Date" }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "All hosted environments are shut down at 23:59 UTC. Runtime traffic is rejected, administrative consoles become read-only, and API keys are revoked." }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Sep 28, 2027" }], "style": { "padding": 5 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Data destruction" }], "style": { "padding": 5 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "All customer data remaining on Ashline infrastructure is cryptographically erased in accordance with NIST SP 800-88 and a certificate of destruction is issued on request. Export tooling remains available until this date." }], "style": { "padding": 5 } }
+            ]
+          }
+        ]
+      },
+      { "type": "page-break" },
+      { "type": "heading", "level": 2, "style": { "marginTop": 16 }, "keepWithNext": true, "value": "2. Affected Offerings" },
+      {
+        "type": "table",
+        "style": { "marginTop": 6, "borderTop": { "color": "#1a1a1a", "width": 1 }, "borderBottom": { "color": "#1a1a1a", "width": 1 } },
+        "columns": [{ "width": "20%" }, { "width": "44%" }, { "width": "18%" }, { "width": "18%" }],
+        "header": [
+          {
+            "cells": [
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Part number" }], "style": { "backgroundColor": "#e4e7eb", "padding": 5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Offering" }], "style": { "backgroundColor": "#e4e7eb", "padding": 5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Withdrawn from sale" }], "style": { "backgroundColor": "#e4e7eb", "padding": 5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "End of service" }], "style": { "backgroundColor": "#e4e7eb", "padding": 5 } }
+            ]
+          }
+        ],
+        "body": [
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "CIH-H-STD-A" }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Corvid Integration Hub Hosted, Standard Edition (annual)" }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Oct 1, 2026" }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Jun 30, 2027" }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "CIH-H-ENT-A" }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Corvid Integration Hub Hosted, Enterprise Edition (annual)" }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Oct 1, 2026" }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Jun 30, 2027" }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "CIH-H-CONN-10" }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Hosted connector pack, 10-connector expansion" }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Oct 1, 2026" }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Jun 30, 2027" }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "CIH-HYB-NODE" }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Hybrid hosted connector node for self-managed clusters" }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Oct 1, 2026" }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Jun 30, 2027" }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "CIH-H-SBX" }], "style": { "padding": 5 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Hosted developer sandbox environment (no-charge entitlement)" }], "style": { "padding": 5 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Oct 1, 2026" }], "style": { "padding": 5 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Mar 31, 2027" }], "style": { "padding": 5 } }
+            ]
+          }
+        ]
+      },
+      { "type": "heading", "level": 2, "style": { "marginTop": 16 }, "keepWithNext": true, "value": "3. Recommended Migration Path" },
+      { "type": "paragraph", "fontSize": 10, "lineHeight": 1.45, "style": { "marginTop": 4 }, "value": "Ashline recommends migration to Ashline Fabric, the successor integration platform, which provides functional equivalence for all Corvid connector families as of Fabric release 3.2. Licensees in good standing are entitled to a no-charge entitlement exchange at a 1:1 capacity ratio if the exchange is executed before March 31, 2027. To migrate:" },
+      {
+        "type": "list",
+        "ordered": true,
+        "style": { "marginTop": 6, "marginLeft": 10 },
+        "items": [
+          { "text": "Request a migration assessment through the customer portal (Support > Lifecycle > EOL-2026-114) no later than December 15, 2026; assessments are scheduled in order of receipt." },
+          { "text": "Run the Corvid-to-Fabric export utility (version 2.1 or later) against each hosted environment to produce a signed flow-definition archive; the utility is available at no charge from the downloads center." },
+          { "text": "Validate exported flows in a Fabric staging workspace; Ashline Professional Services offers a fixed-fee validation package (SKU FAB-MIG-VAL) for customers with more than 200 active flows." },
+          { "text": "Execute the entitlement exchange amendment countersigned by your account executive before March 31, 2027 to preserve the no-charge exchange ratio." },
+          { "text": "Complete production cutover and confirm decommissioning of the hosted environment through the portal; early decommission credits accrue for each full month between cutover and the End of Service Date." }
+        ]
+      },
+      { "type": "heading", "level": 2, "style": { "marginTop": 16 }, "keepWithNext": true, "value": "4. Contractual and Data-Handling Terms" },
+      { "type": "paragraph", "fontSize": 10, "lineHeight": 1.45, "style": { "marginTop": 4 }, "value": "Subscription fees paid for periods extending beyond the End of Service Date will be refunded pro rata within 60 days, per Section 4.7(c) of the Master Services Agreement. No early-termination charges apply to cancellations submitted after the date of this bulletin. Hosted connector nodes attached to self-managed clusters (SKU CIH-HYB-NODE) will cease to function on the End of Service Date even where the attached self-managed cluster remains supported; affected customers should plan connector rehosting as part of migration." },
+      { "type": "paragraph", "fontSize": 10, "lineHeight": 1.45, "style": { "marginTop": 6 }, "value": "Customer data may be exported in full at any time before September 28, 2027 using the bulk export API or the export utility described above. After that date, Ashline will hold no copy of your data, and no recovery will be possible. Customers subject to regulatory retention obligations are solely responsible for completing exports before the destruction date." },
+      { "type": "heading", "level": 2, "style": { "marginTop": 16 }, "keepWithNext": true, "value": "5. Assistance" },
+      { "type": "paragraph", "fontSize": 10, "lineHeight": 1.45, "style": { "marginTop": 4 }, "value": "Questions regarding this bulletin should be directed to your Ashline account executive or to the Product Lifecycle Office at lifecycle@ashlinesystems.com, quoting bulletin number EOL-2026-114. A recorded briefing and an updated FAQ are available in the customer portal. This bulletin will be reissued only if a listed date changes by more than 30 days." },
+      { "type": "paragraph", "fontSize": 10, "style": { "marginTop": 18 }, "value": "Issued by authority of:" },
+      { "type": "paragraph", "fontSize": 10, "style": { "marginTop": 12 }, "value": "Theodore Brandt" },
+      { "type": "paragraph", "fontSize": 9, "value": "Vice President, Product Lifecycle Management" },
+      { "type": "paragraph", "fontSize": 9, "value": "Ashline Systems Corporation" }
+    ]
+  }
+}

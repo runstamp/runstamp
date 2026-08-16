@@ -1,0 +1,174 @@
+{
+  "version": 1,
+  "fixtures": [
+    {
+      "id": "classic-chart",
+      "title": "Classic chart baseline",
+      "description": "Single-slide classic chart deck with title and bottom legend.",
+      "source": {
+        "kind": "module",
+        "module": "../fixtures/classicChartDeck.ts",
+        "export": "classicChartDeck",
+        "inputType": "paperDocument"
+      },
+      "expectedSlideCount": 1,
+      "validationModes": ["structural", "desktop_open", "pdf_render", "roundtrip_diff"],
+      "acceptance": { "expectStructuralPass": true, "expectDesktopOpenPass": true }
+    },
+    {
+      "id": "template-mutation",
+      "title": "Template mutation baseline",
+      "description": "Template-backed deck exercising placeholder geometry and typography propagation.",
+      "source": {
+        "kind": "module",
+        "module": "../fixtures/templateMutationDeck.ts",
+        "export": "templateMutationDeck",
+        "inputType": "paperDocument"
+      },
+      "expectedSlideCount": 2,
+      "validationModes": ["structural", "desktop_open", "pdf_render", "roundtrip_diff"],
+      "acceptance": { "expectStructuralPass": true, "expectDesktopOpenPass": true }
+    },
+    {
+      "id": "long-text-paginated",
+      "title": "Long-text pagination",
+      "description": "PaperDocument fixture that must paginate before PPTX generation.",
+      "source": {
+        "kind": "module",
+        "module": "../fixtures/longTextDeck.ts",
+        "export": "longTextDeck",
+        "inputType": "paperDocument"
+      },
+      "expectedSlideCount": 12,
+      "validationModes": ["structural", "desktop_open", "pdf_render", "roundtrip_diff"],
+      "acceptance": { "expectStructuralPass": true, "expectDesktopOpenPass": true }
+    },
+    {
+      "id": "chart-heavy",
+      "title": "Chart-heavy legend and labels",
+      "description": "Multi-chart deck stressing legend reservation, labels, and plot-area sizing.",
+      "source": {
+        "kind": "module",
+        "module": "../fixtures/chartHeavyDeck.ts",
+        "export": "chartHeavyDeck",
+        "inputType": "paperDocument"
+      },
+      "expectedSlideCount": 2,
+      "validationModes": ["structural", "desktop_open", "pdf_render", "roundtrip_diff"],
+      "acceptance": { "expectStructuralPass": true, "expectDesktopOpenPass": true }
+    },
+    {
+      "id": "chartex-treemap",
+      "title": "ChartEx treemap",
+      "description": "Modern ChartEx deck retained for structural coverage while desktop compatibility remains under investigation.",
+      "source": {
+        "kind": "module",
+        "module": "../fixtures/chartExDeck.ts",
+        "export": "chartExDeck",
+        "inputType": "paperDocument"
+      },
+      "expectedSlideCount": 1,
+      "validationModes": ["structural", "pdf_render"],
+      "acceptance": { "expectStructuralPass": true, "expectDesktopOpenPass": true }
+    },
+    {
+      "id": "basic-text-shape",
+      "title": "Basic text and shape baseline",
+      "description": "Minimal native deck separating desktop automation failures from rich-feature package failures.",
+      "source": {
+        "kind": "module",
+        "module": "./basicTextShape.ts",
+        "export": "basicTextShapeDeck",
+        "inputType": "paperDocument"
+      },
+      "expectedSlideCount": 1,
+      "validationModes": ["structural", "desktop_open", "pdf_render", "roundtrip_diff"],
+      "acceptance": { "expectStructuralPass": true, "expectDesktopOpenPass": true }
+    },
+    {
+      "id": "notes-comments-media",
+      "title": "Notes comments and media",
+      "description": "Deck with notes, comments, and background/media relationships.",
+      "source": {
+        "kind": "module",
+        "module": "../fixtures/richMediaDeck.ts",
+        "export": "richMediaDeck",
+        "inputType": "paperDocument"
+      },
+      "expectedSlideCount": 2,
+      "validationModes": ["structural", "desktop_open", "pdf_render", "roundtrip_diff"],
+      "acceptance": { "expectStructuralPass": true, "expectDesktopOpenPass": true }
+    },
+    {
+      "id": "strategy-studio",
+      "title": "Strategy Studio repro",
+      "description": "Exact Strategy Consulting Studio deck used for Office for Mac compatibility regression coverage.",
+      "source": {
+        "kind": "module",
+        "module": "../fixtures/strategyStudioDeck.ts",
+        "export": "strategyStudioDeck",
+        "inputType": "paperDocument"
+      },
+      "expectedSlideCount": 25,
+      "validationModes": ["structural", "desktop_open", "pdf_render", "roundtrip_diff"],
+      "acceptance": { "expectStructuralPass": true, "expectDesktopOpenPass": true },
+      "renderOptions": { "outputMode": "visual_safe" }
+    },
+    {
+      "id": "forced-invalid-rel-target",
+      "title": "Forced invalid relationship target",
+      "description": "Synthetic bad fixture used to prove structural and desktop harness failure classification.",
+      "source": {
+        "kind": "module",
+        "module": "../fixtures/forcedInvalidDeck.ts",
+        "export": "buildForcedInvalidRelTargetDeck",
+        "inputType": "bufferBuilder"
+      },
+      "expectedSlideCount": 1,
+      "validationModes": ["structural", "desktop_open"],
+      "acceptance": { "expectStructuralPass": false, "expectDesktopOpenPass": false }
+    },
+    {
+      "id": "animation-phase2",
+      "title": "Animation Phase 2 desktop validation",
+      "description": "Deck exercising emphasis aliases, motion paths, and nested paragraph builds for desktop-open validation.",
+      "source": {
+        "kind": "module",
+        "module": "../fixtures/animationPhase2Deck.ts",
+        "export": "animationPhase2Deck",
+        "inputType": "paperDocument"
+      },
+      "expectedSlideCount": 1,
+      "validationModes": ["structural", "desktop_open", "pdf_render", "roundtrip_diff"],
+      "acceptance": { "expectStructuralPass": true, "expectDesktopOpenPass": true }
+    },
+    {
+      "id": "chart-media-coexistence",
+      "title": "Chart and media coexistence",
+      "description": "Single-slide regression for independent chart, workbook, and media relationships.",
+      "source": {
+        "kind": "module",
+        "module": "./chartMediaCoexistence.ts",
+        "export": "chartMediaCoexistenceDeck",
+        "inputType": "paperDocument"
+      },
+      "expectedSlideCount": 1,
+      "validationModes": ["structural", "desktop_open", "pdf_render", "roundtrip_diff"],
+      "acceptance": { "expectStructuralPass": true, "expectDesktopOpenPass": true }
+    },
+    {
+      "id": "declarative-quickstart",
+      "title": "Canonical declarative quickstart",
+      "description": "The public coordinate-free quickstart compiled and rendered through the existing PresentationSpec pipeline.",
+      "source": {
+        "kind": "module",
+        "module": "./declarativeQuickstart.ts",
+        "export": "buildDeclarativeQuickstartDeck",
+        "inputType": "bufferBuilder"
+      },
+      "expectedSlideCount": 3,
+      "validationModes": ["structural", "desktop_open", "pdf_render", "roundtrip_diff"],
+      "acceptance": { "expectStructuralPass": true, "expectDesktopOpenPass": true }
+    }
+  ]
+}

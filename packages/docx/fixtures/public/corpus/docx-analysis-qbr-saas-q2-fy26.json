@@ -1,0 +1,388 @@
+{
+  "id": "docx-analysis-qbr-saas-q2-fy26",
+  "format": "docx",
+  "description": "Quarterly business review document for a B2B SaaS company: KPI dashboard table, regional performance, churn analysis, pipeline coverage, and next-quarter priorities.",
+  "provenance": "Modeled on the written QBR pre-read that revenue and finance leadership circulate to a SaaS board ahead of the quarterly meeting: dense KPI tables with prior-quarter and plan comparisons, a bookings trend chart, and narrative commentary per functional area. Deliberately exercises number-heavy right-aligned tables, a line chart, cell-level styling for RAG status colors, and multi-section prose flow on letter-size pages.",
+  "expectedProperties": {
+    "pageCountMin": 3,
+    "hasTable": true,
+    "hasChart": true,
+    "kpiRows": 10,
+    "sections": 7
+  },
+  "document": {
+    "type": "DocxDocument",
+    "pageSize": "letter",
+    "metadata": {
+      "title": "Q2 FY2026 Quarterly Business Review — Lattice Harbor Software",
+      "author": "Office of the CFO",
+      "subject": "Board pre-read, quarter ended 31 May 2026",
+      "language": "en-US"
+    },
+    "theme": {
+      "preset": "modern",
+      "colors": {
+        "primary": "0B3954",
+        "accent": "FF6B35"
+      }
+    },
+    "header": {
+      "text": "Lattice Harbor Software, Inc. — Board pre-read (internal)"
+    },
+    "footer": {
+      "text": "Q2 FY2026 QBR",
+      "includePageNumber": true
+    },
+    "options": {
+      "pagination": "reflow"
+    },
+    "pages": [
+      {
+        "elements": [
+          {
+            "type": "heading",
+            "level": 1,
+            "text": "Q2 FY2026 Quarterly Business Review"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "Quarter ended 31 May 2026 | Prepared by the Office of the CFO | Distributed 12 June 2026", "style": { "fontStyle": "italic", "fontSize": 10 } }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "1. Quarter in brief"
+          },
+          {
+            "type": "paragraph",
+            "text": "Q2 was a beat on revenue and a miss on new logos. ARR closed at $214.3M, up 6.1% sequentially and 27.4% year-over-year, ahead of the $211.8M plan. The beat came almost entirely from expansion: net revenue retention rose to 116% on the strength of the Workflow Automation add-on, which attached to 31% of eligible renewals versus 19% last quarter. New-logo bookings landed at $6.2M against a $7.5M plan — our third consecutive miss on this line — driven by continued elongation of mid-market sales cycles (now 94 days median, up from 71 a year ago) rather than by win-rate deterioration."
+          },
+          {
+            "type": "paragraph",
+            "text": "Gross margin held at 79.8% despite the vector-search infrastructure migration completing mid-quarter. Operating burn improved to $4.1M for the quarter, and we now expect to reach free-cash-flow breakeven in Q4 FY2026, one quarter earlier than the plan communicated at the March board meeting. Headcount ended at 743, eleven under plan, with the gap concentrated in enterprise sales hiring in EMEA."
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "2. KPI summary"
+          },
+          {
+            "type": "paragraph",
+            "text": "Status key: figures compared against the FY2026 operating plan approved 27 February 2026. Variances beyond ±3% of plan are flagged."
+          },
+          {
+            "type": "table",
+            "tableStyle": "modern",
+            "repeatHeaders": true,
+            "tableCaption": "Q2 FY2026 KPI summary versus plan and prior quarter",
+            "rows": [
+              {
+                "isHeader": true,
+                "cells": [
+                  { "text": "KPI" },
+                  { "text": "Q2 FY26 actual" },
+                  { "text": "Q2 FY26 plan" },
+                  { "text": "Q1 FY26" },
+                  { "text": "YoY" },
+                  { "text": "Status" }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Ending ARR" },
+                  { "text": "$214.3M", "style": { "textAlign": "right" } },
+                  { "text": "$211.8M", "style": { "textAlign": "right" } },
+                  { "text": "$202.0M", "style": { "textAlign": "right" } },
+                  { "text": "+27.4%", "style": { "textAlign": "right" } },
+                  { "text": "Ahead", "style": { "color": "1B7837", "fontWeight": "bold" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Net new ARR" },
+                  { "text": "$12.3M", "style": { "textAlign": "right" } },
+                  { "text": "$11.4M", "style": { "textAlign": "right" } },
+                  { "text": "$10.8M", "style": { "textAlign": "right" } },
+                  { "text": "+15.0%", "style": { "textAlign": "right" } },
+                  { "text": "Ahead", "style": { "color": "1B7837", "fontWeight": "bold" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "New-logo bookings" },
+                  { "text": "$6.2M", "style": { "textAlign": "right" } },
+                  { "text": "$7.5M", "style": { "textAlign": "right" } },
+                  { "text": "$6.6M", "style": { "textAlign": "right" } },
+                  { "text": "-8.8%", "style": { "textAlign": "right" } },
+                  { "text": "Behind", "style": { "color": "B2182B", "fontWeight": "bold" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Net revenue retention" },
+                  { "text": "116%", "style": { "textAlign": "right" } },
+                  { "text": "112%", "style": { "textAlign": "right" } },
+                  { "text": "113%", "style": { "textAlign": "right" } },
+                  { "text": "+4 pts", "style": { "textAlign": "right" } },
+                  { "text": "Ahead", "style": { "color": "1B7837", "fontWeight": "bold" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Gross logo churn (annualized)" },
+                  { "text": "7.9%", "style": { "textAlign": "right" } },
+                  { "text": "8.5%", "style": { "textAlign": "right" } },
+                  { "text": "8.8%", "style": { "textAlign": "right" } },
+                  { "text": "-1.6 pts", "style": { "textAlign": "right" } },
+                  { "text": "Ahead", "style": { "color": "1B7837", "fontWeight": "bold" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Gross margin (non-GAAP)" },
+                  { "text": "79.8%", "style": { "textAlign": "right" } },
+                  { "text": "79.0%", "style": { "textAlign": "right" } },
+                  { "text": "79.9%", "style": { "textAlign": "right" } },
+                  { "text": "+1.1 pts", "style": { "textAlign": "right" } },
+                  { "text": "On plan", "style": { "color": "666666" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Operating cash burn" },
+                  { "text": "$4.1M", "style": { "textAlign": "right" } },
+                  { "text": "$5.6M", "style": { "textAlign": "right" } },
+                  { "text": "$6.9M", "style": { "textAlign": "right" } },
+                  { "text": "-58%", "style": { "textAlign": "right" } },
+                  { "text": "Ahead", "style": { "color": "1B7837", "fontWeight": "bold" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "CAC payback (blended, months)" },
+                  { "text": "23.1", "style": { "textAlign": "right" } },
+                  { "text": "24.0", "style": { "textAlign": "right" } },
+                  { "text": "25.4", "style": { "textAlign": "right" } },
+                  { "text": "-3.9", "style": { "textAlign": "right" } },
+                  { "text": "On plan", "style": { "color": "666666" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Ending headcount" },
+                  { "text": "743", "style": { "textAlign": "right" } },
+                  { "text": "754", "style": { "textAlign": "right" } },
+                  { "text": "718", "style": { "textAlign": "right" } },
+                  { "text": "+19%", "style": { "textAlign": "right" } },
+                  { "text": "Behind", "style": { "color": "B2182B", "fontWeight": "bold" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Rule of 40 (growth + FCF margin)" },
+                  { "text": "34.7", "style": { "textAlign": "right" } },
+                  { "text": "31.2", "style": { "textAlign": "right" } },
+                  { "text": "29.5", "style": { "textAlign": "right" } },
+                  { "text": "+8.3", "style": { "textAlign": "right" } },
+                  { "text": "Ahead", "style": { "color": "1B7837", "fontWeight": "bold" } }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "elements": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "3. ARR trajectory"
+          },
+          {
+            "type": "chart",
+            "chartType": "line",
+            "title": "Ending ARR by quarter ($M)",
+            "categories": ["Q3 FY25", "Q4 FY25", "Q1 FY26", "Q2 FY26", "Q3 FY26E", "Q4 FY26E"],
+            "series": [
+              { "name": "Actual / forecast", "values": [176.4, 191.2, 202.0, 214.3, 226.5, 240.1] },
+              { "name": "FY26 plan", "values": [176.4, 191.2, 201.1, 211.8, 223.0, 235.6] }
+            ],
+            "axes": {
+              "y": { "title": "ARR ($M)", "min": 150, "gridLines": true }
+            },
+            "legend": { "position": "bottom" }
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "4. Regional performance"
+          },
+          {
+            "type": "paragraph",
+            "text": "North America continues to carry the expansion story; EMEA underperformed on both new logos and expansion, which we attribute to the unfilled enterprise AE seats (4 of 9 open all quarter) and to two slipped seven-figure renewals that closed in the first week of June and will be recognized in Q3."
+          },
+          {
+            "type": "table",
+            "tableStyle": "striped",
+            "tableCaption": "Regional bookings and retention, Q2 FY2026",
+            "rows": [
+              {
+                "isHeader": true,
+                "cells": [
+                  { "text": "Region" },
+                  { "text": "Net new ARR" },
+                  { "text": "% of plan" },
+                  { "text": "NRR" },
+                  { "text": "Gross churn" },
+                  { "text": "Commentary" }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "North America" },
+                  { "text": "$8.6M", "style": { "textAlign": "right" } },
+                  { "text": "114%", "style": { "textAlign": "right" } },
+                  { "text": "119%", "style": { "textAlign": "right" } },
+                  { "text": "6.8%", "style": { "textAlign": "right" } },
+                  { "text": "Automation add-on attach at 36%; two $1M+ expansions closed early" }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "EMEA" },
+                  { "text": "$2.4M", "style": { "textAlign": "right" } },
+                  { "text": "71%", "style": { "textAlign": "right" } },
+                  { "text": "108%", "style": { "textAlign": "right" } },
+                  { "text": "10.2%", "style": { "textAlign": "right" } },
+                  { "text": "AE coverage gap; two renewals slipped into Q3 (both since closed)" }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "APAC" },
+                  { "text": "$1.3M", "style": { "textAlign": "right" } },
+                  { "text": "98%", "style": { "textAlign": "right" } },
+                  { "text": "111%", "style": { "textAlign": "right" } },
+                  { "text": "9.1%", "style": { "textAlign": "right" } },
+                  { "text": "First two ANZ public-sector wins; Japan reseller ramp on track" }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "5. Churn and save-desk analysis"
+          },
+          {
+            "type": "paragraph",
+            "text": "We churned 41 logos representing $3.9M ARR. Exit interviews attribute 14 losses to budget elimination (the customer retained no replacement vendor), 11 to consolidation onto a suite vendor, 9 to price, and 7 to product gaps — of which 5 named the absence of field-level audit history, which ships in the September release. The save desk retained 26 of 67 at-risk accounts (39% save rate, versus 31% last quarter) at a median concession of 12% for a median term extension of 14 months. Concession-adjusted, saved ARR carried a 96% net present value relative to list renewal, which supports continuing the program at current authority levels."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cohort behavior remains encouraging: the FY2024 cohort shows 121% cumulative net retention at month 24, against 109% for the FY2022 cohort at the same age. The difference is almost entirely seat expansion in accounts that adopted the API integration pack during onboarding — reinforcing the onboarding-scope changes rolled out in April."
+          }
+        ]
+      },
+      {
+        "elements": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "6. Pipeline and coverage"
+          },
+          {
+            "type": "paragraph",
+            "text": "Q3 opens with $31.4M of qualified pipeline against a $9.1M net-new bookings target — 3.5x coverage, up from 3.1x entering Q2. Coverage quality improved as well: 58% of pipeline is in stage 3 or later, versus 49% a quarter ago. The concentration caveat is that the top five opportunities represent $6.8M (22%) of total pipeline; slippage of even two of these would take coverage below 3.0x."
+          },
+          {
+            "type": "table",
+            "tableStyle": "bordered",
+            "tableCaption": "Pipeline by stage entering Q3 FY2026",
+            "rows": [
+              {
+                "isHeader": true,
+                "cells": [
+                  { "text": "Stage" },
+                  { "text": "Opportunities" },
+                  { "text": "Value" },
+                  { "text": "Weighted value" },
+                  { "text": "Median age (days)" }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Stage 2 — Qualified" },
+                  { "text": "184", "style": { "textAlign": "right" } },
+                  { "text": "$13.2M", "style": { "textAlign": "right" } },
+                  { "text": "$2.6M", "style": { "textAlign": "right" } },
+                  { "text": "38", "style": { "textAlign": "right" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Stage 3 — Solution validation" },
+                  { "text": "96", "style": { "textAlign": "right" } },
+                  { "text": "$9.7M", "style": { "textAlign": "right" } },
+                  { "text": "$3.4M", "style": { "textAlign": "right" } },
+                  { "text": "61", "style": { "textAlign": "right" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Stage 4 — Commercial negotiation" },
+                  { "text": "44", "style": { "textAlign": "right" } },
+                  { "text": "$6.1M", "style": { "textAlign": "right" } },
+                  { "text": "$3.7M", "style": { "textAlign": "right" } },
+                  { "text": "83", "style": { "textAlign": "right" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Stage 5 — Contract out" },
+                  { "text": "17", "style": { "textAlign": "right" } },
+                  { "text": "$2.4M", "style": { "textAlign": "right" } },
+                  { "text": "$2.0M", "style": { "textAlign": "right" } },
+                  { "text": "97", "style": { "textAlign": "right" } }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "keepTogether": true,
+            "children": [
+              {
+                "type": "heading",
+                "level": 2,
+                "text": "7. Priorities for Q3 FY2026"
+              },
+              {
+                "type": "list",
+                "listType": "number",
+                "items": [
+                  { "text": "Close the EMEA enterprise coverage gap: all four open AE seats accepted-offer by 31 July; interim coverage via two NA overlay reps continues through September." },
+                  { "text": "Ship field-level audit history (September release) and proactively re-engage the seven product-gap churns and 23 open opportunities where it was cited as a blocker." },
+                  { "text": "Mid-market cycle-time program: introduce mutual close plans at stage 3 and a pre-approved security review packet; target median cycle back under 80 days by Q4." },
+                  { "text": "Extend save-desk authority to 18-month term extensions (currently 14) based on the concession NPV analysis in section 5." },
+                  { "text": "Complete SOC 2 Type II renewal fieldwork by 15 August to keep the two public-sector stage-4 deals on their award timelines." }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "runs": [
+                  { "text": "Appendices distributed separately: ", "style": { "fontWeight": "bold" } },
+                  { "text": "A — GAAP to non-GAAP reconciliation; B — cohort retention triangle; C — top-25 account plan summaries. Questions to " },
+                  { "text": "fp&a@latticeharbor.com", "style": { "color": "0B3954" } },
+                  { "text": " ahead of the 24 June board session." }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
