@@ -1,12 +1,7 @@
 import { once } from "node:events";
-import { spawnSync } from "node:child_process";
 import { PdfEngine } from "../src/engine.js";
-import { linearizePdfBuffer } from "../src/phase9-stream.js";
+import { linearizePdfBuffer, linearizePdfBufferWithWasm } from "../src/phase9-stream.js";
 import { createLinearizedDocument, createStreamingDocument } from "../scripts/phase9-fixtures.js";
-
-function hasQpdf(): boolean {
-  return spawnSync("which", ["qpdf"], { stdio: "ignore" }).status === 0;
-}
 
 async function collectStream(stream: NodeJS.ReadableStream): Promise<Buffer> {
   const chunks: Buffer[] = [];
@@ -37,14 +32,21 @@ describe("Phase 9 streaming", () => {
     await endPromise;
   });
 
-  it("can linearize rendered PDF output when qpdf is available", async () => {
-    if (!hasQpdf()) {
-      return;
-    }
-
+  it("can linearize rendered PDF output with native or embedded qpdf", async () => {
     const buffer = await PdfEngine.render(createLinearizedDocument());
     const linearized = await linearizePdfBuffer(buffer);
 
     expect(linearized.toString("latin1")).toContain("/Linearized");
+  });
+
+  it("uses deterministic embedded qpdf output on binary-free hosts", async () => {
+    const buffer = await PdfEngine.render(createLinearizedDocument());
+    const [first, second] = await Promise.all([
+      linearizePdfBufferWithWasm(buffer),
+      linearizePdfBufferWithWasm(buffer),
+    ]);
+
+    expect(first.toString("latin1")).toContain("/Linearized");
+    expect(Buffer.compare(first, second)).toBe(0);
   });
 });

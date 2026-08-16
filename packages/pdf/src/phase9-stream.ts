@@ -1,18 +1,64 @@
 import { execFileSync, spawnSync } from "node:child_process";
 import { mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { createRequire } from "node:module";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { PassThrough, type Readable } from "node:stream";
 
 const PDF_HEADER_PREFIX = Buffer.from("%PDF-", "ascii");
 
+interface EmbeddedQpdf {
+  readonly FS: {
+    writeFile(path: string, contents: Uint8Array): void;
+    readFile(path: string): Uint8Array;
+  };
+  callMain(arguments_: readonly string[]): number | void;
+}
+
+type EmbeddedQpdfFactory = (options: {
+  readonly noInitialRun: boolean;
+  readonly print: (message: string) => void;
+  readonly printErr: (message: string) => void;
+}) => Promise<EmbeddedQpdf>;
+
 export function hasQpdf(): boolean {
   return spawnSync("which", ["qpdf"], { stdio: "ignore" }).status === 0;
 }
 
+export async function linearizePdfBufferWithWasm(buffer: Buffer): Promise<Buffer> {
+  // The embedded qpdf ESM build still references Node's CommonJS globals while
+  // initializing its virtual filesystem. Supply those globals before importing
+  // it so the same deterministic qpdf operation works in binary-free hosts such
+  // as Vercel Functions.
+  const globals = globalThis as typeof globalThis & {
+    require?: NodeRequire;
+    __dirname?: string;
+  };
+  globals.require ??= createRequire(import.meta.url);
+  globals.__dirname ??= process.cwd();
+
+  const qpdfModule = await import("qpdf-wasm-esm-embedded");
+  const createQpdf = qpdfModule.default as unknown as EmbeddedQpdfFactory;
+  const diagnostics: string[] = [];
+  const qpdf = await createQpdf({
+    noInitialRun: true,
+    print: (message: string) => diagnostics.push(message),
+    printErr: (message: string) => diagnostics.push(message),
+  });
+  qpdf.FS.writeFile("/input.pdf", buffer);
+
+  try {
+    qpdf.callMain(["--linearize", "--deterministic-id", "/input.pdf", "/output.pdf"]);
+    return Buffer.from(qpdf.FS.readFile("/output.pdf"));
+  } catch (error) {
+    const detail = diagnostics.length > 0 ? `: ${diagnostics.join("\n")}` : "";
+    throw new Error(`Embedded qpdf failed to linearize the PDF${detail}`, { cause: error });
+  }
+}
+
 export async function linearizePdfBuffer(buffer: Buffer): Promise<Buffer> {
   if (!hasQpdf()) {
-    throw new Error("Linearized PDF output requires qpdf to be installed");
+    return linearizePdfBufferWithWasm(buffer);
   }
 
   const tempDir = mkdtempSync(join(tmpdir(), "json-to-pdf-linearize-"));

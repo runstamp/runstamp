@@ -88,6 +88,7 @@
     "harfbuzzjs": "0.8.0",
     "pako": "^2.1.0",
     "pngjs": "^7.0.0",
+    "qpdf-wasm-esm-embedded": "1.1.1",
     "restructure": "^3.0.0",
     "subset-font": "^2.4.0",
     "tiny-inflate": "^1.0.3",

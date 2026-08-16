@@ -2,8 +2,6 @@
 import { getLogger } from "../logger.js";
 import { readFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { createRequire } from "node:module";
 import type { FontStrategy, PaperDocument, PaperNode, TextStyle, TextRun, Paragraph } from "../types/ast.js";
 import { getFontOrNull, loadFont, loadFontWithHarfBuzz, recordFontSubstitution, boldFontKey, italicFontKey, boldItalicFontKey } from "./fontCache.js";
 import { isLiteBundle } from "../engineMode.js";
@@ -31,8 +29,6 @@ export interface AutoLoadDocumentFontsOptions {
    */
   strict?: boolean;
 }
-
-const _require = createRequire(import.meta.url);
 
 // ---------------------------------------------------------------------------
 // Font name → system file path resolution
@@ -165,13 +161,6 @@ function resolveSystemBoldItalicFontPath(fontFamily: string): string | null {
     }
   }
   return null;
-}
-
-function getNotoSansPath(): string {
-  // Resolve the harfbuzzjs package root via its JS entry (avoids webpack trying
-  // to parse the .ttf binary), then build the path to the bundled NotoSans font.
-  const hbDir = dirname(_require.resolve("harfbuzzjs/hb.js"));
-  return join(hbDir, "test", "fonts", "noto", "NotoSans-Regular.ttf");
 }
 
 // ---------------------------------------------------------------------------
@@ -671,7 +660,7 @@ export async function autoLoadDocumentFonts(
   const strict = options?.strict ?? false;
   const lite = isLiteBundle();
   const strategy = canonicalFontStrategy(doc);
-  let notoBuffer: Buffer | null = null;
+  let portableFallback: ReturnType<typeof resolveRegistryFont> = null;
   const embedded = strategy === "user-embedded" ? doc.embeddedFonts : undefined;
 
   for (const family of families) {
@@ -769,22 +758,26 @@ export async function autoLoadDocumentFonts(
       }
       getLogger().warn(`[autoFont] Font "${family}" unavailable. Measurement will use char-count estimate.`);
     } else {
-      // Full mode: NotoSans bundled with harfbuzzjs
+      // Full mode: use the integrity-checked portable registry fallback.
       try {
-        if (!notoBuffer) {
-          notoBuffer = await readFile(getNotoSansPath());
+        portableFallback ??= resolveRegistryFont("Arial", "Regular");
+        if (!portableFallback) {
+          throw new PaperError("Portable fallback font is missing from the registry.", {
+            code: "FONT_NOT_FOUND",
+            phase: "font",
+          });
         }
-        await loadFontWithHarfBuzz(family, notoBuffer);
-        recordFontSubstitution(family, "NotoSans-Regular");
-        getLogger().warn(`[autoFont] Font "${family}" not found — falling back to NotoSans`);
+        await loadFontWithHarfBuzz(family, portableFallback.buffer);
+        recordFontSubstitution(family, portableFallback.family);
+        getLogger().warn(`[autoFont] Font "${family}" not found — falling back to ${portableFallback.family}`);
       } catch (e) {
         if (strict) {
           throw new PaperError(
-            `Font "${family}" not loaded and NotoSans fallback failed: ${(e as Error).message}. Call loadFont("${family}", buffer) before rendering.`,
+            `Font "${family}" not loaded and portable fallback failed: ${(e as Error).message}. Call loadFont("${family}", buffer) before rendering.`,
             { code: "FONT_NOT_FOUND", phase: "font" },
           );
         }
-        getLogger().warn(`[autoFont] Font "${family}" unavailable and NotoSans fallback failed: ${(e as Error).message}. Measurement will use char-count estimate.`);
+        getLogger().warn(`[autoFont] Font "${family}" unavailable and portable fallback failed: ${(e as Error).message}. Measurement will use char-count estimate.`);
       }
     }
   }

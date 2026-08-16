@@ -1,4 +1,8 @@
 import { createRequire as __runstampCreateRequire } from "node:module";
+import { dirname as __runstampDirname } from "node:path";
+import { fileURLToPath as __runstampFileURLToPath } from "node:url";
+const __filename = __runstampFileURLToPath(import.meta.url);
+const __dirname = __runstampDirname(__filename);
 const require = __runstampCreateRequire(import.meta.url);
 import {
   computeDesktopValidationContentHash,
@@ -8,7 +12,7 @@ import {
   inspectChartInventory,
   inspectPptxEditability,
   mergeEditabilityProbeIntoQualityReport
-} from "../chunk-PQOYJWL5.js";
+} from "../chunk-BM2OZOTI.js";
 import {
   assertQualityContract,
   buildQualityReport,
@@ -18,14 +22,14 @@ import {
   repairPptxStructure,
   validateAndRepairPptx,
   validatePptxStructure
-} from "../chunk-5JIO2X5F.js";
-import "../chunk-BKM7I4JR.js";
-import "../chunk-FL4YUJCS.js";
-import "../chunk-6QXZRXYS.js";
-import "../chunk-66EJ4WIS.js";
-import "../chunk-SHJL7Z52.js";
-import "../chunk-JXY3OJQ6.js";
-import "../chunk-OWC7QHPZ.js";
+} from "../chunk-NK2A5B54.js";
+import "../chunk-E7KL3QDK.js";
+import "../chunk-5GZJ6PGT.js";
+import "../chunk-7V4ECWKA.js";
+import "../chunk-TM4NN2PA.js";
+import "../chunk-3VBGXE67.js";
+import "../chunk-SFVKAOLH.js";
+import "../chunk-VIXD5LXH.js";
 export {
   assertQualityContract,
   buildQualityReport,

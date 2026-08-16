@@ -1,21 +1,10 @@
-import { createRequire } from "node:module";
+import createHarfBuzz from "harfbuzzjs/hb.js";
+import wrapHarfBuzz from "harfbuzzjs/hbjs.js";
 import type { HbApiInstance, HbBuffer, HbFont, HbGlyph } from "./vendor-types.js";
-
-const requireFrom = createRequire(import.meta.url);
 
 declare const __RUNSTAMP_HARFBUZZ_WASM_BASE64__: string;
 
 type HarfBuzzFactoryOptions = { wasmBinary?: Uint8Array };
-
-let createHarfBuzz: ((options?: HarfBuzzFactoryOptions) => Promise<object>) | null = null;
-let wrapHarfBuzz: ((module: object) => HbApiInstance) | null = null;
-
-function ensureModules(): void {
-  if (!createHarfBuzz) {
-    createHarfBuzz = requireFrom("harfbuzzjs/hb.js");
-    wrapHarfBuzz = requireFrom("harfbuzzjs/hbjs.js");
-  }
-}
 
 export class HarfBuzzManager {
   private hb: HbApiInstance | null = null;
@@ -31,15 +20,14 @@ export class HarfBuzzManager {
       await this.initPromise;
       return;
     }
-    ensureModules();
     this.initPromise = (async () => {
       const embeddedWasm = typeof __RUNSTAMP_HARFBUZZ_WASM_BASE64__ === "string"
         ? __RUNSTAMP_HARFBUZZ_WASM_BASE64__
         : "";
-      const module = await createHarfBuzz!(embeddedWasm
+      const module = await createHarfBuzz(embeddedWasm
         ? { wasmBinary: Uint8Array.from(Buffer.from(embeddedWasm, "base64")) }
         : undefined);
-      this.hb = wrapHarfBuzz!(module);
+      this.hb = wrapHarfBuzz(module);
     })();
     try {
       await this.initPromise;

@@ -17,8 +17,13 @@ import { fileURLToPath } from "node:url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const pkgDir = resolve(__dirname, "..");
 const yogaWasmPath = resolve(pkgDir, "node_modules/yoga-wasm-web/dist/yoga.wasm");
+const harfbuzzWasmPath = resolve(pkgDir, "node_modules/harfbuzzjs/hb.wasm");
 const nodeEsmBanner = [
   'import { createRequire as __runstampCreateRequire } from "node:module";',
+  'import { dirname as __runstampDirname } from "node:path";',
+  'import { fileURLToPath as __runstampFileURLToPath } from "node:url";',
+  "const __filename = __runstampFileURLToPath(import.meta.url);",
+  "const __dirname = __runstampDirname(__filename);",
   "const require = __runstampCreateRequire(import.meta.url);",
 ].join("\n");
 
@@ -104,6 +109,7 @@ await build({
   ],
   define: {
     __RUNSTAMP_YOGA_WASM_BASE64__: JSON.stringify(readFileSync(yogaWasmPath).toString("base64")),
+    __RUNSTAMP_HARFBUZZ_WASM_BASE64__: JSON.stringify(readFileSync(harfbuzzWasmPath).toString("base64")),
     // No public key — free has no license validation
   },
   loader: { ".wasm": "file" },

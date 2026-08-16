@@ -1,7 +1,6 @@
 import { existsSync } from "node:fs";
 import { readFile } from "node:fs/promises";
-import { createRequire } from "node:module";
-import { dirname, join } from "node:path";
+import { join } from "node:path";
 import type {
   PdfAccessibilityStructureSpec,
   PdfColor,
@@ -45,6 +44,7 @@ import { validateFetchUrl } from "../ooxml/urlGuard.js";
 import { resolveColorValue } from "../renderer/colorResolver.js";
 import { FONT_FILE_MAP } from "../typography/fontPaths.js";
 import { getFontOrNull } from "../typography/fontCache.js";
+import { faceForStyle, resolveRegistryFont } from "../typography/fontRegistry.js";
 import { shapeSegmentWidth } from "../typography/shaper.js";
 import { autoLoadDocumentFonts } from "../typography/autoFont.js";
 import { resolveLineHeightPixels } from "../typography/lineHeight.js";
@@ -74,10 +74,6 @@ const PRINT_SCALE = 300 / 96;
 const DEFAULT_OUTPUT_CONDITION_IDENTIFIER = "sRGB IEC61966-2.1";
 const DEFAULT_PRODUCER = "Runstamp PPTX";
 const DEFAULT_NOTE_TITLE = "Speaker Notes";
-const REQUIRE = createRequire(import.meta.url);
-const HB_DIR = dirname(REQUIRE.resolve("harfbuzzjs/hb.js"));
-const FALLBACK_NOTO_PATH = join(HB_DIR, "test", "fonts", "noto", "NotoSans-Regular.ttf");
-
 const SYSTEM_FONT_DIRS_MAC = [
   "/System/Library/Fonts/Supplemental",
   "/Library/Fonts",
@@ -1159,9 +1155,11 @@ function resolveFontSource(
     }
   }
 
-  if (existsSync(FALLBACK_NOTO_PATH)) {
-    return { family: "Noto Sans", path: FALLBACK_NOTO_PATH };
-  }
+  const face = faceForStyle(runStyle?.fontWeight === "bold", runStyle?.fontStyle === "italic");
+  const portable = resolveRegistryFont(fontFamily, face)
+    ?? resolveRegistryFont("Arial", face)
+    ?? resolveRegistryFont("Arial", "Regular");
+  if (portable) return { family: portable.family, path: portable.path };
 
   return undefined;
 }

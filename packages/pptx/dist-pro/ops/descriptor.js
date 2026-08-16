@@ -1,19 +1,23 @@
 import { createRequire as __runstampCreateRequire } from "node:module";
+import { dirname as __runstampDirname } from "node:path";
+import { fileURLToPath as __runstampFileURLToPath } from "node:url";
+const __filename = __runstampFileURLToPath(import.meta.url);
+const __dirname = __runstampDirname(__filename);
 const require = __runstampCreateRequire(import.meta.url);
 import {
   PPTX_LOSS_CODES
-} from "../chunk-LNYSZAHA.js";
+} from "../chunk-HW526CCL.js";
 import {
   PaperDocumentSchema
-} from "../chunk-6QXZRXYS.js";
-import "../chunk-66EJ4WIS.js";
+} from "../chunk-7V4ECWKA.js";
+import "../chunk-TM4NN2PA.js";
 import {
   external_exports
-} from "../chunk-SHJL7Z52.js";
+} from "../chunk-3VBGXE67.js";
 import {
   defineOperations
-} from "../chunk-S4LZHR2L.js";
-import "../chunk-OWC7QHPZ.js";
+} from "../chunk-JXF5SD3S.js";
+import "../chunk-VIXD5LXH.js";
 
 // src/ops/descriptor.ts
 var DOMAIN = "pptx";

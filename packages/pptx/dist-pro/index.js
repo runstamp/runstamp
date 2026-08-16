@@ -1,4 +1,8 @@
 import { createRequire as __runstampCreateRequire } from "node:module";
+import { dirname as __runstampDirname } from "node:path";
+import { fileURLToPath as __runstampFileURLToPath } from "node:url";
+const __filename = __runstampFileURLToPath(import.meta.url);
+const __dirname = __runstampDirname(__filename);
 const require = __runstampCreateRequire(import.meta.url);
 import {
   DeclarativeChartSchema,
@@ -33,10 +37,10 @@ import {
   validate,
   validateLicenseKey,
   verifyPptxTemplate
-} from "./chunk-MOLI65TP.js";
+} from "./chunk-BBZLJBOA.js";
 import {
   assembleFromTemplate
-} from "./chunk-3MAFQYVW.js";
+} from "./chunk-R2RGXBYY.js";
 import {
   PptxArchive,
   collectChartNodes,
@@ -46,9 +50,9 @@ import {
   processSlideCharts,
   processSlideMedia,
   serializeSlideTree
-} from "./chunk-OV2ZPS4E.js";
-import "./chunk-56BKZXEH.js";
-import "./chunk-VETY33ST.js";
+} from "./chunk-H3JJGCUR.js";
+import "./chunk-2SWG4VB5.js";
+import "./chunk-MP76HATA.js";
 import {
   PaperEngine,
   RenderContext,
@@ -62,13 +66,13 @@ import {
   validateAbsoluteDocumentLayout,
   validateAbsoluteSlideLayout,
   withContext
-} from "./chunk-DRWOFXA4.js";
+} from "./chunk-M3B54ZA7.js";
 import {
   isSchemeColor,
   parseTemplate,
   parseThemeXml,
   resolveColor
-} from "./chunk-JHKUGPWV.js";
+} from "./chunk-X4XRBAXF.js";
 import {
   DOCX_PRO_FEATURES,
   FREE_CHART_TYPES,
@@ -82,15 +86,15 @@ import {
   PRO_IMAGE_MAX_WIDTH,
   XLSX_PRO_FEATURES,
   isFeatureAvailable
-} from "./chunk-EE5SX3QK.js";
-import "./chunk-GRNMJIZR.js";
-import "./chunk-ADNRG6JQ.js";
+} from "./chunk-Z2EIZERW.js";
+import "./chunk-JRK4KXDV.js";
+import "./chunk-XVSKCRKS.js";
 import {
   PIXEL_TO_EMU
-} from "./chunk-QZ7YLVPL.js";
+} from "./chunk-M2YFSO2D.js";
 import {
   applyElasticPagination
-} from "./chunk-EEQDAC67.js";
+} from "./chunk-47T2WMZG.js";
 import {
   AgentDocumentSchema,
   AgentSlideSchema,
@@ -105,7 +109,7 @@ import {
   looksLikeAgentDocumentInput,
   preprocessAgentDocumentInput,
   validateAgentDocumentLayout
-} from "./chunk-7XPPO7MM.js";
+} from "./chunk-GWTKZPGY.js";
 import {
   AgentThemePresetSchema,
   DEFAULT_AGENT_DESIGN_TOKENS,
@@ -120,10 +124,10 @@ import {
   computeAutoFit,
   getAgentThemePresetTokens,
   resolveAgentDesignTokens
-} from "./chunk-5CDPNZPI.js";
+} from "./chunk-AIRKBIKH.js";
 import {
   autoLoadDocumentFonts
-} from "./chunk-FUBHCOLD.js";
+} from "./chunk-MVPJ57UB.js";
 import {
   computeDesktopValidationContentHash,
   desktopValidationRecordToSummary,
@@ -132,7 +136,7 @@ import {
   inspectChartInventory,
   inspectPptxEditability,
   mergeEditabilityProbeIntoQualityReport
-} from "./chunk-PQOYJWL5.js";
+} from "./chunk-BM2OZOTI.js";
 import {
   assertQualityContract,
   buildQualityReport,
@@ -142,37 +146,37 @@ import {
   repairPptxStructure,
   validateAndRepairPptx,
   validatePptxStructure
-} from "./chunk-5JIO2X5F.js";
-import "./chunk-BKM7I4JR.js";
-import "./chunk-FL4YUJCS.js";
+} from "./chunk-NK2A5B54.js";
+import "./chunk-E7KL3QDK.js";
+import "./chunk-5GZJ6PGT.js";
 import {
   PaperDocumentSchema,
   PaperNodeSchema,
   PaperSlideSchema
-} from "./chunk-6QXZRXYS.js";
-import "./chunk-66EJ4WIS.js";
-import "./chunk-SHJL7Z52.js";
+} from "./chunk-7V4ECWKA.js";
+import "./chunk-TM4NN2PA.js";
+import "./chunk-3VBGXE67.js";
 import {
   renderAllSlidesToBuffers,
   renderSlideToBuffer
-} from "./chunk-ZLZIUC4K.js";
-import "./chunk-BF4WWWMZ.js";
-import "./chunk-MA6IZLCE.js";
-import "./chunk-SV4OEGHV.js";
-import "./chunk-QSVRDIHM.js";
+} from "./chunk-T7AK3EDB.js";
+import "./chunk-XZ4AHITT.js";
+import "./chunk-VCCW5PWJ.js";
+import "./chunk-IC35FUMW.js";
+import "./chunk-ERFVAWW7.js";
 import {
   DeterministicModeManager,
   isDeterministicMode,
   setDeterministicMode
-} from "./chunk-PUKAI6X5.js";
+} from "./chunk-RQNEGT4U.js";
 import {
   calculateRichTextMetrics
-} from "./chunk-625BFJJW.js";
-import "./chunk-2W7D7VOC.js";
-import "./chunk-YWT5KXVL.js";
+} from "./chunk-7BYJLCSM.js";
+import "./chunk-BVMCDLHW.js";
+import "./chunk-WVTVGR3K.js";
 import {
   runLayout
-} from "./chunk-4IGUCOJJ.js";
+} from "./chunk-5QLWVG23.js";
 import {
   KnuthPlassConfig,
   getEngineMode,
@@ -181,7 +185,7 @@ import {
   isLiteBundle,
   isLiteMode,
   setKnuthPlassSegmentThreshold
-} from "./chunk-DYXX63XE.js";
+} from "./chunk-DX2BYFTQ.js";
 import {
   FontCacheManager,
   HarfBuzzManager,
@@ -193,20 +197,20 @@ import {
   getFontOrNull,
   hbFontCacheSize,
   loadFont
-} from "./chunk-P5JGOT4P.js";
-import "./chunk-3O47XGMU.js";
+} from "./chunk-IQGCGBYO.js";
+import "./chunk-XU7YQ73E.js";
 import {
   LoggerManager,
   getLogger,
   setLogger
-} from "./chunk-HZBNNQK3.js";
-import "./chunk-S4LZHR2L.js";
+} from "./chunk-MV7M6AY2.js";
+import "./chunk-JXF5SD3S.js";
 import {
   PaperError,
   PaperJSXFeatureError,
   RunstampFeatureError
-} from "./chunk-JXY3OJQ6.js";
-import "./chunk-OWC7QHPZ.js";
+} from "./chunk-SFVKAOLH.js";
+import "./chunk-VIXD5LXH.js";
 export {
   AgentDocumentSchema,
   AgentSlideSchema,

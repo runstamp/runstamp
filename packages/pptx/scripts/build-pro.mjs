@@ -10,6 +10,7 @@
 
 import { build } from "esbuild";
 import { copyFileSync, cpSync, existsSync, mkdirSync, readFileSync } from "node:fs";
+import { createRequire } from "node:module";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -17,9 +18,35 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const pkgDir = resolve(__dirname, "..");
 const yogaWasmPath = resolve(pkgDir, "node_modules/yoga-wasm-web/dist/yoga.wasm");
 const harfbuzzWasmPath = resolve(pkgDir, "node_modules/harfbuzzjs/hb.wasm");
+const subsetFontEntryPath = resolve(pkgDir, "node_modules/subset-font/index.js");
+const subsetFontRequire = createRequire(subsetFontEntryPath);
+const harfbuzzSubsetWasmPath = subsetFontRequire.resolve("harfbuzzjs/hb-subset.wasm");
+const subsetFontWasmPlugin = {
+  name: "embed-subset-font-wasm",
+  setup(buildContext) {
+    buildContext.onLoad({ filter: /subset-font\/index\.js$/ }, (args) => {
+      const source = readFileSync(args.path, "utf8");
+      const runtimeLookup = "await readFile(require.resolve('harfbuzzjs/hb-subset.wasm'))";
+      if (!source.includes(runtimeLookup)) {
+        return { errors: [{ text: `subset-font runtime lookup changed in ${args.path}` }] };
+      }
+      return {
+        contents: source.replace(
+          runtimeLookup,
+          'Buffer.from(__RUNSTAMP_HARFBUZZ_SUBSET_WASM_BASE64__, "base64")',
+        ),
+        loader: "js",
+      };
+    });
+  },
+};
 const keysDir = resolve(pkgDir, "../../keys");
 const nodeEsmBanner = [
   'import { createRequire as __runstampCreateRequire } from "node:module";',
+  'import { dirname as __runstampDirname } from "node:path";',
+  'import { fileURLToPath as __runstampFileURLToPath } from "node:url";',
+  "const __filename = __runstampFileURLToPath(import.meta.url);",
+  "const __dirname = __runstampDirname(__filename);",
   "const require = __runstampCreateRequire(import.meta.url);",
 ].join("\n");
 
@@ -75,20 +102,21 @@ await build({
   minify: true,
   sourcemap: false,
   treeShaking: true,
+  plugins: [subsetFontWasmPlugin],
   banner: {
     js: nodeEsmBanner,
   },
   external: [
     "@napi-rs/canvas",
-    "echarts",
-    "harfbuzzjs",
-    "subset-font",
   ],
   define: {
     __RUNSTAMP_PUBLIC_KEY_V2__: JSON.stringify(publicKeyV2),
     __RUNSTAMP_PUBLIC_KEY_V4__: JSON.stringify(publicKeyV4),
     __RUNSTAMP_YOGA_WASM_BASE64__: JSON.stringify(readFileSync(yogaWasmPath).toString("base64")),
     __RUNSTAMP_HARFBUZZ_WASM_BASE64__: JSON.stringify(readFileSync(harfbuzzWasmPath).toString("base64")),
+    __RUNSTAMP_HARFBUZZ_SUBSET_WASM_BASE64__: JSON.stringify(
+      readFileSync(harfbuzzSubsetWasmPath).toString("base64"),
+    ),
   },
   loader: { ".wasm": "file" },
 });

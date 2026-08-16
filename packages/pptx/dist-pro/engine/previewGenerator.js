@@ -1,6 +1,10 @@
 import { createRequire as __runstampCreateRequire } from "node:module";
+import { dirname as __runstampDirname } from "node:path";
+import { fileURLToPath as __runstampFileURLToPath } from "node:url";
+const __filename = __runstampFileURLToPath(import.meta.url);
+const __dirname = __runstampDirname(__filename);
 const require = __runstampCreateRequire(import.meta.url);
-import "../chunk-OWC7QHPZ.js";
+import "../chunk-VIXD5LXH.js";
 
 // src/engine/previewGenerator.ts
 async function renderLayoutPreviews(layoutTrees, previewOptions, themeColors) {

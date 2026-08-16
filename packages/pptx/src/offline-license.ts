@@ -120,7 +120,7 @@ export function issueOfflineLicense(
   privateKeyPem: string,
 ): string {
   if (!isEntitlement(entitlement)) {
-    throw new Error("Offline license entitlement is invalid");
+    throw new TypeError("Offline license entitlement is invalid");
   }
 
   const payloadBase64Url = Buffer.from(

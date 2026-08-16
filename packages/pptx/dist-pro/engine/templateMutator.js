@@ -1,4 +1,8 @@
 import { createRequire as __runstampCreateRequire } from "node:module";
+import { dirname as __runstampDirname } from "node:path";
+import { fileURLToPath as __runstampFileURLToPath } from "node:url";
+const __filename = __runstampFileURLToPath(import.meta.url);
+const __dirname = __runstampDirname(__filename);
 const require = __runstampCreateRequire(import.meta.url);
 import {
   YIELD_FREQUENCY,
@@ -12,62 +16,62 @@ import {
   processSlideLayout,
   validateCrossSlideHyperlinks,
   yieldToEventLoop
-} from "../chunk-6AZ326SJ.js";
+} from "../chunk-NV4VJEND.js";
 import {
   assembleFromTemplate
-} from "../chunk-3MAFQYVW.js";
+} from "../chunk-R2RGXBYY.js";
 import {
   createMediaFetchBudget
-} from "../chunk-OV2ZPS4E.js";
-import "../chunk-56BKZXEH.js";
-import "../chunk-VETY33ST.js";
+} from "../chunk-H3JJGCUR.js";
+import "../chunk-2SWG4VB5.js";
+import "../chunk-MP76HATA.js";
 import {
   parseTemplate,
   resolveTextStyle
-} from "../chunk-JHKUGPWV.js";
+} from "../chunk-X4XRBAXF.js";
 import {
   summarizeDocumentCompatibility
-} from "../chunk-EE5SX3QK.js";
-import "../chunk-GRNMJIZR.js";
+} from "../chunk-Z2EIZERW.js";
+import "../chunk-JRK4KXDV.js";
 import {
   flattenDocumentZIndex,
   validateDocument
-} from "../chunk-ADNRG6JQ.js";
+} from "../chunk-XVSKCRKS.js";
 import {
   PIXEL_TO_EMU
-} from "../chunk-QZ7YLVPL.js";
-import "../chunk-5CDPNZPI.js";
+} from "../chunk-M2YFSO2D.js";
+import "../chunk-AIRKBIKH.js";
 import {
   autoLoadDocumentFonts
-} from "../chunk-FUBHCOLD.js";
-import "../chunk-BKM7I4JR.js";
-import "../chunk-FL4YUJCS.js";
-import "../chunk-6QXZRXYS.js";
-import "../chunk-66EJ4WIS.js";
-import "../chunk-SHJL7Z52.js";
-import "../chunk-ZLZIUC4K.js";
-import "../chunk-BF4WWWMZ.js";
-import "../chunk-MA6IZLCE.js";
-import "../chunk-SV4OEGHV.js";
-import "../chunk-QSVRDIHM.js";
-import "../chunk-PUKAI6X5.js";
-import "../chunk-625BFJJW.js";
-import "../chunk-2W7D7VOC.js";
-import "../chunk-YWT5KXVL.js";
+} from "../chunk-MVPJ57UB.js";
+import "../chunk-E7KL3QDK.js";
+import "../chunk-5GZJ6PGT.js";
+import "../chunk-7V4ECWKA.js";
+import "../chunk-TM4NN2PA.js";
+import "../chunk-3VBGXE67.js";
+import "../chunk-T7AK3EDB.js";
+import "../chunk-XZ4AHITT.js";
+import "../chunk-VCCW5PWJ.js";
+import "../chunk-IC35FUMW.js";
+import "../chunk-ERFVAWW7.js";
+import "../chunk-RQNEGT4U.js";
+import "../chunk-7BYJLCSM.js";
+import "../chunk-BVMCDLHW.js";
+import "../chunk-WVTVGR3K.js";
 import {
   runLayout
-} from "../chunk-4IGUCOJJ.js";
-import "../chunk-DYXX63XE.js";
-import "../chunk-P5JGOT4P.js";
-import "../chunk-3O47XGMU.js";
+} from "../chunk-5QLWVG23.js";
+import "../chunk-DX2BYFTQ.js";
+import "../chunk-IQGCGBYO.js";
+import "../chunk-XU7YQ73E.js";
 import {
   getLogger
-} from "../chunk-HZBNNQK3.js";
-import "../chunk-S4LZHR2L.js";
+} from "../chunk-MV7M6AY2.js";
+import "../chunk-JXF5SD3S.js";
 import {
   PaperError
-} from "../chunk-JXY3OJQ6.js";
-import "../chunk-OWC7QHPZ.js";
+} from "../chunk-SFVKAOLH.js";
+import "../chunk-VIXD5LXH.js";
 
 // src/template/layoutMapper.ts
 function mapSlideToLayout(slide, templateIndex) {
