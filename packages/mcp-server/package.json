@@ -1,0 +1,116 @@
+{
+  "name": "@runstamp/mcp-server",
+  "version": "1.0.0",
+  "mcpName": "io.github.runstamp/runstamp-mcp",
+  "description": "Thin Model Context Protocol adapter for the Runstamp operation catalog",
+  "license": "Apache-2.0",
+  "author": "Runstamp <hello@runstamp.com>",
+  "homepage": "https://runstamp.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/runstamp/runstamp",
+    "directory": "packages/mcp-server"
+  },
+  "bugs": "https://github.com/runstamp/runstamp/issues",
+  "type": "module",
+  "packageManager": "pnpm@10.12.4",
+  "bin": {
+    "runstamp-mcp": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "server.json",
+    "LICENSE"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "pnpm clean && tsup",
+    "docs:generate": "tsx scripts/modular-docs-verify.mts",
+    "docs:verify": "tsx scripts/modular-docs-verify.mts",
+    "docs:render": "tsx scripts/modular-docs-verify.mts",
+    "tool-budget": "tsx scripts/modular-docs-verify.mts",
+    "dev": "tsup --watch",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "lint": "pnpm exec eslint src/index.ts src/modular *.config.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "check:release": "pnpm clean && pnpm build && pnpm typecheck && pnpm lint && pnpm test && pnpm pack:check"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai-agents",
+    "document-generation",
+    "pptx",
+    "docx",
+    "xlsx",
+    "pdf"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@runstamp/catalog": "workspace:^",
+    "@runstamp/contract": "workspace:^",
+    "zod": "^4.3.6"
+  },
+  "peerDependencies": {
+    "@runstamp/docx": "^1.0.0",
+    "@runstamp/pdf": "^1.0.0",
+    "@runstamp/pptx": "^1.0.0",
+    "@runstamp/xlsx": "^1.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@runstamp/docx": {
+      "optional": true
+    },
+    "@runstamp/pdf": {
+      "optional": true
+    },
+    "@runstamp/pptx": {
+      "optional": true
+    },
+    "@runstamp/xlsx": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@runstamp/docx": "workspace:^",
+    "@runstamp/pdf": "workspace:^",
+    "@runstamp/pptx": "workspace:^",
+    "@runstamp/xlsx": "workspace:^",
+    "@types/node": "^22.0.0",
+    "tsup": "^8.0.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.7.0",
+    "vitest": "^4.1.4"
+  },
+  "runstamp": {
+    "packCheck": {
+      "requiredPaths": [
+        "server.json"
+      ],
+      "forbiddenImportSpecifiers": [
+        "@runstamp/registry",
+        "@runstamp/ops-bridge"
+      ]
+    },
+    "publicSourceMode": "independently-buildable"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}

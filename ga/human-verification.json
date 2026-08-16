@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "reviewer": {
+    "id": "release-owner:jake",
+    "name": "Jake",
+    "role": "release-owner"
+  },
+  "decision": "approved",
+  "reviewedAt": "2026-08-15T10:16:00.723Z",
+  "qualityTarget": 3.6,
+  "reviewManifest": {
+    "artifact": "ga/human-review/manifest.json",
+    "sha256": "d4ef270f4ee3cf2a7c8cd6cb88767b01d15d0ae730b637663a120f27093df80b"
+  },
+  "artifactSet": {
+    "artifact": ".launch-artifacts/icp-ga-frozen/artifact-set.json",
+    "sha256": "93f9ae04d0fb3cc615630075b922cacc6dd93003782d6fc8d810af8c50670b4e"
+  },
+  "operationCount": 79,
+  "documentCount": 120,
+  "modules": [
+    {
+      "package": "@runstamp/pptx",
+      "reviewed": true
+    },
+    {
+      "package": "@runstamp/docx",
+      "reviewed": true
+    },
+    {
+      "package": "@runstamp/pdf",
+      "reviewed": true
+    },
+    {
+      "package": "@runstamp/xlsx",
+      "reviewed": true
+    },
+    {
+      "package": "@runstamp/forms",
+      "reviewed": true
+    },
+    {
+      "package": "@runstamp/table-extraction",
+      "reviewed": true
+    },
+    {
+      "package": "@runstamp/delimited-data",
+      "reviewed": true
+    },
+    {
+      "package": "@runstamp/technical-publishing",
+      "reviewed": true
+    },
+    {
+      "package": "@runstamp/mail-artifacts",
+      "reviewed": true
+    },
+    {
+      "package": "@runstamp/scientific-publishing",
+      "reviewed": true
+    },
+    {
+      "package": "@runstamp/provenance",
+      "reviewed": true
+    },
+    {
+      "package": "@runstamp/review-operations",
+      "reviewed": true
+    }
+  ],
+  "attestation": "I reviewed every module page and its supporting operations, reviewed all 120 rendered documents, and found no release-blocking defect.",
+  "notes": "Explicit release-owner approval supplied in the Codex task on 2026-08-15: approve all 12 current module pages and the complete 120-document bundle."
+}

@@ -1,0 +1,166 @@
+{
+  "id": "pptx-earnings-logistics-network",
+  "format": "pptx",
+  "surface": "agent",
+  "description": "Q2 FY2026 earnings review for an asset-light freight and contract-logistics operator.",
+  "provenance": "Modeled on public earnings supplements from global freight-forwarding and contract-logistics companies: shipment volumes, yield, network utilization, business-line mix, cost actions, and forward guidance. Deliberately exercises an eight-slide deck with a multi-series line chart, pie chart, four operational KPIs, and region-specific commentary.",
+  "expectedProperties": {
+    "slideCount": 8,
+    "hasChart": true,
+    "chartSlides": 2,
+    "chartTypes": ["line", "pie"],
+    "kpiCount": 4
+  },
+  "document": {
+    "type": "presentation",
+    "version": "1.0",
+    "presentationTitle": "Northstar Logistics Q2 FY2026 Earnings Review",
+    "companyName": "Northstar Logistics Group plc (LSE: NLG)",
+    "theme": "editorial-wide",
+    "designTokens": {
+      "scale": "md",
+      "shape": "sharp"
+    },
+    "slides": [
+      {
+        "pattern": "title",
+        "content": {
+          "title": "Q2 FY2026 Earnings Review",
+          "subtitle": "Six months ended June 30, 2026 | Released August 12, 2026 | All figures in USD"
+        }
+      },
+      {
+        "pattern": "dashboard",
+        "content": {
+          "title": "Q2 performance at a glance",
+          "subtitle": "Constant-currency growth except where noted",
+          "kpis": [
+            { "label": "Net revenue", "value": "$1.28B", "trend": "up", "sublabel": "+8.4% YoY" },
+            { "label": "Adj. EBIT", "value": "$146M", "trend": "up", "sublabel": "11.4% margin; +70bp" },
+            { "label": "Ocean TEU", "value": "742K", "trend": "up", "sublabel": "+11% YoY" },
+            { "label": "On-time", "value": "93.1%", "trend": "up", "sublabel": "+240 bps YoY" }
+          ]
+        }
+      },
+      {
+        "pattern": "chart-focus",
+        "content": {
+          "title": "Volume recovery is broadening across transport modes",
+          "subtitle": "Quarterly indexed shipment volume; Q2 FY2025 = 100",
+          "chart": {
+            "type": "line",
+            "title": "Shipment volume index",
+            "series": [
+              {
+                "name": "Ocean freight",
+                "dataPoints": [
+                  { "category": "Q2 FY25", "value": 100 },
+                  { "category": "Q3 FY25", "value": 103 },
+                  { "category": "Q4 FY25", "value": 106 },
+                  { "category": "Q1 FY26", "value": 108 },
+                  { "category": "Q2 FY26", "value": 111 }
+                ]
+              },
+              {
+                "name": "Air freight",
+                "dataPoints": [
+                  { "category": "Q2 FY25", "value": 100 },
+                  { "category": "Q3 FY25", "value": 99 },
+                  { "category": "Q4 FY25", "value": 104 },
+                  { "category": "Q1 FY26", "value": 107 },
+                  { "category": "Q2 FY26", "value": 109 }
+                ]
+              },
+              {
+                "name": "Road brokerage",
+                "dataPoints": [
+                  { "category": "Q2 FY25", "value": 100 },
+                  { "category": "Q3 FY25", "value": 96 },
+                  { "category": "Q4 FY25", "value": 95 },
+                  { "category": "Q1 FY26", "value": 98 },
+                  { "category": "Q2 FY26", "value": 102 }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pattern": "chart-focus",
+        "content": {
+          "title": "Contract logistics provides a stabilizing earnings base",
+          "subtitle": "Q2 FY2026 adjusted EBIT contribution by business line",
+          "chart": {
+            "type": "pie",
+            "title": "Adjusted EBIT mix ($M)",
+            "series": [
+              {
+                "name": "Adjusted EBIT",
+                "dataPoints": [
+                  { "category": "Ocean freight", "value": 48 },
+                  { "category": "Air freight", "value": 29 },
+                  { "category": "Road brokerage", "value": 17 },
+                  { "category": "Contract logistics", "value": 52 }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pattern": "comparison",
+        "content": {
+          "title": "Yield and capacity — Q2 FY2026 versus prior year",
+          "subtitle": "Net revenue per shipment and purchased-transport capacity",
+          "kpis": [
+            { "label": "Ocean yield", "value": "-3%", "sublabel": "Utilization held GP" },
+            { "label": "Air yield", "value": "+2%", "sublabel": "Health + aero mix" },
+            { "label": "Road loads", "value": "+2%", "sublabel": "Carrier accept. 96%" },
+            { "label": "WH labor", "value": "-6%", "sublabel": "Automation hrs/order" }
+          ]
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "Network and customer highlights",
+          "subtitle": "Execution across strategic verticals and trade lanes",
+          "bulletPoints": [
+            "Won a five-year, $410M life-sciences control-tower mandate covering 23 countries; transition begins in October 2026",
+            "Opened the Monterrey cross-border campus at 82% pre-committed occupancy, adding 620K square feet of capacity",
+            "Asia-Europe ocean schedule reliability improved to 88% from 76% after carrier allocation was rebalanced in March",
+            "Top-25 customer retention was 100%; net revenue from those accounts increased 12% on automotive and healthcare growth",
+            "Digital booking penetration reached 74% of transactional shipments, reducing manual touches per file by 19%",
+            "Exited three subscale leased warehouses in the U.K.; $9M annualized savings expected from Q4 FY2026"
+          ]
+        }
+      },
+      {
+        "pattern": "statement",
+        "content": {
+          "title": "Service gains are translating into durable share and margin.",
+          "subtitle": "Henrik Dahl, Group Chief Executive",
+          "prose": [
+            "Network reliability is winning time-sensitive healthcare and aerospace volume.",
+            "Automation and route density support further margin expansion."
+          ]
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "FY2026 outlook",
+          "subtitle": "Guidance updated August 12, 2026; assumes current fuel curves and FX rates",
+          "bulletPoints": [
+            "Net revenue growth of 6%-8%, narrowed from 5%-9%, with transport volume growth in the mid-single digits",
+            "Adjusted EBIT of $555M-$585M, raised from $525M-$575M; H2 includes $12M of life-sciences transition costs",
+            "Free cash flow of at least $360M before acquisitions and shareholder distributions",
+            "Capital expenditure of $210M-$230M, primarily automation, cold-chain facilities, and the Monterrey campus",
+            "Year-end net leverage expected below 1.4x adjusted EBITDA after the September dividend payment",
+            "FY2027 planning assumption: ocean contract rates broadly stable with low-single-digit global capacity growth"
+          ]
+        }
+      }
+    ]
+  }
+}

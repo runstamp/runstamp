@@ -1,0 +1,9 @@
+{
+  "fixtureId": "notes-comments-media",
+  "previewSlideCount": 2,
+  "expectedSlideCount": 2,
+  "previewCount": 1,
+  "compileWithPreviewReturnedPreview": true,
+  "compileWithPreviewReturnedPptx": true,
+  "structuralPassed": true
+}

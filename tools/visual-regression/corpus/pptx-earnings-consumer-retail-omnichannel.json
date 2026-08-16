@@ -1,0 +1,132 @@
+{
+  "id": "pptx-earnings-consumer-retail-omnichannel",
+  "format": "pptx",
+  "surface": "agent",
+  "description": "FY2025 full-year earnings deck for a premium home and lifestyle retailer expanding its omnichannel model.",
+  "provenance": "Modeled on annual earnings decks from specialty retailers: comparable sales, channel and category mix, store productivity, inventory turns, capital returns, and next-year guidance. Deliberately exercises a seven-slide deck with a clustered bar chart, KPI cards carrying mixed trend directions, and detailed merchandising commentary.",
+  "expectedProperties": {
+    "slideCount": 7,
+    "hasChart": true,
+    "chartSlides": 1,
+    "chartTypes": ["bar"],
+    "kpiCount": 4
+  },
+  "document": {
+    "type": "presentation",
+    "version": "1.0",
+    "presentationTitle": "Hearth & Field FY2025 Results",
+    "companyName": "Hearth & Field Corporation (NYSE: HFC)",
+    "theme": "dark-punch",
+    "designTokens": {
+      "scale": "md",
+      "shape": "sharp"
+    },
+    "slides": [
+      {
+        "pattern": "title",
+        "content": {
+          "title": "FY2025 Results",
+          "subtitle": "Fiscal year ended February 1, 2026 | Reported March 19, 2026"
+        }
+      },
+      {
+        "pattern": "dashboard",
+        "content": {
+          "title": "Full-year scorecard",
+          "subtitle": "Fifty-two weeks ended February 1, 2026; comparable sales exclude new stores",
+          "kpis": [
+            { "label": "Net sales", "value": "$3.42B", "trend": "up", "sublabel": "+6.8% YoY" },
+            { "label": "Comp sales", "value": "+4.9%", "trend": "up", "sublabel": "Store 3.1%; web 8.7%" },
+            { "label": "EBIT margin", "value": "12.6%", "trend": "up", "sublabel": "+80 bps YoY" },
+            { "label": "Inventory", "value": "$618M", "trend": "down", "sublabel": "Down 4%; turns 3.7x" }
+          ]
+        }
+      },
+      {
+        "pattern": "chart-focus",
+        "content": {
+          "title": "Growth accelerated as digital and store experiences converged",
+          "subtitle": "Quarterly net sales by channel, $M",
+          "chart": {
+            "type": "bar",
+            "title": "Net sales by channel ($M)",
+            "series": [
+              {
+                "name": "Stores",
+                "dataPoints": [
+                  { "category": "Q1 FY25", "value": 485 },
+                  { "category": "Q2 FY25", "value": 512 },
+                  { "category": "Q3 FY25", "value": 536 },
+                  { "category": "Q4 FY25", "value": 758 }
+                ]
+              },
+              {
+                "name": "Digital",
+                "dataPoints": [
+                  { "category": "Q1 FY25", "value": 241 },
+                  { "category": "Q2 FY25", "value": 249 },
+                  { "category": "Q3 FY25", "value": 258 },
+                  { "category": "Q4 FY25", "value": 381 }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "Merchandising and customer signals",
+          "subtitle": "Category performance and loyalty behavior",
+          "bulletPoints": [
+            "Furniture comparable sales rose 7%, led by modular seating and made-to-order dining; average order value increased 5%",
+            "Kitchen and entertaining grew 4% as private-label cookware gained 180 bps of category share",
+            "Textiles declined 2% after planned SKU rationalization; gross margin improved 310 bps on lower clearance activity",
+            "Design-services revenue grew 19% and influenced $486M of merchandise sales, up from $361M in FY2024",
+            "Loyalty members represented 71% of sales and shopped 3.4 times annually versus 2.8 times one year ago",
+            "Mobile conversion reached 3.8%, up 60 bps, following checkout simplification and real-time store inventory"
+          ]
+        }
+      },
+      {
+        "pattern": "comparison",
+        "content": {
+          "title": "Store portfolio — invest, resize, and selectively expand",
+          "subtitle": "FY2025 actions compared with the FY2026 plan",
+          "kpis": [
+            { "label": "New stores", "value": "11", "sublabel": "FY2025 actual: 9" },
+            { "label": "Remodels", "value": "22", "sublabel": "Studios + pickup" },
+            { "label": "Closures", "value": "4", "sublabel": "$11M annual savings" },
+            { "label": "Store margin", "value": "≥18.5%", "sublabel": "FY2025 actual: 18.2%" }
+          ]
+        }
+      },
+      {
+        "pattern": "statement",
+        "content": {
+          "title": "Stores and digital now reinforce one another.",
+          "subtitle": "Maya Chen, President and Chief Executive Officer",
+          "prose": [
+            "Digital demand lifts store productivity while pickup expands convenience.",
+            "Selective remodels and disciplined inventory protect returns."
+          ]
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "FY2026 guidance and capital allocation",
+          "subtitle": "Outlook as of March 19, 2026; fiscal year ending January 30, 2027",
+          "bulletPoints": [
+            "Net sales growth of 5%-7%, including approximately 150 bps from net new square footage",
+            "Comparable sales growth of 3%-5%, with positive contributions expected from both stores and digital",
+            "Adjusted EBIT margin of 12.8%-13.2%, including $18M of incremental wage and benefits investment",
+            "Adjusted diluted EPS of $6.80-$7.15 versus $6.21 in FY2025",
+            "Capital expenditure of $210M-$225M; depreciation and amortization of approximately $118M",
+            "Plan to repurchase $250M-$300M of shares while maintaining net leverage below 1.0x EBITDA"
+          ]
+        }
+      }
+    ]
+  }
+}

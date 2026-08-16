@@ -1,0 +1,128 @@
+{
+  "id": "pptx-terminal-agent",
+  "format": "pptx",
+  "surface": "agent",
+  "description": "Terminal preset six-pattern agent baseline.",
+  "document": {
+    "type": "presentation",
+    "version": "1.0",
+    "presentationTitle": "Terminal operating review",
+    "companyName": "Runstamp",
+    "theme": "terminal",
+    "designTokens": {
+      "scale": "lg",
+      "density": "balanced",
+      "shape": "sharp"
+    },
+    "slides": [
+      {
+        "pattern": "title",
+        "content": {
+          "title": "Terminal operating review",
+          "subtitle": "A modern six-pattern baseline"
+        }
+      },
+      {
+        "pattern": "statement",
+        "content": {
+          "title": "Expansion is arriving earlier in the lifecycle.",
+          "subtitle": "That is making growth more durable.",
+          "prose": [
+            "Activation, retention, and expansion now reinforce one another instead of working as isolated motions."
+          ]
+        }
+      },
+      {
+        "pattern": "dashboard",
+        "content": {
+          "title": "Operating snapshot",
+          "subtitle": "Terminal preset",
+          "kpis": [
+            { "label": "ARR", "value": "$18.4M", "sublabel": "+28% YoY" },
+            { "label": "NRR", "value": "121%", "sublabel": "+5 pts" },
+            { "label": "Pipeline", "value": "$7.2M", "sublabel": "3.4x coverage" },
+            { "label": "Payback", "value": "10 mo", "sublabel": "-2 mo" }
+          ],
+          "chart": {
+            "type": "bar",
+            "series": [
+              {
+                "name": "Revenue",
+                "dataPoints": [
+                  { "category": "Q1", "value": 11.2 },
+                  { "category": "Q2", "value": 13.1 },
+                  { "category": "Q3", "value": 15.8 },
+                  { "category": "Q4", "value": 18.4 }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pattern": "comparison",
+        "content": {
+          "title": "What scaled vs. what still needs work",
+          "subtitle": "Execution on both sides of the funnel",
+          "bulletPoints": [
+            "Faster onboarding playbooks for enterprise launches",
+            "More qualified expansion prompts inside active accounts",
+            "Mid-market pipeline coverage remains thin in EMEA",
+            "Pricing experiments still need tighter attribution"
+          ]
+        }
+      },
+      {
+        "pattern": "chart-focus",
+        "content": {
+          "title": "Retention by cohort",
+          "subtitle": "Improvement is landing earlier",
+          "chart": {
+            "type": "line",
+            "series": [
+              {
+                "name": "Enterprise",
+                "dataPoints": [
+                  { "category": "Jan", "value": 98 },
+                  { "category": "Mar", "value": 103 },
+                  { "category": "May", "value": 107 },
+                  { "category": "Jul", "value": 112 },
+                  { "category": "Sep", "value": 118 }
+                ]
+              },
+              {
+                "name": "SMB",
+                "dataPoints": [
+                  { "category": "Jan", "value": 94 },
+                  { "category": "Mar", "value": 97 },
+                  { "category": "May", "value": 99 },
+                  { "category": "Jul", "value": 101 },
+                  { "category": "Sep", "value": 103 }
+                ]
+              }
+            ]
+          },
+          "kpis": [
+            { "label": "Enterprise", "value": "118%" },
+            { "label": "SMB", "value": "103%" }
+          ]
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "Next quarter focus",
+          "subtitle": "Stay with the compounding loop",
+          "bulletPoints": [
+            "Expand the enterprise onboarding pod",
+            "Turn new health-score signals into renewal plays",
+            "Shorten the path from product-qualified lead to first value"
+          ],
+          "prose": [
+            "The plan is to invest in the moments that widen expansion paths and keep early activation friction low."
+          ]
+        }
+      }
+    ]
+  }
+}

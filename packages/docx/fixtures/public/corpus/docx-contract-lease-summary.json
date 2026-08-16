@@ -1,0 +1,126 @@
+{
+  "id": "docx-contract-lease-summary",
+  "format": "docx",
+  "description": "A commercial office lease abstract summarizing a 62-month lease, with a dense key-terms table, a seven-column base rent escalation schedule, defined terms, and a landlord/tenant acknowledgment signature table.",
+  "provenance": "Modeled on the lease abstracts prepared by commercial real estate brokerages and in-house counsel to summarize executed office leases (CBRE/JLL abstract format): a premises and parties summary grid, a wide annual base-rent escalation schedule with per-square-foot and monthly columns, operating expense and security deposit sections, critical dates, and options with multi-level numbering. Deliberately exercises a seven-column numeric table near printable-width limits, a long two-column key-terms grid with wrapped cell text, and a signature acknowledgment table.",
+  "expectedProperties": {
+    "pageCountMin": 3,
+    "hasTable": true,
+    "rentScheduleColumns": 7,
+    "rentScheduleRows": 6,
+    "signatureBlockIsTable": true
+  },
+  "document": {
+    "type": "DocxDocument",
+    "pageSize": "letter",
+    "metadata": {
+      "title": "Lease Abstract — Suite 1400, Meridian Exchange Tower",
+      "author": "Kettleworth Property Advisors",
+      "subject": "Commercial Lease Summary",
+      "language": "en-US"
+    },
+    "theme": { "preset": "corporate" },
+    "footer": {
+      "text": "Lease Abstract — Meridian Exchange Tower, Suite 1400",
+      "includePageNumber": true
+    },
+    "pages": [
+      {
+        "elements": [
+          { "type": "heading", "level": 1, "text": "COMMERCIAL LEASE ABSTRACT", "style": { "textAlign": "center" } },
+          { "type": "paragraph", "style": { "textAlign": "center" }, "runs": [
+            { "text": "Suite 1400, Meridian Exchange Tower, 200 South Clark Street, Chicago, Illinois 60604", "style": { "fontStyle": "italic" } }
+          ] },
+          { "type": "paragraph", "style": { "textAlign": "justify" }, "text": "This abstract summarizes the principal business and legal terms of the Office Lease dated February 9, 2026 (the \"Lease\") between Clark Street Holdings LP and Fenwick Analytics, Inc. It is prepared for internal administration only. In all cases the executed Lease governs; this abstract does not amend the Lease and should not be relied upon as legal advice." },
+          { "type": "heading", "level": 2, "text": "1. Parties and Premises" },
+          { "type": "table", "tableStyle": "corporate", "tableCaption": "Parties and premises summary", "columns": [ { "width": 150 }, { "width": 318 } ], "rows": [
+            { "cells": [ { "text": "Landlord", "style": { "fontWeight": "bold" } }, { "text": "Clark Street Holdings LP, a Delaware limited partnership, c/o Rothbury Property Management LLC, 33 West Monroe Street, Suite 2100, Chicago, IL 60603" } ] },
+            { "cells": [ { "text": "Tenant", "style": { "fontWeight": "bold" } }, { "text": "Fenwick Analytics, Inc., a Delaware corporation" } ] },
+            { "cells": [ { "text": "Guarantor", "style": { "fontWeight": "bold" } }, { "text": "Fenwick Analytics Holdings, LLC (full lease guaranty, burning off to 12 months of gross rent after month 36 if no monetary default)" } ] },
+            { "cells": [ { "text": "Premises", "style": { "fontWeight": "bold" } }, { "text": "Suite 1400 on the 14th floor, stipulated at 18,240 rentable square feet (RSF)" } ] },
+            { "cells": [ { "text": "Building", "style": { "fontWeight": "bold" } }, { "text": "Meridian Exchange Tower, 200 South Clark Street, Chicago, IL 60604; approximately 612,400 RSF" } ] },
+            { "cells": [ { "text": "Tenant's proportionate share", "style": { "fontWeight": "bold" } }, { "text": "2.978%" } ] },
+            { "cells": [ { "text": "Permitted use", "style": { "fontWeight": "bold" } }, { "text": "General office use, including software development and data analytics operations, and no other purpose" } ] },
+            { "cells": [ { "text": "Parking", "style": { "fontWeight": "bold" } }, { "text": "12 unreserved garage permits at prevailing monthly rates (currently $285/permit/month), subject to availability" } ] }
+          ] },
+          { "type": "heading", "level": 2, "text": "2. Term and Critical Dates" },
+          { "type": "paragraph", "style": { "textAlign": "justify" }, "text": "2.1 The initial term is sixty-two (62) months, structured as a 60-month term plus two (2) months of abated rent at the front end." },
+          { "type": "table", "tableStyle": "bordered", "tableCaption": "Critical dates", "columns": [ { "width": 200 }, { "width": 130 }, { "width": 138 } ], "rows": [
+            { "isHeader": true, "cells": [
+              { "text": "Event", "style": { "fontWeight": "bold" } },
+              { "text": "Date", "style": { "fontWeight": "bold" } },
+              { "text": "Lease Reference", "style": { "fontWeight": "bold" } }
+            ] },
+            { "cells": [ { "text": "Lease execution" }, { "text": "February 9, 2026" }, { "text": "Preamble" } ] },
+            { "cells": [ { "text": "Delivery of premises (est.)" }, { "text": "May 1, 2026" }, { "text": "§ 2.2, Work Letter § 4" } ] },
+            { "cells": [ { "text": "Rent commencement" }, { "text": "July 1, 2026" }, { "text": "§ 3.1" } ] },
+            { "cells": [ { "text": "Expiration of initial term" }, { "text": "June 30, 2031" }, { "text": "§ 2.1" } ] },
+            { "cells": [ { "text": "Renewal notice window" }, { "text": "Sep 30, 2030 – Dec 31, 2030" }, { "text": "Rider 1, § R-1.2" } ] },
+            { "cells": [ { "text": "Termination option effective date" }, { "text": "June 30, 2029" }, { "text": "Rider 1, § R-2.1" } ] }
+          ] },
+          { "type": "heading", "level": 2, "text": "3. Base Rent" },
+          { "type": "paragraph", "style": { "textAlign": "justify" }, "text": "3.1 Base rent escalates 2.75% annually on each anniversary of the rent commencement date. Months 1 and 2 following delivery are fully abated (reflected in the Lease as the abatement period preceding rent commencement). The schedule below states annualized amounts; monthly installments are one-twelfth of the annual figure." },
+          { "type": "table", "tableStyle": "bordered", "tableCaption": "Base rent escalation schedule", "columns": [ { "width": 62 }, { "width": 96 }, { "width": 62 }, { "width": 84 }, { "width": 78 }, { "width": 44 }, { "width": 42 } ], "rows": [
+            { "isHeader": true, "cells": [
+              { "text": "Lease Year", "style": { "fontWeight": "bold" } },
+              { "text": "Period", "style": { "fontWeight": "bold" } },
+              { "text": "$/RSF/Yr", "style": { "fontWeight": "bold", "textAlign": "right" } },
+              { "text": "Annual Base Rent", "style": { "fontWeight": "bold", "textAlign": "right" } },
+              { "text": "Monthly Installment", "style": { "fontWeight": "bold", "textAlign": "right" } },
+              { "text": "Escal.", "style": { "fontWeight": "bold", "textAlign": "right" } },
+              { "text": "Abated Mos.", "style": { "fontWeight": "bold", "textAlign": "right" } }
+            ] },
+            { "cells": [ { "text": "1" }, { "text": "Jul 2026 – Jun 2027" }, { "text": "34.50", "style": { "textAlign": "right" } }, { "text": "629,280.00", "style": { "textAlign": "right" } }, { "text": "52,440.00", "style": { "textAlign": "right" } }, { "text": "—", "style": { "textAlign": "right" } }, { "text": "2", "style": { "textAlign": "right" } } ] },
+            { "cells": [ { "text": "2" }, { "text": "Jul 2027 – Jun 2028" }, { "text": "35.45", "style": { "textAlign": "right" } }, { "text": "646,608.00", "style": { "textAlign": "right" } }, { "text": "53,884.00", "style": { "textAlign": "right" } }, { "text": "2.75%", "style": { "textAlign": "right" } }, { "text": "0", "style": { "textAlign": "right" } } ] },
+            { "cells": [ { "text": "3" }, { "text": "Jul 2028 – Jun 2029" }, { "text": "36.42", "style": { "textAlign": "right" } }, { "text": "664,300.80", "style": { "textAlign": "right" } }, { "text": "55,358.40", "style": { "textAlign": "right" } }, { "text": "2.75%", "style": { "textAlign": "right" } }, { "text": "0", "style": { "textAlign": "right" } } ] },
+            { "cells": [ { "text": "4" }, { "text": "Jul 2029 – Jun 2030" }, { "text": "37.43", "style": { "textAlign": "right" } }, { "text": "682,723.20", "style": { "textAlign": "right" } }, { "text": "56,893.60", "style": { "textAlign": "right" } }, { "text": "2.75%", "style": { "textAlign": "right" } }, { "text": "0", "style": { "textAlign": "right" } } ] },
+            { "cells": [ { "text": "5" }, { "text": "Jul 2030 – Jun 2031" }, { "text": "38.46", "style": { "textAlign": "right" } }, { "text": "701,510.40", "style": { "textAlign": "right" } }, { "text": "58,459.20", "style": { "textAlign": "right" } }, { "text": "2.75%", "style": { "textAlign": "right" } }, { "text": "0", "style": { "textAlign": "right" } } ] }
+          ] },
+          { "type": "heading", "level": 2, "text": "4. Operating Expenses and Taxes" },
+          { "type": "paragraph", "style": { "textAlign": "justify" }, "text": "4.1 Structure. The Lease is modified gross over a base year. Tenant pays its proportionate share (2.978%) of increases in Operating Expenses and Taxes over the 2026 calendar base year, payable monthly on an estimated basis with an annual true-up delivered by April 30 of the following year." },
+          { "type": "paragraph", "style": { "textAlign": "justify" }, "text": "4.2 Controllable expense cap. Increases in Controllable Operating Expenses are capped at five percent (5%) per year on a cumulative and compounding basis. Taxes, insurance, utilities, and snow removal are excluded from the cap (Lease § 4.3(d))." },
+          { "type": "paragraph", "style": { "textAlign": "justify" }, "text": "4.3 Audit right. Tenant may audit Landlord's expense statement once per year within one hundred eighty (180) days of receipt, using a non-contingent-fee auditor. If the audit shows an overstatement of more than four percent (4%), Landlord reimburses reasonable audit costs up to $7,500 (Lease § 4.6)." },
+          { "type": "heading", "level": 2, "text": "5. Security Deposit and Letter of Credit" },
+          { "type": "paragraph", "style": { "textAlign": "justify" }, "text": "5.1 In lieu of a cash deposit, Tenant delivered an irrevocable standby letter of credit in the amount of $157,320 issued by First Meridian Bank, N.A. The LC amount reduces to $104,880 on the first day of Lease Year 4, provided no monetary default has occurred beyond applicable cure periods (Lease § 5.2)." },
+          { "type": "heading", "level": 2, "text": "6. Tenant Improvements" },
+          { "type": "paragraph", "style": { "textAlign": "justify" }, "text": "6.1 Landlord provides a tenant improvement allowance of $78.00 per RSF ($1,422,720 total) for hard and soft construction costs, architectural fees, and cabling, with up to $9.00 per RSF available for furniture, fixtures, and equipment or as a credit against base rent. Unused allowance above the FF&E portion is forfeited if not drawn within twelve (12) months of the rent commencement date (Work Letter § 6)." },
+          { "type": "heading", "level": 2, "text": "7. Options and Rights" },
+          { "type": "heading", "level": 3, "text": "7.1 Renewal Option" },
+          { "type": "paragraph", "style": { "textAlign": "justify" }, "text": "7.1.1 One (1) option to renew for five (5) years at ninety-five percent (95%) of fair market rent, exercisable by written notice delivered no earlier than nine (9) months and no later than six (6) months before expiration. The option is personal to the named Tenant and any Permitted Transferee and is void during any uncured default." },
+          { "type": "paragraph", "style": { "textAlign": "justify" }, "text": "7.1.2 If the parties fail to agree on fair market rent within thirty (30) days after Tenant's exercise, either party may initiate three-broker baseball arbitration under Rider 1, § R-1.4, with each party bearing its own broker's fee and splitting the third broker's fee equally." },
+          { "type": "heading", "level": 3, "text": "7.2 Termination Option" },
+          { "type": "paragraph", "style": { "textAlign": "justify" }, "text": "7.2.1 Tenant may terminate effective June 30, 2029 (end of Lease Year 3) with written notice by September 30, 2028 and payment of a termination fee equal to the unamortized portion of the tenant improvement allowance, leasing commissions, and abated rent, amortized at eight percent (8%) per annum, plus three (3) months of then-current gross rent, estimated at $412,067 (Rider 1, § R-2)." },
+          { "type": "heading", "level": 3, "text": "7.3 Right of First Offer" },
+          { "type": "paragraph", "style": { "textAlign": "justify" }, "text": "7.3.1 Ongoing right of first offer on Suite 1500 (approximately 9,660 RSF), subordinate to existing tenants' expansion and renewal rights, exercisable within ten (10) business days of Landlord's offer notice on the economic terms stated therein (Rider 1, § R-3)." },
+          { "type": "heading", "level": 2, "text": "8. Assignment and Subletting" },
+          { "type": "paragraph", "style": { "textAlign": "justify" }, "text": "8.1 Landlord consent required, not to be unreasonably withheld, conditioned, or delayed; response due within twenty (20) business days. No consent required for transfers to a Permitted Transferee (affiliates, successors by merger, or purchasers of substantially all assets with net worth at least equal to Tenant's as of the Lease date). Landlord receives fifty percent (50%) of net transfer profits after Tenant's reasonable transaction costs. No recapture right applies to Permitted Transferee transactions (Lease § 11)." },
+          { "type": "heading", "level": 2, "text": "9. Insurance and Restoration" },
+          { "type": "paragraph", "style": { "textAlign": "justify" }, "text": "9.1 Tenant maintains commercial general liability coverage of $1,000,000 per occurrence / $2,000,000 aggregate with a $5,000,000 umbrella, workers' compensation at statutory limits, and special-form property insurance on Tenant's property. Landlord and Rothbury Property Management LLC are additional insureds. Mutual waiver of subrogation applies (Lease §§ 8.1–8.4). If casualty damage cannot be restored within two hundred seventy (270) days, either party may terminate (Lease § 9.2)." },
+          { "type": "heading", "level": 2, "text": "10. Notable Provisions and Watch Items" },
+          { "type": "list", "listType": "number", "style": { "margin": { "left": 36 } }, "items": [
+            { "text": "Holdover rent is 150% of the last month's gross rent for the first 60 days and 200% thereafter, plus consequential damages after 60 days (Lease § 16) — calendar the expiration aggressively." },
+            { "text": "The SNDA with the current mortgagee (Lakeshore Life Insurance Company) was delivered at execution; any refinancing requires a replacement SNDA within 30 days (Lease § 13.3)." },
+            { "text": "Landlord's building hours are 7:00 a.m. – 6:00 p.m. weekdays and 8:00 a.m. – 1:00 p.m. Saturdays; after-hours HVAC is billed at $85/hour/floor, escalating with actual utility cost (Lease § 6.4)." },
+            { "text": "Tenant must provide estoppel certificates within ten (10) business days of request; failure beyond a second notice is an event of default (Lease § 14)." },
+            { "text": "The termination fee estimate in § 7.2.1 of this abstract is based on the final TI draw; recompute after closeout of the Work Letter." }
+          ] },
+          { "type": "container", "keepTogether": true, "children": [
+            { "type": "heading", "level": 2, "text": "11. Abstract Acknowledgment" },
+            { "type": "paragraph", "style": { "textAlign": "justify" }, "text": "The undersigned acknowledge that this abstract has been reviewed against the executed Lease and is approved for entry into the lease administration system. The executed Lease controls in all respects." },
+            { "type": "table", "tableStyle": "plain", "tableCaption": "Acknowledgment signature block", "columns": [ { "width": 156 }, { "width": 156 }, { "width": 156 } ], "rows": [
+              { "isHeader": true, "cells": [
+                { "text": "PREPARED BY", "style": { "fontWeight": "bold" } },
+                { "text": "REVIEWED BY (TENANT)", "style": { "fontWeight": "bold" } },
+                { "text": "REVIEWED BY (COUNSEL)", "style": { "fontWeight": "bold" } }
+              ] },
+              { "cells": [ { "text": "Signature: ________________" }, { "text": "Signature: ________________" }, { "text": "Signature: ________________" } ] },
+              { "cells": [ { "text": "Name: Imogen Kettleworth" }, { "text": "Name: Priya Shah" }, { "text": "Name: Daniel Abrams" } ] },
+              { "cells": [ { "text": "Title: Director, Lease Advisory" }, { "text": "Title: Head of Workplace, Fenwick Analytics" }, { "text": "Title: Partner, Abrams & Leung LLP" } ] },
+              { "cells": [ { "text": "Date: ____________________" }, { "text": "Date: ____________________" }, { "text": "Date: ____________________" } ] }
+            ] }
+          ] }
+        ]
+      }
+    ]
+  }
+}

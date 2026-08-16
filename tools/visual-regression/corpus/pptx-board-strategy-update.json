@@ -1,0 +1,189 @@
+{
+  "id": "pptx-board-strategy-update",
+  "format": "pptx",
+  "surface": "agent",
+  "description": "Quarterly board strategy update deck for a grid-analytics SaaS company with KPI dashboard, segment revenue chart, plan-vs-actual review, and H2 milestone timeline.",
+  "provenance": "Modeled on the standing 'CEO strategy update' section of a growth-stage enterprise software board pack: thesis statement up front, operating KPI dashboard, revenue trajectory chart, pillar-by-pillar progress, and a dated milestone runway. Deliberately exercises long slide titles, a 3-series x 5-category bar chart, dense 7-item bullet slides, and date-prefixed timeline bullets on the agent surface.",
+  "expectedProperties": {
+    "slideCount": 9,
+    "hasChart": true,
+    "chartSlides": 2,
+    "kpiCount": 4,
+    "maxBulletsPerSlide": 7
+  },
+  "document": {
+    "type": "presentation",
+    "version": "1.0",
+    "presentationTitle": "FY26 Strategy Update — Board of Directors",
+    "companyName": "Meridian Grid Systems",
+    "theme": "default-navy",
+    "slides": [
+      {
+        "pattern": "title",
+        "content": {
+          "title": "FY26 Strategy Update",
+          "subtitle": "Board of Directors — Q2 Review, 22 July 2026 — Confidential"
+        }
+      },
+      {
+        "pattern": "statement",
+        "content": {
+          "title": "The grid-modernization cycle is arriving faster than our FY26 plan assumed — we intend to lean in, not coast.",
+          "subtitle": "CEO perspective",
+          "prose": [
+            "Utility capital programs tied to interconnection queues accelerated meaningfully in the first half. Our pipeline from investor-owned utilities is up 64% year over year, and average deal size in the segment has moved from $310K to $442K ACV.",
+            "Management is asking the board to endorse a controlled acceleration: pull forward roughly $6.8M of FY27 go-to-market and platform spend into H2 FY26, funded from the existing balance sheet, while holding the FY26 non-GAAP operating margin floor at -4%."
+          ]
+        }
+      },
+      {
+        "pattern": "dashboard",
+        "content": {
+          "title": "Operating snapshot — Q2 FY26",
+          "subtitle": "All figures as of 30 June 2026; growth rates year over year",
+          "kpis": [
+            { "label": "ARR", "value": "$86.4M", "trend": "up", "sublabel": "+31% YoY; plan was +26%" },
+            { "label": "Net revenue retention", "value": "117%", "trend": "up", "sublabel": "+4pp vs Q2 FY25" },
+            { "label": "Non-GAAP gross margin", "value": "71.8%", "trend": "flat", "sublabel": "Plan: 72.0%" },
+            { "label": "Cash & equivalents", "value": "$118.2M", "trend": "down", "sublabel": "H1 burn $9.1M vs $12.4M plan" }
+          ]
+        }
+      },
+      {
+        "pattern": "chart-focus",
+        "content": {
+          "title": "ARR by customer segment — utilities now drive over half of the book",
+          "subtitle": "Ending ARR, $M, trailing five quarters",
+          "chart": {
+            "type": "bar",
+            "title": "Ending ARR by segment ($M)",
+            "series": [
+              {
+                "name": "Investor-owned utilities",
+                "dataPoints": [
+                  { "category": "Q2 FY25", "value": 28.1 },
+                  { "category": "Q3 FY25", "value": 31.4 },
+                  { "category": "Q4 FY25", "value": 35.9 },
+                  { "category": "Q1 FY26", "value": 40.6 },
+                  { "category": "Q2 FY26", "value": 45.3 }
+                ]
+              },
+              {
+                "name": "Independent power producers",
+                "dataPoints": [
+                  { "category": "Q2 FY25", "value": 21.7 },
+                  { "category": "Q3 FY25", "value": 22.9 },
+                  { "category": "Q4 FY25", "value": 24.2 },
+                  { "category": "Q1 FY26", "value": 25.4 },
+                  { "category": "Q2 FY26", "value": 26.6 }
+                ]
+              },
+              {
+                "name": "Commercial & industrial",
+                "dataPoints": [
+                  { "category": "Q2 FY25", "value": 16.2 },
+                  { "category": "Q3 FY25", "value": 15.8 },
+                  { "category": "Q4 FY25", "value": 15.1 },
+                  { "category": "Q1 FY26", "value": 14.9 },
+                  { "category": "Q2 FY26", "value": 14.5 }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "Strategic pillar progress — H1 FY26",
+          "subtitle": "Status against the three-pillar plan approved in the January board meeting",
+          "bulletPoints": [
+            "Pillar 1, Utility depth: 11 of 14 planned IOU logos closed; Duke and Xcel expansions moved to enterprise-wide licenses covering 100% of transmission territories",
+            "Pillar 1, Utility depth: FERC 2023-compliant interconnection module shipped 9 weeks early; already attached to 71% of new utility deals",
+            "Pillar 2, Platform: forecasting engine re-platform completed; median model refresh latency down from 41 min to 6 min at P95",
+            "Pillar 2, Platform: SOC 2 Type II and NERC CIP readiness assessments both closed with zero high-severity findings",
+            "Pillar 3, C&I repositioning: deliberate churn of 22 low-fit C&I accounts ($1.9M ARR) completed; segment gross margin improved 6.2pp",
+            "Pillar 3, C&I repositioning: channel-led motion with two national energy-services partners signed; first co-sold deal closed in June",
+            "Watch item: EMEA entry remains paused pending the UK Ofgem data-residency ruling expected in September"
+          ]
+        }
+      },
+      {
+        "pattern": "comparison",
+        "content": {
+          "title": "Plan vs. actual — where H1 diverged",
+          "subtitle": "Left: assumptions in the January FY26 plan. Right: what actually happened in H1.",
+          "bulletPoints": [
+            "Plan assumed utility sales cycles of 9-11 months; actuals ran 6.5 months median as IRA-funded programs compressed procurement",
+            "Plan assumed 4 competitive displacements; we recorded 11, primarily versus legacy EMS vendor toolchains",
+            "Plan assumed C&I churn of $1.2M spread across FY26; we concentrated $1.9M in Q1 deliberately and the segment stabilized by May",
+            "Plan assumed hiring 38 quota-carrying reps by June; we landed 29 — enterprise AE hiring in Texas and the Southeast is the binding constraint",
+            "Plan assumed hosting unit costs flat; GPU inference costs rose 18% and were offset by the forecasting re-platform savings",
+            "Plan assumed no M&A activity; two inbound acqui-hire opportunities were evaluated and declined in H1"
+          ]
+        }
+      },
+      {
+        "pattern": "chart-focus",
+        "content": {
+          "title": "Pipeline coverage supports the acceleration case",
+          "subtitle": "Qualified pipeline as a multiple of forward two-quarter new-ARR target",
+          "chart": {
+            "type": "line",
+            "title": "Pipeline coverage ratio by month",
+            "series": [
+              {
+                "name": "Utilities",
+                "dataPoints": [
+                  { "category": "Jan", "value": 3.1 },
+                  { "category": "Feb", "value": 3.4 },
+                  { "category": "Mar", "value": 3.9 },
+                  { "category": "Apr", "value": 4.6 },
+                  { "category": "May", "value": 5.2 },
+                  { "category": "Jun", "value": 5.8 }
+                ]
+              },
+              {
+                "name": "All segments",
+                "dataPoints": [
+                  { "category": "Jan", "value": 2.8 },
+                  { "category": "Feb", "value": 2.9 },
+                  { "category": "Mar", "value": 3.2 },
+                  { "category": "Apr", "value": 3.6 },
+                  { "category": "May", "value": 3.9 },
+                  { "category": "Jun", "value": 4.1 }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "H2 FY26 milestone runway",
+          "subtitle": "Committed dates; items in the acceleration proposal marked with an asterisk",
+          "bulletPoints": [
+            "Aug 2026 — General availability of the outage-prediction module for distribution operators; 6 design partners in production beta today",
+            "Sep 2026 — Ofgem data-residency ruling expected; EMEA go/no-go decision returns to the board in the October meeting",
+            "Oct 2026 — * Southeast enterprise pod fully staffed (8 AEs, 4 SEs) if acceleration is approved; recruiting pipeline already built",
+            "Nov 2026 — NERC CIP-015 certification audit window; platform work completed in H1, evidence collection underway",
+            "Dec 2026 — * Second data center region (US-Central) live, removing the single-region concentration flagged in the Q1 risk review",
+            "Jan 2027 — FY27 operating plan to the board, including the EMEA decision and the C&I channel scale-up case"
+          ]
+        }
+      },
+      {
+        "pattern": "statement",
+        "content": {
+          "title": "Resolution requested: approve $6.8M of H2 acceleration spend, funded from cash, holding the -4% operating margin floor.",
+          "subtitle": "For discussion and vote under agenda item 4",
+          "prose": [
+            "The spend splits $4.1M to go-to-market (two enterprise pods, partner engineering), $1.9M to the second data center region, and $0.8M to compliance and security headcount. Payback on the go-to-market portion models at 14 months on current segment unit economics.",
+            "If pipeline coverage falls below 3.5x for two consecutive months, management will pause the uncommitted portion and report back at the next scheduled meeting."
+          ]
+        }
+      }
+    ]
+  }
+}

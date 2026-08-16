@@ -1,0 +1,19 @@
+{
+  "fixtureId": "animation-phase2",
+  "passed": true,
+  "failures": [],
+  "oracle": {
+    "available": true,
+    "fixtureId": "animation-phase2",
+    "passed": true,
+    "failures": [],
+    "pdfPath": "/Users/jake/plain/plainworks/paperjsx.com/packages/core/tests/desktopValidation/artifacts/animation-phase2/animation-phase2.pdf",
+    "savedCopyPath": "/Users/jake/plain/plainworks/paperjsx.com/packages/core/tests/desktopValidation/artifacts/animation-phase2/animation-phase2.roundtrip.pptx",
+    "screenshotPath": "/Users/jake/plain/plainworks/paperjsx.com/packages/core/tests/desktopValidation/artifacts/animation-phase2/animation-phase2.png",
+    "details": [
+      "Opened presentation: animation-phase2.input.pptx, slides=1",
+      "PowerPoint canonicalized 13 normalized package part(s) during round-trip save."
+    ]
+  },
+  "structuralPassed": true
+}

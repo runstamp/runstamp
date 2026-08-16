@@ -1,0 +1,58 @@
+{
+  "name": "@runstamp/catalog",
+  "version": "1.0.0",
+  "description": "The public, descriptor-only Runstamp operation catalog",
+  "license": "Apache-2.0",
+  "type": "module",
+  "packageManager": "pnpm@10.12.4",
+  "homepage": "https://runstamp.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/runstamp/runstamp",
+    "directory": "packages/catalog"
+  },
+  "bugs": "https://github.com/runstamp/runstamp/issues",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./catalog.json": "./catalog.json"
+  },
+  "files": [
+    "dist",
+    "catalog.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "pnpm clean && tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "lint": "pnpm exec eslint src scripts *.config.ts",
+    "verify:generated": "tsx scripts/verify-generated.mts"
+  },
+  "dependencies": {
+    "@runstamp/contract": "workspace:^"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.0.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.7.0",
+    "vitest": "^4.1.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "runstamp": {
+    "publicSourceMode": "independently-buildable"
+  }
+}

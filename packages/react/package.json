@@ -1,0 +1,83 @@
+{
+  "name": "@runstamp/react",
+  "version": "1.0.0",
+  "description": "Accessible React surfaces for Runstamp operation results and decks",
+  "license": "Apache-2.0",
+  "author": "Runstamp <hello@runstamp.com> (https://runstamp.com)",
+  "homepage": "https://runstamp.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/runstamp/runstamp",
+    "directory": "packages/react"
+  },
+  "bugs": "https://github.com/runstamp/runstamp/issues",
+  "type": "module",
+  "sideEffects": [
+    "./dist/styles.css"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./server": {
+      "types": "./dist/server.d.ts",
+      "import": "./dist/server.js",
+      "default": "./dist/server.js"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "files": [
+    "dist",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "pnpm clean && tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "@runstamp/pptx": "^1.0.0",
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@runstamp/pptx": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@runstamp/contract": "workspace:*"
+  },
+  "devDependencies": {
+    "@runstamp/pptx": "workspace:*",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.7.0",
+    "vitest": "^4.1.4"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "runstamp": {
+    "packCheck": {
+      "declarationGraph": true
+    },
+    "publicSourceMode": "independently-buildable"
+  }
+}

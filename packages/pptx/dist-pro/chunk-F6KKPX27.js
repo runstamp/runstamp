@@ -1,0 +1,3 @@
+import { createRequire as __runstampCreateRequire } from "node:module";
+const require = __runstampCreateRequire(import.meta.url);
+import{AsyncLocalStorage as s}from"node:async_hooks";var r=Symbol.for("paperjsx.contextStorage"),g=globalThis,i=g[r]??(g[r]=new s);function t(){return i.getStore()}var o=class{_logger={warn(e){/^\[(?:autoFont|fontCache|fontEmbed|harfbuzz|segmentCache)\]/.test(e)||console.warn(e)}};setLogger(e){if(!e||typeof e.warn!="function")throw new Error("setLogger: logger must implement warn(message: string)");this._logger=e}getLogger(){return this._logger}},a=new o;function f(n){(t()?.logger??a).setLogger(n)}function l(){let e=t()?.logger;return e?e.getLogger():a.getLogger()}export{i as a,t as b,o as c,f as d,l as e};

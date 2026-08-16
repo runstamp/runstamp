@@ -1,0 +1,139 @@
+{
+  "id": "pdf-notice-privacy-policy-update",
+  "format": "pdf",
+  "description": "Customer-facing privacy-policy update notice from a SaaS analytics vendor with a dated header, reference number, a three-column summary-of-changes table, and formal opt-out prose.",
+  "provenance": "Modeled on the privacy-policy change notices large SaaS vendors email and post ahead of GDPR/CCPA-relevant policy revisions, which pair formal prose with a side-by-side summary-of-changes table. Deliberately exercises a wide three-column comparison table with long wrapped cell text, multi-level headings, an unordered rights list, and a dynamic footer with reference number and page numbering across a natural two-page flow.",
+  "expectedProperties": {
+    "pageCountMin": 2,
+    "hasTable": true,
+    "changeTableRows": 6,
+    "referenceNumber": "NG-PRIV-2026-003",
+    "effectiveDate": "September 1, 2026"
+  },
+  "document": {
+    "meta": {
+      "title": "Notice of Updates to the Northgate Analytics Privacy Policy",
+      "author": "Northgate Analytics, Inc.",
+      "subject": "Privacy Policy update effective September 1, 2026 — Reference NG-PRIV-2026-003"
+    },
+    "page": {
+      "size": "Letter",
+      "margin": { "top": 54, "right": 60, "bottom": 64, "left": 60 }
+    },
+    "pageNumber": { "fontSize": 8, "format": "NG-PRIV-2026-003 — Page {page} of {total}" },
+    "children": [
+      {
+        "type": "table",
+        "columns": [{ "width": "60%" }, { "width": "40%" }],
+        "body": [
+          {
+            "cells": [
+              {
+                "children": [
+                  { "type": "heading", "level": 2, "value": "Northgate Analytics, Inc." },
+                  { "type": "paragraph", "fontSize": 9, "value": "2200 Harbor Point Parkway, Suite 900" },
+                  { "type": "paragraph", "fontSize": 9, "value": "Seattle, WA 98104, United States" },
+                  { "type": "paragraph", "fontSize": 9, "value": "privacy@northgateanalytics.com" }
+                ]
+              },
+              {
+                "children": [
+                  { "type": "paragraph", "fontSize": 9, "textAlign": "right", "value": "Reference: NG-PRIV-2026-003" },
+                  { "type": "paragraph", "fontSize": 9, "textAlign": "right", "value": "Date of notice: July 14, 2026" },
+                  { "type": "paragraph", "fontSize": 9, "textAlign": "right", "value": "Effective date of changes: September 1, 2026" },
+                  { "type": "paragraph", "fontSize": 9, "textAlign": "right", "value": "Supersedes policy version 4.2 (March 15, 2025)" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      { "type": "divider", "style": { "marginTop": 10, "marginBottom": 14 } },
+      { "type": "heading", "level": 1, "value": "Notice of Updates to Our Privacy Policy" },
+      { "type": "paragraph", "fontSize": 10, "lineHeight": 1.45, "style": { "marginTop": 8 }, "value": "We are writing to inform you that Northgate Analytics, Inc. (\"Northgate,\" \"we,\" \"us\") is updating its Privacy Policy, effective September 1, 2026. This notice is provided to all account holders and workspace administrators at least 45 days in advance of the effective date, consistent with Section 12.3 of our Master Subscription Agreement and applicable data protection law. No action is required to continue using the services; your continued use of the services on or after September 1, 2026 constitutes acknowledgment of the updated policy." },
+      { "type": "paragraph", "fontSize": 10, "lineHeight": 1.45, "style": { "marginTop": 6 }, "value": "The updated Privacy Policy (version 5.0) is available for review at northgateanalytics.com/legal/privacy, and a redlined comparison against version 4.2 may be requested from our Privacy Office at the address above. The material changes are summarized below; the summary is provided for convenience only and does not modify the terms of the policy itself." },
+      { "type": "heading", "level": 2, "style": { "marginTop": 16 }, "keepWithNext": true, "value": "1. Summary of Material Changes" },
+      {
+        "type": "table",
+        "style": { "marginTop": 6, "borderTop": { "color": "#1a1a1a", "width": 1 }, "borderBottom": { "color": "#1a1a1a", "width": 1 } },
+        "columns": [{ "width": "22%" }, { "width": "39%" }, { "width": "39%" }],
+        "header": [
+          {
+            "cells": [
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Policy section" }], "style": { "backgroundColor": "#e4e7eb", "padding": 5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Current provision (v4.2)" }], "style": { "backgroundColor": "#e4e7eb", "padding": 5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Updated provision (v5.0)" }], "style": { "backgroundColor": "#e4e7eb", "padding": 5 } }
+            ]
+          }
+        ],
+        "body": [
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "§3 — Data we collect" }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Usage telemetry limited to feature-level event counts and session duration." }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Adds collection of dashboard query performance metadata (query shape and execution time, never query results or underlying customer data) to support capacity planning." }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "§5 — Subprocessors" }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Subprocessor list maintained in Exhibit C of the Data Processing Addendum; updates by email only." }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Subprocessor list moves to a public register at northgateanalytics.com/legal/subprocessors with an RSS/email subscription mechanism and a 30-day advance objection window for new subprocessors." }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "§6 — International transfers" }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Transfers from the EEA and UK rely on the 2021 Standard Contractual Clauses and the UK Addendum." }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Adds reliance on our certification under the EU–U.S. Data Privacy Framework and its UK Extension as the primary transfer mechanism, with the SCCs retained as a fallback." }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "§8 — Retention" }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Workspace audit logs retained for 12 months; deleted-account data purged within 90 days." }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Audit-log retention becomes configurable per workspace between 90 days and 24 months (default unchanged at 12 months); deleted-account purge window shortens from 90 to 35 days." }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "§9 — AI features" }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Not addressed." }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "New section describing the optional Insight Assistant feature. Customer content submitted to the assistant is processed transiently, is not retained beyond 30 days, and is never used to train foundation models. The feature is off by default and controlled by workspace administrators." }], "style": { "padding": 5, "borderBottom": { "color": "#cfd4da", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "§13 — Your rights" }], "style": { "padding": 5 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Rights requests accepted by email to privacy@northgateanalytics.com." }], "style": { "padding": 5 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Adds an in-product privacy request portal, a toll-free number for U.S. residents (1-888-555-0147), and commits to a 30-day substantive response for all verified requests regardless of jurisdiction." }], "style": { "padding": 5 } }
+            ]
+          }
+        ]
+      },
+      { "type": "heading", "level": 2, "style": { "marginTop": 16 }, "keepWithNext": true, "value": "2. Why We Are Making These Changes" },
+      { "type": "paragraph", "fontSize": 10, "lineHeight": 1.45, "style": { "marginTop": 6 }, "value": "These updates reflect three developments since the current policy took effect: our certification under the EU–U.S. Data Privacy Framework completed in April 2026; the general availability of the Insight Assistant feature announced at our Fusion 2026 customer conference; and feedback from enterprise customers requesting configurable audit-log retention to align with their own records schedules. None of the changes reduces the protections applicable to customer content, and no change permits the sale or sharing of personal information as those terms are defined under the California Consumer Privacy Act." },
+      { "type": "heading", "level": 2, "style": { "marginTop": 14 }, "keepWithNext": true, "value": "3. Your Choices and Rights" },
+      { "type": "paragraph", "fontSize": 10, "lineHeight": 1.45, "style": { "marginTop": 6 }, "value": "You are not required to take any action in response to this notice. However, you may wish to review the following options before the effective date:" },
+      {
+        "type": "list",
+        "style": { "marginTop": 6, "marginLeft": 10 },
+        "items": [
+          { "text": "Workspace administrators may disable the Insight Assistant feature under Settings > Features > AI, or leave it disabled (the default) — no data is processed by the feature unless it is affirmatively enabled." },
+          { "text": "Customers with an executed Data Processing Addendum may object to any newly appointed subprocessor within 30 days of its posting to the public register, per Section 5.4 of the DPA." },
+          { "text": "Administrators may set a custom audit-log retention period once the setting becomes available on September 1, 2026; existing logs are unaffected until a new period is applied." },
+          { "text": "If you do not agree to the updated policy, you may terminate your subscription before September 1, 2026 in accordance with Section 14.2 of the Master Subscription Agreement and receive a pro-rata refund of prepaid, unused fees." },
+          { "text": "Residents of the EEA, UK, and applicable U.S. states may exercise access, deletion, correction, and portability rights through the new privacy request portal or the contact channels listed below." }
+        ]
+      },
+      { "type": "heading", "level": 2, "style": { "marginTop": 14 }, "keepWithNext": true, "value": "4. Questions and Contact" },
+      { "type": "paragraph", "fontSize": 10, "lineHeight": 1.45, "style": { "marginTop": 6 }, "value": "Questions about this notice or the updated policy may be directed to our Privacy Office at privacy@northgateanalytics.com, by mail to the address in the header of this notice, or by telephone at 1-888-555-0147 (U.S. toll-free, weekdays 08:00–18:00 Pacific). Customers in the European Economic Area may also contact our EU representative, Rhinegold Compliance Services GmbH, Taunusanlage 8, 60329 Frankfurt am Main, Germany. Our UK representative is Gatefield Data Governance Ltd., 4 Chiswell Street, London EC1Y 4UP." },
+      { "type": "paragraph", "fontSize": 10, "lineHeight": 1.45, "style": { "marginTop": 10 }, "value": "Thank you for your continued trust in Northgate Analytics." },
+      { "type": "paragraph", "fontSize": 10, "style": { "marginTop": 16 }, "value": "Sincerely," },
+      { "type": "paragraph", "fontSize": 10, "style": { "marginTop": 14 }, "value": "Miriam Vance" },
+      { "type": "paragraph", "fontSize": 9, "value": "Chief Privacy Officer, Northgate Analytics, Inc." },
+      { "type": "divider", "style": { "marginTop": 18, "marginBottom": 6 } },
+      { "type": "paragraph", "fontSize": 8, "lineHeight": 1.4, "value": "This notice is provided for informational purposes and does not amend any agreement between you and Northgate Analytics, Inc. In the event of a conflict between this summary and the Privacy Policy (version 5.0), the Privacy Policy controls. Notice distributed to account owners and workspace administrators of record as of July 10, 2026." }
+    ]
+  }
+}

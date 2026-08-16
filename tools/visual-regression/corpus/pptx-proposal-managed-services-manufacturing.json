@@ -1,0 +1,162 @@
+{
+  "id": "pptx-proposal-managed-services-manufacturing",
+  "format": "pptx",
+  "surface": "agent",
+  "description": "Managed infrastructure services proposal for a multi-site precision manufacturing group.",
+  "provenance": "Modeled on enterprise managed-services proposals following infrastructure discovery: current-state risk, target operating model, service levels, cost baseline, transition waves, governance, pricing, and decision path. Deliberately exercises a nine-slide deck with a five-year run-cost chart, operational KPI cards, and detailed contractual terms.",
+  "expectedProperties": {
+    "slideCount": 9,
+    "hasChart": true,
+    "chartSlides": 1,
+    "chartTypes": ["bar"],
+    "kpiCount": 4
+  },
+  "document": {
+    "type": "presentation",
+    "version": "1.0",
+    "presentationTitle": "Managed Infrastructure Services Proposal — Calder Precision Group",
+    "companyName": "NexBridge Managed Operations",
+    "theme": "default-navy",
+    "designTokens": {
+      "scale": "md",
+      "shape": "sharp"
+    },
+    "slides": [
+      {
+        "pattern": "title",
+        "content": {
+          "title": "Managed Infrastructure Services Proposal",
+          "subtitle": "Prepared for Calder Precision Group | August 26, 2026 | Proposal NB-26417 | Valid through October 10, 2026"
+        }
+      },
+      {
+        "pattern": "statement",
+        "content": {
+          "title": "Standardize 14 plants and lower five-year run cost by $12.7M.",
+          "subtitle": "Executive proposition",
+          "prose": [
+            "Scope covers service desk, endpoint, network, server, cloud, and backup for 5,840 users.",
+            "Delivery spans 14 plants in the United States, Mexico, and Germany.",
+            "Calder retains production authority through its seven-person OT engineering team."
+          ]
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "Discovery findings — cost and resilience gaps",
+          "subtitle": "Six-week assessment completed with IT, plant engineering, finance, and security",
+          "bulletPoints": [
+            "Four service desks use different tools and priority definitions; first-contact resolution ranges from 31% to 68% by region",
+            "1,126 endpoints are beyond manufacturer support and 14% of Windows devices miss the 30-day critical-patch standard",
+            "Plant network outages caused 47 hours of production interruption in FY2025, with estimated contribution loss of $3.8M",
+            "Backup jobs succeed 96.7%, but only 62% of tier-one systems have a tested recovery procedure within the past year",
+            "Infrastructure labor includes 38 contractors at blended rates 22% above the regional market median",
+            "Monitoring generates 18,400 monthly alerts; 74% close without action and obscure a recurring storage-capacity issue"
+          ]
+        }
+      },
+      {
+        "pattern": "comparison",
+        "content": {
+          "title": "Current model versus proposed operating model",
+          "subtitle": "What changes after the 24-week transition",
+          "kpis": [
+            { "label": "Service desk", "value": "1", "sublabel": "Global; four now" },
+            { "label": "Monitoring", "value": "Linked", "sublabel": "Plant asset map" },
+            { "label": "Patching", "value": "Hub", "sublabel": "OT-approved rings" },
+            { "label": "Incidents", "value": "1", "sublabel": "IT/OT owner; runbook" }
+          ]
+        }
+      },
+      {
+        "pattern": "dashboard",
+        "content": {
+          "title": "Committed service outcomes by month nine",
+          "subtitle": "Measured monthly and subject to service credits",
+          "kpis": [
+            { "label": "P1 response", "value": "≤10m", "trend": "up", "sublabel": "24x7, 95% attainment" },
+            { "label": "1st-call fix", "value": "≥72%", "trend": "up", "sublabel": "Current blended 49%" },
+            { "label": "Patch rate", "value": "≥97%", "trend": "up", "sublabel": "Within 30 days" },
+            { "label": "Backup rate", "value": "≥99.5%", "trend": "up", "sublabel": "Daily control" }
+          ]
+        }
+      },
+      {
+        "pattern": "chart-focus",
+        "content": {
+          "title": "The managed model lowers cost while funding modernization",
+          "subtitle": "Five-year infrastructure run cost, $M; excludes application development and OT engineering",
+          "chart": {
+            "type": "bar",
+            "title": "Annual infrastructure run cost ($M)",
+            "series": [
+              {
+                "name": "Current model",
+                "dataPoints": [
+                  { "category": "FY2027", "value": 24.8 },
+                  { "category": "FY2028", "value": 25.7 },
+                  { "category": "FY2029", "value": 26.5 },
+                  { "category": "FY2030", "value": 27.4 },
+                  { "category": "FY2031", "value": 28.3 }
+                ]
+              },
+              {
+                "name": "NexBridge model",
+                "dataPoints": [
+                  { "category": "FY2027", "value": 26.1 },
+                  { "category": "FY2028", "value": 22.9 },
+                  { "category": "FY2029", "value": 22.5 },
+                  { "category": "FY2030", "value": 22.8 },
+                  { "category": "FY2031", "value": 23.7 }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "Transition plan — control before transformation",
+          "subtitle": "Twenty-four weeks from contract signature to steady-state acceptance",
+          "bulletPoints": [
+            "Weeks 1-4 — mobilize governance, confirm asset baseline, validate security access, and freeze critical runbooks",
+            "Weeks 5-9 — transfer service desk and endpoint operations; shadow all production incidents before ownership changes",
+            "Weeks 10-14 — transition server, cloud, backup, and network operations in paired regional waves",
+            "Weeks 15-19 — deploy event correlation, patch rings, and the unified configuration management database",
+            "Weeks 20-24 — prove service levels, complete two recovery exercises, and secure Calder acceptance",
+            "No involuntary Calder employee transfer assumed; NexBridge will offer roles to 11 identified contractors"
+          ]
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "Commercial terms",
+          "subtitle": "Five-year managed-services agreement; all figures USD",
+          "bulletPoints": [
+            "Recurring managed-services fee — $18.6M in Year 1, indexed at the lower of 3% or CPI thereafter",
+            "Transition and tooling — $2.4M fixed fee, payable against four accepted milestones",
+            "Included volume bands — 5,500-6,250 users, 14 plants, 620 servers, and 410 network devices",
+            "Service credits — up to 12% of monthly charges; chronic failure creates termination rights after cure",
+            "Productivity commitment — 4% annual unit-cost reduction for eligible service towers beginning Year 3",
+            "Exit assistance — up to nine months at contracted rates with full asset, runbook, and data handover"
+          ]
+        }
+      },
+      {
+        "pattern": "statement",
+        "content": {
+          "title": "Decide by October 10 to preserve the January transition.",
+          "subtitle": "Recommended next steps",
+          "prose": [
+            "September 2: security and data-processing workshop.",
+            "September 9: plant-manager service review; September 16: commercial redlines.",
+            "September 30: final steering committee recommendation."
+          ]
+        }
+      }
+    ]
+  }
+}

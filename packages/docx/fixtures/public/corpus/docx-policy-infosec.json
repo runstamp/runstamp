@@ -1,0 +1,196 @@
+{
+  "id": "docx-policy-infosec",
+  "format": "docx",
+  "description": "Corporate information-security policy for a mid-size financial-services firm with ISO 27001-style control sections.",
+  "provenance": "Modeled on the ISMS master policy documents issued by regulated financial-services companies (ISO/IEC 27001 Annex A structure, SOC 2 vocabulary). Deliberately exercises a four-level heading hierarchy (h1 policy > h2 domain > h3 control area > h4 control), long bulleted control lists with nested sub-bullets, a document-control block table, and a multi-row revision-history table.",
+  "expectedProperties": {
+    "pageCountMin": 4,
+    "hasTable": true,
+    "hasRevisionHistoryTable": true,
+    "headingLevelsUsed": [1, 2, 3, 4],
+    "topLevelSections": 8
+  },
+  "document": {
+    "type": "DocxDocument",
+    "pageSize": "letter",
+    "metadata": {
+      "title": "Information Security Policy",
+      "author": "Meridian Capital Partners LLC — Information Security Office",
+      "subject": "ISMS Master Policy",
+      "keywords": ["information security", "ISMS", "ISO 27001", "policy"],
+      "language": "en-US"
+    },
+    "theme": { "preset": "corporate" },
+    "header": {
+      "text": "Meridian Capital Partners LLC — Internal Use Only"
+    },
+    "footer": {
+      "text": "POL-IS-001 Rev 4.2 — Uncontrolled when printed",
+      "includePageNumber": true
+    },
+    "pages": [
+      {
+        "elements": [
+          { "type": "heading", "level": 1, "text": "Information Security Policy" },
+          { "type": "paragraph", "text": "Document number POL-IS-001. This policy establishes the information security management framework for Meridian Capital Partners LLC and all wholly owned subsidiaries. It is approved by the Board Risk Committee and reviewed at least annually." },
+          {
+            "type": "table",
+            "caption": "Document control",
+            "tableStyle": "corporate",
+            "rows": [
+              { "isHeader": true, "cells": [ { "text": "Field" }, { "text": "Value" } ] },
+              { "cells": [ { "text": "Document owner" }, { "text": "Chief Information Security Officer (D. Okafor)" } ] },
+              { "cells": [ { "text": "Classification" }, { "text": "Internal Use Only" } ] },
+              { "cells": [ { "text": "Effective date" }, { "text": "1 March 2026" } ] },
+              { "cells": [ { "text": "Next scheduled review" }, { "text": "1 March 2027" } ] },
+              { "cells": [ { "text": "Applies to" }, { "text": "All employees, contractors, interns, and third parties with access to Meridian information assets" } ] }
+            ]
+          },
+          { "type": "heading", "level": 2, "text": "1. Purpose and scope" },
+          { "type": "paragraph", "text": "The purpose of this policy is to protect the confidentiality, integrity, and availability of information assets owned or processed by Meridian Capital Partners. It applies to all information systems, whether hosted on premises, in colocation facilities, or with cloud service providers, and to all personnel who access them." },
+          { "type": "heading", "level": 3, "text": "1.1 Regulatory drivers" },
+          {
+            "type": "list",
+            "listType": "bullet",
+            "items": [
+              { "text": "SEC Regulation S-P and Regulation S-ID (identity theft red flags)." },
+              { "text": "NYDFS Cybersecurity Regulation (23 NYCRR Part 500)." },
+              { "text": "GLBA Safeguards Rule as amended in 2023." },
+              { "text": "Contractual obligations to limited partners and custodial banks." }
+            ]
+          },
+          { "type": "heading", "level": 3, "text": "1.2 Exclusions" },
+          { "type": "paragraph", "text": "Personal devices that are not enrolled in the mobile device management platform are out of scope for monitoring but are prohibited from accessing non-public information under Section 5.3 of this policy." },
+          { "type": "heading", "level": 2, "text": "2. Roles and responsibilities" },
+          { "type": "heading", "level": 3, "text": "2.1 Board Risk Committee" },
+          { "type": "paragraph", "text": "Approves this policy, receives quarterly metrics on control effectiveness, and approves risk acceptances above USD 250,000 in estimated annual loss expectancy." },
+          { "type": "heading", "level": 3, "text": "2.2 Chief Information Security Officer" },
+          {
+            "type": "list",
+            "listType": "bullet",
+            "items": [
+              { "text": "Maintains the ISMS and the statement of applicability." },
+              { "text": "Chairs the Security Steering Committee, which meets monthly." },
+              { "text": "Reports material incidents to the Board Risk Committee within 72 hours." },
+              { "text": "Approves exceptions to this policy for periods not exceeding 12 months." }
+            ]
+          },
+          { "type": "heading", "level": 3, "text": "2.3 Information asset owners" },
+          { "type": "paragraph", "text": "Each information asset in the asset register has a named owner at director level or above. Owners classify assets, approve access, and attest to access lists during the semi-annual recertification campaign." },
+          { "type": "heading", "level": 2, "text": "3. Information classification" },
+          { "type": "paragraph", "text": "All information is classified into one of four tiers. The classification determines minimum handling controls." },
+          {
+            "type": "table",
+            "caption": "Classification tiers and minimum handling controls",
+            "tableStyle": "striped",
+            "rows": [
+              { "isHeader": true, "cells": [ { "text": "Tier" }, { "text": "Label" }, { "text": "Examples" }, { "text": "Minimum controls" } ] },
+              { "cells": [ { "text": "1" }, { "text": "Public" }, { "text": "Marketing material, published fund letters" }, { "text": "No restrictions; integrity review before publication" } ] },
+              { "cells": [ { "text": "2" }, { "text": "Internal Use Only" }, { "text": "Policies, org charts, internal wikis" }, { "text": "Authentication required; no posting to public services" } ] },
+              { "cells": [ { "text": "3" }, { "text": "Confidential" }, { "text": "Deal pipelines, LP correspondence, HR records" }, { "text": "Need-to-know access; encryption in transit and at rest; DLP monitoring" } ] },
+              { "cells": [ { "text": "4" }, { "text": "Restricted" }, { "text": "Trading algorithms, MNPI, credentials, cryptographic keys" }, { "text": "Named-individual access; hardware-backed MFA; quarterly access review; no export from managed enclave" } ] }
+            ]
+          },
+          { "type": "heading", "level": 2, "text": "4. Access control" },
+          { "type": "heading", "level": 3, "text": "4.1 Identity lifecycle" },
+          { "type": "heading", "level": 4, "text": "4.1.1 Provisioning" },
+          {
+            "type": "list",
+            "listType": "bullet",
+            "items": [
+              { "text": "Accounts are created only from an approved HR onboarding record in Workday." },
+              { "text": "Birthright entitlements are limited to email, calendar, the intranet, and the timekeeping system." },
+              { "text": "All other entitlements require asset-owner approval recorded in the IGA platform." }
+            ]
+          },
+          { "type": "heading", "level": 4, "text": "4.1.2 Deprovisioning" },
+          {
+            "type": "list",
+            "listType": "bullet",
+            "items": [
+              { "text": "Voluntary separations: access revoked no later than end of business on the final working day." },
+              { "text": "Involuntary separations: access revoked before the employee is notified, coordinated with HR." },
+              { "text": "Contractor accounts expire automatically at the purchase-order end date." }
+            ]
+          },
+          { "type": "heading", "level": 3, "text": "4.2 Authentication" },
+          { "type": "heading", "level": 4, "text": "4.2.1 Multi-factor authentication" },
+          { "type": "paragraph", "text": "Phishing-resistant MFA (FIDO2 security keys or platform passkeys) is mandatory for all remote access, all administrative access, and all access to Tier 3 and Tier 4 systems. SMS one-time codes are prohibited." },
+          { "type": "heading", "level": 4, "text": "4.2.2 Password standard" },
+          {
+            "type": "list",
+            "listType": "bullet",
+            "items": [
+              { "text": "Minimum 14 characters for user accounts; 24 characters for service accounts.", "nestedList": { "type": "list", "listType": "bullet", "items": [ { "text": "Length may be reduced to 12 characters where the system enforces breached-password screening." } ] } },
+              { "text": "No forced periodic rotation; rotation is required on evidence of compromise." },
+              { "text": "Passwords must be screened against the corporate breached-credential list at set time." },
+              { "text": "Shared passwords are prohibited; break-glass credentials are vaulted and alarmed." }
+            ]
+          },
+          { "type": "heading", "level": 3, "text": "4.3 Privileged access" },
+          {
+            "type": "list",
+            "listType": "bullet",
+            "items": [
+              { "text": "All privileged sessions are brokered through the PAM gateway and recorded." },
+              { "text": "Standing administrative access is prohibited; elevation is just-in-time with a maximum 8-hour grant." },
+              { "text": "Privileged accounts are dedicated (ADM- prefix) and may not receive email or browse the web." }
+            ]
+          },
+          { "type": "heading", "level": 2, "text": "5. Operations security" },
+          { "type": "heading", "level": 3, "text": "5.1 Vulnerability management" },
+          {
+            "type": "table",
+            "caption": "Remediation service-level objectives by severity",
+            "tableStyle": "bordered",
+            "rows": [
+              { "isHeader": true, "cells": [ { "text": "Severity (CVSS v4)" }, { "text": "Internet-facing assets" }, { "text": "Internal assets" }, { "text": "Escalation on breach of SLO" } ] },
+              { "cells": [ { "text": "Critical (9.0–10.0)" }, { "text": "72 hours" }, { "text": "7 days" }, { "text": "CISO, same business day" } ] },
+              { "cells": [ { "text": "High (7.0–8.9)" }, { "text": "7 days" }, { "text": "30 days" }, { "text": "Security Steering Committee" } ] },
+              { "cells": [ { "text": "Medium (4.0–6.9)" }, { "text": "30 days" }, { "text": "90 days" }, { "text": "Asset owner" } ] },
+              { "cells": [ { "text": "Low (0.1–3.9)" }, { "text": "90 days" }, { "text": "Risk-accepted backlog" }, { "text": "Quarterly review" } ] }
+            ]
+          },
+          { "type": "heading", "level": 3, "text": "5.2 Logging and monitoring" },
+          {
+            "type": "list",
+            "listType": "bullet",
+            "items": [
+              { "text": "Authentication events, privilege elevation, and data-egress events are forwarded to the SIEM within 5 minutes." },
+              { "text": "Log retention is 13 months online and 7 years in cold storage for Tier 3 and Tier 4 systems." },
+              { "text": "Clock synchronization to the corporate NTP tier is mandatory; drift greater than 500 ms raises an alert." }
+            ]
+          },
+          { "type": "heading", "level": 3, "text": "5.3 Endpoint and mobile" },
+          { "type": "paragraph", "text": "All endpoints run the approved EDR agent and full-disk encryption. Mobile access to corporate email requires MDM enrollment; unenrolled devices are blocked at the conditional-access layer." },
+          { "type": "heading", "level": 2, "text": "6. Third-party risk" },
+          { "type": "paragraph", "text": "Vendors that process Tier 3 or Tier 4 information must complete the security due-diligence questionnaire before contract signature, provide a current SOC 2 Type II report or equivalent, and accept the information-security addendum. High-risk vendors are reassessed annually; all others every two years." },
+          { "type": "heading", "level": 2, "text": "7. Enforcement and exceptions" },
+          { "type": "paragraph", "text": "Violations of this policy may result in disciplinary action up to and including termination of employment or contract. Exceptions must be requested through the GRC portal, include a compensating-control analysis, and be approved by the CISO. No exception may be renewed more than twice without Board Risk Committee notification." },
+          {
+            "type": "container",
+            "keepTogether": true,
+            "children": [
+              { "type": "heading", "level": 2, "text": "8. Revision history" },
+              {
+                "type": "table",
+                "caption": "Revision history",
+                "tableStyle": "striped",
+                "columns": [ { "width": 50 }, { "width": 75 }, { "width": 110 }, { "width": 233 } ],
+                "rows": [
+                  { "isHeader": true, "cells": [ { "text": "Rev" }, { "text": "Date" }, { "text": "Author" }, { "text": "Summary of change" } ] },
+                  { "cells": [ { "text": "1.0" }, { "text": "2021-06-14" }, { "text": "R. Whitfield" }, { "text": "Initial issue approved by Board Risk Committee." } ] },
+                  { "cells": [ { "text": "2.0" }, { "text": "2022-07-08" }, { "text": "R. Whitfield" }, { "text": "Added Section 6 third-party risk; aligned classification tiers with data-governance standard." } ] },
+                  { "cells": [ { "text": "3.0" }, { "text": "2023-09-22" }, { "text": "D. Okafor" }, { "text": "Mandated phishing-resistant MFA; prohibited SMS OTP; added PAM session recording requirement." } ] },
+                  { "cells": [ { "text": "4.0" }, { "text": "2024-11-05" }, { "text": "D. Okafor" }, { "text": "Adopted CVSS v4 severity bands; revised remediation SLOs; added NYDFS Part 500 amendments." } ] },
+                  { "cells": [ { "text": "4.1" }, { "text": "2025-04-18" }, { "text": "M. Tran" }, { "text": "Editorial corrections; clarified contractor deprovisioning at purchase-order end date." } ] },
+                  { "cells": [ { "text": "4.2" }, { "text": "2026-02-27" }, { "text": "M. Tran" }, { "text": "Annual review; raised service-account password minimum to 24 characters; updated review cycle dates." } ] }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "fixtureId": "basic-text-shape",
+  "title": "Basic text and shape baseline",
+  "expectedSlideCount": 1,
+  "actualSlideCount": 1,
+  "validationModes": [
+    "structural",
+    "desktop_open",
+    "pdf_render",
+    "roundtrip_diff"
+  ],
+  "acceptance": {
+    "expectStructuralPass": true,
+    "expectDesktopOpenPass": true
+  },
+  "renderOptions": null,
+  "pptxPath": "generated.pptx"
+}

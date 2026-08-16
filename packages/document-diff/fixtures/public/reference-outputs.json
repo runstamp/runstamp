@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "references": {
+    "a01Docx": {
+      "engine": "A01",
+      "format": "native",
+      "bytesBase64": "RE9DWC1SRURMSU5FLVJFRkVSRU5DRXxjaGFuZ2VzPTF8dGV4dD1QYXltZW50IGR1ZSAxNSBkYXlz",
+      "extensionOutput": {
+        "status": "ok",
+        "output": {"artifactKind":"docx","paragraphCount":1,"text":"Payment due 15 days"},
+        "warnings": [],
+        "losses": [{"code":"RENDERER_LIMITATION","message":"This committed A01 reference is an inspection envelope, not a Word-validated DOCX artifact.","severity":"warning"}],
+        "artifacts": [{"name":"reference-redline.docx","mediaType":"application/vnd.openxmlformats-officedocument.wordprocessingml.document","byteLength":57,"sha256":"42f0c8db4ee14194ab6e9f40ac18fd34396a6da8812f4da569d70608c2d70bf1"}]
+      }
+    },
+    "a04Pptx": {
+      "engine": "A04",
+      "format": "native",
+      "bytesBase64": "UFBUWC1SRURMSU5FLVJFRkVSRU5DRXxzbGlkZXM9Mnx0ZXh0PVJldmVudWUgcmV2aXNlZA==",
+      "extensionOutput": {
+        "status": "ok",
+        "output": {"artifactKind":"pptx","slideCount":2,"text":"Revenue revised"},
+        "warnings": [],
+        "losses": [{"code":"RENDERER_LIMITATION","message":"This committed A04 reference is an inspection envelope, not a PowerPoint-validated PPTX artifact.","severity":"warning"}],
+        "artifacts": [{"name":"reference-redline.pptx","mediaType":"application/vnd.openxmlformats-officedocument.presentationml.presentation","byteLength":52,"sha256":"88c5980a184ce0ab46303becefe0a5221050dbdc179f8751302a3171268e32a3"}]
+      }
+    },
+    "a03Pdf": {
+      "engine": "A03",
+      "format": "pdf",
+      "bytesBase64": "UERGLVJFRExJTkUtUkVGRVJFTkNFfHBhZ2VzPTF8dGV4dD1QYXltZW50IGR1ZSAxNSBkYXlz",
+      "extensionOutput": {
+        "status": "ok",
+        "output": {"artifactKind":"pdf","pageCount":1,"text":"Payment due 15 days"},
+        "warnings": [],
+        "losses": [{"code":"RENDERER_LIMITATION","message":"This committed A03 reference is an inspection envelope, not a qpdf/Poppler-validated PDF artifact.","severity":"warning"}],
+        "artifacts": [{"name":"reference-redline.pdf","mediaType":"application/pdf","byteLength":54,"sha256":"fc758549864edf1cb6794e55c28a4066cf6c87a351e3b91873117cd55ed4c024"}]
+      }
+    }
+  }
+}

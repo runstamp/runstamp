@@ -1,0 +1,3 @@
+import { createRequire as __runstampCreateRequire } from "node:module";
+const require = __runstampCreateRequire(import.meta.url);
+import{b as o}from"./chunk-F6KKPX27.js";var i=class{_deterministic;constructor(e=!0){this._deterministic=e}setDeterministicMode(e){this._deterministic=e}isDeterministicMode(){return this._deterministic}},r=Symbol.for("paperjsx.deterministicMode.defaultManager");function s(){let t=globalThis,e=t[r];if(e)return e;let n=new i;return t[r]=n,n}function a(t){(o()?.deterministicMode??s()).setDeterministicMode(t)}function c(){let e=o()?.deterministicMode;return e?e.isDeterministicMode():s().isDeterministicMode()}function m(){return new i(c())}var M=new Date("1980-01-01T00:00:02Z");export{i as a,a as b,c,m as d,M as e};

@@ -1,0 +1,419 @@
+{
+  "id": "pdf-summary-sales-pipeline-snapshot",
+  "format": "pdf",
+  "description": "Weekly sales pipeline snapshot for a B2B software vendor: funnel-by-stage table, coverage ratios by region, a wide top-opportunities table, and forecast commentary with wins and slips.",
+  "provenance": "Modeled on the weekly pipeline snapshots RevOps teams circulate to sales leadership out of Salesforce dashboards. Exercises a wide eight-column top-deals table that stresses column compression at small font sizes, a stage funnel with conversion percentages, a regional coverage matrix with a footer totals row, and interleaved commentary prose with won/slipped lists.",
+  "expectedProperties": {
+    "pageCountMin": 1,
+    "hasTable": true,
+    "topDeals": 8,
+    "pipelineStages": 5,
+    "totalQualifiedPipelineUsdM": 41.6
+  },
+  "document": {
+    "meta": {
+      "title": "Weekly Pipeline Snapshot — FY2027 Q1, Week 6",
+      "author": "Revenue Operations, Corvid Data Systems",
+      "subject": "Sales pipeline snapshot"
+    },
+    "page": {
+      "size": "Letter",
+      "margin": { "top": 42, "right": 44, "bottom": 52, "left": 44 }
+    },
+    "pageNumber": {
+      "fontSize": 7,
+      "format": "Corvid Data Systems - pipeline snapshot - page {page} of {total}"
+    },
+    "children": [
+      { "type": "heading", "level": 1, "font": "Helvetica-Bold", "fontSize": 16, "value": "Weekly Pipeline Snapshot — FY2027 Q1, Week 6" },
+      { "type": "paragraph", "fontSize": 8.5, "value": "Corvid Data Systems, Inc.  •  Data as of Friday, July 10, 2026" },
+      { "type": "paragraph", "fontSize": 8.5, "style": { "marginTop": 1 }, "value": "Owner: Revenue Operations (t.brennan@corviddata.com)  •  Audience: CRO staff" },
+      { "type": "divider", "style": { "marginTop": 6, "marginBottom": 10 } },
+      { "type": "heading", "level": 3, "font": "Helvetica-Bold", "value": "Headline" },
+      { "type": "paragraph", "fontSize": 9.5, "lineHeight": 1.35, "style": { "marginRight": 144 }, "value": "Qualified pipeline stands at $41.6M against a Q1 new-business target of $11.8M, for 3.5x coverage — above the 3.0x floor but down from 3.8x last week after the Meridian Grocers opportunity ($1.4M) pushed to Q2 and two stage-2 deals were disqualified at discovery. Commit forecast is $9.7M (82% of target) and best case is $12.4M. Weighted pipeline moved up $0.6M on stage progression in EMEA. The biggest watch item remains NA Enterprise, where coverage has been below 3.0x for four consecutive weeks." },
+      { "type": "heading", "level": 3, "font": "Helvetica-Bold", "style": { "marginTop": 10 }, "value": "Funnel by stage (T4Q = trailing four quarters)" },
+      {
+        "type": "table",
+        "style": { "marginTop": 4, "borderTop": { "color": "#1a1a1a", "width": 1 }, "borderBottom": { "color": "#1a1a1a", "width": 1 } },
+        "columns": [{ "width": "28%" }, { "width": "12%" }, { "width": "16%" }, { "width": "16%" }, { "width": "14%" }, { "width": "14%" }],
+        "header": [
+          {
+            "cells": [
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "value": "Stage" }], "style": { "backgroundColor": "#e4e7eb", "padding": 5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "Deals" }], "style": { "backgroundColor": "#e4e7eb", "padding": 5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "Gross value ($K)" }], "style": { "backgroundColor": "#e4e7eb", "padding": 5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "Weighted ($K)" }], "style": { "backgroundColor": "#e4e7eb", "padding": 5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "Avg age (days)" }], "style": { "backgroundColor": "#e4e7eb", "padding": 5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "T4Q conv." }], "style": { "backgroundColor": "#e4e7eb", "padding": 5 } }
+            ]
+          }
+        ],
+        "body": [
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "S2 — Discovery complete" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "64" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "16,880" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "2,532" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "34" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "38%" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "S3 — Solution validated" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "31" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "12,540" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "5,016" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "51" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "57%" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "S4 — Proposal issued" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "18" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "8,410" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "5,046" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "63" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "71%" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "S5 — Negotiation / legal" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "9" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "3,770" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "3,016" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "78" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "84%" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "S6 — Verbal / contract out" }], "style": { "padding": 5 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "4" }], "style": { "padding": 5 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "2,010" }], "style": { "padding": 5 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "1,910" }], "style": { "padding": 5 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "92" }], "style": { "padding": 5 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "95%" }], "style": { "padding": 5 } }
+            ]
+          }
+        ],
+        "footer": [
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "value": "Stage gross total (S2-S6)" }], "style": { "backgroundColor": "#d8e6f1", "padding": 5, "borderTop": { "color": "#214d70", "width": 1 } } },
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "textAlign": "right", "value": "126" }], "style": { "backgroundColor": "#d8e6f1", "padding": 5, "borderTop": { "color": "#214d70", "width": 1 } } },
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "textAlign": "right", "value": "43,610" }], "style": { "backgroundColor": "#d8e6f1", "padding": 5, "borderTop": { "color": "#214d70", "width": 1 } } },
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "textAlign": "right", "value": "17,520" }], "style": { "backgroundColor": "#d8e6f1", "padding": 5, "borderTop": { "color": "#214d70", "width": 1 } } },
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "textAlign": "right", "value": "49" }], "style": { "backgroundColor": "#d8e6f1", "padding": 5, "borderTop": { "color": "#214d70", "width": 1 } } },
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "textAlign": "right", "value": "—" }], "style": { "backgroundColor": "#d8e6f1", "padding": 5, "borderTop": { "color": "#214d70", "width": 1 } } }
+            ]
+          }
+        ]
+      },
+      { "type": "heading", "level": 3, "font": "Helvetica-Bold", "style": { "marginTop": 12 }, "value": "Coverage by assigned region (Q1 new-business target)" },
+      {
+        "type": "table",
+        "style": { "marginTop": 4, "borderTop": { "color": "#1a1a1a", "width": 1 }, "borderBottom": { "color": "#1a1a1a", "width": 1 } },
+        "columns": [{ "width": "26%" }, { "width": "18%" }, { "width": "20%" }, { "width": "14%" }, { "width": "22%" }],
+        "header": [
+          {
+            "cells": [
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "value": "Region / segment" }], "style": { "backgroundColor": "#e4e7eb", "padding": 5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "Target ($K)" }], "style": { "backgroundColor": "#e4e7eb", "padding": 5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "Qualified pipe ($K)" }], "style": { "backgroundColor": "#e4e7eb", "padding": 5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "Coverage" }], "style": { "backgroundColor": "#e4e7eb", "padding": 5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "value": "Trend / note" }], "style": { "backgroundColor": "#e4e7eb", "padding": 5 } }
+            ]
+          }
+        ],
+        "body": [
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "NA Enterprise" }], "style": { "padding": 5, "verticalAlign": "middle", "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "4,800" }], "style": { "padding": 5, "verticalAlign": "middle", "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "12,960" }], "style": { "padding": 5, "verticalAlign": "middle", "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "textAlign": "right", "value": "2.7x" }], "style": { "padding": 5, "verticalAlign": "middle", "borderBottom": { "color": "#d5d5d5", "width": 0.5 }, "backgroundColor": "#fff4e5" } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Below floor 4 weeks; SDR blitz on financial services list started July 6" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "NA Mid-market" }], "style": { "padding": 5, "verticalAlign": "middle", "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "3,100" }], "style": { "padding": 5, "verticalAlign": "middle", "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "11,470" }], "style": { "padding": 5, "verticalAlign": "middle", "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "3.7x" }], "style": { "padding": 5, "verticalAlign": "middle", "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Healthy; watch S4-to-S5 conversion (down 6 pts T4Q)" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "EMEA" }], "style": { "padding": 5, "verticalAlign": "middle", "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "2,600" }], "style": { "padding": 5, "verticalAlign": "middle", "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "10,920" }], "style": { "padding": 5, "verticalAlign": "middle", "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "4.2x" }], "style": { "padding": 5, "verticalAlign": "middle", "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Strongest region; two S5 deals in German public sector" }], "style": { "padding": 5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "APAC" }], "style": { "padding": 5, "verticalAlign": "middle" } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "1,300" }], "style": { "padding": 5, "verticalAlign": "middle" } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "6,260" }], "style": { "padding": 5, "verticalAlign": "middle" } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "4.8x" }], "style": { "padding": 5, "verticalAlign": "middle" } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Coverage inflated by two mega-deals; excluding them, 2.9x" }], "style": { "padding": 5 } }
+            ]
+          }
+        ],
+        "footer": [
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "value": "Assigned segment total" }], "style": { "backgroundColor": "#d8e6f1", "padding": 5, "borderTop": { "color": "#214d70", "width": 1 } } },
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "textAlign": "right", "value": "11,800" }], "style": { "backgroundColor": "#d8e6f1", "padding": 5, "borderTop": { "color": "#214d70", "width": 1 } } },
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "textAlign": "right", "value": "41,610" }], "style": { "backgroundColor": "#d8e6f1", "padding": 5, "borderTop": { "color": "#214d70", "width": 1 } } },
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "textAlign": "right", "value": "3.5x" }], "style": { "backgroundColor": "#d8e6f1", "padding": 5, "borderTop": { "color": "#214d70", "width": 1 } } },
+              { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8.5, "value": "Floor: 3.0x" }], "style": { "backgroundColor": "#d8e6f1", "padding": 5, "borderTop": { "color": "#214d70", "width": 1 } } }
+            ]
+          }
+        ]
+      },
+      { "type": "paragraph", "fontSize": 8, "lineHeight": 1.3, "style": { "marginTop": 6 }, "value": "Reconciliation note: the stage funnel includes $2.0M of global or currently unassigned qualified pipeline. The regional coverage table excludes that amount until ownership is assigned; no regional allocation has been inferred." },
+      {
+        "type": "table",
+        "style": { "marginTop": 10 },
+        "columns": [{ "width": "32%" }, { "width": "2%" }, { "width": "32%" }, { "width": "2%" }, { "width": "32%" }],
+        "body": [
+          {
+            "cells": [
+              {
+                "children": [
+                  { "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "value": "COVERAGE MOVEMENT" },
+                  { "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 12, "style": { "marginTop": 3 }, "value": "3.5x" },
+                  { "type": "paragraph", "fontSize": 8, "value": "Current vs. 3.8x last week" }
+                ],
+                "style": { "backgroundColor": "#eaf1f7", "minHeight": 68, "padding": 9, "borderTop": { "color": "#214d70", "width": 2 } }
+              },
+              { "children": [], "style": { "padding": 0 } },
+              {
+                "children": [
+                  { "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "value": "COMMIT / TARGET" },
+                  { "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 12, "style": { "marginTop": 3 }, "value": "$9.7M / $11.8M" },
+                  { "type": "paragraph", "fontSize": 8, "value": "82% of Q1 target" }
+                ],
+                "style": { "backgroundColor": "#eaf1f7", "minHeight": 68, "padding": 9, "borderTop": { "color": "#214d70", "width": 2 } }
+              },
+              { "children": [], "style": { "padding": 0 } },
+              {
+                "children": [
+                  { "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "value": "PIPELINE RECONCILIATION" },
+                  { "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 12, "style": { "marginTop": 3 }, "value": "$41.61M + $2.0M" },
+                  { "type": "paragraph", "fontSize": 8, "value": "Assigned + global / unassigned" }
+                ],
+                "style": { "backgroundColor": "#fff4e5", "minHeight": 68, "padding": 9, "borderTop": { "color": "#a66a16", "width": 2 } }
+              }
+            ]
+          }
+        ]
+      },
+      { "type": "heading", "level": 3, "font": "Helvetica-Bold", "style": { "marginTop": 12 }, "value": "Top opportunities (S4+)" },
+      {
+        "type": "table",
+        "style": { "marginTop": 4, "borderTop": { "color": "#1a1a1a", "width": 1 }, "borderBottom": { "color": "#1a1a1a", "width": 1 } },
+        "columns": [
+          { "width": "16%" },
+          { "width": "14%" },
+          { "width": "8%" },
+          { "width": "10%" },
+          { "width": "9%" },
+          { "width": "12%" },
+          { "width": "11%" },
+          { "width": "20%" }
+        ],
+        "header": [
+          {
+            "cells": [
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "Account" }], "style": { "backgroundColor": "#e4e7eb", "padding": 4.5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "Region" }], "style": { "backgroundColor": "#e4e7eb", "padding": 4.5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "Stage" }], "style": { "backgroundColor": "#e4e7eb", "padding": 4.5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 7.5, "textAlign": "right", "value": "ACV ($K)" }], "style": { "backgroundColor": "#e4e7eb", "padding": 4.5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 7.5, "textAlign": "right", "value": "Prob." }], "style": { "backgroundColor": "#e4e7eb", "padding": 4.5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "Close date" }], "style": { "backgroundColor": "#e4e7eb", "padding": 4.5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "Owner" }], "style": { "backgroundColor": "#e4e7eb", "padding": 4.5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "Next step" }], "style": { "backgroundColor": "#e4e7eb", "padding": 4.5 } }
+            ]
+          }
+        ],
+        "body": [
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "Helvetia Re" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "EMEA" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "S6" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "textAlign": "right", "value": "820" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "textAlign": "right", "value": "95%" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "Jul 24" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "K. Osei" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "Contract with client legal; signature ceremony booked Jul 23" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "TransPacific Air Cargo" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "APAC" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "S5" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "textAlign": "right", "value": "760" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "textAlign": "right", "value": "80%" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "Aug 14" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "M. Tanaka" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "Security addendum in redline round 2; InfoSec call Jul 15" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "Brightline Health Network" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "NA Enterprise" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "S5" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "textAlign": "right", "value": "640" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "textAlign": "right", "value": "80%" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "Aug 28" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "D. Reyes" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "BAA executed; awaiting CFO sign-off on 3-year ramp pricing" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "Landesbank Ostfalen" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "EMEA" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "S5" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "textAlign": "right", "value": "590" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "textAlign": "right", "value": "70%" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "Sep 11" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "A. Brandt" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "Works council consultation underway; procurement frame agreed" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "Quarry & Steel Holdings" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "NA Enterprise" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "S4" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "textAlign": "right", "value": "580" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "textAlign": "right", "value": "60%" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "Sep 25" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "D. Reyes" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "Proposal presented Jul 8; competitive vs. incumbent renewal" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "Southern Cross Utilities" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "APAC" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "S4" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "textAlign": "right", "value": "540" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "textAlign": "right", "value": "60%" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "Sep 18" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "M. Tanaka" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "Pilot success criteria met (11 of 12); commercial review Jul 21" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "Verdant Grocers Co-op" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "NA Mid-market" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "S4" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "textAlign": "right", "value": "410" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "textAlign": "right", "value": "60%" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "Aug 21" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "P. Chalmers" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "References call completed; ROI workshop with finance Jul 17" }], "style": { "padding": 4.5, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "Ministry of Transport (Bavaria)" }], "style": { "padding": 4.5 } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "EMEA" }], "style": { "padding": 4.5 } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "S5" }], "style": { "padding": 4.5 } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "textAlign": "right", "value": "390" }], "style": { "padding": 4.5 } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "textAlign": "right", "value": "70%" }], "style": { "padding": 4.5 } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "Sep 30" }], "style": { "padding": 4.5 } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "A. Brandt" }], "style": { "padding": 4.5 } },
+              { "children": [{ "type": "paragraph", "fontSize": 7.5, "value": "Framework award confirmed; call-off order in ministry approval chain" }], "style": { "padding": 4.5 } }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "style": { "marginTop": 6 },
+        "columns": [{ "width": "32%" }, { "width": "2%" }, { "width": "32%" }, { "width": "2%" }, { "width": "32%" }],
+        "body": [
+          {
+            "cells": [
+              {
+                "children": [
+                  { "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "value": "PATH TO PLAN" },
+                  { "type": "paragraph", "fontSize": 8.5, "lineHeight": 1.25, "style": { "marginTop": 3 }, "value": "Helvetia Re + TransPacific + one NA Enterprise acceleration" }
+                ],
+                "style": { "backgroundColor": "#dce8f2", "padding": 9, "borderTop": { "color": "#214d70", "width": 2 } }
+              },
+              { "children": [], "style": { "padding": 0 } },
+              {
+                "children": [
+                  { "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "value": "NEXT MODEL RUN" },
+                  { "type": "paragraph", "fontSize": 8.5, "lineHeight": 1.25, "style": { "marginTop": 3 }, "value": "After the July 20-22 pipeline scrub" }
+                ],
+                "style": { "backgroundColor": "#dce8f2", "padding": 9, "borderTop": { "color": "#214d70", "width": 2 } }
+              },
+              { "children": [], "style": { "padding": 0 } },
+              {
+                "children": [
+                  { "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 8, "value": "WATCH" },
+                  { "type": "paragraph", "fontSize": 8.5, "lineHeight": 1.25, "style": { "marginTop": 3 }, "value": "NA Enterprise below 3.0x for four weeks" }
+                ],
+                "style": { "backgroundColor": "#fff4e5", "padding": 9, "borderTop": { "color": "#a66a16", "width": 2 } }
+              }
+            ]
+          }
+        ]
+      },
+      { "type": "heading", "level": 4, "font": "Helvetica-Bold", "fontSize": 10.5, "style": { "marginTop": 10 }, "value": "Gross pipeline mix by stage — share of $43.61M" },
+      {
+        "type": "table",
+        "style": { "marginTop": 4, "marginBottom": 6, "borderTop": { "color": "#214d70", "width": 1 }, "borderBottom": { "color": "#214d70", "width": 1 } },
+        "columns": [{ "width": "38.6%" }, { "width": "28.8%" }, { "width": "19.3%" }, { "width": "13.3%" }],
+        "body": [{
+          "cells": [
+            { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 7.5, "textAlign": "center", "value": "S2  •  38.7%" }], "style": { "backgroundColor": "#dce8f2", "padding": 6 } },
+            { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 7.5, "textAlign": "center", "value": "S3  •  28.8%" }], "style": { "backgroundColor": "#c4d9e8", "padding": 6 } },
+            { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 7.5, "textAlign": "center", "value": "S4  •  19.3%" }], "style": { "backgroundColor": "#a8c8dd", "padding": 6 } },
+            { "children": [{ "type": "paragraph", "font": "Helvetica-Bold", "fontSize": 7.5, "textAlign": "center", "value": "S5-6  •  13.3%" }], "style": { "backgroundColor": "#a0c3d8", "padding": 6 } }
+          ]
+        }]
+      },
+      { "type": "heading", "level": 3, "font": "Helvetica-Bold", "fontSize": 12, "style": { "marginTop": 12 }, "value": "Weekly movement" },
+      { "type": "heading", "level": 4, "font": "Helvetica-Bold", "fontSize": 10.5, "style": { "marginTop": 4 }, "value": "Closed-won" },
+      {
+        "type": "list",
+        "items": [
+          { "text": "Pinewood Logistics (NA Mid-market) — $185K ACV, 2-year term." },
+          { "text": "Aster Chemicals (EMEA) — $240K ACV, displaced incumbent at renewal." },
+          { "text": "Kestrel Insurance Services (NA Enterprise) — $95K ACV land, expansion path scoped." }
+        ]
+      },
+      { "type": "heading", "level": 4, "font": "Helvetica-Bold", "fontSize": 10.5, "style": { "marginTop": 4 }, "value": "Slipped or lost" },
+      {
+        "type": "list",
+        "items": [
+          { "text": "Meridian Grocers ($1.4M) — pushed to Q2; CFO change froze all capex approvals." },
+          { "text": "Outrigger Media ($220K) — lost to a competitor on native CDP integration." },
+          { "text": "Two S2 deals disqualified: no budget authority identified at discovery." }
+        ]
+      },
+      { "type": "heading", "level": 4, "font": "Helvetica-Bold", "fontSize": 10.5, "style": { "marginTop": 10 }, "value": "Forecast call" },
+      { "type": "paragraph", "fontSize": 9.5, "lineHeight": 1.35, "style": { "marginRight": 72 }, "value": "Commit $9.7M / best case $12.4M against an $11.8M target. Path to plan requires Helvetia Re and TransPacific to close as committed plus one of the three NA Enterprise S4 deals to accelerate; deal reviews for all three are on the July 16 CRO call. RevOps will re-run the coverage model after the July 20–22 scrub." },
+      { "type": "paragraph", "fontSize": 9, "lineHeight": 1.25, "style": { "marginTop": 10, "marginRight": 48 }, "value": "Weighted values use standard stage probabilities (S2 15%, S3 40%, S4 60%, S5 80%, S6 95%). T4Q = trailing four quarters. This snapshot is generated from the Friday 06:00 UTC CRM extract; intra-day changes are not reflected." }
+    ]
+  }
+}

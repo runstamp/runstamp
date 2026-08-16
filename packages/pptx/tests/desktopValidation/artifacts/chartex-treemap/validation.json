@@ -1,0 +1,120 @@
+{
+  "name": "chartex-treemap",
+  "passed": true,
+  "slideCount": 1,
+  "expectedSlideCount": 1,
+  "structural": {
+    "checks": [
+      {
+        "name": "duplicateContentTypes",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "contentTypesCoverage",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "relationshipTargetExistence",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "duplicateRelationshipIds",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "duplicateShapeIds",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "reachableRelationshipParts",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "presentationElementOrder",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "requiredAttributes",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "themeSchema",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "slideLayoutMasterChain",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "namespaceConsistency",
+        "passed": true,
+        "errors": []
+      }
+    ],
+    "passed": true,
+    "critical": []
+  },
+  "charts": {
+    "charts": [
+      {
+        "name": "seriesIndexOrder",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chartEx1.xml"
+      },
+      {
+        "name": "chartTypePresence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chartEx1.xml"
+      },
+      {
+        "name": "embeddedExcelExistence",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chartEx1.xml"
+      },
+      {
+        "name": "chartPositioning",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chartEx1.xml"
+      },
+      {
+        "name": "legendAndAxis",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chartEx1.xml"
+      },
+      {
+        "name": "dataCacheConsistency",
+        "passed": true,
+        "errors": [],
+        "chartPath": "ppt/charts/chartEx1.xml"
+      }
+    ],
+    "passed": true
+  },
+  "diagnosis": {
+    "critical": [],
+    "high": [],
+    "medium": [],
+    "info": [],
+    "verdict": "LAUNCH_READY"
+  },
+  "issueCodes": [],
+  "artifacts": {
+    "pptxPath": "/Users/jake/prod25/theplainworks/runstamp.com/tests/desktopValidation/artifacts/chartex-treemap/chartex-treemap.pptx",
+    "jsonPath": "/Users/jake/prod25/theplainworks/runstamp.com/tests/desktopValidation/artifacts/chartex-treemap/validation.json"
+  }
+}

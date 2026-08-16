@@ -1,0 +1,19 @@
+{
+  "fixtureId": "declarative-quickstart",
+  "passed": true,
+  "failures": [],
+  "oracle": {
+    "available": true,
+    "fixtureId": "declarative-quickstart",
+    "passed": true,
+    "failures": [],
+    "pdfPath": "/Users/jake/plain/plainworks/paperjsx.com/packages/core/tests/desktopValidation/artifacts/declarative-quickstart/declarative-quickstart.pdf",
+    "savedCopyPath": "/Users/jake/plain/plainworks/paperjsx.com/packages/core/tests/desktopValidation/artifacts/declarative-quickstart/declarative-quickstart.roundtrip.pptx",
+    "screenshotPath": "/Users/jake/plain/plainworks/paperjsx.com/packages/core/tests/desktopValidation/artifacts/declarative-quickstart/declarative-quickstart.png",
+    "details": [
+      "Opened presentation: declarative-quickstart.input.pptx, slides=3",
+      "PowerPoint canonicalized 20 normalized package part(s) during round-trip save."
+    ]
+  },
+  "structuralPassed": true
+}

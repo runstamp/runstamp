@@ -1,0 +1,24 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.runstamp/runstamp-mcp",
+  "title": "Runstamp Document Generation",
+  "description": "Discover and invoke all stable Runstamp document operations locally or through hosted /v1.",
+  "version": "1.0.0",
+  "websiteUrl": "https://runstamp.com",
+  "repository": {
+    "url": "https://github.com/runstamp/runstamp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "@runstamp/mcp-server",
+      "version": "1.0.0",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "id": "pptx-earnings-q3-saas-highlights",
+  "format": "pptx",
+  "surface": "agent",
+  "description": "Quarterly earnings highlights deck for an enterprise SaaS company, in the style of a public-company earnings call presentation.",
+  "provenance": "Modeled on the investor-relations earnings supplements published by mid-cap enterprise software companies each quarter (title slide, headline KPI grid, revenue trend chart, operating highlights, CFO guidance statement, and forward guidance detail). Deliberately exercises a 6-slide mixed-pattern deck: a 4-up KPI dashboard with trend arrows and sublabels, a two-series clustered bar chart across five quarters, dense bullet lists with financial figures, and a long single-sentence statement slide.",
+  "expectedProperties": {
+    "slideCount": 6,
+    "patterns": ["title", "dashboard", "chart-focus", "bullets", "statement", "bullets"],
+    "hasChart": true,
+    "kpiCount": 4
+  },
+  "document": {
+    "type": "presentation",
+    "version": "1.0",
+    "presentationTitle": "Meridian Software Q3 FY2026 Earnings Highlights",
+    "companyName": "Meridian Software, Inc. (NASDAQ: MRDN)",
+    "theme": "default-navy",
+    "slides": [
+      {
+        "pattern": "title",
+        "content": {
+          "title": "Q3 FY2026 Earnings Highlights",
+          "subtitle": "Quarter ended April 30, 2026 | Reported June 4, 2026 | Investor Relations"
+        }
+      },
+      {
+        "pattern": "dashboard",
+        "content": {
+          "title": "Q3 FY2026 at a glance",
+          "subtitle": "All growth rates year-over-year unless noted; non-GAAP measures reconciled in appendix",
+          "kpis": [
+            { "label": "Total revenue", "value": "$312.4M", "trend": "up", "sublabel": "+24% YoY, +6% QoQ" },
+            { "label": "Subscription revenue", "value": "$287.1M", "trend": "up", "sublabel": "92% of total, +27% YoY" },
+            { "label": "Non-GAAP operating margin", "value": "18.6%", "trend": "up", "sublabel": "+410 bps YoY" },
+            { "label": "Free cash flow", "value": "$71.8M", "trend": "up", "sublabel": "23.0% FCF margin" }
+          ]
+        }
+      },
+      {
+        "pattern": "chart-focus",
+        "content": {
+          "title": "Revenue growth remains durable",
+          "subtitle": "Subscription mix continues to expand as legacy services roll off",
+          "chart": {
+            "type": "bar",
+            "title": "Quarterly revenue by type ($M)",
+            "series": [
+              {
+                "name": "Subscription",
+                "dataPoints": [
+                  { "category": "Q3 FY25", "value": 226.1 },
+                  { "category": "Q4 FY25", "value": 241.7 },
+                  { "category": "Q1 FY26", "value": 254.9 },
+                  { "category": "Q2 FY26", "value": 270.3 },
+                  { "category": "Q3 FY26", "value": 287.1 }
+                ]
+              },
+              {
+                "name": "Professional services",
+                "dataPoints": [
+                  { "category": "Q3 FY25", "value": 25.8 },
+                  { "category": "Q4 FY25", "value": 26.2 },
+                  { "category": "Q1 FY26", "value": 25.4 },
+                  { "category": "Q2 FY26", "value": 24.9 },
+                  { "category": "Q3 FY26", "value": 25.3 }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "Operating highlights",
+          "subtitle": "Momentum across enterprise, platform, and international",
+          "bulletPoints": [
+            "Closed 47 deals over $1M ACV (vs 31 in Q3 FY25), including our largest-ever contract: a $14.2M three-year platform agreement with a Fortune 100 insurer",
+            "Net revenue retention of 118%, up from 114% last quarter, driven by seat expansion and Meridian Analytics attach of 41%",
+            "Remaining performance obligations of $1.42B, up 31% YoY; current RPO up 28%",
+            "International revenue grew 38% YoY and now represents 29% of total revenue, led by DACH and Japan",
+            "Meridian AI Assist reached 2,100 paying customers within three quarters of GA, contributing approximately 2 points of subscription growth",
+            "Completed the acquisition of Signalpath ($86M cash) to accelerate the workflow-orchestration roadmap; expected dilution of ~50 bps to FY26 operating margin"
+          ]
+        }
+      },
+      {
+        "pattern": "statement",
+        "content": {
+          "title": "\"We delivered our fifth consecutive quarter of accelerating subscription growth while expanding operating margin by over four points — the model is compounding exactly as designed.\"",
+          "subtitle": "Priya Raghavan, Chief Financial Officer"
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "Guidance",
+          "subtitle": "As of June 4, 2026; assumes no material change in FX or macro conditions",
+          "bulletPoints": [
+            "Q4 FY2026 revenue: $324M to $328M, representing 21% to 23% YoY growth",
+            "Q4 FY2026 non-GAAP operating margin: approximately 19%",
+            "FY2026 revenue raised to $1.218B to $1.222B (prior: $1.196B to $1.206B)",
+            "FY2026 non-GAAP EPS raised to $2.41 to $2.45 (prior: $2.28 to $2.36)",
+            "FY2026 free cash flow margin: approximately 22%, inclusive of Signalpath integration costs",
+            "Share count: approximately 128M fully diluted weighted-average shares for Q4"
+          ],
+          "prose": [
+            "Guidance reflects continued elongation of enterprise sales cycles in EMEA, offset by stronger-than-expected AI Assist attach rates in North America."
+          ]
+        }
+      }
+    ]
+  }
+}

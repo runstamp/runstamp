@@ -1,0 +1,896 @@
+{
+  "name": "animation-phase2",
+  "passed": true,
+  "slideCount": 1,
+  "expectedSlideCount": 1,
+  "structural": {
+    "checks": [
+      {
+        "name": "duplicateContentTypes",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "contentTypesCoverage",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "relationshipTargetExistence",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "duplicateRelationshipIds",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "duplicateShapeIds",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "reachableRelationshipParts",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "chartManualLayoutBounds",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "presentationElementOrder",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "requiredAttributes",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "themeSchema",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "slideLayoutMasterChain",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "namespaceConsistency",
+        "passed": true,
+        "errors": []
+      }
+    ],
+    "passed": true,
+    "critical": [],
+    "runtime": {
+      "status": "passed",
+      "checks": [
+        {
+          "id": "package.content-types",
+          "passed": true,
+          "message": "Package includes [Content_Types].xml.",
+          "severity": "error"
+        },
+        {
+          "id": "package.presentation",
+          "passed": true,
+          "message": "Package includes ppt/presentation.xml.",
+          "severity": "error"
+        },
+        {
+          "id": "package.presentation-rels",
+          "passed": true,
+          "message": "Presentation relationships file is present.",
+          "severity": "error"
+        },
+        {
+          "id": "content-types.default.rels",
+          "passed": true,
+          "message": "Default content type extension \"rels\" is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "content-types.default.xml",
+          "passed": true,
+          "message": "Default content type extension \"xml\" is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "content-types.default.png",
+          "passed": true,
+          "message": "Default content type extension \"png\" is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "content-types.default.jpg",
+          "passed": true,
+          "message": "Default content type extension \"jpg\" is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "content-types.default.jpeg",
+          "passed": true,
+          "message": "Default content type extension \"jpeg\" is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "content-types.default.gif",
+          "passed": true,
+          "message": "Default content type extension \"gif\" is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "content-types.default.webp",
+          "passed": true,
+          "message": "Default content type extension \"webp\" is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "content-types.default.tiff",
+          "passed": true,
+          "message": "Default content type extension \"tiff\" is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "content-types.default.bmp",
+          "passed": true,
+          "message": "Default content type extension \"bmp\" is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "content-types.override.ppt/presentation.xml",
+          "passed": true,
+          "message": "Override content type part \"ppt/presentation.xml\" is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "content-types.override.ppt/slidemasters/slidemaster1.xml",
+          "passed": true,
+          "message": "Override content type part \"ppt/slidemasters/slidemaster1.xml\" is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "content-types.override.ppt/slidelayouts/slidelayout1.xml",
+          "passed": true,
+          "message": "Override content type part \"ppt/slidelayouts/slidelayout1.xml\" is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "content-types.override.ppt/slidelayouts/slidelayout2.xml",
+          "passed": true,
+          "message": "Override content type part \"ppt/slidelayouts/slidelayout2.xml\" is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "content-types.override.ppt/slidelayouts/slidelayout3.xml",
+          "passed": true,
+          "message": "Override content type part \"ppt/slidelayouts/slidelayout3.xml\" is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "content-types.override.ppt/slidelayouts/slidelayout4.xml",
+          "passed": true,
+          "message": "Override content type part \"ppt/slidelayouts/slidelayout4.xml\" is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "content-types.override.ppt/slidelayouts/slidelayout5.xml",
+          "passed": true,
+          "message": "Override content type part \"ppt/slidelayouts/slidelayout5.xml\" is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "content-types.override.ppt/theme/theme1.xml",
+          "passed": true,
+          "message": "Override content type part \"ppt/theme/theme1.xml\" is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "content-types.override.ppt/presprops.xml",
+          "passed": true,
+          "message": "Override content type part \"ppt/presprops.xml\" is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "content-types.override.ppt/viewprops.xml",
+          "passed": true,
+          "message": "Override content type part \"ppt/viewprops.xml\" is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "content-types.override.ppt/tablestyles.xml",
+          "passed": true,
+          "message": "Override content type part \"ppt/tablestyles.xml\" is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "content-types.override.docprops/core.xml",
+          "passed": true,
+          "message": "Override content type part \"docprops/core.xml\" is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "content-types.override.docprops/app.xml",
+          "passed": true,
+          "message": "Override content type part \"docprops/app.xml\" is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "content-types.override.ppt/slides/slide1.xml",
+          "passed": true,
+          "message": "Override content type part \"ppt/slides/slide1.xml\" is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "presentation.order.p:sldMasterIdLst",
+          "passed": true,
+          "message": "Presentation child p:sldMasterIdLst appears in schema order.",
+          "severity": "error"
+        },
+        {
+          "id": "presentation.order.p:sldIdLst",
+          "passed": true,
+          "message": "Presentation child p:sldIdLst appears in schema order.",
+          "severity": "error"
+        },
+        {
+          "id": "presentation.order.p:sldSz",
+          "passed": true,
+          "message": "Presentation child p:sldSz appears in schema order.",
+          "severity": "error"
+        },
+        {
+          "id": "presentation.order.p:notesSz",
+          "passed": true,
+          "message": "Presentation child p:notesSz appears in schema order.",
+          "severity": "error"
+        },
+        {
+          "id": "presentation.order.p:defaultTextStyle",
+          "passed": true,
+          "message": "Presentation child p:defaultTextStyle appears in schema order.",
+          "severity": "error"
+        },
+        {
+          "id": "presentation.slide-id.256",
+          "passed": true,
+          "message": "Slide id 256 in ppt/presentation.xml is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "slides.present",
+          "passed": true,
+          "message": "Package contains 1 slide part(s).",
+          "severity": "error"
+        },
+        {
+          "id": "slide.1.rels",
+          "passed": true,
+          "message": "Slide 1 relationships file is present.",
+          "severity": "error"
+        },
+        {
+          "id": "slide.1.content-type",
+          "passed": true,
+          "message": "Slide 1 has a declared content type.",
+          "severity": "error"
+        },
+        {
+          "id": "slide.1.shape-id.1",
+          "passed": true,
+          "message": "Slide 1 non-visual shape id 1 is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "slide.1.shape-id.2",
+          "passed": true,
+          "message": "Slide 1 non-visual shape id 2 is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "slide.1.shape-id.3",
+          "passed": true,
+          "message": "Slide 1 non-visual shape id 3 is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "slide.1.shape-id.4",
+          "passed": true,
+          "message": "Slide 1 non-visual shape id 4 is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "slide.1.shape-id.5",
+          "passed": true,
+          "message": "Slide 1 non-visual shape id 5 is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "slide.1.required-attribute.a:latin.0",
+          "passed": true,
+          "message": "Slide 1 a:latin entry 1 includes typeface.",
+          "severity": "error"
+        },
+        {
+          "id": "slide.1.required-attribute.a:latin.1",
+          "passed": true,
+          "message": "Slide 1 a:latin entry 2 includes typeface.",
+          "severity": "error"
+        },
+        {
+          "id": "slide.1.required-attribute.a:latin.2",
+          "passed": true,
+          "message": "Slide 1 a:latin entry 3 includes typeface.",
+          "severity": "error"
+        },
+        {
+          "id": "slide.1.required-attribute.a:latin.3",
+          "passed": true,
+          "message": "Slide 1 a:latin entry 4 includes typeface.",
+          "severity": "error"
+        },
+        {
+          "id": "slide.1.required-attribute.a:latin.4",
+          "passed": true,
+          "message": "Slide 1 a:latin entry 5 includes typeface.",
+          "severity": "error"
+        },
+        {
+          "id": "slide.1.required-attribute.a:latin.5",
+          "passed": true,
+          "message": "Slide 1 a:latin entry 6 includes typeface.",
+          "severity": "error"
+        },
+        {
+          "id": "slide.1.required-attribute.a:ea.0",
+          "passed": true,
+          "message": "Slide 1 a:ea entry 1 includes typeface.",
+          "severity": "error"
+        },
+        {
+          "id": "slide.1.required-attribute.a:ea.1",
+          "passed": true,
+          "message": "Slide 1 a:ea entry 2 includes typeface.",
+          "severity": "error"
+        },
+        {
+          "id": "slide.1.required-attribute.a:ea.2",
+          "passed": true,
+          "message": "Slide 1 a:ea entry 3 includes typeface.",
+          "severity": "error"
+        },
+        {
+          "id": "slide.1.required-attribute.a:ea.3",
+          "passed": true,
+          "message": "Slide 1 a:ea entry 4 includes typeface.",
+          "severity": "error"
+        },
+        {
+          "id": "slide.1.required-attribute.a:ea.4",
+          "passed": true,
+          "message": "Slide 1 a:ea entry 5 includes typeface.",
+          "severity": "error"
+        },
+        {
+          "id": "slide.1.required-attribute.a:ea.5",
+          "passed": true,
+          "message": "Slide 1 a:ea entry 6 includes typeface.",
+          "severity": "error"
+        },
+        {
+          "id": "slide.1.required-attribute.a:cs.0",
+          "passed": true,
+          "message": "Slide 1 a:cs entry 1 includes typeface.",
+          "severity": "error"
+        },
+        {
+          "id": "slide.1.required-attribute.a:cs.1",
+          "passed": true,
+          "message": "Slide 1 a:cs entry 2 includes typeface.",
+          "severity": "error"
+        },
+        {
+          "id": "slide.1.required-attribute.a:cs.2",
+          "passed": true,
+          "message": "Slide 1 a:cs entry 3 includes typeface.",
+          "severity": "error"
+        },
+        {
+          "id": "slide.1.required-attribute.a:cs.3",
+          "passed": true,
+          "message": "Slide 1 a:cs entry 4 includes typeface.",
+          "severity": "error"
+        },
+        {
+          "id": "slide.1.required-attribute.a:cs.4",
+          "passed": true,
+          "message": "Slide 1 a:cs entry 5 includes typeface.",
+          "severity": "error"
+        },
+        {
+          "id": "slide.1.required-attribute.a:cs.5",
+          "passed": true,
+          "message": "Slide 1 a:cs entry 6 includes typeface.",
+          "severity": "error"
+        },
+        {
+          "id": "slide.1.autofit-policy.0",
+          "passed": true,
+          "message": "Slide 1 bodyPr 1 uses at most one autofit policy.",
+          "severity": "error"
+        },
+        {
+          "id": "slide.1.normautofit.0.0",
+          "passed": true,
+          "message": "Slide 1 normAutofit entry 1 uses Office-default autofit.",
+          "severity": "info"
+        },
+        {
+          "id": "slide.1.autofit-policy.1",
+          "passed": true,
+          "message": "Slide 1 bodyPr 2 uses at most one autofit policy.",
+          "severity": "error"
+        },
+        {
+          "id": "slide.1.normautofit.1.0",
+          "passed": true,
+          "message": "Slide 1 normAutofit entry 1 uses Office-default autofit.",
+          "severity": "info"
+        },
+        {
+          "id": "slide.1.autofit-policy.2",
+          "passed": true,
+          "message": "Slide 1 bodyPr 3 uses at most one autofit policy.",
+          "severity": "error"
+        },
+        {
+          "id": "slide.1.normautofit.2.0",
+          "passed": true,
+          "message": "Slide 1 normAutofit entry 1 uses Office-default autofit.",
+          "severity": "info"
+        },
+        {
+          "id": "slide.1.autofit-policy.3",
+          "passed": true,
+          "message": "Slide 1 bodyPr 4 uses at most one autofit policy.",
+          "severity": "error"
+        },
+        {
+          "id": "slide.1.custdatalist",
+          "passed": true,
+          "message": "Slide 1 has at most one custDataLst block.",
+          "severity": "error"
+        },
+        {
+          "id": "slide.1.layout-chain.master-target",
+          "passed": true,
+          "message": "ppt/slideLayouts/slideLayout1.xml resolves to slide master ppt/slideMasters/slideMaster1.xml.",
+          "severity": "error"
+        },
+        {
+          "id": "_rels/.rels.rid.rId1",
+          "passed": true,
+          "message": "Relationship Id \"rId1\" in _rels/.rels is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "_rels/.rels.rId1.target",
+          "passed": true,
+          "message": "Relationship rId1 in _rels/.rels resolves to ppt/presentation.xml.",
+          "severity": "error"
+        },
+        {
+          "id": "_rels/.rels.rid.rId2",
+          "passed": true,
+          "message": "Relationship Id \"rId2\" in _rels/.rels is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "_rels/.rels.rId2.target",
+          "passed": true,
+          "message": "Relationship rId2 in _rels/.rels resolves to docProps/core.xml.",
+          "severity": "error"
+        },
+        {
+          "id": "_rels/.rels.rid.rId3",
+          "passed": true,
+          "message": "Relationship Id \"rId3\" in _rels/.rels is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "_rels/.rels.rId3.target",
+          "passed": true,
+          "message": "Relationship rId3 in _rels/.rels resolves to docProps/app.xml.",
+          "severity": "error"
+        },
+        {
+          "id": "_rels/.rels.rid.rId5",
+          "passed": true,
+          "message": "Relationship Id \"rId5\" in _rels/.rels is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "_rels/.rels.rId5.target",
+          "passed": true,
+          "message": "Relationship rId5 in _rels/.rels resolves to docProps/thumbnail.jpeg.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/_rels/presentation.xml.rels.rid.rId1",
+          "passed": true,
+          "message": "Relationship Id \"rId1\" in ppt/_rels/presentation.xml.rels is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/_rels/presentation.xml.rels.rId1.target",
+          "passed": true,
+          "message": "Relationship rId1 in ppt/_rels/presentation.xml.rels resolves to ppt/slideMasters/slideMaster1.xml.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/_rels/presentation.xml.rels.rid.rId2",
+          "passed": true,
+          "message": "Relationship Id \"rId2\" in ppt/_rels/presentation.xml.rels is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/_rels/presentation.xml.rels.rId2.target",
+          "passed": true,
+          "message": "Relationship rId2 in ppt/_rels/presentation.xml.rels resolves to ppt/theme/theme1.xml.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/_rels/presentation.xml.rels.rid.rId3",
+          "passed": true,
+          "message": "Relationship Id \"rId3\" in ppt/_rels/presentation.xml.rels is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/_rels/presentation.xml.rels.rId3.target",
+          "passed": true,
+          "message": "Relationship rId3 in ppt/_rels/presentation.xml.rels resolves to ppt/slides/slide1.xml.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/_rels/presentation.xml.rels.rid.rId4",
+          "passed": true,
+          "message": "Relationship Id \"rId4\" in ppt/_rels/presentation.xml.rels is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/_rels/presentation.xml.rels.rId4.target",
+          "passed": true,
+          "message": "Relationship rId4 in ppt/_rels/presentation.xml.rels resolves to ppt/presProps.xml.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/_rels/presentation.xml.rels.rid.rId5",
+          "passed": true,
+          "message": "Relationship Id \"rId5\" in ppt/_rels/presentation.xml.rels is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/_rels/presentation.xml.rels.rId5.target",
+          "passed": true,
+          "message": "Relationship rId5 in ppt/_rels/presentation.xml.rels resolves to ppt/viewProps.xml.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/_rels/presentation.xml.rels.rid.rId6",
+          "passed": true,
+          "message": "Relationship Id \"rId6\" in ppt/_rels/presentation.xml.rels is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/_rels/presentation.xml.rels.rId6.target",
+          "passed": true,
+          "message": "Relationship rId6 in ppt/_rels/presentation.xml.rels resolves to ppt/tableStyles.xml.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/slideLayouts/_rels/slideLayout1.xml.rels.rid.rId1",
+          "passed": true,
+          "message": "Relationship Id \"rId1\" in ppt/slideLayouts/_rels/slideLayout1.xml.rels is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/slideLayouts/_rels/slideLayout1.xml.rels.rId1.target",
+          "passed": true,
+          "message": "Relationship rId1 in ppt/slideLayouts/_rels/slideLayout1.xml.rels resolves to ppt/slideMasters/slideMaster1.xml.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/slideLayouts/_rels/slideLayout2.xml.rels.rid.rId1",
+          "passed": true,
+          "message": "Relationship Id \"rId1\" in ppt/slideLayouts/_rels/slideLayout2.xml.rels is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/slideLayouts/_rels/slideLayout2.xml.rels.rId1.target",
+          "passed": true,
+          "message": "Relationship rId1 in ppt/slideLayouts/_rels/slideLayout2.xml.rels resolves to ppt/slideMasters/slideMaster1.xml.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/slideLayouts/_rels/slideLayout3.xml.rels.rid.rId1",
+          "passed": true,
+          "message": "Relationship Id \"rId1\" in ppt/slideLayouts/_rels/slideLayout3.xml.rels is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/slideLayouts/_rels/slideLayout3.xml.rels.rId1.target",
+          "passed": true,
+          "message": "Relationship rId1 in ppt/slideLayouts/_rels/slideLayout3.xml.rels resolves to ppt/slideMasters/slideMaster1.xml.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/slideLayouts/_rels/slideLayout4.xml.rels.rid.rId1",
+          "passed": true,
+          "message": "Relationship Id \"rId1\" in ppt/slideLayouts/_rels/slideLayout4.xml.rels is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/slideLayouts/_rels/slideLayout4.xml.rels.rId1.target",
+          "passed": true,
+          "message": "Relationship rId1 in ppt/slideLayouts/_rels/slideLayout4.xml.rels resolves to ppt/slideMasters/slideMaster1.xml.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/slideLayouts/_rels/slideLayout5.xml.rels.rid.rId1",
+          "passed": true,
+          "message": "Relationship Id \"rId1\" in ppt/slideLayouts/_rels/slideLayout5.xml.rels is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/slideLayouts/_rels/slideLayout5.xml.rels.rId1.target",
+          "passed": true,
+          "message": "Relationship rId1 in ppt/slideLayouts/_rels/slideLayout5.xml.rels resolves to ppt/slideMasters/slideMaster1.xml.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/slideMasters/_rels/slideMaster1.xml.rels.rid.rId1",
+          "passed": true,
+          "message": "Relationship Id \"rId1\" in ppt/slideMasters/_rels/slideMaster1.xml.rels is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/slideMasters/_rels/slideMaster1.xml.rels.rId1.target",
+          "passed": true,
+          "message": "Relationship rId1 in ppt/slideMasters/_rels/slideMaster1.xml.rels resolves to ppt/slideLayouts/slideLayout1.xml.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/slideMasters/_rels/slideMaster1.xml.rels.rid.rId2",
+          "passed": true,
+          "message": "Relationship Id \"rId2\" in ppt/slideMasters/_rels/slideMaster1.xml.rels is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/slideMasters/_rels/slideMaster1.xml.rels.rId2.target",
+          "passed": true,
+          "message": "Relationship rId2 in ppt/slideMasters/_rels/slideMaster1.xml.rels resolves to ppt/slideLayouts/slideLayout2.xml.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/slideMasters/_rels/slideMaster1.xml.rels.rid.rId3",
+          "passed": true,
+          "message": "Relationship Id \"rId3\" in ppt/slideMasters/_rels/slideMaster1.xml.rels is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/slideMasters/_rels/slideMaster1.xml.rels.rId3.target",
+          "passed": true,
+          "message": "Relationship rId3 in ppt/slideMasters/_rels/slideMaster1.xml.rels resolves to ppt/slideLayouts/slideLayout3.xml.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/slideMasters/_rels/slideMaster1.xml.rels.rid.rId4",
+          "passed": true,
+          "message": "Relationship Id \"rId4\" in ppt/slideMasters/_rels/slideMaster1.xml.rels is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/slideMasters/_rels/slideMaster1.xml.rels.rId4.target",
+          "passed": true,
+          "message": "Relationship rId4 in ppt/slideMasters/_rels/slideMaster1.xml.rels resolves to ppt/slideLayouts/slideLayout4.xml.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/slideMasters/_rels/slideMaster1.xml.rels.rid.rId5",
+          "passed": true,
+          "message": "Relationship Id \"rId5\" in ppt/slideMasters/_rels/slideMaster1.xml.rels is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/slideMasters/_rels/slideMaster1.xml.rels.rId5.target",
+          "passed": true,
+          "message": "Relationship rId5 in ppt/slideMasters/_rels/slideMaster1.xml.rels resolves to ppt/slideLayouts/slideLayout5.xml.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/slideMasters/_rels/slideMaster1.xml.rels.rid.rId6",
+          "passed": true,
+          "message": "Relationship Id \"rId6\" in ppt/slideMasters/_rels/slideMaster1.xml.rels is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/slideMasters/_rels/slideMaster1.xml.rels.rId6.target",
+          "passed": true,
+          "message": "Relationship rId6 in ppt/slideMasters/_rels/slideMaster1.xml.rels resolves to ppt/theme/theme1.xml.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/slides/_rels/slide1.xml.rels.rid.rId1",
+          "passed": true,
+          "message": "Relationship Id \"rId1\" in ppt/slides/_rels/slide1.xml.rels is unique.",
+          "severity": "error"
+        },
+        {
+          "id": "ppt/slides/_rels/slide1.xml.rels.rId1.target",
+          "passed": true,
+          "message": "Relationship rId1 in ppt/slides/_rels/slide1.xml.rels resolves to ppt/slideLayouts/slideLayout1.xml.",
+          "severity": "error"
+        },
+        {
+          "id": "theme.present",
+          "passed": true,
+          "message": "Package contains 1 theme part(s).",
+          "severity": "error"
+        },
+        {
+          "id": "theme.ppt/theme/theme1.xml.color-scheme",
+          "passed": true,
+          "message": "ppt/theme/theme1.xml includes a color scheme.",
+          "severity": "error"
+        },
+        {
+          "id": "theme.ppt/theme/theme1.xml.color.a:dk1",
+          "passed": true,
+          "message": "ppt/theme/theme1.xml color scheme includes a:dk1.",
+          "severity": "error"
+        },
+        {
+          "id": "theme.ppt/theme/theme1.xml.color.a:lt1",
+          "passed": true,
+          "message": "ppt/theme/theme1.xml color scheme includes a:lt1.",
+          "severity": "error"
+        },
+        {
+          "id": "theme.ppt/theme/theme1.xml.color.a:dk2",
+          "passed": true,
+          "message": "ppt/theme/theme1.xml color scheme includes a:dk2.",
+          "severity": "error"
+        },
+        {
+          "id": "theme.ppt/theme/theme1.xml.color.a:lt2",
+          "passed": true,
+          "message": "ppt/theme/theme1.xml color scheme includes a:lt2.",
+          "severity": "error"
+        },
+        {
+          "id": "theme.ppt/theme/theme1.xml.color.a:accent1",
+          "passed": true,
+          "message": "ppt/theme/theme1.xml color scheme includes a:accent1.",
+          "severity": "error"
+        },
+        {
+          "id": "theme.ppt/theme/theme1.xml.color.a:accent2",
+          "passed": true,
+          "message": "ppt/theme/theme1.xml color scheme includes a:accent2.",
+          "severity": "error"
+        },
+        {
+          "id": "theme.ppt/theme/theme1.xml.color.a:accent3",
+          "passed": true,
+          "message": "ppt/theme/theme1.xml color scheme includes a:accent3.",
+          "severity": "error"
+        },
+        {
+          "id": "theme.ppt/theme/theme1.xml.color.a:accent4",
+          "passed": true,
+          "message": "ppt/theme/theme1.xml color scheme includes a:accent4.",
+          "severity": "error"
+        },
+        {
+          "id": "theme.ppt/theme/theme1.xml.color.a:accent5",
+          "passed": true,
+          "message": "ppt/theme/theme1.xml color scheme includes a:accent5.",
+          "severity": "error"
+        },
+        {
+          "id": "theme.ppt/theme/theme1.xml.color.a:accent6",
+          "passed": true,
+          "message": "ppt/theme/theme1.xml color scheme includes a:accent6.",
+          "severity": "error"
+        },
+        {
+          "id": "theme.ppt/theme/theme1.xml.color.a:hlink",
+          "passed": true,
+          "message": "ppt/theme/theme1.xml color scheme includes a:hlink.",
+          "severity": "error"
+        },
+        {
+          "id": "theme.ppt/theme/theme1.xml.color.a:folHlink",
+          "passed": true,
+          "message": "ppt/theme/theme1.xml color scheme includes a:folHlink.",
+          "severity": "error"
+        },
+        {
+          "id": "theme.ppt/theme/theme1.xml.font-scheme",
+          "passed": true,
+          "message": "ppt/theme/theme1.xml includes a font scheme.",
+          "severity": "error"
+        },
+        {
+          "id": "theme.ppt/theme/theme1.xml.a:majorFont",
+          "passed": true,
+          "message": "ppt/theme/theme1.xml includes a:majorFont.",
+          "severity": "error"
+        },
+        {
+          "id": "theme.ppt/theme/theme1.xml.a:majorFont.latin",
+          "passed": true,
+          "message": "ppt/theme/theme1.xml a:majorFont has a latin typeface.",
+          "severity": "error"
+        },
+        {
+          "id": "theme.ppt/theme/theme1.xml.a:minorFont",
+          "passed": true,
+          "message": "ppt/theme/theme1.xml includes a:minorFont.",
+          "severity": "error"
+        },
+        {
+          "id": "theme.ppt/theme/theme1.xml.a:minorFont.latin",
+          "passed": true,
+          "message": "ppt/theme/theme1.xml a:minorFont has a latin typeface.",
+          "severity": "error"
+        }
+      ],
+      "failureCount": 0
+    }
+  },
+  "charts": {
+    "charts": [],
+    "passed": true
+  },
+  "diagnosis": {
+    "critical": [],
+    "high": [],
+    "medium": [],
+    "info": [],
+    "verdict": "LAUNCH_READY"
+  },
+  "issueCodes": [
+    "compatibility:native_anchored",
+    "compatibility:slide-1:native_anchored"
+  ],
+  "compatibility": {
+    "compatibilityVerdict": "native_anchored",
+    "slides": [
+      {
+        "slideIndex": 0,
+        "compatibilityVerdict": "native_anchored",
+        "issues": [],
+        "fontSubstitutions": {
+          "Aptos": "carlito-regular"
+        },
+        "fonts": [
+          "Aptos"
+        ]
+      }
+    ],
+    "fontSubstitutions": {
+      "Aptos": "carlito-regular"
+    }
+  },
+  "artifacts": {
+    "pptxPath": "/Users/jake/plain/plainworks/runstamp.com/packages/core/tests/desktopValidation/artifacts/animation-phase2/animation-phase2.pptx",
+    "jsonPath": "/Users/jake/plain/plainworks/runstamp.com/packages/core/tests/desktopValidation/artifacts/animation-phase2/validation.json"
+  }
+}

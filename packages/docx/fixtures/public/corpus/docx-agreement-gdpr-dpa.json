@@ -1,0 +1,503 @@
+{
+  "id": "docx-agreement-gdpr-dpa",
+  "format": "docx",
+  "description": "GDPR-style Data Processing Addendum with Article 28 clause numbering and three annex tables of processing activities, TOMs, and sub-processors.",
+  "provenance": "Modeled on the standard DPA that SaaS vendors attach to their MSA to satisfy GDPR Article 28(3), including the Annex I record-of-processing table popularized by the 2021 EU Standard Contractual Clauses. Deliberately exercises dense multi-column annex tables with narrow fixed column widths, deep decimal clause numbering (9.1, 9.2.1 style) rendered as bold run prefixes, cross-references between sections and annexes, and a footnoted definition.",
+  "expectedProperties": {
+    "pageCountMin": 4,
+    "hasTable": true,
+    "annexTables": 3,
+    "numberedSections": 12
+  },
+  "document": {
+    "type": "DocxDocument",
+    "pageSize": "a4",
+    "metadata": {
+      "title": "Data Processing Addendum",
+      "author": "Meridian Cloud Services B.V.",
+      "subject": "GDPR Article 28 Data Processing Addendum",
+      "keywords": ["GDPR", "DPA", "data processing", "Article 28"],
+      "language": "en-GB"
+    },
+    "theme": {
+      "preset": "classic"
+    },
+    "header": {
+      "text": "Data Processing Addendum — Meridian Cloud Services B.V. — CONFIDENTIAL"
+    },
+    "footer": {
+      "text": "DPA v4.2 (March 2026) — Ref. MCS-LGL-2026-0187",
+      "includePageNumber": true
+    },
+    "pages": [
+      {
+        "elements": [
+          {
+            "type": "heading",
+            "level": 1,
+            "text": "DATA PROCESSING ADDENDUM"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "This Data Processing Addendum (the ", "style": {} },
+              { "text": "“DPA”", "style": { "fontWeight": "bold" } },
+              { "text": ") is entered into as of 2 March 2026 (the “Addendum Effective Date”) by and between " },
+              { "text": "Meridian Cloud Services B.V.", "style": { "fontWeight": "bold" } },
+              { "text": ", a private limited company organised under the laws of the Netherlands with registered offices at Weesperstraat 61, 1018 VN Amsterdam (KvK 74381260) (“Processor”), and " },
+              { "text": "Halvorsen Retail Group ApS", "style": { "fontWeight": "bold" } },
+              { "text": ", a company organised under the laws of Denmark with registered offices at Njalsgade 21, 2300 Copenhagen S, CVR 38914472 (“Controller”), and supplements the Master Services Agreement between the parties dated 14 January 2026 (the “Agreement”)." }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "1. Definitions"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "1.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "“Applicable Data Protection Law” means Regulation (EU) 2016/679 (the “GDPR”), the UK GDPR as defined by the UK Data Protection Act 2018, and any national implementing legislation, in each case as amended from time to time." }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "1.2  ", "style": { "fontWeight": "bold" } },
+              { "text": "“Customer Personal Data” means Personal Data processed by Processor on behalf of Controller in connection with the Services, as further described in Annex I." }
+            ],
+            "footnote": "Capitalised terms not defined in this DPA have the meaning given in the Agreement. The terms “Controller”, “Processor”, “Data Subject”, “Personal Data”, “Personal Data Breach” and “processing” have the meanings given in Article 4 of the GDPR."
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "1.3  ", "style": { "fontWeight": "bold" } },
+              { "text": "“Sub-processor” means any third party engaged by Processor to process Customer Personal Data, as listed in Annex III." }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "2. Subject Matter, Duration and Nature of Processing"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "2.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "The subject matter, duration, nature and purpose of the processing, the categories of Personal Data and of Data Subjects are set out in Annex I (Description of Processing). Processing shall continue for the term of the Agreement plus the deletion period described in Section 9.2." }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "2.2  ", "style": { "fontWeight": "bold" } },
+              { "text": "Processor shall process Customer Personal Data only on documented instructions from Controller, including with regard to transfers to a third country, unless required to do so by Union or Member State law; in such a case, Processor shall inform Controller of that legal requirement before processing, unless that law prohibits such information on important grounds of public interest (Article 28(3)(a) GDPR)." }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "3. Confidentiality"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "3.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "Processor shall ensure that persons authorised to process Customer Personal Data have committed themselves to confidentiality or are under an appropriate statutory obligation of confidentiality, and that such obligations survive the termination of their engagement." }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "4. Security of Processing"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "4.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "Taking into account the state of the art, the costs of implementation and the nature, scope, context and purposes of processing, Processor shall implement and maintain the technical and organisational measures set out in Annex II (“TOMs”). Processor may update the TOMs provided the updated measures do not materially reduce the overall level of protection." }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "4.2  ", "style": { "fontWeight": "bold" } },
+              { "text": "Processor holds and shall maintain during the term of this DPA certifications to ISO/IEC 27001:2022 and SOC 2 Type II covering the production environment used to deliver the Services." }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "5. Sub-processing"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "5.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "Controller grants Processor general written authorisation to engage the Sub-processors listed in Annex III. Processor shall give Controller at least thirty (30) days’ prior written notice of the intended addition or replacement of any Sub-processor, during which period Controller may object on reasonable data protection grounds in accordance with Section 5.2." }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "5.2  ", "style": { "fontWeight": "bold" } },
+              { "text": "If Controller objects and the parties cannot resolve the objection within fifteen (15) days, Controller may terminate the affected Services upon written notice without penalty, as its sole and exclusive remedy. Processor shall impose on each Sub-processor, by way of contract, data protection obligations no less protective than those in this DPA (Article 28(4) GDPR)." }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "6. Data Subject Rights"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "6.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "Taking into account the nature of the processing, Processor shall assist Controller by appropriate technical and organisational measures, insofar as this is possible, in fulfilling Controller’s obligation to respond to requests for exercising the Data Subject’s rights under Chapter III of the GDPR. Processor shall forward to Controller without undue delay, and in any event within five (5) Business Days, any request received directly from a Data Subject." }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "7. Personal Data Breach"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "7.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "Processor shall notify Controller without undue delay, and in any event within forty-eight (48) hours, after becoming aware of a Personal Data Breach affecting Customer Personal Data. The notification shall, at a minimum, include the information described in Article 33(3) GDPR to the extent then available, and shall be supplemented as further information becomes available." }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "8. Audits and Inspections"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "8.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "Processor shall make available to Controller all information necessary to demonstrate compliance with the obligations laid down in this DPA and allow for and contribute to audits, including inspections, conducted by Controller or another auditor mandated by Controller, not more than once per twelve (12) month period upon thirty (30) days’ written notice, except following a Personal Data Breach notified under Section 7.1." }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "9. Return and Deletion of Customer Personal Data"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "9.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "Upon termination or expiry of the Agreement, Processor shall, at the choice of Controller, delete or return all Customer Personal Data, and delete existing copies unless Union or Member State law requires storage of the Personal Data." }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "9.2  ", "style": { "fontWeight": "bold" } },
+              { "text": "Deletion under Section 9.1 shall be completed within ninety (90) days of termination, using deletion procedures consistent with NIST SP 800-88 Rev. 1, and Processor shall certify deletion in writing upon Controller’s request." }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "10. International Transfers"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "10.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "Processor shall not transfer Customer Personal Data outside the European Economic Area unless the transfer is subject to an adequacy decision under Article 45 GDPR or appropriate safeguards under Article 46 GDPR, including the EU Standard Contractual Clauses (Commission Implementing Decision (EU) 2021/914), Module Two (controller to processor), which are incorporated by reference for the transfers identified in Annex III." }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "11. Liability"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "11.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "Each party’s liability arising out of or related to this DPA is subject to the exclusions and limitations of liability set out in Clause 14 of the Agreement, save that nothing in this DPA limits either party’s liability for a Data Subject’s right to compensation under Article 82 GDPR." }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "12. Governing Law and Order of Precedence"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "12.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "This DPA is governed by the law governing the Agreement. In the event of any conflict between this DPA and the Agreement, this DPA prevails; in the event of any conflict between this DPA and the Standard Contractual Clauses referenced in Section 10.1, the Standard Contractual Clauses prevail." }
+            ]
+          }
+        ]
+      },
+      {
+        "elements": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "ANNEX I — Description of Processing"
+          },
+          {
+            "type": "paragraph",
+            "text": "Record of processing activities carried out on behalf of Controller pursuant to Article 28(3) and Article 30(2) GDPR."
+          },
+          {
+            "type": "table",
+            "tableStyle": "bordered",
+            "repeatHeaders": true,
+            "tableCaption": "Annex I processing activities",
+            "tableDescription": "Table of processing activities: activity, data subjects, personal data categories, special categories, purpose, and retention.",
+            "columns": [
+              { "width": 70 },
+              { "width": 68 },
+              { "width": 88 },
+              { "width": 54 },
+              { "width": 91 },
+              { "width": 80 }
+            ],
+            "rows": [
+              {
+                "isHeader": true,
+                "cells": [
+                  { "text": "Processing activity", "style": { "fontWeight": "bold", "backgroundColor": "E8E8E8" } },
+                  { "text": "Categories of data subjects", "style": { "fontWeight": "bold", "backgroundColor": "E8E8E8" } },
+                  { "text": "Categories of personal data", "style": { "fontWeight": "bold", "backgroundColor": "E8E8E8" } },
+                  { "text": "Special categories", "style": { "fontWeight": "bold", "backgroundColor": "E8E8E8" } },
+                  { "text": "Purpose of processing", "style": { "fontWeight": "bold", "backgroundColor": "E8E8E8" } },
+                  { "text": "Retention period", "style": { "fontWeight": "bold", "backgroundColor": "E8E8E8" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "A-01 Hosting of loyalty programme database" },
+                  { "text": "Controller’s retail customers (loyalty members)" },
+                  { "text": "Name, email address, postal code, purchase history, loyalty tier, points balance" },
+                  { "text": "None" },
+                  { "text": "Provision of the hosted loyalty platform under the Agreement" },
+                  { "text": "Term of Agreement + 90 days (Section 9.2)" }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "A-02 Transactional email dispatch" },
+                  { "text": "Loyalty members; newsletter subscribers" },
+                  { "text": "Email address, first name, campaign interaction events (open, click)" },
+                  { "text": "None" },
+                  { "text": "Sending receipts, point statements and service notifications" },
+                  { "text": "Dispatch logs 13 months" }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "A-03 Customer support ticketing" },
+                  { "text": "End users contacting support; Controller’s staff" },
+                  { "text": "Name, email, ticket contents, diagnostic attachments voluntarily provided" },
+                  { "text": "Possible incidental (free-text fields)" },
+                  { "text": "Second-line support delivered by Processor under Clause 6 of the Agreement" },
+                  { "text": "24 months after ticket closure" }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "A-04 Analytics and service telemetry" },
+                  { "text": "Loyalty members (pseudonymised)" },
+                  { "text": "Hashed member ID, event timestamps, device type, coarse geolocation (country)" },
+                  { "text": "None" },
+                  { "text": "Capacity planning, fraud detection and service improvement" },
+                  { "text": "Pseudonymised 25 months; aggregated indefinitely" }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "A-05 Backup and disaster recovery" },
+                  { "text": "All data subjects in A-01 to A-04" },
+                  { "text": "Full database snapshots (encrypted at rest, AES-256)" },
+                  { "text": "As per source systems" },
+                  { "text": "Business continuity; recovery point objective of 4 hours" },
+                  { "text": "Rolling 35-day snapshot window" }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "ANNEX II — Technical and Organisational Measures"
+          },
+          {
+            "type": "table",
+            "tableStyle": "striped",
+            "repeatHeaders": true,
+            "tableCaption": "Annex II technical and organisational measures",
+            "columns": [
+              { "width": 42 },
+              { "width": 120 },
+              { "width": 289 }
+            ],
+            "rows": [
+              {
+                "isHeader": true,
+                "cells": [
+                  { "text": "Ref.", "style": { "fontWeight": "bold" } },
+                  { "text": "Measure domain", "style": { "fontWeight": "bold" } },
+                  { "text": "Description of measure", "style": { "fontWeight": "bold" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "M-1" },
+                  { "text": "Encryption (Art. 32(1)(a))" },
+                  { "text": "TLS 1.3 for all data in transit; AES-256-GCM for data at rest; customer-scoped key hierarchy with annual key rotation managed via a FIPS 140-2 Level 3 validated HSM." }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "M-2" },
+                  { "text": "Access control" },
+                  { "text": "Role-based access on least-privilege basis; production access requires hardware-token MFA and is logged to an immutable audit trail retained 24 months; quarterly access recertification." }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "M-3" },
+                  { "text": "Resilience (Art. 32(1)(b))" },
+                  { "text": "Active-active deployment across two EU availability zones; RTO 8 hours, RPO 4 hours; failover exercised at least twice per calendar year." }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "M-4" },
+                  { "text": "Testing (Art. 32(1)(d))" },
+                  { "text": "Annual independent penetration test; continuous vulnerability scanning with remediation SLAs of 14 days (critical) and 30 days (high)." }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "M-5" },
+                  { "text": "Personnel" },
+                  { "text": "Background screening where lawful; annual privacy and security training with completion tracked; confidentiality undertakings per Section 3.1 of this DPA." }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "M-6" },
+                  { "text": "Data minimisation" },
+                  { "text": "Field-level retention rules enforced by scheduled jobs; pseudonymisation of telemetry identifiers per activity A-04 of Annex I; production data prohibited in non-production environments." }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "ANNEX III — Approved Sub-processors"
+          },
+          {
+            "type": "table",
+            "tableStyle": "bordered",
+            "repeatHeaders": true,
+            "keepWithNext": true,
+            "tableCaption": "Annex III approved sub-processors",
+            "columns": [
+              { "width": 110 },
+              { "width": 88 },
+              { "width": 118 },
+              { "width": 135 }
+            ],
+            "rows": [
+              {
+                "isHeader": true,
+                "cells": [
+                  { "text": "Sub-processor entity", "style": { "fontWeight": "bold", "backgroundColor": "E8E8E8" } },
+                  { "text": "Processing location", "style": { "fontWeight": "bold", "backgroundColor": "E8E8E8" } },
+                  { "text": "Service provided", "style": { "fontWeight": "bold", "backgroundColor": "E8E8E8" } },
+                  { "text": "Transfer mechanism", "style": { "fontWeight": "bold", "backgroundColor": "E8E8E8" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Nordcloud Infrastructure Oy" },
+                  { "text": "Finland (eu-north-1)" },
+                  { "text": "IaaS hosting of production and backup environments (activities A-01, A-05)" },
+                  { "text": "Intra-EEA; no transfer mechanism required" }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Relayline Communications, Inc." },
+                  { "text": "United States (Oregon)" },
+                  { "text": "Transactional email dispatch (activity A-02)" },
+                  { "text": "EU SCCs Module Three + EU-US Data Privacy Framework certification" }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Deskserve Support Solutions Sp. z o.o." },
+                  { "text": "Poland (Kraków)" },
+                  { "text": "Second-line support ticketing platform (activity A-03)" },
+                  { "text": "Intra-EEA; no transfer mechanism required" }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Metricfold Analytics Ltd" },
+                  { "text": "United Kingdom (London)" },
+                  { "text": "Pseudonymised service telemetry pipeline (activity A-04)" },
+                  { "text": "UK adequacy decision (Commission Decision of 28 June 2021)" }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "keepTogether": true,
+            "children": [
+              {
+                "type": "divider"
+              },
+              {
+                "type": "table",
+                "tableStyle": "plain",
+                "repeatHeaders": false,
+                "columns": [
+                  { "width": 225 },
+                  { "width": 226 }
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      {
+                        "elements": [
+                          { "type": "paragraph", "runs": [ { "text": "SIGNED for and on behalf of the Controller", "style": { "fontWeight": "bold" } } ] },
+                          { "type": "paragraph", "text": "Name: Mette Halvorsen" },
+                          { "type": "paragraph", "text": "Title: Chief Operating Officer" },
+                          { "type": "paragraph", "text": "Date: 2 March 2026" }
+                        ]
+                      },
+                      {
+                        "elements": [
+                          { "type": "paragraph", "runs": [ { "text": "SIGNED for and on behalf of the Processor", "style": { "fontWeight": "bold" } } ] },
+                          { "type": "paragraph", "text": "Name: Ruben van Dael" },
+                          { "type": "paragraph", "text": "Title: General Counsel" },
+                          { "type": "paragraph", "text": "Date: 2 March 2026" }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

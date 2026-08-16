@@ -1,0 +1,19 @@
+{
+  "fixtureId": "template-mutation",
+  "passed": true,
+  "failures": [],
+  "oracle": {
+    "available": true,
+    "fixtureId": "template-mutation",
+    "passed": true,
+    "failures": [],
+    "pdfPath": "/Users/jake/plain/plainworks/paperjsx.com/packages/core/tests/desktopValidation/artifacts/template-mutation/template-mutation.pdf",
+    "savedCopyPath": "/Users/jake/plain/plainworks/paperjsx.com/packages/core/tests/desktopValidation/artifacts/template-mutation/template-mutation.roundtrip.pptx",
+    "screenshotPath": "/Users/jake/plain/plainworks/paperjsx.com/packages/core/tests/desktopValidation/artifacts/template-mutation/template-mutation.png",
+    "details": [
+      "Opened presentation: template-mutation.input.pptx, slides=2",
+      "PowerPoint canonicalized 28 normalized package part(s) during round-trip save."
+    ]
+  },
+  "structuralPassed": true
+}

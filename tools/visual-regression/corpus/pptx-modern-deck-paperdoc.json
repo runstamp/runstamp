@@ -1,0 +1,8 @@
+{
+  "id": "pptx-modern-deck-paperdoc",
+  "format": "pptx",
+  "surface": "paper-document",
+  "description": "Canonical modern PaperDocument deck baseline.",
+  "documentModule": "packages/core/examples/modern-deck-paperdoc/deck.ts",
+  "exportName": "buildModernDeckPaperDocument"
+}

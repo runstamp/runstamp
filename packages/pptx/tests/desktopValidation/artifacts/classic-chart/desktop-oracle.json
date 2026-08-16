@@ -1,0 +1,15 @@
+{
+  "fixtureId": "classic-chart",
+  "passed": true,
+  "failures": [],
+  "oracle": {
+    "available": false,
+    "fixtureId": "classic-chart",
+    "passed": false,
+    "failures": [],
+    "details": [
+      "Windows PowerPoint desktop oracle is only available on win32."
+    ]
+  },
+  "structuralPassed": true
+}

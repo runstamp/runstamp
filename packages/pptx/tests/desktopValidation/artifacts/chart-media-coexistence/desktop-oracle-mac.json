@@ -1,0 +1,19 @@
+{
+  "fixtureId": "chart-media-coexistence",
+  "passed": true,
+  "failures": [],
+  "oracle": {
+    "available": true,
+    "fixtureId": "chart-media-coexistence",
+    "passed": true,
+    "failures": [],
+    "pdfPath": "/Users/jake/plain/plainworks/paperjsx.com/packages/core/tests/desktopValidation/artifacts/chart-media-coexistence/chart-media-coexistence.pdf",
+    "savedCopyPath": "/Users/jake/plain/plainworks/paperjsx.com/packages/core/tests/desktopValidation/artifacts/chart-media-coexistence/chart-media-coexistence.roundtrip.pptx",
+    "screenshotPath": "/Users/jake/plain/plainworks/paperjsx.com/packages/core/tests/desktopValidation/artifacts/chart-media-coexistence/chart-media-coexistence.png",
+    "details": [
+      "Opened presentation: chart-media-coexistence.input.pptx, slides=1",
+      "PowerPoint canonicalized 18 normalized package part(s) during round-trip save."
+    ]
+  },
+  "structuralPassed": true
+}

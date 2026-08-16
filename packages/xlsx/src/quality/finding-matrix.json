@@ -1,0 +1,313 @@
+{
+  "engine": "xlsx",
+  "entries": [
+    {
+      "code": "XLSX_SHARED_STRING_INDEX_OOB",
+      "status": "active",
+      "emitter": "packages/xlsx/src/quality/workbook-quality.ts",
+      "severity": "error",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": true, "strategy": "REPAIR_SHARED_STRING_INDEX" },
+      "evidence": { "kind": "test", "path": "packages/xlsx/__tests__/render-with-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "XLSX_STYLE_INDEX_OOB",
+      "status": "active",
+      "emitter": "packages/xlsx/src/quality/workbook-quality.ts",
+      "severity": "error",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": true, "strategy": "CLAMP_STYLE_INDEX" },
+      "evidence": { "kind": "test", "path": "packages/xlsx/__tests__/render-with-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "XLSX_SHEET_NAME_INVALID",
+      "status": "active",
+      "emitter": "packages/xlsx/src/quality/workbook-quality.ts",
+      "severity": "error",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": true, "strategy": "NORMALIZE_SHEET_NAMES" },
+      "evidence": { "kind": "fixture", "path": "packages/chaos-lab/fixtures/edge-cases/xlsx/xlsx-forbidden-chars.json" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "XLSX_DUPLICATE_SHEET_NAME",
+      "status": "active",
+      "emitter": "packages/xlsx/src/quality/workbook-quality.ts",
+      "severity": "error",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": true, "strategy": "NORMALIZE_SHEET_NAMES" },
+      "evidence": { "kind": "fixture", "path": "packages/chaos-lab/fixtures/edge-cases/xlsx/xlsx-duplicate-sheets.json" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "XLSX_RELATIONSHIP_TARGET_MISSING",
+      "status": "active",
+      "emitter": "packages/xlsx/src/quality/workbook-quality.ts",
+      "severity": "error",
+      "expectedVerdict": "visual_fallback",
+      "repair": { "supported": true, "strategy": "REMOVE_ORPHAN_RELATIONSHIPS" },
+      "evidence": { "kind": "test", "path": "packages/xlsx/__tests__/render-with-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "SHARED_RID_NOT_UNIQUE",
+      "status": "active",
+      "emitter": "packages/xlsx/src/quality/workbook-quality.ts",
+      "severity": "error",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": true, "strategy": "DEDUPE_RELATIONSHIP_IDS" },
+      "evidence": { "kind": "test", "path": "packages/xlsx/__tests__/render-with-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "XLSX_FORMULA_CACHED_VALUE_MISSING",
+      "status": "active",
+      "emitter": "packages/xlsx/src/quality/workbook-quality.ts",
+      "severity": "warning",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": true, "strategy": "ADD_FORMULA_CACHED_VALUES" },
+      "evidence": { "kind": "fixture", "path": "packages/chaos-lab/fixtures/edge-cases/xlsx/xlsx-formula-no-cache.json" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "XLSX_NAMED_RANGE_DEAD_REF",
+      "status": "active",
+      "emitter": "packages/xlsx/src/quality/workbook-quality.ts",
+      "severity": "warning",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": true, "strategy": "REMOVE_INVALID_DEFINED_NAMES" },
+      "evidence": { "kind": "test", "path": "packages/xlsx/__tests__/cross-sheet-formulas.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "XLSX_MERGE_OVERLAP",
+      "status": "active",
+      "emitter": "packages/xlsx/src/quality/workbook-quality.ts",
+      "severity": "error",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": true, "strategy": "REPAIR_MERGES" },
+      "evidence": { "kind": "fixture", "path": "packages/chaos-lab/fixtures/edge-cases/xlsx/xlsx-overlapping-merges.json" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "XLSX_MERGE_RANGE_OUT_OF_BOUNDS",
+      "status": "active",
+      "emitter": "packages/xlsx/src/quality/workbook-quality.ts",
+      "severity": "error",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": true, "strategy": "REPAIR_MERGES" },
+      "evidence": { "kind": "fixture", "path": "packages/chaos-lab/fixtures/edge-cases/xlsx/xlsx-overlapping-merges.json" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "SHARED_CONTENT_TYPE_MISSING",
+      "status": "active",
+      "emitter": "packages/xlsx/src/quality/workbook-quality.ts",
+      "severity": "error",
+      "expectedVerdict": "visual_fallback",
+      "repair": { "supported": true, "strategy": "FIX_CONTENT_TYPES" },
+      "evidence": { "kind": "test", "path": "packages/xlsx/__tests__/render-with-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "SHARED_CONTENT_TYPE_UNEXPECTED",
+      "status": "active",
+      "emitter": "packages/xlsx/src/quality/workbook-quality.ts",
+      "severity": "warning",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": true, "strategy": "FIX_CONTENT_TYPES" },
+      "evidence": { "kind": "test", "path": "packages/xlsx/__tests__/render-with-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "XLSX_TABLE_RELATIONSHIP_BROKEN",
+      "status": "active",
+      "emitter": "packages/xlsx/src/quality/workbook-quality.ts",
+      "severity": "error",
+      "expectedVerdict": "visual_fallback",
+      "repair": { "supported": true, "strategy": "REPAIR_TABLE_RELATIONSHIPS" },
+      "evidence": { "kind": "test", "path": "packages/xlsx/__tests__/phase4-tables.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "XLSX_TABLE_NAME_DUPLICATE",
+      "status": "active",
+      "emitter": "packages/xlsx/src/quality/workbook-quality.ts",
+      "severity": "warning",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": true, "strategy": "NORMALIZE_TABLE_NAMES" },
+      "evidence": { "kind": "test", "path": "packages/xlsx/__tests__/phase4-tables.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "XLSX_TABLE_REF_INVALID",
+      "status": "active",
+      "emitter": "packages/xlsx/src/quality/workbook-quality.ts",
+      "severity": "error",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": true, "strategy": "REPAIR_TABLE_REFS" },
+      "evidence": { "kind": "test", "path": "packages/xlsx/__tests__/phase4-tables.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "XLSX_WORKSHEET_DIMENSION_MISMATCH",
+      "status": "active",
+      "emitter": "packages/xlsx/src/quality/workbook-quality.ts",
+      "severity": "warning",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": true, "strategy": "RECALCULATE_DIMENSIONS" },
+      "evidence": { "kind": "test", "path": "packages/xlsx/__tests__/render-with-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "XLSX_RANGE_REF_INVALID",
+      "status": "active",
+      "emitter": "packages/xlsx/src/quality/workbook-quality.ts",
+      "severity": "error",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": true, "strategy": "REPAIR_RANGE_REFS" },
+      "evidence": { "kind": "test", "path": "packages/xlsx/__tests__/template-parser.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "XLSX_HYPERLINK_TARGET_INVALID",
+      "status": "active",
+      "emitter": "packages/xlsx/src/quality/workbook-quality.ts",
+      "severity": "warning",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/xlsx/__tests__/template-parser.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "XLSX_MACRO_STRIPPED",
+      "status": "active",
+      "emitter": "packages/xlsx/src/quality/workbook-quality.ts",
+      "severity": "warning",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": true, "strategy": "STRIP_MACROS" },
+      "evidence": { "kind": "test", "path": "packages/xlsx/__tests__/render-with-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "XLSX_EXTERNAL_CONNECTION_STRIPPED",
+      "status": "active",
+      "emitter": "packages/xlsx/src/quality/workbook-quality.ts",
+      "severity": "warning",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": true, "strategy": "STRIP_EXTERNAL_CONNECTIONS" },
+      "evidence": { "kind": "test", "path": "packages/xlsx/__tests__/render-with-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "XLSX_GOOGLE_SHEETS_IMPORT_RISK",
+      "status": "active",
+      "emitter": "packages/xlsx/src/quality/workbook-quality.ts",
+      "severity": "warning",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/xlsx/__tests__/template-parser.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "XLSX_NUMBERS_COMPATIBILITY_WARNING",
+      "status": "active",
+      "emitter": "packages/xlsx/src/quality/workbook-quality.ts",
+      "severity": "warning",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/xlsx/__tests__/render-with-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "XLSX_HIGH_UNIQUE_STRING_COUNT",
+      "status": "active",
+      "emitter": "packages/xlsx/src/quality/workbook-quality.ts",
+      "severity": "warning",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/xlsx/__tests__/render-with-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "XLSX_STYLE_CARDINALITY_EXCESSIVE",
+      "status": "active",
+      "emitter": "packages/xlsx/src/quality/workbook-quality.ts",
+      "severity": "warning",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/xlsx/__tests__/render-with-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "XLSX_STREAM_MODE_RECOMMENDED",
+      "status": "active",
+      "emitter": "packages/xlsx/src/quality/workbook-quality.ts",
+      "severity": "info",
+      "expectedVerdict": "native_editable",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/xlsx/__tests__/phase4-preflight.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "XLSX_FORMULA_REF_BROKEN",
+      "status": "active",
+      "emitter": "packages/xlsx/src/quality/workbook-quality.ts",
+      "severity": "error",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/xlsx/__tests__/cross-sheet-formulas.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "XLSX_DATE_BEFORE_1900",
+      "status": "active",
+      "emitter": "packages/xlsx/src/quality/workbook-quality.ts",
+      "severity": "warning",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/xlsx/__tests__/render-with-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "XLSX_LARGE_FILE_WARNING",
+      "status": "active",
+      "emitter": "packages/xlsx/src/quality/workbook-quality.ts",
+      "severity": "warning",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/xlsx/__tests__/phase4-preflight.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    }
+  ]
+}

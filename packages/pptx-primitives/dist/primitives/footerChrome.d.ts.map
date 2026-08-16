@@ -1,0 +1,1 @@
+{"version":3,"file":"footerChrome.d.ts","sourceRoot":"","sources":["../../src/primitives/footerChrome.ts"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;GAaG;AAEH,OAAO,KAAK,EAAE,SAAS,EAAmB,MAAM,gBAAgB,CAAC;AAMjE,MAAM,WAAW,iBAAiB;IAChC,8BAA8B;IAC9B,UAAU,EAAE,MAAM,CAAC;IACnB,uEAAuE;IACvE,WAAW,EAAE,MAAM,CAAC;CACrB;AAYD,eAAO,MAAM,YAAY,EAAE,SAAS,CAAC,iBAAiB,CA+BrD,CAAC"}

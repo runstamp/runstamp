@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "paths": {
+      "@runstamp/document-diff": ["../document-diff/src/index.ts"],
+      "@runstamp/pdf": ["../json-to-pdf/src/index.ts"],
+      "@runstamp/pptx": ["./src/index.ts"],
+      "@runstamp/pptx/engine": ["./src/public/engine.ts"],
+      "@runstamp/pptx-primitives": ["../pptx-primitives/src/index.ts"],
+      "@runstamp/pptx-extractor": ["../pptx-extractor/src/index.ts"],
+      "@runstamp/protocol": ["../protocol/src/index.ts"],
+      "@runstamp/pvce": ["../pvce/src/index.ts"]
+    },
+    "strict": true,
+    "outDir": "./dist",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "tests"]
+}

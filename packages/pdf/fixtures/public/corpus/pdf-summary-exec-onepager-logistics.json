@@ -1,0 +1,236 @@
+{
+  "id": "pdf-summary-exec-onepager-logistics",
+  "format": "pdf",
+  "description": "Executive one-pager for a logistics SaaS company: a five-tile KPI band, quarter-in-brief prose, highlights and watch items, and a short outlook block.",
+  "provenance": "Modeled on the one-page executive summaries that CFO offices circulate to boards ahead of the full quarterly pack. Exercises a five-column KPI tile band built from a bordered table with stacked heading/paragraph emphasis, a two-column highlights/watch-items split, an ordered list, and tight single-page density with mixed heading levels.",
+  "expectedProperties": {
+    "pageCountMin": 1,
+    "hasTable": true,
+    "kpiTiles": 5,
+    "arrUsdMillions": 84.2,
+    "netRevenueRetentionPct": 111
+  },
+  "document": {
+    "meta": {
+      "title": "Northwind Freight Technologies — Q2 FY2026 Executive Summary",
+      "author": "Office of the CFO",
+      "subject": "Quarterly executive one-pager"
+    },
+    "page": {
+      "size": "Letter",
+      "margin": { "top": 42, "right": 46, "bottom": 46, "left": 46 }
+    },
+    "children": [
+      {
+        "type": "table",
+        "columns": [{ "width": "68%" }, { "width": "32%" }],
+        "body": [
+          {
+            "cells": [
+              {
+                "children": [
+                  { "type": "heading", "level": 1, "font": "Helvetica-Bold", "fontSize": 18, "value": "Q2 FY2026 Executive Summary" },
+                  { "type": "paragraph", "fontSize": 9, "value": "Northwind Freight Technologies, Inc.  |  Prepared by the Office of the CFO" }
+                ],
+                "style": { "backgroundColor": "#eaf1f7", "padding": 8, "borderLeft": { "color": "#173b5e", "width": 3 } }
+              },
+              {
+                "children": [
+                  { "type": "paragraph", "fontSize": 9, "textAlign": "right", "value": "Period: April 1 – June 30, 2026" },
+                  { "type": "paragraph", "fontSize": 9, "textAlign": "right", "value": "Distribution: Board of Directors" },
+                  { "type": "paragraph", "fontSize": 9, "textAlign": "right", "value": "Classification: Confidential" }
+                ],
+                "style": { "verticalAlign": "middle" }
+              }
+            ]
+          }
+        ]
+      },
+      { "type": "divider", "style": { "marginTop": 6, "marginBottom": 10 } },
+      {
+        "type": "table",
+        "style": { "marginBottom": 12 },
+        "columns": [{ "width": "20%" }, { "width": "20%" }, { "width": "20%" }, { "width": "20%" }, { "width": "20%" }],
+        "body": [
+          {
+            "cells": [
+              {
+                "children": [
+                  { "type": "paragraph", "fontSize": 7.5, "style": { "minHeight": 18 }, "value": "ARR" },
+                  { "type": "heading", "level": 2, "font": "Helvetica-Bold", "fontSize": 18, "value": "$84.2M" },
+                  { "type": "paragraph", "fontSize": 8, "value": "+6.1% QoQ" }
+                ],
+                "style": { "backgroundColor": "#edf3f8", "padding": 8, "borderTop": { "color": "#173b5e", "width": 2 }, "borderBottom": { "color": "#aebdca", "width": 0.5 }, "borderRight": { "color": "#aebdca", "width": 0.5 } }
+              },
+              {
+                "children": [
+                  { "type": "paragraph", "fontSize": 7.5, "style": { "minHeight": 18 }, "value": "NET RETENTION" },
+                  { "type": "heading", "level": 2, "font": "Helvetica-Bold", "fontSize": 18, "value": "111%" },
+                  { "type": "paragraph", "fontSize": 8, "value": "vs. 108% in Q1" }
+                ],
+                "style": { "backgroundColor": "#edf3f8", "padding": 8, "borderTop": { "color": "#173b5e", "width": 2 }, "borderBottom": { "color": "#aebdca", "width": 0.5 }, "borderRight": { "color": "#aebdca", "width": 0.5 } }
+              },
+              {
+                "children": [
+                  { "type": "paragraph", "fontSize": 7.5, "style": { "minHeight": 18 }, "value": "GROSS MARGIN" },
+                  { "type": "heading", "level": 2, "font": "Helvetica-Bold", "fontSize": 18, "value": "68.4%" },
+                  { "type": "paragraph", "fontSize": 8, "value": "+120 bps QoQ" }
+                ],
+                "style": { "backgroundColor": "#edf3f8", "padding": 8, "borderTop": { "color": "#173b5e", "width": 2 }, "borderBottom": { "color": "#aebdca", "width": 0.5 }, "borderRight": { "color": "#aebdca", "width": 0.5 } }
+              },
+              {
+                "children": [
+                  { "type": "paragraph", "fontSize": 7.5, "style": { "minHeight": 18 }, "value": "ADJ. EBITDA MARGIN" },
+                  { "type": "heading", "level": 2, "font": "Helvetica-Bold", "fontSize": 18, "value": "(3.2)%" },
+                  { "type": "paragraph", "fontSize": 8, "value": "Plan: (5.0)%" }
+                ],
+                "style": { "backgroundColor": "#fbe9e7", "padding": 8, "borderTop": { "color": "#9b3f35", "width": 2 }, "borderBottom": { "color": "#d6aaa5", "width": 0.5 }, "borderRight": { "color": "#d6aaa5", "width": 0.5 } }
+              },
+              {
+                "children": [
+                  { "type": "paragraph", "fontSize": 7.5, "style": { "minHeight": 18 }, "value": "CASH RUNWAY" },
+                  { "type": "heading", "level": 2, "font": "Helvetica-Bold", "fontSize": 18, "value": "31 mo" },
+                  { "type": "paragraph", "fontSize": 8, "value": "$96.8M on hand" }
+                ],
+                "style": { "backgroundColor": "#edf3f8", "padding": 8, "borderTop": { "color": "#173b5e", "width": 2 }, "borderBottom": { "color": "#aebdca", "width": 0.5 } }
+              }
+            ]
+          }
+        ]
+      },
+      { "type": "heading", "level": 3, "font": "Helvetica-Bold", "style": { "marginTop": 14 }, "value": "Quarter in brief" },
+      { "type": "paragraph", "fontSize": 9.5, "lineHeight": 1.3, "style": { "marginRight": 120 }, "value": "Q2 was our strongest bookings quarter since the Series D. New ARR of $4.8M was led by two enterprise wins — Halvorsen Logistics (EMEA, $1.1M ACV) and Ridgeline Cold Chain (NA, $860K ACV) — both displacing legacy TMS incumbents. Net revenue retention improved to 111% on the back of the carrier-analytics module, which is now attached to 41% of the installed base, up from 29% a quarter ago. Gross margin expanded 120 basis points as the Frankfurt data-center migration completed two weeks early and under budget." },
+      { "type": "paragraph", "fontSize": 9.5, "lineHeight": 1.3, "style": { "marginTop": 4, "marginRight": 120 }, "value": "The quarter was not without friction: sales cycle length in the mid-market segment stretched to 94 days (from 81), and churn in the sub-$25K cohort ran above plan at 14.6% annualized. Both are addressed in the watch items below and in the full board pack, section 4." },
+      {
+        "type": "table",
+        "style": { "marginTop": 10, "marginBottom": 10 },
+        "columns": [{ "width": "48%" }, { "width": "4%" }, { "width": "48%" }],
+        "body": [
+          {
+            "cells": [
+              {
+                "children": [
+                  { "type": "heading", "level": 4, "font": "Helvetica-Bold", "value": "Highlights" },
+                  {
+                    "type": "container",
+                    "style": { "marginTop": 2 },
+                    "children": [
+                      { "type": "container", "style": { "flexDirection": "row", "marginBottom": 2 }, "children": [{ "type": "paragraph", "fontSize": 9, "style": { "width": 12, "marginRight": 6 }, "value": "•" }, { "type": "paragraph", "fontSize": 9, "lineHeight": 1.3, "style": { "flexGrow": 1, "flexShrink": 1 }, "value": "Closed $4.8M new ARR (118% of plan); enterprise segment now 57% of ARR." }] },
+                      { "type": "container", "style": { "flexDirection": "row", "marginBottom": 2 }, "children": [{ "type": "paragraph", "fontSize": 9, "style": { "width": 12, "marginRight": 6 }, "value": "•" }, { "type": "paragraph", "fontSize": 9, "lineHeight": 1.3, "style": { "flexGrow": 1, "flexShrink": 1 }, "value": "Carrier-analytics attach rate reached 41%; module NPS of 62." }] },
+                      { "type": "container", "style": { "flexDirection": "row", "marginBottom": 2 }, "children": [{ "type": "paragraph", "fontSize": 9, "style": { "width": 12, "marginRight": 6 }, "value": "•" }, { "type": "paragraph", "fontSize": 9, "lineHeight": 1.3, "style": { "flexGrow": 1, "flexShrink": 1 }, "value": "Frankfurt DC migration complete; hosting unit cost down 9% run-rate." }] },
+                      { "type": "container", "style": { "flexDirection": "row" }, "children": [{ "type": "paragraph", "fontSize": 9, "style": { "width": 12, "marginRight": 6 }, "value": "•" }, { "type": "paragraph", "fontSize": 9, "lineHeight": 1.3, "style": { "flexGrow": 1, "flexShrink": 1 }, "value": "SOC 2 Type II report issued with zero exceptions on June 19." }] }
+                    ]
+                  }
+                ],
+                "style": { "backgroundColor": "#f2f7fb", "padding": 9, "borderTop": { "color": "#4d7697", "width": 1 } }
+              },
+              { "children": [], "style": { "padding": 0 } },
+              {
+                "children": [
+                  { "type": "heading", "level": 4, "font": "Helvetica-Bold", "value": "Watch items" },
+                  {
+                    "type": "container",
+                    "style": { "marginTop": 2 },
+                    "children": [
+                      { "type": "container", "style": { "flexDirection": "row", "marginBottom": 2 }, "children": [{ "type": "paragraph", "fontSize": 9, "style": { "width": 12, "marginRight": 6 }, "value": "•" }, { "type": "paragraph", "fontSize": 9, "lineHeight": 1.3, "style": { "flexGrow": 1, "flexShrink": 1 }, "value": "Mid-market sales cycle at 94 days; pipeline hygiene review underway with RevOps." }] },
+                      { "type": "container", "style": { "flexDirection": "row", "marginBottom": 2 }, "children": [{ "type": "paragraph", "fontSize": 9, "style": { "width": 12, "marginRight": 6 }, "value": "•" }, { "type": "paragraph", "fontSize": 9, "lineHeight": 1.3, "style": { "flexGrow": 1, "flexShrink": 1 }, "value": "Sub-$25K cohort churn at 14.6% annualized vs. 11% plan; success-team pod pilot starts July 14." }] },
+                      { "type": "container", "style": { "flexDirection": "row", "marginBottom": 2 }, "children": [{ "type": "paragraph", "fontSize": 9, "style": { "width": 12, "marginRight": 6 }, "value": "•" }, { "type": "paragraph", "fontSize": 9, "lineHeight": 1.3, "style": { "flexGrow": 1, "flexShrink": 1 }, "value": "EU AI Act classification memo due from outside counsel by August 1." }] },
+                      { "type": "container", "style": { "flexDirection": "row" }, "children": [{ "type": "paragraph", "fontSize": 9, "style": { "width": 12, "marginRight": 6 }, "value": "•" }, { "type": "paragraph", "fontSize": 9, "lineHeight": 1.3, "style": { "flexGrow": 1, "flexShrink": 1 }, "value": "One P1 availability incident (June 8, 47 minutes); RCA closed, remediation items tracked." }] }
+                    ]
+                  }
+                ],
+                "style": { "backgroundColor": "#fff4f1", "padding": 9, "borderTop": { "color": "#a55349", "width": 1 } }
+              }
+            ]
+          }
+        ]
+      },
+      { "type": "heading", "level": 3, "font": "Helvetica-Bold", "value": "Financial summary vs. plan" },
+      {
+        "type": "table",
+        "style": { "marginTop": 4, "borderTop": { "color": "#1a1a1a", "width": 1 }, "borderBottom": { "color": "#1a1a1a", "width": 1 } },
+        "columns": [{ "width": "34%" }, { "width": "16.5%" }, { "width": "16.5%" }, { "width": "16.5%" }, { "width": "16.5%" }],
+        "header": [
+          {
+            "cells": [
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "value": "$ thousands" }], "style": { "backgroundColor": "#d8e6f1", "padding": 5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "Q2 actual" }], "style": { "backgroundColor": "#d8e6f1", "padding": 5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "Q2 plan" }], "style": { "backgroundColor": "#d8e6f1", "padding": 5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "Variance" }], "style": { "backgroundColor": "#d8e6f1", "padding": 5 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "Q1 actual" }], "style": { "backgroundColor": "#d8e6f1", "padding": 5 } }
+            ]
+          }
+        ],
+        "body": [
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Revenue" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "20,410" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "19,650" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "+760" }], "style": { "backgroundColor": "#e8f4ea", "padding": 4, "borderBottom": { "color": "#b6cfba", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "19,120" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Gross profit" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "13,960" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "13,160" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "+800" }], "style": { "backgroundColor": "#e8f4ea", "padding": 4, "borderBottom": { "color": "#b6cfba", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "12,850" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Operating expenses" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "14,610" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "14,140" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "(470)" }], "style": { "backgroundColor": "#fbe9e7", "padding": 4, "borderBottom": { "color": "#d6aaa5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "13,890" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "value": "Adjusted EBITDA" }], "style": { "padding": 4 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "(650)" }], "style": { "padding": 4 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "(980)" }], "style": { "padding": 4 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "+330" }], "style": { "backgroundColor": "#e8f4ea", "padding": 4 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8.5, "textAlign": "right", "value": "(1,240)" }], "style": { "padding": 4 } }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "style": { "marginTop": 12 },
+        "columns": [{ "width": "100%" }],
+        "body": [
+          {
+            "cells": [
+              {
+                "children": [
+                  { "type": "heading", "font": "Helvetica-Bold", "level": 3, "value": "Outlook and board decisions" },
+                  { "type": "paragraph", "fontSize": 9.5, "lineHeight": 1.35, "style": { "marginTop": 4 }, "value": "We are raising full-year ARR guidance to $92–94M (from $89–92M) on enterprise pipeline strength, while holding the adjusted EBITDA breakeven target at Q4 FY2026. The July board session will cover the mid-market motion redesign and a build/partner decision on customs-brokerage integrations. No change to hiring plan: 38 net adds in H2, weighted to product engineering and enterprise CS." }
+                ],
+                "style": { "backgroundColor": "#eaf1f7", "padding": 10, "borderLeft": { "color": "#173b5e", "width": 3 } }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "style": { "marginTop": 12 },
+        "columns": [{ "width": "100%" }],
+        "body": [{ "cells": [
+          {
+            "children": [
+              { "type": "paragraph", "fontSize": 8.5, "lineHeight": 1.2, "value": "This summary contains forward-looking statements based on management's current expectations. Figures are unaudited and presented on a non-GAAP basis except where noted; reconciliations appear in Appendix C of the Q2 board pack. Contact: mferrante@northwindfreight.io" }
+            ],
+            "style": { "backgroundColor": "#f5f7f9", "padding": 6, "borderTop": { "color": "#7f9bb2", "width": 1 } }
+          }
+        ] }]
+      }
+    ]
+  }
+}

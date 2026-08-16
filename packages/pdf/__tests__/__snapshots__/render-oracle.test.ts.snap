@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`render byte-determinism oracle (M2.b regression guard) > phase2 minimal helvetica doc hashes match snapshot 1`] = `"088d6439c6991312adc2104603d24e7d289553c8af4e57ffa0114f6453fdce44"`;
+
+exports[`render byte-determinism oracle (M2.b regression guard) > phase3 deterministic doc hashes match snapshot 1`] = `"602a19749d2f7c56e0d26fe0a518a0131c074563454fc949164e84359b8cd6ae"`;
+
+exports[`render byte-determinism oracle (M2.b regression guard) > phase3 multi-paragraph doc hashes match snapshot 1`] = `"833a9b8be936dc443b8f9ad5a7cbc19f666ae06dfe867b48945baa059faac60c"`;
+
+exports[`render byte-determinism oracle (M2.b regression guard) > phase5 table doc hashes match snapshot 1`] = `"04cd9f593e8c99ec0469d9668cf4dafbb7397b99704df11ea092ed59d4bba77c"`;

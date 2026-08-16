@@ -1,0 +1,52 @@
+{
+  "id": "pptx-comparison-terminal",
+  "format": "pptx",
+  "surface": "agent",
+  "description": "Agent comparison pattern — terminal preset variant.",
+  "document": {
+    "type": "presentation",
+    "version": "1.0",
+    "presentationTitle": "Operating Model Decision",
+    "companyName": "Northstar Systems",
+    "theme": "terminal",
+    "slides": [
+      {
+        "pattern": "comparison",
+        "content": {
+          "title": "The scaled model replaces local workarounds with shared operating discipline",
+          "subtitle": "Decision view for the FY27 operating plan",
+          "comparison": {
+            "leftLabel": "Current model",
+            "rightLabel": "Scaled model",
+            "rows": [
+              {
+                "left": "Regional teams define account stages independently",
+                "right": "One qualification model governs every enterprise opportunity"
+              },
+              {
+                "left": "Forecasts are rebuilt manually before leadership reviews",
+                "right": "Source systems publish a governed weekly forecast"
+              },
+              {
+                "left": "Customer risks surface through individual escalation",
+                "right": "Renewal health and ownership are visible ninety days out"
+              },
+              {
+                "left": "Implementation playbooks vary by delivery lead",
+                "right": "A standard launch sequence controls scope, evidence, and handoff"
+              },
+              {
+                "left": "Partner enablement is assembled deal by deal",
+                "right": "Certified partners use one maintained commercial toolkit"
+              },
+              {
+                "left": "Postmortems remain inside functional teams",
+                "right": "Root causes graduate into shared controls and operating metrics"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

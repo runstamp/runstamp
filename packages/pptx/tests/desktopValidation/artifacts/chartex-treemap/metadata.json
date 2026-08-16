@@ -1,0 +1,16 @@
+{
+  "fixtureId": "chartex-treemap",
+  "title": "ChartEx treemap",
+  "expectedSlideCount": 1,
+  "actualSlideCount": 1,
+  "validationModes": [
+    "structural",
+    "pdf_render"
+  ],
+  "acceptance": {
+    "expectStructuralPass": true,
+    "expectDesktopOpenPass": true
+  },
+  "renderOptions": null,
+  "pptxPath": "generated.pptx"
+}

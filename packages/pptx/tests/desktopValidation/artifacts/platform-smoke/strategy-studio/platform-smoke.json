@@ -1,0 +1,9 @@
+{
+  "fixtureId": "strategy-studio",
+  "previewSlideCount": 25,
+  "expectedSlideCount": 25,
+  "previewCount": 1,
+  "compileWithPreviewReturnedPreview": true,
+  "compileWithPreviewReturnedPptx": true,
+  "structuralPassed": true
+}

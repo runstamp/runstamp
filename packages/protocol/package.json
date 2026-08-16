@@ -1,0 +1,69 @@
+{
+  "name": "@runstamp/protocol",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Versioned semantic schema and validators for the Runstamp V2 presentation runtime.",
+  "type": "module",
+  "packageManager": "pnpm@10.12.4",
+  "license": "Apache-2.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./accessibility": {
+      "import": "./dist/accessibility.js",
+      "types": "./dist/accessibility.d.ts",
+      "default": "./dist/accessibility.js"
+    },
+    "./extension-runtime": {
+      "import": "./dist/extension-runtime.js",
+      "types": "./dist/extension-runtime.d.ts",
+      "default": "./dist/extension-runtime.js"
+    },
+    "./operation-projection": {
+      "import": "./dist/operation-projection.js",
+      "types": "./dist/operation-projection.d.ts",
+      "default": "./dist/operation-projection.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "pnpm --filter @runstamp/contract build && pnpm --filter @runstamp/pptx-primitives build && pnpm clean && tsc -p tsconfig.build.json",
+    "typecheck": "pnpm run build && tsc --noEmit -p tsconfig.json",
+    "lint": "pnpm exec eslint src *.config.ts",
+    "test": "vitest run --config vitest.config.ts"
+  },
+  "dependencies": {
+    "@runstamp/contract": "workspace:*",
+    "@runstamp/pptx-primitives": "workspace:*",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0",
+    "vite": "^7.3.2",
+    "vitest": "^4.1.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/runstamp/runstamp",
+    "directory": "packages/protocol"
+  },
+  "bugs": "https://github.com/runstamp/runstamp/issues",
+  "homepage": "https://runstamp.com",
+  "runstamp": {
+    "publicSourceMode": "independently-buildable"
+  }
+}

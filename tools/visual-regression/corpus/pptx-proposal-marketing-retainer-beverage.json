@@ -1,0 +1,153 @@
+{
+  "id": "pptx-proposal-marketing-retainer-beverage",
+  "format": "pptx",
+  "surface": "agent",
+  "description": "Integrated marketing retainer proposal for a fast-growing premium non-alcoholic beverage brand.",
+  "provenance": "Modeled on annual agency-of-record proposals for consumer brands: growth diagnosis, audience strategy, channel plan, measurement, campaign calendar, team model, fees, and performance governance. Deliberately exercises a nine-slide deck with a media-mix pie chart, commercial KPI cards, and concrete FY2027 campaign economics.",
+  "expectedProperties": {
+    "slideCount": 9,
+    "hasChart": true,
+    "chartSlides": 1,
+    "chartTypes": ["pie"],
+    "kpiCount": 4
+  },
+  "document": {
+    "type": "presentation",
+    "version": "1.0",
+    "presentationTitle": "FY2027 Integrated Marketing Retainer — Ember Tonic",
+    "companyName": "Northline Brand Partners",
+    "theme": "dark-punch",
+    "designTokens": {
+      "scale": "md",
+      "shape": "sharp"
+    },
+    "slides": [
+      {
+        "pattern": "title",
+        "content": {
+          "title": "FY2027 Integrated Marketing Retainer",
+          "subtitle": "Prepared for Ember Tonic | November 5, 2026 | Northline Brand Partners"
+        }
+      },
+      {
+        "pattern": "statement",
+        "content": {
+          "title": "Turn national availability into repeat household penetration.",
+          "subtitle": "Growth mandate",
+          "prose": [
+            "Eight metros represent 58% of authorized doors and 64% of current velocity.",
+            "National creator and retail-media layers reinforce those priority markets.",
+            "Northline unifies strategy, creative, social, shopper, analytics, and production."
+          ]
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "What the data says",
+          "subtitle": "FY2026 sales, shopper-panel, and brand-tracking diagnosis",
+          "bulletPoints": [
+            "All-commodity volume grew 38%, but 71% of growth came from new distribution rather than same-store velocity",
+            "Unaided awareness is 6% nationally and 14% in the Pacific Northwest; the leading premium competitor is at 19%",
+            "First purchase converts strongly: 42% of trial households repeat within 90 days versus 31% for the category",
+            "Taste and low sugar drive purchase; functional-ingredient messaging is remembered but rarely changes choice",
+            "Retail search share is 4.8% despite 9.2% shelf share in authorized natural and premium grocery doors",
+            "Creative testing shows the bottle and serving ritual outperform abstract wellness imagery by 27% on purchase intent"
+          ]
+        }
+      },
+      {
+        "pattern": "comparison",
+        "content": {
+          "title": "From product proof to a repeatable brand platform",
+          "subtitle": "Current marketing pattern versus the proposed FY2027 system",
+          "kpis": [
+            { "label": "Brand idea", "value": "1", "sublabel": "Evening reset ritual" },
+            { "label": "Metro focus", "value": "8", "sublabel": "Retail/sampling sync" },
+            { "label": "Creators", "value": "40", "sublabel": "Partners with rights" },
+            { "label": "Retail media", "value": "Loop", "sublabel": "New buyer + repeat" }
+          ]
+        }
+      },
+      {
+        "pattern": "dashboard",
+        "content": {
+          "title": "FY2027 commercial objectives",
+          "subtitle": "Joint targets; retail outcomes measured in priority metros",
+          "kpis": [
+            { "label": "Awareness", "value": "12%", "trend": "up", "sublabel": "From 6% nationally" },
+            { "label": "Velocity", "value": "+18%", "trend": "up", "sublabel": "Units/store/week" },
+            { "label": "90d repeat", "value": "48%", "trend": "up", "sublabel": "From 42% today" },
+            { "label": "Search share", "value": "9%", "trend": "up", "sublabel": "Near 2x FY2026" }
+          ]
+        }
+      },
+      {
+        "pattern": "chart-focus",
+        "content": {
+          "title": "Working media follows the consumer from discovery to shelf",
+          "subtitle": "Recommended FY2027 working-media allocation of $7.8M",
+          "chart": {
+            "type": "pie",
+            "title": "Working-media mix ($M)",
+            "series": [
+              {
+                "name": "Media investment",
+                "dataPoints": [
+                  { "category": "Paid social & video", "value": 2.34 },
+                  { "category": "Retail media", "value": 1.95 },
+                  { "category": "Creators", "value": 1.17 },
+                  { "category": "Out-of-home", "value": 1.01 },
+                  { "category": "Search", "value": 0.78 },
+                  { "category": "Audio & podcasts", "value": 0.55 }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "Campaign calendar — one platform, four commercial moments",
+          "subtitle": "Creative system designed for reuse across brand, retail, and earned channels",
+          "bulletPoints": [
+            "January-March — Dry January and awards-season hosting: establish the evening reset ritual and seed bartender credibility",
+            "April-June — Spring table campaign: retail displays, creator dinners, and national food-and-design earned media",
+            "July-September — Summer social occasions: chilled serve, outdoor sampling, and priority-metro out-of-home",
+            "October-December — Holiday trade-up: gifting, hosting bundles, retailer exclusives, and premium search capture",
+            "Always-on — community management, retail media, search, sampling conversion, and monthly creative optimization",
+            "Innovation support — two flavor launches receive naming, packaging hierarchy, launch assets, and retailer sell-in materials"
+          ]
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "Retainer, production, and ways of working",
+          "subtitle": "Twelve-month agency-of-record engagement beginning January 4, 2027",
+          "bulletPoints": [
+            "Integrated strategy and account retainer — $165,000 per month covering named cross-functional team capacity",
+            "Creative development and studio production fund — $1.35M annually, governed through quarterly scopes",
+            "Creator management fee — 12% of contracted creator spend; creator compensation paid at cost with audit rights",
+            "Media planning and buying fee — 7% of managed media; no undisclosed rebates or inventory ownership",
+            "Quarterly performance holdback — 8% of retainer tied equally to delivery, brand-lift, and retail-velocity milestones",
+            "Initial term of 12 months; termination for convenience after month six with 90 days' notice"
+          ]
+        }
+      },
+      {
+        "pattern": "statement",
+        "content": {
+          "title": "Appoint Northline by November 30 for Dry January.",
+          "subtitle": "Proposed next steps",
+          "prose": [
+            "November 9: commercial and legal alignment.",
+            "November 16: data handoff and retailer calendar workshop.",
+            "December 1: team mobilization; December 14: production begins."
+          ]
+        }
+      }
+    ]
+  }
+}

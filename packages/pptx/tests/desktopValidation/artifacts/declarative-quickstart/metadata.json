@@ -1,0 +1,18 @@
+{
+  "fixtureId": "declarative-quickstart",
+  "title": "Canonical declarative quickstart",
+  "expectedSlideCount": 3,
+  "actualSlideCount": 3,
+  "validationModes": [
+    "structural",
+    "desktop_open",
+    "pdf_render",
+    "roundtrip_diff"
+  ],
+  "acceptance": {
+    "expectStructuralPass": true,
+    "expectDesktopOpenPass": true
+  },
+  "renderOptions": null,
+  "pptxPath": "generated.pptx"
+}

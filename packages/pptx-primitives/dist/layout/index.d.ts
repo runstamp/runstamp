@@ -1,0 +1,2 @@
+export type { Rect, PrimitiveNode, ViewNode, ViewShape, ViewFill, PatternFill, TextNode, TextRun, Paragraph, BulletConfig, BulletChar, BulletAutoNum, BulletNone, BulletAutoNumScheme, ImageNode, ChartNode, TableNode, TableRowSpec, TableCellSpec, TableCellContent, TableCellStyle, TableCellBorder, TableCellBorders, ConnectorNode, ConnectorKind, ConnectorPoint, BaseNodeProps, } from "./types.js";
+//# sourceMappingURL=index.d.ts.map

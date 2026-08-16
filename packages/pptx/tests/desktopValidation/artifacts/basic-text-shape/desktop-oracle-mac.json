@@ -1,0 +1,19 @@
+{
+  "fixtureId": "basic-text-shape",
+  "passed": true,
+  "failures": [],
+  "oracle": {
+    "available": true,
+    "fixtureId": "basic-text-shape",
+    "passed": true,
+    "failures": [],
+    "pdfPath": "/Users/jake/plain/plainworks/paperjsx.com/packages/core/tests/desktopValidation/artifacts/basic-text-shape/basic-text-shape.pdf",
+    "savedCopyPath": "/Users/jake/plain/plainworks/paperjsx.com/packages/core/tests/desktopValidation/artifacts/basic-text-shape/basic-text-shape.roundtrip.pptx",
+    "screenshotPath": "/Users/jake/plain/plainworks/paperjsx.com/packages/core/tests/desktopValidation/artifacts/basic-text-shape/basic-text-shape.png",
+    "details": [
+      "Opened presentation: basic-text-shape.input.pptx, slides=1",
+      "PowerPoint canonicalized 13 normalized package part(s) during round-trip save."
+    ]
+  },
+  "structuralPassed": true
+}

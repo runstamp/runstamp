@@ -1,0 +1,25 @@
+{
+  "id": "pptx-statement-monochrome",
+  "format": "pptx",
+  "surface": "agent",
+  "description": "Agent statement pattern — monochrome preset variant.",
+  "document": {
+    "type": "presentation",
+    "version": "1.0",
+    "presentationTitle": "Customer Retention Review",
+    "companyName": "Northstar Systems",
+    "theme": "monochrome",
+    "slides": [
+      {
+        "pattern": "statement",
+        "content": {
+          "title": "Renewal recovery is working — expansion now determines whether we finish the year above plan.",
+          "subtitle": "Management conclusion",
+          "prose": [
+            "Gross retention improved for a third consecutive quarter, while enterprise expansion remains concentrated in six accounts with decisions due before the end of September."
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "id": "pptx-earnings-segment-revenue-industrial",
+  "format": "pptx",
+  "surface": "agent",
+  "description": "Revenue-by-segment earnings deck for a diversified industrial conglomerate, in the style of a segment-reporting supplement.",
+  "provenance": "Modeled on the segment-detail slides that diversified industrials (GE/Honeywell/Emerson style) attach to quarterly earnings packages: consolidated view, per-segment revenue and margin detail, mix chart, and segment-versus-segment commentary. Deliberately exercises a four-series clustered bar chart across four quarters (16 bars), a pie chart with five slices, a comparison slide, and KPI cards carrying explicit card styles.",
+  "expectedProperties": {
+    "slideCount": 7,
+    "chartSlides": 2,
+    "chartTypes": ["bar", "pie"],
+    "hasComparison": true
+  },
+  "document": {
+    "type": "presentation",
+    "version": "1.0",
+    "presentationTitle": "Halvorsen Industries Q2 2026 Segment Review",
+    "companyName": "Halvorsen Industries plc (NYSE: HLV)",
+    "theme": "monochrome",
+    "slides": [
+      {
+        "pattern": "title",
+        "content": {
+          "title": "Q2 2026 Revenue by Segment",
+          "subtitle": "Supplemental segment disclosures | Quarter ended June 30, 2026 | Unaudited"
+        }
+      },
+      {
+        "pattern": "dashboard",
+        "content": {
+          "title": "Consolidated results",
+          "subtitle": "Continuing operations; organic growth excludes FX and the Vantera divestiture",
+          "kpis": [
+            { "label": "Net sales", "value": "$4.86B", "trend": "up", "sublabel": "+7% reported, +5% organic", "style": "dark" },
+            { "label": "Segment operating margin", "value": "21.3%", "trend": "up", "sublabel": "+90 bps YoY", "style": "outline" },
+            { "label": "Adjusted EPS", "value": "$2.47", "trend": "up", "sublabel": "+12% YoY", "style": "outline" },
+            { "label": "Orders", "value": "$5.21B", "trend": "up", "sublabel": "Book-to-bill 1.07x", "style": "outline" }
+          ]
+        }
+      },
+      {
+        "pattern": "chart-focus",
+        "content": {
+          "title": "Segment revenue trend",
+          "subtitle": "Four reporting segments, trailing four quarters",
+          "chart": {
+            "type": "bar",
+            "title": "Revenue by segment ($M)",
+            "series": [
+              {
+                "name": "Automation & Controls",
+                "dataPoints": [
+                  { "category": "Q3 2025", "value": 1621 },
+                  { "category": "Q4 2025", "value": 1702 },
+                  { "category": "Q1 2026", "value": 1658 },
+                  { "category": "Q2 2026", "value": 1741 }
+                ]
+              },
+              {
+                "name": "Aerospace Systems",
+                "dataPoints": [
+                  { "category": "Q3 2025", "value": 1189 },
+                  { "category": "Q4 2025", "value": 1244 },
+                  { "category": "Q1 2026", "value": 1287 },
+                  { "category": "Q2 2026", "value": 1356 }
+                ]
+              },
+              {
+                "name": "Energy Solutions",
+                "dataPoints": [
+                  { "category": "Q3 2025", "value": 934 },
+                  { "category": "Q4 2025", "value": 1012 },
+                  { "category": "Q1 2026", "value": 968 },
+                  { "category": "Q2 2026", "value": 1043 }
+                ]
+              },
+              {
+                "name": "Building Technologies",
+                "dataPoints": [
+                  { "category": "Q3 2025", "value": 689 },
+                  { "category": "Q4 2025", "value": 671 },
+                  { "category": "Q1 2026", "value": 655 },
+                  { "category": "Q2 2026", "value": 718 }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pattern": "chart-focus",
+        "content": {
+          "title": "Revenue mix",
+          "subtitle": "Q2 2026 net sales of $4.86B by segment, including corporate/eliminations",
+          "chart": {
+            "type": "pie",
+            "title": "Q2 2026 revenue mix ($M)",
+            "series": [
+              {
+                "name": "Revenue",
+                "dataPoints": [
+                  { "category": "Automation & Controls", "value": 1741 },
+                  { "category": "Aerospace Systems", "value": 1356 },
+                  { "category": "Energy Solutions", "value": 1043 },
+                  { "category": "Building Technologies", "value": 718 },
+                  { "category": "Corporate & eliminations", "value": 2 }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pattern": "comparison",
+        "content": {
+          "title": "Segment margin walk vs Q2 2025",
+          "subtitle": "Operating margin by segment, year-over-year",
+          "bulletPoints": [
+            "Automation & Controls: 24.8% vs 23.6% — price/cost positive for the seventh straight quarter; software mix now 18% of segment revenue",
+            "Aerospace Systems: 22.1% vs 20.4% — commercial aftermarket up 19%; supply-chain premiums easing on castings and fasteners",
+            "Energy Solutions: 17.9% vs 18.3% — margin down 40 bps on LNG project timing; backlog margin remains accretive",
+            "Building Technologies: 15.2% vs 14.1% — restructuring savings of $22M realized; China property exposure now under 6% of segment sales",
+            "Corporate & eliminations: $(48)M vs $(51)M — lower incentive-compensation accrual",
+            "Total segment operating margin: 21.3% vs 20.4% (+90 bps)"
+          ]
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "Orders and backlog",
+          "subtitle": "Demand indicators by segment",
+          "bulletPoints": [
+            "Total backlog of $12.4B, up 11% YoY; approximately 62% expected to convert within twelve months",
+            "Automation & Controls orders up 9% organically; discrete automation recovering off a low base in semiconductors",
+            "Aerospace Systems book-to-bill of 1.18x, including a $410M widebody environmental-control-systems award",
+            "Energy Solutions orders down 3% on timing of two Middle East LNG packages; funnel up 14% sequentially",
+            "Building Technologies orders up 5%; data-center cooling orders more than doubled YoY and now exceed a $500M annual run-rate"
+          ]
+        }
+      },
+      {
+        "pattern": "statement",
+        "content": {
+          "title": "\"Three of our four segments expanded margins while growing organically — portfolio pruning and the 80/20 operating cadence are doing exactly what we said they would.\"",
+          "subtitle": "Marcus Whitfield, Chairman & Chief Executive Officer"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,333 @@
+{
+  "id": "pdf-invoice-professional-services",
+  "format": "pdf",
+  "description": "Professional-services (consulting) invoice with twelve dated time-entry lines by consultant and role, a fee summary by role, reimbursable expenses, and engagement-letter payment terms.",
+  "provenance": "Modeled on monthly fee invoices from advisory and consulting partnerships (Big Four / boutique advisory style) billed on a time-and-materials basis. Exercises a long six-column time-entry table that stresses row density and repeated header styling, a secondary rate-summary table, an expenses table, and stacked totals rows carried across the tables.",
+  "expectedProperties": {
+    "pageCountMin": 1,
+    "hasTable": true,
+    "timeEntryRows": 12,
+    "totalHours": 72.5,
+    "currency": "USD",
+    "totalDue": "27,944.70"
+  },
+  "document": {
+    "meta": {
+      "title": "Meridian & Cole Advisory LLP — Invoice 2026-0642",
+      "author": "Meridian & Cole Advisory LLP",
+      "subject": "Professional services rendered — June 2026"
+    },
+    "page": {
+      "size": "Letter",
+      "margin": { "top": 46, "right": 50, "bottom": 54, "left": 50 }
+    },
+    "children": [
+      {
+        "type": "table",
+        "columns": [{ "width": "58%" }, { "width": "42%" }],
+        "body": [
+          {
+            "cells": [
+              {
+                "children": [
+                  { "type": "heading", "level": 2, "value": "Meridian & Cole Advisory LLP" },
+                  { "type": "paragraph", "fontSize": 9, "value": "125 Summer Street, 18th Floor" },
+                  { "type": "paragraph", "fontSize": 9, "value": "Boston, MA 02110" },
+                  { "type": "paragraph", "fontSize": 9, "value": "accounts@meridiancole.com  |  +1 (617) 555-0182" },
+                  { "type": "paragraph", "fontSize": 9, "value": "Federal EIN 47-2216390" }
+                ]
+              },
+              {
+                "children": [
+                  { "type": "heading", "level": 3, "textAlign": "right", "value": "Invoice for professional services" },
+                  { "type": "paragraph", "fontSize": 9, "textAlign": "right", "value": "Invoice no. 2026-0642" },
+                  { "type": "paragraph", "fontSize": 9, "textAlign": "right", "value": "Invoice date: June 30, 2026" },
+                  { "type": "paragraph", "fontSize": 9, "textAlign": "right", "value": "Terms: Net 15 per engagement letter" },
+                  { "type": "paragraph", "fontSize": 9, "textAlign": "right", "value": "Engagement: EL-2026-014 — Core banking replatform QA" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      { "type": "divider", "style": { "marginTop": 8, "marginBottom": 8 } },
+      {
+        "type": "table",
+        "style": { "marginBottom": 12 },
+        "columns": [{ "width": "50%" }, { "width": "50%" }],
+        "body": [
+          {
+            "cells": [
+              {
+                "children": [
+                  { "type": "heading", "level": 4, "value": "Client" },
+                  { "type": "paragraph", "fontSize": 9, "value": "Commonwealth Mutual Savings Bank" },
+                  { "type": "paragraph", "fontSize": 9, "value": "Attn: Priya Raman, VP Technology PMO" },
+                  { "type": "paragraph", "fontSize": 9, "value": "60 State Street, Suite 2200" },
+                  { "type": "paragraph", "fontSize": 9, "value": "Boston, MA 02109" }
+                ],
+                "style": { "paddingRight": 16 }
+              },
+              {
+                "children": [
+                  { "type": "heading", "level": 4, "value": "Billing period" },
+                  { "type": "paragraph", "fontSize": 9, "value": "June 1 – June 30, 2026" },
+                  { "type": "paragraph", "fontSize": 9, "value": "Matter reference: CMSB-CBR-QA" },
+                  { "type": "paragraph", "fontSize": 9, "value": "Approved budget this period: 80.0 hours (72.5 consumed)" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      { "type": "heading", "level": 3, "value": "Time entries" },
+      {
+        "type": "table",
+        "style": { "marginTop": 4, "borderTop": { "color": "#222222", "width": 1 }, "borderBottom": { "color": "#222222", "width": 1 } },
+        "columns": [
+          { "width": "11%" },
+          { "width": "15%" },
+          { "width": "16%" },
+          { "width": "34%" },
+          { "width": "7%" },
+          { "width": "8%" },
+          { "width": "9%" }
+        ],
+        "header": [
+          {
+            "cells": [
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "value": "Date" }], "style": { "backgroundColor": "#dfe3e8", "padding": 4 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "value": "Consultant" }], "style": { "backgroundColor": "#dfe3e8", "padding": 4 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "value": "Role" }], "style": { "backgroundColor": "#dfe3e8", "padding": 4 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "value": "Work performed" }], "style": { "backgroundColor": "#dfe3e8", "padding": 4 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "Hours" }], "style": { "backgroundColor": "#dfe3e8", "padding": 4 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "Rate" }], "style": { "backgroundColor": "#dfe3e8", "padding": 4 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "Amount" }], "style": { "backgroundColor": "#dfe3e8", "padding": 4 } }
+            ]
+          }
+        ],
+        "body": [
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "06/02" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "D. Okafor" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "Engagement Partner" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "Steering committee prep; risk register review with CIO office" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "3.5" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "625.00" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "2,187.50" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "06/03" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "S. Lindqvist" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "Senior Manager" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "Test strategy workshop; defect triage process design (sessions 1–2)" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "8.0" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "440.00" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "3,520.00" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "06/04" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "S. Lindqvist" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "Senior Manager" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "Traceability matrix build-out; interface inventory reconciliation" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "6.5" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "440.00" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "2,860.00" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "06/05" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "R. Patel" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "Senior Consultant" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "SIT cycle 2 execution — payments domain, 41 scripts" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "8.0" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "315.00" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "2,520.00" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "06/08" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "R. Patel" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "Senior Consultant" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "SIT cycle 2 execution — deposits domain; defect retest batch 7" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "7.5" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "315.00" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "2,362.50" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "06/09" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "J. Whitfield" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "Consultant" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "Regression suite automation — teller journal scenarios (12 flows)" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "8.0" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "245.00" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "1,960.00" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "06/10" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "J. Whitfield" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "Consultant" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "Regression suite automation — ACH origination and returns" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "8.0" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "245.00" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "1,960.00" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "06/11" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "D. Okafor" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "Engagement Partner" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "Go/no-go readiness review with executive sponsor" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "2.0" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "625.00" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "1,250.00" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "06/12" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "S. Lindqvist" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "Senior Manager" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "Cutover rehearsal planning; batch window dependency mapping" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "5.5" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "440.00" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "2,420.00" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "06/15" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "R. Patel" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "Senior Consultant" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "SIT cycle 2 closure report; defect aging analysis for PMO" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "8.0" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "315.00" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "2,520.00" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "06/16" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "J. Whitfield" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "Consultant" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "Automation pipeline integration with client CI environment" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "6.0" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "245.00" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "1,470.00" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "06/17" }], "style": { "padding": 4 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "D. Okafor" }], "style": { "padding": 4 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "Engagement Partner" }], "style": { "padding": 4 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "Monthly quality report sign-off; fee review with client PMO" }], "style": { "padding": 4 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "1.5" }], "style": { "padding": 4 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "625.00" }], "style": { "padding": 4 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "937.50" }], "style": { "padding": 4 } }
+            ]
+          }
+        ],
+        "footer": [
+          {
+            "cells": [
+              { "colSpan": 4, "children": [{ "type": "paragraph", "fontSize": 8, "value": "Total professional fees" }], "style": { "backgroundColor": "#eef0f3", "padding": 4, "borderTop": { "color": "#222222", "width": 1 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "72.5" }], "style": { "backgroundColor": "#eef0f3", "padding": 4, "borderTop": { "color": "#222222", "width": 1 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "" }], "style": { "backgroundColor": "#eef0f3", "padding": 4, "borderTop": { "color": "#222222", "width": 1 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "25,967.50" }], "style": { "backgroundColor": "#eef0f3", "padding": 4, "borderTop": { "color": "#222222", "width": 1 } } }
+            ]
+          }
+        ]
+      },
+      { "type": "heading", "level": 3, "style": { "marginTop": 14 }, "value": "Reimbursable expenses (at cost, per Appendix B of engagement letter)" },
+      {
+        "type": "table",
+        "style": { "marginTop": 4, "borderTop": { "color": "#222222", "width": 1 }, "borderBottom": { "color": "#222222", "width": 1 } },
+        "columns": [{ "width": "60%" }, { "width": "22%" }, { "width": "18%" }],
+        "header": [
+          {
+            "cells": [
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "value": "Expense" }], "style": { "backgroundColor": "#dfe3e8", "padding": 4 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "value": "Supporting reference" }], "style": { "backgroundColor": "#dfe3e8", "padding": 4 } },
+              { "role": "th", "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "Amount (USD)" }], "style": { "backgroundColor": "#dfe3e8", "padding": 4 } }
+            ]
+          }
+        ],
+        "body": [
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "Rail travel, Boston–New York (2 return trips, vendor workshops)" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "EXP-2026-1108" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "684.20" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "Lodging, 3 nights (vendor site testing, White Plains NY)" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "EXP-2026-1112" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "918.00" }], "style": { "padding": 4, "borderBottom": { "color": "#d5d5d5", "width": 0.5 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "Per diem meals, 5 days at contracted $75.00/day" }], "style": { "padding": 4 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "value": "EXP-2026-1115" }], "style": { "padding": 4 } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "375.00" }], "style": { "padding": 4 } }
+            ]
+          }
+        ],
+        "footer": [
+          {
+            "cells": [
+              { "colSpan": 2, "children": [{ "type": "paragraph", "fontSize": 8, "value": "Total reimbursable expenses" }], "style": { "backgroundColor": "#eef0f3", "padding": 4, "borderTop": { "color": "#222222", "width": 1 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 8, "textAlign": "right", "value": "1,977.20" }], "style": { "backgroundColor": "#eef0f3", "padding": 4, "borderTop": { "color": "#222222", "width": 1 } } }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "style": { "marginTop": 12 },
+        "columns": [{ "width": "55%" }, { "width": "27%" }, { "width": "18%" }],
+        "body": [
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 9, "value": " " }], "style": { "padding": 4 } },
+              { "children": [{ "type": "paragraph", "fontSize": 9, "value": "Professional fees" }], "style": { "padding": 4 } },
+              { "children": [{ "type": "paragraph", "fontSize": 9, "textAlign": "right", "value": "25,967.50" }], "style": { "padding": 4 } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 9, "value": " " }], "style": { "padding": 4 } },
+              { "children": [{ "type": "paragraph", "fontSize": 9, "value": "Reimbursable expenses" }], "style": { "padding": 4, "borderBottom": { "color": "#222222", "width": 1 } } },
+              { "children": [{ "type": "paragraph", "fontSize": 9, "textAlign": "right", "value": "1,977.20" }], "style": { "padding": 4, "borderBottom": { "color": "#222222", "width": 1 } } }
+            ]
+          },
+          {
+            "cells": [
+              { "children": [{ "type": "paragraph", "fontSize": 9, "value": " " }], "style": { "padding": 4 } },
+              { "children": [{ "type": "heading", "level": 4, "value": "Total due (USD)" }], "style": { "padding": 5, "backgroundColor": "#dfe3e8" } },
+              { "children": [{ "type": "heading", "level": 4, "textAlign": "right", "value": "27,944.70" }], "style": { "padding": 5, "backgroundColor": "#dfe3e8" } }
+            ]
+          }
+        ]
+      },
+      { "type": "heading", "level": 4, "style": { "marginTop": 16 }, "value": "Payment instructions" },
+      { "type": "paragraph", "fontSize": 9, "value": "Payment is due within 15 days of the invoice date per section 6.1 of engagement letter EL-2026-014. Remit by ACH to Beacon Hill Trust Company, routing 011002550, account 8830127745, referencing invoice 2026-0642. Professional services are exempt from Massachusetts sales tax under G.L. c. 64H." },
+      { "type": "paragraph", "fontSize": 8, "style": { "marginTop": 10 }, "value": "Detailed time narratives are maintained in our engagement management system and are available on request. Rates shown are the blended contract rates agreed in Appendix A (2026 rate card) and are fixed through December 31, 2026." }
+    ]
+  }
+}

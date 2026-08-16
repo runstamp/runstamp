@@ -1,0 +1,556 @@
+{
+  "id": "docx-agreement-software-license",
+  "format": "docx",
+  "description": "Enterprise software license agreement with a definitions table, license-tier entitlement matrix, fee schedule, and multi-level restriction clauses.",
+  "provenance": "Modeled on the perpetual-plus-maintenance license agreements used by industrial software vendors (CAD, simulation, EDA), where entitlements are expressed as a tier matrix and use restrictions run to deep sub-clause numbering. Deliberately exercises a two-column definitions table, an entitlement matrix with column widths and centered checkmark-style cells, decimal clause numbering to three levels (7.2.1), nested letter lists, a footnoted export-control clause, and a fee schedule table with computed totals.",
+  "expectedProperties": {
+    "pageCountMin": 4,
+    "hasTable": true,
+    "definitionRows": 8,
+    "licenseTiers": 3
+  },
+  "document": {
+    "type": "DocxDocument",
+    "pageSize": "letter",
+    "margins": { "top": 72, "right": 54, "bottom": 72, "left": 54 },
+    "metadata": {
+      "title": "Software License and Maintenance Agreement",
+      "author": "Vektorfeld Simulation GmbH",
+      "subject": "Enterprise license agreement — TurbineFlow Suite",
+      "language": "en-US"
+    },
+    "theme": {
+      "preset": "minimal"
+    },
+    "header": {
+      "text": "Vektorfeld Simulation GmbH — Software License and Maintenance Agreement No. VS-LA-26-0412"
+    },
+    "footer": {
+      "text": "Software License Agreement — Confidential",
+      "includePageNumber": true
+    },
+    "pages": [
+      {
+        "elements": [
+          {
+            "type": "heading",
+            "level": 1,
+            "text": "SOFTWARE LICENSE AND MAINTENANCE AGREEMENT"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "This Software License and Maintenance Agreement (this ", "style": {} },
+              { "text": "“Agreement”", "style": { "fontWeight": "bold" } },
+              { "text": ") is effective as of April 12, 2026 (the “Effective Date”) between " },
+              { "text": "Vektorfeld Simulation GmbH", "style": { "fontWeight": "bold" } },
+              { "text": ", Lindwurmstraße 88, 80337 Munich, Germany (“Licensor”), and " },
+              { "text": "Aerodyne Turbine Works, Inc.", "style": { "fontWeight": "bold" } },
+              { "text": ", 4900 Commerce Parkway, Greenville, SC 29607, USA (“Licensee”). Licensor and Licensee are each a “Party” and together the “Parties”." }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "1. Definitions"
+          },
+          {
+            "type": "paragraph",
+            "text": "In this Agreement, the following terms have the meanings set out below. Other capitalized terms are defined where they first appear."
+          },
+          {
+            "type": "table",
+            "tableStyle": "minimal",
+            "repeatHeaders": true,
+            "tableCaption": "Defined terms",
+            "columns": [
+              { "width": 130 },
+              { "width": 338 }
+            ],
+            "rows": [
+              {
+                "isHeader": true,
+                "cells": [
+                  { "text": "Term", "style": { "fontWeight": "bold" } },
+                  { "text": "Meaning", "style": { "fontWeight": "bold" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "“Authorized Users”", "style": { "fontWeight": "bold" } },
+                  { "text": "Employees and Contractors of Licensee and its Affiliates who are permitted to access the Software under the tier acquired per Section 3 and Exhibit A." }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "“Concurrent Session”", "style": { "fontWeight": "bold" } },
+                  { "text": "A simultaneous checkout of a license token from the license server, measured per solver instance; batch jobs queued but not executing do not consume a session." }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "“Documentation”", "style": { "fontWeight": "bold" } },
+                  { "text": "Licensor’s then-current user manuals, installation guides, solver reference and release notes for the Software, in electronic form." }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "“Maintenance Term”", "style": { "fontWeight": "bold" } },
+                  { "text": "Each twelve (12) month period for which Licensee has paid the Maintenance Fee in Exhibit B, commencing on the Effective Date." }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "“Named Site”", "style": { "fontWeight": "bold" } },
+                  { "text": "Licensee’s facilities at Greenville, SC and Derby, United Kingdom, as may be amended by written notice under Section 12.4." }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "“Software”", "style": { "fontWeight": "bold" } },
+                  { "text": "The TurbineFlow Suite computational fluid dynamics software, release 2026.1, in object code form only, together with the modules identified in Exhibit A and any Updates provided under Section 6." }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "“Update”", "style": { "fontWeight": "bold" } },
+                  { "text": "A release of the Software designated by a change to the right of the first decimal point (e.g., 2026.1 to 2026.2), including hotfixes and service packs. Updates exclude separately priced new modules." }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "“Upgrade”", "style": { "fontWeight": "bold" } },
+                  { "text": "A release designated by a change to the left of the first decimal point (e.g., 2026.x to 2027.0). Upgrades are included only while a Maintenance Term is current." }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "2. License Grant"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "2.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "Subject to payment of the License Fee and Licensee’s compliance with this Agreement, Licensor grants Licensee a perpetual, non-exclusive, non-transferable license, without right of sublicense, to install and use the Software at the Named Sites, solely for Licensee’s internal design and analysis of turbomachinery products, up to the Concurrent Session counts stated in Exhibit A for the tier acquired." }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "2.2  ", "style": { "fontWeight": "bold" } },
+              { "text": "Licensee may make a reasonable number of copies of the Software for backup, archival and disaster recovery purposes, provided all copies reproduce Licensor’s proprietary notices. Disaster recovery instances may be activated only during a declared disaster or up to four (4) failover tests per calendar year." }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "3. License Tiers and Entitlements"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "3.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "Licensee has acquired the " },
+              { "text": "Enterprise", "style": { "fontWeight": "bold" } },
+              { "text": " tier. The entitlement matrix below is contractual; marketing materials do not amend it (Section 12.6)." }
+            ]
+          },
+          {
+            "type": "table",
+            "tableStyle": "bordered",
+            "repeatHeaders": true,
+            "caption": "Exhibit A (extract): Entitlement matrix by license tier",
+            "tableCaption": "Entitlement matrix by license tier",
+            "columns": [
+              { "width": 168 },
+              { "width": 100 },
+              { "width": 100 },
+              { "width": 100 }
+            ],
+            "rows": [
+              {
+                "isHeader": true,
+                "cells": [
+                  { "text": "Entitlement", "style": { "fontWeight": "bold", "backgroundColor": "EFEFEF" } },
+                  { "text": "Workgroup", "style": { "fontWeight": "bold", "backgroundColor": "EFEFEF", "textAlign": "center" } },
+                  { "text": "Division", "style": { "fontWeight": "bold", "backgroundColor": "EFEFEF", "textAlign": "center" } },
+                  { "text": "Enterprise", "style": { "fontWeight": "bold", "backgroundColor": "EFEFEF", "textAlign": "center" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Concurrent Sessions (pre-processor)" },
+                  { "text": "5", "style": { "textAlign": "center" } },
+                  { "text": "15", "style": { "textAlign": "center" } },
+                  { "text": "40", "style": { "textAlign": "center" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Concurrent Sessions (solver, per 32 cores)" },
+                  { "text": "2", "style": { "textAlign": "center" } },
+                  { "text": "8", "style": { "textAlign": "center" } },
+                  { "text": "24", "style": { "textAlign": "center" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "HPC burst tokens (cloud, hours/year)" },
+                  { "text": "Not included", "style": { "textAlign": "center" } },
+                  { "text": "10,000", "style": { "textAlign": "center" } },
+                  { "text": "50,000", "style": { "textAlign": "center" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Named Sites" },
+                  { "text": "1", "style": { "textAlign": "center" } },
+                  { "text": "2", "style": { "textAlign": "center" } },
+                  { "text": "Unlimited within Licensee group", "style": { "textAlign": "center" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Combustion module (Section 2.1 scope)" },
+                  { "text": "—", "style": { "textAlign": "center" } },
+                  { "text": "Optional add-on", "style": { "textAlign": "center" } },
+                  { "text": "Included", "style": { "textAlign": "center" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Aeroacoustics module" },
+                  { "text": "—", "style": { "textAlign": "center" } },
+                  { "text": "—", "style": { "textAlign": "center" } },
+                  { "text": "Included", "style": { "textAlign": "center" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Support channel / response (Section 6.3)" },
+                  { "text": "Portal / 2 Business Days", "style": { "textAlign": "center" } },
+                  { "text": "Portal + phone / 1 Business Day", "style": { "textAlign": "center" } },
+                  { "text": "Dedicated engineer / 4 business hours", "style": { "textAlign": "center" } }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "4. Fees and Payment"
+          },
+          {
+            "type": "table",
+            "tableStyle": "corporate",
+            "repeatHeaders": true,
+            "caption": "Exhibit B (extract): Fee schedule",
+            "tableCaption": "Fee schedule",
+            "columns": [
+              { "width": 210 },
+              { "width": 90 },
+              { "width": 80 },
+              { "width": 88 }
+            ],
+            "rows": [
+              {
+                "isHeader": true,
+                "cells": [
+                  { "text": "Item", "style": { "fontWeight": "bold" } },
+                  { "text": "Unit fee (USD)", "style": { "fontWeight": "bold", "textAlign": "right" } },
+                  { "text": "Quantity", "style": { "fontWeight": "bold", "textAlign": "center" } },
+                  { "text": "Extended (USD)", "style": { "fontWeight": "bold", "textAlign": "right" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Enterprise tier perpetual license — TurbineFlow Suite 2026.1" },
+                  { "text": "612,500.00", "style": { "textAlign": "right" } },
+                  { "text": "1", "style": { "textAlign": "center" } },
+                  { "text": "612,500.00", "style": { "textAlign": "right" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Additional solver session pack (8 sessions)" },
+                  { "text": "48,000.00", "style": { "textAlign": "right" } },
+                  { "text": "2", "style": { "textAlign": "center" } },
+                  { "text": "96,000.00", "style": { "textAlign": "right" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Year 1 Maintenance Fee (20% of license fees)" },
+                  { "text": "141,700.00", "style": { "textAlign": "right" } },
+                  { "text": "1", "style": { "textAlign": "center" } },
+                  { "text": "141,700.00", "style": { "textAlign": "right" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Onboarding and solver validation services (fixed fee)" },
+                  { "text": "35,000.00", "style": { "textAlign": "right" } },
+                  { "text": "1", "style": { "textAlign": "center" } },
+                  { "text": "35,000.00", "style": { "textAlign": "right" } }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Total due on Effective Date (net 30, excl. taxes)", "style": { "fontWeight": "bold" } },
+                  { "text": "", "style": {} },
+                  { "text": "", "style": {} },
+                  { "text": "885,200.00", "style": { "fontWeight": "bold", "textAlign": "right" } }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "4.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "Maintenance Fees for renewal Maintenance Terms shall not increase by more than five percent (5%) over the prior term’s fee, provided renewal is continuous. Lapsed maintenance may be reinstated only upon payment of all lapsed fees plus a fifteen percent (15%) reinstatement charge." }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "5. Restrictions"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "5.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "Except as expressly permitted by this Agreement or by law that cannot be excluded, Licensee shall not, and shall not permit any third party to:" }
+            ]
+          },
+          {
+            "type": "list",
+            "listType": "letter",
+            "items": [
+              { "text": "copy, modify, translate or create derivative works of the Software or Documentation;" },
+              { "text": "reverse engineer, decompile or disassemble the Software, except to the extent permitted by Directive 2009/24/EC Art. 6 or 17 U.S.C. § 117 notwithstanding this limitation;" },
+              { "text": "use the Software to provide service-bureau, outsourcing or hosted analysis services to any third party other than an Affiliate;" },
+              { "text": "disclose benchmark or performance test results to any third party without Licensor's prior written consent;" },
+              { "text": "circumvent or disable the license server, token metering, or any technical protection measure." }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "6. Maintenance and Support"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "6.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "During each paid Maintenance Term, Licensor shall provide (a) Updates and Upgrades as released for general availability; (b) remote technical support through the channel stated for Licensee’s tier in Exhibit A; and (c) access to the solver validation database." }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "6.2  ", "style": { "fontWeight": "bold" } },
+              { "text": "Licensor shall support each release of the Software for thirty-six (36) months following its general availability date. Error corrections for releases outside this window are at Licensor’s discretion." }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "6.3  ", "style": { "fontWeight": "bold" } },
+              { "text": "Support response targets run from receipt of a complete error report at the applicable channel. Severity classifications and escalation are described in the Support Handbook, which does not amend this Agreement." }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "7. Intellectual Property and Indemnity"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "7.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "The Software is licensed, not sold. Licensor and its licensors retain all right, title and interest in and to the Software and Documentation." }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "7.2  ", "style": { "fontWeight": "bold" } },
+              { "text": "Licensor shall defend Licensee against any third-party claim that the Software, as delivered and used in accordance with this Agreement, infringes a patent or copyright enforceable in the United States, the European Union or the United Kingdom, and shall indemnify Licensee against damages finally awarded, provided that:" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "7.2.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "Licensee notifies Licensor promptly in writing of the claim and grants Licensor sole control of the defense and settlement;" }
+            ],
+            "indent": { "left": 24 }
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "7.2.2  ", "style": { "fontWeight": "bold" } },
+              { "text": "Licensee provides reasonable assistance at Licensor’s expense; and" }
+            ],
+            "indent": { "left": 24 }
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "7.2.3  ", "style": { "fontWeight": "bold" } },
+              { "text": "the claim does not arise from combination with items not supplied by Licensor, from modification other than by Licensor, or from use of a superseded release after Licensor has made a non-infringing Update available at no charge." }
+            ],
+            "indent": { "left": 24 }
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "8. Limitation of Liability"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "8.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "EXCEPT FOR LIABILITY UNDER SECTION 7.2, BREACH OF SECTION 5, OR EITHER PARTY’S WILLFUL MISCONDUCT, NEITHER PARTY’S AGGREGATE LIABILITY ARISING OUT OF THIS AGREEMENT SHALL EXCEED THE FEES PAID OR PAYABLE BY LICENSEE IN THE TWENTY-FOUR (24) MONTHS PRECEDING THE EVENT GIVING RISE TO LIABILITY, AND NEITHER PARTY SHALL BE LIABLE FOR LOST PROFITS OR INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES, EVEN IF ADVISED OF THEIR POSSIBILITY." }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "9. Export Control"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "9.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "The Software is classified under ECCN 0D999 and EU dual-use annex entry none as of the Effective Date. Licensee shall not export, re-export or transfer the Software contrary to U.S. Export Administration Regulations, EU Regulation 2021/821, or applicable sanctions programs, and shall not permit access by persons on any restricted-party list." }
+            ],
+            "footnote": "Classification is provided for convenience and may change upon re-release; Licensor will publish current classifications in the customer portal. Licensee remains responsible for its own export compliance determinations."
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "10. Term and Termination"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "10.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "This Agreement continues until terminated. Licensor may terminate the license granted in Section 2.1 if Licensee materially breaches Section 5 and fails to cure within fifteen (15) days of written notice, or breaches any other material term and fails to cure within thirty (30) days." }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "10.2  ", "style": { "fontWeight": "bold" } },
+              { "text": "Upon termination of the license, Licensee shall cease all use, de-install the Software from all systems, and certify destruction within thirty (30) days. Sections 1, 5, 7.1, 8, 9, 11 and 12 survive termination." }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "11. Confidentiality"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "11.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "Each Party shall protect the other’s Confidential Information with at least the care it uses for its own similar information, and not less than reasonable care, and use it only to perform this Agreement. These obligations continue for five (5) years after disclosure, and indefinitely for the Software and trade secrets." }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "12. General"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "12.1  ", "style": { "fontWeight": "bold" } },
+              { "text": "Governing law: the laws of the State of New York, excluding its conflict-of-laws rules and the UN Convention on Contracts for the International Sale of Goods. Exclusive venue: the state and federal courts sitting in New York County, New York." }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "12.2  ", "style": { "fontWeight": "bold" } },
+              { "text": "Assignment: neither Party may assign this Agreement without the other’s prior written consent, except to a successor in a merger or sale of substantially all assets, provided the successor is not a direct competitor of the non-assigning Party." }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "12.3  ", "style": { "fontWeight": "bold" } },
+              { "text": "Audit: not more than once per calendar year on twenty (20) Business Days’ notice, Licensor may audit license-server logs to verify compliance with Section 2 and Exhibit A. Shortfalls are payable at the then-current list price less the discount percentage reflected in Exhibit B." }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "12.4  ", "style": { "fontWeight": "bold" } },
+              { "text": "Notices: in writing, in English, to the addresses on page 1, with a copy for legal notices to legal@vektorfeld.example and contracts@aerodyneturbine.example; deemed received two (2) Business Days after dispatch by internationally recognized courier." }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "12.5  ", "style": { "fontWeight": "bold" } },
+              { "text": "Order of precedence: (i) this Agreement’s main body; (ii) Exhibit A; (iii) Exhibit B; (iv) any mutually executed order document. Preprinted purchase order terms are of no effect." }
+            ]
+          },
+          {
+            "type": "container",
+            "keepTogether": true,
+            "children": [
+              {
+                "type": "paragraph",
+                "runs": [
+                  { "text": "12.6  ", "style": { "fontWeight": "bold" } },
+                  { "text": "Entire agreement: this Agreement, including Exhibits A and B, is the entire agreement between the Parties regarding its subject matter and supersedes all prior discussions and agreements, including the evaluation agreement dated November 3, 2025." }
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "table",
+                "tableStyle": "plain",
+                "repeatHeaders": false,
+                "columns": [
+                  { "width": 234 },
+                  { "width": 234 }
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      {
+                        "elements": [
+                          { "type": "paragraph", "runs": [ { "text": "VEKTORFELD SIMULATION GMBH", "style": { "fontWeight": "bold" } } ] },
+                          { "type": "paragraph", "text": "By: Dr. Anneke Roth" },
+                          { "type": "paragraph", "text": "Title: Managing Director" },
+                          { "type": "paragraph", "text": "Date: April 12, 2026" }
+                        ]
+                      },
+                      {
+                        "elements": [
+                          { "type": "paragraph", "runs": [ { "text": "AERODYNE TURBINE WORKS, INC.", "style": { "fontWeight": "bold" } } ] },
+                          { "type": "paragraph", "text": "By: Carlton Mays" },
+                          { "type": "paragraph", "text": "Title: VP, Engineering Operations" },
+                          { "type": "paragraph", "text": "Date: April 14, 2026" }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

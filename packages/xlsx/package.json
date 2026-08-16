@@ -1,0 +1,126 @@
+{
+  "name": "@runstamp/xlsx",
+  "version": "1.0.1",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "description": "Generate Excel workbooks from JSON",
+  "license": "Apache-2.0",
+  "type": "module",
+  "packageManager": "pnpm@10.12.4",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/runstamp/runstamp",
+    "directory": "packages/xlsx"
+  },
+  "homepage": "https://runstamp.com",
+  "bugs": "https://github.com/runstamp/runstamp/issues",
+  "keywords": [
+    "json-to-xlsx",
+    "xlsx",
+    "spreadsheet-generation",
+    "excel",
+    "office"
+  ],
+  "files": [
+    "dist",
+    "docs",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./benchmarks/report": {
+      "types": "./dist/benchmarks/report.d.ts",
+      "import": "./dist/benchmarks/report.js"
+    },
+    "./benchmarks/phase2": {
+      "types": "./dist/benchmarks/phase2.d.ts",
+      "import": "./dist/benchmarks/phase2.js"
+    },
+    "./benchmarks/rigorous": {
+      "types": "./dist/benchmarks/rigorous.d.ts",
+      "import": "./dist/benchmarks/rigorous.js"
+    },
+    "./chaos-lab": {
+      "types": "./dist/chaos-lab/index.d.ts",
+      "import": "./dist/chaos-lab/index.js"
+    },
+    "./ops": {
+      "types": "./dist/ops/index.d.ts",
+      "import": "./dist/ops/index.js"
+    },
+    "./ops/descriptor": {
+      "types": "./dist/ops/descriptor.d.ts",
+      "import": "./dist/ops/descriptor.js"
+    }
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "pnpm --filter @runstamp/document-diff build && pnpm --filter @runstamp/protocol build && pnpm clean && node scripts/build-free.mjs",
+    "build:free": "rm -rf dist && node scripts/build-free.mjs",
+    "typecheck": "pnpm --filter @runstamp/document-diff build && pnpm --filter @runstamp/protocol build && tsc --noEmit",
+    "lint": "pnpm exec eslint src __tests__ scripts *.config.ts",
+    "test": "pnpm --filter @runstamp/document-diff build && pnpm --filter @runstamp/protocol build && vitest run",
+    "test:watch": "vitest",
+    "benchmark:phase1": "pnpm exec tsx scripts/benchmark-phase1.ts",
+    "benchmark:phase2": "pnpm exec tsx scripts/benchmark-phase2.ts",
+    "benchmark:warm-path": "pnpm exec tsx scripts/benchmark-warm-path.ts",
+    "smoke:worker-build": "pnpm exec tsx scripts/smoke-worker-build.ts",
+    "benchmark:rigorous": "node --expose-gc --import tsx scripts/benchmark-rigorous.ts",
+    "chaos:run": "node --expose-gc --import tsx scripts/run-chaos-lab.ts",
+    "validate:fixtures": "pnpm exec tsx scripts/validate-fixtures.ts",
+    "validate:fixtures:large": "pnpm exec tsx scripts/validate-fixtures.ts --include-large",
+    "export:fixtures": "pnpm exec tsx scripts/export-fixtures.ts",
+    "export:fixtures:large": "pnpm exec tsx scripts/export-fixtures.ts --include-large"
+  },
+  "dependencies": {
+    "@runstamp/contract": "workspace:*",
+    "esbuild": "^0.25.11",
+    "fast-xml-parser": "^5.5.7",
+    "jszip": "^3.10.1",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@runstamp/document-diff": "workspace:*",
+    "@runstamp/protocol": "workspace:*",
+    "@types/node": "^22.0.0",
+    "tsup": "^8.0.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.7.0",
+    "vite": "^7.3.2",
+    "vitest": "^4.1.4"
+  },
+  "runstamp": {
+    "packCheck": {
+      "requiredPaths": [
+        "dist/workers/sheet-serializer-worker.js",
+        "dist/source-js-extension-loader.mjs"
+      ],
+      "forbiddenRootExports": [
+        "repairSpreadsheetBuffer",
+        "validateAndRepairSpreadsheetBuffer",
+        "parseTemplate",
+        "inspectTemplate",
+        "assembleFromTemplate",
+        "assembleFromTemplateStream"
+      ],
+      "forbiddenImportSpecifiers": [
+        "@runstamp/license",
+        "@runstamp/protocol"
+      ]
+    },
+    "publicSourceMode": "independently-buildable"
+  }
+}

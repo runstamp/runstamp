@@ -1,0 +1,214 @@
+{
+  "engine": "pptx",
+  "entries": [
+    {
+      "code": "PPTX_NORMAUTOFIT_MISSING_FONTSCALE",
+      "status": "active",
+      "emitter": "packages/core/src/quality/structuralValidation.ts",
+      "severity": "warning",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": true, "strategy": "add_normautofit_font_scale" },
+      "evidence": { "kind": "fixture", "path": "packages/chaos-lab/fixtures/edge-cases/pptx/pptx-normautofit.json" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "PPTX_TABLE_CELL_TEXT_OVERFLOW",
+      "status": "active",
+      "emitter": "packages/core/src/quality/structuralValidation.ts",
+      "severity": "warning",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "fixture", "path": "packages/chaos-lab/fixtures/edge-cases/pptx/pptx-table-long-cell.json" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "PPTX_CHART_FORMAT_CODE_UNESCAPED",
+      "status": "active",
+      "emitter": "packages/core/src/quality/structuralValidation.ts",
+      "severity": "warning",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": true, "strategy": "escape_chart_format_codes" },
+      "evidence": { "kind": "fixture", "path": "packages/chaos-lab/fixtures/edge-cases/pptx/pptx-chart-format-code.json" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "PPTX_CHART_WORKBOOK_MISSING",
+      "status": "active",
+      "emitter": "packages/core/src/quality/structuralValidation.ts",
+      "severity": "error",
+      "expectedVerdict": "visual_fallback",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/core/tests/preflight-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "PPTX_LAYOUT_SHOULD_SPLIT",
+      "status": "active",
+      "emitter": "packages/core/src/quality/report.ts",
+      "severity": "warning",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/core/tests/preflight-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "PPTX_VISUAL_FALLBACK_MISSING",
+      "status": "active",
+      "emitter": "packages/core/src/engine/slideProcessor.ts",
+      "severity": "error",
+      "expectedVerdict": "rejected",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/core/tests/fallbackHonesty.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "PPTX_CHART_FALLBACK_MISSING",
+      "status": "active",
+      "emitter": "packages/core/src/ooxml/chart/index.ts",
+      "severity": "error",
+      "expectedVerdict": "rejected",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/core/tests/fallbackHonesty.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "PPTX_SLIDE_ID_NOT_UNIQUE",
+      "status": "active",
+      "emitter": "packages/core/src/quality/structuralValidation.ts",
+      "severity": "error",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": true, "strategy": "dedupe_slide_ids" },
+      "evidence": { "kind": "fixture", "path": "packages/chaos-lab/fixtures/edge-cases/pptx/pptx-slide-id-collision.json" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "PPTX_SHAPE_ID_NOT_UNIQUE",
+      "status": "active",
+      "emitter": "packages/core/src/quality/structuralValidation.ts",
+      "severity": "error",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/core/tests/desktopValidation/structuralValidation.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "PPTX_CUSTDATALIST_CONFLICT",
+      "status": "active",
+      "emitter": "packages/core/src/quality/structuralValidation.ts",
+      "severity": "error",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": true, "strategy": "collapse_custdatalist" },
+      "evidence": { "kind": "test", "path": "packages/core/tests/preflight-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "PPTX_ELEMENT_ORDER_VIOLATION",
+      "status": "active",
+      "emitter": "packages/core/src/quality/structuralValidation.ts",
+      "severity": "error",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": true, "strategy": "reorder_presentation_elements" },
+      "evidence": { "kind": "test", "path": "packages/core/tests/preflight-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "PPTX_MASTER_REF_UNRESOLVED",
+      "status": "active",
+      "emitter": "packages/core/src/quality/structuralValidation.ts",
+      "severity": "error",
+      "expectedVerdict": "rejected",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/core/tests/launchMatrix/structuralValidation.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "PPTX_ELEMENT_POSITION_CASCADE",
+      "status": "active",
+      "emitter": "packages/core/src/quality/structuralValidation.ts",
+      "severity": "error",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/core/tests/desktopValidation/structuralValidation.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "SHARED_RELATIONSHIP_TARGET_MISSING",
+      "status": "active",
+      "emitter": "packages/core/src/quality/structuralValidation.ts",
+      "severity": "error",
+      "expectedVerdict": "visual_fallback",
+      "repair": { "supported": true, "strategy": "remove_orphaned_relationships" },
+      "evidence": { "kind": "test", "path": "packages/core/tests/preflight-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "SHARED_RID_NOT_UNIQUE",
+      "status": "active",
+      "emitter": "packages/core/src/quality/structuralValidation.ts",
+      "severity": "error",
+      "expectedVerdict": "visual_fallback",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "fixture", "path": "packages/chaos-lab/fixtures/edge-cases/pptx/pptx-duplicate-rid.json" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "SHARED_CONTENT_TYPE_DUPLICATE",
+      "status": "active",
+      "emitter": "packages/core/src/quality/structuralValidation.ts",
+      "severity": "error",
+      "expectedVerdict": "editable_with_constraints",
+      "repair": { "supported": true, "strategy": "remove_duplicate_content_types" },
+      "evidence": { "kind": "test", "path": "packages/core/tests/preflight-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "SHARED_CONTENT_TYPE_MISSING",
+      "status": "active",
+      "emitter": "packages/core/src/quality/structuralValidation.ts",
+      "severity": "error",
+      "expectedVerdict": "rejected",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/core/tests/packageManifest.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "SHARED_XML_PARSE_FAILURE",
+      "status": "active",
+      "emitter": "packages/core/src/quality/structuralValidation.ts",
+      "severity": "error",
+      "expectedVerdict": "rejected",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/core/tests/structuralValidationShared.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    },
+    {
+      "code": "PPTX_STRUCTURAL_VALIDATION_FAILED",
+      "status": "active",
+      "emitter": "packages/core/src/quality/structuralValidation.ts",
+      "severity": "error",
+      "expectedVerdict": "rejected",
+      "repair": { "supported": false, "strategy": null },
+      "evidence": { "kind": "test", "path": "packages/core/tests/preflight-quality.test.ts" },
+      "releaseGating": true,
+      "mappingMode": "exact"
+    }
+  ]
+}

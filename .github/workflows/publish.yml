@@ -1,0 +1,36 @@
+name: Publish npm packages
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: "Type publish to authorize trusted publishing"
+        required: true
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    if: inputs.confirm == 'publish'
+    environment: npm-production
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          registry-url: https://registry.npmjs.org
+          package-manager-cache: false
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.12.4
+      - run: pnpm install --no-frozen-lockfile
+      - run: pnpm check
+      - name: Install OIDC-capable npm CLI
+        run: npm install --global npm@11.19.0 && npm --version
+      - name: Publish selected package
+        run: pnpm --filter "$PACKAGE" exec npm publish --provenance --access public
+        env:
+          PACKAGE: ${{ vars.RUNSTAMP_RELEASE_PACKAGE }}

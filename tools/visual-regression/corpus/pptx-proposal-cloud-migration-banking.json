@@ -1,0 +1,171 @@
+{
+  "id": "pptx-proposal-cloud-migration-banking",
+  "format": "pptx",
+  "surface": "agent",
+  "description": "Regulated cloud migration proposal for a member-owned regional credit union.",
+  "provenance": "Modeled on cloud transformation proposals for regulated financial institutions: migration factory scope, landing-zone controls, application waves, resilience targets, economic model, regulatory evidence, and fixed-fee terms. Deliberately exercises a nine-slide deck with a three-series line chart and detailed risk-control language.",
+  "expectedProperties": {
+    "slideCount": 9,
+    "hasChart": true,
+    "chartSlides": 1,
+    "chartTypes": ["line"],
+    "kpiCount": 4
+  },
+  "document": {
+    "type": "presentation",
+    "version": "1.0",
+    "presentationTitle": "Cloud Migration Proposal — Harborview Credit Union",
+    "companyName": "Altura Cloud Advisory",
+    "theme": "editorial-wide",
+    "designTokens": {
+      "scale": "md",
+      "shape": "sharp"
+    },
+    "slides": [
+      {
+        "pattern": "title",
+        "content": {
+          "title": "Cloud Migration Proposal",
+          "subtitle": "Prepared for Harborview Credit Union | September 15, 2026 | Proposal ACA-2026-119"
+        }
+      },
+      {
+        "pattern": "statement",
+        "content": {
+          "title": "A 20-month migration exits both data centers before renewal.",
+          "subtitle": "Executive recommendation",
+          "prose": [
+            "Scope migrates 86 applications to a dual-region Azure platform.",
+            "The core mainframe and two card interfaces remain on dedicated connectivity.",
+            "Altura owns delivery from landing zone through cutover and 90 days of hypercare."
+          ]
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "Case for change",
+          "subtitle": "Findings from architecture, operations, and regulatory discovery",
+          "bulletPoints": [
+            "Primary and recovery data-center leases expire in June and September 2028; renewal would require a five-year commitment",
+            "Thirty-two percent of Windows servers reach end of support by October 2027 and 19 applications depend on unsupported middleware",
+            "The 2026 recovery test restored tier-one services in 11.4 hours versus the board-approved eight-hour objective",
+            "Infrastructure changes require six manual approvals across separate tools, with incomplete linkage to affected assets",
+            "Current hosting spend of $18.9M annually grows 7% under signed colocation, hardware, and software commitments",
+            "NCUA examiners requested stronger evidence of privileged-access review and recovery testing for member-facing systems"
+          ]
+        }
+      },
+      {
+        "pattern": "comparison",
+        "content": {
+          "title": "Target architecture — standard controls by design",
+          "subtitle": "Current hosting model compared with the proposed cloud foundation",
+          "kpis": [
+            { "label": "Hosting", "value": "2", "sublabel": "Regions; IaC" },
+            { "label": "Workload", "value": "Isol.", "sublabel": "Private endpt/egress" },
+            { "label": "Admin access", "value": "JIT", "sublabel": "Recorded + approved" },
+            { "label": "Recovery", "value": "Qtrly", "sublabel": "Immutable backups" }
+          ]
+        }
+      },
+      {
+        "pattern": "dashboard",
+        "content": {
+          "title": "Committed program outcomes",
+          "subtitle": "Measured at migration completion and steady-state acceptance",
+          "kpis": [
+            { "label": "Applications", "value": "86", "trend": "up", "sublabel": "Across five waves" },
+            { "label": "Tier-1 RTO", "value": "≤4 hrs", "trend": "up", "sublabel": "RPO of 15 minutes" },
+            { "label": "Automation", "value": "92%", "trend": "up", "sublabel": "From 38% today" },
+            { "label": "5-year NPV", "value": "$16.4M", "trend": "up", "sublabel": "After program cost" }
+          ]
+        }
+      },
+      {
+        "pattern": "chart-focus",
+        "content": {
+          "title": "Economics improve after the migration peak",
+          "subtitle": "Annual hosting and transformation cash cost, $M",
+          "chart": {
+            "type": "line",
+            "title": "Annual technology infrastructure cost ($M)",
+            "series": [
+              {
+                "name": "Data-center baseline",
+                "dataPoints": [
+                  { "category": "FY2027", "value": 19.8 },
+                  { "category": "FY2028", "value": 21.2 },
+                  { "category": "FY2029", "value": 22.5 },
+                  { "category": "FY2030", "value": 23.8 },
+                  { "category": "FY2031", "value": 25.1 }
+                ]
+              },
+              {
+                "name": "Cloud run cost",
+                "dataPoints": [
+                  { "category": "FY2027", "value": 8.1 },
+                  { "category": "FY2028", "value": 13.7 },
+                  { "category": "FY2029", "value": 15.4 },
+                  { "category": "FY2030", "value": 15.8 },
+                  { "category": "FY2031", "value": 16.2 }
+                ]
+              },
+              {
+                "name": "Migration program",
+                "dataPoints": [
+                  { "category": "FY2027", "value": 9.6 },
+                  { "category": "FY2028", "value": 7.8 },
+                  { "category": "FY2029", "value": 1.2 },
+                  { "category": "FY2030", "value": 0 },
+                  { "category": "FY2031", "value": 0 }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "Migration waves and exit milestones",
+          "subtitle": "Twenty months from notice to proceed",
+          "bulletPoints": [
+            "Months 1-3 — landing zone, dedicated connectivity, identity integration, control library, and regulator evidence plan",
+            "Months 4-6 — Wave 1: development tooling, collaboration, and low-risk internal applications",
+            "Months 7-10 — Wave 2: data platform and member analytics; Wave 3: lending support and document services",
+            "Months 11-15 — Wave 4: online banking dependencies, payments support, and enterprise integration services",
+            "Months 16-18 — Wave 5: remaining tier-one systems, full recovery exercise, and disaster-recovery cutover",
+            "Months 19-20 — data-center decommission, license true-down, evidence binder, and 90-day hypercare commencement"
+          ]
+        }
+      },
+      {
+        "pattern": "bullets",
+        "content": {
+          "title": "Investment and commercial model",
+          "subtitle": "Fixed-fee delivery with shared migration contingencies",
+          "bulletPoints": [
+            "Program fee — $14.8M fixed for landing zone, migration factory, 86 applications, testing, and hypercare",
+            "Cloud consumption — estimated $8.1M in FY2027 and $13.7M in FY2028 under reserved-capacity assumptions",
+            "Third-party remediation allowance — $2.6M controlled by Harborview; unused funds remain with Harborview",
+            "Milestone holdback — 15% of program fees payable only after recovery proof and data-center exit acceptance",
+            "Schedule commitment — Altura funds incremental delivery labor if the June 2028 exit date is missed for provider-controlled reasons",
+            "Change control — application count and complexity bands fixed after the first 45-day validation sprint"
+          ]
+        }
+      },
+      {
+        "pattern": "statement",
+        "content": {
+          "title": "Authorize validation by October 30 to protect the exit date.",
+          "subtitle": "Proposed decision path",
+          "prose": [
+            "Altura delivers the wave baseline, control matrix, and fixed-fee schedule in 45 days.",
+            "Harborview may stop after validation for a capped fee of $620,000."
+          ]
+        }
+      }
+    ]
+  }
+}

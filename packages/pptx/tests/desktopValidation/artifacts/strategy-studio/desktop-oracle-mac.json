@@ -1,0 +1,19 @@
+{
+  "fixtureId": "strategy-studio",
+  "passed": true,
+  "failures": [],
+  "oracle": {
+    "available": true,
+    "fixtureId": "strategy-studio",
+    "passed": true,
+    "failures": [],
+    "pdfPath": "/Users/jake/plain/plainworks/paperjsx.com/packages/core/tests/desktopValidation/artifacts/strategy-studio/strategy-studio.pdf",
+    "savedCopyPath": "/Users/jake/plain/plainworks/paperjsx.com/packages/core/tests/desktopValidation/artifacts/strategy-studio/strategy-studio.roundtrip.pptx",
+    "screenshotPath": "/Users/jake/plain/plainworks/paperjsx.com/packages/core/tests/desktopValidation/artifacts/strategy-studio/strategy-studio.png",
+    "details": [
+      "Opened presentation: strategy-studio.input.pptx, slides=25",
+      "PowerPoint canonicalized 66 normalized package part(s) during round-trip save."
+    ]
+  },
+  "structuralPassed": true
+}

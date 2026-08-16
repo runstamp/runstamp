@@ -1,0 +1,18 @@
+{
+  "fixtureId": "long-text-paginated",
+  "title": "Long-text pagination",
+  "expectedSlideCount": 12,
+  "actualSlideCount": 12,
+  "validationModes": [
+    "structural",
+    "desktop_open",
+    "pdf_render",
+    "roundtrip_diff"
+  ],
+  "acceptance": {
+    "expectStructuralPass": true,
+    "expectDesktopOpenPass": true
+  },
+  "renderOptions": null,
+  "pptxPath": "generated.pptx"
+}
