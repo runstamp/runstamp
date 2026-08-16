@@ -100,7 +100,7 @@
     "@runstamp/protocol": "workspace:*",
     "@types/fontkit": "^2.0.8",
     "@types/node": "^22.0.0",
-    "@types/pako": "^2.0.4",
+    "@types/pako": "^3.0.0",
     "@types/pngjs": "^6.0.5",
     "base64-js": "^1.5.1",
     "esbuild": "^0.25.11",
