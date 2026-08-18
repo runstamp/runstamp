@@ -56,8 +56,8 @@
     },
     {
       "path": ".github/workflows/ci.yml",
-      "bytes": 693,
-      "sha256": "54c19048492d6ee541b6e37a57eb5581178bd91f1ebaf4bb9f4d38b4eb5d952f"
+      "bytes": 1321,
+      "sha256": "cf117369c46e0787a09eb5d981c01e87862de751b9cac27305b17ddaac31d7e9"
     },
     {
       "path": ".github/workflows/codeql.yml",
@@ -66,8 +66,8 @@
     },
     {
       "path": ".github/workflows/publish.yml",
-      "bytes": 5207,
-      "sha256": "1b63cc3969a15f342d9b713f2da4b6630426282fb38f031c8b834efe7df790b6"
+      "bytes": 5835,
+      "sha256": "f3b34b58df27d81b21a579c3e7ea7bd58fe04e5910b06f4a4b95cd5ccf2b9185"
     },
     {
       "path": ".gitignore",
@@ -11281,13 +11281,13 @@
     },
     {
       "path": "scripts/release-package.mjs",
-      "bytes": 14115,
-      "sha256": "ed5d36eb736fc96e9773471a4ff2b8d454a6e5db5d6a50714b88a356937c4889"
+      "bytes": 14301,
+      "sha256": "81a7cb8f03a87af5541dc6fddae919450fe7456c53d500a7e8e940f86590c64e"
     },
     {
       "path": "scripts/release-package.test.mjs",
-      "bytes": 1909,
-      "sha256": "fb9034bb4de6da8ffe847dcf80fb217d7b2ff3593947d5b256454e3fe5a478b3"
+      "bytes": 2329,
+      "sha256": "15c91dcbe08fb51cd1c9c4c29e9a78720e1c66783d8a8a22548b541a4375a827"
     },
     {
       "path": "scripts/update-public-source-manifest.mjs",

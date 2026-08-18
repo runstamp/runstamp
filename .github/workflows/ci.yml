@@ -24,7 +24,23 @@ jobs:
           version: 10.12.4
       - name: Install PDF verification tools
         run: |
-          timeout 5m sudo apt-get update -o Acquire::Retries=3
-          timeout 5m sudo apt-get install --yes -o Acquire::Retries=3 poppler-utils qpdf
+          if [[ -f /etc/apt/apt-mirrors.txt ]]; then
+            sudo sed -i 's|http://azure.archive.ubuntu.com/ubuntu/|https://archive.ubuntu.com/ubuntu/|g' /etc/apt/apt-mirrors.txt
+          fi
+          for attempt in 1 2 3; do
+            if timeout 3m sudo apt-get update \
+              -o Acquire::Retries=2 \
+              -o Acquire::http::Timeout=20 \
+              -o Acquire::https::Timeout=20 \
+              && timeout 3m sudo apt-get install --yes \
+                -o Acquire::Retries=2 \
+                -o Acquire::http::Timeout=20 \
+                -o Acquire::https::Timeout=20 \
+                poppler-utils qpdf; then
+              exit 0
+            fi
+            echo "PDF tool installation attempt ${attempt} failed" >&2
+          done
+          exit 1
       - run: pnpm install --frozen-lockfile
       - run: pnpm check

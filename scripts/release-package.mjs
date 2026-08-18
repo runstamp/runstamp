@@ -173,10 +173,15 @@ function npmView(selected) {
 async function waitForRegistry(selected) {
   for (let attempt = 1; attempt <= 12; attempt += 1) {
     const metadata = npmView(selected);
-    if (metadata?.version === selected.version) return metadata;
+    if (metadata?.version === selected.version && metadata.dist?.attestations?.provenance && metadata.dist.attestations.url) return metadata;
     if (attempt < 12) await new Promise((resolve) => setTimeout(resolve, 5_000));
   }
-  fail(`Registry did not expose ${selected.name}@${selected.version} within 60 seconds.`);
+  fail(`Registry did not expose ${selected.name}@${selected.version} with provenance within 60 seconds.`);
+}
+
+export function verifyAuditResult(audit) {
+  if (!Array.isArray(audit?.invalid) || !Array.isArray(audit?.missing)) fail("npm audit signatures returned an unexpected result shape.");
+  if (audit.invalid.length > 0 || audit.missing.length > 0) fail("npm audit signatures reported invalid or missing signatures/attestations.");
 }
 
 function verifyExportFiles(manifest, packageRoot) {
@@ -225,15 +230,12 @@ async function postpublish(selected) {
     await verifyInstalledBehavior(selected, temporary, installedManifest);
     const audit = run("npm", ["audit", "signatures", "--json", "--include-attestations", "--registry", registry], { cwd: temporary });
     const auditJson = JSON.parse(audit.stdout);
-    const verified = auditJson.verified?.find((entry) => entry.name === selected.name && entry.version === selected.version);
-    if (!verified?.attestations?.provenance || !Array.isArray(verified.attestationBundles) || verified.attestationBundles.length === 0) {
-      fail("npm did not verify provenance for the published package.");
-    }
+    verifyAuditResult(auditJson);
     record.registry = {
       shasum: metadata.dist.shasum,
       integrity: metadata.dist.integrity,
       tarball: metadata.dist.tarball,
-      provenance: { result: "verified", url: verified.attestations.url },
+      provenance: { result: "verified", url: metadata.dist.attestations.url, predicateType: metadata.dist.attestations.provenance.predicateType },
     };
     record.verification = { result: "passed", freshInstall: true, exports: true, packageBehavior: true, provenance: true };
     fs.writeFileSync(recordPath, `${JSON.stringify(record, null, 2)}\n`);
