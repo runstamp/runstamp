@@ -184,6 +184,25 @@ export function verifyAuditResult(audit) {
   if (audit.invalid.length > 0 || audit.missing.length > 0) fail("npm audit signatures reported invalid or missing signatures/attestations.");
 }
 
+export function isTransientAttestation404(result) {
+  if (result?.status === 0) return false;
+  const output = `${result?.stdout ?? ""}\n${result?.stderr ?? ""}`;
+  return /(?:E404|404 Not Found)/.test(output) && /\/-\/npm\/v1\/attestations\//.test(output);
+}
+
+async function waitForAudit(temporary) {
+  const args = ["audit", "signatures", "--json", "--include-attestations", "--registry", registry];
+  for (let attempt = 1; attempt <= 12; attempt += 1) {
+    const result = run("npm", args, { cwd: temporary, allowFailure: true });
+    if (result.status === 0) return JSON.parse(result.stdout);
+    if (!isTransientAttestation404(result) || attempt === 12) {
+      fail(`npm ${args.join(" ")} failed\n${result.stdout ?? ""}\n${result.stderr ?? ""}`);
+    }
+    await new Promise((resolve) => setTimeout(resolve, 5_000));
+  }
+  fail("npm audit signatures did not become available within 60 seconds.");
+}
+
 function verifyExportFiles(manifest, packageRoot) {
   const targets = [];
   function visit(value) {
@@ -228,8 +247,7 @@ async function postpublish(selected) {
     const installedManifest = JSON.parse(fs.readFileSync(path.join(packageRoot, "package.json"), "utf8"));
     if (installedManifest.name !== selected.name || installedManifest.version !== selected.version) fail("Fresh install resolved the wrong package identity.");
     await verifyInstalledBehavior(selected, temporary, installedManifest);
-    const audit = run("npm", ["audit", "signatures", "--json", "--include-attestations", "--registry", registry], { cwd: temporary });
-    const auditJson = JSON.parse(audit.stdout);
+    const auditJson = await waitForAudit(temporary);
     verifyAuditResult(auditJson);
     record.registry = {
       shasum: metadata.dist.shasum,

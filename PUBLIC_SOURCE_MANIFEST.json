@@ -11281,13 +11281,13 @@
     },
     {
       "path": "scripts/release-package.mjs",
-      "bytes": 14301,
-      "sha256": "81a7cb8f03a87af5541dc6fddae919450fe7456c53d500a7e8e940f86590c64e"
+      "bytes": 15077,
+      "sha256": "09ad75a779f99d8cde677519b742fe615070f7eecb2baaa5d518fc7685731d00"
     },
     {
       "path": "scripts/release-package.test.mjs",
-      "bytes": 2329,
-      "sha256": "15c91dcbe08fb51cd1c9c4c29e9a78720e1c66783d8a8a22548b541a4375a827"
+      "bytes": 2978,
+      "sha256": "0c61cce40fe3ccb687e98bc5ccbcf53ef54c4f5a5073f0763c4b6d05254731f0"
     },
     {
       "path": "scripts/update-public-source-manifest.mjs",
