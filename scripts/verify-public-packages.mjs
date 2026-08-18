@@ -71,8 +71,9 @@ try {
       if (manifest.scripts?.[script]) throw new Error(`${name} retains private lifecycle script ${script}.`);
     }
     for (const section of ["dependencies", "peerDependencies", "optionalDependencies"]) {
-      for (const dependency of Object.keys(manifest[section] ?? {})) {
+      for (const [dependency, range] of Object.entries(manifest[section] ?? {})) {
         if (forbiddenSpecifiers.includes(dependency)) throw new Error(`${name} exposes private build dependency ${dependency}.`);
+        if (typeof range === "string" && range.startsWith("workspace:")) throw new Error(`${name} retains workspace protocol for ${dependency}.`);
       }
     }
     for (const absolute of files(packageRoot)) {
