@@ -104,7 +104,7 @@
     "@types/pako": "^2.0.4",
     "@types/pngjs": "^6.0.5",
     "base64-js": "^1.5.1",
-    "esbuild": "^0.25.11",
+    "esbuild": "^0.28.1",
     "jpeg-js": "^0.4.4",
     "pdfkit": "0.18.0",
     "require-from-string": "^2.0.2",
