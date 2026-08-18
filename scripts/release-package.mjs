@@ -96,6 +96,27 @@ function digest(buffer, algorithm, encoding = "hex") {
   return crypto.createHash(algorithm).update(buffer).digest(encoding);
 }
 
+function packedFiles(directory) {
+  const result = [];
+  function walk(current) {
+    for (const entry of fs.readdirSync(current, { withFileTypes: true }).sort((left, right) => left.name.localeCompare(right.name))) {
+      const absolute = path.join(current, entry.name);
+      if (entry.isDirectory()) walk(absolute);
+      else if (entry.isFile()) result.push({ path: path.relative(directory, absolute).split(path.sep).join("/"), size: fs.statSync(absolute).size });
+    }
+  }
+  walk(directory);
+  return result;
+}
+
+export function assertNoWorkspaceProtocols(manifest) {
+  for (const field of ["dependencies", "optionalDependencies", "peerDependencies"]) {
+    for (const [name, range] of Object.entries(manifest[field] ?? {})) {
+      if (typeof range === "string" && range.startsWith("workspace:")) fail(`Packed ${field} still contains a workspace protocol for ${name}.`);
+    }
+  }
+}
+
 function writeOutput(name, value) {
   if (process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, `${name}=${value}\n`);
 }
@@ -103,32 +124,45 @@ function writeOutput(name, value) {
 function pack(selected, values) {
   fs.rmSync(releaseDirectory, { recursive: true, force: true });
   fs.mkdirSync(releaseDirectory, { recursive: true });
-  const result = run("npm", ["pack", `./packages/${selected.directory}`, "--pack-destination", releaseDirectory, "--json", "--ignore-scripts"]);
+  const result = run("pnpm", ["--dir", `packages/${selected.directory}`, "--config.ignore-scripts=true", "pack", "--pack-destination", releaseDirectory, "--json"]);
   const packed = JSON.parse(result.stdout);
-  if (!Array.isArray(packed) || packed.length !== 1) fail("npm pack did not produce exactly one tarball.");
-  const tarball = path.join(releaseDirectory, packed[0].filename);
+  if (Array.isArray(packed) || packed?.name !== selected.name || packed?.version !== selected.version || typeof packed?.filename !== "string") {
+    fail("pnpm pack did not produce exactly one authorized tarball.");
+  }
+  const tarball = path.resolve(packed.filename);
+  if (path.dirname(tarball) !== releaseDirectory || !fs.existsSync(tarball)) fail("pnpm pack wrote outside the release directory or omitted the tarball.");
   const bytes = fs.readFileSync(tarball);
-  const manifest = readManifest(selected);
-  const record = {
-    schemaVersion: 1,
-    package: selected.name,
-    version: selected.version,
-    source: { repository: "https://github.com/runstamp/runstamp", tag: selected.tag, tagObject: values.tagObject, commit: values.sha },
-    workflow: { file: ".github/workflows/publish.yml", runId: values.runId, runAttempt: values.runAttempt, bootstrap: selected.bootstrap },
-    tarball: {
-      filename: path.basename(tarball), byteLength: bytes.length,
-      sha256: digest(bytes, "sha256"), shasum: digest(bytes, "sha1"), integrity: `sha512-${digest(bytes, "sha512", "base64")}`,
-      files: packed[0].files.map(({ path: filePath, size }) => ({ path: filePath, size })),
-      dependencies: manifest.dependencies ?? {}, peerDependencies: manifest.peerDependencies ?? {}, exports: manifest.exports ?? null, bin: manifest.bin ?? null,
-    },
-    registry: null,
-    verification: null,
-  };
-  const recordPath = path.join(releaseDirectory, "release-record.json");
-  fs.writeFileSync(recordPath, `${JSON.stringify(record, null, 2)}\n`);
-  writeOutput("tarball", tarball);
-  writeOutput("record", recordPath);
-  console.log(`[release] packed ${selected.name}@${selected.version}: sha256:${record.tarball.sha256}`);
+  const inspection = fs.mkdtempSync(path.join(os.tmpdir(), "runstamp-pack-inspect-"));
+  try {
+    run("tar", ["-xzf", tarball, "-C", inspection]);
+    const packageRoot = path.join(inspection, "package");
+    const manifest = JSON.parse(fs.readFileSync(path.join(packageRoot, "package.json"), "utf8"));
+    if (manifest.name !== selected.name || manifest.version !== selected.version) fail("Packed manifest identity does not match the authorized release.");
+    assertNoWorkspaceProtocols(manifest);
+    verifyExportFiles(manifest, packageRoot);
+    const record = {
+      schemaVersion: 1,
+      package: selected.name,
+      version: selected.version,
+      source: { repository: "https://github.com/runstamp/runstamp", tag: selected.tag, tagObject: values.tagObject, commit: values.sha },
+      workflow: { file: ".github/workflows/publish.yml", runId: values.runId, runAttempt: values.runAttempt, bootstrap: selected.bootstrap },
+      tarball: {
+        filename: path.basename(tarball), byteLength: bytes.length,
+        sha256: digest(bytes, "sha256"), shasum: digest(bytes, "sha1"), integrity: `sha512-${digest(bytes, "sha512", "base64")}`,
+        files: packedFiles(packageRoot),
+        dependencies: manifest.dependencies ?? {}, peerDependencies: manifest.peerDependencies ?? {}, exports: manifest.exports ?? null, bin: manifest.bin ?? null,
+      },
+      registry: null,
+      verification: null,
+    };
+    const recordPath = path.join(releaseDirectory, "release-record.json");
+    fs.writeFileSync(recordPath, `${JSON.stringify(record, null, 2)}\n`);
+    writeOutput("tarball", tarball);
+    writeOutput("record", recordPath);
+    console.log(`[release] packed ${selected.name}@${selected.version}: sha256:${record.tarball.sha256}`);
+  } finally {
+    fs.rmSync(inspection, { recursive: true, force: true });
+  }
 }
 
 function npmView(selected) {

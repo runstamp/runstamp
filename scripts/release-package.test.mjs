@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { releases, validateInputs } from "./release-package.mjs";
+import { assertNoWorkspaceProtocols, releases, validateInputs } from "./release-package.mjs";
 
 for (const [name, release] of releases) {
   test(`accepts only the frozen release identity for ${name}`, () => {
@@ -15,4 +15,11 @@ for (const [name, release] of releases) {
 
 test("rejects packages outside the nine-package allowlist", () => {
   assert.throws(() => validateInputs({ package: "@runstamp/private", version: "1.0.0", tag: "@runstamp/private@1.0.0", confirm: "publish @runstamp/private@1.0.0", bootstrap: "true" }));
+});
+
+test("rejects workspace protocols in packed runtime dependency fields", () => {
+  assert.throws(() => assertNoWorkspaceProtocols({ dependencies: { "@runstamp/contract": "workspace:^" } }));
+  assert.throws(() => assertNoWorkspaceProtocols({ optionalDependencies: { "@runstamp/contract": "workspace:*" } }));
+  assert.throws(() => assertNoWorkspaceProtocols({ peerDependencies: { "@runstamp/contract": "workspace:~" } }));
+  assert.doesNotThrow(() => assertNoWorkspaceProtocols({ dependencies: { "@runstamp/contract": "^1.0.1" } }));
 });
