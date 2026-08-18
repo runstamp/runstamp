@@ -7,12 +7,14 @@
   "workspaces": ["packages/*"],
   "scripts": {
     "verify:export": "node scripts/verify-public-source.mjs",
+    "update:export-manifest": "node scripts/update-public-source-manifest.mjs",
     "verify:packages": "node scripts/verify-public-packages.mjs",
+    "test:release-policy": "node --test scripts/release-package.test.mjs",
     "build": "pnpm -r --workspace-concurrency=1 --if-present run build",
     "typecheck": "pnpm -r --workspace-concurrency=1 --if-present run typecheck",
     "lint": "pnpm -r --workspace-concurrency=1 --if-present run lint",
     "test": "pnpm rebuild @xarsh/ooxml-validator && pnpm -r --workspace-concurrency=1 --if-present run test",
-    "check": "pnpm verify:export && pnpm build && pnpm typecheck && pnpm lint && pnpm test && pnpm verify:packages"
+    "check": "pnpm verify:export && pnpm test:release-policy && pnpm build && pnpm typecheck && pnpm lint && pnpm test && pnpm verify:packages"
   },
   "engines": { "node": ">=20" },
   "devDependencies": {
