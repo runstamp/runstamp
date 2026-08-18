@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { assertNoWorkspaceProtocols, releases, validateInputs, verifyAuditResult } from "./release-package.mjs";
+import { assertNoWorkspaceProtocols, isTransientAttestation404, releases, validateInputs, verifyAuditResult } from "./release-package.mjs";
 
 for (const [name, release] of releases) {
   test(`accepts only the frozen release identity for ${name}`, () => {
@@ -29,4 +29,11 @@ test("accepts only empty npm signature and attestation audit findings", () => {
   assert.throws(() => verifyAuditResult({ invalid: [{ name: "bad" }], missing: [] }));
   assert.throws(() => verifyAuditResult({ invalid: [], missing: [{ name: "missing" }] }));
   assert.throws(() => verifyAuditResult({ verified: [] }));
+});
+
+test("retries only transient npm attestation endpoint 404s", () => {
+  assert.equal(isTransientAttestation404({ status: 1, stdout: '{"error":{"code":"E404"}}', stderr: "404 Not Found - GET https://registry.npmjs.org/-/npm/v1/attestations/%40runstamp%2Fxlsx@1.0.1" }), true);
+  assert.equal(isTransientAttestation404({ status: 1, stdout: "E404 package missing", stderr: "" }), false);
+  assert.equal(isTransientAttestation404({ status: 1, stdout: '{"invalid":[{"name":"bad"}]}', stderr: "" }), false);
+  assert.equal(isTransientAttestation404({ status: 0, stdout: '{"invalid":[],"missing":[]}', stderr: "" }), false);
 });
