@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { assertNoWorkspaceProtocols, releases, validateInputs } from "./release-package.mjs";
+import { assertNoWorkspaceProtocols, releases, validateInputs, verifyAuditResult } from "./release-package.mjs";
 
 for (const [name, release] of releases) {
   test(`accepts only the frozen release identity for ${name}`, () => {
@@ -22,4 +22,11 @@ test("rejects workspace protocols in packed runtime dependency fields", () => {
   assert.throws(() => assertNoWorkspaceProtocols({ optionalDependencies: { "@runstamp/contract": "workspace:*" } }));
   assert.throws(() => assertNoWorkspaceProtocols({ peerDependencies: { "@runstamp/contract": "workspace:~" } }));
   assert.doesNotThrow(() => assertNoWorkspaceProtocols({ dependencies: { "@runstamp/contract": "^1.0.1" } }));
+});
+
+test("accepts only empty npm signature and attestation audit findings", () => {
+  assert.doesNotThrow(() => verifyAuditResult({ invalid: [], missing: [] }));
+  assert.throws(() => verifyAuditResult({ invalid: [{ name: "bad" }], missing: [] }));
+  assert.throws(() => verifyAuditResult({ invalid: [], missing: [{ name: "missing" }] }));
+  assert.throws(() => verifyAuditResult({ verified: [] }));
 });
