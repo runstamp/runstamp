@@ -89,6 +89,10 @@ jobs:
           RELEASE_CONFIRM: ${{ inputs.confirm }}
       - name: Install exact locked dependencies
         run: pnpm install --frozen-lockfile
+      - name: Install PDF verification tools
+        run: |
+          timeout 5m sudo apt-get update -o Acquire::Retries=3
+          timeout 5m sudo apt-get install --yes -o Acquire::Retries=3 poppler-utils qpdf
       - name: Run complete public-source gate
         run: pnpm check
       - name: Pack exactly once and create the release record

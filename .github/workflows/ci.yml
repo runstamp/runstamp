@@ -23,6 +23,8 @@ jobs:
         with:
           version: 10.12.4
       - name: Install PDF verification tools
-        run: sudo apt-get update && sudo apt-get install --yes poppler-utils qpdf
+        run: |
+          timeout 5m sudo apt-get update -o Acquire::Retries=3
+          timeout 5m sudo apt-get install --yes -o Acquire::Retries=3 poppler-utils qpdf
       - run: pnpm install --frozen-lockfile
       - run: pnpm check
