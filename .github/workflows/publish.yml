@@ -3,21 +3,63 @@ name: Publish npm packages
 on:
   workflow_dispatch:
     inputs:
-      confirm:
-        description: "Type publish to authorize trusted publishing"
+      package:
+        description: "Exact npm package name"
         required: true
+        type: choice
+        options:
+          - "@runstamp/contract"
+          - "@runstamp/pptx"
+          - "@runstamp/docx"
+          - "@runstamp/pdf"
+          - "@runstamp/xlsx"
+          - "@runstamp/catalog"
+          - "@runstamp/cli"
+          - "@runstamp/mcp-server"
+          - "@runstamp/react"
+      version:
+        description: "Exact authorized version"
+        required: true
+        type: string
+      tag:
+        description: "Immutable source tag, exactly <package>@<version>"
+        required: true
+        type: string
+      bootstrap:
+        description: "Use the protected one-time bootstrap credential (new package names only)"
+        required: true
+        default: false
+        type: boolean
+      confirm:
+        description: "Type: publish <package>@<version>"
+        required: true
+        type: string
 
 permissions:
   contents: read
   id-token: write
 
+concurrency:
+  group: runstamp-npm-publication
+  cancel-in-progress: false
+
 jobs:
   publish:
-    if: inputs.confirm == 'publish'
+    name: Publish immutable tarball
     environment: npm-production
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
+      - name: Require dispatch from the exact source tag
+        env:
+          EXPECTED_REF: refs/tags/${{ inputs.tag }}
+          ACTUAL_REF: ${{ github.ref }}
+        run: test "$ACTUAL_REF" = "$EXPECTED_REF"
       - uses: actions/checkout@v6
+        with:
+          ref: ${{ inputs.tag }}
+          fetch-depth: 0
+          persist-credentials: false
       - uses: actions/setup-node@v6
         with:
           node-version: 24
@@ -26,11 +68,75 @@ jobs:
       - uses: pnpm/action-setup@v4
         with:
           version: 10.12.4
-      - run: pnpm install --no-frozen-lockfile
-      - run: pnpm check
       - name: Install OIDC-capable npm CLI
         run: npm install --global npm@11.19.0 && npm --version
-      - name: Publish selected package
-        run: pnpm --filter "$PACKAGE" exec npm publish --provenance --access public
+      - name: Authorize exact package, version, tag, commit, and publication mode
+        id: preflight
+        run: >-
+          node scripts/release-package.mjs preflight
+          --package "$RELEASE_PACKAGE"
+          --version "$RELEASE_VERSION"
+          --tag "$RELEASE_TAG"
+          --bootstrap "$RELEASE_BOOTSTRAP"
+          --confirm "$RELEASE_CONFIRM"
+          --ref "$GITHUB_REF"
+          --sha "$GITHUB_SHA"
         env:
-          PACKAGE: ${{ vars.RUNSTAMP_RELEASE_PACKAGE }}
+          RELEASE_PACKAGE: ${{ inputs.package }}
+          RELEASE_VERSION: ${{ inputs.version }}
+          RELEASE_TAG: ${{ inputs.tag }}
+          RELEASE_BOOTSTRAP: ${{ inputs.bootstrap }}
+          RELEASE_CONFIRM: ${{ inputs.confirm }}
+      - name: Install exact locked dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Run complete public-source gate
+        run: pnpm check
+      - name: Pack exactly once and create the release record
+        id: pack
+        run: >-
+          node scripts/release-package.mjs pack
+          --package "$RELEASE_PACKAGE"
+          --version "$RELEASE_VERSION"
+          --tag "$RELEASE_TAG"
+          --bootstrap "$RELEASE_BOOTSTRAP"
+          --confirm "$RELEASE_CONFIRM"
+          --sha "$GITHUB_SHA"
+          --tagObject "${{ steps.preflight.outputs.tag_object }}"
+          --runId "$GITHUB_RUN_ID"
+          --runAttempt "$GITHUB_RUN_ATTEMPT"
+        env:
+          RELEASE_PACKAGE: ${{ inputs.package }}
+          RELEASE_VERSION: ${{ inputs.version }}
+          RELEASE_TAG: ${{ inputs.tag }}
+          RELEASE_BOOTSTRAP: ${{ inputs.bootstrap }}
+          RELEASE_CONFIRM: ${{ inputs.confirm }}
+      - name: Publish with trusted OIDC
+        if: ${{ !inputs.bootstrap }}
+        run: npm publish "${{ steps.pack.outputs.tarball }}" --provenance --access public --tag latest
+      - name: Bootstrap first publication with protected credential
+        if: ${{ inputs.bootstrap }}
+        run: npm publish "${{ steps.pack.outputs.tarball }}" --provenance --access public --tag latest
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_BOOTSTRAP_TOKEN }}
+      - name: Verify registry integrity, provenance, exports, behavior, and clean install
+        run: >-
+          node scripts/release-package.mjs postpublish
+          --package "$RELEASE_PACKAGE"
+          --version "$RELEASE_VERSION"
+          --tag "$RELEASE_TAG"
+          --bootstrap "$RELEASE_BOOTSTRAP"
+          --confirm "$RELEASE_CONFIRM"
+        env:
+          RELEASE_PACKAGE: ${{ inputs.package }}
+          RELEASE_VERSION: ${{ inputs.version }}
+          RELEASE_TAG: ${{ inputs.tag }}
+          RELEASE_BOOTSTRAP: ${{ inputs.bootstrap }}
+          RELEASE_CONFIRM: ${{ inputs.confirm }}
+      - name: Upload machine-readable release record
+        if: ${{ always() && steps.pack.outcome == 'success' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-record-${{ inputs.version }}-${{ github.run_id }}
+          path: .release/release-record.json
+          if-no-files-found: error
+          retention-days: 90

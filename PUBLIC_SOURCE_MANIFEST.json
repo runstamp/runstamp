@@ -56,8 +56,8 @@
     },
     {
       "path": ".github/workflows/ci.yml",
-      "bytes": 611,
-      "sha256": "9321e7801c7658da624e8cbfe5e4bc21cdf2a78fee21f7a23aa3411a86332d02"
+      "bytes": 608,
+      "sha256": "49b240a1debe9d4a4598e460dcb76ac82fe2eeec16cc414f15674a1d6cde1496"
     },
     {
       "path": ".github/workflows/codeql.yml",
@@ -66,13 +66,13 @@
     },
     {
       "path": ".github/workflows/publish.yml",
-      "bytes": 990,
-      "sha256": "53d229315831018e72ed2706df19303eeb0f551dd1e6e1bb8154853f43f625f2"
+      "bytes": 4995,
+      "sha256": "41b15776e40d23fcd72c1e3edae94878c0b4700d116034b27250321df11787f5"
     },
     {
       "path": ".gitignore",
-      "bytes": 40,
-      "sha256": "044a99cb0ce4f4a60877f41aa23bfe84de73184e3181b28858f952c667c26e55"
+      "bytes": 50,
+      "sha256": "74e72b42add74bdf36c86ac5df2e2ded6f4246c2d9e2dffe5bfbc5f0ac9efb58"
     },
     {
       "path": ".runstamp-public-export",
@@ -156,8 +156,8 @@
     },
     {
       "path": "package.json",
-      "bytes": 1182,
-      "sha256": "ed129378bd4ec78ab47a986408d24bad2fbc6cd75a526cbe7e27a754b362dd79"
+      "bytes": 1365,
+      "sha256": "eeb38a3f7f819d3c298709f9094e8fcb6c442c5035c3964223cb47fd73eb6c6e"
     },
     {
       "path": "packages/catalog/catalog.json",
@@ -11273,6 +11273,26 @@
       "path": "tools/visual-regression/corpus/pptx-title.json",
       "bytes": 515,
       "sha256": "da048c118125e908a1f61f02f34a5e2e74d4283f629064c6f6aea4fc2944a05e"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "bytes": 173698,
+      "sha256": "381e2efa437ee1751ebf6ec93b1d07fb240c8f759a5290863e8a6a2d12919d55"
+    },
+    {
+      "path": "scripts/release-package.mjs",
+      "bytes": 12385,
+      "sha256": "09738e9bfa92a3558474cc0fce21ceb40a88c56ae8d54508fe0eb3d04cef9abe"
+    },
+    {
+      "path": "scripts/release-package.test.mjs",
+      "bytes": 1343,
+      "sha256": "a538ac6dd7602a41c1ff6cd67cbea3af303685237d0e14c908bc49c089e86157"
+    },
+    {
+      "path": "scripts/update-public-source-manifest.mjs",
+      "bytes": 1011,
+      "sha256": "8ba7eb6b2d951b1bb323bcb4620c81b4ca4524c7b53ce1fe05c1f14bd83c8b2c"
     }
   ]
 }
